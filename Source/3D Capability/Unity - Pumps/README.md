@@ -25,6 +25,8 @@ Create/confirm the following variables
   * App Designer URL
   * App Designer Integration Key (Encrypted)
 
+For instructions on how to import <a href="https://documentation.xmpro.com/how-tos/import-export-and-clone#importing">click here</a>
+
 ## 1. Import the data stream
 
     * Simulate Pump Telemetry.xuc
