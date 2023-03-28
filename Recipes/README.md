@@ -15,7 +15,7 @@
   <img alt="" src="https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/Icons/recipe.png">
 </picture>
 </td>
-<td><a href="https://github.com/XMPro/demonstrations/tree/main/Source/AI%20ML%20-%20ADT%20Predictive%20Maintenance">Calculated Field</a></td>
+<td><a href="https://github.com/XMPro/Accelerators-Recipes-Blueprints/tree/master/Source/Calculated%20Field">Calculated Field</a></td>
 <td>Various examples of how to use the Calcualted Field transformation</td></tr>
 </table>
 
