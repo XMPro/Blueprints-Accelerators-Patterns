@@ -15,6 +15,10 @@ The data stream is configured using
 	* the first <i>Send to App Designer Single</i> is configured with a cache of 1 to be used on the overlay
 	* the second <i>Send to App Designer</i> is configured with a cache of 20 to be used on the charts within the Application
 
+![Configured Data Stream](Images/Data%20Stream.png)
+
+
+
 # Files
 * Data Stream: <a href="https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/Source/3D%20Capability/Unity%20-%20Pumps/Application/Simulate%20Pump%20Telemetry.xuc" target="_blank">Simulate Pump Telemetry.xuc</a>
 
@@ -42,9 +46,6 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 
 Successfully running data stream with live data:
 
-![Running Data Stream](Images/Running%20Data%20Stream.png)
-
-    
-# How the Accelerators works
+![Running Data Stream](Images/Running%20Data%20Stream.png) 
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
