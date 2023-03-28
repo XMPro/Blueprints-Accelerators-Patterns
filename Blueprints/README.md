@@ -3,7 +3,7 @@
 
 **XMPro Blueprints are pre-built solutions that combine data streams, app visualizations, recommendation rules and models. They are easy to import into your XMPro environment, configure with your business systems and customize to your unique situation.**
 
-[**◄ Return**](https://github.com/XMPro/demonstrations)
+[**◄ Return**](https://github.com/XMPro/Accelerators-Recipes-Blueprints)
 <br />
 
 ## Contributing

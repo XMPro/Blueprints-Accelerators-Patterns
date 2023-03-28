@@ -3,7 +3,7 @@
 
 **XMPro Accelerators can be imported into your environment, providing a starting point for configuring your own solutions.**
 
-[**◄ Return**](https://github.com/XMPro/demonstrations)
+[**◄ Return**](https://github.com/XMPro/Accelerators-Recipes-Blueprints)
 <br />
 
 ## Contributing
