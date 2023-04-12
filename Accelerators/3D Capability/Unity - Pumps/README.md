@@ -85,7 +85,6 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 
 ![Running Data Stream](Images/Import%20Options.png) 
 </details>
-<br />
 
     * Assign Access to others as required for design and runtime
 
@@ -95,7 +94,6 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 
 ![Running Data Stream](Images/ApplicationAccess.png) 
 </details>
-<br />
 	
 	* Save the Application
 	* Publish the application
