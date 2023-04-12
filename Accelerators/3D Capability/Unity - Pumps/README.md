@@ -47,8 +47,6 @@ The application page is configured using the following <a href="https://document
 ![Configured Data Stream](Images/Application.png)
 </details>
 
-<br />
-
 # How to Import
 Import Password: `Dem0nstr@t1on`
 
@@ -76,7 +74,6 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 
 ![Running Data Stream](Images/Running%20Data%20Stream.png) 
 </details>
-<br />
 
 ## 2. Import the Application - <i><b>Unity_Pumps.xapp</b></i>
 
@@ -110,8 +107,6 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 
 ![Running Data Stream](Images/Application.png) 
 </details>
-
-<br />
 
 ## Contributing
 This repository was created by <a href="https://xmpro.com/">XMPro</a>. For assistance or requests, please contact <a href="mailto:support@xmpro.com">support@xmpro.com</a>
