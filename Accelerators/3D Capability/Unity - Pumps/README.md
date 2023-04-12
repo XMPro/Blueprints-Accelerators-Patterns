@@ -69,7 +69,6 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 
 <details>
   <summary markdown="span">Expand to view screenshot of a successfully running data stream with live data</summary>
-  <br />
 
 ![Running Data Stream](Images/Running%20Data%20Stream.png) 
 </details>
@@ -80,7 +79,6 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
-  <br />
 
 ![Running Data Stream](Images/Import%20Options.png) 
 </details>
@@ -89,7 +87,6 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
-  <br />
 
 ![Running Data Stream](Images/ApplicationAccess.png) 
 </details>
@@ -100,7 +97,6 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
-  <br />
 
 ![Running Data Stream](Images/Application.png) 
 </details>
