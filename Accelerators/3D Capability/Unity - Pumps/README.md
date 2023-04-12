@@ -23,7 +23,6 @@ The data stream is configured using:
 
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
-  <br />
 
 ![Configured Data Stream](Images/Data%20Stream.png)
 </details>
