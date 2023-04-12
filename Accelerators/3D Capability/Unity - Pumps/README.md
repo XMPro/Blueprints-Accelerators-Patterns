@@ -42,7 +42,6 @@ The application page is configured using the following <a href="https://document
 
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
-  <br />
 
 ![Configured Data Stream](Images/Application.png)
 </details>
