@@ -113,4 +113,8 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 
 <br />
 
+## Contributing
+This repository was created by <a href="https://xmpro.com/">XMPro</a>. For assistance or requests, please contact <a href="mailto:support@xmpro.com">support@xmpro.com</a>
+
+## License
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
