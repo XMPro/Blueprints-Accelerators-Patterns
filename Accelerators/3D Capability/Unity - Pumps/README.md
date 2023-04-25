@@ -1,12 +1,12 @@
 # <img alternative="XMPro Logo X" width="30px" src="https://xmks.s3.amazonaws.com/2020/X-Blue.png#gh-light-mode-only"> Unity - Pump
 
-[**◄ Accelerators**](https://github.com/XMPro/Accelerators-Recipes-Blueprints/tree/master/Accelerators)
+[**◄ Accelerators**](https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/Accelerators)
 
-[**◄ Accelerators, Recipes & Blueprints**](https://github.com/XMPro/Accelerators-Recipes-Blueprints)
+[**◄ Blueprints, Accelerators & Patterns**](https://github.com/XMPro/Blueprints-Accelerators-Patterns)
 
 # Files
-* Data Stream: <a href="https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/Accelerators/3D%20Capability/Unity%20-%20Pumps/Data%20Stream/Simulate%20Pump%20Telemetry.xuc" target="_blank">Simulate Pump Telemetry</a>
-* Application: <a href="https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/Accelerators/3D%20Capability/Unity%20-%20Pumps/Application/Unity_Pumps.xapp" target="_blank">Unity Pumps</a>
+* Data Stream: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/3D%20Capability/Unity%20-%20Pumps/Data%20Stream/Simulate%20Pump%20Telemetry.xuc" target="_blank">Simulate Pump Telemetry</a>
+* Application: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/3D%20Capability/Unity%20-%20Pumps/Application/Unity_Pumps.xapp" target="_blank">Unity Pumps</a>
 
 # Description
 ## Data Stream
