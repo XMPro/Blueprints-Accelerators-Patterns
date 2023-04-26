@@ -92,7 +92,7 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 	
 	* Save the Application
 	* Publish the application
-	* Ensure there is data in the applciation and that the Unity model is receveiing its data by hovering over and observing the values
+	* Ensure there is data in the application and that the Unity model is receveiing its data by hovering over and observing the values
 
 <details>
   <summary markdown="span">Expand to view screenshot</summary>

@@ -16,6 +16,14 @@
 </td>
 <td><a href="https://github.com/XMPro/Accelerators-Recipes-Blueprints/tree/master/Accelerators/3D%20Capability/Unity%20-%20Pumps">Unity - Pump</a></td>
 <td>An example of how to generate synthetic data and pass it through a data stream to a Unity model running within an application.</td></tr>
+<tr><td><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/Icons/accelerator_dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/Icons/accelerator.png">
+  <img alt="" src="./Icons/accelerator.png">
+</picture>
+</td>
+<td><a href="https://github.com/XMPro/Accelerators-Recipes-Blueprints/tree/master/Accelerators/3D%20Capability/Unity%20-%20Tanks">Unity - Tanks</a></td>
+<td>An example of how to generate synthetic data and pass it through a data stream to a Unity model running within an application.</td></tr>
 </table>
 
 ## Contributing
