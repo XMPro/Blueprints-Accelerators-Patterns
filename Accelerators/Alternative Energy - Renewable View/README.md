@@ -6,10 +6,10 @@
 
 # Files
 
-* SQL Scripts: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Alternative%20Energy%20-%20Renewable&20View/SQL%20Scripts" target="_blank">[DemoAlternativeEnergyAsset]</a>, <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Alternative%20Energy%20-%20Renewable&20View/SQL%20Scripts" target="_blank">[DemoWorkManagementWindTurbine]</a>
-* Data Stream: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Alternative%20Energy%20-%20Renewable&20View/Data%20Stream/" target="_blank">Renewable Condition Monitoring</a>
-* Recommendation: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Alternative%20Energy%20-%20Renewable&20View/Recommendation/" target="_blank">Gearbox Oil</a>
-* Application: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Alternative%20Energy%20-%20Renewable&20View/Application/" target="_blank">Renewables View</a>
+* SQL Scripts: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Alternative%20Energy%20-%20Renewable&20View/SQL%20Scripts/%5BDemoAlternativeEnergyAsset%5D.sql" target="_blank">[DemoAlternativeEnergyAsset]</a>, <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Alternative%20Energy%20-%20Renewable&20View/SQL%20Scripts/%5BDemoWorkManagementWindTurbine%5D.sql" target="_blank">[DemoWorkManagementWindTurbine]</a>
+* Data Stream: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Alternative%20Energy%20-%20Renewable%20View/Data%20Stream/Renewable%20Condition%20Monitoring.xuc" target="_blank">Renewable Condition Monitoring</a>
+* Recommendation: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Alternative%20Energy%20-%20Renewable%20View/Recommendation/Gearbox%20Oil.xr" target="_blank">Gearbox Oil</a>
+* Application: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Alternative%20Energy%20-%20Renewable%20View/Application/Renewables%20View.xapp" target="_blank">Renewables View</a>
 
 
 # Description
@@ -71,39 +71,21 @@ An example of how to contextualise simulated data, calculate an oil level, run r
 
 The data stream is configured using: 
 
-* <a href="https://xmpro.gitbook.io/event-simulator/" target="_blank"><i>Event Simulator</i></a> <a href="https://documentation.xmpro.com/concepts/agent#listeners" target="_blank">listener</a>
-  
+* <a href="https://xmpro.gitbook.io/event-simulator/" target="_blank"><i>Event Simulator</i></a> <a href="https://documentation.xmpro.com/concepts/agent#listeners" target="_blank">listener</a> - Simulates data for the stream
 * <a href="https://xmpro.gitbook.io/calculated-field/" target="_blank"><i>Calculated Field</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> - Adding a boolean column for the join
-  
-* <a href="https://xmpro.gitbook.io/event-simulator/" target="_blank"><i>SQL</i></a> <a href="https://documentation.xmpro.com/concepts/agent#listeners" target="_blank">listener</a> - read all records from SQL
-  
-* <a href="https://xmpro.gitbook.io/event-simulator/" target="_blank"><i>Join</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> - Contextualize sensor data with data from SQL
-  
-* <a href="https://xmpro.gitbook.io/event-simulator/" target="_blank"><i>Calculated Field</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> - Calculate oil level as `"Low"` or `"High"`
-  
-* <a href="https://xmpro.gitbook.io/event-simulator/" target="_blank"><i>Broadcast</i></a>
-  
-* <a href="https://xmpro.gitbook.io/event-simulator/" target="_blank"><i>Run Recommendation</i></a> <a href="https://documentation.xmpro.com/concepts/agent#action-agents" target="_blank">action agents</a> - Run failure Recommendation Rule
-  
-* <a href="https://xmpro.gitbook.io/event-simulator/" target="_blank"><i>Rounding</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> - Rounding all values
-  
-* <a href="https://xmpro.gitbook.io/event-simulator/" target="_blank"><i>Filter</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> - Filter for all wind turbine assets
-  
-* <a href="https://xmpro.gitbook.io/event-simulator/" target="_blank"><i>XMPro App</i></a> <a href="https://documentation.xmpro.com/concepts/agent#action-agents" target="_blank">action agents</a> - View data in the App Designer
-
-
-<!-- * an <a href="https://xmpro.gitbook.io/event-simulator/" target="_blank"><i>Event Simulator</i></a> <a href="https://documentation.xmpro.com/concepts/agent#listeners" target="_blank">listener</a>
-* a <a href="https://xmpro.gitbook.io/calculated-field/" target="_blank"><i>Calculated Field</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> that is adding a randomized PumpId out of three posibilities as well as a LocationId, due to the synthetic nature of the data this is required.
-* a <a href="https://xmpro.gitbook.io/rounding/" target="_blank"><i>Rounding</i></a> <a href="https://documentation.xmpro.com/concepts/agent#functions" target="_blank">funtion</a> agent to round the data presented to the Application 
-* two <a href="https://xmpro.gitbook.io/xmpro-app/" target="_blank"><i>XMPro App</i></a> <a href="https://documentation.xmpro.com/concepts/agent#action-agents" target="_blank">action agents</a>
-	* the first <i>Send to App Designer Single</i> is configured with a cache of 1 to be used on the overlay
-	* the second <i>Send to App Designer</i> is configured with a cache of 20 to be used on the charts within the Application
-* a <a href="https://xmpro.gitbook.io/run-recommendation" target="_blank"><i>Run Recommendation</i></a> agent to make this data available to the <a href="https://xmpro.com/prescriptive-recommendations/" target="_blank">XMPro recommendation</a> engine -->
+* <a href="https://xmpro.gitbook.io/azure-sql/" target="_blank"><i>SQL</i></a> <a href="https://documentation.xmpro.com/concepts/agent#listeners" target="_blank">listener</a> - read all records from SQL
+* <a href="https://xmpro.gitbook.io/join/" target="_blank"><i>Join</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> - Contextualize sensor data with data from SQL
+* <a href="https://xmpro.gitbook.io/calculated-field/" target="_blank"><i>Calculated Field</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> - Calculate oil level as `"Low"` or `"High"`
+* <a href="https://xmpro.gitbook.io/broadcast/" target="_blank"><i>Broadcast</i></a> - Broadcast data to other agents
+* <a href="https://xmpro.gitbook.io/run-recommendation/" target="_blank"><i>Run Recommendation</i></a> <a href="https://documentation.xmpro.com/concepts/agent#action-agents" target="_blank">action agents</a> - Run failure Recommendation Rule
+* <a href="https://xmpro.gitbook.io/rounding/" target="_blank"><i>Rounding</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> - Rounding all values
+* <a href="https://xmpro.gitbook.io/filter/" target="_blank"><i>Filter</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> - Filter for all wind turbine assets
+* <a href="https://xmpro.gitbook.io/xmpro-app/" target="_blank"><i>XMPro App</i></a> <a href="https://documentation.xmpro.com/concepts/agent#action-agents" target="_blank">action agents</a> - View data in the App Designer
 
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
 
-![Configured Data Stream](Images/Data%20Stream.png)
+![Configured Data Stream](Images/DataStream.png)
 </details>
 
 <!-- blank line -->
@@ -145,59 +127,47 @@ An example of how to vizualize the synthetic data passed by the data stream to a
 ### Landing Page
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
 
-* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/unity-1" target="_blank"><i>Esri Map</i></a> to render the 3D globe and visualize the assets at their geographic coordinates
-  
-* <a href="https://documentation.xmpro.com/blocks-toolbox/basic/data-grid"><i>Chart</i></a> to visualize the historical count of equiment requiring maintenance
-  
-* <a href="https://documentation.xmpro.com/blocks-toolbox/layout/box-and-data-repeater-box" target="_blank"><i>Recommendations</i></a> to view current open recommendations for all assets
-
-* <a href="https://documentation.xmpro.com/blocks-toolbox/layout/box-and-data-repeater-box" target="_blank"><i>Indicator</i></a> to visually inspect the active state of the assets 
+* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/esri-map" target="_blank"><i>Esri Map</i></a> to render the 3D globe and visualize the assets at their geographic coordinates
+* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart"><i>Chart</i></a> to visualize the historical count of equiment requiring maintenance
+* <a href="https://documentation.xmpro.com/blocks-toolbox/recommendations/recommendations" target="_blank"><i>Recommendations</i></a> to view current open recommendations for all assets
+* <a href="https://documentation.xmpro.com/blocks-toolbox/basic/indicator" target="_blank"><i>Indicator</i></a> to visually inspect the active state of the assets 
 
 	<details>
 		<summary markdown="span">Expand to view screenshot</summary>
 
-	![Configured Data Stream](Images/Application_01.png)
+	![Application_01](Images/Application_01.png)
 	</details>
 
 ### Asset View
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
 
-* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/unity-1" target="_blank"><i>Chart</i></a> to render the 3D globe and visualize the assets at their geographic coordinates
-
-* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/unity-1" target="_blank"><i>Pie Chart</i></a> to render the 3D globe and visualize the assets at their geographic coordinates
-
-* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/unity-1" target="_blank"><i>Indicator</i></a> to render the 3D globe and visualize the assets at their geographic coordinates
-  
-* <a href="https://documentation.xmpro.com/blocks-toolbox/basic/data-grid"><i>Accordion</i></a> to allow the raw data to be viewed
-  
-* <a href="https://documentation.xmpro.com/blocks-toolbox/layout/box-and-data-repeater-box" target="_blank"><i>Recommendation</i></a> to illustrate using a background image where the recommendations would appear 
+* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart" target="_blank"><i>Chart</i></a> to render the 3D globe and visualize the assets at their geographic coordinates
+* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/pie-chart" target="_blank"><i>Pie Chart</i></a> to render the 3D globe and visualize the assets at their geographic coordinates
+* <a href="https://documentation.xmpro.com/blocks-toolbox/basic/indicator" target="_blank"><i>Indicator</i></a> to render the 3D globe and visualize the assets at their geographic coordinates
+* <a href="https://documentation.xmpro.com/blocks-toolbox/layout/accordion"><i>Accordion</i></a> to allow the raw data to be viewed
+* <a href="https://documentation.xmpro.com/blocks-toolbox/recommendations/recommendations" target="_blank"><i>Recommendations</i></a> to illustrate using a background image where the recommendations would appear 
 
 	<details>
 	<summary markdown="span">Expand to view screenshot</summary>
 
-	![Configured Data Stream](Images/Application_03.png)
+	![Application_03](Images/Application_03.png)
 	</details>
 
 
 ### Asset Drilldown
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
 
-* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/unity-1" target="_blank"><i>Chart</i></a> to display the time profil for the last 24 hours
-  
-* <a href="https://documentation.xmpro.com/blocks-toolbox/basic/data-grid"><i>Circular Gauge</i></a> showing the effective utilization percentage
-  
-* <a href="https://documentation.xmpro.com/blocks-toolbox/layout/box-and-data-repeater-box" target="_blank"><i>Indicator</i></a> presenting the status of hazard risk
-
-* <a href="https://documentation.xmpro.com/blocks-toolbox/layout/box-and-data-repeater-box" target="_blank"><i>Recommendations</i></a> to view current open recommendations for current asset
-
-* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/unity-1" target="_blank"><i>Chart</i></a> to show window of data for Wind Speed
-
-* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/unity-1" target="_blank"><i>Chart</i></a> to show window of data for Gearbox Oil
+* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart" target="_blank"><i>Chart</i></a> to display the time profil for the last 24 hours
+* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/circular-gauge"><i>Circular Gauge</i></a> showing the effective utilization percentage
+* <a href="https://documentation.xmpro.com/blocks-toolbox/basic/indicator" target="_blank"><i>Indicator</i></a> presenting the status of hazard risk
+* <a href="https://documentation.xmpro.com/blocks-toolbox/recommendations/recommendations" target="_blank"><i>Recommendations</i></a> to view current open recommendations for current asset
+* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart" target="_blank"><i>Chart</i></a> to show window of data for Wind Speed
+* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart" target="_blank"><i>Chart</i></a> to show window of data for Gearbox Oil
 
 	<details>
 	<summary markdown="span">Expand to view screenshot</summary>
 
-	![Configured Data Stream](Images/Application_02.png)
+	![Application_02](Images/Application_02.png)
 	</details>
 
 
@@ -206,13 +176,9 @@ Import Password: `Dem0nstr@t1on`
 
 Create/confirm the following variables
   * App Designer URL
-  
   * App Designer Integration Key (Encrypted)
-  
   * SQL Server
-  
   * SQL Username
-  
   * SQL Password (Encrypted)
 
 For instructions on how to import <a href="https://documentation.xmpro.com/how-tos/import-export-and-clone#importing">click here</a>
@@ -242,7 +208,7 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 <details>
   <summary markdown="span">Expand to view screenshot of a successfully running data stream with live data</summary>
 
-![Running Data Stream](Images/Running%20Data%20Stream.png) 
+![Running Data Stream](Images/DataStream_Running.png) 
 </details>
 
 
@@ -252,12 +218,19 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 
     * Import the including form if it doesn't already exist
 
+<details>
+  <summary markdown="span">Expand to view screenshot</summary>
+
+![Recommendation Import](Images/Recommendation_Import.png) 
+
+</details>
+
     * Assign Access to others as required
 
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
 
-![Recommendation Import](Images/Recommendation_Import.png) 
+![Recommendation Access](Images/Recommendation_Access.png) 
 
 </details>
 
@@ -276,7 +249,7 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
 
-![Running Data Stream](Images/ApplicationAccess.png) 
+![Application Access](Images/Application_Access.png) 
 </details>
 
 	* Edit the Application
@@ -286,11 +259,11 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 	* Publish the application
 	* Ensure there is data in the applciation by checking each graph, status and gauge.
 
-<details>
+<!-- <details>
   <summary markdown="span">Expand to view screenshot</summary>
 
-![Running Data Stream](Images/Application.png) 
-</details>
+![Application](Images/Application.png) 
+</details> -->
 
 ## Contributing
 This repository was created by <a href="https://xmpro.com/">XMPro</a>. For assistance or requests, please contact <a href="mailto:support@xmpro.com">support@xmpro.com</a>
