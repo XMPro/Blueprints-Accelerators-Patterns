@@ -143,7 +143,7 @@ The application page is configured using the following <a href="https://document
 
 * <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart" target="_blank"><i>Chart</i></a> a horizontal bar graph to display assets with open alerts
 * <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/pie-chart" target="_blank"><i>Pie Chart</i></a> to display the current work order status for the asset
-* <a href="https://documentation.xmpro.com/blocks-toolbox/basic/indicator" target="_blank"><i>Indicator</i></a> to render the 3D globe and visualize the assets at their geographic coordinates
+* <a href="https://documentation.xmpro.com/blocks-toolbox/basic/indicator" target="_blank"><i>Indicator</i></a> to visualize the status of each asset
 * <a href="https://documentation.xmpro.com/blocks-toolbox/layout/accordion"><i>Accordion</i></a> to allow the raw data to be viewed
 * <a href="https://documentation.xmpro.com/blocks-toolbox/recommendations/recommendations" target="_blank"><i>Recommendations</i></a> to view current open recommendations for all assets
 
