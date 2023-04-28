@@ -37,7 +37,7 @@
   <img alt="" src="./Icons/accelerator.png">
 </picture>
 </td>
-<td><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/Accelerators/Alternative%20Energy%20-%20Renewable%20View">Alternative Energy - Renewable View</a></td>
+<td><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/Accelerators/Alternative%20Energy%20-%20Renewable%20View">Renewable View</a></td>
 <td>The digital twin app offers real-time monitoring of renewable energy assets, providing valuable insights and optimizing operations for peak performance and sustainability.</td></tr>
 </table>
 
