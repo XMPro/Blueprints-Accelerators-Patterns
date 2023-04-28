@@ -26,8 +26,6 @@
 <td>An example of how to generate synthetic data and pass it through a data stream to a Unity model running within an application.</td></tr>
 </table>
 
-<br />
-
 ## Alternative Energy
 <table>
 <tr><td width="48px"> Type </td> <td width="240px"> Name </td><td> Description </td></tr>
