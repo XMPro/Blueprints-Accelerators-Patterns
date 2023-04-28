@@ -26,6 +26,21 @@
 <td>An example of how to generate synthetic data and pass it through a data stream to a Unity model running within an application.</td></tr>
 </table>
 
+<br />
+
+## Alternative Energy
+<table>
+<tr><td width="48px"> Type </td> <td width="240px"> Name </td><td> Description </td></tr>
+<tr><td><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/Icons/accelerator_dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/Icons/accelerator.png">
+  <img alt="" src="./Icons/accelerator.png">
+</picture>
+</td>
+<td><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/Accelerators/Alternative%20Energy%20-%20Renewable%20View">Alternative Energy - Renewable View</a></td>
+<td>The digital twin app offers real-time monitoring of renewable energy assets, providing valuable insights and optimizing operations for peak performance and sustainability.</td></tr>
+</table>
+
 ## Contributing
 This repository was created by <a href="https://xmpro.com/">XMPro</a>. For assistance or requests, please contact <a href="mailto:support@xmpro.com">support@xmpro.com</a>
 
