@@ -6,7 +6,7 @@
 
 # Files
 
-* SQL Scripts: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Alternative%20Energy%20-%20Renewable&20View/SQL%20Scripts/%5BDemoAlternativeEnergyAsset%5D.sql" target="_blank">[DemoAlternativeEnergyAsset]</a>, <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Alternative%20Energy%20-%20Renewable&20View/SQL%20Scripts/%5BDemoWorkManagementWindTurbine%5D.sql" target="_blank">[DemoWorkManagementWindTurbine]</a>
+* SQL Scripts: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Alternative%20Energy%20-%20Renewable%20View/SQL%20Scripts/%5BDemoAlternativeEnergyAsset%5D.sql" target="_blank">[DemoAlternativeEnergyAsset]</a>, <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Alternative%20Energy%20-%20Renewable%20View/SQL%20Scripts/%5BDemoWorkManagementWindTurbine%5D.sql" target="_blank">[DemoWorkManagementWindTurbine]</a>
 * Data Stream: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Alternative%20Energy%20-%20Renewable%20View/Data%20Stream/Renewable%20Condition%20Monitoring.xuc" target="_blank">Renewable Condition Monitoring</a>
 * Recommendation: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Alternative%20Energy%20-%20Renewable%20View/Recommendation/Gearbox%20Oil.xr" target="_blank">Gearbox Oil</a>
 * Application: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Alternative%20Energy%20-%20Renewable%20View/Application/Renewables%20View.xapp" target="_blank">Renewables View</a>
@@ -21,12 +21,12 @@
 
 ### DemoAlternativeEnergyAsset
 
-A list of assets, thier location and other details.
+A list of assets, their location and other details.
 
 <details>
 <summary>Columns</summary>
 
-```SQL
+```
 [ID]
 ,[AssetNo]
 ,[AssetType]
@@ -48,7 +48,7 @@ Work management information.
 <details>
 <summary>Columns</summary>
 
-```SQL
+```
 [ID]
 ,[AssetNo]
 ,[WRNo]
@@ -67,7 +67,7 @@ Work management information.
 
 ## Data Stream
 
-An example of how to contextualise simulated data, calculate an oil level, run recommendations and output the wind turbine data to the Application Designer.
+An example of how to contextualize simulated data, calculate an oil level, run recommendations and output the wind turbine data to the Application Designer.
 
 The data stream is configured using: 
 
@@ -100,21 +100,21 @@ The recommendation is configured using two rules:
 **Gearbox Oil Level**
 + Checks if the Wind Turbine assets have a low gearbox oil level.
 
-	<details>
-	<summary markdown="span">Expand to view screenshot</summary>
+<details>
+<summary markdown="span">Expand to view screenshot</summary>
 
-	![Reccommendation_01](Images/Recommendation_01.png)
-	</details>
+![Reccommendation_01](Images/Recommendation_01.png)
+</details>
 
 **Gearbox Oil Viscosity**
 + Checks if the Wind Turbine assets have a high gearbox oil viscosity.
 
 
-	<details>
-	<summary markdown="span">Expand to view screenshot</summary>
+<details>
+<summary markdown="span">Expand to view screenshot</summary>
 
-	![Reccommendation_01](Images/Recommendation_02.png)
-	</details>
+![Reccommendation_01](Images/Recommendation_02.png)
+</details>
 
 <!-- blank line -->
 ----
@@ -132,26 +132,26 @@ The application page is configured using the following <a href="https://document
 * <a href="https://documentation.xmpro.com/blocks-toolbox/recommendations/recommendations" target="_blank"><i>Recommendations</i></a> to view current open recommendations for all assets
 * <a href="https://documentation.xmpro.com/blocks-toolbox/basic/indicator" target="_blank"><i>Indicator</i></a> to visually inspect the active state of the assets 
 
-	<details>
-		<summary markdown="span">Expand to view screenshot</summary>
+<details>
+	<summary markdown="span">Expand to view screenshot</summary>
 
-	![Application_01](Images/Application_01.png)
-	</details>
+![Application_01](Images/Application_01.png)
+</details>
 
 ### Asset View
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
 
-* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart" target="_blank"><i>Chart</i></a> to render the 3D globe and visualize the assets at their geographic coordinates
-* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/pie-chart" target="_blank"><i>Pie Chart</i></a> to render the 3D globe and visualize the assets at their geographic coordinates
+* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart" target="_blank"><i>Chart</i></a> a horizontal bar graph to display assets with open alerts
+* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/pie-chart" target="_blank"><i>Pie Chart</i></a> to display the current work order status for the asset
 * <a href="https://documentation.xmpro.com/blocks-toolbox/basic/indicator" target="_blank"><i>Indicator</i></a> to render the 3D globe and visualize the assets at their geographic coordinates
 * <a href="https://documentation.xmpro.com/blocks-toolbox/layout/accordion"><i>Accordion</i></a> to allow the raw data to be viewed
-* <a href="https://documentation.xmpro.com/blocks-toolbox/recommendations/recommendations" target="_blank"><i>Recommendations</i></a> to illustrate using a background image where the recommendations would appear 
+* <a href="https://documentation.xmpro.com/blocks-toolbox/recommendations/recommendations" target="_blank"><i>Recommendations</i></a> to view current open recommendations for all assets
 
-	<details>
-	<summary markdown="span">Expand to view screenshot</summary>
+<details>
+<summary markdown="span">Expand to view screenshot</summary>
 
-	![Application_03](Images/Application_03.png)
-	</details>
+![Application_03](Images/Application_03.png)
+</details>
 
 
 ### Asset Drilldown
@@ -164,11 +164,11 @@ The application page is configured using the following <a href="https://document
 * <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart" target="_blank"><i>Chart</i></a> to show window of data for Wind Speed
 * <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart" target="_blank"><i>Chart</i></a> to show window of data for Gearbox Oil
 
-	<details>
-	<summary markdown="span">Expand to view screenshot</summary>
+<details>
+<summary markdown="span">Expand to view screenshot</summary>
 
-	![Application_02](Images/Application_02.png)
-	</details>
+![Application_02](Images/Application_02.png)
+</details>
 
 
 # How to Import
@@ -186,9 +186,9 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 
 ## 1. Run SQL Scripts
 
-	* Execute scripts in SQL Server
+	* Execute the scripts in SQL Server
   
-	* Ensure data is succesfully entered into database
+	* Ensure the data is succesfully loaded into the database
 
 
 ## 2. Import the data stream - <i><b>Renewable Condition Monitoring.xuc</b></i>
@@ -196,9 +196,7 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
     * Assign Access to others as required
 	
 	* Edit the XMPro agent "View Data" and ensure the URL and Integration Key are selected
-
 	* Edit the Recommendation agent "Run Failure Recommendation Rule" and ensure the URL and Integration Key are selected
-  
 	* Edit the Azure SQL agent "Read all Records" and ensure the Server Instance, Username and Password fields are filled in correctly
 
 	* Click Apply and save the data stream (Click Save on the Action Bar, or CTRL + S on the keyboard)
@@ -213,8 +211,6 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 
 
 ## 3. Import the Recommendation - <i><b>Gearbox Oil.xr</b></i>
-
-	* When importing the recommendation make sure to map the data source on the import wizard to the above data stream that was imported
 
     * Import the including form if it doesn't already exist
 
@@ -253,8 +249,11 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 </details>
 
 	* Edit the Application
-    	* Select all recommendation elements on all pages
-        	* Tick "Oil" in Block Properties > Behavior
+    	* Select all recommendation elements on all pages and Tick "Oil" in Block Properties > Behavior:
+        	* Landing Page (top-right)
+        	* Asset View (bottom-right)
+        	* Asset Drilldown (center-left)
+
 	* Save the Application
 	* Publish the application
 	* Ensure there is data in the applciation by checking each graph, status and gauge.
