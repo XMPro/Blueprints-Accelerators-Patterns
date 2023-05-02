@@ -77,10 +77,10 @@ The data stream is configured using:
 * <a href="https://xmpro.gitbook.io/join/" target="_blank"><i>Join</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> - Contextualize sensor data with data from SQL
 * <a href="https://xmpro.gitbook.io/calculated-field/" target="_blank"><i>Calculated Field</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> - Calculate oil level as `"Low"` or `"High"`
 * <a href="https://xmpro.gitbook.io/broadcast/" target="_blank"><i>Broadcast</i></a> - Broadcast data to other agents
-* <a href="https://xmpro.gitbook.io/run-recommendation/" target="_blank"><i>Run Recommendation</i></a> <a href="https://documentation.xmpro.com/concepts/agent#action-agents" target="_blank">action agents</a> - Run failure Recommendation Rule
+* <a href="https://xmpro.gitbook.io/run-recommendation/" target="_blank"><i>Run Recommendation</i></a> <a href="https://documentation.xmpro.com/concepts/agent#action-agents" target="_blank">action agent</a> - Run failure Recommendation Rule
 * <a href="https://xmpro.gitbook.io/rounding/" target="_blank"><i>Rounding</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> - Rounding all values
 * <a href="https://xmpro.gitbook.io/filter/" target="_blank"><i>Filter</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> - Filter for all wind turbine assets
-* <a href="https://xmpro.gitbook.io/xmpro-app/" target="_blank"><i>XMPro App</i></a> <a href="https://documentation.xmpro.com/concepts/agent#action-agents" target="_blank">action agents</a> - View data in the App Designer
+* <a href="https://xmpro.gitbook.io/xmpro-app/" target="_blank"><i>XMPro App</i></a> <a href="https://documentation.xmpro.com/concepts/agent#action-agents" target="_blank">action agent</a> - View data in the App Designer
 
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
@@ -157,7 +157,7 @@ The application page is configured using the following <a href="https://document
 ### Asset Drilldown
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
 
-* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart" target="_blank"><i>Chart</i></a> to display the time profil for the last 24 hours
+* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart" target="_blank"><i>Chart</i></a> to display the time profile for the last 24 hours
 * <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/circular-gauge"><i>Circular Gauge</i></a> showing the effective utilization percentage
 * <a href="https://documentation.xmpro.com/blocks-toolbox/basic/indicator" target="_blank"><i>Indicator</i></a> presenting the status of hazard risk
 * <a href="https://documentation.xmpro.com/blocks-toolbox/recommendations/recommendations" target="_blank"><i>Recommendations</i></a> to view current open recommendations for current asset
@@ -191,7 +191,7 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 	* Ensure the data is succesfully loaded into the database
 
 
-## 2. Import the data stream - <i><b>Renewable Condition Monitoring.xuc</b></i>
+## 2. Import the Data Stream
 
     * Assign Access to others as required
 	
@@ -210,7 +210,7 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 </details>
 
 
-## 3. Import the Recommendation - <i><b>Gearbox Oil.xr</b></i>
+## 3. Import the Recommendation
 
     * Import the including form if it doesn't already exist
 
@@ -230,7 +230,7 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 
 </details>
 
-## 4. Import the Application - <i><b>Renewables View.xapp</b></i>
+## 4. Import the Application
 
 	* When importing the application make sure to map the data source on the import wizard to the above data stream that was imported
 
