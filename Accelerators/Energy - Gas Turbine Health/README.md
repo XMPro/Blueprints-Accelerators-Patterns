@@ -1,12 +1,3 @@
-<style>
-.todo {
-  background-color: rgba(255, 0, 0, 0.25);
-  border-radius: 10px;
-  padding: 10px;
-}
-</style>
-
-
 # <img alternative="XMPro Logo X" width="30px" src="https://xmks.s3.amazonaws.com/2020/X-Blue.png#gh-light-mode-only"> Energy - Gas Turbine Health 
 
 [**◄ Accelerators**](https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/Accelerators)
@@ -30,11 +21,6 @@
 ### DemoGasTurbine
 
 A list of assets, their location and other details.
-
-
-<!--  <div class="todo">
-<p>TODO</p>
-</div>-->
 
 <details>
 <summary>Columns</summary>
@@ -78,19 +64,14 @@ An example of how to contextualize simulated data, broadcast the data, run recom
 
 The data stream is configured using: 
 
-* <a href="https://xmpro.gitbook.io/event-simulator/" target="_blank"><i>Event Simulator</i></a> <a href="https://documentation.xmpro.com/concepts/agent#listeners" target="_blank">listener</a> - Simulates data for the stream
-
-* <a href="https://xmpro.gitbook.io/calculated-field/" target="_blank"><i>Calculated Field</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> - Adding asset Ids
-
-* <a href="https://xmpro.gitbook.io/broadcast/" target="_blank"><i>Broadcast</i></a> - Broadcast data to other agents
-
-* <a href="https://xmpro.gitbook.io/xmpro-app/" target="_blank"><i>XMPro App</i></a> <a href="https://documentation.xmpro.com/concepts/agent#action-agents" target="_blank">action agent</a> - View data in the App Designer as a chart
-
-* <a href="https://xmpro.gitbook.io/run-recommendation/" target="_blank"><i>Run Recommendation</i></a> <a href="https://documentation.xmpro.com/concepts/agent#action-agents" target="_blank">action agent</a> - Run failure Recommendation Rule
-
-* <a href="https://xmpro.gitbook.io/rounding/" target="_blank"><i>Rounding</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> - Rounding all values
-
-* <a href="https://xmpro.gitbook.io/xmpro-app/" target="_blank"><i>XMPro App</i></a> <a href="https://documentation.xmpro.com/concepts/agent#action-agents" target="_blank">action agent</a> - View data in the App Designer
+* an <a href="https://xmpro.gitbook.io/event-simulator/" target="_blank"><i>Event Simulator</i></a> <a href="https://documentation.xmpro.com/concepts/agent#listeners" target="_blank">listener</a> - Simulates data for the stream
+* a <a href="https://xmpro.gitbook.io/calculated-field/" target="_blank"><i>Calculated Field</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> - Adding asset Ids
+* a <a href="https://xmpro.gitbook.io/broadcast/" target="_blank"><i>Broadcast</i></a> - Broadcast data to other agents
+* a <a href="https://xmpro.gitbook.io/run-recommendation/" target="_blank"><i>Run Recommendation</i></a> <a href="https://documentation.xmpro.com/concepts/agent#action-agents" target="_blank">action agent</a> - Run failure Recommendation Rule
+* a <a href="https://xmpro.gitbook.io/rounding/" target="_blank"><i>Rounding</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> - Rounding all values
+* two <a href="https://xmpro.gitbook.io/xmpro-app/" target="_blank"><i>XMPro App</i></a> <a href="https://documentation.xmpro.com/concepts/agent#action-agents" target="_blank">action agents</a>:
+  * The first *Send to App Designer for Chart* is configured with a cache of 20 for the historic data.
+  * The second *Send to App* is configured with a cache of 1 for live status.
 
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
@@ -154,8 +135,9 @@ An overview of sites that drilldown to individual assets providing real-time dat
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
 
 * <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/pie-chart" target="_blank"><i>Pie Chart</i></a> to display the failure counts for all sites
-* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart" target="_blank"><i>Chart</i></a> a bar graph to display flaring events
-* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart" target="_blank"><i>Chart</i></a> a bar graph to display health scores in a histogram
+* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart" target="_blank"><i>Charts</i></a> 
+  * a bar graph to display flaring events
+  * a bar graph to display health scores in a histogram
 * <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/circular-gauge"><i>Circular Gauge</i></a> showing the overall health of the site
 
 <details>
@@ -185,8 +167,9 @@ The application page is configured using the following <a href="https://document
 
 * <a href="https://documentation.xmpro.com/blocks-toolbox/basic/text" target="_blank"><i>Text</i></a> to display the live data
 * <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart" target="_blank"><i>Chart</i></a> to display a window of live data
-* <a href="https://documentation.xmpro.com/blocks-toolbox/basic/indicator" target="_blank"><i>Indicator</i></a> presenting the status of hazard risk
-* <a href="https://documentation.xmpro.com/blocks-toolbox/basic/indicator" target="_blank"><i>Indicator</i></a> presenting the status of component risk
+* <a href="https://documentation.xmpro.com/blocks-toolbox/basic/indicator" target="_blank"><i>Indicators</i></a> 
+  * presenting the status of hazard risk
+  * presenting the status of component risk
 * <a href="https://documentation.xmpro.com/blocks-toolbox/recommendations/recommendations" target="_blank"><i>Recommendations</i></a> to view current open recommendations for all assets
 * <a href="https://documentation.xmpro.com/blocks-toolbox/basic/data-grid" target="_blank"><i>Data Grid</i></a> displaying the latest work orders
 
@@ -237,7 +220,7 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 
 	* Execute the scripts in SQL Server
   
-	* Ensure the data is succesfully loaded into the database
+	* Ensure the data is successfully loaded into the database
 
 
 ## 2. Import the Data Stream
@@ -245,7 +228,7 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
     * Assign Access to others as required
 	
 	* Edit the XMPro agent "Send to App Designer for chart" and ensure the URL and Integration Key are selected
-	* Edit the XMPro agent "Semd to App" and ensure the URL and Integration Key are selected
+	* Edit the XMPro agent "Send to App" and ensure the URL and Integration Key are selected
 	* Edit the Recommendation agent "Run Recommendation" and ensure the URL and Integration Key are selected
 
 	* Click Apply and save the data stream (Click Save on the Action Bar, or CTRL + S on the keyboard)
@@ -282,6 +265,7 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 ## 4. Import the Application
 
 	* When importing the application make sure to map the data source on the import wizard to the above data stream that was imported
+	* Confirm the connections are configured correctly in the App Data tab and in each Page Data tab
 
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
@@ -305,7 +289,7 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 
 	* Save the Application
 	* Publish the application
-	* Ensure there is data in the applciation by checking each graph, status and gauge.
+	* Ensure there is data in the application by checking each graph, status and gauge.
 
 
 ## Contributing

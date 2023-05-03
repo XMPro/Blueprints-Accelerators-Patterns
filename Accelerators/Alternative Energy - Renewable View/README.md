@@ -157,12 +157,13 @@ The application page is configured using the following <a href="https://document
 ### Asset Drilldown
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
 
-* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart" target="_blank"><i>Chart</i></a> to display the time profile for the last 24 hours
 * <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/circular-gauge"><i>Circular Gauge</i></a> showing the effective utilization percentage
 * <a href="https://documentation.xmpro.com/blocks-toolbox/basic/indicator" target="_blank"><i>Indicator</i></a> presenting the status of hazard risk
 * <a href="https://documentation.xmpro.com/blocks-toolbox/recommendations/recommendations" target="_blank"><i>Recommendations</i></a> to view current open recommendations for current asset
-* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart" target="_blank"><i>Chart</i></a> to show window of data for Wind Speed
-* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart" target="_blank"><i>Chart</i></a> to show window of data for Gearbox Oil
+* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart" target="_blank"><i>Charts</i></a> 
+  * to show window of data for Wind Speed
+  * to show window of data for Gearbox Oil
+  * to display the time profile for the last 24 hours
 
 <details>
 <summary markdown="span">Expand to view screenshot</summary>
@@ -233,6 +234,7 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 ## 4. Import the Application
 
 	* When importing the application make sure to map the data source on the import wizard to the above data stream that was imported
+	* Confirm the connections are configured correctly in the App Data tab and in each Page Data tab
 
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
