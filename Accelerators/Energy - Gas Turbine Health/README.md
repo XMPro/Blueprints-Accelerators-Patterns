@@ -282,7 +282,11 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 </details>
 
 	* Edit the Application
-    	* Select all recommendation elements on all pages and Tick "Bearing Alerts", "Motor Winding Temperature" & "Dry Gas Seal System" in Block Properties > Behavior:
+    	* Select all recommendation elements on all pages and tick:
+    	*  "Bearing Alerts"
+    	*  "Motor Winding Temperature" 
+    	*  "Dry Gas Seal System" 
+      in Block Properties > Behavior:
         	* Landing Page (right)
         	* Site View (bottom-left)
         	* Gas Turbine (bottom-right)

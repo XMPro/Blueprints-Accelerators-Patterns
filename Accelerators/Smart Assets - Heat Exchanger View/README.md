@@ -180,11 +180,9 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 </details>
 
 	* Edit the Application
-    	* Select all recommendation elements on all pages and Tick "Oil" in Block Properties > Behavior:
-        	* Landing Page (top-right)
-        	* Asset View (bottom-right)
-        	* Asset Drilldown (center-left)
-
+    	* Select recommendation elements and tick "Heat Exchanger Fouling" in Block Properties > Behavior:
+        	* Landing Page (centre-right)
+  
 	* Save the Application
 	* Publish the application
 	* Ensure there is data in the applciation by checking each graph, status and gauge.
