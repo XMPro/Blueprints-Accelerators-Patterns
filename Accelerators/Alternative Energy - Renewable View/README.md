@@ -188,7 +188,6 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 ## 1. Run SQL Scripts
 
 	* Execute the scripts in SQL Server
-  
 	* Ensure the data is succesfully loaded into the database
 
 
