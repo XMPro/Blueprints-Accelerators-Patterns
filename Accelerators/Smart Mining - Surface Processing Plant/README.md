@@ -17,20 +17,39 @@
 ## SQL Scripts
 
 
-### SQLSCRIPTFILENAMEHERE
+### [DemoSTPPIantMapping].sql
 
-What's it do goes here
+TODO What's it do goes here
 
 <details>
 <summary>Columns</summary>
 
 ```
 [ID]
-,[Date]
-,[UCoefficient]
+,[AssetNo]
+,[Active]
+,[X]
+,[Y]
 ```
 </details>
 
+### [DemoWorkManagementPump].sql
+
+TODO What's it do goes here
+
+<details>
+<summary>Columns</summary>
+
+```
+[ID] 
+,[AssetNo]
+,[WRNo]
+,[WONo]
+,[Title]
+,[WOStatus]
+,[Date]
+```
+</details>
 
 <!-- blank line -->
 ----
