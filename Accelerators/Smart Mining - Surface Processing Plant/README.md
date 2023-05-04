@@ -11,3 +11,40 @@
 * Recommendation: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Mining%20-%20Surface%20Processing%20Plant/Recommendation/Heat%20Exchanger%20Fouling.xr" target="_blank">Rec Name</a>
 * Application: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Mining%20-%20Surface%20Processing%20Plant/Application/Surface%20Processing%20Plant.xapp" target="_blank">Surface Processing Plant</a>
 
+# Description
+
+
+## SQL Scripts
+
+
+### SQLSCRIPTFILENAMEHERE
+
+What's it do goes here
+
+<details>
+<summary>Columns</summary>
+
+```
+[ID]
+,[Date]
+,[UCoefficient]
+```
+</details>
+
+
+<!-- blank line -->
+----
+<!-- blank line -->
+
+
+## Data Stream
+Processing Plant Image Map View
+Stream to form and pass the data to the image map view to indicate live status of each asset
+
+The data stream is configured using: 
+
+* <a href="https://xmpro.gitbook.io/azure-sql/" target="_blank"><i>Azure SQL</i></a> <a href="https://documentation.xmpro.com/concepts/agent#listeners" target="_blank">context provider</a> - Allows you to read and output the entire contents of a table to the Data Stream for contextual data
+* <a href="https://xmpro.gitbook.io/read-recommendation/" target="_blank"><i>Read Recommendation</i></a> <a href="https://documentation.xmpro.com/concepts/agent#action-agents" target="_blank">action agent</a> - Read Recommendation
+* <a href="https://xmpro.gitbook.io/join/" target="_blank"><i>Join</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> Joins streams
+* <a href="https://xmpro.gitbook.io/calculated-field" target="_blank"><i>Calculated Field</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> Create new column values by applying expressions
+* <a href="https://xmpro.gitbook.io/calculated-field" target="_blank"><i>Agent</i></a> <a href="https://documentation.xmpro.com/concepts/agent" target="_blank">agent</a> A reusable object which forms the building block of a Data Stream
