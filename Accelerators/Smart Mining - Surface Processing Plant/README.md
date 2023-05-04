@@ -48,3 +48,23 @@ The data stream is configured using:
 * <a href="https://xmpro.gitbook.io/join/" target="_blank"><i>Join</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> Joins streams
 * <a href="https://xmpro.gitbook.io/calculated-field" target="_blank"><i>Calculated Field</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> Create new column values by applying expressions
 * <a href="https://xmpro.gitbook.io/calculated-field" target="_blank"><i>Agent</i></a> <a href="https://documentation.xmpro.com/concepts/agent" target="_blank">agent</a> A reusable object which forms the building block of a Data Stream
+
+<details>
+  <summary markdown="span">Expand to view screenshot</summary>
+
+![Configured Data Stream](Images/DataStream.png)
+</details>
+
+<!-- blank line -->
+----
+<!-- blank line -->
+
+
+## Recommendation
+
+The recommendation is configured using the rule: 
+
+**Amp Trip**
+
+**Discharge Pressure**
+
