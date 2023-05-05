@@ -21,7 +21,7 @@
 
 ### [DemoSTPPIantMapping].sql
 
-TODO What's it do goes here
+Sets up plant image mapping data table
 
 <details>
 <summary>Columns</summary>
@@ -37,7 +37,7 @@ TODO What's it do goes here
 
 ### [DemoWorkManagementPump].sql
 
-TODO What's it do goes here
+Sets up pump management data table
 
 <details>
 <summary>Columns</summary>
@@ -162,9 +162,17 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
     * Import the included forms if they don't already exist
 
 <details>
-  <summary markdown="span">Expand to view screenshot</summary>
+  <summary markdown="span">Expand to view the Amp Trip Import</summary>
 
-![Recommendation Import](Images/Recommendation_Import.png) 
+![RecommendationImport_01](Images/AmpTripImport.png) 
+
+</details>
+
+
+<details>
+  <summary markdown="span">Expand to view Discharge Pressure Import</summary>
+
+![RecommendationImport_02](Images/DischargePressureImport.png) 
 
 </details>
 
