@@ -86,6 +86,19 @@ The data stream is configured using:
 The recommendation is configured using the rule: 
 
 **Amp Trip**
++ Checks if the Amperage is outside the threshold
+
+<details>
+<summary markdown="span">Expand to view screenshot</summary>
+
+![Recommendation_01](Images/Recommendation_01.png)
+</details>
 
 **Discharge Pressure**
++ Checks if the Discharge Pressure is below minimum
 
+<details>
+<summary markdown="span">Expand to view screenshot</summary>
+
+![Recommendation_02](Images/Recommendation_02.png)
+</details>
