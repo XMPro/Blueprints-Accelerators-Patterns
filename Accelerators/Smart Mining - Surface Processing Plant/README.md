@@ -159,9 +159,8 @@ The recommendation is configured using the rule:
 ## Application
 An Image map to show mapped recommendations, drill down enabled to illustrate a specific asset's details.
 
-**Surface Processing Plant View**
 
-### Landing Page
+### Surface Processing Plant View
 
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
 
@@ -175,57 +174,6 @@ The application page is configured using the following <a href="https://document
 ![Application_01](Images/Application_01.png)
 </details>
 
-
-### Pump Drilldown
-
-The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
-
-<details>
-	<summary markdown="span">Expand to view screenshot</summary>
-
-![Application_02](Images/Application_02.png)
-</details>
-
-### Pump Drilldown Schematic
-
-The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
-
-
-<details>
-	<summary markdown="span">Expand to view screenshot</summary>
-
-![Application_03](Images/Application_03.png)
-</details>
-
-### Pump Drilldown Timeseries View
-
-<details>
-	<summary markdown="span">Expand to view screenshot</summary>
-
-![Application_04](Images/Application_04.png)
-</details>
-
-
-### Pump Drilldown Timeseries Comparison
-
-The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
-
-
-<details>
-	<summary markdown="span">Expand to view screenshot</summary>
-
-![Application_05](Images/Application_05.png)
-</details>
-
-### Spend Analysis
-
-The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
-
-<details>
-	<summary markdown="span">Expand to view screenshot</summary>
-
-![Application_06](Images/Application_06.png)
-</details>
 
 
 # How to Import
@@ -247,8 +195,8 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 
 ## 2. Import the Data Stream
 
-    * Assign Access to others as required
-	
+  * Assign Access to others as required
+  
 	* Edit the XMPro agents and ensure the URL and Integration Key are selected
 	* Edit the Recommendation agents and ensure the URL and Integration Key are selected
 
