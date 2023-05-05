@@ -196,7 +196,7 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 ## 2. Import the Data Stream
 
   * Assign Access to others as required
-  
+
 	* Edit the XMPro agents and ensure the URL and Integration Key are selected
 	* Edit the Recommendation agents and ensure the URL and Integration Key are selected
 
@@ -237,3 +237,37 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 ![Recommendation Access](Images/Recommendation_Access.png) 
 
 </details>
+
+## 4. Import the Application
+
+	* When importing the application make sure to map the data source on the import wizard to the above data stream that was imported
+	* Confirm the connections are configured correctly in the App Data tab and in each Page Data tab
+
+  <details>
+  <summary markdown="span">Expand to view screenshot</summary>
+
+![Application Import](Images/Application_Import.png) 
+</details>
+
+    * Assign Access to others as required for design and runtime
+  <details>
+  <summary markdown="span">Expand to view screenshot</summary>
+
+![Application Access](Images/Application_Access.png) 
+</details>
+
+* Edit the Application
+
+    * Select recommendation elements
+  
+	* Save the Application
+	* Publish the application
+	* Ensure there is data in the applciation by checking each chart and data output block
+
+
+
+## Contributing
+This repository was created by <a href="https://xmpro.com/">XMPro</a>. For assistance or requests, please contact <a href="mailto:support@xmpro.com">support@xmpro.com</a>
+
+## License
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
