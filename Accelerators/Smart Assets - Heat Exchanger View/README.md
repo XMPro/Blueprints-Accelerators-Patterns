@@ -1,4 +1,4 @@
-# <img alternative="XMPro Logo X" width="30px" src="https://xmks.s3.amazonaws.com/2020/X-Blue.png#gh-light-mode-only"> Alternative Energy - Renewable View 
+# <img alternative="XMPro Logo X" width="30px" src="https://xmks.s3.amazonaws.com/2020/X-Blue.png#gh-light-mode-only"> Smart Assets - Heat Exchanger View 
 
 [**◄ Accelerators**](https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/Accelerators)
 
@@ -7,10 +7,10 @@
 
 # Files
 
-* SQL Scripts: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Alternative%20Energy%20-%20Renewable%20View/SQL%20Scripts/%5BDemoHeatExchangerUCoefficient%5D.sql" target="_blank">[DemoHeatExchangerUCoefficient]</a>
-* Data Stream: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Assets%20-%20Heat%20Exchanger/Data%20Stream/Simulate%20Heat%20Exchanger%20Telemetry.xuc" target="_blank">Simulate Heat Exchanger Telemetry</a>
-* Recommendation: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Alternative%20Energy%20-%20Renewable%20View/Recommendation/Heat%20Exchanger%20Fouling.xr" target="_blank">Heat Exchanger Fouling</a>
-* Application: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Alternative%20Energy%20-%20Renewable%20View/Application/Heat%20Exchanger%20View.xapp" target="_blank">Heat Exchanger View</a>
+* SQL Scripts: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Assets%20-%20Heat%20Exchanger%20View/SQL%20Scripts/%5BDemoHeatExchangerUCoefficient%5D.sql" target="_blank">[DemoHeatExchangerUCoefficient]</a>
+* Data Stream: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Assets%20-%20Heat%20Exchanger%20View/Data%20Stream/Simulate%20Heat%20Exchanger%20Telemetry.xuc" target="_blank">Simulate Heat Exchanger Telemetry</a>
+* Recommendation: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Assets%20-%20Heat%20Exchanger%20View/Recommendation/Heat%20Exchanger%20Fouling.xr" target="_blank">Heat Exchanger Fouling</a>
+* Application: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Assets%20-%20Heat%20Exchanger%20View/Application/Heat%20Exchanger%20View.xapp" target="_blank">Heat Exchanger View</a>
 
 
 # Description
@@ -118,7 +118,6 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 ## 1. Run SQL Script
 
 	* Execute the script in SQL Server
-  
 	* Ensure the data is succesfully loaded into the database
 
 
@@ -185,7 +184,7 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
   
 	* Save the Application
 	* Publish the application
-	* Ensure there is data in the applciation by checking each graph, status and gauge.
+	* Ensure there is data in the application by checking each graph, status and gauge.
 
 
 

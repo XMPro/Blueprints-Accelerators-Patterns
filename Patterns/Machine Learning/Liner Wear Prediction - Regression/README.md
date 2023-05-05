@@ -6,8 +6,8 @@
 
 # Files
 
-* SQL Scripts: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Liner%20Wear%20Protection%20-%20Regression/SQL%20Scripts/%5BDemoCrusher%5D.sql" target="_blank">[DemoCrusher]</a>
-* Data Stream: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Liner%20Wear%20Protection%20-%20Regression/Liner Wear%20Protection%20Regression.xuc" target="_blank">Liner Wear Protection Regression</a>
+* SQL Scripts: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/Patterns/Machine%20Learning/Liner%20Wear%20Prediction%20-%20Regression/SQL%20Scripts" target="_blank">[DemoCrusher]</a>
+* Data Stream: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Liner%20Wear%20Prediction%20-%20Regression/Liner%20Wear%20Prediction%20using%20Regression.xuc" target="_blank">Liner Wear Protection Regression</a>
 
 
 # Description

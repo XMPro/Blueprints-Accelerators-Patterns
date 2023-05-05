@@ -193,16 +193,6 @@ The application page is configured using the following <a href="https://document
 </details>
 
 
-
-
-
-
-
-
-
-
-
-
 # How to Import
 Import Password: `Dem0nstr@t1on`
 
@@ -219,7 +209,6 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 ## 1. Run SQL Scripts
 
 	* Execute the scripts in SQL Server
-  
 	* Ensure the data is successfully loaded into the database
 
 
