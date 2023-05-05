@@ -7,10 +7,10 @@
 
 # Files
 
-* SQL Scripts: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Alternative%20Energy%20-%20Renewable%20View/SQL%20Scripts/%5BDemoHeatExchangerUCoefficient%5D.sql" target="_blank">[DemoHeatExchangerUCoefficient]</a>
-* Data Stream: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Assets%20-%20Heat%20Exchanger/Data%20Stream/Simulate%20Heat%20Exchanger%20Telemetry.xuc" target="_blank">Simulate Heat Exchanger Telemetry</a>
-* Recommendation: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Alternative%20Energy%20-%20Renewable%20View/Recommendation/Heat%20Exchanger%20Fouling.xr" target="_blank">Heat Exchanger Fouling</a>
-* Application: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Alternative%20Energy%20-%20Renewable%20View/Application/Heat%20Exchanger%20View.xapp" target="_blank">Heat Exchanger View</a>
+* SQL Scripts: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Assets%20-%20Heat%20Exchanger%20View/SQL%20Scripts/%5BDemoHeatExchangerUCoefficient%5D.sql" target="_blank">[DemoHeatExchangerUCoefficient]</a>
+* Data Stream: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Assets%20-%20Heat%20Exchanger%20View/Data%20Stream/Simulate%20Heat%20Exchanger%20Telemetry.xuc" target="_blank">Simulate Heat Exchanger Telemetry</a>
+* Recommendation: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Assets%20-%20Heat%20Exchanger%20View/Recommendation/Heat%20Exchanger%20Fouling.xr" target="_blank">Heat Exchanger Fouling</a>
+* Application: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Assets%20-%20Heat%20Exchanger%20View/Application/Heat%20Exchanger%20View.xapp" target="_blank">Heat Exchanger View</a>
 
 
 # Description
