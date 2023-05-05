@@ -73,7 +73,7 @@ The data stream is configured using:
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
 
-![Configured Data Stream](Images/DataStream.png)
+![Configured Data Stream](Images/DataStream_01.png)
 </details>
 
 <!-- blank line -->
@@ -155,4 +155,24 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
   <summary markdown="span">Expand to view screenshot of a successfully running data stream with live data</summary>
 
 ![Running Data Stream](Images/DataStream_Running.png) 
+</details>
+
+## 3. Import the Recommendations
+
+    * Import the included forms if they don't already exist
+
+<details>
+  <summary markdown="span">Expand to view screenshot</summary>
+
+![Recommendation Import](Images/Recommendation_Import.png) 
+
+</details>
+
+    * Assign Access to others as required
+
+<details>
+  <summary markdown="span">Expand to view screenshot</summary>
+
+![Recommendation Access](Images/Recommendation_Access.png) 
+
 </details>
