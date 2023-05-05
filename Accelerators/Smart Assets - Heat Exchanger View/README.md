@@ -1,4 +1,4 @@
-# <img alternative="XMPro Logo X" width="30px" src="https://xmks.s3.amazonaws.com/2020/X-Blue.png#gh-light-mode-only"> Alternative Energy - Renewable View 
+# <img alternative="XMPro Logo X" width="30px" src="https://xmks.s3.amazonaws.com/2020/X-Blue.png#gh-light-mode-only"> Smart Assets - Heat Exchanger View 
 
 [**◄ Accelerators**](https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/Accelerators)
 
@@ -118,7 +118,6 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 ## 1. Run SQL Script
 
 	* Execute the script in SQL Server
-  
 	* Ensure the data is succesfully loaded into the database
 
 
@@ -185,7 +184,7 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
   
 	* Save the Application
 	* Publish the application
-	* Ensure there is data in the applciation by checking each graph, status and gauge.
+	* Ensure there is data in the application by checking each graph, status and gauge.
 
 
 
