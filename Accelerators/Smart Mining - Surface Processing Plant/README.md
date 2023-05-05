@@ -102,3 +102,57 @@ The recommendation is configured using the rule:
 
 ![Recommendation_02](Images/Recommendation_02.png)
 </details>
+
+<!-- blank line -->
+----
+<!-- blank line -->
+
+## Application
+An Image map to show mapped recommendations, drill down enabled to illustrate a specific asset's details.
+
+### Surface Processing Plant View
+The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
+
+* <a href="https://documentation.xmpro.com/blocks-toolbox/basic/text" target="_blank"><i>Text</i></a> to display the live data on a schematic
+* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart"><i>Charts</i></a> :  to visualize the count of open recommendations per priority level
+* <a href="https://documentation.xmpro.com/blocks-toolbox/recommendations/recommendations" target="_blank"><i>Recommendations</i></a> to view current open recommendations for the asset
+
+<details>
+	<summary markdown="span">Expand to view screenshot</summary>
+
+![Application_01](Images/Application_01.png)
+</details>
+
+# How to Import
+Import Password: `Dem0nstr@t1on`
+
+Create/confirm the following variables
+  * App Designer URL
+  * App Designer Integration Key (Encrypted)
+  * SQL Server
+  * SQL Username
+  * SQL Password (Encrypted)
+
+For instructions on how to import <a href="https://documentation.xmpro.com/how-tos/import-export-and-clone#importing">click here</a>
+
+## 1. Run SQL Scripts
+
+	* Execute the scripts in SQL Server
+  	* Ensure the data is succesfully loaded into the database
+
+## 2. Import the Data Stream
+
+    * Assign Access to others as required
+	
+	* Edit the XMPro agent "Send to App Designer" and ensure the URL and Integration Key are selected
+	* Edit the Recommendation agent "Run Recommendation" and ensure the URL and Integration Key are selected
+
+	* Click Apply and save the data stream (Click Save on the Action Bar, or CTRL + S on the keyboard)
+	* Publish the data stream and open the live view
+	* Ensure there is data in the live view at the Post telemetry agents
+
+<details>
+  <summary markdown="span">Expand to view screenshot of a successfully running data stream with live data</summary>
+
+![Running Data Stream](Images/DataStream_Running.png) 
+</details>
