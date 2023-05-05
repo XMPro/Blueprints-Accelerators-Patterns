@@ -6,8 +6,8 @@
 
 # Files
 
-* SQL Scripts: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Mining%20-%20Surface%20Processing%20Plant/DemoSTPPIantMapping.sql" target="_blank">[DemoSTPPIantMapping]</a> , 
-<a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Mining%20-%20Surface%20Processing%20Plant/DemoWorkManagementPump.sql" target="_blank">[DemoWorkManagementPump]</a>
+* SQL Scripts: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/mike-edit/Accelerators/Smart%20Mining%20-%20Surface%20Processing%20Plant/SQL%20Scripts/DemoSTPPIantMapping.sql" target="_blank">[DemoSTPPIantMapping]</a> , 
+<a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/mike-edit/Accelerators/Smart%20Mining%20-%20Surface%20Processing%20Plant/SQL%20Scripts/DemoWorkManagementPump.sql" target="_blank">[DemoWorkManagementPump]</a>
 
 * Data Stream: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Mining%20-%20Surface%20Processing%20Plant/Data%20Stream/Simulate%20Heat%20Exchanger%20Telemetry.xuc" target="_blank">Processing Plant Image Map View</a>
 * Recommendation: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Mining%20-%20Surface%20Processing%20Plant/Recommendation/Heat%20Exchanger%20Fouling.xr" target="_blank">Rec Name</a>
