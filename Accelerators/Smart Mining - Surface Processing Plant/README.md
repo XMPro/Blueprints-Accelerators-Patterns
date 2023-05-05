@@ -98,7 +98,7 @@ The data stream is configured using:
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
 
-![Configured Data Stream](Images/DataStream_02.png)
+![Configured Data Stream](Images/SimulatePumpTelemetry.png)
 </details>
 
 
@@ -122,7 +122,7 @@ The data stream is configured using:
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
 
-![Configured Data Stream](Images/DataStream_03.png)
+![Configured Data Stream](Images/ConveyorConditionMonitoring.png)
 </details>
 
 <!-- blank line -->
