@@ -231,12 +231,9 @@ The application page is configured using the following <a href="https://document
 
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
 
-* <a href="https://documentation.xmpro.com/blocks-toolbox/basic/text" target="_blank"><i>Text</i></a> to display the live data on a schematic
+* <a href="https://documentation.xmpro.com/blocks-toolbox/basic/text" target="_blank"><i>Text</i></a> to display the live data
 
-* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart"><i>Charts</i></a> :  to visualize the count of open recommendations per priority level
-
-
-* <a href="https://documentation.xmpro.com/blocks-toolbox/recommendations/recommendations" target="_blank"><i>Recommendations</i></a> to view current open recommendations for the asset
+* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart"><i>Charts</i></a> :  to visualize the pump data for drilldown
 
 <details>
 	<summary markdown="span">Expand to view screenshot</summary>
@@ -248,20 +245,16 @@ The application page is configured using the following <a href="https://document
 
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
 
-* <a href="https://documentation.xmpro.com/blocks-toolbox/basic/text" target="_blank"><i>Text</i></a> to display the live data on a schematic
+* <a href="https://documentation.xmpro.com/blocks-toolbox/basic/text" target="_blank"><i>Text</i></a> to display the live data
 
-* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart"><i>Charts</i></a> :  to visualize the count of open recommendations per priority level
-
-
-* <a href="https://documentation.xmpro.com/blocks-toolbox/recommendations/recommendations" target="_blank"><i>Recommendations</i></a> to view current open recommendations for the asset
+* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart"><i>Charts</i></a> :  to visualize the data comparison
+* <a href="https://documentation.xmpro.com/blocks-toolbox/basic/indicator" target="_blank"><i>Indicator</i></a> To indicate the flow rate levels
 
 <details>
 	<summary markdown="span">Expand to view screenshot</summary>
 
 ![Drilldown_Data_Compare](Images/Drilldown_Data_Compare.png)
 </details>
-
-
 
 # How to Import
 Import Password: `Dem0nstr@t1on`
