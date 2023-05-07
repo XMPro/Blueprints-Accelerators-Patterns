@@ -112,7 +112,7 @@ The data stream is configured using:
 * <a href="https://xmpro.gitbook.io/event-simulator/" target="_blank"><i>Event Simulator</i></a> <a href="https://documentation.xmpro.com/concepts/agent#listeners" target="_blank">listener</a> - Simulates data for the stream
 * <a href="https://xmpro.gitbook.io/azure-sql/" target="_blank"><i>Azure SQL</i></a> <a href="https://documentation.xmpro.com/concepts/agent#listeners" target="_blank">context provider</a> - provides contextual data of the conveyors
 * <a href="https://xmpro.gitbook.io/read-recommendation/" target="_blank"><i>Read Recommendation</i></a> <a href="https://documentation.xmpro.com/concepts/agent#action-agents" target="_blank">action agent</a> - Read Recommendation
-* <a href="https://xmpro.gitbook.io/join/" target="_blank"><i>Join</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> Join live data with context data
+* <a href="https://xmpro.gitbook.io/join/" target="_blank"><i>Join</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> - Join live data with context data
 * <a href="https://xmpro.gitbook.io/calculated-field" target="_blank"><i>Calculated Field</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformations</a> 
   * Add column to join on
   * Clean up data for recommendation
@@ -135,21 +135,37 @@ The data stream is configured using:
 The recommendation is configured using the rule: 
 
 **Amp Trip**
-+ Checks if the Amperage is outside the threshold
++ Alerts if the amperage is outside the mid threshold
 
 <details>
 <summary markdown="span">Expand to view screenshot</summary>
 
-![Recommendation_01](Images/Recommendation_01.png)
+![Recommendation_01](Images/Recommendation_01_a.png)
+</details>
+
++ Alerts if the amperage is outside the upper threshold
+
+<details>
+<summary markdown="span">Expand to view screenshot</summary>
+
+![Recommendation_01](Images/Recommendation_01_b.png)
 </details>
 
 **Discharge Pressure**
-+ Checks if the Discharge Pressure is below minimum
++ Alerts if the discharge pressure is out of efficiency range
 
 <details>
 <summary markdown="span">Expand to view screenshot</summary>
 
-![Recommendation_02](Images/Recommendation_02.png)
+![Recommendation_02](Images/Recommendation_02_a.png)
+</details>
+
++ Alerts when the discharge pressure is out of optimal range
+
+<details>
+<summary markdown="span">Expand to view screenshot</summary>
+
+![Recommendation_02](Images/Recommendation_02_b.png)
 </details>
 
 <!-- blank line -->
@@ -166,7 +182,7 @@ The application page is configured using the following <a href="https://document
 
 * <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/image-map" target="_blank"><i>Image Map</i></a> to displaya schematic of the processing plant
 * <a href="https://documentation.xmpro.com/blocks-toolbox/basic/text" target="_blank"><i>Text</i></a> to display the live data on a schematic
-* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart"><i>Charts</i></a> :  to visualize the count of open recommendations per priority level
+* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart"><i>Charts</i></a> to visualize the count of open recommendations per priority level
 * <a href="https://documentation.xmpro.com/blocks-toolbox/recommendations/recommendations" target="_blank"><i>Recommendations</i></a> to view current open recommendations for the asset
 
 <details>
@@ -182,17 +198,10 @@ The application page is configured using the following <a href="https://document
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
 
 * <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/image-map" target="_blank"><i>Image Map</i></a> to display schematic of the pump
-
-
 * <a href="https://documentation.xmpro.com/blocks-toolbox/basic/text" target="_blank"><i>Text</i></a> to display the live data on a schematic
-
 * <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/circular-gauge"><i>Circular Gauge</i></a> showing efficiency and degredation loss
-
-* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart"><i>Charts</i></a> :  to visualize real time data
-
+* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart"><i>Charts</i></a> to visualize real time data
 * <a href="https://documentation.xmpro.com/blocks-toolbox/basic/indicator" target="_blank"><i>Indicator</i></a> present operational safety risk
-
-
 * <a href="https://documentation.xmpro.com/blocks-toolbox/recommendations/recommendations" target="_blank"><i>Recommendations</i></a> to view current open recommendations for the pump
 
 <details>
@@ -206,18 +215,12 @@ The application page is configured using the following <a href="https://document
 
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
 
-* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/unity-1" target="_blank"><i>Unity (Legacy)</i></a> To render a unity model of a pump
-
+* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/unity-1" target="_blank"><i>Unity (Legacy)</i></a> to render a unity model of a pump
 * <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/circular-gauge"><i>Circular Gauge</i></a> showing efficiency
-
 * <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/circular-gauge"><i>Linear Gauge</i></a> showing health score
-
-* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart"><i>Charts</i></a> : To visualize real time data
-
-* <a href="https://documentation.xmpro.com/blocks-toolbox/basic/text" target="_blank"><i>Text</i></a> To display the live data
-
+* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart"><i>Charts</i></a> to visualize real time data
+* <a href="https://documentation.xmpro.com/blocks-toolbox/basic/text" target="_blank"><i>Text</i></a> to display the live data
 * <a href="https://documentation.xmpro.com/blocks-toolbox/basic/indicator" target="_blank"><i>Indicator</i></a> presenting the status of health rate
-
 * <a href="https://documentation.xmpro.com/blocks-toolbox/recommendations/recommendations" target="_blank"><i>Recommendations</i></a> to view current open recommendations for the asset
 
 <details>
@@ -232,8 +235,7 @@ The application page is configured using the following <a href="https://document
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
 
 * <a href="https://documentation.xmpro.com/blocks-toolbox/basic/text" target="_blank"><i>Text</i></a> to display the live data
-
-* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart"><i>Charts</i></a> :  to visualize the pump data for drilldown
+* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart"><i>Charts</i></a> to visualize the pump data for drilldown
 
 <details>
 	<summary markdown="span">Expand to view screenshot</summary>
@@ -246,9 +248,8 @@ The application page is configured using the following <a href="https://document
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
 
 * <a href="https://documentation.xmpro.com/blocks-toolbox/basic/text" target="_blank"><i>Text</i></a> to display the live data
-
-* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart"><i>Charts</i></a> :  to visualize the data comparison
-* <a href="https://documentation.xmpro.com/blocks-toolbox/basic/indicator" target="_blank"><i>Indicator</i></a> To indicate the flow rate levels
+* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart"><i>Charts</i></a> to visualize the data comparison
+* <a href="https://documentation.xmpro.com/blocks-toolbox/basic/indicator" target="_blank"><i>Indicator</i></a> to indicate the flow rate levels
 
 <details>
 	<summary markdown="span">Expand to view screenshot</summary>
@@ -275,7 +276,7 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 
 ## 2. Import the Data Stream
 
-  * Assign Access to others as required
+    * Assign Access to others as required
 
 	* Edit the XMPro agents and ensure the URL and Integration Key are selected
 	* Edit the Recommendation agents and ensure the URL and Integration Key are selected
@@ -336,7 +337,7 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 ![Application Access](Images/Application_Access.png) 
 </details>
 
-* Edit the Application
+    * Edit the Application
 
     * Select recommendation elements
   
