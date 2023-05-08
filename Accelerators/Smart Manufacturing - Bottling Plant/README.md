@@ -86,8 +86,8 @@ Work management information.
 1. [Bottling Plant Image View](#btlplantimgmap)
 2. [Pump RUL](#pumprul)
 
-
-###Bottling Plant Image Map View <a name="btlplantimgmap"></a>
+<a name="btlplantimgmap"></a>
+**Bottling Plant Image Map View** 
 
 Set indicator status based on alerts from the recommendations.
 
@@ -110,7 +110,7 @@ The data stream is configured using:
 </details>
 
 
-**Pump RUL with Python**<a name="pumprul"></a>
+**Pump RUL with Python** <a name="pumprul"></a>
 
 Predicting Remaining Useful Life (RUL) of an asset using machine learning models.
 
