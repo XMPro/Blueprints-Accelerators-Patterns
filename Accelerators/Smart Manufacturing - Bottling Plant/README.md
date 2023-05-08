@@ -225,7 +225,7 @@ The data stream is configured using:
 ### Recommendation Table Of Contents
 
 1. [Image Defect](#imgdefect)
-2. [Pump RUL](#pumprul)
+2. [Pump RUL](#recpumprul)
 3. [RUL Prediction](#rulpredict)
 4. [Tank Leak Detection](#tankleak)
 5. [Leak Scenario 1](#leakscenario1)
@@ -251,7 +251,7 @@ Defect Found - Alerts when an image is identified as `bad`
 ![Reccommendation_01](Images/Recommendation_01.png)
 </details>
 
-<a name="pumprul"></a>
+<a name="recpumprul"></a>
 
 **Pump RUL**
 
