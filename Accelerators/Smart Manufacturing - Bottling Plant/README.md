@@ -6,7 +6,7 @@
 
 # Table of contents
 1. [Files](#files)
-2. [Data Streams](#datastreams)
+2. [Data-Streams](#datastreams)
 
 
 # Files <a name="files"></a>
