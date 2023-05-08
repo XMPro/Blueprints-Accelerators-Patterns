@@ -240,9 +240,7 @@ The data stream is configured using:
 
 **Image Defect**
 
-> The recommendation is configured using the rule:
-
-> Defect Found - Alerts when an image is identified as `bad`
+* The recommendation is configured using the rule Defect Found - Alerts when an image is identified as `bad`
 
 
 <details>
@@ -255,9 +253,9 @@ The data stream is configured using:
 
 **Pump RUL**
 
-> The recommendation is configured using two rules:
+* The recommendation is configured using two rules:
 
-> Accuracy - Alerts once the model accuracy is out by a specified percentage
+  Accuracy - Alerts once the model accuracy is out by a specified percentage
 
 <details>
 <summary markdown="span">Expand to view screenshot</summary>
@@ -268,7 +266,7 @@ The data stream is configured using:
 <a name="rulpredict"></a>
 
 **RUL Prediction** 
-> Alerts when the remaining useful life is below a specific level
+* Alerts when the remaining useful life is below a specific level
 
 <details>
 <summary markdown="span">Expand to view screenshot</summary>
@@ -280,8 +278,8 @@ The data stream is configured using:
 
 **Tank Leak Detection**
 
-> The recommendation is configured using the following rules:
-> Inlet Pipeline Blockage - when there is a discrepancy with expected pipe flow
+* The recommendation is configured using the following rules:
+  Inlet Pipeline Blockage - when there is a discrepancy with expected pipe flow
 
 <details>
 <summary markdown="span">Expand to view screenshot</summary>
@@ -292,7 +290,7 @@ The data stream is configured using:
 <a name="leakscenario1"></a>
 
 **Leak Scenario 1**
-> Checks for leak for specific valve output values
+* Checks for leak for specific valve output values
 
 <details>
 <summary markdown="span">Expand to view screenshot</summary>
@@ -303,7 +301,7 @@ The data stream is configured using:
 <a name="leakscenario2"></a>
 
 **Leak Scenario 2**
-> Checks for leak for specific output values
+* Checks for leak for specific output values
 
 <details>
 <summary markdown="span">Expand to view screenshot</summary>
@@ -314,7 +312,7 @@ The data stream is configured using:
 <a name="outletpipeln"></a>
 
 **Outlet Pipeline Blockage**
-> Detects when there is a outlet pipeline blockage
+* Detects when there is a outlet pipeline blockage
 
 <details>
 <summary markdown="span">Expand to view screenshot</summary>
@@ -325,7 +323,7 @@ The data stream is configured using:
 <a name="topvalvpassscn1"></a>
 
 **Top Valve Passing Scenario 1**
-> Detects flow discrepancy with top valve passing for specific output values
+* Detects flow discrepancy with top valve passing for specific output values
 
 <details>
 <summary markdown="span">Expand to view screenshot</summary>
@@ -336,7 +334,7 @@ The data stream is configured using:
 <a name="topvalvpassscn2"></a>
 
 **Top Valve Passing Scenario 2**
-> Detects flow discrepancy with top valve passing for specific output values
+* Detects flow discrepancy with top valve passing for specific output values
 
 <details>
 <summary markdown="span">Expand to view screenshot</summary>
