@@ -5,11 +5,11 @@
 [**◄ Blueprints, Accelerators & Patterns**](https://github.com/XMPro/Blueprints-Accelerators-Patterns)
 
 # Table of contents
-1. [Files](#files)
-2. [Data-Streams](#datastreams)
+1. [Files](#Files)
+2. [Data Streams](#Data)
 
 
-# Files <a name="files"></a>
+# Files 
 
 * SQL Scripts: 
   * <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Manufacturing%20-%20Bottling%20Plant/SQL%20Scripts/%5BDemoBottlingPlantMapping%5D.sql" target="_blank">[DemoBottlingPlantMapping]</a>
