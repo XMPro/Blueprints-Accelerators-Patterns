@@ -85,6 +85,9 @@ Work management information.
 ### Data Stream Table Of Contents
 1. [Bottling Plant Image View](#btlplantimgmap)
 2. [Pump RUL](#pumprul)
+3. [Simulate Pump Telemetry](#simulatepumptelem)
+4. [Streaming Data Platform Simulator](#strmdatapltfrmsim)
+5. [Tank Leak Detection](#tankleakdetection)
 
 <a name="btlplantimgmap"></a>
 **Bottling Plant Image Map View** 
@@ -109,8 +112,8 @@ The data stream is configured using:
 ![Configured Data Stream](Images/DataStream_01.png)
 </details>
 
-
-**Pump RUL with Python** <a name="pumprul"></a>
+<a name="pumprul"></a>
+**Pump RUL with Python** 
 
 Predicting Remaining Useful Life (RUL) of an asset using machine learning models.
 
@@ -135,7 +138,7 @@ The data stream is configured using:
 ![Configured Data Stream](Images/DataStream_02.png)
 </details>
 
-
+<a name="simulatepumptelem"></a>
 **Simulate Pump Telemetry**
 
 An example of simulated pump telemetry data - broadcasting out via MQTT.
@@ -158,7 +161,7 @@ The data stream is configured using:
 ![Configured Data Stream](Images/DataStream_03.png)
 </details>
 
-
+<a name="strmdatapltfrmsim"></a>
 **Streaming Data Platform Simulator**
 
 Streaming image detection data.
@@ -182,7 +185,7 @@ The data stream is configured using:
 ![Configured Data Stream](Images/DataStream_04.png)
 </details>
 
-
+<a name="tankleakdetection"></a>
 **Tank Leak Detection**
 
 A data stream used to detect leaks in a tank system.
