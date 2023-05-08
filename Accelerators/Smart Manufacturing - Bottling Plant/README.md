@@ -5,8 +5,8 @@
 [**◄ Blueprints, Accelerators & Patterns**](https://github.com/XMPro/Blueprints-Accelerators-Patterns)
 
 # Table of contents
-1. [Files](#Files)
-2. [Data Stream](#data-stream)
+1. [Files](#files)
+2. [Description](#description)
 3. [How To Import](#how-to-import)
 
 
@@ -82,10 +82,12 @@ Work management information.
 
 ## Data Stream
 
-## Data Stream Table Of Contents
-1. [Bottling Plant Image View](##Bottling-Plant-Image-Map-View)
+### Data Stream Table Of Contents
+1. [Bottling Plant Image View](#btlplantimgmap)
+2. [Pump RUL](#pumprul)
 
-**Bottling Plant Image Map View**
+
+###Bottling Plant Image Map View <a name="btlplantimgmap"></a>
 
 Set indicator status based on alerts from the recommendations.
 
@@ -108,7 +110,7 @@ The data stream is configured using:
 </details>
 
 
-**Pump RUL with Python**
+**Pump RUL with Python**<a name="pumprul"></a>
 
 Predicting Remaining Useful Life (RUL) of an asset using machine learning models.
 
