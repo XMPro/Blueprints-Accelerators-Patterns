@@ -228,8 +228,8 @@ The data stream is configured using:
 2. [Pump RUL](#pumprul)
 3. [RUL Prediction](#rulpredict)
 4. [Tank Leak Detection](#tankleak)
-5. [Streaming Data Platform Simulator](#strmdatapltfrmsim)
-6. [Tank Leak Detection](#tankleakdetection)
+5. [Leak Scenario 1](#leakscenario1)
+6. [Leak Scenario 2](#leakscenario2)
 7. [Next](#next)
 
 
