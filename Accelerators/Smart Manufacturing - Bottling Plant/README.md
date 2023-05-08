@@ -222,6 +222,21 @@ The data stream is configured using:
 ## Recommendation
 
 
+### Recommendation Table Of Contents
+
+1. [Image Defect](#imgdefect)
+2. [Pump RUL](#pumprul)
+3. [RUL Prediction](#rulpredict)
+4. [Tank Leak Detection](#tankleak)
+5. [Streaming Data Platform Simulator](#strmdatapltfrmsim)
+6. [Tank Leak Detection](#tankleakdetection)
+7. [Next](#next)
+
+
+
+
+<a name="imgdefect"></a>
+
 **Image Defect**
 
 The recommendation is configured using the rule:
@@ -235,6 +250,7 @@ Defect Found - Alerts when an image is identified as `bad`
 ![Reccommendation_01](Images/Recommendation_01.png)
 </details>
 
+<a name="pumprul"></a>
 
 **Pump RUL**
 
@@ -248,8 +264,10 @@ Accuracy - Alerts once the model accuracy is out by a specified percentage
 ![Reccommendation_02_a](Images/Recommendation_02_a.png)
 </details>
 
+<a name="rulpredict"></a>
 
-RUL Prediction - Alerts when the remaining useful life is below a specific level
+**RUL Prediction** 
+Alerts when the remaining useful life is below a specific level
 
 <details>
 <summary markdown="span">Expand to view screenshot</summary>
@@ -257,6 +275,7 @@ RUL Prediction - Alerts when the remaining useful life is below a specific level
 ![Reccommendation_02_b](Images/Recommendation_02_b.png)
 </details>
 
+<a name="tankleak"></a>
 
 **Tank Leak Detection**
 
@@ -271,8 +290,10 @@ Inlet Pipeline Blockage - when there is a discrepancy with expected pipe flow
 ![Reccommendation_03_a](Images/Recommendation_03_a.png)
 </details>
 
+<a name="leakscenario1"></a>
 
-Leak Scenario 1 - checks for leak for specific valve output values
+**Leak Scenario 1**
+Checks for leak for specific valve output values
 
 <details>
 <summary markdown="span">Expand to view screenshot</summary>
@@ -280,8 +301,9 @@ Leak Scenario 1 - checks for leak for specific valve output values
 ![Reccommendation_03_b](Images/Recommendation_03_b.png)
 </details>
 
-
-Leak Scenario 2 - checks for leak for specific output values
+<a name="leakscenario2"></a>
+**Leak Scenario 2**
+Checks for leak for specific output values
 
 <details>
 <summary markdown="span">Expand to view screenshot</summary>
@@ -289,8 +311,9 @@ Leak Scenario 2 - checks for leak for specific output values
 ![Reccommendation_03_c](Images/Recommendation_03_c.png)
 </details>
 
-
-Outlet Pipeline Blockage - Detect when there is a outlet pipeline blockage
+<a name="outletpiplnblck"></a>
+**Outlet Pipeline Blockage**
+Detects when there is a outlet pipeline blockage
 
 <details>
 <summary markdown="span">Expand to view screenshot</summary>
@@ -298,8 +321,9 @@ Outlet Pipeline Blockage - Detect when there is a outlet pipeline blockage
 ![Reccommendation_03_d](Images/Recommendation_03_d.png)
 </details>
 
-
-Top Valve Passing Scenario 1 - detects flow discrepancy with top valve passing for specific output values
+<a name="topvalvpassscn1"></a>
+**Top Valve Passing Scenario 1**
+Detects flow discrepancy with top valve passing for specific output values
 
 <details>
 <summary markdown="span">Expand to view screenshot</summary>
@@ -307,8 +331,10 @@ Top Valve Passing Scenario 1 - detects flow discrepancy with top valve passing f
 ![Reccommendation_03_e](Images/Recommendation_03_e.png)
 </details>
 
+<a name="topvalvpassscn2"></a>
 
-Top Valve Passing Scenario 2 - detects flow discrepancy with top valve passing for specific output values
+**Top Valve Passing Scenario 2**
+Detects flow discrepancy with top valve passing for specific output values
 
 <details>
 <summary markdown="span">Expand to view screenshot</summary>
