@@ -4,7 +4,12 @@
 
 [**◄ Blueprints, Accelerators & Patterns**](https://github.com/XMPro/Blueprints-Accelerators-Patterns)
 
-# Files
+# Table of contents
+1. [Files](#files)
+2. [Data Streams](#datastreams)
+
+
+# Files <a name="files"></a>
 
 * SQL Scripts: 
   * <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Manufacturing%20-%20Bottling%20Plant/SQL%20Scripts/%5BDemoBottlingPlantMapping%5D.sql" target="_blank">[DemoBottlingPlantMapping]</a>
@@ -74,7 +79,7 @@ Work management information.
 <!-- blank line -->
 
 
-## Data Stream
+## Data Stream <a name="datastream"></a>
 
 
 **Bottling Plant Image Map View**
