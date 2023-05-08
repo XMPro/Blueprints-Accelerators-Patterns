@@ -230,8 +230,10 @@ The data stream is configured using:
 4. [Tank Leak Detection](#tankleak)
 5. [Leak Scenario 1](#leakscenario1)
 6. [Leak Scenario 2](#leakscenario2)
-7. [Next](#next)
-
+7. [Outlet Pipeline Blockage](#outletpipeln)
+8. [Next](#next)
+9. [Next](#next)
+10. [Next](#next)
 
 
 
@@ -302,6 +304,7 @@ Checks for leak for specific valve output values
 </details>
 
 <a name="leakscenario2"></a>
+
 **Leak Scenario 2**
 Checks for leak for specific output values
 
@@ -311,7 +314,8 @@ Checks for leak for specific output values
 ![Reccommendation_03_c](Images/Recommendation_03_c.png)
 </details>
 
-<a name="outletpiplnblck"></a>
+<a name="outletpipeln"></a>
+
 **Outlet Pipeline Blockage**
 Detects when there is a outlet pipeline blockage
 
@@ -322,6 +326,7 @@ Detects when there is a outlet pipeline blockage
 </details>
 
 <a name="topvalvpassscn1"></a>
+
 **Top Valve Passing Scenario 1**
 Detects flow discrepancy with top valve passing for specific output values
 
