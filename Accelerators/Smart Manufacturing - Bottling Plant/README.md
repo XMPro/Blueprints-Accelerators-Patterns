@@ -108,10 +108,9 @@ The data stream is configured using:
 * <a href="https://xmpro.gitbook.io/xmpro-app/" target="_blank"><i>XMPro App</i></a> <a href="https://documentation.xmpro.com/concepts/agent#action-agents" target="_blank">action agent</a> - View data on the Image Map
 
 <details>
-  <summary markdown="span">Expand to view screenshot</summary>
-
+<summary markdown="span">Expand to view screenshot</summary>
 ![Configured Data Stream](Images/DataStream_01.png)
-</details>
+ </details>
 
 ---
 
@@ -253,11 +252,11 @@ The recommendation is configured using the rule
 * Defect Found - Alerts when an image is identified as `bad`
 
 
-<details>
-<summary markdown="span">Expand to view screenshot</summary>
+  <details>
+  <summary markdown="span">Expand to view screenshot</summary>
 
-![Reccommendation_01](Images/Recommendation_01.png)
-</details>
+  ![Reccommendation_01](Images/Recommendation_01.png)
+  </details>
 
 ----
 
@@ -268,21 +267,21 @@ The recommendation is configured using the rule
 The recommendation is configured using two rules
 * Accuracy - Alerts once the model accuracy is out by a specified percentage
 
-<details>
-<summary markdown="span">Expand to view screenshot</summary>
+  <details>
+  <summary markdown="span">Expand to view screenshot</summary>
 
-![Reccommendation_02_a](Images/Recommendation_02_a.png)
-</details>
+  ![Reccommendation_02_a](Images/Recommendation_02_a.png)
+  </details>
 
 <a name="rulpredict"></a>
 * RUL Prediction 
 Alerts when the remaining useful life is below a specific level
 
-<details>
-<summary markdown="span">Expand to view screenshot</summary>
+  <details>
+  <summary markdown="span">Expand to view screenshot</summary>
 
-![Reccommendation_02_b](Images/Recommendation_02_b.png)
-</details>
+  ![Reccommendation_02_b](Images/Recommendation_02_b.png)
+  </details>
 
 ----
 
@@ -370,7 +369,6 @@ The application page is configured using the following <a href="https://document
 * <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/image-map" target="_blank"><i>Image Map</i></a> to displaya schematic of the bottling process
 * <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/d3-visualization" target="_blank"><i>D3 Visualisation</i></a> to display an a matrix of the defect trends
 
-
 <details>
 <summary markdown="span">Expand to view screenshot</summary>
 ![Application_01](Images/Application_01.png)
@@ -454,6 +452,7 @@ The application page is configured using the following <a href="https://document
 ![Application_05](Images/Application_05.png)
 </details>
 
+---
 
 # How to Import
 Import Password: `Dem0nstr@t1on`
@@ -523,16 +522,15 @@ Expand to view screenshot of a successfully running data stream with live data:
 
 ## 3. Import the Recommendations
 
-    * Import the including form if it doesn't already exist
+ * Import the including form if it doesn't already exist
 
-<details>
-  <summary markdown="span">Expand to view screenshot</summary>
+  <details>
+    <summary markdown="span">Expand to view screenshot</summary>
 
-![Recommendation Import](Images/Recommendation_Import.png) 
+  ![Recommendation Import](Images/Recommendation_Import.png) 
+  </details>
 
-</details>
-
-    * Assign Access to others as required
+* Assign Access to others as required
 
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
