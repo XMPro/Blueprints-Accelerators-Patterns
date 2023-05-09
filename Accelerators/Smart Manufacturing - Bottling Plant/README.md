@@ -359,7 +359,6 @@ Detects flow discrepancy with top valve passing for specific output values
 ## Application
 An example of how to visualize the synthetic data passed by the data stream to a Unity model in an application.
 
-
 **Bottling Plant Operational View**
 
 ### Landing Page
