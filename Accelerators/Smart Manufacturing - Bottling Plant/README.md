@@ -234,7 +234,7 @@ The data stream is configured using:
 8. [Top Valve Passing Scenario 1](#topvalvpassscn1)
 9. [Top Valve Passing Scenario 2](#topvalvpassscn2)
 
-
+----
 
 <a name="imgdefect"></a>
 
@@ -249,6 +249,8 @@ The recommendation is configured using the rule
 
 ![Reccommendation_01](Images/Recommendation_01.png)
 </details>
+
+----
 
 <a name="recpumprul"></a>
 
@@ -272,6 +274,8 @@ Alerts when the remaining useful life is below a specific level
 
 ![Reccommendation_02_b](Images/Recommendation_02_b.png)
 </details>
+
+----
 
 <a name="tankleak"></a>
 
