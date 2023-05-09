@@ -44,7 +44,6 @@ A list of assets and other details.
 
 <details>
 <summary>Columns</summary>
-
 ```
 [ID]
 ,[AssetNo]
@@ -89,6 +88,8 @@ Work management information.
 4. [Streaming Data Platform Simulator](#strmdatapltfrmsim)
 5. [Tank Leak Detection](#tankleakdetection)
 
+---
+
 <a name="btlplantimgmap"></a>
 **Bottling Plant Image Map View** 
 
@@ -111,6 +112,8 @@ The data stream is configured using:
 
 ![Configured Data Stream](Images/DataStream_01.png)
 </details>
+
+---
 
 <a name="pumprul"></a>
 **Pump RUL with Python** 
@@ -138,6 +141,8 @@ The data stream is configured using:
 ![Configured Data Stream](Images/DataStream_02.png)
 </details>
 
+---
+
 <a name="simulatepumptelem"></a>
 **Simulate Pump Telemetry**
 
@@ -160,6 +165,8 @@ The data stream is configured using:
 
 ![Configured Data Stream](Images/DataStream_03.png)
 </details>
+
+---
 
 <a name="strmdatapltfrmsim"></a>
 **Streaming Data Platform Simulator**
@@ -184,6 +191,8 @@ The data stream is configured using:
 
 ![Configured Data Stream](Images/DataStream_04.png)
 </details>
+
+---
 
 <a name="tankleakdetection"></a>
 **Tank Leak Detection**
@@ -284,62 +293,63 @@ Alerts when the remaining useful life is below a specific level
 The recommendation is configured using the following rules
 * Inlet Pipeline Blockage - when there is a discrepancy with expected pipe flow
 
-<details>
-<summary markdown="span">Expand to view screenshot</summary>
+  <details>
+  <summary markdown="span">Expand to view screenshot</summary>
 
-![Reccommendation_03_a](Images/Recommendation_03_a.png)
-</details>
+  ![Reccommendation_03_a](Images/Recommendation_03_a.png)
+  </details>
 
 <a name="leakscenario1"></a>
 
 * Leak Scenario 1 Checks for leak for specific valve output values
 
-<details>
-<summary markdown="span">Expand to view screenshot</summary>
+  <details>
+  <summary markdown="span">Expand to view screenshot</summary>
 
-![Reccommendation_03_b](Images/Recommendation_03_b.png)
-</details>
+  ![Reccommendation_03_b](Images/Recommendation_03_b.png)
+  </details>
 
 <a name="leakscenario2"></a>
 * Leak Scenario 2 Checks for leak for specific output values
 
-<details>
-<summary markdown="span">Expand to view screenshot</summary>
+  <details>
+  <summary markdown="span">Expand to view screenshot</summary>
 
-![Reccommendation_03_c](Images/Recommendation_03_c.png)
-</details>
+  ![Reccommendation_03_c](Images/Recommendation_03_c.png)
+  </details>
 
 <a name="outletpipeln"></a>
 
 * Outlet Pipeline Blockage
 Detects when there is an outlet pipeline blockage
 
-<details>
-<summary markdown="span">Expand to view screenshot</summary>
+  <details>
+  <summary markdown="span">Expand to view screenshot</summary>
 
-![Reccommendation_03_d](Images/Recommendation_03_d.png)
-</details>
+  ![Reccommendation_03_d](Images/Recommendation_03_d.png)
+  </details>
 
 <a name="topvalvpassscn1"></a>
 
 * Top Valve Passing Scenario 1 Detects flow discrepancy with top valve passing for specific output values
 
-<details>
-<summary markdown="span">Expand to view screenshot</summary>
+  <details>
+  <summary markdown="span">Expand to view screenshot</summary>
 
-![Reccommendation_03_e](Images/Recommendation_03_e.png)
-</details>
+  ![Reccommendation_03_e](Images/Recommendation_03_e.png)
+  </details>
 
 <a name="topvalvpassscn2"></a>
 
 * Top Valve Passing Scenario 2
 Detects flow discrepancy with top valve passing for specific output values
 
-<details>
-<summary markdown="span">Expand to view screenshot</summary>
 
-![Reccommendation_03_f](Images/Recommendation_03_f.png)
-</details>
+  <details>
+  <summary markdown="span">Expand to view screenshot</summary>
+
+  ![Reccommendation_03_f](Images/Recommendation_03_f.png)
+  </details>
 
 
 <!-- blank line -->
@@ -364,12 +374,11 @@ The application page is configured using the following <a href="https://document
 
 <details>
 <summary markdown="span">Expand to view screenshot</summary>
-
 ![Application_01](Images/Application_01.png)
 </details>
 
 
-
+---
 
 ### Pump Drilldown
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
@@ -393,6 +402,7 @@ The application page is configured using the following <a href="https://document
 ![Application_02](Images/Application_02.png)
 </details>
 
+---
 
 ### Tank Drilldown
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
@@ -409,7 +419,7 @@ The application page is configured using the following <a href="https://document
 ![Application_04](Images/Application_04.png)
 </details>
 
-
+---
 ### Conveyor Drilldown
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
 
@@ -429,6 +439,7 @@ The application page is configured using the following <a href="https://document
 ![Application_03](Images/Application_03.png)
 </details>
 
+---
 
 **Brewing Process Administration**
 
@@ -533,8 +544,8 @@ Expand to view screenshot of a successfully running data stream with live data:
 
 ## 4. Import the Applications
 
-	* When importing the application make sure to map the data source on the import wizard to the above data stream that was imported
-	* Confirm the connections are configured correctly in the App Data tab and in each Page Data tab
+When importing the application make sure to map the data source on the import wizard to the above data stream that was imported.
+	Confirm the connections are configured correctly in the App Data tab and in each Page Data tab.
 
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
