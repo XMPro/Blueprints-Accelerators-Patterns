@@ -236,11 +236,12 @@ The data stream is configured using:
 2. [Pump RUL](#recpumprul)
 3. [RUL Prediction](#rulpredict)
 4. [Tank Leak Detection](#tankleak)
-5. [Leak Scenario 1](#leakscenario1)
-6. [Leak Scenario 2](#leakscenario2)
-7. [Outlet Pipeline Blockage](#outletpipeln)
-8. [Top Valve Passing Scenario 1](#topvalvpassscn1)
-9. [Top Valve Passing Scenario 2](#topvalvpassscn2)
+5. [Inlet Blockage Detection](#inletblock)
+6. [Leak Scenario 1](#leakscenario1)
+7. [Leak Scenario 2](#leakscenario2)
+8. [Outlet Pipeline Blockage](#outletpipeln)
+9. [Top Valve Passing Scenario 1](#topvalvpassscn1)
+10. [Top Valve Passing Scenario 2](#topvalvpassscn2)
 
 ----
 
@@ -290,6 +291,9 @@ Alerts when the remaining useful life is below a specific level
 **Tank Leak Detection**
 
 The recommendation is configured using the following rules
+
+<a name="inletblock>
+
 * Inlet Pipeline Blockage - when there is a discrepancy with expected pipe flow
 
   <details>
