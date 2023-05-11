@@ -4,7 +4,13 @@
 
 [**◄ Blueprints, Accelerators & Patterns**](https://github.com/XMPro/Blueprints-Accelerators-Patterns)
 
-# Files
+# Table of contents
+1. [Files](#files)
+2. [Description](#description)
+3. [How To Import](#how-to-import)
+
+
+# Files 
 
 * SQL Scripts: 
   * <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Manufacturing%20-%20Bottling%20Plant/SQL%20Scripts/%5BDemoBottlingPlantMapping%5D.sql" target="_blank">[DemoBottlingPlantMapping]</a>
@@ -38,7 +44,6 @@ A list of assets and other details.
 
 <details>
 <summary>Columns</summary>
-
 ```
 [ID]
 ,[AssetNo]
@@ -76,8 +81,17 @@ Work management information.
 
 ## Data Stream
 
+### Data Stream Table Of Contents
+1. [Bottling Plant Image View](#btlplantimgmap)
+2. [Pump RUL](#pumprul)
+3. [Simulate Pump Telemetry](#simulatepumptelem)
+4. [Streaming Data Platform Simulator](#strmdatapltfrmsim)
+5. [Tank Leak Detection](#tankleakdetection)
 
-**Bottling Plant Image Map View**
+---
+
+<a name="btlplantimgmap"></a>
+**Bottling Plant Image Map View** 
 
 Set indicator status based on alerts from the recommendations.
 
@@ -94,13 +108,14 @@ The data stream is configured using:
 * <a href="https://xmpro.gitbook.io/xmpro-app/" target="_blank"><i>XMPro App</i></a> <a href="https://documentation.xmpro.com/concepts/agent#action-agents" target="_blank">action agent</a> - View data on the Image Map
 
 <details>
-  <summary markdown="span">Expand to view screenshot</summary>
-
+<summary markdown="span">Expand to view screenshot</summary>
 ![Configured Data Stream](Images/DataStream_01.png)
-</details>
+ </details>
 
+---
 
-**Pump RUL with Python**
+<a name="pumprul"></a>
+**Pump RUL with Python** 
 
 Predicting Remaining Useful Life (RUL) of an asset using machine learning models.
 
@@ -125,7 +140,9 @@ The data stream is configured using:
 ![Configured Data Stream](Images/DataStream_02.png)
 </details>
 
+---
 
+<a name="simulatepumptelem"></a>
 **Simulate Pump Telemetry**
 
 An example of simulated pump telemetry data - broadcasting out via MQTT.
@@ -148,7 +165,9 @@ The data stream is configured using:
 ![Configured Data Stream](Images/DataStream_03.png)
 </details>
 
+---
 
+<a name="strmdatapltfrmsim"></a>
 **Streaming Data Platform Simulator**
 
 Streaming image detection data.
@@ -172,7 +191,9 @@ The data stream is configured using:
 ![Configured Data Stream](Images/DataStream_04.png)
 </details>
 
+---
 
+<a name="tankleakdetection"></a>
 **Tank Leak Detection**
 
 A data stream used to detect leaks in a tank system.
@@ -209,99 +230,125 @@ The data stream is configured using:
 ## Recommendation
 
 
+### Recommendation Table Of Contents
+
+1. [Image Defect](#imgdefect)
+2. [Pump RUL](#recpumprul)
+3. [RUL Prediction](#rulpredict)
+4. [Tank Leak Detection](#tankleak)
+5. [Leak Scenario 1](#leakscenario1)
+6. [Leak Scenario 2](#leakscenario2)
+7. [Outlet Pipeline Blockage](#outletpipeln)
+8. [Top Valve Passing Scenario 1](#topvalvpassscn1)
+9. [Top Valve Passing Scenario 2](#topvalvpassscn2)
+
+----
+
+<a name="imgdefect"></a>
+
 **Image Defect**
 
-The recommendation is configured using the rule:
+The recommendation is configured using the rule
+* Defect Found - Alerts when an image is identified as `bad`
 
-Defect Found - Alerts when an image is identified as `bad`
 
+  <details>
+  <summary markdown="span">Expand to view screenshot</summary>
 
-<details>
-<summary markdown="span">Expand to view screenshot</summary>
+  ![Reccommendation_01](Images/Recommendation_01.png)
+  </details>
 
-![Reccommendation_01](Images/Recommendation_01.png)
-</details>
+----
 
+<a name="recpumprul"></a>
 
 **Pump RUL**
 
-The recommendation is configured using two rules:
+The recommendation is configured using two rules
+* Accuracy - Alerts once the model accuracy is out by a specified percentage
 
-Accuracy - Alerts once the model accuracy is out by a specified percentage
+  <details>
+  <summary markdown="span">Expand to view screenshot</summary>
 
-<details>
-<summary markdown="span">Expand to view screenshot</summary>
+  ![Reccommendation_02_a](Images/Recommendation_02_a.png)
+  </details>
 
-![Reccommendation_02_a](Images/Recommendation_02_a.png)
-</details>
+<a name="rulpredict"></a>
+* RUL Prediction 
+Alerts when the remaining useful life is below a specific level
 
+  <details>
+  <summary markdown="span">Expand to view screenshot</summary>
 
-RUL Prediction - Alerts when the remaining useful life is below a specific level
+  ![Reccommendation_02_b](Images/Recommendation_02_b.png)
+  </details>
 
-<details>
-<summary markdown="span">Expand to view screenshot</summary>
+----
 
-![Reccommendation_02_b](Images/Recommendation_02_b.png)
-</details>
-
+<a name="tankleak"></a>
 
 **Tank Leak Detection**
 
-The recommendation is configured using the following rules:
+The recommendation is configured using the following rules
+* Inlet Pipeline Blockage - when there is a discrepancy with expected pipe flow
+
+  <details>
+  <summary markdown="span">Expand to view screenshot</summary>
+
+  ![Reccommendation_03_a](Images/Recommendation_03_a.png)
+  </details>
+
+<a name="leakscenario1"></a>
+
+* Leak Scenario 1 Checks for leak for specific valve output values
+
+  <details>
+  <summary markdown="span">Expand to view screenshot</summary>
+
+  ![Reccommendation_03_b](Images/Recommendation_03_b.png)
+  </details>
+
+<a name="leakscenario2"></a>
+* Leak Scenario 2 Checks for leak for specific output values
+
+  <details>
+  <summary markdown="span">Expand to view screenshot</summary>
+
+  ![Reccommendation_03_c](Images/Recommendation_03_c.png)
+  </details>
+
+<a name="outletpipeln"></a>
+
+* Outlet Pipeline Blockage
+Detects when there is an outlet pipeline blockage
+
+  <details>
+  <summary markdown="span">Expand to view screenshot</summary>
+
+  ![Reccommendation_03_d](Images/Recommendation_03_d.png)
+  </details>
+
+<a name="topvalvpassscn1"></a>
+
+* Top Valve Passing Scenario 1 Detects flow discrepancy with top valve passing for specific output values
+
+  <details>
+  <summary markdown="span">Expand to view screenshot</summary>
+
+  ![Reccommendation_03_e](Images/Recommendation_03_e.png)
+  </details>
+
+<a name="topvalvpassscn2"></a>
+
+* Top Valve Passing Scenario 2
+Detects flow discrepancy with top valve passing for specific output values
 
 
-Inlet Pipeline Blockage - when there is a discrepancy with expected pipe flow
+  <details>
+  <summary markdown="span">Expand to view screenshot</summary>
 
-<details>
-<summary markdown="span">Expand to view screenshot</summary>
-
-![Reccommendation_03_a](Images/Recommendation_03_a.png)
-</details>
-
-
-Leak Scenario 1 - checks for leak for specific valve output values
-
-<details>
-<summary markdown="span">Expand to view screenshot</summary>
-
-![Reccommendation_03_b](Images/Recommendation_03_b.png)
-</details>
-
-
-Leak Scenario 2 - checks for leak for specific output values
-
-<details>
-<summary markdown="span">Expand to view screenshot</summary>
-
-![Reccommendation_03_c](Images/Recommendation_03_c.png)
-</details>
-
-
-Outlet Pipeline Blockage - Detect when there is a outlet pipeline blockage
-
-<details>
-<summary markdown="span">Expand to view screenshot</summary>
-
-![Reccommendation_03_d](Images/Recommendation_03_d.png)
-</details>
-
-
-Top Valve Passing Scenario 1 - detects flow discrepancy with top valve passing for specific output values
-
-<details>
-<summary markdown="span">Expand to view screenshot</summary>
-
-![Reccommendation_03_e](Images/Recommendation_03_e.png)
-</details>
-
-
-Top Valve Passing Scenario 2 - detects flow discrepancy with top valve passing for specific output values
-
-<details>
-<summary markdown="span">Expand to view screenshot</summary>
-
-![Reccommendation_03_f](Images/Recommendation_03_f.png)
-</details>
+  ![Reccommendation_03_f](Images/Recommendation_03_f.png)
+  </details>
 
 
 <!-- blank line -->
@@ -310,7 +357,6 @@ Top Valve Passing Scenario 2 - detects flow discrepancy with top valve passing f
 
 ## Application
 An example of how to visualize the synthetic data passed by the data stream to a Unity model in an application.
-
 
 **Bottling Plant Operational View**
 
@@ -323,15 +369,13 @@ The application page is configured using the following <a href="https://document
 * <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/image-map" target="_blank"><i>Image Map</i></a> to displaya schematic of the bottling process
 * <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/d3-visualization" target="_blank"><i>D3 Visualisation</i></a> to display an a matrix of the defect trends
 
-
 <details>
 <summary markdown="span">Expand to view screenshot</summary>
-
 ![Application_01](Images/Application_01.png)
 </details>
 
 
-
+---
 
 ### Pump Drilldown
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
@@ -355,6 +399,7 @@ The application page is configured using the following <a href="https://document
 ![Application_02](Images/Application_02.png)
 </details>
 
+---
 
 ### Tank Drilldown
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
@@ -371,7 +416,7 @@ The application page is configured using the following <a href="https://document
 ![Application_04](Images/Application_04.png)
 </details>
 
-
+---
 ### Conveyor Drilldown
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
 
@@ -391,6 +436,7 @@ The application page is configured using the following <a href="https://document
 ![Application_03](Images/Application_03.png)
 </details>
 
+---
 
 **Brewing Process Administration**
 
@@ -406,6 +452,7 @@ The application page is configured using the following <a href="https://document
 ![Application_05](Images/Application_05.png)
 </details>
 
+---
 
 # How to Import
 Import Password: `Dem0nstr@t1on`
@@ -475,16 +522,15 @@ Expand to view screenshot of a successfully running data stream with live data:
 
 ## 3. Import the Recommendations
 
-    * Import the including form if it doesn't already exist
+ * Import the including form if it doesn't already exist
 
-<details>
-  <summary markdown="span">Expand to view screenshot</summary>
+  <details>
+    <summary markdown="span">Expand to view screenshot</summary>
 
-![Recommendation Import](Images/Recommendation_Import.png) 
+  ![Recommendation Import](Images/Recommendation_Import.png) 
+  </details>
 
-</details>
-
-    * Assign Access to others as required
+* Assign Access to others as required
 
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
@@ -495,8 +541,8 @@ Expand to view screenshot of a successfully running data stream with live data:
 
 ## 4. Import the Applications
 
-	* When importing the application make sure to map the data source on the import wizard to the above data stream that was imported
-	* Confirm the connections are configured correctly in the App Data tab and in each Page Data tab
+When importing the application make sure to map the data source on the import wizard to the above data stream that was imported.
+	Confirm the connections are configured correctly in the App Data tab and in each Page Data tab.
 
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
