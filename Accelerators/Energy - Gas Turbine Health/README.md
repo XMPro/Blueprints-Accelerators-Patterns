@@ -103,7 +103,7 @@ The data stream is configured using:
 ### Recommendation Table Of Contents
 
 1. [Bearing Alerts](#brngalerts)
-2. [Dry Gas Seal System*](#drygas)
+2. [Dry Gas Seal System](#drygas)
 3. [Motor Winding Temperature](#monwndtemp)
 
 <!-- blank line -->
