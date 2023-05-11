@@ -4,6 +4,12 @@
 
 [**◄ Blueprints, Accelerators & Patterns**](https://github.com/XMPro/Blueprints-Accelerators-Patterns)
 
+# Table of contents
+1. [Files](#files)
+2. [Description](#description)
+3. [How To Import](#how-to-import)
+
+
 # Files
 
 * SQL Scripts: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Alternative%20Energy%20-%20Renewable%20View/SQL%20Scripts/%5BDemoAlternativeEnergyAsset%5D.sql" target="_blank">[DemoAlternativeEnergyAsset]</a>, <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Alternative%20Energy%20-%20Renewable%20View/SQL%20Scripts/%5BDemoWorkManagementWindTurbine%5D.sql" target="_blank">[DemoWorkManagementWindTurbine]</a>
