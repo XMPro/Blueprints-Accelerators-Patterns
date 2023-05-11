@@ -9,6 +9,9 @@
 2. [Description](#description)
 3. [How To Import](#how-to-import)
 
+<!-- blank line -->
+----
+<!-- blank line -->
 
 # Files
 
@@ -17,6 +20,10 @@
 * Recommendation: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Energy%20-%20Gas%20Turbine%20Health/Recommendation/Bearing%20Alerts.xr" target="_blank">Bearing Alerts</a>, <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Energy%20-%20Gas%20Turbine%20Health/Recommendation/Dry%20Gas%20Seal%20System.xr" target="_blank">Dry Gas Seal System</a>, <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Energy%20-%20Gas%20Turbine%20Health/Recommendation/Motor%20Winding%20Temperature.xr" target="_blank">Motor Winding Temperature</a>
 * Application: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Energy%20-%20Gas%20Turbine%20Health/Application/Gas%20Turbine%20Health.xapp" target="_blank">Gas Turbine Health</a>
 * Template: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Energy%20-%20Gas%20Turbine%20Health/Template/Gas%20Turbine%20Health.xtml" target="_blank">Gas Turbine Health</a>
+
+<!-- blank line -->
+----
+<!-- blank line -->
 
 
 # Description
@@ -152,6 +159,9 @@ The application page is configured using the following <a href="https://document
 ![Application_01](Images/Application_01.png)
 </details>
 
+<!-- blank line -->
+----
+<!-- blank line -->
 
 ### Site View
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
@@ -167,6 +177,9 @@ The application page is configured using the following <a href="https://document
 ![Application_02](Images/Application_02.png)
 </details>
 
+<!-- blank line -->
+----
+<!-- blank line -->
 
 ### Gas Turbine
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
@@ -186,6 +199,9 @@ The application page is configured using the following <a href="https://document
 ![Application_03](Images/Application_03.png)
 </details>
 
+<!-- blank line -->
+----
+<!-- blank line -->
 
 ### Model View
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
@@ -198,6 +214,9 @@ The application page is configured using the following <a href="https://document
 ![Application_04](Images/Application_04.png)
 </details>
 
+<!-- blank line -->
+----
+<!-- blank line -->
 
 # How to Import
 Import Password: `Dem0nstr@t1on`
