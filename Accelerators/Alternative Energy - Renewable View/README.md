@@ -9,6 +9,9 @@
 2. [Description](#description)
 3. [How To Import](#how-to-import)
 
+<!-- blank line -->
+----
+<!-- blank line -->
 
 # Files
 
@@ -17,6 +20,9 @@
 * Recommendation: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Alternative%20Energy%20-%20Renewable%20View/Recommendation/Gearbox%20Oil.xr" target="_blank">Gearbox Oil</a>
 * Application: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Alternative%20Energy%20-%20Renewable%20View/Application/Renewables%20View.xapp" target="_blank">Renewables View</a>
 
+<!-- blank line -->
+----
+<!-- blank line -->
 
 # Description
 
@@ -101,6 +107,17 @@ The data stream is configured using:
 
 ## Recommendation
 
+### Recommendation Table Of Contents
+
+1. [Gearbox Oil Level](#grboxlvl)
+2. [Gearbox Oil Viscosity](#grboxvisc)
+
+<!-- blank line -->
+----
+<!-- blank line -->
+
+<a name="grboxlvl"></a>
+
 The recommendation is configured using two rules: 
 
 **Gearbox Oil Level**
@@ -111,6 +128,8 @@ The recommendation is configured using two rules:
 
 ![Reccommendation_01](Images/Recommendation_01.png)
 </details>
+
+<a name="grboxvisc"></a>
 
 **Gearbox Oil Viscosity**
 + Checks if the Wind Turbine assets have a high gearbox oil viscosity.
@@ -144,6 +163,10 @@ The application page is configured using the following <a href="https://document
 ![Application_01](Images/Application_01.png)
 </details>
 
+<!-- blank line -->
+----
+<!-- blank line -->
+
 ### Asset View
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
 
@@ -159,6 +182,9 @@ The application page is configured using the following <a href="https://document
 ![Application_03](Images/Application_03.png)
 </details>
 
+<!-- blank line -->
+----
+<!-- blank line -->
 
 ### Asset Drilldown
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
@@ -177,6 +203,9 @@ The application page is configured using the following <a href="https://document
 ![Application_02](Images/Application_02.png)
 </details>
 
+<!-- blank line -->
+----
+<!-- blank line -->
 
 # How to Import
 Import Password: `Dem0nstr@t1on`
@@ -200,10 +229,13 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 ## 2. Import the Data Stream
 
     * Assign Access to others as required
-	
-	* Edit the XMPro agent "View Data" and ensure the URL and Integration Key are selected
-	* Edit the Recommendation agent "Run Failure Recommendation Rule" and ensure the URL and Integration Key are selected
-	* Edit the Azure SQL agent "Read all Records" and ensure the Server Instance, Username and Password fields are filled in correctly
+
+	* Edit the XMPro agent "View Data"
+     - Ensure the URL and Integration Key are selected
+	* Edit the Recommendation agent "Run Failure Recommendation Rule" 
+     - Ensure the URL and Integration Key are selected
+	* Edit the Azure SQL agent "Read all Records"
+     - Ensure the Server Instance, Username and Password fields are filled in correctly
 
 	* Click Apply and save the data stream (Click Save on the Action Bar, or CTRL + S on the keyboard)
 	* Publish the data stream and open the live view
@@ -238,8 +270,8 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 
 ## 4. Import the Application
 
-	* When importing the application make sure to map the data source on the import wizard to the above data stream that was imported
-	* Confirm the connections are configured correctly in the App Data tab and in each Page Data tab
+When importing the application make sure to map the data source on the import wizard to the above data stream that was imported.
+Confirm the connections are configured correctly in the App Data tab and in each Page Data tab.
 
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
