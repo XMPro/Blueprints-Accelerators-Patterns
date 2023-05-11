@@ -4,6 +4,12 @@
 
 [**◄ Blueprints, Accelerators & Patterns**](https://github.com/XMPro/Blueprints-Accelerators-Patterns)
 
+# Table of contents
+1. [Files](#files)
+2. [Description](#description)
+3. [How To Import](#how-to-import)
+
+
 # Files
 
 * SQL Scripts: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Mining%20-%20Surface%20Processing%20Plant/SQL%20Scripts/%5BDemoSTPPlantMapping%5D.sql" target="_blank">[DemoSTPPIantMapping]</a> , 
