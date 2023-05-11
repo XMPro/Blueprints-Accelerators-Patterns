@@ -152,6 +152,16 @@ The data stream is configured using:
 
 ## Recommendation
 
+### Recommendation Table Of Contents
+
+1. [Amp Trip](#amptrip)
+2. [Discharge Pressure](#dischpres)
+
+<!-- blank line -->
+----
+<!-- blank line -->
+
+<a name="amptrip"></a>
 The recommendation is configured using the rule: 
 
 **Amp Trip**
@@ -163,9 +173,7 @@ The recommendation is configured using the rule:
 ![Recommendation_01](Images/Recommendation_01_a.png)
 </details>
 
-<!-- blank line -->
-----
-<!-- blank line -->
+
 
 + Alerts if the amperage is outside the upper threshold
 
@@ -178,6 +186,8 @@ The recommendation is configured using the rule:
 <!-- blank line -->
 ----
 <!-- blank line -->
+<a name="dischpres"></a>
+
 **Discharge Pressure**
 + Alerts if the discharge pressure is out of efficiency range
 
