@@ -229,10 +229,13 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 ## 2. Import the Data Stream
 
     * Assign Access to others as required
-	
-	* Edit the XMPro agent "View Data" and ensure the URL and Integration Key are selected
-	* Edit the Recommendation agent "Run Failure Recommendation Rule" and ensure the URL and Integration Key are selected
-	* Edit the Azure SQL agent "Read all Records" and ensure the Server Instance, Username and Password fields are filled in correctly
+
+	* Edit the XMPro agent "View Data"
+     - Ensure the URL and Integration Key are selected
+	* Edit the Recommendation agent "Run Failure Recommendation Rule" 
+     - Ensure the URL and Integration Key are selected
+	* Edit the Azure SQL agent "Read all Records"
+     - Ensure the Server Instance, Username and Password fields are filled in correctly
 
 	* Click Apply and save the data stream (Click Save on the Action Bar, or CTRL + S on the keyboard)
 	* Publish the data stream and open the live view
