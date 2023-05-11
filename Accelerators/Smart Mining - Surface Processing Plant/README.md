@@ -297,6 +297,10 @@ The application page is configured using the following <a href="https://document
 ![Drilldown_Data_Compare](Images/Drilldown_Data_Compare.png)
 </details>
 
+<!-- blank line -->
+----
+<!-- blank line -->
+
 # How to Import
 Import Password: `Dem0nstr@t1on`
 
