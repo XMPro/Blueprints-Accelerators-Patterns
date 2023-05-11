@@ -99,6 +99,18 @@ The data stream is configured using:
 
 ## Recommendation
 
+
+### Recommendation Table Of Contents
+
+1. [Bearing Alerts](#brngalerts)
+2. [Dry Gas Seal System*](#drygas)
+3. [Motor Winding Temperature](#monwndtemp)
+
+<!-- blank line -->
+----
+<!-- blank line -->
+
+<a name="brngalerts"></a>
 The recommendation is configured using three rules: 
 
 **Bearing Alerts**
@@ -112,6 +124,7 @@ The recommendation is configured using three rules:
 ![Reccommendation_01_b](Images/Recommendation_01_b.png)
 </details>
 
+<a name="drygas"></a>
 
 **Dry Gas Seal System**
 + Alert for low pressure on dry gas seal system inner seal of the gearbox drive-end
@@ -123,6 +136,7 @@ The recommendation is configured using three rules:
 ![Reccommendation_02](Images/Recommendation_02.png)
 </details>
 
+<a name="monwndtemp"></a>
 
 **Motor Winding Temperature**
 + Alert when motor winding temperature has exceeded threshold
