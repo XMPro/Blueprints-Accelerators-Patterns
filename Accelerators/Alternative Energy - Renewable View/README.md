@@ -107,6 +107,17 @@ The data stream is configured using:
 
 ## Recommendation
 
+### Recommendation Table Of Contents
+
+1. [Gearbox Oil Level](#grboxlvl)
+2. [Gearbox Oil Viscosity](#grboxvisc)
+
+<!-- blank line -->
+----
+<!-- blank line -->
+
+<a name="grboxlvl"></a>
+
 The recommendation is configured using two rules: 
 
 **Gearbox Oil Level**
@@ -117,6 +128,8 @@ The recommendation is configured using two rules:
 
 ![Reccommendation_01](Images/Recommendation_01.png)
 </details>
+
+<a name="grboxvisc"></a>
 
 **Gearbox Oil Viscosity**
 + Checks if the Wind Turbine assets have a high gearbox oil viscosity.
