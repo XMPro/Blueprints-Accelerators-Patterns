@@ -88,7 +88,9 @@ Work management information.
 4. [Streaming Data Platform Simulator](#strmdatapltfrmsim)
 5. [Tank Leak Detection](#tankleakdetection)
 
----
+<!-- blank line -->
+----
+<!-- blank line -->
 
 <a name="btlplantimgmap"></a>
 **Bottling Plant Image Map View** 
