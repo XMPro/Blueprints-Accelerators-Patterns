@@ -9,6 +9,10 @@
 2. [Description](#description)
 3. [How To Import](#how-to-import)
 
+
+---
+
+
 # Files
 
 * SQL Scripts: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Assets%20-%20Heat%20Exchanger%20View/SQL%20Scripts/%5BDemoHeatExchangerUCoefficient%5D.sql" target="_blank">[DemoHeatExchangerUCoefficient]</a>
@@ -16,6 +20,9 @@
 * Recommendation: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Assets%20-%20Heat%20Exchanger%20View/Recommendation/Heat%20Exchanger%20Fouling.xr" target="_blank">Heat Exchanger Fouling</a>
 * Application: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Assets%20-%20Heat%20Exchanger%20View/Application/Heat%20Exchanger%20View.xapp" target="_blank">Heat Exchanger View</a>
 
+<!-- blank line -->
+----
+<!-- blank line -->
 
 # Description
 
@@ -107,6 +114,10 @@ The application page is configured using the following <a href="https://document
 ![Application_01](Images/Application_01.png)
 </details>
 
+<!-- blank line -->
+----
+<!-- blank line -->
+
 # How to Import
 Import Password: `Dem0nstr@t1on`
 
@@ -165,8 +176,9 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 
 ## 4. Import the Application
 
-	* When importing the application make sure to map the data source on the import wizard to the above data stream that was imported
-	* Confirm the connections are configured correctly in the App Data tab and in each Page Data tab
+ When importing the application make sure to map the data source 
+ on the import wizard to the above data stream that was imported.
+	Confirm the connections are configured correctly in the App Data tab and in each Page Data tab.
 
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
