@@ -292,7 +292,7 @@ Alerts when the remaining useful life is below a specific level
 
 The recommendation is configured using the following rules
 
-<a name="inletblock>
+<a name="inletblock></a>
 
 * Inlet Pipeline Blockage - when there is a discrepancy with expected pipe flow
 
