@@ -4,6 +4,12 @@
 
 [**◄ Blueprints, Accelerators & Patterns**](https://github.com/XMPro/Blueprints-Accelerators-Patterns)
 
+# Table of contents
+1. [Files](#files)
+2. [Description](#description)
+3. [How To Import](#how-to-import)
+
+
 # Files
 
 * SQL Scripts: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Mining%20-%20Surface%20Processing%20Plant/SQL%20Scripts/%5BDemoSTPPlantMapping%5D.sql" target="_blank">[DemoSTPPIantMapping]</a> , 
@@ -59,6 +65,16 @@ Work order data for pump assets.
 
 ## Data Stream
 
+### Data Stream Table Of Contents
+1. [Processing Plant Image Map View](#procplant)
+2. [Simulate Pump Telemetry](#simpumptel)
+3. [Conveyor Condition Monitoring](#concondmon)
+
+<!-- blank line -->
+----
+<!-- blank line -->
+
+<a name="procplant"></a>
 **Processing Plant Image Map View**
 
 Passes data to image map in App Designer for the live status and location of each asset.
@@ -77,7 +93,11 @@ The data stream is configured using:
 ![Configured Data Stream](Images/DataStream_01.png)
 </details>
 
+<!-- blank line -->
+----
+<!-- blank line -->
 
+<a name="simpumptel"></a>
 
 **Simulate Pump Telemetry**
 
@@ -101,7 +121,11 @@ The data stream is configured using:
 ![Configured Data Stream](Images/SimulatePumpTelemetry.png)
 </details>
 
+<!-- blank line -->
+----
+<!-- blank line -->
 
+<a name="concondmon"></a>
 
 **Conveyor Condition Monitoring**
 
@@ -132,6 +156,16 @@ The data stream is configured using:
 
 ## Recommendation
 
+### Recommendation Table Of Contents
+
+1. [Amp Trip](#amptrip)
+2. [Discharge Pressure](#dischpres)
+
+<!-- blank line -->
+----
+<!-- blank line -->
+
+<a name="amptrip"></a>
 The recommendation is configured using the rule: 
 
 **Amp Trip**
@@ -143,6 +177,8 @@ The recommendation is configured using the rule:
 ![Recommendation_01](Images/Recommendation_01_a.png)
 </details>
 
+
+
 + Alerts if the amperage is outside the upper threshold
 
 <details>
@@ -150,6 +186,11 @@ The recommendation is configured using the rule:
 
 ![Recommendation_01](Images/Recommendation_01_b.png)
 </details>
+
+<!-- blank line -->
+----
+<!-- blank line -->
+<a name="dischpres"></a>
 
 **Discharge Pressure**
 + Alerts if the discharge pressure is out of efficiency range
@@ -191,7 +232,9 @@ The application page is configured using the following <a href="https://document
 ![Application_01](Images/Application_01.png)
 </details>
 
-
+<!-- blank line -->
+----
+<!-- blank line -->
 
 ### Pump Drilldown 
 
@@ -210,6 +253,9 @@ The application page is configured using the following <a href="https://document
 ![Application_01](Images/Application_03.png)
 </details>
 
+<!-- blank line -->
+----
+<!-- blank line -->
 
 ### Pump Unity View 
 
@@ -229,6 +275,9 @@ The application page is configured using the following <a href="https://document
 ![Application_01](Images/Application_02.png)
 </details>
 
+<!-- blank line -->
+----
+<!-- blank line -->
 
 ### Pump Drilldown Data
 
@@ -243,6 +292,10 @@ The application page is configured using the following <a href="https://document
 ![Drilldown_Data](Images/Drilldown_Data.png)
 </details>
 
+<!-- blank line -->
+----
+<!-- blank line -->
+
 ### Pump Drilldown Data Compare
 
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
@@ -256,6 +309,10 @@ The application page is configured using the following <a href="https://document
 
 ![Drilldown_Data_Compare](Images/Drilldown_Data_Compare.png)
 </details>
+
+<!-- blank line -->
+----
+<!-- blank line -->
 
 # How to Import
 Import Password: `Dem0nstr@t1on`
@@ -321,8 +378,8 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 
 ## 4. Import the Application
 
-	* When importing the application make sure to map the data source on the import wizard to the above data stream that was imported
-	* Confirm the connections are configured correctly in the App Data tab and in each Page Data tab
+When importing the application make sure to map the data source on the import
+ wizard to the above data stream that was imported. Confirm the connections are configured correctly in the App Data tab and in each Page Data tab.
 
   <details>
   <summary markdown="span">Expand to view screenshot</summary>

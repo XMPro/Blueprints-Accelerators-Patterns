@@ -88,7 +88,9 @@ Work management information.
 4. [Streaming Data Platform Simulator](#strmdatapltfrmsim)
 5. [Tank Leak Detection](#tankleakdetection)
 
----
+<!-- blank line -->
+----
+<!-- blank line -->
 
 <a name="btlplantimgmap"></a>
 **Bottling Plant Image Map View** 
@@ -290,6 +292,8 @@ Alerts when the remaining useful life is below a specific level
 **Tank Leak Detection**
 
 The recommendation is configured using the following rules
+
+
 * Inlet Pipeline Blockage - when there is a discrepancy with expected pipe flow
 
   <details>

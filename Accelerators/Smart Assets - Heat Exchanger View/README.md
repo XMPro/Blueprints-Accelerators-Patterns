@@ -4,6 +4,10 @@
 
 [**◄ Blueprints, Accelerators & Patterns**](https://github.com/XMPro/Blueprints-Accelerators-Patterns)
 
+# Table of contents
+1. [Files](#files)
+2. [Description](#description)
+3. [How To Import](#how-to-import)
 
 # Files
 
