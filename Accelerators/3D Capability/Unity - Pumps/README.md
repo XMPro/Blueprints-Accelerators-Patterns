@@ -69,9 +69,12 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 
     * Assign Access to others as required
 	
-	* Edit the XMPro agent "Send to App Designer Single" and ensure the URL and Integration Key are selected
-	* Edit the XMPro agent "Send to App Designer" and ensure the URL and Integration Key are selected
-	* Edit the Recommendation agent "Run Recommendation" and ensure the URL and Integration Key are selected
+	* Edit the XMPro agent "Send to App Designer Single"  
+      - Ensure the URL and Integration Key are selected
+	* Edit the XMPro agent "Send to App Designer"  
+      - Ensure the URL and Integration Key are selected
+	* Edit the Recommendation agent "Run Recommendation"  
+      - Ensure the URL and Integration Key are selected
 
 	* Click Apply and save the data stream (Click Save on the Action Bar, or CTRL + S on the keyboard)
 	* Publish the data stream and open the live view
@@ -85,7 +88,8 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 
 ## 2. Import the Application - <i><b>Unity_Pumps.xapp</b></i>
 
-	* When importing the application make sure to map the data source on the import wizard to the above data stream that was imported
+	* When importing the application make sure to map the data source on the import wizard   
+      to the above data stream that was imported
 
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
