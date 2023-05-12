@@ -97,22 +97,26 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 ![Running Data Stream](Images/Import%20Options.png) 
 </details>
 
-    * Assign Access to others as required for design and runtime
+    * Assign Access to others as required for design and run time
 
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
 
 ![Running Data Stream](Images/ApplicationAccess.png) 
 </details>
+
+
 	
-	* Save the Application
+    * Save the Application
 	* Publish the application
-	* Ensure there is data in the application and that the Unity model is receveiing its data by hovering over and observing the values
+	* Ensure there is data in the application and that the Unity model is receiving    
+      its data by hovering over and observing the values
 
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
 
 ![Running Data Stream](Images/Application.png) 
+
 </details>
 
 ## Contributing
