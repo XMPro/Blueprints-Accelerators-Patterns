@@ -15,6 +15,8 @@
 * Data Stream: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/3D%20Capability/Unity%20-%20Pumps/Data%20Stream/Simulate%20Pump%20Telemetry.xuc" target="_blank">Simulate Pump Telemetry</a>
 * Application: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/3D%20Capability/Unity%20-%20Pumps/Application/Unity_Pumps.xapp" target="_blank">Unity Pumps</a>
 
+---
+
 # Description
 ## Data Stream
 An example of how to generate synthetic data and pass it through a data stream to a Unity model running within an application.
@@ -51,6 +53,8 @@ The application page is configured using the following <a href="https://document
 
 ![Configured Data Stream](Images/Application.png)
 </details>
+
+---
 
 # How to Import
 Import Password: `Dem0nstr@t1on`
