@@ -15,6 +15,8 @@
 * Data Stream: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/3D%20Capability/Unity%20-%20Pumps/Data%20Stream/Simulate%20Pump%20Telemetry.xuc" target="_blank">Simulate Pump Telemetry</a>
 * Application: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/3D%20Capability/Unity%20-%20Pumps/Application/Unity_Pumps.xapp" target="_blank">Unity Pumps</a>
 
+---
+
 # Description
 ## Data Stream
 An example of how to generate synthetic data and pass it through a data stream to a Unity model running within an application.
@@ -52,6 +54,8 @@ The application page is configured using the following <a href="https://document
 ![Configured Data Stream](Images/Application.png)
 </details>
 
+---
+
 # How to Import
 Import Password: `Dem0nstr@t1on`
 
@@ -65,9 +69,12 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 
     * Assign Access to others as required
 	
-	* Edit the XMPro agent "Send to App Designer Single" and ensure the URL and Integration Key are selected
-	* Edit the XMPro agent "Send to App Designer" and ensure the URL and Integration Key are selected
-	* Edit the Recommendation agent "Run Recommendation" and ensure the URL and Integration Key are selected
+	* Edit the XMPro agent "Send to App Designer Single"  
+      - Ensure the URL and Integration Key are selected
+	* Edit the XMPro agent "Send to App Designer"  
+      - Ensure the URL and Integration Key are selected
+	* Edit the Recommendation agent "Run Recommendation"  
+      - Ensure the URL and Integration Key are selected
 
 	* Click Apply and save the data stream (Click Save on the Action Bar, or CTRL + S on the keyboard)
 	* Publish the data stream and open the live view
@@ -81,7 +88,8 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 
 ## 2. Import the Application - <i><b>Unity_Pumps.xapp</b></i>
 
-	* When importing the application make sure to map the data source on the import wizard to the above data stream that was imported
+	* When importing the application make sure to map the data source on the import wizard   
+      to the above data stream that was imported
 
 <details>
   <summary markdown="span">Expand to view screenshot</summary>

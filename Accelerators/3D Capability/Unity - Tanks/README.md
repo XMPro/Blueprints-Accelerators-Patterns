@@ -13,7 +13,9 @@
 
 # Files
 * Data Stream: <a href="https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/Accelerators/3D%20Capability/Unity%20-%20Tanks/Data%20Stream/Simulate%20Tank%20Telemetry.xuc" target="_blank">Simulate Tank Telemetry</a>
-* Application: <a href="https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/Accelerators/3D%20Capability/Unity%20-%20Tanks/Application/Unity_Tanks.xapp" target="_blank">Unity Tanks</a>
+* Application: <a href="https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/Accelerators/3D%20Capability/Unity%20-%20Tanks/Application/Unity_Tanks.xapp" target="_blank">Unity Tanks</a>  
+  
+---
 
 # Description
 ## Data Stream
@@ -47,6 +49,8 @@ The application page is configured using the following <a href="https://document
 ![Configured Data Stream](Images/Application.png)
 </details>
 
+---
+
 # How to Import
 Import Password: `Dem0nstr@t1on`
 
@@ -74,7 +78,8 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 
 ## 2. Import the Application - <i><b>Unity_Tanks.xapp</b></i>
 
-	* When importing the application make sure to map the data source on the import wizard to the above data stream that was imported
+	* When importing the application make sure to map the data source on the import wizard  
+	  to the above data stream that was imported
 
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
