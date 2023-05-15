@@ -31,7 +31,7 @@ XMPro Patterns are pre-configured data streams that serve as building blocks for
   <img alt="" src="./Icons/accelerator.png">
 </picture>
 </td>
-<td><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/Patterns/Machine%20Learning/Vertical%20Travel%20-%20Forecastingt">Forecasting - Vertical Travel</a></td>
+<td><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/Patterns/Machine%20Learning/Vertical%20Travel%20-%20Forecasting">Forecasting - Vertical Travel</a></td>
 <td>Forecasting the vertical travel of a crusher asset through a forecast model.</td></tr>
 </table>
 
