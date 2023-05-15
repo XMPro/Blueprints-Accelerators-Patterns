@@ -193,6 +193,7 @@ The application page is configured using the following <a href="https://document
 
 ![Application_02](Images/Application_02.png)
 </details>
+
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
 
 * <a href="https://documentation.xmpro.com/blocks-toolbox/basic/indicator" target="_blank"><i>Indicator</i></a> presenting the status of health rate
@@ -207,6 +208,7 @@ The application page is configured using the following <a href="https://document
 
 ![Application_03](Images/Application_03.png)
 </details>
+
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
 
 * <a href="https://documentation.xmpro.com/blocks-toolbox/basic/text" target="_blank"><i>Text</i></a> to display the live data
@@ -224,9 +226,10 @@ The application page is configured using the following <a href="https://document
 
 ![Application_04](Images/Application_04.png)
 </details>
+
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
 
-* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/d3-visualization" target="_blank"><i>D3 Visualisation</i></a> to display an anomaly detection graph
+* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/d3-visualization" target="_blank"><i>D3 Visualization</i></a> to display an anomaly detection graph
 
 ##
 # How to Import
