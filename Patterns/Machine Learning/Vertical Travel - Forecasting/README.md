@@ -1,50 +1,84 @@
-# <img alternative="XMPro Logo X" width="30px" src="https://xmks.s3.amazonaws.com/2020/X-Blue.png#gh-light-mode-only"> Vertical Travel - Forecasting 
+# <img alternative="XMPro Logo X" width="30px" src="https://xmks.s3.amazonaws.com/2020/X-Blue.png#gh-light-mode-only"> Forecasting - Vertical Travel 
 
-[**◄ Patterns**](https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/Patterns)
+[◄ Patterns](https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/Patterns)
 
-[**◄ Blueprints, Accelerators & Patterns**](https://github.com/XMPro/Blueprints-Accelerators-Patterns)
+[◄ Blueprints, Accelerators & Patterns](https://github.com/XMPro/Blueprints-Accelerators-Patterns)
+
+# Table of contents
+1. [Files](#files)
+2. [Description](#description)
+3. [How To Import](#how-to-import)
 
 # Files
-
-* SQL Scripts: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Vertical%20Travel%20-%20Forecasting/SQL%20Scripts/%5BDemoCrusher%5D.sql" target="_blank">[DemoCrusher]</a>
-* Data Stream: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Vertical%20Travel%20-%20Forecasting/Vertical%20Travel%20Forecasting.xuc" target="_blank">Vertical Travel Forecasting</a>
-
+<table>
+<tr><td width="240px"> Type </td><td width="500px"> Name </td></tr>
+<tr>
+<td>SQL Scripts</td>
+<td><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Vertical%20Travel%20-%20Forecasting/SQL%20Scripts/%5BDemoCrusher%5D.sql" target="_blank">DemoCrusher</td>
+</tr>
+<tr>
+<td>Data Stream</td>
+<td><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Vertical%20Travel%20-%20Forecasting/Vertical%20Travel%20Forecasting.xuc" target="_blank">Vertical Travel Forecasting</a></td>
+</tr>
+</table>
 
 # Description
-
-
 ## SQL Scripts
 
-
-### DemoCrusher
-
-Data for a crusher asset.
-
 <details>
-<summary>Columns</summary>
+<summary>DemoCrusher (Data for a crusher asset)</summary>
 
 ```
-[ID]
-,[AssetId]
-,[Name]
-,[Latitude]
-,[Longitude]
-,[Live]
-,[HealthScore]
-,[Location]
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[DemoCrusher](
+	[ID] [bigint] IDENTITY(1,1) NOT NULL,
+	[AssetId] [nvarchar](25) NOT NULL,
+	[Name] [nvarchar](50) NULL,
+	[Latitude] [float] NULL,
+	[Longitude] [float] NULL,
+	[Live] [bit] NULL,
+	[HealthScore] [nchar](10) NULL,
+	[Location] [nvarchar](50) NULL,
+ CONSTRAINT [PK_DemoCrusher] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET IDENTITY_INSERT [dbo].[DemoCrusher] ON 
+GO
+INSERT [dbo].[DemoCrusher] ([ID], [AssetId], [Name], [Latitude], [Longitude], [Live], [HealthScore], [Location]) VALUES (2, N'SC1', N'Crusher 1', 50.770697265309941, -105.34947817747876, 1, N'90        ', N'Canada')
+GO
+INSERT [dbo].[DemoCrusher] ([ID], [AssetId], [Name], [Latitude], [Longitude], [Live], [HealthScore], [Location]) VALUES (3, N'SC2', N'Crusher 2', 50.770697265309941, -105.34947817747876, 1, N'90        ', N'Canada')
+GO
+INSERT [dbo].[DemoCrusher] ([ID], [AssetId], [Name], [Latitude], [Longitude], [Live], [HealthScore], [Location]) VALUES (4, N'SC3', N'Crusher 3', 50.770697265309941, -105.34947817747876, 1, N'90        ', N'Canada')
+GO
+INSERT [dbo].[DemoCrusher] ([ID], [AssetId], [Name], [Latitude], [Longitude], [Live], [HealthScore], [Location]) VALUES (5, N'SC4', N'Crusher 4', 50.770697265309941, -105.34947817747876, 0, N'90        ', N'Canada')
+GO
+INSERT [dbo].[DemoCrusher] ([ID], [AssetId], [Name], [Latitude], [Longitude], [Live], [HealthScore], [Location]) VALUES (6, N'SC5', N'Crusher 5', 50.770697265309941, -105.34947817747876, 0, N'90        ', N'Canada')
+GO
+INSERT [dbo].[DemoCrusher] ([ID], [AssetId], [Name], [Latitude], [Longitude], [Live], [HealthScore], [Location]) VALUES (7, N'SC6', N'Crusher 6', 50.770697265309941, -105.34947817747876, 1, N'90        ', N'Canada')
+GO
+SET IDENTITY_INSERT [dbo].[DemoCrusher] OFF
+GO
 ```
+
 </details>
 
-
-<!-- blank line -->
-----
-<!-- blank line -->
-
+##
 
 ## Data Stream
 
 Prediction of liner wear for a crusher asset.
 
+<details>
+  <summary markdown="span">Expand to view screenshot</summary>
+
+![Configured Data Stream](Images/DataStream_01.png)
+</details>
 The data stream is configured using: 
 
 * <a href="https://xmpro.gitbook.io/csv/" target="_blank"><i>CSV</i></a> <a href="https://documentation.xmpro.com/concepts/agent#listeners" target="_blank">listener</a> - Simulate data from CSV file
@@ -57,21 +91,10 @@ The data stream is configured using:
 * <a href="https://xmpro.gitbook.io/forecasting/" target="_blank"><i>Regression</i></a> <a href="https://documentation.xmpro.com/concepts/agent#ai-and-machine-learning" target="_blank">AI and machine learning agent</a> - Execute forecasting model on data
 * <a href="https://xmpro.gitbook.io/run-recommendation/" target="_blank"><i>Run Recommendation</i></a> <a href="https://documentation.xmpro.com/concepts/agent#recommendation" target="_blank">agent</a> - Run Recommendation Rules
 
-
-
-<details>
-  <summary markdown="span">Expand to view screenshot</summary>
-
-![Configured Data Stream](Images/DataStream_01.png)
-</details>
-
-<!-- blank line -->
-----
-<!-- blank line -->
-
+##
 
 # How to Import
-Import Password: `Dem0nstr@t1on`
+Import Password: `Dem0nstr@t1on`, for instructions on how to import <a href="https://documentation.xmpro.com/how-tos/import-export-and-clone#importing">click here</a>.
 
 Create/confirm the following variables
   * App Designer URL
@@ -79,9 +102,6 @@ Create/confirm the following variables
   * SQL Server
   * SQL Username
   * SQL Password (Encrypted)
-
-For instructions on how to import <a href="https://documentation.xmpro.com/how-tos/import-export-and-clone#importing">click here</a>
-
 
 ## 1. Run SQL Scripts
 
