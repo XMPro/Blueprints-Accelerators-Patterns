@@ -1,27 +1,33 @@
-# <img alternative="XMPro Logo X" width="30px" src="https://xmks.s3.amazonaws.com/2020/X-Blue.png#gh-light-mode-only"> Asset Monitoring - Binary Classification 
+<!-- omit in toc -->
+# <img alternative="XMPro Logo X" width="30px" src="https://xmks.s3.amazonaws.com/2020/X-Blue.png#gh-light-mode-only">Binary Classification - Asset Monitoring 
 
-[**◄ Patterns**](https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/Patterns)
+[◄ Patterns](https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/Patterns)
 
-[**◄ Blueprints, Accelerators & Patterns**](https://github.com/XMPro/Blueprints-Accelerators-Patterns)
+[◄ Blueprints, Accelerators & Patterns](https://github.com/XMPro/Blueprints-Accelerators-Patterns)
+
+# Table of contents
+1. [Files](#files)
+2. [Description](#description)
+3. [How To Import](#how-to-import)
 
 # Files
-
-* SQL Scripts: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Asset%20Monitoring%20-%20Binary%20Classification/SQL%20Scripts/%5BDemoSmartMeter%5D.sql" target="_blank">[DemoSmartMeter]</a>
-* Data Stream: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Asset%20Monitoring%20-%20Binary%20Classification/Asset%20Monitoring%20Binary%20Classification.xuc" target="_blank">Asset Monitoring Binary Classification</a>
-
+<table>
+<tr><td width="240px"> Type </td><td width="500px"> Name </td></tr>
+<tr>
+<td>SQL Scripts</td>
+<td><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Asset%20Monitoring%20-%20Binary%20Classification/SQL%20Scripts/%5BDemoSmartMeter%5D.sql" target="_blank">DemoSmartMeter</a></td>
+</tr>
+<tr>
+<td>Data Stream</td>
+<td><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Asset%20Monitoring%20-%20Binary%20Classification/Asset%20Monitoring%20Binary%20Classification.xuc" target="_blank">Asset Monitoring Binary Classification</a></td>
+</tr>
+</table>
 
 # Description
-
-
 ## SQL Scripts
 
-
-### DemoSmartMeter
-
-Data for a smart meter.
-
 <details>
-<summary>Columns</summary>
+<summary>DemoSmartMeter (Data for a smart meter)</summary>
 
 ```
 [ID]
@@ -31,18 +37,20 @@ Data for a smart meter.
 ,[Longitude]
 ,[Active]
 ```
+
 </details>
 
-
-<!-- blank line -->
-----
-<!-- blank line -->
-
+##
 
 ## Data Stream
 
-An example of binary classificaiton of smart meter data.
+An example of binary classification of smart meter data.
 
+  <details>
+  <summary markdown="span">Expand to view screenshot</summary>
+
+  ![Configured Data Stream](Images/DataStream_01.png)
+  </details>
 The data stream is configured using: 
 
 * <a href="https://xmpro.gitbook.io/csv/" target="_blank"><i>CSV</i></a> <a href="https://documentation.xmpro.com/concepts/agent#listeners" target="_blank">listener</a> - Simulate data from CSV file
@@ -52,22 +60,9 @@ The data stream is configured using:
 * <a href="https://xmpro.gitbook.io/join/" target="_blank"><i>Join</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> - Contextualize data with data from SQL
 * <a href="https://xmpro.gitbook.io/binary-classification/" target="_blank"><i>Binary Classification</i></a> <a href="https://documentation.xmpro.com/concepts/agent#ai-and-machine-learning" target="_blank">AI and machine learning agent</a> - Execute binary classification on data
 * <a href="https://xmpro.gitbook.io/run-recommendation/" target="_blank"><i>Run Recommendation</i></a> <a href="https://documentation.xmpro.com/concepts/agent#recommendation" target="_blank">agent</a> - Run Recommendation Rules
-
-
-
-<details>
-  <summary markdown="span">Expand to view screenshot</summary>
-
-![Configured Data Stream](Images/DataStream_01.png)
-</details>
-
-<!-- blank line -->
-----
-<!-- blank line -->
-
-
+##
 # How to Import
-Import Password: `Dem0nstr@t1on`
+Import Password: `Dem0nstr@t1on`, for instructions on how to import <a href="https://documentation.xmpro.com/how-tos/import-export-and-clone#importing">click here</a>.
 
 Create/confirm the following variables
   * App Designer URL
@@ -76,14 +71,10 @@ Create/confirm the following variables
   * SQL Username
   * SQL Password (Encrypted)
 
-For instructions on how to import <a href="https://documentation.xmpro.com/how-tos/import-export-and-clone#importing">click here</a>
-
-
 ## 1. Run SQL Scripts
 
 	* Execute the scripts in SQL Server
 	* Ensure the data is successfully loaded into the database
-
 
 ## 2. Import the Data Stream
 
