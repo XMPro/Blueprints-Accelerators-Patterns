@@ -10,7 +10,7 @@ XMPro Patterns are pre-configured data streams that serve as building blocks for
 
 ## AI/ML
 <table>
-<tr><td width="48px"> Type </td> <td width="240px"> Name </td><td width="100%"> Description </td></tr>
+<tr><td width="48px"> Type </td> <td width="240px"> Name </td><td> Description </td></tr>
 <tr><td><picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/Icons/accelerator_dark.png">
   <source media="(prefers-color-scheme: light)" srcset="https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/Icons/accelerator.png">
