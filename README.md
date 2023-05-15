@@ -1,7 +1,7 @@
 <!-- omit in toc -->
 # <img alternative="XMPro Logo X" width="30px" src="https://xmks.s3.amazonaws.com/2020/X-Blue.png#gh-light-mode-only"> Blueprints, Accelerators & Patterns  
 
-**This repository contains comprehensive blueprints, accelerators, and patterns to reference for your use. It equips you with the necessary tools to quickly get started and adapt to your own use case.**
+This repository contains comprehensive blueprints, accelerators, and patterns to reference for your use. It equips you with the necessary tools to quickly get started and adapt to your own use case.
 
 <br />
 
