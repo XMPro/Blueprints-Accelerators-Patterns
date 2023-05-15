@@ -1,5 +1,5 @@
 <!-- omit in toc -->
-# ![](https://github.com/XMPro/_resources/blob/main/icons/pattern_dark.png#gh-dark-mode-only) ![](https://github.com/XMPro/_resources/blob/main/icons/pattern.png#gh-light-mode-only) Patterns  
+# ![](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Icons/pattern_dark.png#gh-dark-mode-only) ![](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Icons/pattern.png#gh-light-mode-only) Patterns  
 
 XMPro Patterns are pre-configured data streams that serve as building blocks for your digital twin applications. They provide a streamlined way to connect, process, and visualize data from various sources, making it easier to integrate and analyze information within your XMPro environment.
 
