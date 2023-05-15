@@ -1,3 +1,4 @@
+<!-- omit in toc -->
 # <img alternative="XMPro Logo X" width="30px" src="https://xmks.s3.amazonaws.com/2020/X-Blue.png#gh-light-mode-only"> Forecasting - Vertical Travel 
 
 [◄ Patterns](https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/Patterns)
