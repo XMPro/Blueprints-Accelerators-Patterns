@@ -1,4 +1,4 @@
-/****** Object:  Table [dbo].[DemoBottlingPlantMapping]    Script Date: 2/8/2023 12:34:41 PM ******/
+/****** Object:  Table [dbo].[DemoBottlingPlantMapping]    ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
