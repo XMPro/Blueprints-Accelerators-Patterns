@@ -1,5 +1,5 @@
 <!-- omit in toc -->
-# <img alternative="XMPro Logo X" width="30px" src="https://xmks.s3.amazonaws.com/2020/X-Blue.png#gh-light-mode-only">Binary Classification - Asset Monitoring 
+# <img alternative="XMPro Logo X" width="30px" src="https://xmks.s3.amazonaws.com/2020/X-Blue.png#gh-light-mode-only"> Binary Classification - Asset Monitoring 
 
 [◄ Patterns](https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/Patterns)
 
