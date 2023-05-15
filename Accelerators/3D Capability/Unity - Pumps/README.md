@@ -1,25 +1,37 @@
+<!-- omit in toc -->
 # <img alternative="XMPro Logo X" width="30px" src="https://xmks.s3.amazonaws.com/2020/X-Blue.png#gh-light-mode-only"> Unity - Pump
 
-[**◄ Accelerators**](https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/Accelerators)
+[◄ Accelerators](https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/Accelerators)
 
-[**◄ Blueprints, Accelerators & Patterns**](https://github.com/XMPro/Blueprints-Accelerators-Patterns)  
+[◄ Blueprints, Accelerators & Patterns](https://github.com/XMPro/Blueprints-Accelerators-Patterns)  
   
 # Table of contents
 1. [Files](#files)
 2. [Description](#description)
 3. [How To Import](#how-to-import)
 
----
-
 # Files
-* Data Stream: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/3D%20Capability/Unity%20-%20Pumps/Data%20Stream/Simulate%20Pump%20Telemetry.xuc" target="_blank">Simulate Pump Telemetry</a>
-* Application: <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/3D%20Capability/Unity%20-%20Pumps/Application/Unity_Pumps.xapp" target="_blank">Unity Pumps</a>
-
----
+<table>
+<tr><td width="240px"> Type </td><td width="500px"> Name </td></tr>
+<tr>
+<td>Data Stream</td>
+<td><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/3D%20Capability/Unity%20-%20Pumps/Data%20Stream/Simulate%20Pump%20Telemetry.xuc" target="_blank">Simulate Pump Telemetry</a></td>
+</tr>
+<tr>
+<td>Application</td>
+<td><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/3D%20Capability/Unity%20-%20Pumps/Application/Unity_Pumps.xapp" target="_blank">Unity Pumps</a></td>
+</tr>
+</table>
 
 # Description
 ## Data Stream
 An example of how to generate synthetic data and pass it through a data stream to a Unity model running within an application.
+
+<details>
+  <summary markdown="span">Expand to view screenshot</summary>
+
+![Configured Data Stream](Images/Data%20Stream.png)
+</details>
 
 The data stream is configured using: 
 * an <a href="https://xmpro.gitbook.io/event-simulator/" target="_blank"><i>Event Simulator</i></a> <a href="https://documentation.xmpro.com/concepts/agent#listeners" target="_blank">listener</a>
@@ -30,23 +42,10 @@ The data stream is configured using:
 	* the second <i>Send to App Designer</i> is configured with a cache of 20 to be used on the charts within the Application
 * a <a href="https://xmpro.gitbook.io/run-recommendation" target="_blank"><i>Run Recommendation</i></a> agent to make this data available to the <a href="https://xmpro.com/prescriptive-recommendations/" target="_blank">XMPro recommendation</a> engine
 
-<details>
-  <summary markdown="span">Expand to view screenshot</summary>
 
-![Configured Data Stream](Images/Data%20Stream.png)
-</details>
-
-<!-- blank line -->
-----
-<!-- blank line -->
-
+##
 ## Application
-An example of how to vizualize the synthetic data passed by the data stream to a Unity model in an application.
-
-The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
-* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/unity-1" target="_blank"><i>Unity (Legacy)</i></a> to render the Unity files and pass the data to the scene
-* <a href="https://documentation.xmpro.com/blocks-toolbox/basic/data-grid"><i>Grid</i></a> to allow the raw data to be viewed
-* <a href="https://documentation.xmpro.com/blocks-toolbox/layout/box-and-data-repeater-box" target="_blank"><i>Box</i></a> to illustrate using a background image where the recommendations would appear 
+An example of how to visualize the synthetic data passed by the data stream to a Unity model in an application.
 
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
@@ -54,27 +53,25 @@ The application page is configured using the following <a href="https://document
 ![Configured Data Stream](Images/Application.png)
 </details>
 
----
+The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
+* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/unity-1" target="_blank"><i>Unity (Legacy)</i></a> to render the Unity files and pass the data to the scene
+* <a href="https://documentation.xmpro.com/blocks-toolbox/basic/data-grid"><i>Grid</i></a> to allow the raw data to be viewed
+* <a href="https://documentation.xmpro.com/blocks-toolbox/layout/box-and-data-repeater-box" target="_blank"><i>Box</i></a> to illustrate using a background image where the recommendations would appear 
 
+##
 # How to Import
-Import Password: `Dem0nstr@t1on`
+Import Password: `Dem0nstr@t1on`, for instructions on how to import <a href="https://documentation.xmpro.com/how-tos/import-export-and-clone#importing">click here</a>.
 
 Create/confirm the following variables
   * App Designer URL
   * App Designer Integration Key (Encrypted)
 
-For instructions on how to import <a href="https://documentation.xmpro.com/how-tos/import-export-and-clone#importing">click here</a>
-
 ## 1. Import the data stream - <i><b>Simulate Pump Telemetry.xuc</b></i>
 
     * Assign Access to others as required
 	
-	* Edit the XMPro agent "Send to App Designer Single"  
-      - Ensure the URL and Integration Key are selected
-	* Edit the XMPro agent "Send to App Designer"  
-      - Ensure the URL and Integration Key are selected
-	* Edit the Recommendation agent "Run Recommendation"  
-      - Ensure the URL and Integration Key are selected
+	* Edit the XMPro agents and ensure the URL and Integration Key are selected  
+	* Edit the Recommendation agent and ensure the URL and Integration Key are selected  
 
 	* Click Apply and save the data stream (Click Save on the Action Bar, or CTRL + S on the keyboard)
 	* Publish the data stream and open the live view
