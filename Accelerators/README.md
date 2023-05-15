@@ -1,10 +1,11 @@
 <!-- omit in toc -->
-# ![](https://github.com/XMPro/_resources/blob/main/icons/accelerator_dark.png#gh-dark-mode-only) ![](https://github.com/XMPro/_resources/blob/main/icons/accelerator.png#gh-light-mode-only) Accelerators  
+# ![](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Icons/accelerator_dark.png#gh-dark-mode-only) ![](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Icons/accelerator.png#gh-light-mode-only) Accelerators  
 
-**XMPro Accelerators can be imported into your environment, providing a starting point for configuring your own solutions.**
+XMPro Accelerators can be imported into your environment, providing a starting point for configuring your own solutions.
 
-[**◄ Return**](https://github.com/XMPro/Accelerators-Recipes-Blueprints)
+[◄ Return](https://github.com/XMPro/Accelerators-Recipes-Blueprints)
 <br />
+
 ## 3D Capability 
 <table>
 <tr><td width="48px"> Type </td> <td width="240px"> Name </td><td> Description </td></tr>
@@ -45,7 +46,7 @@
 
 ## Energy
 <table>
-<tr><td width="48px"> Type </td> <td width="240px"> Name </td><td> Description </td></tr>
+<tr><td width="48px"> Type </td> <td width="240px"> Name </td><td width="680px"> Description </td></tr>
 <tr><td><picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/Icons/accelerator_dark.png">
   <source media="(prefers-color-scheme: light)" srcset="https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/Icons/accelerator.png">
