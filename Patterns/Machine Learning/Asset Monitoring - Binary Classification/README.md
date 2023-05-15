@@ -58,8 +58,6 @@ GO
 
 </details>
 
-##
-
 ## Data Stream
 
 An example of binary classification of smart meter data.

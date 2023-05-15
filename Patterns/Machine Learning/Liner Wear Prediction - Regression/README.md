@@ -69,7 +69,6 @@ GO
 
 </details>
 
-##
 
 ## Data Stream
 Prediction of liner wear for a crusher asset.
