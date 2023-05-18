@@ -66,7 +66,7 @@ XMPro Accelerators can be imported into your environment, providing a starting p
 <td>Real-time view into data of a heat exchanger with active alerting and asset metrics.</td></tr>
 </table>
 
-## Smart Manufacturing
+<!-- ## Smart Manufacturing
 <table>
 <tr><td width="48px"> Type </td> <td width="240px"> Name </td><td width="720px"> Description </td></tr>
 <tr><td><picture>
@@ -87,7 +87,7 @@ XMPro Accelerators can be imported into your environment, providing a starting p
   <source media="(prefers-color-scheme: light)" srcset="https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/Icons/accelerator.png">
   <img alt="" src="./Icons/accelerator.png">
 </picture>
-</td>
+</td> -->
 <td><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/Accelerators/Smart%20Mining%20-%20Surface%20Processing%20Plant">Surface Processing Plant</a></td>
 <td>A schematic look at a surface processing plant with drill-down pump assets with live data, recommendations and 3D models.</td></tr>
 </table>
