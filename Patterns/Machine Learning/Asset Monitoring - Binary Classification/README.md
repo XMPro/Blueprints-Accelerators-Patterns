@@ -29,7 +29,7 @@
 <details>
 <summary>DemoSmartMeter (Data for a smart meter)</summary>
 
-```
+```SQL
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
