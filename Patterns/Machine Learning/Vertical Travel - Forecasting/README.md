@@ -29,7 +29,7 @@
 <details>
 <summary>DemoCrusher (Data for a crusher asset)</summary>
 
-```
+```SQL
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
