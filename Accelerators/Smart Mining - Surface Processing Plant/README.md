@@ -378,17 +378,18 @@ The application page is configured using the following <a href="https://document
 
 ### Pump Drilldown Timeseries Comparison
 
+<details>
+	<summary markdown="span">Expand to view screenshot</summary>
+
+![Drilldown_Data_Compare](Images/Drilldown_Data_Compare.png)
+</details>
+
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
 
 * <a href="https://documentation.xmpro.com/blocks-toolbox/basic/text" target="_blank"><i>Text</i></a> to display the live data
 * <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/chart"><i>Charts</i></a> to visualize the data comparison
 * <a href="https://documentation.xmpro.com/blocks-toolbox/basic/indicator" target="_blank"><i>Indicator</i></a> to indicate the flow rate levels
 
-<details>
-	<summary markdown="span">Expand to view screenshot</summary>
-
-![Drilldown_Data_Compare](Images/Drilldown_Data_Compare.png)
-</details>
 
 
 
