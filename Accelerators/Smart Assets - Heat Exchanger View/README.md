@@ -42,7 +42,7 @@
 <details>
 <summary>DemoHeatExchangerUCoefficient (A time series history of coefficient values)</summary>
 
-```
+```SQL
 /****** Object:  Table [dbo].[DemoHeatExchangerUCoefficient]   ******/
 SET ANSI_NULLS ON
 GO
@@ -5370,7 +5370,7 @@ The recommendation is configured using one rule:
 
 ##
 ## Application
-An live-data application for a heat exchanger asset, displaying metrics, usage profile, operational safety intelligence, historical data and recommendations.
+A live-data application for a heat exchanger asset, displaying metrics, usage profile, operational safety intelligence, historical data and recommendations.
 
 
 ### Heat Exchanger View
@@ -5392,9 +5392,15 @@ The application page is configured using the following <a href="https://document
 
 ##
 # How to Import
-Import Password: `Dem0nstr@t1on`, for instructions on how to import <a href="https://documentation.xmpro.com/how-tos/import-export-and-clone#importing">click here</a>.
 
-Create/confirm the following variables
+Import Password: 
+```
+Dem0nstr@t1on
+```
+For instructions on how to import <a href="https://documentation.xmpro.com/how-tos/import-export-and-clone#importing">click here</a>.
+
+
+Create/confirm the following variables:
   * App Designer URL
   * App Designer Integration Key (Encrypted)
   * SQL Server
@@ -5404,10 +5410,12 @@ Create/confirm the following variables
 ## 1. Run SQL Script
 
 	* Execute the script in SQL Server
-	* Ensure the data is succesfully loaded into the database
+	* Ensure the data is successfully loaded into the database
 
 
 ## 2. Import the Data Stream
+
+    * Select highest agent version number on import if prompted. 
 
     * Assign Access to others as required
 	
@@ -5419,7 +5427,7 @@ Create/confirm the following variables
 	* Ensure there is data in the live view at the Post telemetry agents
 
 <details>
-  <summary markdown="span">Expand to view screenshot of a successfully running data stream with live data</summary>
+  <summary markdown="span">Expand to view a screenshot of a successfully running data stream with live data</summary>
 
 ![Running Data Stream](Images/DataStream_Running.png) 
 </details>
@@ -5447,7 +5455,7 @@ Create/confirm the following variables
 
 ## 4. Import the Application
 
- When importing the application make sure to map the data source 
+ When importing the application, make sure to map the data source 
  on the import wizard to the above data stream that was imported.
 	Confirm the connections are configured correctly in the App Data tab and in each Page Data tab.
 
@@ -5467,7 +5475,7 @@ Create/confirm the following variables
 
 	* Edit the Application
     	* Select recommendation elements and tick "Heat Exchanger Fouling" in Block Properties > Behavior:
-        	* Landing Page (centre-right)
+        	* Landing Page (center-right)
   
 	* Save the Application
 	* Publish the application
