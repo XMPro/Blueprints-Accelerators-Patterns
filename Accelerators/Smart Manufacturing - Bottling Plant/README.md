@@ -1,34 +1,41 @@
 # <img alternative="XMPro Logo X" width="30px" src="https://xmks.s3.amazonaws.com/2020/X-Blue.png#gh-light-mode-only"> Smart Manufacturing - Bottling Plant 
 
-[**◄ Accelerators**](https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/Accelerators)
+[◄ Accelerators](https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/Accelerators)
 
-[**◄ Blueprints, Accelerators & Patterns**](https://github.com/XMPro/Blueprints-Accelerators-Patterns)
+[◄ Blueprints, Accelerators & Patterns](https://github.com/XMPro/Blueprints-Accelerators-Patterns)
 
 # Table of contents
 1. [Files](#files)
 2. [Description](#description)
 3. [How To Import](#how-to-import)
 
-
 # Files 
 
-* SQL Scripts: 
-  * <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Manufacturing%20-%20Bottling%20Plant/SQL%20Scripts/%5BDemoBottlingPlantMapping%5D.sql" target="_blank">[DemoBottlingPlantMapping]</a>
-  * <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Manufacturing%20-%20Bottling%20Plant/SQL%20Scripts/%5BDemoWorkManagementPump%5D.sql" target="_blank">[DemoWorkManagementPump]</a>
-* Data Streams: 
-  * <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Manufacturing%20-%20Bottling%20Plant/Data%20Stream/Bottling%20Plant%20Image%20Map%20View.xuc" target="_blank">Bottling Plant Image Map View</a>
-  * <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Manufacturing%20-%20Bottling%20Plant/Data%20Stream/Pump%20RUL%20with%20Python.xuc" target="_blank">Pump RUL with Python</a>
-  * <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Manufacturing%20-%20Bottling%20Plant/Data%20Stream/Simulate%20Pump%20Telemetry.xuc" target="_blank">Simulate Pump Telemetry</a>
-  * <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Manufacturing%20-%20Bottling%20Plant/Data%20Stream/Streaming%20Data%20Platform%20Simulator.xuc" target="_blank">Streaming Data Platform Simulator</a>
-  * <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Manufacturing%20-%20Bottling%20Plant/Data%20Stream/Tank%20Leak%20Detection.xuc" target="_blank">Tank Leak Detection</a>
-* Recommendations: 
-  * <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Manufacturing%20-%20Bottling%20Plant/Recommendation/Image%20Defect.xr" target="_blank">Image Defect</a>
-  * <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Manufacturing%20-%20Bottling%20Plant/Recommendation/Pump%20RUL.xr" target="_blank">Pump RUL</a>
-  * <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Manufacturing%20-%20Bottling%20Plant/Recommendation/Tank%20Leak%20Detection.xr" target="_blank">Tank Leak Detection</a>
-* Application:
-  * <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Manufacturing%20-%20Bottling%20Plant/Application/Bottle%20Filling%20Processing%20Plant%20Administration.xapp" target="_blank">Bottle Filling Processing Plant Administration</a>
-  * <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Manufacturing%20-%20Bottling%20Plant/Application/Bottling%20Plant%20Operational%20View.xapp" target="_blank">Bottling Plant Operational View</a>
 
+<table>
+<tr><td width="240px"> Type </td><td width="500px"> Name </td></tr>
+<tr>
+<td>SQL Scripts</td>
+<td><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Manufacturing%20-%20Bottling%20Plant/SQL%20Scripts/%5BDemoBottlingPlantMapping%5D.sql" target="_blank">DemoBottlingPlantMapping</a><br /><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Manufacturing%20-%20Bottling%20Plant/SQL%20Scripts/%5BDemoWorkManagementPump%5D.sql" target="_blank">DemoWorkManagementPump</a></td>
+</tr>
+<tr>
+<td>Data Stream</td>
+<td><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Manufacturing%20-%20Bottling%20Plant/Data%20Stream/Bottling%20Plant%20Image%20Map%20View.xuc" target="_blank">Bottling Plant Image Map View</a><br /><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Manufacturing%20-%20Bottling%20Plant/Data%20Stream/Pump%20RUL%20with%20Python.xuc" target="_blank">Pump RUL with Python</a><br /><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Manufacturing%20-%20Bottling%20Plant/Data%20Stream/Simulate%20Pump%20Telemetry.xuc" target="_blank">Simulate Pump Telemetry</a><br /><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Manufacturing%20-%20Bottling%20Plant/Data%20Stream/Streaming%20Data%20Platform%20Simulator.xuc" target="_blank">Streaming Data Platform Simulator</a><br /><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Manufacturing%20-%20Bottling%20Plant/Data%20Stream/Tank%20Leak%20Detection.xuc" target="_blank">Tank Leak Detection</a></td>
+</tr>
+<tr>
+<td>Recommendation</td>
+<td><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Manufacturing%20-%20Bottling%20Plant/Recommendation/Image%20Defect.xr" target="_blank">Image Defect</a><br /><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Manufacturing%20-%20Bottling%20Plant/Recommendation/Pump%20RUL.xr" target="_blank">Pump RUL</a><br /><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Manufacturing%20-%20Bottling%20Plant/Recommendation/Tank%20Leak%20Detection.xr" target="_blank">Tank Leak Detection</a></td>
+</tr>
+<tr>
+<td>Application</td>
+<td><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Manufacturing%20-%20Bottling%20Plant/Application/Bottle%20Filling%20Processing%20Plant%20Administration.xapp" target="_blank">Bottle Filling Processing Plant Administration</a><br /><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Smart%20Manufacturing%20-%20Bottling%20Plant/Application/Bottling%20Plant%20Operational%20View.xapp" target="_blank">Bottling Plant Operational View</a></td>
+</tr>
+<tr>
+<td>Template</td>
+<td><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/Accelerators/Smart%20Manufacturing%20-%20Bottling%20Plant/Template" target="_blank">Bottling Plant Template</a></td>
+</tr>
+
+</table>
 
 
 # Description
@@ -37,65 +44,124 @@
 
 ## SQL Scripts
 
-
-### DemoBottlingPlantMapping
-
-A list of assets and other details.
-
 <details>
-<summary>Columns</summary>
-```
-[ID]
-,[AssetNo]
-,[Description]
-,[Active]
-,[X]
-,[Y]
+<summary>DemoBottlingPlantMapping (A list of assets and other details.)</summary>
+
+```SQL
+/****** Object:  Table [dbo].[DemoBottlingPlantMapping]    Script Date: 2/8/2023 12:34:41 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[DemoBottlingPlantMapping](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[AssetNo] [nvarchar](6) NULL,
+	[Description] [nvarchar](25) NULL,
+	[Active] [bit] NULL,
+	[X] [float] NOT NULL,
+	[Y] [float] NOT NULL,
+ CONSTRAINT [PK_DemoBottlingPlantMapping] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET IDENTITY_INSERT [dbo].[DemoBottlingPlantMapping] ON 
+GO
+INSERT [dbo].[DemoBottlingPlantMapping] ([ID], [AssetNo], [Description], [Active], [X], [Y]) VALUES (1, N'P01', N'Feeding Pump', 1, 0.5, 8)
+GO
+INSERT [dbo].[DemoBottlingPlantMapping] ([ID], [AssetNo], [Description], [Active], [X], [Y]) VALUES (2, N'T01', N'Main Storage Tank', 1, 14.5, 17)
+GO
+INSERT [dbo].[DemoBottlingPlantMapping] ([ID], [AssetNo], [Description], [Active], [X], [Y]) VALUES (3, N'T02', N'Feeding Strage Tank', 1, 32, 41)
+GO
+INSERT [dbo].[DemoBottlingPlantMapping] ([ID], [AssetNo], [Description], [Active], [X], [Y]) VALUES (4, N'F01', N'Filling and Capping ', 1, 28, 62.5)
+GO
+INSERT [dbo].[DemoBottlingPlantMapping] ([ID], [AssetNo], [Description], [Active], [X], [Y]) VALUES (5, N'C01', N'Conveyor Feeder', 1, 32, 76)
+GO
+INSERT [dbo].[DemoBottlingPlantMapping] ([ID], [AssetNo], [Description], [Active], [X], [Y]) VALUES (6, N'C02', N'Conveyor Feeder', 1, 50, 76)
+GO
+INSERT [dbo].[DemoBottlingPlantMapping] ([ID], [AssetNo], [Description], [Active], [X], [Y]) VALUES (7, N'C03', N'Conveyor Feeder', 1, 68, 76)
+GO
+INSERT [dbo].[DemoBottlingPlantMapping] ([ID], [AssetNo], [Description], [Active], [X], [Y]) VALUES (8, N'I01', N'Quality Check Image', 1, 59, 41)
+GO
+SET IDENTITY_INSERT [dbo].[DemoBottlingPlantMapping] OFF
+GO
+ALTER TABLE [dbo].[DemoBottlingPlantMapping] ADD  CONSTRAINT [DF__BottlingPlant__X__469D7149]  DEFAULT ((0)) FOR [X]
+GO
+ALTER TABLE [dbo].[DemoBottlingPlantMapping] ADD  CONSTRAINT [DF__BottlingPlant__Y__47919582]  DEFAULT ((0)) FOR [Y]
+GO
+
 ```
 </details>
 
 
-### DemoWorkManagementPump
-
-Work management information.
 
 <details>
-<summary>Columns</summary>
+<summary>DemoWorkManagementPump (Work management information.)</summary>
 
-```
-[ID]
-,[AssetNo]
-,[WRNo]
-,[WONo]
-,[Title]
-,[WOStatus]
-,[Date]
+```SQL
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[DemoWorkManagementPump](
+	[ID] [bigint] IDENTITY(1,1) NOT NULL,
+	[AssetNo] [nvarchar](50) NULL,
+	[WRNo] [nvarchar](50) NULL,
+	[WONo] [nvarchar](50) NULL,
+	[Title] [nvarchar](250) NULL,
+	[WOStatus] [nvarchar](50) NULL,
+	[Date] [datetime] NULL,
+ CONSTRAINT [PK_DemoWorkManagementPump] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET IDENTITY_INSERT [dbo].[DemoWorkManagementPump] ON 
+GO
+INSERT [dbo].[DemoWorkManagementPump] ([ID], [AssetNo], [WRNo], [WONo], [Title], [WOStatus], [Date]) VALUES (1, N'P-778', N'3453788', N'114879', N'Grease drive end and opposite drive end motor bearings', N'INPROG', CAST(N'2021-03-24T00:00:00.000' AS DateTime))
+GO
+INSERT [dbo].[DemoWorkManagementPump] ([ID], [AssetNo], [WRNo], [WONo], [Title], [WOStatus], [Date]) VALUES (2, N'P-778', N'3446268', N'114900', N'Inspect mechanical seal for visible leakage', N'PLAN', CAST(N'2021-04-25T00:00:00.000' AS DateTime))
+GO
+INSERT [dbo].[DemoWorkManagementPump] ([ID], [AssetNo], [WRNo], [WONo], [Title], [WOStatus], [Date]) VALUES (3, N'P-778', N'3451228', N'114921', N'Take pump drive end and opposite drive end oil samples for oil analysis', N'PLAN', CAST(N'2021-04-25T00:00:00.000' AS DateTime))
+GO
+INSERT [dbo].[DemoWorkManagementPump] ([ID], [AssetNo], [WRNo], [WONo], [Title], [WOStatus], [Date]) VALUES (4, N'P-778', N'3446195', N'114942', N'Inspect motor and pump base plate bolts for looseness', N'PLAN', CAST(N'2021-04-25T00:00:00.000' AS DateTime))
+GO
+INSERT [dbo].[DemoWorkManagementPump] ([ID], [AssetNo], [WRNo], [WONo], [Title], [WOStatus], [Date]) VALUES (5, N'P-778', N'3446268', N'114963', N'Take manual vibration readings for the motor and pump drive end and opposite drive end bearings', N'SCHED', CAST(N'2021-04-05T00:00:00.000' AS DateTime))
+GO
+INSERT [dbo].[DemoWorkManagementPump] ([ID], [AssetNo], [WRNo], [WONo], [Title], [WOStatus], [Date]) VALUES (6, N'P-778', N'3446115', N'114984', N'Check shaft alignment', N'SCHED', CAST(N'2019-10-28T00:00:00.000' AS DateTime))
+GO
+INSERT [dbo].[DemoWorkManagementPump] ([ID], [AssetNo], [WRNo], [WONo], [Title], [WOStatus], [Date]) VALUES (7, N'P-778', N'3446139', N'115005', N'Inspect coupling for wear/damage', N'SCHED', CAST(N'2019-09-10T00:00:00.000' AS DateTime))
+GO
+INSERT [dbo].[DemoWorkManagementPump] ([ID], [AssetNo], [WRNo], [WONo], [Title], [WOStatus], [Date]) VALUES (8, N'P-778', N'3446163', N'115026', N'Inspect pump casing and gaskets for leakage', N'RESCHED', CAST(N'2019-10-10T00:00:00.000' AS DateTime))
+GO
+INSERT [dbo].[DemoWorkManagementPump] ([ID], [AssetNo], [WRNo], [WONo], [Title], [WOStatus], [Date]) VALUES (9, N'P-778', N'3446187', N'115047', N'Inspect drive end and opposite drive end bearings oil levels', N'COMPLETED', CAST(N'2019-09-28T00:00:00.000' AS DateTime))
+GO
+INSERT [dbo].[DemoWorkManagementPump] ([ID], [AssetNo], [WRNo], [WONo], [Title], [WOStatus], [Date]) VALUES (10, N'P-778', N'3446211', N'115068', N'Inspect coupling guard for damage/warpage', N'COMPLETED', CAST(N'2019-09-10T00:00:00.000' AS DateTime))
+GO
+SET IDENTITY_INSERT [dbo].[DemoWorkManagementPump] OFF
+GO
+
 ```
 </details>
 
 
-<!-- blank line -->
-----
-<!-- blank line -->
+##
 
 
 ## Data Stream
-
-### Data Stream Table Of Contents
-1. [Bottling Plant Image View](#btlplantimgmap)
-2. [Pump RUL](#pumprul)
-3. [Simulate Pump Telemetry](#simulatepumptelem)
-4. [Streaming Data Platform Simulator](#strmdatapltfrmsim)
-5. [Tank Leak Detection](#tankleakdetection)
-
-<!-- blank line -->
-----
-<!-- blank line -->
 
 <a name="btlplantimgmap"></a>
 **Bottling Plant Image Map View** 
 
 Set indicator status based on alerts from the recommendations.
+
+<details>
+  <summary markdown="span">Expand to view screenshot</summary>
+  
+![Configured Data Stream](Images/DataStream_01.png)
+ </details>
 
 The data stream is configured using: 
 
@@ -109,17 +175,19 @@ The data stream is configured using:
 * <a href="https://xmpro.gitbook.io/aggregate/" target="_blank"><i>Aggregate</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> - Bubble up red and yellow status
 * <a href="https://xmpro.gitbook.io/xmpro-app/" target="_blank"><i>XMPro App</i></a> <a href="https://documentation.xmpro.com/concepts/agent#action-agents" target="_blank">action agent</a> - View data on the Image Map
 
-<details>
-<summary markdown="span">Expand to view screenshot</summary>
-![Configured Data Stream](Images/DataStream_01.png)
- </details>
 
----
+##
 
 <a name="pumprul"></a>
 **Pump RUL with Python** 
 
 Predicting Remaining Useful Life (RUL) of an asset using machine learning models.
+
+<details>
+  <summary markdown="span">Expand to view screenshot</summary>
+
+![Configured Data Stream](Images/DataStream_02.png)
+</details>
 
 The data stream is configured using: 
 
@@ -136,18 +204,19 @@ The data stream is configured using:
 * <a href="https://xmpro.gitbook.io/rounding/" target="_blank"><i>Rounding</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> - Rounding all values
 * <a href="https://xmpro.gitbook.io/run-recommendation/" target="_blank"><i>Run Recommendation</i></a> <a href="https://documentation.xmpro.com/concepts/agent#recommendations" target="_blank">agent</a> - Run Recommendation rules
 
-<details>
-  <summary markdown="span">Expand to view screenshot</summary>
 
-![Configured Data Stream](Images/DataStream_02.png)
-</details>
-
----
+##
 
 <a name="simulatepumptelem"></a>
 **Simulate Pump Telemetry**
 
 An example of simulated pump telemetry data - broadcasting out via MQTT.
+
+<details>
+  <summary markdown="span">Expand to view screenshot</summary>
+
+![Configured Data Stream](Images/DataStream_03.png)
+</details>
 
 The data stream is configured using:
 
@@ -161,18 +230,19 @@ The data stream is configured using:
 * <a href="https://xmpro.gitbook.io/mqtt/" target="_blank"><i>MQTT</i></a> <a href="https://documentation.xmpro.com/concepts/agent#action-agents" target="_blank">action agent</a> - Emit data via MQTT
 * <a href="https://xmpro.gitbook.io/run-recommendation/" target="_blank"><i>Run Recommendation</i></a> <a href="https://documentation.xmpro.com/concepts/agent#recommendations" target="_blank">agent</a> - Run Recommendation rules
 
-<details>
-  <summary markdown="span">Expand to view screenshot</summary>
 
-![Configured Data Stream](Images/DataStream_03.png)
-</details>
-
----
+##
 
 <a name="strmdatapltfrmsim"></a>
 **Streaming Data Platform Simulator**
 
 Streaming image detection data.
+
+<details>
+  <summary markdown="span">Expand to view screenshot</summary>
+
+![Configured Data Stream](Images/DataStream_04.png)
+</details>
 
 The data stream is configured using: 
 
@@ -187,25 +257,26 @@ The data stream is configured using:
   * *View Defect Image* is configured with a cache of 1 for live status
 * <a href="https://xmpro.gitbook.io/run-recommendation/" target="_blank"><i>Run Recommendation</i></a> <a href="https://documentation.xmpro.com/concepts/agent#recommendations" target="_blank">agent</a> - Run Recommendation rules
 
-<details>
-  <summary markdown="span">Expand to view screenshot</summary>
 
-![Configured Data Stream](Images/DataStream_04.png)
-</details>
-
----
+##
 
 <a name="tankleakdetection"></a>
 **Tank Leak Detection**
 
 A data stream used to detect leaks in a tank system.
 
+<details>
+  <summary markdown="span">Expand to view screenshot</summary>
+
+![Configured Data Stream](Images/DataStream_05.png)
+</details>
+
 The data stream is configured using:
 
 * <a href="https://xmpro.gitbook.io/csv/" target="_blank"><i>CSV Simulator</i></a> <a href="https://documentation.xmpro.com/concepts/agent#listeners" target="_blank">listener</a> - Simulate sensor data
 * <a href="https://xmpro.gitbook.io/calculated-field/" target="_blank"><i>Calculated Field</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a>
   * Add identifiers
-  * Get first and last value for each dataset
+  * Get the first and last value for each dataset
 * <a href="https://xmpro.gitbook.io/broadcast/" target="_blank"><i>Broadcast</i></a> - Broadcast data to other agents
 * <a href="https://xmpro.gitbook.io/xmpro-app/" target="_blank"><i>XMPro App</i></a> <a href="https://documentation.xmpro.com/concepts/agent#action-agents" target="_blank">action agents</a>
   * *View Chart Data* is configured with a cache of 10 for the historic data
@@ -217,34 +288,12 @@ The data stream is configured using:
 * <a href="https://xmpro.gitbook.io/alter-attributes/" target="_blank"><i>Alter Attributes</i></a> <a href="https://documentation.xmpro.com/concepts/agent#action-agents" target="_blank">action agent</a> - change order, set aliases and exclude specific columns
 * <a href="https://xmpro.gitbook.io/run-recommendation/" target="_blank"><i>Run Recommendation</i></a> <a href="https://documentation.xmpro.com/concepts/agent#recommendations" target="_blank">agent</a> - Run Recommendation rules
 
-<details>
-  <summary markdown="span">Expand to view screenshot</summary>
-
-![Configured Data Stream](Images/DataStream_05.png)
-</details>
 
 
-<!-- blank line -->
-----
-<!-- blank line -->
+##
 
 
 ## Recommendation
-
-
-### Recommendation Table Of Contents
-
-1. [Image Defect](#imgdefect)
-2. [Pump RUL](#recpumprul)
-3. [RUL Prediction](#rulpredict)
-4. [Tank Leak Detection](#tankleak)
-5. [Leak Scenario 1](#leakscenario1)
-6. [Leak Scenario 2](#leakscenario2)
-7. [Outlet Pipeline Blockage](#outletpipeln)
-8. [Top Valve Passing Scenario 1](#topvalvpassscn1)
-9. [Top Valve Passing Scenario 2](#topvalvpassscn2)
-
-----
 
 <a name="imgdefect"></a>
 
@@ -257,10 +306,10 @@ The recommendation is configured using the rule
   <details>
   <summary markdown="span">Expand to view screenshot</summary>
 
-  ![Reccommendation_01](Images/Recommendation_01.png)
+  ![Recommendation_01](Images/Recommendation_01.png)
   </details>
 
-----
+##
 
 <a name="recpumprul"></a>
 
@@ -272,7 +321,7 @@ The recommendation is configured using two rules
   <details>
   <summary markdown="span">Expand to view screenshot</summary>
 
-  ![Reccommendation_02_a](Images/Recommendation_02_a.png)
+  ![Recommendation_02_a](Images/Recommendation_02_a.png)
   </details>
 
 <a name="rulpredict"></a>
@@ -282,10 +331,10 @@ Alerts when the remaining useful life is below a specific level
   <details>
   <summary markdown="span">Expand to view screenshot</summary>
 
-  ![Reccommendation_02_b](Images/Recommendation_02_b.png)
+  ![Recommendation_02_b](Images/Recommendation_02_b.png)
   </details>
 
-----
+##
 
 <a name="tankleak"></a>
 
@@ -299,7 +348,7 @@ The recommendation is configured using the following rules
   <details>
   <summary markdown="span">Expand to view screenshot</summary>
 
-  ![Reccommendation_03_a](Images/Recommendation_03_a.png)
+  ![Recommendation_03_a](Images/Recommendation_03_a.png)
   </details>
 
 <a name="leakscenario1"></a>
@@ -309,7 +358,7 @@ The recommendation is configured using the following rules
   <details>
   <summary markdown="span">Expand to view screenshot</summary>
 
-  ![Reccommendation_03_b](Images/Recommendation_03_b.png)
+  ![Recommendation_03_b](Images/Recommendation_03_b.png)
   </details>
 
 <a name="leakscenario2"></a>
@@ -318,7 +367,7 @@ The recommendation is configured using the following rules
   <details>
   <summary markdown="span">Expand to view screenshot</summary>
 
-  ![Reccommendation_03_c](Images/Recommendation_03_c.png)
+  ![Recommendation_03_c](Images/Recommendation_03_c.png)
   </details>
 
 <a name="outletpipeln"></a>
@@ -329,7 +378,7 @@ Detects when there is an outlet pipeline blockage
   <details>
   <summary markdown="span">Expand to view screenshot</summary>
 
-  ![Reccommendation_03_d](Images/Recommendation_03_d.png)
+  ![Recommendation_03_d](Images/Recommendation_03_d.png)
   </details>
 
 <a name="topvalvpassscn1"></a>
@@ -339,7 +388,7 @@ Detects when there is an outlet pipeline blockage
   <details>
   <summary markdown="span">Expand to view screenshot</summary>
 
-  ![Reccommendation_03_e](Images/Recommendation_03_e.png)
+  ![Recommendation_03_e](Images/Recommendation_03_e.png)
   </details>
 
 <a name="topvalvpassscn2"></a>
@@ -351,13 +400,11 @@ Detects flow discrepancy with top valve passing for specific output values
   <details>
   <summary markdown="span">Expand to view screenshot</summary>
 
-  ![Reccommendation_03_f](Images/Recommendation_03_f.png)
+  ![Recommendation_03_f](Images/Recommendation_03_f.png)
   </details>
 
 
-<!-- blank line -->
-----
-<!-- blank line -->
+##
 
 ## Application
 An example of how to visualize the synthetic data passed by the data stream to a Unity model in an application.
@@ -368,10 +415,10 @@ An example of how to visualize the synthetic data passed by the data stream to a
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
 * <a href="https://documentation.xmpro.com/blocks-toolbox/recommendations/recommendations" target="_blank"><i>Recommendations</i></a> to view current open recommendations
 * <a href="https://documentation.xmpro.com/blocks-toolbox/basic/indicator" target="_blank"><i>Indicator</i></a> the visual status of the stages
-* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/pie-chart" target="_blank"><i>Pie Chart</i></a> current months downtime by cause
+* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/pie-chart" target="_blank"><i>Pie Chart</i></a> current month's downtime by cause
 * <a href="https://documentation.xmpro.com/blocks-toolbox/basic/text" target="_blank"><i>Text</i></a> to display the live data
-* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/image-map" target="_blank"><i>Image Map</i></a> to displaya schematic of the bottling process
-* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/d3-visualization" target="_blank"><i>D3 Visualisation</i></a> to display an a matrix of the defect trends
+* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/image-map" target="_blank"><i>Image Map</i></a> to display a schematic of the bottling process
+* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/d3-visualization" target="_blank"><i>D3 Visualization</i></a> to display a matrix of the defect trends
 
 <details>
 <summary markdown="span">Expand to view screenshot</summary>
@@ -379,7 +426,7 @@ The application page is configured using the following <a href="https://document
 </details>
 
 
----
+##
 
 ### Pump Drilldown
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
@@ -389,7 +436,7 @@ The application page is configured using the following <a href="https://document
   *  time profile (24 Hours)
   *  Actual vs Predicted RUL (Hrs)
   *  Real-time view
-* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/unity-1" target="_blank"><i>Unity (Legacy)</i></a> ro render a unity model of a pump
+* <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/unity-1" target="_blank"><i>Unity (Legacy)</i></a> to render a unity model of a pump
 * <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/circular-gauge"><i>Circular Gauge</i></a> showing the effective utilization percentage
 * <a href="https://documentation.xmpro.com/blocks-toolbox/basic/indicator" target="_blank"><i>Indicator</i></a> to visually inspect the risk status of the assets 
 * <a href="https://documentation.xmpro.com/blocks-toolbox/recommendations/recommendations" target="_blank"><i>Recommendations</i></a> to view current open recommendations
@@ -403,7 +450,7 @@ The application page is configured using the following <a href="https://document
 ![Application_02](Images/Application_02.png)
 </details>
 
----
+##
 
 ### Tank Drilldown
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
@@ -420,14 +467,14 @@ The application page is configured using the following <a href="https://document
 ![Application_04](Images/Application_04.png)
 </details>
 
----
+##
 ### Conveyor Drilldown
 The application page is configured using the following <a href="https://documentation.xmpro.com/concepts/application/block" target="_blank">blocks</a>:
 
 * <a href="https://documentation.xmpro.com/blocks-toolbox/recommendations/recommendations" target="_blank"><i>Recommendations</i></a> to view current open recommendations
 * <a href="https://documentation.xmpro.com/blocks-toolbox/basic/text" target="_blank"><i>Text</i></a> to display the live data
 * <a href="https://documentation.xmpro.com/blocks-toolbox/image/image" target="_blank"><i>Image</i></a> to display the last identified defect image
-* <a href="https://documentation.xmpro.com/blocks-toolbox/image/embedded-page" target="_blank"><i>Embedded Page</i></a> to display the a video of the process line
+* <a href="https://documentation.xmpro.com/blocks-toolbox/image/embedded-page" target="_blank"><i>Embedded Page</i></a> to display a video of the process line
 * <a href="https://documentation.xmpro.com/blocks-toolbox/visualizations/circular-gauge"><i>Circular Gauge</i></a> for OEE calculation:
   * Availability (%)
   * Performance (%)
@@ -440,7 +487,7 @@ The application page is configured using the following <a href="https://document
 ![Application_03](Images/Application_03.png)
 </details>
 
----
+##
 
 **Brewing Process Administration**
 
@@ -456,19 +503,22 @@ The application page is configured using the following <a href="https://document
 ![Application_05](Images/Application_05.png)
 </details>
 
----
+##
 
 # How to Import
-Import Password: `Dem0nstr@t1on`
 
-Create/confirm the following variables
+Import Password: 
+```
+Dem0nstr@t1on
+```
+For instructions on how to import <a href="https://documentation.xmpro.com/how-tos/import-export-and-clone#importing">click here</a>
+
+Create/confirm the following variables:
   * App Designer URL
   * App Designer Integration Key (Encrypted)
   * SQL Server
   * SQL Username
   * SQL Password (Encrypted)
-
-For instructions on how to import <a href="https://documentation.xmpro.com/how-tos/import-export-and-clone#importing">click here</a>
 
 
 ## 1. Run SQL Scripts
@@ -478,6 +528,8 @@ For instructions on how to import <a href="https://documentation.xmpro.com/how-t
 
 
 ## 2. Import the Data Streams
+
+    * Select highest agent version number on import if prompted. 
 
     * Assign Access to others as required
 	
@@ -545,7 +597,7 @@ Expand to view screenshot of a successfully running data stream with live data:
 
 ## 4. Import the Applications
 
-When importing the application make sure to map the data source on the import wizard to the above data stream that was imported.
+When importing the application, make sure to map the data source on the import wizard to the above data stream that was imported.
 	Confirm the connections are configured correctly in the App Data tab and in each Page Data tab.
 
 <details>
