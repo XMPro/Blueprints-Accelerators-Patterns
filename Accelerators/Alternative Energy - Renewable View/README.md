@@ -37,7 +37,7 @@
 <details>
 <summary>DemoAlternativeEnergyAsset (A list of assets, their location and other details)</summary>
 
-```
+```SQL
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -134,7 +134,7 @@ GO
 <details>
 <summary>DemoWorkManagementWindTurbine (Work management information)</summary>
 
-```
+```SQL
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -210,13 +210,13 @@ The recommendation is configured using two rules:
 <details>
 <summary markdown="span">Gearbox Oil Level - Checks if the Wind Turbine assets have a low gearbox oil level</summary>
 
-![Reccommendation_01](Images/Recommendation_01.png)
+![Recommendation_01](Images/Recommendation_01.png)
 </details>
 
 <details>
 <summary markdown="span">Gearbox Oil Viscosity - Checks if the Wind Turbine assets have a high gearbox oil viscosity</summary>
 
-![Reccommendation_01](Images/Recommendation_02.png)
+![Recommendation_01](Images/Recommendation_02.png)
 </details>
 
 ##
@@ -274,7 +274,12 @@ The application page is configured using the following <a href="https://document
 
 ##
 # How to Import
-Import Password: `Dem0nstr@t1on`, for instructions on how to import <a href="https://documentation.xmpro.com/how-tos/import-export-and-clone#importing">click here</a>.
+
+Import Password: 
+```
+Dem0nstr@t1on
+```
+For instructions on how to import <a href="https://documentation.xmpro.com/how-tos/import-export-and-clone#importing">click here</a>.
 
 Create/confirm the following variables
   * App Designer URL
@@ -288,7 +293,9 @@ Create/confirm the following variables
 	* Execute the scripts in SQL Server
 	* Ensure the data is successfully loaded into the database
 
-## 2. Import the Data Stream
+## 2. Import the Data Stream - <i><b>Renewable Condition Monitoring.xuc</b></i>
+
+    * Select highest agent version number on import if prompted. 
 
     * Assign Access to others as required
 
@@ -309,7 +316,7 @@ Create/confirm the following variables
 </details>
 
 
-## 3. Import the Recommendation
+## 3. Import the Recommendation - <i><b>Gearbox Oil.xr</b></i>
 
     * Import the included form if it doesn't already exist
 
@@ -329,10 +336,16 @@ Create/confirm the following variables
 
 </details>
 
-## 4. Import the Application
+## 4. Import the Application - <i><b>Renewables_View.xapp</b></i>
 
-When importing the application make sure to map the data source on the import wizard to the above data stream that was imported.
+    * Map the data source on import:
+      	* AssetDrilldown:
+        	* DrilldownData: Renewable Condition Monitoring | View Data  
+  	* Confirm the connections are configured correctly in the App Data tab and in each Page Data tab.
+
 Confirm the connections are configured correctly in the App Data tab and in each Page Data tab.
+
+
 
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
