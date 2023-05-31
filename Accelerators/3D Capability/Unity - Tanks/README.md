@@ -55,13 +55,21 @@ The application page is configured using the following <a href="https://document
 
 ##
 # How to Import
-Import Password: `Dem0nstr@t1on`, for instructions on how to import <a href="https://documentation.xmpro.com/how-tos/import-export-and-clone#importing">click here</a>.
+
+Import Password: 
+```
+Dem0nstr@t1on
+```
+For instructions on how to import <a href="https://documentation.xmpro.com/how-tos/import-export-and-clone#importing">click here</a>.
+
 
 Create/confirm the following variables
   * App Designer URL
   * App Designer Integration Key (Encrypted)
 
 ## 1. Import the data stream - <i><b>Simulate Tank Telemetry.xuc</b></i>
+
+    * Select highest agent version number on import if prompted. 
 
     * Assign Access to others as required
 	
@@ -74,13 +82,14 @@ Create/confirm the following variables
 <details>
   <summary markdown="span">Expand to view screenshot of a successfully running data stream with live data</summary>
 
-![Running Data Stream](Images/Running%20Data%20Stream.png) 
+  ![Running Data Stream](Images/Running%20Data%20Stream.png) 
 </details>
 
 ## 2. Import the Application - <i><b>Unity_Tanks.xapp</b></i>
 
-	* When importing the application make sure to map the data source on the import wizard  
-	  to the above data stream that was imported
+	* Map the data source on import:
+  	* Landing Page: 
+    	* Unity Data from Data Stream: Simulate Tank Telemetry | Send Tank Data to App 
 
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
@@ -88,7 +97,7 @@ Create/confirm the following variables
 ![Running Data Stream](Images/Import%20Options.png) 
 </details>
 
-    * Assign Access to others as required for design and run time
+    * Assign Access to others as required for design and runtime
 
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
