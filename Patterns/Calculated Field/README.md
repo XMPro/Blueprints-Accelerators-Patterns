@@ -14,7 +14,9 @@ Create/confirm the following variables
   * App Designer Integration Key (Encrypted)
 
 ## 1. Import the data stream
-For instructions on how to import <a href="https://documentation.xmpro.com/how-tos/import-export-and-clone#importing">click here</a>
+For instructions on how to import <a href="https://documentation.xmpro.com/how-tos/import-export-and-clone#importing" target="_blank">click here</a>
+
+    * Select highest agent version number on import if prompted. 
 
     * Assign Access to others as required
 	* Publish the data stream and open the live view

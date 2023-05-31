@@ -35,8 +35,8 @@ An example of how to generate synthetic data and pass it through a data stream t
 
 The data stream is configured using: 
 * an <a href="https://xmpro.gitbook.io/event-simulator/" target="_blank"><i>Event Simulator</i></a> <a href="https://documentation.xmpro.com/concepts/agent#listeners" target="_blank">listener</a>
-* a <a href="https://xmpro.gitbook.io/calculated-field/" target="_blank"><i>Calculated Field</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> that is adding a randomized PumpId out of three posibilities as well as a LocationId, due to the synthetic nature of the data this is required.
-* a <a href="https://xmpro.gitbook.io/rounding/" target="_blank"><i>Rounding</i></a> <a href="https://documentation.xmpro.com/concepts/agent#functions" target="_blank">funtion</a> agent to round the data presented to the Application 
+* a <a href="https://xmpro.gitbook.io/calculated-field/" target="_blank"><i>Calculated Field</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> that is adding a randomized PumpId out of three possibilities as well as a LocationId, due to the synthetic nature of the data this is required.
+* a <a href="https://xmpro.gitbook.io/rounding/" target="_blank"><i>Rounding</i></a> <a href="https://documentation.xmpro.com/concepts/agent#functions" target="_blank">function</a> agent to round the data presented to the Application 
 * two <a href="https://xmpro.gitbook.io/xmpro-app/" target="_blank"><i>XMPro App</i></a> <a href="https://documentation.xmpro.com/concepts/agent#action-agents" target="_blank">action agents</a>
 	* the first <i>Send to App Designer Single</i> is configured with a cache of 1 to be used on the overlay
 	* the second <i>Send to App Designer</i> is configured with a cache of 20 to be used on the charts within the Application
@@ -60,7 +60,13 @@ The application page is configured using the following <a href="https://document
 
 ##
 # How to Import
-Import Password: `Dem0nstr@t1on`, for instructions on how to import <a href="https://documentation.xmpro.com/how-tos/import-export-and-clone#importing">click here</a>.
+
+Import Password: 
+```
+Dem0nstr@t1on
+```
+For instructions on how to import <a href="https://documentation.xmpro.com/how-tos/import-export-and-clone#importing">click here</a>.
+
 
 Create/confirm the following variables
   * App Designer URL
@@ -68,6 +74,7 @@ Create/confirm the following variables
 
 ## 1. Import the data stream - <i><b>Simulate Pump Telemetry.xuc</b></i>
 
+    * Select highest agent version number on import if prompted. 
     * Assign Access to others as required
 	
 	* Edit the XMPro agents and ensure the URL and Integration Key are selected  
@@ -85,8 +92,10 @@ Create/confirm the following variables
 
 ## 2. Import the Application - <i><b>Unity_Pumps.xapp</b></i>
 
-	* When importing the application make sure to map the data source on the import wizard   
-      to the above data stream that was imported
+	* Map the data source on import:
+  	* Landing Page: 
+    	* Pump Data: Simulate Pump Telemetry | Send to App Designer 
+
 
 <details>
   <summary markdown="span">Expand to view screenshot</summary>
@@ -94,7 +103,7 @@ Create/confirm the following variables
 ![Running Data Stream](Images/Import%20Options.png) 
 </details>
 
-    * Assign Access to others as required for design and run time
+    * Assign Access to others as required for design and runtime
 
 <details>
   <summary markdown="span">Expand to view screenshot</summary>

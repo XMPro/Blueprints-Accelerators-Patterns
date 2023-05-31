@@ -90,7 +90,7 @@ The data stream is configured using:
 ##
 
 # How to Import
-Import Password: `Dem0nstr@t1on`, for instructions on how to import <a href="https://documentation.xmpro.com/how-tos/import-export-and-clone#importing">click here</a>.
+Import Password: `Dem0nstr@t1on`, for instructions on how to import <a href="https://documentation.xmpro.com/how-tos/import-export-and-clone#importing"  target="_blank">click here</a>.
 
 Create/confirm the following variables
   * App Designer URL
@@ -106,6 +106,8 @@ Create/confirm the following variables
 
 
 ## 2. Import the Data Stream
+
+    * Select highest agent version number on import if prompted. 
 
     * Assign Access to others as required
 	
