@@ -422,6 +422,7 @@ The application page is configured using the following <a href="https://document
 
 <details>
 <summary markdown="span">Expand to view screenshot</summary>
+
 ![Application_01](Images/Application_01.png)
 </details>
 
