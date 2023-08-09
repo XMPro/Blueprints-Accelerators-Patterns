@@ -15,8 +15,8 @@ XMPro Accelerators can be imported into your environment, providing a starting p
   <img alt="" src="./Icons/accelerator.png">
 </picture>
 </td> 
-<td><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/Accelerators/XMPro%20AI">XMPro AI</a></td>
-<td>Details and demonstrations for XMPro AI.</td></tr>
+<td><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/XMPro%20AI/Quick%20Guide%20-%20XMPro%20AI.ipynb">Quick Guide - XMPro AI</a></td>
+<td>A quick guide for XMPro AI.</td></tr>
 </table>
 
 ## 3D Capability 
