@@ -6,6 +6,19 @@ XMPro Accelerators can be imported into your environment, providing a starting p
 [◄ Return](https://github.com/XMPro/Accelerators-Recipes-Blueprints)
 <br />
 
+## XMPro AI
+<table>
+<tr><td width="48px"> Type </td> <td width="240px"> Name </td><td width="720px"> Description </td></tr>
+<tr><td><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/Icons/accelerator_dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/Icons/accelerator.png">
+  <img alt="" src="./Icons/accelerator.png">
+</picture>
+</td> 
+<td><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/Accelerators/XMPro%20AI">XMPro AI</a></td>
+<td>Details and demonstrations for XMPro AI.</td></tr>
+</table>
+
 ## 3D Capability 
 <table>
 <tr><td width="48px"> Type </td> <td width="240px"> Name </td><td width="720px"> Description </td></tr>
