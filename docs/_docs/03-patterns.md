@@ -1,8 +1,7 @@
 ---
-title: "Configuration"
-permalink: /docs/configuration/
-excerpt: "Settings for configuring and customizing the theme."
-last_modified_at: 2021-05-11T10:40:42-04:00
+title: "Patterns"
+permalink: /docs/patterns/
+excerpt: "XMPro Patterns are pre-configured data streams that serve as building blocks for your digital twin applications. They provide a streamlined way to connect, process, and visualize data from various sources, making it easier to integrate and analyze information within your XMPro environment."
 toc: true
 ---
 

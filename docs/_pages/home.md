@@ -2,6 +2,10 @@
 layout: splash
 permalink: /
 hidden: true
+header:
+  overlay_color: "#003952"
+excerpt: >
+  A repository that contains comprehensive blueprints, accelerators, and patterns to reference for your use.<br />
 feature_row:
   - image_path: /assets/images/blueprint.png
     alt: "blueprints"
