@@ -21,11 +21,11 @@ foo:
 # main links
 main:
   - title: "Blueprints"
-    url: "/docs/blueprints/"
+    url: "/blueprints/"
   - title: "Accelerators"
-    url: "/docs/accelerators/"
+    url: "/accelerators/"
   - title: "Patterns"
-    url: "/docs/patterns/"
+    url: "/patterns/"
 
 # documentation links
 docs:
