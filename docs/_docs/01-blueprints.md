@@ -1,8 +1,7 @@
 ---
-title: "Configuration"
-permalink: /docs/configuration/
-excerpt: "Settings for configuring and customizing the theme."
-last_modified_at: 2021-05-11T10:40:42-04:00
+title: "Blueprints"
+permalink: /docs/blueprints/
+excerpt: "XMPro Blueprints are pre-built solutions that combine data streams, app visualizations, recommendation rules and models. They are easy to import into your XMPro environment, configure with your business systems and customize to your unique situation."
 toc: true
 ---
 
