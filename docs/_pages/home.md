@@ -20,7 +20,7 @@ feature_row:
   - image_path: /assets/images/pattern.png
     alt: "patterns"
     title: "Patterns"
-    excerpt: "Pre-configured data streams that serve as building blocks for your applications"
+    excerpt: "Pre-configured data streams that can be imported into your environment as building blocks for your applications."
     url: "/docs/patterns/"
     btn_class: "btn--primary"
     btn_label: "Learn more"      
