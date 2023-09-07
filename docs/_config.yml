@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "XMPro"
+title                    : "Blueprints, Accelerators & Patterns"
 title_separator          : "-"
-subtitle                 : "Blueprints, Accelerators & Patterns"
+subtitle                 : "by XMPro"
 name                     : "XMPro"
 description              : "An amazing website."
 url                      : "https://xmpro.github.io/Blueprints-Accelerators-Patterns/"
