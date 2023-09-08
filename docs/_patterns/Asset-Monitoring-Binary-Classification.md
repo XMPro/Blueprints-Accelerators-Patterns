@@ -2,22 +2,30 @@
 title: "Asset Monitoring Using Binary Classification"
 permalink: /patterns/Asset-Monitoring-Binary-Classification/
 #excerpt: "Instructions on how to customize the main navigation and enabling breadcrumb links."
+toc: true
+toc_label: "Guide"
 sidebar:
   - title: ""
-    image: ../Patterns/Machine Learning/Asset Monitoring - Binary Classification/Images/DataStream_01.png
+    image: https://github.com/XMPro/Blueprints-Accelerators-Patterns/Patterns/Machine Learning/Asset Monitoring - Binary Classification/Images/DataStream_01.png
     image_alt: "Data Stream"
   - title: "Type"
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+  - title: "Import Password"
+    text: "Dem0nstr@t1on"
+
 gallery:
   - url: /assets/images/unsplash-gallery-image-1.jpg
     image_path: assets/images/unsplash-gallery-image-1-th.jpg
     alt: "placeholder image 1"
+	excerpt: "This is some sample content that goes here with **Markdown** formatting."
   - url: /assets/images/unsplash-gallery-image-2.jpg
     image_path: assets/images/unsplash-gallery-image-2-th.jpg
     alt: "placeholder image 2"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
   - url: /assets/images/unsplash-gallery-image-3.jpg
     image_path: assets/images/unsplash-gallery-image-3-th.jpg
     alt: "placeholder image 3"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
 
 ---
 
