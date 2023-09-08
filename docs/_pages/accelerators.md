@@ -7,4 +7,4 @@ entries_layout: grid
 classes: wide
 ---
 
-Sample document listing for the collection `_accelerators`.
+Accelerators can be imported into your environment, providing a starting point for configuring your own solutions.
