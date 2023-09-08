@@ -251,7 +251,6 @@ defaults:
       comments: false
       toc: true
       toc_label: "Guide"
-      toc_sticky: true
       classes: wide
 
 # Sass/SCSS
