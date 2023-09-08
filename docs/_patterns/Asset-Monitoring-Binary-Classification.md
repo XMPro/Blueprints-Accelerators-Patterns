@@ -2,16 +2,10 @@
 title: "Asset Monitoring Using Binary Classification"
 permalink: /patterns/Asset-Monitoring-Binary-Classification/
 #excerpt: "Instructions on how to customize the main navigation and enabling breadcrumb links."
-toc: true
-classes: wide
-header:
-  image: /assets/images/foo-bar-identity.jpg
-  teaser: /assets/images/foo-bar-identity-th.jpg
 sidebar:
-  - title: "Role"
-    image: http://placehold.it/350x250
-    image_alt: "logo"
-    text: "Designer, Front-End Developer"
+  - title: ""
+    image: ../Patterns/Machine Learning/Asset Monitoring - Binary Classification/Images/DataStream_01.png
+    image_alt: "Data Stream"
   - title: "Type"
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
 gallery:
