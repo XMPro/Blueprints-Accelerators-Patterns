@@ -229,7 +229,6 @@ defaults:
       author_profile: false
       share: false
       comments: false
-      show_date: false
   # _blueprints
   - scope:
       path: ""
@@ -240,7 +239,6 @@ defaults:
       author_profile: false
       share: false
       comments: false
-      show_date: false
   # _patterns
   - scope:
       path: ""
@@ -251,7 +249,6 @@ defaults:
       author_profile: false
       share: false
       comments: false
-      show_date: false
 
 # Sass/SCSS
 sass:
