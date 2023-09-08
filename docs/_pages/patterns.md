@@ -7,4 +7,4 @@ entries_layout: grid
 classes: wide
 ---
 
-Sample document listing for the collection `_patterns`.
+Patterns are pre-configured data streams that can be imported into your environment as building blocks for your applications.

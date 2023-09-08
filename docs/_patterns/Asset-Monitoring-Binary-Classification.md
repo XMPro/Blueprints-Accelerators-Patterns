@@ -3,9 +3,8 @@ title: "Asset Monitoring Using Binary Classification"
 permalink: /patterns/Asset-Monitoring-Binary-Classification/
 #excerpt: "Instructions on how to customize the main navigation and enabling breadcrumb links."
 toc: true
+classes: wide
 ---
-
-# <img alternative="XMPro Logo X" width="30px" src="https://xmks.s3.amazonaws.com/2020/X-Blue.png#gh-light-mode-only">Asset Monitoring Using Binary Classification 
 
 ## Files
 <table>
