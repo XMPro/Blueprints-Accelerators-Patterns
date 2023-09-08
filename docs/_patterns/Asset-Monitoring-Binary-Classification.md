@@ -6,7 +6,7 @@ toc: true
 toc_label: "Guide"
 sidebar:
   - title: ""
-    image: https://github.com/XMPro/Blueprints-Accelerators-Patterns/Patterns/Machine Learning/Asset Monitoring - Binary Classification/Images/DataStream_01.png
+    image: https://github.com/XMPro/Blueprints-Accelerators-Patterns/Patterns/Machine%20Learning/Asset%20Monitoring%20-%20Binary%20Classification/Images/DataStream_01.png
     image_alt: "Data Stream"
   - title: "Type"
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
