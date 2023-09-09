@@ -12,7 +12,7 @@ sidebar:
   - title: "Import Password"
     text: "Dem0nstr@t1on"
   - title: "How to Import"
-    text: For instructions [link](https://documentation.xmpro.com/how-tos/import-export-and-clone#importing "Click Here")
+    text: For instructions click the [link](https://documentation.xmpro.com/how-tos/import-export-and-clone#importing "Click Here")
 
 gallery:
   - url: /assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream_01.png
@@ -37,7 +37,7 @@ gallery:
 </tr>
 </table>
 
-{% include gallery caption="Data Stream." %}
+{% include gallery %}
 
 ## Data Stream
 
@@ -45,13 +45,15 @@ An example of binary classification using smart meter data.
 
 The data stream is configured using: 
 
-* <a href="https://xmpro.gitbook.io/csv/" target="_blank">CSV</a> <a href="https://documentation.xmpro.com/concepts/agent#listeners" target="_blank">listener</a> - Simulate data from CSV file
-* <a href="https://xmpro.gitbook.io/azure-sql/" target="_blank">SQL</a> <a href="https://documentation.xmpro.com/concepts/agent#listeners" target="_blank">listener</a> - read consumer reference data from SQL
-* <a href="https://xmpro.gitbook.io/broadcast/" target="_blank">Broadcast</a> - Broadcast data to other agents
-* <a href="https://xmpro.gitbook.io/xmpro-app/" target="_blank">XMPro App</a> <a href="https://documentation.xmpro.com/concepts/agent#action-agents" target="_blank">action agent</a> - View data in the App Designer
-* <a href="https://xmpro.gitbook.io/join/" target="_blank">Join</a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> - Contextualize data with data from SQL
-* <a href="https://xmpro.gitbook.io/binary-classification/" target="_blank">Binary Classification</a> <a href="https://documentation.xmpro.com/concepts/agent#ai-and-machine-learning" target="_blank">AI and machine learning agent</a> - Execute binary classification on data
-* <a href="https://xmpro.gitbook.io/run-recommendation/" target="_blank">Run Recommendation</a> <a href="https://documentation.xmpro.com/concepts/agent#recommendation" target="_blank">agent</a> - Run Recommendation Rules
+| Agent            |                                                              |
+| --------         | ------------------------------------------------------------ |
+| <a href="https://xmpro.gitbook.io/csv/" target="_blank">CSV listener</a>     | Simulate data from CSV file           |
+| <a href="https://xmpro.gitbook.io/azure-sql/" target="_blank">SQL listener</a>     | Read consumer reference data from SQL           |
+| <a href="https://xmpro.gitbook.io/broadcast/" target="_blank">Broadcast</a>     | Broadcast data to other agents           |
+| <a href="https://xmpro.gitbook.io/xmpro-app/" target="_blank">XMPro App action agent</a>     | View data in the App Designer file           |
+| <a href="https://xmpro.gitbook.io/join/" target="_blank">Join transformation</a>     | Contextualize data with data from SQL           |
+| <a href="https://xmpro.gitbook.io/binary-classification/" target="_blank">Binary Classification machine learning agent</a>     | Execute binary classification on data           |
+| <a href="https://xmpro.gitbook.io/run-recommendation/" target="_blank">Run Recommendation agent</a>     | Run Recommendation Rules file           |
 
 ## How to Import
 
