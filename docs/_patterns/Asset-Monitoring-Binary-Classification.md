@@ -1,5 +1,6 @@
 ---
 title: "Asset Monitoring Using Binary Classification"
+excerpt: "Data Stream Pattern."
 toc: true
 toc_label: "Guide"
 sidebar:
