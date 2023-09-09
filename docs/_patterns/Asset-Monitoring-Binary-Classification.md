@@ -1,24 +1,25 @@
 ---
-title: "Asset Monitoring Using Binary Classification"
+title: ""
+subtitle : "Asset Monitoring Using Binary Classification"
 permalink: /patterns/Asset-Monitoring-Binary-Classification/
 #excerpt: "Instructions on how to customize the main navigation and enabling breadcrumb links."
 toc: true
 toc_label: "Guide"
 sidebar:
   - title: ""
-    image: https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Asset%20Monitoring%20-%20Binary%20Classification/Images/DataStream_01.png
+    image: /assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream_01.png
     image_alt: "Data Stream"
-  - title: "Type"
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
   - title: "Import Password"
     text: "Dem0nstr@t1on"
+  - title: "How to Import"
+    text: "For instructions <a href="https://documentation.xmpro.com/how-tos/import-export-and-clone#importing" target="_blank">click here</a>"
 
 gallery:
-  - url: https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Asset%20Monitoring%20-%20Binary%20Classification/Images/DataStream_01.png
-    image_path: https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Asset%20Monitoring%20-%20Binary%20Classification/Images/DataStream_01.png
+  - url: /assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream_01.png
+    image_path: assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream_01.png
     alt: "Data Stream"
-  - url: https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Asset%20Monitoring%20-%20Binary%20Classification/Images/DataStream_Running_01.png
-    image_path: https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Asset%20Monitoring%20-%20Binary%20Classification/Images/DataStream_Running_01.png
+  - url: /assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream_Running_01.png
+    image_path: assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream_Running_01.png
     alt: "Data Stream Running"
 
 ---
@@ -38,23 +39,21 @@ gallery:
 
 {% include gallery caption="Data Stream." %}
 
-## Description
-### Data Stream
+## Data Stream
 
 An example of binary classification using smart meter data.
 
 The data stream is configured using: 
 
-* <a href="https://xmpro.gitbook.io/csv/" target="_blank"><i>CSV</i></a> <a href="https://documentation.xmpro.com/concepts/agent#listeners" target="_blank">listener</a> - Simulate data from CSV file
-* <a href="https://xmpro.gitbook.io/azure-sql/" target="_blank"><i>SQL</i></a> <a href="https://documentation.xmpro.com/concepts/agent#listeners" target="_blank">listener</a> - read consumer reference data from SQL
-* <a href="https://xmpro.gitbook.io/broadcast/" target="_blank"><i>Broadcast</i></a> - Broadcast data to other agents
-* <a href="https://xmpro.gitbook.io/xmpro-app/" target="_blank"><i>XMPro App</i></a> <a href="https://documentation.xmpro.com/concepts/agent#action-agents" target="_blank">action agent</a> - View data in the App Designer
-* <a href="https://xmpro.gitbook.io/join/" target="_blank"><i>Join</i></a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> - Contextualize data with data from SQL
-* <a href="https://xmpro.gitbook.io/binary-classification/" target="_blank"><i>Binary Classification</i></a> <a href="https://documentation.xmpro.com/concepts/agent#ai-and-machine-learning" target="_blank">AI and machine learning agent</a> - Execute binary classification on data
-* <a href="https://xmpro.gitbook.io/run-recommendation/" target="_blank"><i>Run Recommendation</i></a> <a href="https://documentation.xmpro.com/concepts/agent#recommendation" target="_blank">agent</a> - Run Recommendation Rules
+* <a href="https://xmpro.gitbook.io/csv/" target="_blank">CSV</a> <a href="https://documentation.xmpro.com/concepts/agent#listeners" target="_blank">listener</a> - Simulate data from CSV file
+* <a href="https://xmpro.gitbook.io/azure-sql/" target="_blank">SQL</a> <a href="https://documentation.xmpro.com/concepts/agent#listeners" target="_blank">listener</a> - read consumer reference data from SQL
+* <a href="https://xmpro.gitbook.io/broadcast/" target="_blank">Broadcast</a> - Broadcast data to other agents
+* <a href="https://xmpro.gitbook.io/xmpro-app/" target="_blank">XMPro App</a> <a href="https://documentation.xmpro.com/concepts/agent#action-agents" target="_blank">action agent</a> - View data in the App Designer
+* <a href="https://xmpro.gitbook.io/join/" target="_blank">Join</a> <a href="https://documentation.xmpro.com/concepts/agent#transformations" target="_blank">transformation</a> - Contextualize data with data from SQL
+* <a href="https://xmpro.gitbook.io/binary-classification/" target="_blank">Binary Classification</a> <a href="https://documentation.xmpro.com/concepts/agent#ai-and-machine-learning" target="_blank">AI and machine learning agent</a> - Execute binary classification on data
+* <a href="https://xmpro.gitbook.io/run-recommendation/" target="_blank">Run Recommendation</a> <a href="https://documentation.xmpro.com/concepts/agent#recommendation" target="_blank">agent</a> - Run Recommendation Rules
 
 ## How to Import
-For instructions on how to import <a href="https://documentation.xmpro.com/how-tos/import-export-and-clone#importing" target="_blank">click here</a>.
 
 Create/confirm the following variables
   * App Designer URL
@@ -66,7 +65,8 @@ Create/confirm the following variables
 ### 1. Run SQL Scripts
 
 	* Execute the scripts in SQL Server
-	* Ensure the data is successfully loaded into the database
+	* Ensure the data is successfully loaded into the database 
+	{: .notice--info}
 
 ### 2. Import the Data Stream
 
