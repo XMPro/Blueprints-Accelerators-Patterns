@@ -1,7 +1,5 @@
 ---
-title: "Asset Monitoring"
-permalink: /patterns/Asset-Monitoring-Binary-Classification/
-excerpt: "Using Binary Classification."
+title: "Asset Monitoring Using Binary Classification"
 toc: true
 toc_label: "Guide"
 sidebar:
