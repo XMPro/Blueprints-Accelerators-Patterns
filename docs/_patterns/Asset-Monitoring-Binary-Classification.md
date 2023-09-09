@@ -1,7 +1,5 @@
 ---
-title: "Asset Monitoring"
-permalink: /patterns/Asset-Monitoring-Binary-Classification/
-excerpt: "Using Binary Classification."
+title: "Asset Monitoring Using Binary Classification"
 toc: true
 toc_label: "Guide"
 sidebar:
@@ -65,8 +63,8 @@ Create/confirm the following variables
 
 ### 1. Run SQL Scripts
 
-* Execute the scripts in SQL Server
-* Ensure the data is successfully loaded into the database 
+1. Execute the scripts in SQL Server
+1. Ensure the data is successfully loaded into the database 
 {: .notice--info}
 
 ### 2. Import the Data Stream
