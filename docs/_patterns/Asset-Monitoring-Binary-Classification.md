@@ -1,8 +1,7 @@
 ---
 title: "Asset Monitoring"
-subtitle : "Using Binary Classification"
 permalink: /patterns/Asset-Monitoring-Binary-Classification/
-#excerpt: "Instructions on how to customize the main navigation and enabling breadcrumb links."
+excerpt: "Using Binary Classification."
 toc: true
 toc_label: "Guide"
 sidebar:
@@ -73,13 +72,10 @@ Create/confirm the following variables
 ### 2. Import the Data Stream
 
     * Select highest agent version number on import if prompted. 
-
     * Assign Access to others as required
-	
 	* Edit the XMPro agents and ensure the URL and Integration Key are selected
 	* Edit the Recommendation agent and ensure the URL and Integration Key are selected
 	* Edit the Azure SQL agent and ensure the Server Instance, Username and Password fields are filled in correctly
-
 	* Click Apply and save the data stream (Click Save on the Action Bar, or CTRL + S on the keyboard)
 	* Publish the data stream and open the live view
 	* Ensure there is data in the live view at the Post telemetry agents
