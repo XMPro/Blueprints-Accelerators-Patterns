@@ -17,11 +17,9 @@ gallery:
   - url: https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Asset%20Monitoring%20-%20Binary%20Classification/Images/DataStream_01.png
     image_path: https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Asset%20Monitoring%20-%20Binary%20Classification/Images/DataStream_01.png
     alt: "Data Stream"
-	excerpt: "Configured Data Stream"
   - url: https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Asset%20Monitoring%20-%20Binary%20Classification/Images/DataStream_Running_01.png
     image_path: https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Asset%20Monitoring%20-%20Binary%20Classification/Images/DataStream_Running_01.png
     alt: "Data Stream Running"
-	excerpt: "Configured Data Stream Published."
 
 ---
 
