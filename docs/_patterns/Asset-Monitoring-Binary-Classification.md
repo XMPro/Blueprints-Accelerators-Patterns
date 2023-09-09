@@ -59,11 +59,12 @@ Ensure the following variables are available to be used in the data stream:
   * SQL Server
   * SQL Username
   * SQL Password (Encrypted)
+{: .notice}
 
 ### 2. Run SQL Scripts
 
-&nbsp;&nbsp;2.1 Execute the scripts in SQL Server<br />
-&nbsp;&nbsp;2.2 Ensure the data is successfully loaded into the database 
+* Execute the scripts in SQL Server<br />
+* Ensure the data is successfully loaded into the database 
 {: .notice--info}
 
 ### 3. Import the Data Stream
