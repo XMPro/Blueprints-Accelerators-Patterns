@@ -54,11 +54,11 @@ The data stream is configured using:
 
 ### 1. Create/confirm variables
 Ensure the following variables are available to be used in the data stream: 
-      * App Designer URL
-      * App Designer Integration Key (Encrypted)
-      * SQL Server
-      * SQL Username
-      * SQL Password (Encrypted)
+   * App Designer URL
+   * App Designer Integration Key (Encrypted)
+   * SQL Server
+   * SQL Username
+   * SQL Password (Encrypted)
 {: .notice}
 
 ### 2. Run SQL Scripts
