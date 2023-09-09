@@ -1,6 +1,6 @@
 ---
-title: ""
-subtitle : "Asset Monitoring Using Binary Classification"
+title: "Asset Monitoring"
+subtitle : "Using Binary Classification"
 permalink: /patterns/Asset-Monitoring-Binary-Classification/
 #excerpt: "Instructions on how to customize the main navigation and enabling breadcrumb links."
 toc: true
@@ -13,6 +13,8 @@ sidebar:
     text: "Dem0nstr@t1on"
   - title: "How to Import"
     text: For instructions click the [link](https://documentation.xmpro.com/how-tos/import-export-and-clone#importing "Click Here")
+  - title: "License"
+    text: "[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)"
 
 gallery:
   - url: /assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream_01.png
@@ -38,7 +40,6 @@ gallery:
 </table>
 
 {% include gallery %}
-
 ## Data Stream
 
 An example of binary classification using smart meter data.
@@ -54,7 +55,6 @@ The data stream is configured using:
 | <a href="https://xmpro.gitbook.io/join/" target="_blank">Join transformation</a>     | Contextualize data with data from SQL           |
 | <a href="https://xmpro.gitbook.io/binary-classification/" target="_blank">Binary Classification machine learning agent</a>     | Execute binary classification on data           |
 | <a href="https://xmpro.gitbook.io/run-recommendation/" target="_blank">Run Recommendation agent</a>     | Run Recommendation Rules file           |
-
 ## How to Import
 
 Create/confirm the following variables
@@ -66,9 +66,11 @@ Create/confirm the following variables
 
 ### 1. Run SQL Scripts
 
-	* Execute the scripts in SQL Server
-	* Ensure the data is successfully loaded into the database 
-	{: .notice--info}
+Execute the scripts in SQL Server
+{: .notice--info}
+
+Ensure the data is successfully loaded into the database 
+{: .notice--info}
 
 ### 2. Import the Data Stream
 
