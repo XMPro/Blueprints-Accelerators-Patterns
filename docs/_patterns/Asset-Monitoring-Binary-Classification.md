@@ -12,7 +12,7 @@ sidebar:
   - title: "Import Password"
     text: "Dem0nstr@t1on"
   - title: "How to Import"
-    text: "For instructions <a href="https://documentation.xmpro.com/how-tos/import-export-and-clone#importing" target="_blank">click here</a>"
+    text: For instructions [link](https://documentation.xmpro.com/how-tos/import-export-and-clone#importing "Click Here")
 
 gallery:
   - url: /assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream_01.png
