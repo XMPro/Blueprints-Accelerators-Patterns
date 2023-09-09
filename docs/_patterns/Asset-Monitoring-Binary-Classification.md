@@ -65,7 +65,8 @@ Create/confirm the following variables
 ### 1. Run SQL Scripts
 
 	* Execute the scripts in SQL Server
-	* Ensure the data is successfully loaded into the database
+	* Ensure the data is successfully loaded into the database 
+	{: .notice--info}
 
 ### 2. Import the Data Stream
 

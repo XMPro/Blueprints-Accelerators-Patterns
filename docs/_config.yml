@@ -249,7 +249,8 @@ defaults:
       author_profile: false
       share: false
       comments: false
-
+      classes: wide
+      
 # Sass/SCSS
 sass:
   sass_dir: _sass
