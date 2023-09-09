@@ -1,5 +1,5 @@
 ---
-title: "Asset Monitoring Using Binary Classification"
+title: ""
 excerpt: "Data Stream Pattern."
 toc: true
 toc_label: "Table of Contents"
@@ -53,30 +53,31 @@ The data stream is configured using:
 ## Steps to Import
 
 ### 1. Create/confirm variables
-Ensure the following variables are available to be used in the data stream: 
-   * App Designer URL
-   * App Designer Integration Key (Encrypted)
-   * SQL Server
-   * SQL Username
-   * SQL Password (Encrypted)
+Ensure the following variables are available to be used in the data stream:
+
+&nbsp;&nbsp;&#8226; App Designer URL<br />
+&nbsp;&nbsp;&#8226; App Designer Integration Key (Encrypted)<br />
+&nbsp;&nbsp;&#8226; SQL Server<br />
+&nbsp;&nbsp;&#8226; SQL Username<br />
+&nbsp;&nbsp;&#8226; SQL Password (Encrypted)<br />
 {: .notice}
 
 ### 2. Run SQL Scripts
 
-* Execute the scripts in SQL Server<br />
-* Ensure the data is successfully loaded into the database 
+&nbsp;&nbsp;&#8226; Execute the scripts in SQL Server<br />
+&nbsp;&nbsp;&#8226; Ensure the data is successfully loaded into the database 
 {: .notice--info}
 
 ### 3. Import the Data Stream
 
-&nbsp;&nbsp;3.1 Select the highest agent version number on import, if prompted<br />
-&nbsp;&nbsp;3.2 Assign Access to others as required<br />
-&nbsp;&nbsp;3.3 Edit the XMPro agents and ensure the URL & Integration Key are selected<br />
-&nbsp;&nbsp;3.4 Edit the Recommendation agent and ensure the URL & Integration Key are selected<br />
-&nbsp;&nbsp;3.5 Edit the Azure SQL agent and ensure the Server Instance, Username & Password fields are filled in correctly<br />
-&nbsp;&nbsp;3.6 Click Apply and save the data stream (Click Save on the Action Bar, or CTRL + S on the keyboard)<br />
-&nbsp;&nbsp;3.7 Publish the data stream and open the live view<br />
-&nbsp;&nbsp;3.8 Ensure there is data in the live view by monitoring the Post telemetry agents
+&nbsp;&nbsp;&#8226; Select the highest agent version number on import, if prompted<br />
+&nbsp;&nbsp;&#8226; Assign Access to others as required<br />
+&nbsp;&nbsp;&#8226; Edit the XMPro agents and ensure the URL & Integration Key are selected<br />
+&nbsp;&nbsp;&#8226; Edit the Recommendation agent and ensure the URL & Integration Key are selected<br />
+&nbsp;&nbsp;&#8226; Edit the Azure SQL agent and ensure the Server Instance, Username & Password fields are filled in correctly<br />
+&nbsp;&nbsp;&#8226; Click Apply and save the data stream (Click Save on the Action Bar, or CTRL + S on the keyboard)<br />
+&nbsp;&nbsp;&#8226; Publish the data stream and open the live view<br />
+&nbsp;&nbsp;&#8226; Ensure there is data in the live view by monitoring the Post telemetry agents
 {: .notice--info}
 
 ## Contributing
