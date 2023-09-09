@@ -2,7 +2,7 @@
 title: "Asset Monitoring Using Binary Classification"
 excerpt: "Data Stream Pattern."
 toc: true
-toc_label: "Guide"
+toc_label: "Table of Contents"
 sidebar:
   - title: ""
     image: /assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream_01.png
@@ -52,7 +52,8 @@ The data stream is configured using:
 
 ## Steps to Import
 
-### 1. Create/confirm the following variables
+### 1. Create/confirm variables
+Ensure the following variables are available to be used in the data stream: 
   * App Designer URL
   * App Designer Integration Key (Encrypted)
   * SQL Server
@@ -61,23 +62,24 @@ The data stream is configured using:
 
 ### 2. Run SQL Scripts
 
-&nbsp;&nbsp;1. Execute the scripts in SQL Server
-&nbsp;&nbsp;2. Ensure the data is successfully loaded into the database 
+&nbsp;&nbsp;2.1 Execute the scripts in SQL Server<br />
+&nbsp;&nbsp;2.2 Ensure the data is successfully loaded into the database 
 {: .notice--info}
 
 ### 3. Import the Data Stream
 
-    * Select highest agent version number on import if prompted. 
-    * Assign Access to others as required
-	* Edit the XMPro agents and ensure the URL and Integration Key are selected
-	* Edit the Recommendation agent and ensure the URL and Integration Key are selected
-	* Edit the Azure SQL agent and ensure the Server Instance, Username and Password fields are filled in correctly
-	* Click Apply and save the data stream (Click Save on the Action Bar, or CTRL + S on the keyboard)
-	* Publish the data stream and open the live view
-	* Ensure there is data in the live view at the Post telemetry agents
+&nbsp;&nbsp;3.1 Select the highest agent version number on import, if prompted<br />
+&nbsp;&nbsp;3.2 Assign Access to others as required<br />
+&nbsp;&nbsp;3.3 Edit the XMPro agents and ensure the URL & Integration Key are selected<br />
+&nbsp;&nbsp;3.4 Edit the Recommendation agent and ensure the URL & Integration Key are selected<br />
+&nbsp;&nbsp;3.5 Edit the Azure SQL agent and ensure the Server Instance, Username & Password fields are filled in correctly<br />
+&nbsp;&nbsp;3.6 Click Apply and save the data stream (Click Save on the Action Bar, or CTRL + S on the keyboard)<br />
+&nbsp;&nbsp;3.7 Publish the data stream and open the live view<br />
+&nbsp;&nbsp;3.8 Ensure there is data in the live view by monitoring the Post telemetry agents
+{: .notice--info}
 
 ## Contributing
-This repository was created by <a href="https://xmpro.com/">XMPro</a>. For assistance or requests, please contact <a href="mailto:support@xmpro.com">support@xmpro.com</a>
+This repository was created by <a href="https://xmpro.com/">XMPro</a>. 
+For assistance or requests, please contact <a href="mailto:support@xmpro.com">support@xmpro.com</a>
 
-## License
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
