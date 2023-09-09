@@ -18,8 +18,8 @@ gallery:
   - url: /assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream_Running_01.png
     image_path: assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream_Running_01.png
     alt: "Data Stream Running"
-
 ---
+An example of binary classification using smart meter data.
 
 ## Files
 <table>
@@ -37,12 +37,9 @@ gallery:
 {% include gallery %}
 
 ## Data Stream
-
-An example of binary classification using smart meter data.
-
 The data stream is configured using: 
 
-| Agent            |                                                              |
+| Agent            | Description                                                  |
 | --------         | ------------------------------------------------------------ |
 | <a href="https://xmpro.gitbook.io/csv/" target="_blank">CSV listener</a>     | Simulate data from CSV file           |
 | <a href="https://xmpro.gitbook.io/azure-sql/" target="_blank">SQL listener</a>     | Read consumer reference data from SQL           |
@@ -52,22 +49,22 @@ The data stream is configured using:
 | <a href="https://xmpro.gitbook.io/binary-classification/" target="_blank">Binary Classification machine learning agent</a>     | Execute binary classification on data           |
 | <a href="https://xmpro.gitbook.io/run-recommendation/" target="_blank">Run Recommendation agent</a>     | Run Recommendation Rules file           |
 
-## How to Import
+## Steps to Import
 
-Create/confirm the following variables
+### 1. Create/confirm the following variables
   * App Designer URL
   * App Designer Integration Key (Encrypted)
   * SQL Server
   * SQL Username
   * SQL Password (Encrypted)
 
-### 1. Run SQL Scripts
+### 2. Run SQL Scripts
 
-1. Execute the scripts in SQL Server
-1. Ensure the data is successfully loaded into the database 
+&nbsp;&nbsp;1. Execute the scripts in SQL Server
+&nbsp;&nbsp;2. Ensure the data is successfully loaded into the database 
 {: .notice--info}
 
-### 2. Import the Data Stream
+### 3. Import the Data Stream
 
     * Select highest agent version number on import if prompted. 
     * Assign Access to others as required
