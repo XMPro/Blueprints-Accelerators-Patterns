@@ -4,8 +4,11 @@ subtitle: "Asset Monitoring using binary classification"
 excerpt: "Asset Monitoring using binary classification"
 toc: true
 toc_label: "Table of Contents"
+
 sidebar:
-  - title: "Asset Monitoring using binary classification"
+  - title: "Asset Monitoring"
+    text: "using binary classification"
+  - title: ""
     image: /assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream_01.png
     image_alt: "Data Stream"
   - title: "Import Password"
