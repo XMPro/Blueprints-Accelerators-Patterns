@@ -1,6 +1,7 @@
 ---
 title: Patterns
 layout: collection
+layout: single
 permalink: /patterns/
 collection: patterns
 entries_layout: grid
