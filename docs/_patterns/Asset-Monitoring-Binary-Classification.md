@@ -5,7 +5,7 @@ excerpt: "Asset Monitoring using binary classification"
 toc: true
 toc_label: "Table of Contents"
 sidebar:
-  - title: ""
+  - title: "Asset Monitoring using binary classification"
     image: /assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream_01.png
     image_alt: "Data Stream"
   - title: "Import Password"
