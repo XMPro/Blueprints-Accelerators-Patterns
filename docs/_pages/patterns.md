@@ -2,7 +2,8 @@
 title: ""
 layout: single
 permalink: /patterns/
-toc: true
+classes: wide
+toc: false
 toc_label: "Table of Contents"
 sidebar:
   - title: ""
