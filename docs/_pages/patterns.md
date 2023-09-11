@@ -1,11 +1,13 @@
 ---
-title: Patterns
-#layout: collection
+title: ""
 layout: single
 permalink: /patterns/
-#collection: patterns
-#entries_layout: grid
 classes: wide
+toc: true
+toc_label: "Table of Contents"
+sidebar:
+  - title: "Patterns"
+    text: "are pre-configured data streams that can be imported into your environment as building blocks for your applications/"
+
 ---
 
-Patterns are pre-configured data streams that can be imported into your environment as building blocks for your applications.
