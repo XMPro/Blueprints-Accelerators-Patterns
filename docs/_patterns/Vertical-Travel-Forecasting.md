@@ -4,7 +4,10 @@ subtitle: "Asset Monitoring using forecasting"
 excerpt: "Asset Monitoring using forecasting"
 toc: true
 toc_label: "Table of Contents"
-
+tags:
+  - Asset Monitoring
+  - Condition Monitoring
+  - Prediction 
 sidebar:
   - title: "Asset Monitoring"
     text: "using forecasting"

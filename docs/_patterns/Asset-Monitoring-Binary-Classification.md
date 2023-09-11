@@ -4,7 +4,9 @@ subtitle: "Asset Monitoring using binary classification"
 excerpt: "Asset Monitoring using binary classification"
 toc: true
 toc_label: "Table of Contents"
-
+tags:
+  - Asset Monitoring
+  - Condition Monitoring
 sidebar:
   - title: "Asset Monitoring"
     text: "using binary classification"
