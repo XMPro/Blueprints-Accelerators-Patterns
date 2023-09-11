@@ -1,6 +1,7 @@
 ---
 title: ""
-excerpt: "Data Stream Pattern."
+subtitle: "Asset Monitoring using binary classification"
+excerpt: "Asset Monitoring using binary classification"
 toc: true
 toc_label: "Table of Contents"
 sidebar:
@@ -72,10 +73,13 @@ Ensure the following variables are available to be used in the data stream:
 
 &nbsp;&nbsp;&#8226; Select the highest agent version number on import, if prompted<br />
 &nbsp;&nbsp;&#8226; Assign Access to others as required<br />
+
 &nbsp;&nbsp;&#8226; Edit the XMPro agents and ensure the URL & Integration Key are selected<br />
 &nbsp;&nbsp;&#8226; Edit the Recommendation agent and ensure the URL & Integration Key are selected<br />
 &nbsp;&nbsp;&#8226; Edit the Azure SQL agent and ensure the Server Instance, Username & Password fields are filled in correctly<br />
+
 &nbsp;&nbsp;&#8226; Click Apply and save the data stream (Click Save on the Action Bar, or CTRL + S on the keyboard)<br />
+
 &nbsp;&nbsp;&#8226; Publish the data stream and open the live view<br />
 &nbsp;&nbsp;&#8226; Ensure there is data in the live view by monitoring the Post telemetry agents
 {: .notice--info}
