@@ -5,13 +5,17 @@ excerpt: "Asset Monitoring using binary classification"
 toc: true
 toc_label: "Table of Contents"
 sidebar:
-  - title: ""
+  - title: "Asset Monitoring using binary classification"
     image: /assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream_01.png
     image_alt: "Data Stream"
   - title: "Import Password"
     text: "Dem0nstr@t1on"
   - title: "How to Import"
     text: For instructions click the [link](https://documentation.xmpro.com/how-tos/import-export-and-clone#importing "Click Here")
+  - title: "SQL Files"
+    text: For DemoSmartMeter click the [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Asset%20Monitoring%20-%20Binary%20Classification/SQL%20Scripts/%5BDemoSmartMeter%5D.sql "Click Here")
+  - title: "Data Stream Files"
+    text: For the Data Stream click the [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Asset%20Monitoring%20-%20Binary%20Classification/Asset%20Monitoring%20Binary%20Classification.xuc "Click Here")
 
 gallery:
   - url: /assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream_01.png
@@ -22,19 +26,6 @@ gallery:
     alt: "Data Stream Running"
 ---
 An example of binary classification using smart meter data.
-
-## Files
-<table>
-<tr><td width="240px"> Type </td><td width="500px"> Name </td></tr>
-<tr>
-<td>SQL Scripts</td>
-<td><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Asset%20Monitoring%20-%20Binary%20Classification/SQL%20Scripts/%5BDemoSmartMeter%5D.sql" target="_blank">DemoSmartMeter</a></td>
-</tr>
-<tr>
-<td>Data Stream</td>
-<td><a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Asset%20Monitoring%20-%20Binary%20Classification/Asset%20Monitoring%20Binary%20Classification.xuc" target="_blank">Asset Monitoring Binary Classification</a></td>
-</tr>
-</table>
 
 {% include gallery %}
 
