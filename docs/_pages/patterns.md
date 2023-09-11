@@ -1,10 +1,10 @@
 ---
 title: Patterns
-layout: collection
+#layout: collection
 layout: single
 permalink: /patterns/
-collection: patterns
-entries_layout: grid
+#collection: patterns
+#entries_layout: grid
 classes: wide
 ---
 
