@@ -16,7 +16,7 @@ sidebar:
   - title: "How to Import"
     text: For instructions click the [link](https://documentation.xmpro.com/how-tos/import-export-and-clone#importing "Click Here")
   - title: "Files"
-    text: SQL DemoSmartMeter [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/Patterns/Machine%20Learning/Liner%20Wear%20Prediction%20-%20Regression/SQL%20Scripts/%5BDemoCrusher%5D.sql "Click Here") <br />Data Stream [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Liner%20Wear%20Prediction%20-%20Regression/Liner%20Wear%20Prediction%20using%20Regression.xuc "Click Here")
+    text: SQL Demo - Crusher [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/Patterns/Machine%20Learning/Liner%20Wear%20Prediction%20-%20Regression/SQL%20Scripts/%5BDemoCrusher%5D.sql "Click Here") <br />Data Stream [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Liner%20Wear%20Prediction%20-%20Regression/Liner%20Wear%20Prediction%20using%20Regression.xuc "Click Here")
 
 gallery:
   - url: /assets/images/Patterns/Machine-Learning/Liner-Wear-Prediction-Regression/DataStream_01.png
@@ -38,7 +38,7 @@ The data stream is configured using:
 | <a href="https://xmpro.gitbook.io/csv/" target="_blank">CSV listener</a>     | Simulate data from CSV file           |
 | <a href="https://xmpro.gitbook.io/azure-sql/" target="_blank">SQL listener</a>     | Read consumer reference data from SQL           |
 | <a href="https://xmpro.gitbook.io/broadcast/" target="_blank">Broadcast</a>     | Broadcast data to other agents           |
-| <a href="https://xmpro.gitbook.io/xmpro-app/" target="_blank">XMPro App action agent</a>     | View data in the App Designer file           |
+| <a href="https://xmpro.gitbook.io/xmpro-app/" target="_blank">XMPro App action agent</a>     | View data in the App Designer           |
 | <a href="https://xmpro.gitbook.io/join/" target="_blank">Join transformation</a>     | Contextualize data with data from SQL           |
 | <a href="https://xmpro.gitbook.io/regression/" target="_blank">Regression machine learning agent</a>     | Execute binary classification on data           |
 | <a href="https://xmpro.gitbook.io/run-recommendation/" target="_blank">Run Recommendation agent</a>     | Run Recommendation Rules file           |
