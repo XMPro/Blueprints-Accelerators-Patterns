@@ -12,10 +12,8 @@ sidebar:
     text: "Dem0nstr@t1on"
   - title: "How to Import"
     text: For instructions click the [link](https://documentation.xmpro.com/how-tos/import-export-and-clone#importing "Click Here")
-  - title: "SQL Files"
-    text: For DemoSmartMeter click the [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Asset%20Monitoring%20-%20Binary%20Classification/SQL%20Scripts/%5BDemoSmartMeter%5D.sql "Click Here")
-  - title: "Data Stream Files"
-    text: For the Data Stream click the [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Asset%20Monitoring%20-%20Binary%20Classification/Asset%20Monitoring%20Binary%20Classification.xuc "Click Here")
+  - title: "Files"
+    text: SQL DemoSmartMeter [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Asset%20Monitoring%20-%20Binary%20Classification/SQL%20Scripts/%5BDemoSmartMeter%5D.sql "Click Here") Data Stream [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Asset%20Monitoring%20-%20Binary%20Classification/Asset%20Monitoring%20Binary%20Classification.xuc "Click Here")
 
 gallery:
   - url: /assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream_01.png
@@ -65,12 +63,11 @@ Ensure the following variables are available to be used in the data stream:
 &nbsp;&nbsp;&#8226; Select the highest agent version number on import, if prompted<br />
 &nbsp;&nbsp;&#8226; Assign Access to others as required<br />
 {: .notice--info}
-&nbsp;&nbsp;&#8226; Edit the XMPro agents and ensure the URL & Integration Key are selected<br />
-&nbsp;&nbsp;&#8226; Edit the Recommendation agent and ensure the URL & Integration Key are selected<br />
-&nbsp;&nbsp;&#8226; Edit the Azure SQL agent and ensure the Server Instance, Username & Password fields are filled in correctly<br />
+&nbsp;&nbsp;&#8226; XMPro agents: ensure the URL & Integration Key are selected<br />
+&nbsp;&nbsp;&#8226; Recommendation agent: ensure the URL & Integration Key are selected<br />
+&nbsp;&nbsp;&#8226; SQL agent: ensure the Instance, Username & Password fields are filled in<br />
 {: .notice--info}
-&nbsp;&nbsp;&#8226; Click Apply and save the data stream (Click Save on the Action Bar, or CTRL + S on the keyboard)<br />
-{: .notice--info}
+&nbsp;&nbsp;&#8226; Click Apply and save the data stream<br />
 &nbsp;&nbsp;&#8226; Publish the data stream and open the live view<br />
 &nbsp;&nbsp;&#8226; Ensure there is data in the live view by monitoring the Post telemetry agents
 {: .notice--info}
