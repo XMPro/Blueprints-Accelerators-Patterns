@@ -22,4 +22,7 @@ sidebar:
 <tr>
 <td><a href="Liner-Wear-Prediction-Regression">Asset Monitoring - Regression</a></td>
 <td>Prediction of liner wear for a crusher asset.</td></tr>
+<tr>
+<td><a href="Vertical-Travel-Forecasting">Asset Monitoring - Forecasting</a></td>
+<td>Using crusher data to forecast vertical travel based on past values.</td></tr>
 </table>
