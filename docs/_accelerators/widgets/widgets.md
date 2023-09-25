@@ -45,11 +45,11 @@ The data stream is configured using:
 | <a href="https://xmpro.gitbook.io/run-recommendation/" target="_blank">Run Recommendation agent</a>     | Run Recommendation Rules file           |
 
 feature_row:
-  - image_path: /_accelerators/widgets/AlertCountRollupDynamicDesignMode.png
+  - image_path: /assets/images/AlertCountRollupDynamicDesignMode.png
     alt: "placeholder image 1"
     title: "Placeholder 1"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
-  - image_path: /_accelerators/widgets/AlertCountRollupDynamicDesignMode.png
+  - image_path: /assets/images/AlertCountRollupDynamicDesignMode.png
     alt: "placeholder image 2"
     title: "Placeholder 2"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
