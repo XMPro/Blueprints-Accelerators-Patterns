@@ -44,6 +44,9 @@ The data stream is configured using:
 | <a href="https://xmpro.gitbook.io/binary-classification/" target="_blank">Binary Classification machine learning agent</a>     | Execute binary classification on data           |
 | <a href="https://xmpro.gitbook.io/run-recommendation/" target="_blank">Run Recommendation agent</a>     | Run Recommendation Rules file           |
 
+## Data Stream
+The data stream is configured using: 
+
 feature_row:
   - image_path: /assets/images/AlertCountRollupDynamicDesignMode.png
     alt: "placeholder image 1"
@@ -56,6 +59,10 @@ feature_row:
     url: "#test-link"
     btn_label: "Read More"
     btn_class: "btn--inverse"
+  - image_path: /assets/images/AlertCountRollupDynamicDesignMode.png
+    title: "Placeholder 3"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+---
 
 {% include feature_row %}
 
