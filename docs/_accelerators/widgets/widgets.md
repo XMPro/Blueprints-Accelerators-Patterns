@@ -11,7 +11,7 @@ sidebar:
   - title: "Widgets"
     text: "Lorem Ipsum"
   - title: ""
-    image: /_accelerators/widgets/Alert-Count-Rollup---Dynamic-(Design-Mode)
+    image: /_accelerators/widgets/AlertCountRollupDynamicDesignMode
     image_alt: "Data Stream"
   - title: "Import Password"
     text: "Dem0nstr@t1on"
