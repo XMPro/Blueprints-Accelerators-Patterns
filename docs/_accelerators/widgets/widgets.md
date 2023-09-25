@@ -1,12 +1,11 @@
 ---
-title: ""
-subtitle: "Asset Monitoring using binary classification"
-excerpt: "Asset Monitoring using binary classification"
+title: "Widgets"
+subtitle: "Widgets"
+excerpt: "Alert Count Rollup - Dynamic (Design Mode)"
 toc: true
 toc_label: "Table of Contents"
 tags:
-  - Asset Monitoring
-  - Condition Monitoring
+  - Widgets
 sidebar:
   - title: "Widgets"
     text: "Lorem Ipsum"
