@@ -44,6 +44,21 @@ The data stream is configured using:
 | <a href="https://xmpro.gitbook.io/binary-classification/" target="_blank">Binary Classification machine learning agent</a>     | Execute binary classification on data           |
 | <a href="https://xmpro.gitbook.io/run-recommendation/" target="_blank">Run Recommendation agent</a>     | Run Recommendation Rules file           |
 
+feature_row:
+  - image_path: /_accelerators/widgets/AlertCountRollupDynamicDesignMode
+    alt: "placeholder image 1"
+    title: "Placeholder 1"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+  - image_path: /_accelerators/widgets/AlertCountRollupDynamicDesignMode
+    alt: "placeholder image 2"
+    title: "Placeholder 2"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--inverse"
+
+{% include feature_row %}
+
 ## Steps to Import
 
 ### 1. Create/confirm variables
