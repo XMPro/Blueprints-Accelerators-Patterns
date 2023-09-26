@@ -10,10 +10,10 @@ sidebar:
   - title: "Bad Actors"
     text: "widget"
   - title: ""
-    image: /assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/Light.png
+    image: assets/images/Accelerators/Widgets/BadActors/LightTheme/BadActorsPublishedMode.png
     image_alt: "Light Theme"
   - title: ""
-    image: /assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/Dark.png
+    image: assets/images/Accelerators/Widgets/BadActors/DarkTheme/BadActorsPublishedMode.png
     image_alt: "Dark Theme"
   - title: "Import Password"
     text: "Dem0nstr@t1on"
