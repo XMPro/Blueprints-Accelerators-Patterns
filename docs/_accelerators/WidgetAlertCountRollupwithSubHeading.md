@@ -1,19 +1,19 @@
 ---
 title: ""
-subtitle: "Alert Count Rollup Static"
-excerpt: "Alert Count Rollup Static"
+subtitle: "Alert Count Rollup with Subheading"
+excerpt: "Alert Count Rollup with Subheading"
 toc: true
 toc_label: "Table of Contents"
 tags:
   - Widget
 sidebar:
-  - title: "Alert Count Rollup Static"
+  - title: "Alert Count Rollup with Subheading"
     text: "widget"
   - title: ""
-    image: assets/images/Accelerators/Widgets/AlertCountRollupStatic/LightTheme/AlertCountRollupStaticPublishedMode.png
+    image: assets/images/Accelerators/Widgets/AlertCountRollupwithSubHeading/LightTheme/AlertCountRollupwithSubHeadingPublishedMode.png
     image_alt: "Light Theme"
   - title: ""
-    image: assets/images/Accelerators/Widgets/AlertCountRollupStatic/DarkTheme/AlertCountRollupStaticPublishedMode.png
+    image: assets/images/Accelerators/Widgets/AlertCountRollupwithSubHeading/DarkTheme/AlertCountRollupwithSubHeadingPublishedMode.png
     image_alt: "Dark Theme"
   - title: "Import Password"
     text: "Dem0nstr@t1on"
