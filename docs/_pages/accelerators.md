@@ -18,7 +18,7 @@ sidebar:
 <table>
 <tr><td width="240px"> Name </td><td></td></tr>
 <tr>
-<td><a href="Asset-Monitoring-Binary-Classification">WidgetName</a></td>
+<td><a href="WidgetAlertCountRollupDynamic">Alert Count Rollup Dynamic</a></td>
 <td>Light Runtime Image</td>
 <td>Dark Theme Image</td></tr>
 </table>
