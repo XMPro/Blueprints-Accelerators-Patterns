@@ -1,19 +1,19 @@
 ---
 title: ""
-subtitle: "Alert Count Rollup Dynamic"
-excerpt: "Alert Count Rollup Dynamic"
+subtitle: "Chart with Metric Right"
+excerpt: "Chart with Metric Right"
 toc: true
 toc_label: "Table of Contents"
 tags:
   - Widget
 sidebar:
-  - title: "Alert Count Rollup Dynamic"
+  - title: "Chart with Metric Right"
     text: "widget"
   - title: ""
-    image: /assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/Light.png
+    image: assets/images/Accelerators/Widgets/ChartwithMetricRight/LightTheme/ChartwithMetricRightPublishedMode.png
     image_alt: "Light Theme"
   - title: ""
-    image: /assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/Dark.png
+    image: assets/images/Accelerators/Widgets/ChartwithMetricRight/DarkTheme/ChartwithMetricRightPublishedMode.png
     image_alt: "Dark Theme"
   - title: "Import Password"
     text: "Dem0nstr@t1on"
