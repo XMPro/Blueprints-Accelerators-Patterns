@@ -1,10 +1,24 @@
 ---
-title: Accelerators
-layout: collection
+title: "Accelerators"
+layout: single
 permalink: /accelerators/
-collection: accelerators
-entries_layout: grid
 classes: wide
----
+toc: false
+toc_label: "Table of Contents"
+sidebar:
+  - title: ""
+    image: /assets/images/pattern.png
+    image_alt: "Accelerators"
+  - title: "Accelerators"
+    text: "are pre-configured accelerators that can be imported into as building blocks for your applications."
 
-Accelerators can be imported into your environment, providing a starting point for configuring your own solutions.
+---
+## Widgets
+
+<table>
+<tr><td width="240px"> Name </td><td></td></tr>
+<tr>
+<td><a href="Asset-Monitoring-Binary-Classification">WidgetName</a></td>
+<td>Light Runtime Image</td>
+<td>Dark Theme Image</td></tr>
+</table>
