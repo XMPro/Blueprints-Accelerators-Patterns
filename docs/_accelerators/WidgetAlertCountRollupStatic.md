@@ -1,19 +1,19 @@
 ---
 title: ""
-subtitle: "Alert Count Rollup Dynamic"
-excerpt: "Alert Count Rollup Dynamic"
+subtitle: "Alert Count Rollup Static"
+excerpt: "Alert Count Rollup Static"
 toc: true
 toc_label: "Table of Contents"
 tags:
   - Widget
 sidebar:
-  - title: "Alert Count Rollup Dynamic"
+  - title: "Alert Count Rollup Static"
     text: "widget"
   - title: ""
-    image: /assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/Light.png
+    image: assets/images/Accelerators/Widgets/AlertCountRollupStatic/LightTheme/AlertCountRollupStaticPublishedMode.png
     image_alt: "Light Theme"
   - title: ""
-    image: /assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/Dark.png
+    image: assets/images/Accelerators/Widgets/AlertCountRollupStatic/DarkTheme/AlertCountRollupStaticPublishedMode.png
     image_alt: "Dark Theme"
   - title: "Import Password"
     text: "Dem0nstr@t1on"
