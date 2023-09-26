@@ -20,7 +20,7 @@ sidebar:
   - title: "How to Import"
     text: For instructions click the [link](https://documentation.xmpro.com/how-tos/import-export-and-clone#importing "Click Here")
   - title: "Files"
-    text: Widget File [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Widgets/Alert Count Rollup - Static.xwid "Click Here")
+    text: Widget File [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Widgets/Alert%20Count%20Rollup%20-%20Static.xwid "Click Here")
 
 gallery:
   - url: /assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream_01.png
