@@ -20,9 +20,12 @@ sidebar:
 <tr>
 <td><a href="WidgetAlertCountRollupDynamic">Alert Count Rollup Dynamic</a></td>
 <td>
-    <img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/AlertCountRollupDynamicDesignMode.png" 
-  </td>
-<td>Dark Theme Image</td></tr>
+    <img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png" 
+</td>
+<td>
+    <img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicDesignMode.png" 
+</td>
+</tr>
   
 <tr>
 <td><a href="WidgetAlertCountRollupDynamic">Alert Count Rollup - Static</a></td>
