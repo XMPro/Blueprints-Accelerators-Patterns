@@ -20,7 +20,7 @@ sidebar:
   - title: "How to Import"
     text: For instructions click the [link](https://documentation.xmpro.com/how-tos/import-export-and-clone#importing "Click Here")
   - title: "Files"
-    text: Widget File [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Widgets/WIDGET FILE NAME "Click Here")
+    text: Widget File [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Widgets/Bad Actors.xwid "Click Here")
 
 gallery:
   - url: /assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream_01.png
