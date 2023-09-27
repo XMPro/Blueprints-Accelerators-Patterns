@@ -35,8 +35,8 @@ An example of binary classification using smart meter data.
 
 {% include gallery %}
 
-## Alert Count Rollup Dynamic Widget
-### Widget in Light Theme
+
+## Widget in Light Theme
 #### Widget in display mode:
 <img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png" 
 #### Widget in published mode:
@@ -46,9 +46,9 @@ An example of binary classification using smart meter data.
 #### Widget child data source
 <img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png" 
 
----
 
-### Widget in Dark Theme
+
+## Widget in Dark Theme
 #### Widget in display mode:
 <img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png" 
 #### Widget in published mode:
@@ -57,6 +57,8 @@ An example of binary classification using smart meter data.
 <img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png" 
 #### Widget child data source
 <img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png" 
+
+
 
 ## Steps to Import
 
