@@ -31,7 +31,7 @@ gallery:
     alt: "Data Stream Running"
 ---
 
-An example of binary classification using smart meter data.
+Explain how the widget works
 
 {% include gallery %}
 
@@ -54,9 +54,6 @@ An example of binary classification using smart meter data.
 <img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png" 
 #### Widget child data source
 <img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png" 
-
-## Steps to Import
-### 1. Import the Widget
 
 ## Contributing
 This repository was created by <a href="https://xmpro.com/">XMPro</a>. 
