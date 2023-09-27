@@ -18,7 +18,7 @@ sidebar:
   - title: "Import Password"
     text: "Dem0nstr@t1on"
   - title: "How to Import"
-    text: For instructions click the [link](https://documentation.xmpro.com/how-tos/import-export-and-clone#importing "Click Here")
+    text: For instructions click the [link]([https://documentation.xmpro.com/how-tos/import-export-and-clone#importing](https://documentation.xmpro.com/how-tos/apps/manage-widgets#importing-widgets) "Click Here")
   - title: "Files"
     text: Widget File [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Widgets/Alert%20Count%20Rollup%20-%20Dynamic.xwid "Click Here")
 
@@ -35,7 +35,6 @@ An example of binary classification using smart meter data.
 
 {% include gallery %}
 
-
 ## Widget in Light Theme
 #### Widget in display mode:
 <img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png" 
@@ -45,8 +44,6 @@ An example of binary classification using smart meter data.
 <img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png" 
 #### Widget child data source
 <img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png" 
-
-
 
 ## Widget in Dark Theme
 #### Widget in display mode:
@@ -58,23 +55,8 @@ An example of binary classification using smart meter data.
 #### Widget child data source
 <img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png" 
 
-
-
 ## Steps to Import
-
 ### 1. Import the Widget
-
-&nbsp;&nbsp;&#8226; Select the highest agent version number on import, if prompted<br />
-&nbsp;&nbsp;&#8226; Assign Access to others as required<br />
-{: .notice--info}
-&nbsp;&nbsp;&#8226; XMPro agents: ensure the URL & Integration Key are selected<br />
-&nbsp;&nbsp;&#8226; Recommendation agent: ensure the URL & Integration Key are selected<br />
-&nbsp;&nbsp;&#8226; SQL agent: ensure the Instance, Username & Password fields are filled in<br />
-{: .notice--info}
-&nbsp;&nbsp;&#8226; Click Apply and save the data stream<br />
-&nbsp;&nbsp;&#8226; Publish the data stream and open the live view<br />
-&nbsp;&nbsp;&#8226; Ensure there is data in the live view by monitoring the Post telemetry agents
-{: .notice--info}
 
 ## Contributing
 This repository was created by <a href="https://xmpro.com/">XMPro</a>. 
