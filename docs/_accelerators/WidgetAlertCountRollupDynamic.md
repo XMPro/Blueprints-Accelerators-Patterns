@@ -30,13 +30,33 @@ gallery:
     image_path: assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream_Running_01.png
     alt: "Data Stream Running"
 ---
+
 An example of binary classification using smart meter data.
 
 {% include gallery %}
 
-## Data Stream
-The data stream is configured using: 
+## Alert Count Rollup Dynamic Widget
+### Widget in Light Theme
+#### Widget in display mode:
+<img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png" 
+#### Widget in published mode:
+<img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png" 
+#### Widget total data source
+<img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png" 
+#### Widget child data source
+<img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png" 
 
+---
+
+### Widget in Dark Theme
+#### Widget in display mode:
+<img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png" 
+#### Widget in published mode:
+<img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png" 
+#### Widget total data source
+<img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png" 
+#### Widget child data source
+<img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png" 
 
 ## Steps to Import
 
