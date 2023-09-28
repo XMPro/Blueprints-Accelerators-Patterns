@@ -34,7 +34,7 @@ An example of binary classification using smart meter data.
 
 {% include gallery %}
 
-feature_row:
+feature_row_light:
   - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupStatic/LightTheme/AlertCountRollupStaticDesignMode.png
     alt: "placeholder image 1"
     title: "Placeholder 1"
@@ -54,6 +54,27 @@ feature_row:
     excerpt: "Insert description here"
 
 {% include feature_row %}
+
+feature_row_dark:
+  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupStatic/DarkTheme/AlertCountRollupStaticDesignMode.png
+    alt: "placeholder image 1"
+    title: "Placeholder 1"
+    excerpt: "Insert description here"
+  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupStatic/DarkTheme/AlertCountRollupStaticPublishedMode.png
+    alt: "placeholder image 2"
+    title: "Placeholder 2"
+    excerpt: "Insert description here"
+    url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--inverse"
+  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupStatic/DarkTheme/AlertCountRollupStaticDataSource.png
+    title: "Placeholder 3"
+    excerpt: "Insert description here"
+  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupStatic/DarkTheme/AlertCountRollupStaticTotalBox.png
+    title: "Placeholder 3"
+    excerpt: "Insert description here"
+
+{% include feature_row_dark %}
 
 ## Contributing
 This repository was created by <a href="https://xmpro.com/">XMPro</a>. 
