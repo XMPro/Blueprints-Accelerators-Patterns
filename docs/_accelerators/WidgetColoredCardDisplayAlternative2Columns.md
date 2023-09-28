@@ -1,13 +1,13 @@
 ---
 title: ""
-subtitle: "Alert Count Rollup Dynamic"
-excerpt: "Alert Count Rollup Dynamic"
+subtitle: "Colored Card Display - Alternative"
+excerpt: "Colored Card Display - Alternative"
 toc: true
 toc_label: "Table of Contents"
 tags:
   - Widget
 sidebar:
-  - title: "Alert Count Rollup Dynamic"
+  - title: "Colored Card Display - Alternative"
     text: "widget"
   - title: ""
     image: /assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/Light.png
