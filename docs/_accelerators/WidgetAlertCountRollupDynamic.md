@@ -56,6 +56,27 @@ feature_row:
 
 {% include feature_row %}
 
+feature_row:
+  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicDesignMode.png
+    alt: "placeholder image 1"
+    title: "Placeholder 1"
+    excerpt: "Insert description here"
+  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicDesignMode.png
+    alt: "placeholder image 2"
+    title: "Placeholder 2"
+    excerpt: "Insert description here"
+    url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--inverse"
+  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicDesignMode.png
+    title: "Placeholder 3"
+    excerpt: "Insert description here"
+  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicDesignMode.png
+    title: "Placeholder 3"
+    excerpt: "Insert description here"
+
+{% include feature_row %}
+
 ## Contributing
 This repository was created by <a href="https://xmpro.com/">XMPro</a>. 
 For assistance or requests, please contact <a href="mailto:support@xmpro.com">support@xmpro.com</a>
