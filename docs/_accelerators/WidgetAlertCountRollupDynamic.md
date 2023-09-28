@@ -35,25 +35,26 @@ Explain how the widget works
 
 {% include gallery %}
 
-## Widget in Light Theme
-#### Widget in display mode:
-<img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png" 
-#### Widget in published mode:
-<img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png" 
-#### Widget total data source
-<img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png" 
-#### Widget child data source
-<img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png" 
+feature_row:
+  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png
+    alt: "placeholder image 1"
+    title: "Placeholder 1"
+    excerpt: "Insert description here"
+  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png
+    alt: "placeholder image 2"
+    title: "Placeholder 2"
+    excerpt: "Insert description here"
+    url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--inverse"
+  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png
+    title: "Placeholder 3"
+    excerpt: "Insert description here"
+  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png
+    title: "Placeholder 3"
+    excerpt: "Insert description here"
 
-## Widget in Dark Theme
-#### Widget in display mode:
-<img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png" 
-#### Widget in published mode:
-<img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png" 
-#### Widget total data source
-<img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png" 
-#### Widget child data source
-<img src="/assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png" 
+{% include feature_row %}
 
 ## Contributing
 This repository was created by <a href="https://xmpro.com/">XMPro</a>. 
