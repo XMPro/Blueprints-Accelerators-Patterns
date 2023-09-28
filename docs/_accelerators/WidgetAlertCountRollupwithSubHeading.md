@@ -34,26 +34,26 @@ An example of binary classification using smart meter data.
 
 {% include gallery %}
 
-## Data Stream
-The data stream is configured using: 
+feature_row:
+  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png
+    alt: "placeholder image 1"
+    title: "Placeholder 1"
+    excerpt: "Insert description here"
+  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png
+    alt: "placeholder image 2"
+    title: "Placeholder 2"
+    excerpt: "Insert description here"
+    url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--inverse"
+  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png
+    title: "Placeholder 3"
+    excerpt: "Insert description here"
+  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png
+    title: "Placeholder 3"
+    excerpt: "Insert description here"
 
-
-## Steps to Import
-
-### 1. Import the Widget
-
-&nbsp;&nbsp;&#8226; Select the highest agent version number on import, if prompted<br />
-&nbsp;&nbsp;&#8226; Assign Access to others as required<br />
-{: .notice--info}
-&nbsp;&nbsp;&#8226; XMPro agents: ensure the URL & Integration Key are selected<br />
-&nbsp;&nbsp;&#8226; Recommendation agent: ensure the URL & Integration Key are selected<br />
-&nbsp;&nbsp;&#8226; SQL agent: ensure the Instance, Username & Password fields are filled in<br />
-{: .notice--info}
-&nbsp;&nbsp;&#8226; Click Apply and save the data stream<br />
-&nbsp;&nbsp;&#8226; Publish the data stream and open the live view<br />
-&nbsp;&nbsp;&#8226; Ensure there is data in the live view by monitoring the Post telemetry agents
-{: .notice--info}
-
+{% include feature_row %}
 ## Contributing
 This repository was created by <a href="https://xmpro.com/">XMPro</a>. 
 For assistance or requests, please contact <a href="mailto:support@xmpro.com">support@xmpro.com</a>
