@@ -1,13 +1,13 @@
 ---
 title: ""
-subtitle: "Colored Card Display - Alternative"
-excerpt: "Colored Card Display - Alternative"
+subtitle: "Colored Card Display - Alternative 2 Columns"
+excerpt: "Colored Card Display - Alternative 2 Columns"
 toc: true
 toc_label: "Table of Contents"
 tags:
   - Widget
 sidebar:
-  - title: "Colored Card Display - Alternative"
+  - title: "Colored Card Display - Alternative 2 Columns"
     text: "widget"
   - title: ""
     image: /assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/Light.png
