@@ -34,26 +34,47 @@ An example of binary classification using smart meter data.
 
 {% include gallery %}
 
-feature_row:
-  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png
+feature_row_light:
+  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupwithSubHeading/LightTheme/AlertCountRollupwithSubHeadingDesignMode.png
     alt: "placeholder image 1"
     title: "Placeholder 1"
     excerpt: "Insert description here"
-  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png
+  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupwithSubHeading/LightTheme/AlertCountRollupwithSubHeadingPublishedMode.png
     alt: "placeholder image 2"
     title: "Placeholder 2"
     excerpt: "Insert description here"
     url: "#test-link"
     btn_label: "Read More"
     btn_class: "btn--inverse"
-  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png
+  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupwithSubHeading/LightTheme/AlertCountRollupwithSubHeadingDataSource.png
     title: "Placeholder 3"
     excerpt: "Insert description here"
-  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png
+  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupwithSubHeading/LightTheme/AlertCountRollupwithSubHeadingTotalDataSource.png
     title: "Placeholder 3"
     excerpt: "Insert description here"
 
-{% include feature_row %}
+{% include feature_row_light %}
+
+feature_row_dark:
+  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupwithSubHeading/DarkTheme/AlertCountRollupwithSubHeadingDesignMode.png
+    alt: "placeholder image 1"
+    title: "Placeholder 1"
+    excerpt: "Insert description here"
+  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupwithSubHeading/DarkTheme/AlertCountRollupwithSubHeadingPublishedMode.png
+    alt: "placeholder image 2"
+    title: "Placeholder 2"
+    excerpt: "Insert description here"
+    url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--inverse"
+  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupwithSubHeading/DarkTheme/AlertCountRollupwithSubHeadingDataSource.png
+    title: "Placeholder 3"
+    excerpt: "Insert description here"
+  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupwithSubHeading/DarkTheme/AlertCountRollupwithSubHeadingTotalDataSource.png
+    title: "Placeholder 3"
+    excerpt: "Insert description here"
+
+{% include feature_row_dark %}
 ## Contributing
 This repository was created by <a href="https://xmpro.com/">XMPro</a>. 
 For assistance or requests, please contact <a href="mailto:support@xmpro.com">support@xmpro.com</a>
