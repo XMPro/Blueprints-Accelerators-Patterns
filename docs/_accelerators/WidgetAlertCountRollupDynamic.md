@@ -35,7 +35,7 @@ Explain how the widget works
 
 {% include gallery %}
 
-feature_row:
+feature_row_light:
   - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png
     alt: "placeholder image 1"
     title: "Placeholder 1"
@@ -54,9 +54,9 @@ feature_row:
     title: "Placeholder 3"
     excerpt: "Insert description here"
 
-{% include feature_row %}
+{% include feature_row_light %}
 
-feature_row:
+feature_row_dark:
   - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicDesignMode.png
     alt: "placeholder image 1"
     title: "Placeholder 1"
@@ -75,7 +75,7 @@ feature_row:
     title: "Placeholder 3"
     excerpt: "Insert description here"
 
-{% include feature_row %}
+{% include feature_row_dark %}
 
 ## Contributing
 This repository was created by <a href="https://xmpro.com/">XMPro</a>. 
