@@ -35,21 +35,21 @@ An example of binary classification using smart meter data.
 {% include gallery %}
 
 feature_row:
-  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png
+  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupStatic/LightTheme/AlertCountRollupStaticDesignMode.png
     alt: "placeholder image 1"
     title: "Placeholder 1"
     excerpt: "Insert description here"
-  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png
+  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupStatic/LightTheme/AlertCountRollupStaticPublishedMode.png
     alt: "placeholder image 2"
     title: "Placeholder 2"
     excerpt: "Insert description here"
     url: "#test-link"
     btn_label: "Read More"
     btn_class: "btn--inverse"
-  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png
+  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupStatic/LightTheme/AlertCountRollupStaticDataSource.png
     title: "Placeholder 3"
     excerpt: "Insert description here"
-  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png
+  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupStatic/LightTheme/AlertCountRollupStaticTotalBox.png
     title: "Placeholder 3"
     excerpt: "Insert description here"
 
