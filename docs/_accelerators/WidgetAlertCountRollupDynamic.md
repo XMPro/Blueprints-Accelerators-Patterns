@@ -7,13 +7,13 @@ toc_label: "Table of Contents"
 tags:
   - Widget
 sidebar:
-  - title: "Alert Count Rollup Dynamic"
-    text: "widget"
+  - title: "Alert Count Rollup"
+    text: "a Dynamic widget"
   - title: ""
-    image: /assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/Light.png
+    image: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicPublishedMode.png
     image_alt: "Light Theme"
   - title: ""
-    image: /assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/Dark.png
+    image: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicPublishedMode.png
     image_alt: "Dark Theme"
   - title: "Import Password"
     text: "Dem0nstr@t1on"
@@ -31,51 +31,27 @@ gallery:
     alt: "Data Stream Running"
 ---
 
-Explain how the widget works
+This widget is broken down into two sections, the left (Total Assets) is the total area and the right section past the vertical line is whhere you can get specific.  The right section will grow and shrink depending on the data source that is provided.
+
+This widget contains only a mainheading and no sub heading to mazimise the space it fits.
+
+The Up and Down arrows are indicators and can be adjust to dynamically show up and down or convert them into another shape in the block properties.
 
 {% include gallery %}
 
 feature_row:
-  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png
-    alt: "placeholder image 1"
-    title: "Placeholder 1"
-    excerpt: "Insert description here"
-  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png
-    alt: "placeholder image 2"
-    title: "Placeholder 2"
-    excerpt: "Insert description here"
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--inverse"
-  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png
-    title: "Placeholder 3"
-    excerpt: "Insert description here"
-  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png
-    title: "Placeholder 3"
-    excerpt: "Insert description here"
-
-{% include feature_row %}
-
-feature_row:
-  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicDesignMode.png
-    alt: "placeholder image 1"
-    title: "Placeholder 1"
-    excerpt: "Insert description here"
-  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicDesignMode.png
-    alt: "placeholder image 2"
-    title: "Placeholder 2"
-    excerpt: "Insert description here"
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--inverse"
-  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicDesignMode.png
-    title: "Placeholder 3"
-    excerpt: "Insert description here"
-  - image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicDesignMode.png
-    title: "Placeholder 3"
-    excerpt: "Insert description here"
-
-{% include feature_row %}
+  - url: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png
+    image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png
+    alt: "Design Mode"
+    title: "Design Mode (DM)"
+  - url: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicTotalDataSource.png
+    image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicTotalDataSource.png
+    alt: "Design Mode - Total"
+    title: "Main Total in DM"
+  - url: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicChildDataSource.png
+    image_path: /assets/images/Accelerators/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicChildDataSource.png
+    alt: "Design Mode - Child"
+    title: "Child Section in DM"
 
 ## Contributing
 This repository was created by <a href="https://xmpro.com/">XMPro</a>. 
