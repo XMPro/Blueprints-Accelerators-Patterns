@@ -37,9 +37,9 @@ gallery:
 ---
 <table>
 <tr>
-  <td><img src="{{ site.url }}{{ site.baseurl }}/assets/images/Patterns/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicPublishedMode.png" alt="Published View Light Theme"/>
+  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicPublishedMode.png" alt="Published View Light Theme"/>
   </td>
-  <td><img src="{{ site.url }}{{ site.baseurl }}/assets/images/Patterns/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicPublishedMode.png" alt="Published View Dark Theme"/>
+  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicPublishedMode.png" alt="Published View Dark Theme"/>
   </td>
 </tr>
 </table>
@@ -51,12 +51,12 @@ This widget contains only a main heading and no sub heading to mazimise the spac
 The Up and Down arrows are indicators and can be adjusted to dynamically show up and down or convert them into another shape in the block properties.
 {: .notice--warning}
 
-![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/Patterns/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicTotalDataSource.png){: .align-right}
+![image-right]({{ site.url }}/assets/images/Patterns/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicTotalDataSource.png){: .align-right}
 To configure and use the total section, select the box named <b>Total Data Source</b> and configure its data source under <i>Block Properties</i>.  Then make sure to change the fields within the box to get their values from the datasource vs static.
 
 <hr />
 
-![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/Patterns/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicChildDataSource.png){: .align-right}
+![image-right]({{ site.url }}/assets/images/Patterns/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicChildDataSource.png){: .align-right}
 To configure and use the dynamic section, select the box named <b>Child Data Source</b> and configure its data source under <i>Block Properties</i>.  Then make sure to change the fields within the box to get their values from the datasource vs static.  How this works is for every row returned in the data source it will create that many child sections.  If you have 4 it will create 4, if you have 3 it will create 3 etc.
 
 <hr />
