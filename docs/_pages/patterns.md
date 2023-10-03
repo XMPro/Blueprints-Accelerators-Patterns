@@ -10,7 +10,7 @@ sidebar:
     image: /assets/images/pattern.png
     image_alt: "Patterns"
   - title: "Patterns"
-    text: "are pre-configured data streams that can be imported into as building blocks for your applications."
+    text: "are pre-configured data streams or widgets (for the App Designer) that can be imported into as building blocks for your applications."
 
 ---
 ## AI/ML
