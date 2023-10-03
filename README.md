@@ -5,7 +5,7 @@ This repository contains comprehensive blueprints, accelerators, and patterns to
 
 XMPro Blueprints are pre-built solutions that combine data streams, app visualizations, recommendation rules and models. They are easy to import into your XMPro environment, configure with your business systems and customize to your unique situation.
 
-# [Accelerators](./Accelerators)
+# [Accelerators](https://xmpro.github.io/Blueprints-Accelerators-Patterns/accelerators/)
 
 XMPro Accelerators can be imported into your environment, providing a starting point for configuring your own solutions.
 
