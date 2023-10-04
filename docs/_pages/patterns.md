@@ -13,7 +13,7 @@ sidebar:
 
 ---
 #### AI/ML
-Widgets are collections of Blocks and layouts that are grouped together to allow for re-use in other Apps and Pages.
+These patterns are illustrating how to use various AI algorithms.
 {: .notice}
 
 ##### Binary Classification
