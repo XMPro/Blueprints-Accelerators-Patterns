@@ -36,9 +36,9 @@ Widgets are collections of Blocks and layouts that are grouped together to allow
     <td colspan="2"><a href="WidgetAlertCountRollupStatic">Static</a></td>
   </tr>
   <tr>
-    <td><img src="{{ site.url }}/assets/images/patterns/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicPublishedMode.png" alt="Alert Count Rollup Dynamic - Published Mode (Dark)"/></td>
-    <td><img src="{{ site.url }}/assets/images/patterns/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicPublishedMode.png" alt="Alert Count Rollup Dynamic - Published Mode (Light)"/></td>
-    <td><img src="{{ site.url }}/assets/images/patterns/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicPublishedMode.png" alt="Alert Count Rollup Dynamic - Published Mode (Dark)"/></td>
-    <td><img src="{{ site.url }}/assets/images/patterns/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicPublishedMode.png" alt="Alert Count Rollup Dynamic - Published Mode (Light)"/></td>
+    <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicPublishedMode.png" alt="Alert Count Rollup Dynamic - Published Mode (Dark)"/></td>
+    <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicPublishedMode.png" alt="Alert Count Rollup Dynamic - Published Mode (Light)"/></td>
+    <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicPublishedMode.png" alt="Alert Count Rollup Dynamic - Published Mode (Dark)"/></td>
+    <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicPublishedMode.png" alt="Alert Count Rollup Dynamic - Published Mode (Light)"/></td>
 </tr>
 </table>  
