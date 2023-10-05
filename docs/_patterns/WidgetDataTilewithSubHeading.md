@@ -38,15 +38,11 @@ gallery:
 </tr>
 </table>
 {% include gallery %}
-This widget is broken down into two sections, the left <b>Total Assets</b> is the total area and the right section past the vertical line is where you can get specific. The right section will grow and shrink depending on the data source that is provided.
+Within this widget, you'll find both a heading and a subheading, complemented by a linear gauge and a value field. The heading and subheading serve as informative titles, providing context and guidance for the content presented. Meanwhile, the linear gauge is a dynamic visual element that can represent various metrics, such as completion status, performance indicators, or any data-driven measurement.
 {: .notice}
 
-This widget contains only a main heading and no sub heading to maximzse the space it fits.
-The Up and Down arrows are indicators and can be adjusted to dynamically show up and down or convert them into another shape in the block properties.
-{: .notice--warning}
-
 ![image-right]({{ site.url }}/assets/images/Patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingDataSource.png){: .align-right}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id nunc vel nulla fermentum vulputate. Proin nec leo nec justo tincidunt tincidunt. Praesent id est id augue scelerisque rhoncus. Integer vel ex vitae justo commodo hendrerit. Sed gravida sapien a nisi tristique, in sodales massa rhoncus.
+To set up and harness the potential of the Data Source section, start by selecting the box labeled "Data source." Within the Block Properties, proceed to configure the data source settings to suit your specific requirements. It's essential to interact with the fields within the box to ensure they are accurately aligned with the values in your datasets. Additionally, this widget offers a high degree of customization for the linear gauge element. You have the flexibility to modify its range, behavior, and the values it represents. This extensive customization empowers you to tailor the linear gauge precisely to your needs, whether you're tracking metrics, displaying progress, or conveying data-driven information effectively.
 <hr />
 
 ## Contributing

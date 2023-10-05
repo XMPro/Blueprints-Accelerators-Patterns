@@ -38,15 +38,11 @@ gallery:
 </tr>
 </table>
 {% include gallery %}
-This widget is broken down into two sections, the left <b>Total Assets</b> is the total area and the right section past the vertical line is where you can get specific. The right section will grow and shrink depending on the data source that is provided.
+This widget incorporates a versatile text input field, providing users with the option to either manually enter text or load existing data into it. In addition to the text input field, the widget features a "Send" button, offering extensive customization options for both its action and behavior.
 {: .notice}
 
-This widget contains only a main heading and no sub heading to maximzse the space it fits.
-The Up and Down arrows are indicators and can be adjusted to dynamically show up and down or convert them into another shape in the block properties.
-{: .notice--warning}
-
 ![image-right]({{ site.url }}/assets/images/Patterns/Widgets/MessageBox/DarkTheme/MessageBoxDataSource.png){: .align-right}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id nunc vel nulla fermentum vulputate. Proin nec leo nec justo tincidunt tincidunt. Praesent id est id augue scelerisque rhoncus. Integer vel ex vitae justo commodo hendrerit. Sed gravida sapien a nisi tristique, in sodales massa rhoncus.
+To load data into this widget, begin by selecting the "Data Source" box and configuring the data source within the "Block Properties" section. Ensure that you set up the data source to populate the widget. Then select the textbox within the widget, and assign the desired value to it. Additionally, you have the flexibility to tailor the behavior and action of the button to your preferences. Customize it to perform specific actions that align with your intended functionality.
 <hr />
 
 ## Contributing

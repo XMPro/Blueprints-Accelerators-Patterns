@@ -32,15 +32,14 @@ gallery:
 </tr>
 </table>
 {% include gallery %}
-This widget is broken down into two sections, the left <b>Total Assets</b> is the total area and the right section past the vertical line is where you can get specific. The right section will grow and shrink depending on the data source that is provided.
+This widget is a static widget, meaning it has fixed and unchanging values. It comprises six (6) default title-value components along with a heading. These title-value components serve as informative building blocks, offering quick access to key metrics. Additionally, it includes the capability to calculate the average of warnings and perform data comparisons with the previous month. You also have the flexibility to include extra rows as per your preferences, should the need arise.
 {: .notice}
 
-This widget contains only a main heading and no sub heading to maximzse the space it fits.
-The Up and Down arrows are indicators and can be adjusted to dynamically show up and down or convert them into another shape in the block properties.
+To optimize the available space, this widget features a single primary heading without any additional subheadings. Also in the comparison section, this widget provides up and down arrows that serve as indicators. These arrows are highly configurable within the block properties, offering the flexibility to either maintain a consistent, static up-and-down appearance or morph into various other shapes to suit specific visual preferences and requirements.
 {: .notice--warning}
 
 ![image-right]({{ site.url }}/assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsDesignMode.png){: .align-right}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id nunc vel nulla fermentum vulputate. Proin nec leo nec justo tincidunt tincidunt. Praesent id est id augue scelerisque rhoncus. Integer vel ex vitae justo commodo hendrerit. Sed gravida sapien a nisi tristique, in sodales massa rhoncus.
+To set up this widget, you can click on each text element and assign values to them within the Block Properties section. Please ensure that you accurately set the values because once this widget is published, the data is static and cannot be altered.
 <hr />
 
 ## Contributing

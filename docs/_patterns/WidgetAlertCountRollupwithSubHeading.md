@@ -44,19 +44,18 @@ gallery:
 </tr>
 </table>
 {% include gallery %}
-This widget is broken down into two sections, the left <b>Total Assets</b> is the total area and the right section past the vertical line is where you can get specific. The right section will grow and shrink depending on the data source that is provided.
+This widget includes a heading and a subheading where you can enter the title and an additional description to provide further context for the title. Within the body, there is a data comparison on the left and a title-value pair on the right. It functions as a dynamic widget, ensuring that it consistently displays the same count and expands automatically regardless of the size of your dataset.
 {: .notice}
 
-This widget contains only a main heading and no sub heading to maximzse the space it fits.
-The Up and Down arrows are indicators and can be adjusted to dynamically show up and down or convert them into another shape in the block properties.
+The Up and Down arrows features an indicator symbol that can be customized according to your preferences. For example, you can modify both the icon and the color of the indicator in the <i>Block Properties</i> to suit your needs.
 {: .notice--warning}
 
 ![image-right]({{ site.url }}/assets/images/Patterns/Widgets/AlertCountRollupwithSubHeading/DarkTheme/AlertCountRollupwithSubHeadingDataSource.png){: .align-right}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id nunc vel nulla fermentum vulputate. Proin nec leo nec justo tincidunt tincidunt. Praesent id est id augue scelerisque rhoncus. Integer vel ex vitae justo commodo hendrerit. Sed gravida sapien a nisi tristique, in sodales massa rhoncus.
+To set up and utilize the Data Source, begin by selecting the box labeled "Data Source" (as displayed in the image). Next, navigate to the Block Properties and specify the data you wish to display. Ensure that you update the content of each text element to retrieve their values from the designated data source. The way this functions is that for each row retrieved from the data source, it will generate an equivalent number of data entries in your data source box. This implies that the data will populate automatically, and the box will dynamically adapt its size according to the amount of data in your data source.
 <hr />
 
 ![image-right]({{ site.url }}/assets/images/Patterns/Widgets/AlertCountRollupwithSubHeading/LightTheme/AlertCountRollupwithSubHeadingTotalDataSource.png){: .align-right}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id nunc vel nulla fermentum vulputate. Proin nec leo nec justo tincidunt tincidunt. Praesent id est id augue scelerisque rhoncus. Integer vel ex vitae justo commodo hendrerit. Sed gravida sapien a nisi tristique, in sodales massa rhoncus.
+To set up and utilize the Total Data Source section, begin by choosing the box labeled "Total Data Source," and then configure its data settings in the "Block Properties." Ensure that you update the fields within the box to retrieve their values from the designated data source.
 
 <hr />
 

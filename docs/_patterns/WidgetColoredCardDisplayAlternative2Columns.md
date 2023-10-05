@@ -38,15 +38,14 @@ gallery:
 </tr>
 </table>
 {% include gallery %}
-This widget is broken down into two sections, the left <b>Total Assets</b> is the total area and the right section past the vertical line is where you can get specific. The right section will grow and shrink depending on the data source that is provided.
+This widget consists of two columns featuring dynamic value pairs, and it also includes two columns with borders that can be selected or customized according to your preferences. The value pairs within this widget automatically adapt and adjust their content based on the data they are associated with.
 {: .notice}
 
-This widget contains only a main heading and no sub heading to maximzse the space it fits.
-The Up and Down arrows are indicators and can be adjusted to dynamically show up and down or convert them into another shape in the block properties.
+This widget contains only a main heading and no sub heading to maximize the space it fits.
 {: .notice--warning}
 
 ![image-right]({{ site.url }}/assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/DarkTheme/ColoredCardDisplayAlternative2ColumnsDataSource.png){: .align-right}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id nunc vel nulla fermentum vulputate. Proin nec leo nec justo tincidunt tincidunt. Praesent id est id augue scelerisque rhoncus. Integer vel ex vitae justo commodo hendrerit. Sed gravida sapien a nisi tristique, in sodales massa rhoncus.
+To set up and utilize the Data Source, begin by selecting the box labeled "Data Source" (as displayed in the image). Next, navigate to the Block Properties and specify the data you wish to display. Ensure that you update the content of each text element to retrieve their values from the designated data source. The dimensions of the widget will seamlessly accommodate the size of the dataset you select, dynamically adjusting to match the count of the data source you have chosen. In other words, whether your dataset is large or small, the widget will adapt in size to accommodate and display the data effectively.
 <hr />
 
 ## Contributing

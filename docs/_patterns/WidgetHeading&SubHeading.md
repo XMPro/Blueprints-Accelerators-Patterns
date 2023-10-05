@@ -32,15 +32,11 @@ gallery:
 </tr>
 </table>
 {% include gallery %}
-This widget is broken down into two sections, the left <b>Total Assets</b> is the total area and the right section past the vertical line is where you can get specific. The right section will grow and shrink depending on the data source that is provided.
+This widget serves as a versatile layout option, designed for seamless integration with other widgets and elements within your interface. Notably, it includes a prominent heading and a subheading, strategically employed to emphasize the content it encapsulates.
 {: .notice}
 
-This widget contains only a main heading and no sub heading to maximzse the space it fits.
-The Up and Down arrows are indicators and can be adjusted to dynamically show up and down or convert them into another shape in the block properties.
-{: .notice--warning}
-
 ![image-right]({{ site.url }}/assets/images/Patterns/Widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingDesignMode.png){: .align-right}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id nunc vel nulla fermentum vulputate. Proin nec leo nec justo tincidunt tincidunt. Praesent id est id augue scelerisque rhoncus. Integer vel ex vitae justo commodo hendrerit. Sed gravida sapien a nisi tristique, in sodales massa rhoncus.
+To utilize this widget, you have the option to effortlessly drag and drop other widgets or elements into its designated space. Furthermore, you can easily tailor and customize the widget according to your preferences. Additionally, for precise content emphasis, you can make edits to both the heading and subheading within the "Block Properties" section. This flexibility ensures that the widget aligns perfectly with your specific design and content requirements.
 <hr />
 
 ## Contributing

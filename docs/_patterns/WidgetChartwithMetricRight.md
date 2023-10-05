@@ -32,15 +32,14 @@ gallery:
 </tr>
 </table>
 {% include gallery %}
-This widget is broken down into two sections, the left <b>Total Assets</b> is the total area and the right section past the vertical line is where you can get specific. The right section will grow and shrink depending on the data source that is provided.
+This widget is structured with a title and a graphical chart positioned on the left side, while on the right side, there is another title paired with a corresponding numerical value. The most effective utilization of this widget comes into play when you have a need to conduct comparisons between diverse datasets or when you are keen on monitoring shifts and fluctuations in data patterns over a designated time frame.
 {: .notice}
 
-This widget contains only a main heading and no sub heading to maximzse the space it fits.
-The Up and Down arrows are indicators and can be adjusted to dynamically show up and down or convert them into another shape in the block properties.
+This widget contains only a main heading and no sub heading to maximize the space it fits.
 {: .notice--warning}
 
 ![image-right]({{ site.url }}/assets/images/Patterns/Widgets/ChartWithMetricRight/DarkTheme/ChartWithMetricRightDesignMode.png){: .align-right}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id nunc vel nulla fermentum vulputate. Proin nec leo nec justo tincidunt tincidunt. Praesent id est id augue scelerisque rhoncus. Integer vel ex vitae justo commodo hendrerit. Sed gravida sapien a nisi tristique, in sodales massa rhoncus.
+To set up the chart within this widget, you have several customization options at your disposal. Start by selecting the chart element itself, and then access the "Block Properties" menu to link a data source to the chart. Additionally, you can fine-tune the appearance and behavior of the chart by customizing the X and Y axes. Tailor them to correspond to the specific data types you're working with, and if desired, adjust the color schemes to align with your personal preferences. These are just a few of the numerous customization choices available to help you create a chart that suits your needs and preferences.
 <hr />
 
 ## Contributing

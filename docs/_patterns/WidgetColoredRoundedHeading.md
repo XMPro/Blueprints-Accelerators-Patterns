@@ -32,15 +32,14 @@ gallery:
 </tr>
 </table>
 {% include gallery %}
-This widget is broken down into two sections, the left <b>Total Assets</b> is the total area and the right section past the vertical line is where you can get specific. The right section will grow and shrink depending on the data source that is provided.
+This widget features an elegantly styled heading, providing a prominent platform to emphasize the title of your content. Its versatility is a standout feature, as it allows you to seamlessly incorporate additional widgets within it, giving you the freedom to customize and tailor its appearance to your liking. Whether you wish to enhance the content presentation, integrate elements, or apply specific design choices, this widget's flexibility empowers you to craft a tailored and engaging user experience.
 {: .notice}
 
-This widget contains only a main heading and no sub heading to maximzse the space it fits.
-The Up and Down arrows are indicators and can be adjusted to dynamically show up and down or convert them into another shape in the block properties.
+This widget is intentionally designed with only a primary heading and does not include a subheading. This minimalist approach is particularly useful when space efficiency and content prominence are top priorities for your project.
 {: .notice--warning}
 
 ![image-right]({{ site.url }}/assets/images/Patterns/Widgets/ColoredRoundedHeading/DarkTheme/ColoredRoundedHeadingDesignMode.png){: .align-right}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id nunc vel nulla fermentum vulputate. Proin nec leo nec justo tincidunt tincidunt. Praesent id est id augue scelerisque rhoncus. Integer vel ex vitae justo commodo hendrerit. Sed gravida sapien a nisi tristique, in sodales massa rhoncus.
+To make the most of this widget's functionality, you can easily integrate it with other widgets by dragging and dropping them into the designated "Blocks" or any layout elements of your choice. This flexible approach allows you to create dynamic and feature-rich content by combining different widgets, enhancing the overall usability and visual appeal of your project. Feel free to experiment and customize your layout to suit your specific needs and creative preferences.
 <hr />
 
 ## Contributing

@@ -38,15 +38,16 @@ gallery:
 </tr>
 </table>
 {% include gallery %}
-This widget is broken down into two sections, the left <b>Total Assets</b> is the total area and the right section past the vertical line is where you can get specific. The right section will grow and shrink depending on the data source that is provided.
+This widget comprises a primary heading followed by a descriptive subheading beneath it, complemented by an indicator element and further elaborative content underneath. This combination of elements is designed to provide a comprehensive and structured presentation of information. The main heading captures the core concept or title, while the descriptive heading offers additional context. The indicator adds visual cues or status information, and the subsequent description provides detailed information or elaboration. Together, these components create a well-rounded widget for conveying a variety of content types effectively.
 {: .notice}
 
-This widget contains only a main heading and no sub heading to maximzse the space it fits.
-The Up and Down arrows are indicators and can be adjusted to dynamically show up and down or convert them into another shape in the block properties.
+This widget's deliberate design choice involves featuring solely a primary heading without a subheading. This decision aligns with the inclusion of a descriptive heading below, serving to emphasize and provide supplementary context.
 {: .notice--warning}
 
 ![image-right]({{ site.url }}/assets/images/Patterns/Widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorDataSource.png){: .align-right}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id nunc vel nulla fermentum vulputate. Proin nec leo nec justo tincidunt tincidunt. Praesent id est id augue scelerisque rhoncus. Integer vel ex vitae justo commodo hendrerit. Sed gravida sapien a nisi tristique, in sodales massa rhoncus.
+To set up and utilize the Data Source section of this widget, follow these steps: begin by selecting the "Data Source" box, then access the "Block Properties" to specify the data source you want to integrate. Remember to interact with the elements within the box and modify their values according to the data source.
+
+An essential feature of this widget is its dynamic nature. When you select a data source containing, for instance, three rows of data, the widget will promptly display these three individual elements. Moreover, it demonstrates adaptability by automatically resizing itself to match the count of the provided data source. This dynamic functionality ensures that the widget consistently presents your data in an organized and visually appealing manner, irrespective of the data source's varying size.
 <hr />
 
 ## Contributing

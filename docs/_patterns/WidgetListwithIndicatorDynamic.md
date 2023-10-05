@@ -38,15 +38,14 @@ gallery:
 </tr>
 </table>
 {% include gallery %}
-This widget is broken down into two sections, the left <b>Total Assets</b> is the total area and the right section past the vertical line is where you can get specific. The right section will grow and shrink depending on the data source that is provided.
+This widget possesses dynamic capabilities, allowing you to load a data source into it. Once you do so, it will automatically present the data with their corresponding values. Notably, the elements within the widget will adjust automatically in accordance with the data source you have loaded.
 {: .notice}
 
-This widget contains only a main heading and no sub heading to maximzse the space it fits.
-The Up and Down arrows are indicators and can be adjusted to dynamically show up and down or convert them into another shape in the block properties.
+This widget features a primary heading without a subheading, a deliberate choice made to optimize the available space it occupies.
 {: .notice--warning}
 
 ![image-right]({{ site.url }}/assets/images/Patterns/Widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicDataSource.png){: .align-right}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id nunc vel nulla fermentum vulputate. Proin nec leo nec justo tincidunt tincidunt. Praesent id est id augue scelerisque rhoncus. Integer vel ex vitae justo commodo hendrerit. Sed gravida sapien a nisi tristique, in sodales massa rhoncus.
+To set up the data source for this widget, begin by selecting the "Data Source" box and configuring its data settings within the "Block Properties" section. Ensure that you specify the fields inside the box to retrieve their values from the designated data source. This widget is designed to dynamically adjust its size in response to the quantity of data you have loaded. Whether you're dealing with a small dataset or a substantial one, the widget will adapt its dimensions accordingly, providing a seamless and user-friendly display. Additionally, you have the flexibility to personalize the appearance of the indicators to align with your preferences.
 <hr />
 
 ## Contributing

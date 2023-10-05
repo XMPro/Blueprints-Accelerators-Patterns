@@ -38,15 +38,14 @@ gallery:
 </tr>
 </table>
 {% include gallery %}
-This widget is broken down into two sections, the left <b>Total Assets</b> is the total area and the right section past the vertical line is where you can get specific. The right section will grow and shrink depending on the data source that is provided.
+This widget boasts a single border design, providing an efficient two-column layout for your value-pair content. Its dynamic nature means that it seamlessly adapts to the data source you integrate with it, effortlessly generating the necessary content as you provide data. This flexibility ensures that your widget remains up-to-date and responsive to changes in your data source, making it a powerful tool for presenting and organizing information.
 {: .notice}
 
-This widget contains only a main heading and no sub heading to maximzse the space it fits.
-The Up and Down arrows are indicators and can be adjusted to dynamically show up and down or convert them into another shape in the block properties.
+This widget is intentionally designed without a heading and subheading to optimize the available space for your content. By omitting these elements, it allows you to make the most of the widget's area, ensuring that your information, design, or data takes center stage without any unnecessary distractions.
 {: .notice--warning}
 
 ![image-right]({{ site.url }}/assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/DarkTheme/ColoredCardOutlineSingle2ColumnsDataSource.png){: .align-right}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id nunc vel nulla fermentum vulputate. Proin nec leo nec justo tincidunt tincidunt. Praesent id est id augue scelerisque rhoncus. Integer vel ex vitae justo commodo hendrerit. Sed gravida sapien a nisi tristique, in sodales massa rhoncus.
+To employ and fine-tune the dynamic section of this widget, you can initiate the setup by selecting the "Data Source" box within the "Block Properties" section. From there, you have the flexibility to choose your desired data source and ensure that each field within the data source box is appropriately mapped to acquire its corresponding values. This configuration ensures that the elements within the widget are automatically generated, dynamically adjusting in response to the dataset's size and content. As your dataset expands or contracts, the widget intelligently adapts by automatically resizing and adjusting its height, ensuring a seamless presentation of your data.
 <hr />
 
 ## Contributing

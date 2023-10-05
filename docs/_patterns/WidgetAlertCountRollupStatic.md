@@ -56,7 +56,7 @@ To set up and utilize the static section, simply double-click on the text you wi
 <hr />
 
 ![image-right]({{ site.url }}/assets/images/Patterns/Widgets/AlertCountRollupStatic/LightTheme/AlertCountRollupStaticTotalBox.png){: .align-right}
-To configure and use the total box, select the box named <b>Total Box</b> and configure its data source under <i>Block Properties</i>.  Then make sure to change the fields within the box to get their values from the data source vs static.
+To configure and use the total box, select the box named <b>Total Box</b> and configure its data source under <i>Block Properties</i>.  Then make sure to change the fields within the box to get their values from the data source vs static.444
 
 <hr />
 

@@ -32,15 +32,14 @@ gallery:
 </tr>
 </table>
 {% include gallery %}
-This widget is broken down into two sections, the left <b>Total Assets</b> is the total area and the right section past the vertical line is where you can get specific. The right section will grow and shrink depending on the data source that is provided.
+This widget offers two distinct states: "Running" and "Not Running," serving as valuable indicators for the data or functionality integrated within the widget. Furthermore, the elements within this widget are highly customizable, allowing you to tailor them precisely to your requirements.
 {: .notice}
 
-This widget contains only a main heading and no sub heading to maximzse the space it fits.
-The Up and Down arrows are indicators and can be adjusted to dynamically show up and down or convert them into another shape in the block properties.
+This widget intentionally omits both a heading and subheading in order to optimize content presentation and maximize available space.
 {: .notice--warning}
 
 ![image-right]({{ site.url }}/assets/images/Patterns/Widgets/HeaderRunning/DarkTheme/HeaderRunningDesignMode.png){: .align-right}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id nunc vel nulla fermentum vulputate. Proin nec leo nec justo tincidunt tincidunt. Praesent id est id augue scelerisque rhoncus. Integer vel ex vitae justo commodo hendrerit. Sed gravida sapien a nisi tristique, in sodales massa rhoncus.
+For straightforward widget configuration, you can easily set it up by clicking on its elements, typically buttons. Then, navigate to the "Block Properties" where you can customize its behavior upon clicking, specify the action it should perform, and define its value according to your requirements.
 <hr />
 
 ## Contributing
