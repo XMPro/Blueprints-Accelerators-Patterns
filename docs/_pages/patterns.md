@@ -81,7 +81,7 @@ Widgets are collections of Blocks and layouts that are grouped together to allow
 <table>
   <tr>
     <td colspan="2"><a href="WidgetColoredCardOutlineSingle">Outline Single</a></td>
-    <td colspan="2"><a href="WidgetColoredCardOutlineSingle2Columns">Rounded Heading</a></td>
+    <td colspan="2"><a href="WidgetColoredRoundedHeading">Rounded Heading</a></td>
   </tr>
   <tr>
     <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ColoredCardOutlineSingle/DarkTheme/ColoredCardOutlineSinglePublishedMode.png" alt="Colored Card Outline Single - Published Mode (Dark)"/></td>
@@ -90,7 +90,7 @@ Widgets are collections of Blocks and layouts that are grouped together to allow
     <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ColoredRoundedHeading/LightTheme/ColoredRoundedHeadingPublishedMode.png" alt="Colored Card Rounded Heading - Published Mode (Light)"/></td>
 
       <tr>
-        <td colspan="2"><a href="WidgetAlertColoredCardOutlineSingle2Columns">Outline Single - 2 Columns</a></td>
+        <td colspan="2"><a href="WidgetColoredCardOutlineSingle2Columns">Outline Single - 2 Columns</a></td>
         <td colspan="2"><a href="WidgetColoredCardDisplayAlternative2Columns">Outline Single - 2 Columns (Alternative)</a></td>         
       </tr>
 
@@ -161,7 +161,7 @@ Widgets are collections of Blocks and layouts that are grouped together to allow
 <table>
   <tr>
     <td colspan="2"><a href="WidgetHeaderRunning">Running</a></td>
-    <td colspan="2"><a href="WidgetHeading&SubHeading">With Sub Heading</a></td>
+    <td colspan="2"><a href="WidgetHeading&SubHeading">Heading & Sub Heading</a></td>
   </tr>
   <tr>
     <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/HeaderRunning/DarkTheme/HeaderRunningPublishedMode.png" alt="Header Running - Published Mode (Dark)"/></td>
@@ -175,7 +175,7 @@ Widgets are collections of Blocks and layouts that are grouped together to allow
 <table>
   <tr>
     <td colspan="2"><a href="WidgetListwithIndicatorStatic">Static</a></td>
-    <td colspan="2"><a href="WidgetListwithIndicatorDynamic&SubHeading">Dynamic</a></td>
+    <td colspan="2"><a href="WidgetListwithIndicatorDynamic">Dynamic</a></td>
   </tr>
   <tr>
     <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticPublishedMode.png" alt="List with Indicator Static - Published Mode (Dark)"/></td>
