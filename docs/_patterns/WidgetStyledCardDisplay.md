@@ -15,18 +15,18 @@ sidebar:
     text: Widget [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/Styled%20Card%20Display.xwid)
 
 gallery:
-  - url: /assets/images/Patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayDesignMode.png
-    image_path: /assets/images/Patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayDesignMode.png
-    alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayPublishedMode.png
     image_path: /assets/images/Patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayPublishedMode.png
     alt: "Published Mode"
-  - url: /assets/images/Patterns/Widgets/StyledCardDisplay/LightTheme/StyledCardDisplayDesignMode.png
-    image_path: /assets/images/Patterns/Widgets/StyledCardDisplay/LightTheme/StyledCardDisplayDesignMode.png
+  - url: /assets/images/Patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayDesignMode.png
+    image_path: /assets/images/Patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayDesignMode.png
     alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/StyledCardDisplay/LightTheme/StyledCardDisplayPublishedMode.png
     image_path: /assets/images/Patterns/Widgets/StyledCardDisplay/LightTheme/StyledCardDisplayPublishedMode.png
     alt: "Published Mode"
+  - url: /assets/images/Patterns/Widgets/StyledCardDisplay/LightTheme/StyledCardDisplayDesignMode.png
+    image_path: /assets/images/Patterns/Widgets/StyledCardDisplay/LightTheme/StyledCardDisplayDesignMode.png
+    alt: "Design Mode"
 
 ---
 {% include gallery id="gallery" layout="half"%}

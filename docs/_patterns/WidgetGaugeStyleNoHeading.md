@@ -15,14 +15,17 @@ sidebar:
     text: Widget [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/Gauge%20Style%20No%20Heading.xwid)
 
 gallery:
+  - url: /assets/images/Patterns/Widgets/GaugeStyleNoHeading/DarkTheme/GaugeStyleNoHeadingPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/GaugeStyleNoHeading/DarkTheme/GaugeStyleNoHeadingPublishedMode.png
+    alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/GaugeStyleNoHeading/DarkTheme/GaugeStyleNoHeadingDesignMode.png
     image_path: /assets/images/Patterns/Widgets/GaugeStyleNoHeading/DarkTheme/GaugeStyleNoHeadingDesignMode.png
     alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/GaugeStyleNoHeading/DarkTheme/GaugeStyleNoHeadingDataSource.png
     image_path: /assets/images/Patterns/Widgets/GaugeStyleNoHeading/DarkTheme/GaugeStyleNoHeadingDataSource.png
     alt: "Design Mode - DS"
-  - url: /assets/images/Patterns/Widgets/GaugeStyleNoHeading/DarkTheme/GaugeStyleNoHeadingPublishedMode.png
-    image_path: /assets/images/Patterns/Widgets/GaugeStyleNoHeading/DarkTheme/GaugeStyleNoHeadingPublishedMode.png
+  - url: /assets/images/Patterns/Widgets/GaugeStyleNoHeading/LightTheme/GaugeStyleNoHeadingPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/GaugeStyleNoHeading/LightTheme/GaugeStyleNoHeadingPublishedMode.png
     alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/GaugeStyleNoHeading/LightTheme/GaugeStyleNoHeadingDesignMode.png
     image_path: /assets/images/Patterns/Widgets/GaugeStyleNoHeading/LightTheme/GaugeStyleNoHeadingDesignMode.png
@@ -30,9 +33,6 @@ gallery:
   - url: /assets/images/Patterns/Widgets/GaugeStyleNoHeading/LightTheme/GaugeStyleNoHeadingDataSource.png
     image_path: /assets/images/Patterns/Widgets/GaugeStyleNoHeading/LightTheme/GaugeStyleNoHeadingDataSource.png
     alt: "Design Mode - DS"
-  - url: /assets/images/Patterns/Widgets/GaugeStyleNoHeading/LightTheme/GaugeStyleNoHeadingPublishedMode.png
-    image_path: /assets/images/Patterns/Widgets/GaugeStyleNoHeading/LightTheme/GaugeStyleNoHeadingPublishedMode.png
-    alt: "Published Mode"
 
 ---
 {% include gallery %}

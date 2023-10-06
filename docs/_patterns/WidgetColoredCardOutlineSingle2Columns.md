@@ -15,6 +15,9 @@ sidebar:
     text: Widget [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/Colored%20Card%20Display%20-%20Alternative%202%20Columns.xwid)
 
 gallery:
+  - url: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/DarkTheme/ColoredCardOutlineSingle2ColumnsPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/DarkTheme/ColoredCardOutlineSingle2ColumnsPublishedMode.png
+    alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/DarkTheme/ColoredCardOutlineSingle2ColumnsDesignMode.png
     image_path: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/DarkTheme/ColoredCardOutlineSingle2ColumnsDesignMode.png
     alt: "Design Mode"
@@ -30,9 +33,6 @@ gallery:
   - url: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/LightTheme/ColoredCardOutlineSingle2ColumnsDataSource.png
     image_path: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/LightTheme/ColoredCardOutlineSingle2ColumnsDataSource.png
     alt: "Design Mode - DS"
-  - url: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/LightTheme/ColoredCardOutlineSingle2ColumnsPublishedMode.png
-    image_path: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/LightTheme/ColoredCardOutlineSingle2ColumnsPublishedMode.png
-    alt: "Published Mode"
 
 ---
 {% include gallery %}

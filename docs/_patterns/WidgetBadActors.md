@@ -15,24 +15,24 @@ sidebar:
     text: Widget [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/Bad%20Actors.xwid)
 
 gallery:
-  - url: /assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsDesignMode.png
-    image_path: /assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsDesignMode.png
-    alt: "Design Mode"
-  - url: /assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsPublishedMode.png
-    image_path: /assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsPublishedMode.png
-    alt: "Published View Dark Theme"
   - url: /assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsPublishedModewithData.png
     image_path: /assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsPublishedModewithData.png
     alt: "Published View with Data Dark Theme"
-  - url: /assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsDesignMode.png
-    image_path: /assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsDesignMode.png
+  - url: /assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsPublishedMode.png
+    alt: "Published View Dark Theme"
+  - url: /assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsDesignMode.png
+    image_path: /assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsDesignMode.png
     alt: "Design Mode"
-  - url: /assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsPublishedMode.png
-    image_path: /assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsPublishedMode.png
-    alt: "Published View Light Theme"
   - url: /assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsPublishedModewithData.png
     image_path: /assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsPublishedModewithData.png
     alt: "Published View with Data Light Theme"
+  - url: /assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsPublishedMode.png
+    alt: "Published View Light Theme"
+  - url: /assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsDesignMode.png
+    image_path: /assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsDesignMode.png
+    alt: "Design Mode"
 
 ---
 {% include gallery %}

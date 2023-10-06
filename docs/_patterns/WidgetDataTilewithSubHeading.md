@@ -15,14 +15,17 @@ sidebar:
     text: Widget [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/Data%20Tile%20with%20Sub%20Heading.xwid)
 
 gallery:
+  - url: /assets/images/Patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingPublishedMode.png
+    alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingDesignMode.png
     image_path: /assets/images/Patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingDesignMode.png
     alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingDataSource.png
     image_path: /assets/images/Patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingDataSource.png
     alt: "Design Mode - DS"
-  - url: /assets/images/Patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingPublishedMode.png
-    image_path: /assets/images/Patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingPublishedMode.png
+  - url: /assets/images/Patterns/Widgets/DataTilewithSubHeading/LightTheme/DataTilewithSubHeadingPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/DataTilewithSubHeading/LightTheme/DataTilewithSubHeadingPublishedMode.png
     alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/DataTilewithSubHeading/LightTheme/DataTilewithSubHeadingDesignMode.png
     image_path: /assets/images/Patterns/Widgets/DataTilewithSubHeading/LightTheme/DataTilewithSubHeadingDesignMode.png
@@ -30,9 +33,6 @@ gallery:
   - url: /assets/images/Patterns/Widgets/DataTilewithSubHeading/LightTheme/DataTilewithSubHeadingDataSource.png
     image_path: /assets/images/Patterns/Widgets/DataTilewithSubHeading/LightTheme/DataTilewithSubHeadingDataSource.png
     alt: "Design Mode - DS"
-  - url: /assets/images/Patterns/Widgets/DataTilewithSubHeading/LightTheme/DataTilewithSubHeadingPublishedMode.png
-    image_path: /assets/images/Patterns/Widgets/DataTilewithSubHeading/LightTheme/DataTilewithSubHeadingPublishedMode.png
-    alt: "Published Mode"
 
 ---
 {% include gallery %}

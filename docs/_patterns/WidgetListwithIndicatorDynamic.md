@@ -15,14 +15,17 @@ sidebar:
     text: Widget [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/List%20with%20Indicator%20Dynamic.xwid)
 
 gallery:
+  - url: /assets/images/Patterns/Widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicPublishedMode.png
+    alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicDesignMode.png
     image_path: /assets/images/Patterns/Widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicDesignMode.png
     alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicDataSource.png
     image_path: /assets/images/Patterns/Widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicDataSource.png
     alt: "Design Mode - DS"
-  - url: /assets/images/Patterns/Widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicPublishedMode.png
-    image_path: /assets/images/Patterns/Widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicPublishedMode.png
+  - url: /assets/images/Patterns/Widgets/ListwithIndicatorDynamic/LightTheme/ListwithIndicatorDynamicPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/ListwithIndicatorDynamic/LightTheme/ListwithIndicatorDynamicPublishedMode.png
     alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/ListwithIndicatorDynamic/LightTheme/ListwithIndicatorDynamicDesignMode.png
     image_path: /assets/images/Patterns/Widgets/ListwithIndicatorDynamic/LightTheme/ListwithIndicatorDynamicDesignMode.png
@@ -30,9 +33,6 @@ gallery:
   - url: /assets/images/Patterns/Widgets/ListwithIndicatorDynamic/LightTheme/ListwithIndicatorDynamicDataSource.png
     image_path: /assets/images/Patterns/Widgets/ListwithIndicatorDynamic/LightTheme/ListwithIndicatorDynamicDataSource.png
     alt: "Design Mode - DS"
-  - url: /assets/images/Patterns/Widgets/ListwithIndicatorDynamic/LightTheme/ListwithIndicatorDynamicPublishedMode.png
-    image_path: /assets/images/Patterns/Widgets/ListwithIndicatorDynamic/LightTheme/ListwithIndicatorDynamicPublishedMode.png
-    alt: "Published Mode"
 
 ---
 {% include gallery %}

@@ -21,12 +21,12 @@ gallery:
   - url: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle/LightTheme/ColoredCardOutlineSingleDesignMode.png
     image_path: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle/LightTheme/ColoredCardOutlineSingleDesignMode.png
     alt: "Design Mode"
-  - url: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle/DarkTheme/ColoredCardOutlineSingleDesignMode.png
-    image_path: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle/DarkTheme/ColoredCardOutlineSingleDesignMode.png
-    alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle/LightTheme/ColoredCardOutlineSinglePublishedMode.png
     image_path: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle/LightTheme/ColoredCardOutlineSinglePublishedMode.png
     alt: "Published Mode"
+  - url: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle/DarkTheme/ColoredCardOutlineSingleDesignMode.png
+    image_path: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle/DarkTheme/ColoredCardOutlineSingleDesignMode.png
+    alt: "Design Mode"
 
 ---
 {% include gallery id="gallery" layout="half"%}

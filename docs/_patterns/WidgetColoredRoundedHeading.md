@@ -15,18 +15,18 @@ sidebar:
     text: Widget [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/Colored%20Rounded%20Heading.xwid)
 
 gallery:
-  - url: /assets/images/Patterns/Widgets/ColoredRoundedHeading/DarkTheme/ColoredRoundedHeadingDesignMode.png
-    image_path: /assets/images/Patterns/Widgets/ColoredRoundedHeading/DarkTheme/ColoredRoundedHeadingDesignMode.png
-    alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/ColoredRoundedHeading/DarkTheme/ColoredRoundedHeadingPublishedMode.png
     image_path: /assets/images/Patterns/Widgets/ColoredRoundedHeading/DarkTheme/ColoredRoundedHeadingPublishedMode.png
     alt: "Published Mode"
-  - url: /assets/images/Patterns/Widgets/ColoredRoundedHeading/LightTheme/ColoredRoundedHeadingDesignMode.png
-    image_path: /assets/images/Patterns/Widgets/ColoredRoundedHeading/LightTheme/ColoredRoundedHeadingDesignMode.png
+  - url: /assets/images/Patterns/Widgets/ColoredRoundedHeading/DarkTheme/ColoredRoundedHeadingDesignMode.png
+    image_path: /assets/images/Patterns/Widgets/ColoredRoundedHeading/DarkTheme/ColoredRoundedHeadingDesignMode.png
     alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/ColoredRoundedHeading/LightTheme/ColoredRoundedHeadingPublishedMode.png
     image_path: /assets/images/Patterns/Widgets/ColoredRoundedHeading/LightTheme/ColoredRoundedHeadingPublishedMode.png
     alt: "Published Mode"
+  - url: /assets/images/Patterns/Widgets/ColoredRoundedHeading/LightTheme/ColoredRoundedHeadingDesignMode.png
+    image_path: /assets/images/Patterns/Widgets/ColoredRoundedHeading/LightTheme/ColoredRoundedHeadingDesignMode.png
+    alt: "Design Mode"
 
 ---
 {% include gallery id="gallery" layout="half"%}

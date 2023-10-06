@@ -15,18 +15,18 @@ sidebar:
     text: Widget [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/Heading%20&%20Sub%20Heading.xwid)
 
 gallery:
-  - url: /assets/images/Patterns/Widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingDesignMode.png
-    image_path: /assets/images/Patterns/Widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingDesignMode.png
-    alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingPublishedMode.png
     image_path: /assets/images/Patterns/Widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingPublishedMode.png
     alt: "Published Mode"
-  - url: /assets/images/Patterns/Widgets/Heading&SubHeading/LightTheme/Heading&SubHeadingDesignMode.png
-    image_path: /assets/images/Patterns/Widgets/Heading&SubHeading/LightTheme/Heading&SubHeadingDesignMode.png
+  - url: /assets/images/Patterns/Widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingDesignMode.png
+    image_path: /assets/images/Patterns/Widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingDesignMode.png
     alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/Heading&SubHeading/LightTheme/Heading&SubHeadingPublishedMode.png
     image_path: /assets/images/Patterns/Widgets/Heading&SubHeading/LightTheme/Heading&SubHeadingPublishedMode.png
     alt: "Published Mode"
+  - url: /assets/images/Patterns/Widgets/Heading&SubHeading/LightTheme/Heading&SubHeadingDesignMode.png
+    image_path: /assets/images/Patterns/Widgets/Heading&SubHeading/LightTheme/Heading&SubHeadingDesignMode.png
+    alt: "Design Mode"
 
 ---
 {% include gallery id="gallery" layout="half"%}

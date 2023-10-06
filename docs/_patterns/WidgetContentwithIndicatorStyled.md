@@ -15,14 +15,17 @@ sidebar:
     text: Widget [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/Content%20with%20Indicator.xwid)
 
 gallery:
+  - url: /assets/images/Patterns/Widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledPublishedMode.png
+    alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledDesignMode.png
     image_path: /assets/images/Patterns/Widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledDesignMode.png
     alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledDataSource.png
     image_path: /assets/images/Patterns/Widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledDataSource.png
     alt: "Design Mode - DS"
-  - url: /assets/images/Patterns/Widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledPublishedMode.png
-    image_path: /assets/images/Patterns/Widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledPublishedMode.png
+  - url: /assets/images/Patterns/Widgets/ContentwithIndicatorStyled/LightTheme/ContentwithIndicatorStyledPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/ContentwithIndicatorStyled/LightTheme/ContentwithIndicatorStyledPublishedMode.png
     alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/ContentwithIndicatorStyled/LightTheme/ContentwithIndicatorStyledDesignMode.png
     image_path: /assets/images/Patterns/Widgets/ContentwithIndicatorStyled/LightTheme/ContentwithIndicatorStyledDesignMode.png
@@ -30,9 +33,6 @@ gallery:
   - url: /assets/images/Patterns/Widgets/ContentwithIndicatorStyled/LightTheme/ContentwithIndicatorStyledDataSource.png
     image_path: /assets/images/Patterns/Widgets/ContentwithIndicatorStyled/LightTheme/ContentwithIndicatorStyledDataSource.png
     alt: "Design Mode - DS"
-  - url: /assets/images/Patterns/Widgets/ContentwithIndicatorStyled/LightTheme/ContentwithIndicatorStyledPublishedMode.png
-    image_path: /assets/images/Patterns/Widgets/ContentwithIndicatorStyled/LightTheme/ContentwithIndicatorStyledPublishedMode.png
-    alt: "Published Mode"
 
 ---
 {% include gallery %}

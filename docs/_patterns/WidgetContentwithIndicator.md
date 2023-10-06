@@ -15,14 +15,17 @@ sidebar:
     text: Widget [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/Content%20with%20Indicator.xwid)
 
 gallery:
+  - url: /assets/images/Patterns/Widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorPublishedMode.png
+    alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorDesignMode.png
     image_path: /assets/images/Patterns/Widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorDesignMode.png
     alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorDataSource.png
     image_path: /assets/images/Patterns/Widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorDataSource.png
     alt: "Design Mode - DS"
-  - url: /assets/images/Patterns/Widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorPublishedMode.png
-    image_path: /assets/images/Patterns/Widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorPublishedMode.png
+  - url: /assets/images/Patterns/Widgets/ContentwithIndicator/LightTheme/ContentwithIndicatorPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/ContentwithIndicator/LightTheme/ContentwithIndicatorPublishedMode.png
     alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/ContentwithIndicator/LightTheme/ContentwithIndicatorDesignMode.png
     image_path: /assets/images/Patterns/Widgets/ContentwithIndicator/LightTheme/ContentwithIndicatorDesignMode.png
@@ -30,9 +33,6 @@ gallery:
   - url: /assets/images/Patterns/Widgets/ContentwithIndicator/LightTheme/ContentwithIndicatorDataSource.png
     image_path: /assets/images/Patterns/Widgets/ContentwithIndicator/LightTheme/ContentwithIndicatorDataSource.png
     alt: "Design Mode - DS"
-  - url: /assets/images/Patterns/Widgets/ContentwithIndicator/LightTheme/ContentwithIndicatorPublishedMode.png
-    image_path: /assets/images/Patterns/Widgets/ContentwithIndicator/LightTheme/ContentwithIndicatorPublishedMode.png
-    alt: "Published Mode"
 
 ---
 {% include gallery %}

@@ -15,14 +15,17 @@ sidebar:
     text: Widget [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/Colored%20Card%20Display%20-%20Alternative%202%20Columns.xwid)
 
 gallery:
+  - url: /assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/DarkTheme/ColoredCardDisplayAlternative2ColumnsPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/DarkTheme/ColoredCardDisplayAlternative2ColumnsPublishedMode.png
+    alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/DarkTheme/ColoredCardDisplayAlternative2ColumnsDesignMode.png
     image_path: /assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/DarkTheme/ColoredCardDisplayAlternative2ColumnsDesignMode.png
     alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/DarkTheme/ColoredCardDisplayAlternative2ColumnsDataSource.png
     image_path: /assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/DarkTheme/ColoredCardDisplayAlternative2ColumnsDataSource.png
     alt: "Design Mode - DS"
-  - url: /assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/DarkTheme/ColoredCardDisplayAlternative2ColumnsPublishedMode.png
-    image_path: /assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/DarkTheme/ColoredCardDisplayAlternative2ColumnsPublishedMode.png
+  - url: /assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/LightTheme/ColoredCardDisplayAlternative2ColumnsPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/LightTheme/ColoredCardDisplayAlternative2ColumnsPublishedMode.png
     alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/LightTheme/ColoredCardDisplayAlternative2ColumnsDesignMode.png
     image_path: /assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/LightTheme/ColoredCardDisplayAlternative2ColumnsDesignMode.png
@@ -30,9 +33,6 @@ gallery:
   - url: /assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/LightTheme/ColoredCardDisplayAlternative2ColumnsDataSource.png
     image_path: /assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/LightTheme/ColoredCardDisplayAlternative2ColumnsDataSource.png
     alt: "Design Mode - DS"
-  - url: /assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/LightTheme/ColoredCardDisplayAlternative2ColumnsPublishedMode.png
-    image_path: /assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/LightTheme/ColoredCardDisplayAlternative2ColumnsPublishedMode.png
-    alt: "Published Mode"
 
 ---
 {% include gallery %}

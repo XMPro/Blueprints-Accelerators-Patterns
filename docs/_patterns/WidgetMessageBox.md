@@ -15,17 +15,11 @@ sidebar:
     text: Widget [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/Message%20Box%20Indicator%20Static.xwid)
 
 gallery:
-  - url: /assets/images/Patterns/Widgets/MessageBox/DarkTheme/MessageBoxDesignMode.png
-    image_path: /assets/images/Patterns/Widgets/MessageBox/DarkTheme/MessageBoxDesignMode.png
-    alt: "Design Mode"
-  - url: /assets/images/Patterns/Widgets/MessageBox/DarkTheme/MessageBoxDataSource.png
-    image_path: /assets/images/Patterns/Widgets/MessageBox/DarkTheme/MessageBoxDataSource.png
-    alt: "Design Mode - DS"
   - url: /assets/images/Patterns/Widgets/MessageBox/DarkTheme/MessageBoxPublishedMode.png
     image_path: /assets/images/Patterns/Widgets/MessageBox/DarkTheme/MessageBoxPublishedMode.png
     alt: "Published Mode"
-  - url: /assets/images/Patterns/Widgets/MessageBox/LightTheme/MessageBoxDesignMode.png
-    image_path: /assets/images/Patterns/Widgets/MessageBox/LightTheme/MessageBoxDesignMode.png
+  - url: /assets/images/Patterns/Widgets/MessageBox/DarkTheme/MessageBoxDesignMode.png
+    image_path: /assets/images/Patterns/Widgets/MessageBox/DarkTheme/MessageBoxDesignMode.png
     alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/MessageBox/DarkTheme/MessageBoxDataSource.png
     image_path: /assets/images/Patterns/Widgets/MessageBox/DarkTheme/MessageBoxDataSource.png
@@ -33,6 +27,12 @@ gallery:
   - url: /assets/images/Patterns/Widgets/MessageBox/LightTheme/MessageBoxPublishedMode.png
     image_path: /assets/images/Patterns/Widgets/MessageBox/LightTheme/MessageBoxPublishedMode.png
     alt: "Published Mode"
+  - url: /assets/images/Patterns/Widgets/MessageBox/LightTheme/MessageBoxDesignMode.png
+    image_path: /assets/images/Patterns/Widgets/MessageBox/LightTheme/MessageBoxDesignMode.png
+    alt: "Design Mode"
+  - url: /assets/images/Patterns/Widgets/MessageBox/DarkTheme/MessageBoxDataSource.png
+    image_path: /assets/images/Patterns/Widgets/MessageBox/DarkTheme/MessageBoxDataSource.png
+    alt: "Design Mode - DS"
 
 ---
 {% include gallery %}

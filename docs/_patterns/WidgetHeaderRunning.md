@@ -15,18 +15,18 @@ sidebar:
     text: Widget [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/Header%20Running.xwid)
 
 gallery:
-  - url: /assets/images/Patterns/Widgets/HeaderRunning/DarkTheme/HeaderRunningDesignMode.png
-    image_path: /assets/images/Patterns/Widgets/HeaderRunning/DarkTheme/HeaderRunningDesignMode.png
-    alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/HeaderRunning/DarkTheme/HeaderRunningPublishedMode.png
     image_path: /assets/images/Patterns/Widgets/HeaderRunning/DarkTheme/HeaderRunningPublishedMode.png
     alt: "Published Mode"
-  - url: /assets/images/Patterns/Widgets/HeaderRunning/LightTheme/HeaderRunningDesignMode.png
-    image_path: /assets/images/Patterns/Widgets/HeaderRunning/LightTheme/HeaderRunningDesignMode.png
+  - url: /assets/images/Patterns/Widgets/HeaderRunning/DarkTheme/HeaderRunningDesignMode.png
+    image_path: /assets/images/Patterns/Widgets/HeaderRunning/DarkTheme/HeaderRunningDesignMode.png
     alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/HeaderRunning/LightTheme/HeaderRunningPublishedMode.png
     image_path: /assets/images/Patterns/Widgets/HeaderRunning/LightTheme/HeaderRunningPublishedMode.png
     alt: "Published Mode"
+  - url: /assets/images/Patterns/Widgets/HeaderRunning/LightTheme/HeaderRunningDesignMode.png
+    image_path: /assets/images/Patterns/Widgets/HeaderRunning/LightTheme/HeaderRunningDesignMode.png
+    alt: "Design Mode"
 
 ---
 {% include gallery id="gallery" layout="half"%}

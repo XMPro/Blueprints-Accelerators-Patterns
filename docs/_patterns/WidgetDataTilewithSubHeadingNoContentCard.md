@@ -15,14 +15,17 @@ sidebar:
     text: Widget [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/Data%20Tile%20with%20Sub%20Heading%20No%20Content%20Card.xwid)
 
 gallery:
+  - url: /assets/images/Patterns/Widgets/DataTilewithSubHeadingNoContentCard/DarkTheme/DataTilewithSubHeadingNoContentCardPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/DataTilewithSubHeadingNoContentCard/DarkTheme/DataTilewithSubHeadingNoContentCardPublishedMode.png
+    alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/DataTilewithSubHeadingNoContentCard/DarkTheme/DataTilewithSubHeadingNoContentCardDesignMode.png
     image_path: /assets/images/Patterns/Widgets/DataTilewithSubHeadingNoContentCard/DarkTheme/DataTilewithSubHeadingNoContentCardDesignMode.png
     alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/DataTilewithSubHeadingNoContentCard/DarkTheme/DataTilewithSubHeadingNoContentCardDataSource.png
     image_path: /assets/images/Patterns/Widgets/DataTilewithSubHeadingNoContentCard/DarkTheme/DataTilewithSubHeadingNoContentCardDataSource.png
     alt: "Design Mode - DS"
-  - url: /assets/images/Patterns/Widgets/DataTilewithSubHeadingNoContentCard/DarkTheme/DataTilewithSubHeadingNoContentCardPublishedMode.png
-    image_path: /assets/images/Patterns/Widgets/DataTilewithSubHeadingNoContentCard/DarkTheme/DataTilewithSubHeadingNoContentCardPublishedMode.png
+  - url: /assets/images/Patterns/Widgets/DataTilewithSubHeadingNoContentCard/LightTheme/DataTilewithSubHeadingNoContentCardPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/DataTilewithSubHeadingNoContentCard/LightTheme/DataTilewithSubHeadingNoContentCardPublishedMode.png
     alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/DataTilewithSubHeadingNoContentCard/LightTheme/DataTilewithSubHeadingNoContentCardDesignMode.png
     image_path: /assets/images/Patterns/Widgets/DataTilewithSubHeadingNoContentCard/LightTheme/DataTilewithSubHeadingNoContentCardDesignMode.png
@@ -30,9 +33,6 @@ gallery:
   - url: /assets/images/Patterns/Widgets/DataTilewithSubHeadingNoContentCard/LightTheme/DataTilewithSubHeadingNoContentCardDataSource.png
     image_path: /assets/images/Patterns/Widgets/DataTilewithSubHeadingNoContentCard/LightTheme/DataTilewithSubHeadingNoContentCardDataSource.png
     alt: "Design Mode - DS"
-  - url: /assets/images/Patterns/Widgets/DataTilewithSubHeadingNoContentCard/LightTheme/DataTilewithSubHeadingNoContentCardPublishedMode.png
-    image_path: /assets/images/Patterns/Widgets/DataTilewithSubHeadingNoContentCard/LightTheme/DataTilewithSubHeadingNoContentCardPublishedMode.png
-    alt: "Published Mode"
 
 ---
 {% include gallery %}

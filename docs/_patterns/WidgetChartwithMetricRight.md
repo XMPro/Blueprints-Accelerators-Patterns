@@ -15,18 +15,18 @@ sidebar:
     text: Widget [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/Chart%20With%20Metric%20Right.xwid)
 
 gallery:
-  - url: /assets/images/Patterns/Widgets/ChartWithMetricRight/DarkTheme/ChartWithMetricRightDesignMode.png
-    image_path: /assets/images/Patterns/Widgets/ChartWithMetricRight/DarkTheme/ChartWithMetricRightDesignMode.png
-    alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/ChartWithMetricRight/DarkTheme/ChartWithMetricRightPublishedMode.png
     image_path: /assets/images/Patterns/Widgets/ChartWithMetricRight/DarkTheme/ChartWithMetricRightPublishedMode.png
     alt: "Published Mode"
-  - url: /assets/images/Patterns/Widgets/ChartWithMetricRight/LightTheme/ChartWithMetricRightDesignMode.png
-    image_path: /assets/images/Patterns/Widgets/ChartWithMetricRight/LightTheme/ChartWithMetricRightDesignMode.png
+  - url: /assets/images/Patterns/Widgets/ChartWithMetricRight/DarkTheme/ChartWithMetricRightDesignMode.png
+    image_path: /assets/images/Patterns/Widgets/ChartWithMetricRight/DarkTheme/ChartWithMetricRightDesignMode.png
     alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/ChartWithMetricRight/LightTheme/ChartWithMetricRightPublishedMode.png
     image_path: /assets/images/Patterns/Widgets/ChartWithMetricRight/LightTheme/ChartWithMetricRightPublishedMode.png
     alt: "Published Mode"
+  - url: /assets/images/Patterns/Widgets/ChartWithMetricRight/LightTheme/ChartWithMetricRightDesignMode.png
+    image_path: /assets/images/Patterns/Widgets/ChartWithMetricRight/LightTheme/ChartWithMetricRightDesignMode.png
+    alt: "Design Mode"
 
 ---
 {% include gallery id="gallery" layout="half"%}

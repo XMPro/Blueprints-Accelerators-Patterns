@@ -15,18 +15,18 @@ sidebar:
     text: Widget [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/List%20with%20Indicator%20Static.xwid)
 
 gallery:
+  - url: /assets/images/Patterns/Widgets/ListwithIndicatorStatic/LightTheme/ListwithIndicatorStaticPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/ListwithIndicatorStatic/LightTheme/ListwithIndicatorStaticPublishedMode.png
+    alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticDesignMode.png
     image_path: /assets/images/Patterns/Widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticDesignMode.png
-    alt: "Design Mode"
-  - url: /assets/images/Patterns/Widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticPublishedMode.png
-    image_path: /assets/images/Patterns/Widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticPublishedMode.png
-    alt: "Published Mode"
-  - url: /assets/images/Patterns/Widgets/ListwithIndicatorStatic/LightTheme/ListwithIndicatorStaticDesignMode.png
-    image_path: /assets/images/Patterns/Widgets/ListwithIndicatorStatic/LightTheme/ListwithIndicatorStaticDesignMode.png
     alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/ListwithIndicatorStatic/LightTheme/ListwithIndicatorStaticPublishedMode.png
     image_path: /assets/images/Patterns/Widgets/ListwithIndicatorStatic/LightTheme/ListwithIndicatorStaticPublishedMode.png
     alt: "Published Mode"
+  - url: /assets/images/Patterns/Widgets/ListwithIndicatorStatic/LightTheme/ListwithIndicatorStaticDesignMode.png
+    image_path: /assets/images/Patterns/Widgets/ListwithIndicatorStatic/LightTheme/ListwithIndicatorStaticDesignMode.png
+    alt: "Design Mode"
 
 ---
 {% include gallery id="gallery" layout="half"%}
