@@ -18,20 +18,19 @@ gallery:
   - url: /assets/images/Patterns/Widgets/ColoredRoundedHeading/DarkTheme/ColoredRoundedHeadingDesignMode.png
     image_path: /assets/images/Patterns/Widgets/ColoredRoundedHeading/DarkTheme/ColoredRoundedHeadingDesignMode.png
     alt: "Design Mode"
+  - url: /assets/images/Patterns/Widgets/ColoredRoundedHeading/DarkTheme/ColoredRoundedHeadingPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/ColoredRoundedHeading/DarkTheme/ColoredRoundedHeadingPublishedMode.png
+    alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/ColoredRoundedHeading/LightTheme/ColoredRoundedHeadingDesignMode.png
     image_path: /assets/images/Patterns/Widgets/ColoredRoundedHeading/LightTheme/ColoredRoundedHeadingDesignMode.png
     alt: "Design Mode"
+  - url: /assets/images/Patterns/Widgets/ColoredRoundedHeading/LightTheme/ColoredRoundedHeadingPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/ColoredRoundedHeading/LightTheme/ColoredRoundedHeadingPublishedMode.png
+    alt: "Published Mode"
 
 ---
-<table>
-<tr>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ColoredRoundedHeading/LightTheme/ColoredRoundedHeadingPublishedMode.png" alt="Published View Light Theme"/>
-  </td>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ColoredRoundedHeading/DarkTheme/ColoredRoundedHeadingPublishedMode.png" alt="Published View Dark Theme"/>
-  </td>
-</tr>
-</table>
-{% include gallery %}
+{% include gallery id="gallery" layout="half"%}
+---
 This widget features an elegantly styled heading, providing a prominent platform to emphasize the title of your content. Its versatility is a standout feature, as it allows you to seamlessly incorporate additional widgets within it, giving you the freedom to customize and tailor its appearance to your liking. Whether you wish to enhance the content presentation, integrate elements, or apply specific design choices, this widget's flexibility empowers you to craft a tailored and engaging user experience.
 {: .notice}
 

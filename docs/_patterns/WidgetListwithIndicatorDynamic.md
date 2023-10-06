@@ -21,23 +21,22 @@ gallery:
   - url: /assets/images/Patterns/Widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicDataSource.png
     image_path: /assets/images/Patterns/Widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicDataSource.png
     alt: "Design Mode - DS"
+  - url: /assets/images/Patterns/Widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicPublishedMode.png
+    alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/ListwithIndicatorDynamic/LightTheme/ListwithIndicatorDynamicDesignMode.png
     image_path: /assets/images/Patterns/Widgets/ListwithIndicatorDynamic/LightTheme/ListwithIndicatorDynamicDesignMode.png
     alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/ListwithIndicatorDynamic/LightTheme/ListwithIndicatorDynamicDataSource.png
     image_path: /assets/images/Patterns/Widgets/ListwithIndicatorDynamic/LightTheme/ListwithIndicatorDynamicDataSource.png
     alt: "Design Mode - DS"
+  - url: /assets/images/Patterns/Widgets/ListwithIndicatorDynamic/LightTheme/ListwithIndicatorDynamicPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/ListwithIndicatorDynamic/LightTheme/ListwithIndicatorDynamicPublishedMode.png
+    alt: "Published Mode"
 
 ---
-<table>
-<tr>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ListwithIndicatorDynamic/LightTheme/ListwithIndicatorDynamicPublishedMode.png" alt="Published View Light Theme"/>
-  </td>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicPublishedMode.png" alt="Published View Dark Theme"/>
-  </td>
-</tr>
-</table>
 {% include gallery %}
+---
 This widget possesses dynamic capabilities, allowing you to load a data source into it. Once you do so, it will automatically present the data with their corresponding values. Notably, the elements within the widget will adjust automatically in accordance with the data source you have loaded.
 {: .notice}
 

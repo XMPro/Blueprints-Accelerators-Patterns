@@ -21,23 +21,22 @@ gallery:
   - url: /assets/images/Patterns/Widgets/MessageBox/DarkTheme/MessageBoxDataSource.png
     image_path: /assets/images/Patterns/Widgets/MessageBox/DarkTheme/MessageBoxDataSource.png
     alt: "Design Mode - DS"
+  - url: /assets/images/Patterns/Widgets/MessageBox/DarkTheme/MessageBoxPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/MessageBox/DarkTheme/MessageBoxPublishedMode.png
+    alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/MessageBox/LightTheme/MessageBoxDesignMode.png
     image_path: /assets/images/Patterns/Widgets/MessageBox/LightTheme/MessageBoxDesignMode.png
     alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/MessageBox/DarkTheme/MessageBoxDataSource.png
     image_path: /assets/images/Patterns/Widgets/MessageBox/DarkTheme/MessageBoxDataSource.png
     alt: "Design Mode - DS"
+  - url: /assets/images/Patterns/Widgets/MessageBox/LightTheme/MessageBoxPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/MessageBox/LightTheme/MessageBoxPublishedMode.png
+    alt: "Published Mode"
 
 ---
-<table>
-<tr>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/MessageBox/LightTheme/MessageBoxPublishedMode.png" alt="Published View Light Theme"/>
-  </td>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/MessageBox/DarkTheme/MessageBoxPublishedMode.png" alt="Published View Dark Theme"/>
-  </td>
-</tr>
-</table>
 {% include gallery %}
+---
 This widget incorporates a versatile text input field, providing users with the option to either manually enter text or load existing data into it. In addition to the text input field, the widget features a "Send" button, offering extensive customization options for both its action and behavior.
 {: .notice}
 

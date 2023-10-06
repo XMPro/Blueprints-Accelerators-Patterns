@@ -18,20 +18,19 @@ gallery:
   - url: /assets/images/Patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayDesignMode.png
     image_path: /assets/images/Patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayDesignMode.png
     alt: "Design Mode"
+  - url: /assets/images/Patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayPublishedMode.png
+    alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/StyledCardDisplay/LightTheme/StyledCardDisplayDesignMode.png
     image_path: /assets/images/Patterns/Widgets/StyledCardDisplay/LightTheme/StyledCardDisplayDesignMode.png
     alt: "Design Mode"
+  - url: /assets/images/Patterns/Widgets/StyledCardDisplay/LightTheme/StyledCardDisplayPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/StyledCardDisplay/LightTheme/StyledCardDisplayPublishedMode.png
+    alt: "Published Mode"
 
 ---
-<table>
-<tr>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/StyledCardDisplay/LightTheme/StyledCardDisplayPublishedMode.png" alt="Published View Light Theme"/>
-  </td>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayPublishedMode.png" alt="Published View Dark Theme"/>
-  </td>
-</tr>
-</table>
-{% include gallery %}
+{% include gallery id="gallery" layout="half"%}
+---
 This widget is designed with versatility in mind, offering two distinct formats for presenting information. It includes both a two-column title-value pair layout and a single-column title-value pair arrangement. Notably, the rows within this widget feature an alternating color scheme, which can be tailored to your specific preferences and requirements. And to enhance the visual appeal and content emphasis, a prominent heading is also included. 
 {: .notice}
 

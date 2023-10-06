@@ -15,23 +15,23 @@ sidebar:
     text: Widget [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/Colored%20Card%20Display%20Outline%20Single.xwid)
 
 gallery:
-  - url: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle/DarkTheme/ColoredCardOutlineSingleDesignMode.png
-    image_path: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle/DarkTheme/ColoredCardOutlineSingleDesignMode.png
-    alt: "Design Mode"
+  - url: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle/DarkTheme/ColoredCardOutlineSinglePublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle/DarkTheme/ColoredCardOutlineSinglePublishedMode.png
+    alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle/LightTheme/ColoredCardOutlineSingleDesignMode.png
     image_path: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle/LightTheme/ColoredCardOutlineSingleDesignMode.png
     alt: "Design Mode"
+  - url: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle/DarkTheme/ColoredCardOutlineSingleDesignMode.png
+    image_path: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle/DarkTheme/ColoredCardOutlineSingleDesignMode.png
+    alt: "Design Mode"
+  - url: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle/LightTheme/ColoredCardOutlineSinglePublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle/LightTheme/ColoredCardOutlineSinglePublishedMode.png
+    alt: "Published Mode"
 
 ---
-<table>
-<tr>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ColoredCardOutlineSingle/LightTheme/ColoredCardOutlineSinglePublishedMode.png" alt="Published View Light Theme"/>
-  </td>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ColoredCardOutlineSingle/DarkTheme/ColoredCardOutlineSinglePublishedMode.png" alt="Published View Dark Theme"/>
-  </td>
-</tr>
-</table>
-{% include gallery %}
+{% include gallery id="gallery" layout="half"%}
+---
+
 This widget serves as a fundamental card outline, ideal for highlighting and presenting important information or adding an aesthetic touch to your content. It offers versatility, allowing you to incorporate other widgets within it to create a cohesive and visually appealing container for your data or design elements. Whether you want to emphasize key details, enhance the visual appeal of your content, or simply structure your information, this widget provides a flexible solution to meet your needs.
 {: .notice}
 

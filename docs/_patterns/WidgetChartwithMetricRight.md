@@ -18,20 +18,19 @@ gallery:
   - url: /assets/images/Patterns/Widgets/ChartWithMetricRight/DarkTheme/ChartWithMetricRightDesignMode.png
     image_path: /assets/images/Patterns/Widgets/ChartWithMetricRight/DarkTheme/ChartWithMetricRightDesignMode.png
     alt: "Design Mode"
+  - url: /assets/images/Patterns/Widgets/ChartWithMetricRight/DarkTheme/ChartWithMetricRightPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/ChartWithMetricRight/DarkTheme/ChartWithMetricRightPublishedMode.png
+    alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/ChartWithMetricRight/LightTheme/ChartWithMetricRightDesignMode.png
     image_path: /assets/images/Patterns/Widgets/ChartWithMetricRight/LightTheme/ChartWithMetricRightDesignMode.png
     alt: "Design Mode"
+  - url: /assets/images/Patterns/Widgets/ChartWithMetricRight/LightTheme/ChartWithMetricRightPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/ChartWithMetricRight/LightTheme/ChartWithMetricRightPublishedMode.png
+    alt: "Published Mode"
 
 ---
-<table>
-<tr>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ChartWithMetricRight/LightTheme/ChartWithMetricRightPublishedMode.png" alt="Published View Light Theme"/>
-  </td>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ChartWithMetricRight/DarkTheme/ChartWithMetricRightPublishedMode.png" alt="Published View Dark Theme"/>
-  </td>
-</tr>
-</table>
-{% include gallery %}
+{% include gallery id="gallery" layout="half"%}
+---
 This widget is structured with a title and a graphical chart positioned on the left side, while on the right side, there is another title paired with a corresponding numerical value. The most effective utilization of this widget comes into play when you have a need to conduct comparisons between diverse datasets or when you are keen on monitoring shifts and fluctuations in data patterns over a designated time frame.
 {: .notice}
 

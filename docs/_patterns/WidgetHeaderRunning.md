@@ -18,20 +18,19 @@ gallery:
   - url: /assets/images/Patterns/Widgets/HeaderRunning/DarkTheme/HeaderRunningDesignMode.png
     image_path: /assets/images/Patterns/Widgets/HeaderRunning/DarkTheme/HeaderRunningDesignMode.png
     alt: "Design Mode"
+  - url: /assets/images/Patterns/Widgets/HeaderRunning/DarkTheme/HeaderRunningPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/HeaderRunning/DarkTheme/HeaderRunningPublishedMode.png
+    alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/HeaderRunning/LightTheme/HeaderRunningDesignMode.png
     image_path: /assets/images/Patterns/Widgets/HeaderRunning/LightTheme/HeaderRunningDesignMode.png
     alt: "Design Mode"
+  - url: /assets/images/Patterns/Widgets/HeaderRunning/LightTheme/HeaderRunningPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/HeaderRunning/LightTheme/HeaderRunningPublishedMode.png
+    alt: "Published Mode"
 
 ---
-<table>
-<tr>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/HeaderRunning/LightTheme/HeaderRunningPublishedMode.png" alt="Published View Light Theme"/>
-  </td>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/HeaderRunning/DarkTheme/HeaderRunningPublishedMode.png" alt="Published View Dark Theme"/>
-  </td>
-</tr>
-</table>
-{% include gallery %}
+{% include gallery id="gallery" layout="half"%}
+---
 This widget offers two distinct states: "Running" and "Not Running," serving as valuable indicators for the data or functionality integrated within the widget. Furthermore, the elements within this widget are highly customizable, allowing you to tailor them precisely to your requirements.
 {: .notice}
 

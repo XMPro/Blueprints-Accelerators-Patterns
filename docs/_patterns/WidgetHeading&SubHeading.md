@@ -18,20 +18,19 @@ gallery:
   - url: /assets/images/Patterns/Widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingDesignMode.png
     image_path: /assets/images/Patterns/Widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingDesignMode.png
     alt: "Design Mode"
+  - url: /assets/images/Patterns/Widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingPublishedMode.png
+    alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/Heading&SubHeading/LightTheme/Heading&SubHeadingDesignMode.png
     image_path: /assets/images/Patterns/Widgets/Heading&SubHeading/LightTheme/Heading&SubHeadingDesignMode.png
     alt: "Design Mode"
+  - url: /assets/images/Patterns/Widgets/Heading&SubHeading/LightTheme/Heading&SubHeadingPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/Heading&SubHeading/LightTheme/Heading&SubHeadingPublishedMode.png
+    alt: "Published Mode"
 
 ---
-<table>
-<tr>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/Heading&SubHeading/LightTheme/Heading&SubHeadingPublishedMode.png" alt="Published View Light Theme"/>
-  </td>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingPublishedMode.png" alt="Published View Dark Theme"/>
-  </td>
-</tr>
-</table>
-{% include gallery %}
+{% include gallery id="gallery" layout="half"%}
+---
 This widget serves as a versatile layout option, designed for seamless integration with other widgets and elements within your interface. Notably, it includes a prominent heading and a subheading, strategically employed to emphasize the content it encapsulates.
 {: .notice}
 

@@ -21,23 +21,22 @@ gallery:
   - url: /assets/images/Patterns/Widgets/GaugeStylewithHeading/DarkTheme/GaugeStylewithHeadingDataSource.png
     image_path: /assets/images/Patterns/Widgets/GaugeStylewithHeading/DarkTheme/GaugeStylewithHeadingDataSource.png
     alt: "Design Mode - DS"
+  - url: /assets/images/Patterns/Widgets/GaugeStylewithHeading/DarkTheme/GaugeStylewithHeadingPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/GaugeStylewithHeading/DarkTheme/GaugeStylewithHeadingPublishedMode.png
+    alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/GaugeStylewithHeading/LightTheme/GaugeStylewithHeadingDesignMode.png
     image_path: /assets/images/Patterns/Widgets/GaugeStylewithHeading/LightTheme/GaugeStylewithHeadingDesignMode.png
     alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/GaugeStylewithHeading/LightTheme/GaugeStylewithHeadingDataSource.png
     image_path: /assets/images/Patterns/Widgets/GaugeStylewithHeading/LightTheme/GaugeStylewithHeadingDataSource.png
     alt: "Design Mode - DS"
+  - url: /assets/images/Patterns/Widgets/GaugeStylewithHeading/LightTheme/GaugeStylewithHeadingPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/GaugeStylewithHeading/LightTheme/GaugeStylewithHeadingPublishedMode.png
+    alt: "Published Mode"
 
 ---
-<table>
-<tr>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/GaugeStylewithHeading/LightTheme/GaugeStylewithHeadingPublishedMode.png" alt="Published View Light Theme"/>
-  </td>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/GaugeStylewithHeading/DarkTheme/GaugeStylewithHeadingPublishedMode.png" alt="Published View Dark Theme"/>
-  </td>
-</tr>
-</table>
 {% include gallery %}
+---
 Within this widget, you will encounter a combination of key elements to convey valuable information. Within this widget, you will encounter a combination of key elements that work harmoniously to convey valuable information with inclusion of an indicator. The indicator's primary function is to compare the current value displayed on the circular gauge with its previous value. To provide context and clarity to the data being presented, the widget also includes a heading and a subheading.
 {: .notice}
 

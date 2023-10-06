@@ -21,23 +21,22 @@ gallery:
   - url: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/DarkTheme/ColoredCardOutlineSingle2ColumnsDataSource.png
     image_path: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/DarkTheme/ColoredCardOutlineSingle2ColumnsDataSource.png
     alt: "Design Mode - DS"
+  - url: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/DarkTheme/ColoredCardOutlineSingle2ColumnsPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/DarkTheme/ColoredCardOutlineSingle2ColumnsPublishedMode.png
+    alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/LightTheme/ColoredCardOutlineSingle2ColumnsDesignMode.png
     image_path: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/LightTheme/ColoredCardOutlineSingle2ColumnsDesignMode.png
     alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/LightTheme/ColoredCardOutlineSingle2ColumnsDataSource.png
     image_path: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/LightTheme/ColoredCardOutlineSingle2ColumnsDataSource.png
     alt: "Design Mode - DS"
+  - url: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/LightTheme/ColoredCardOutlineSingle2ColumnsPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/LightTheme/ColoredCardOutlineSingle2ColumnsPublishedMode.png
+    alt: "Published Mode"
 
 ---
-<table>
-<tr>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/LightTheme/ColoredCardOutlineSingle2ColumnsPublishedMode.png" alt="Published View Light Theme"/>
-  </td>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/DarkTheme/ColoredCardOutlineSingle2ColumnsPublishedMode.png" alt="Published View Dark Theme"/>
-  </td>
-</tr>
-</table>
 {% include gallery %}
+---
 This widget boasts a single border design, providing an efficient two-column layout for your value-pair content. Its dynamic nature means that it seamlessly adapts to the data source you integrate with it, effortlessly generating the necessary content as you provide data. This flexibility ensures that your widget remains up-to-date and responsive to changes in your data source, making it a powerful tool for presenting and organizing information.
 {: .notice}
 

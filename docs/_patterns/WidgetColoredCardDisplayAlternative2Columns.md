@@ -21,23 +21,22 @@ gallery:
   - url: /assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/DarkTheme/ColoredCardDisplayAlternative2ColumnsDataSource.png
     image_path: /assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/DarkTheme/ColoredCardDisplayAlternative2ColumnsDataSource.png
     alt: "Design Mode - DS"
+  - url: /assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/DarkTheme/ColoredCardDisplayAlternative2ColumnsPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/DarkTheme/ColoredCardDisplayAlternative2ColumnsPublishedMode.png
+    alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/LightTheme/ColoredCardDisplayAlternative2ColumnsDesignMode.png
     image_path: /assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/LightTheme/ColoredCardDisplayAlternative2ColumnsDesignMode.png
     alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/LightTheme/ColoredCardDisplayAlternative2ColumnsDataSource.png
     image_path: /assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/LightTheme/ColoredCardDisplayAlternative2ColumnsDataSource.png
     alt: "Design Mode - DS"
+  - url: /assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/LightTheme/ColoredCardDisplayAlternative2ColumnsPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/LightTheme/ColoredCardDisplayAlternative2ColumnsPublishedMode.png
+    alt: "Published Mode"
 
 ---
-<table>
-<tr>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/LightTheme/ColoredCardDisplayAlternative2ColumnsPublishedMode.png" alt="Published View Light Theme"/>
-  </td>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/DarkTheme/ColoredCardDisplayAlternative2ColumnsPublishedMode.png" alt="Published View Dark Theme"/>
-  </td>
-</tr>
-</table>
 {% include gallery %}
+---
 This widget consists of two columns featuring dynamic value pairs, and it also includes two columns with borders that can be selected or customized according to your preferences. The value pairs within this widget automatically adapt and adjust their content based on the data they are associated with.
 {: .notice}
 

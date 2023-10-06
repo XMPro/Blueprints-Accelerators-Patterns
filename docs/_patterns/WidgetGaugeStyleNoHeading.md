@@ -21,23 +21,22 @@ gallery:
   - url: /assets/images/Patterns/Widgets/GaugeStyleNoHeading/DarkTheme/GaugeStyleNoHeadingDataSource.png
     image_path: /assets/images/Patterns/Widgets/GaugeStyleNoHeading/DarkTheme/GaugeStyleNoHeadingDataSource.png
     alt: "Design Mode - DS"
+  - url: /assets/images/Patterns/Widgets/GaugeStyleNoHeading/DarkTheme/GaugeStyleNoHeadingPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/GaugeStyleNoHeading/DarkTheme/GaugeStyleNoHeadingPublishedMode.png
+    alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/GaugeStyleNoHeading/LightTheme/GaugeStyleNoHeadingDesignMode.png
     image_path: /assets/images/Patterns/Widgets/GaugeStyleNoHeading/LightTheme/GaugeStyleNoHeadingDesignMode.png
     alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/GaugeStyleNoHeading/LightTheme/GaugeStyleNoHeadingDataSource.png
     image_path: /assets/images/Patterns/Widgets/GaugeStyleNoHeading/LightTheme/GaugeStyleNoHeadingDataSource.png
     alt: "Design Mode - DS"
+  - url: /assets/images/Patterns/Widgets/GaugeStyleNoHeading/LightTheme/GaugeStyleNoHeadingPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/GaugeStyleNoHeading/LightTheme/GaugeStyleNoHeadingPublishedMode.png
+    alt: "Published Mode"
 
 ---
-<table>
-<tr>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/GaugeStyleNoHeading/LightTheme/GaugeStyleNoHeadingPublishedMode.png" alt="Published View Light Theme"/>
-  </td>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/GaugeStyleNoHeading/DarkTheme/GaugeStyleNoHeadingPublishedMode.png" alt="Published View Dark Theme"/>
-  </td>
-</tr>
-</table>
 {% include gallery %}
+---
 This widget is broken down into two sections, the left <b>Total Assets</b> is the total area and the right section past the vertical line is where you can get specific. The right section will grow and shrink depending on the data source that is provided.
 {: .notice}
 

@@ -15,18 +15,18 @@ sidebar:
     text: Widget [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/Alert%20Count%20Rollup%20-%20Static.xwid)
 
 gallery:
-  - url: /assets/images/Patterns/Widgets/AlertCountRollupStatic/DarkTheme/AlertCountRollupStaticDesignMode.png
-    image_path: /assets/images/Patterns/Widgets/AlertCountRollupStatic/DarkTheme/AlertCountRollupStaticDesignMode.png
-    alt: "Design Mode"
+  - url: /assets/images/Patterns/Widgets/AlertCountRollupStatic/DarkTheme/AlertCountRollupStaticPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/AlertCountRollupStatic/DarkTheme/AlertCountRollupStaticPublishedMode.png
+    alt: "Published View Dark Theme"
   - url: /assets/images/Patterns/Widgets/AlertCountRollupStatic/DarkTheme/AlertCountRollupStaticDataSource.png
     image_path: /assets/images/Patterns/Widgets/AlertCountRollupStatic/DarkTheme/AlertCountRollupStaticDataSource.png
     alt: "Design Mode - Total"
   - url: /assets/images/Patterns/Widgets/AlertCountRollupStatic/DarkTheme/AlertCountRollupStaticTotalBox.png
     image_path: /assets/images/Patterns/Widgets/AlertCountRollupStatic/DarkTheme/AlertCountRollupStaticTotalBox.png
     alt: "Design Mode - Child"
-  - url: /assets/images/Patterns/Widgets/AlertCountRollupStatic/LightTheme/AlertCountRollupStaticDesignMode.png
-    image_path: /assets/images/Patterns/Widgets/AlertCountRollupStatic/LightTheme/AlertCountRollupStaticDesignMode.png
-    alt: "Design Mode"
+  - url: /assets/images/Patterns/Widgets/AlertCountRollupStatic/LightTheme/AlertCountRollupStaticPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/AlertCountRollupStatic/LightTheme/AlertCountRollupStaticPublishedMode.png
+    alt: "Published View Light Theme"
   - url: /assets/images/Patterns/Widgets/AlertCountRollupStatic/LightTheme/AlertCountRollupStaticDataSource.png
     image_path: /assets/images/Patterns/Widgets/AlertCountRollupStatic/LightTheme/AlertCountRollupStaticDataSource.png
     alt: "Design Mode - Total"
@@ -35,15 +35,9 @@ gallery:
     alt: "Design Mode - Child"
 
 ---
-<table>
-<tr>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/AlertCountRollupStatic/LightTheme/AlertCountRollupStaticPublishedMode.png" alt="Published View Light Theme"/>
-  </td>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/AlertCountRollupStatic/DarkTheme/AlertCountRollupStaticPublishedMode.png" alt="Published View Dark Theme"/>
-  </td>
-</tr>
-</table>
 {% include gallery %}
+---
+
 This is a Static widget used to display essential information, provide navigation options, or offer core functionality that doesn't require frequent changes or user interactions. This widget is broken down into two sections, with the data presented in a static format. The left section, labeled <b>Total Assets</b>, provides an overview of the total assets without any dynamic changes or real-time updates. It serves as a fixed reference point for users to quickly grasp the overall picture.
 {: .notice}
 

@@ -21,23 +21,22 @@ gallery:
   - url: /assets/images/Patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingDataSource.png
     image_path: /assets/images/Patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingDataSource.png
     alt: "Design Mode - DS"
+  - url: /assets/images/Patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingPublishedMode.png
+    alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/DataTilewithSubHeading/LightTheme/DataTilewithSubHeadingDesignMode.png
     image_path: /assets/images/Patterns/Widgets/DataTilewithSubHeading/LightTheme/DataTilewithSubHeadingDesignMode.png
     alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/DataTilewithSubHeading/LightTheme/DataTilewithSubHeadingDataSource.png
     image_path: /assets/images/Patterns/Widgets/DataTilewithSubHeading/LightTheme/DataTilewithSubHeadingDataSource.png
     alt: "Design Mode - DS"
+  - url: /assets/images/Patterns/Widgets/DataTilewithSubHeading/LightTheme/DataTilewithSubHeadingPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/DataTilewithSubHeading/LightTheme/DataTilewithSubHeadingPublishedMode.png
+    alt: "Published Mode"
 
 ---
-<table>
-<tr>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/DataTilewithSubHeading/LightTheme/DataTilewithSubHeadingPublishedMode.png" alt="Published View Light Theme"/>
-  </td>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingPublishedMode.png" alt="Published View Dark Theme"/>
-  </td>
-</tr>
-</table>
 {% include gallery %}
+---
 Within this widget, you'll find both a heading and a subheading, complemented by a linear gauge and a value field. The heading and subheading serve as informative titles, providing context and guidance for the content presented. Meanwhile, the linear gauge is a dynamic visual element that can represent various metrics, such as completion status, performance indicators, or any data-driven measurement.
 {: .notice}
 

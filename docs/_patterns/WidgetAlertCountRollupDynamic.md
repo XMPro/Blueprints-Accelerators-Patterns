@@ -15,18 +15,18 @@ sidebar:
     text: Widget [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/Alert%20Count%20Rollup%20-%20Dynamic.xwid)
 
 gallery:
-  - url: /assets/images/Patterns/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicDesignMode.png
-    image_path: /assets/images/Patterns/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicDesignMode.png
-    alt: "Design Mode"
+  - url: /assets/images/Patterns/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicPublishedMode.png
+    alt: "Published View Dark Theme"
   - url: /assets/images/Patterns/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicTotalDataSource.png
     image_path: /assets/images/Patterns/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicTotalDataSource.png
     alt: "Design Mode - Total"
   - url: /assets/images/Patterns/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicChildDataSource.png
     image_path: /assets/images/Patterns/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicChildDataSource.png
     alt: "Design Mode - Child"
-  - url: /assets/images/Patterns/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png
-    image_path: /assets/images/Patterns/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicDesignMode.png
-    alt: "Design Mode"
+  - url: /assets/images/Patterns/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicPublishedMode.png
+    alt: "Published View Light Theme"
   - url: /assets/images/Patterns/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicTotalDataSource.png
     image_path: /assets/images/Patterns/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicTotalDataSource.png
     alt: "Design Mode - Total"
@@ -35,15 +35,11 @@ gallery:
     alt: "Design Mode - Child"
 
 ---
-<table>
-<tr>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicPublishedMode.png" alt="Published View Light Theme"/>
-  </td>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicPublishedMode.png" alt="Published View Dark Theme"/>
-  </td>
-</tr>
-</table>
+
 {% include gallery %}
+
+---
+
 This widget is broken down into two sections, the left <b>Total Assets</b> is the total area and the right section past the vertical line is where you can get specific. The right section will grow and shrink depending on the data source that is provided.
 {: .notice}
 

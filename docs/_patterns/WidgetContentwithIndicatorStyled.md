@@ -21,23 +21,22 @@ gallery:
   - url: /assets/images/Patterns/Widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledDataSource.png
     image_path: /assets/images/Patterns/Widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledDataSource.png
     alt: "Design Mode - DS"
+  - url: /assets/images/Patterns/Widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledPublishedMode.png
+    alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/ContentwithIndicatorStyled/LightTheme/ContentwithIndicatorStyledDesignMode.png
     image_path: /assets/images/Patterns/Widgets/ContentwithIndicatorStyled/LightTheme/ContentwithIndicatorStyledDesignMode.png
     alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/ContentwithIndicatorStyled/LightTheme/ContentwithIndicatorStyledDataSource.png
     image_path: /assets/images/Patterns/Widgets/ContentwithIndicatorStyled/LightTheme/ContentwithIndicatorStyledDataSource.png
     alt: "Design Mode - DS"
+  - url: /assets/images/Patterns/Widgets/ContentwithIndicatorStyled/LightTheme/ContentwithIndicatorStyledPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/ContentwithIndicatorStyled/LightTheme/ContentwithIndicatorStyledPublishedMode.png
+    alt: "Published Mode"
 
 ---
-<table>
-<tr>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ContentwithIndicatorStyled/LightTheme/ContentwithIndicatorStyledPublishedMode.png" alt="Published View Light Theme"/>
-  </td>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledPublishedMode.png" alt="Published View Dark Theme"/>
-  </td>
-</tr>
-</table>
 {% include gallery %}
+---
 This widget comprises a primary heading followed by a descriptive subheading beneath it, complemented by an indicator element and further elaborative content underneath. This combination of elements is designed to provide a comprehensive and structured presentation of information. The main heading captures the core concept or title, while the descriptive heading offers additional context. The indicator adds visual cues or status information, and the subsequent description provides detailed information or elaboration. Together, these components create a well-rounded widget for conveying a variety of content types effectively.
 {: .notice}
 

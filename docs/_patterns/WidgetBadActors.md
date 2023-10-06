@@ -18,20 +18,25 @@ gallery:
   - url: /assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsDesignMode.png
     image_path: /assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsDesignMode.png
     alt: "Design Mode"
-  - url: /assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsTotalDataSource.png
+  - url: /assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsPublishedMode.png
+    alt: "Published View Dark Theme"
+  - url: /assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsPublishedModewithData.png
+    image_path: /assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsPublishedModewithData.png
+    alt: "Published View with Data Dark Theme"
+  - url: /assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsDesignMode.png
     image_path: /assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsDesignMode.png
     alt: "Design Mode"
+  - url: /assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsPublishedMode.png
+    alt: "Published View Light Theme"
+  - url: /assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsPublishedModewithData.png
+    image_path: /assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsPublishedModewithData.png
+    alt: "Published View with Data Light Theme"
 
 ---
-<table>
-<tr>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsPublishedMode.png" alt="Published View Light Theme"/>
-  </td>
-  <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsPublishedMode.png" alt="Published View Dark Theme"/>
-  </td>
-</tr>
-</table>
 {% include gallery %}
+---
 This widget is a static widget, meaning it has fixed and unchanging values. It comprises six (6) default title-value components along with a heading. These title-value components serve as informative building blocks, offering quick access to key metrics. Additionally, it includes the capability to calculate the average of warnings and perform data comparisons with the previous month. You also have the flexibility to include extra rows as per your preferences, should the need arise.
 {: .notice}
 
