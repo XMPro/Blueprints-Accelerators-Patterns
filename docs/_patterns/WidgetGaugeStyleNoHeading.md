@@ -37,14 +37,8 @@ gallery:
 ---
 {% include gallery %}
 ---
-This widget is broken down into two sections, the left <b>Total Assets</b> is the total area and the right section past the vertical line is where you can get specific. The right section will grow and shrink depending on the data source that is provided.
+his widget comprises two primary components: the description and the circular gauge. The "description" provides textual information or context, typically explaining the data or the purpose of the gauge. The circular gauge serves as a visual representation of data or a measurement. It is a circular graphical element that can display information in a dynamic and easily interpretable manner, such as a progress indicator, a speedometer, or any other data visualization that can be represented in a circular format
 {: .notice}
-
-The upward and downward arrows in this widget serve as indicators that are fully customizable. You can configure them to dynamically reflect upward or downward trends, or if desired, you can transform them into a different shape of your choice using the block properties.
-{: .notice--warning}
-
-This widget mirrors the [Gauge Style with Heading]({{ site.url }}/patterns/WidgetGaugeStylewithHeading.md) widget in every aspect, save for one key difference: it lacks a heading, a design choice made to enhance the efficient use of available space.
-{: .notice--warning}
 
 ![image-right]({{ site.url }}/assets/images/Patterns/Widgets/GaugeStyleNoHeading/DarkTheme/GaugeStyleNoHeadingDataSource.png){: .align-right}
 To utilize the data source for this widget, select the "Data Source" box and configure it under "Block Properties." Within the same property section, you can also customize the circular gauge's behavior, value, range, and appearance to suit your specific needs.

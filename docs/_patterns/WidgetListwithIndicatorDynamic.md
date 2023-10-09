@@ -37,14 +37,14 @@ gallery:
 ---
 {% include gallery %}
 ---
-This widget possesses dynamic capabilities, allowing you to load a data source into it. Once you do so, it will automatically present the data with their corresponding values. Notably, the elements within the widget will adjust automatically in accordance with the data source you have loaded.
+This widget possesses dynamic capabilities, allowing you to use a data source with it. Once you do so, it will automatically present the data with their corresponding values. Notably, the rows within the widget will adjust automatically in accordance with the data source you have loaded.
 {: .notice}
 
 This widget features a primary heading without a subheading, a deliberate choice made to optimize the available space it occupies.
 {: .notice--warning}
 
 ![image-right]({{ site.url }}/assets/images/Patterns/Widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicDataSource.png){: .align-right}
-To set up the data source for this widget, begin by selecting the "Data Source" box and configuring its data settings within the "Block Properties" section. Ensure that you specify the fields inside the box to retrieve their values from the designated data source. This widget is designed to dynamically adjust its size in response to the quantity of data you have loaded. Whether you're dealing with a small dataset or a substantial one, the widget will adapt its dimensions accordingly, providing a seamless and user-friendly display. Additionally, you have the flexibility to personalize the appearance of the indicators to align with your preferences.
+To set up the data source for this widget, begin by selecting the "Data Source" box and configuring its data settings within the "Block Properties" section. Ensure that you specify the fields inside the box to retrieve their values from the designated data source. This widget is designed to dynamically adjust its size in response to the quantity of data you have loaded (i.e. number of rows). Whether you're dealing with a small dataset or a substantial one, the widget will adapt its dimensions accordingly, providing a seamless and user-friendly display. Additionally, you have the flexibility to personalize the appearance of the indicators to align with your preferences.
 <hr />
 
 ## Contributing

@@ -37,14 +37,14 @@ gallery:
 ---
 {% include gallery %}
 ---
-Within this widget, you'll find both a heading and a subheading, complemented by a linear gauge and a value field. The heading and subheading serve as informative titles, providing context and guidance for the content presented. Meanwhile, the linear gauge is a dynamic visual element that can represent various metrics, such as completion status, performance indicators, or any data-driven measurement.
-{: .notice}
-
 This widget closely resembles the <a href="WidgetDataTilewithSubHeading">Data Tile with Sub Heading</a> widget, with the primary distinction being its absence of a content card. Unlike the Content with Indicator widget, this widget does not include a content card, which means it can adapt to the page's style or integrate seamlessly with other widgets.
 {: .notice--warning}
 
+Within this widget, you'll find both a heading and a subheading, complemented by a linear gauge and a value field. The heading and subheading serve as informative titles, providing context and guidance for the content presented. Meanwhile, the linear gauge is a dynamic visual element that can represent various metrics, such as completion status, performance indicators, or any data-driven measurement.
+{: .notice}
+
 ![image-right]({{ site.url }}/assets/images/Patterns/Widgets/DataTilewithSubHeadingNoContentCard/DarkTheme/DataTilewithSubHeadingNoContentCardDataSource.png){: .align-right}
-To set up and harness the potential of the Data Source section, start by selecting the box labeled "Data source." Within the Block Properties, proceed to configure the data source settings to suit your specific requirements. It's essential to interact with the fields within the box to ensure they are accurately aligned with the values in your datasets. Additionally, this widget offers a high degree of customization for the linear gauge element. You have the flexibility to modify its range, behavior, and the values it represents. This extensive customization empowers you to tailor the linear gauge precisely to your needs, whether you're tracking metrics, displaying progress, or conveying data-driven information effectively.
+To set up and harness the potential of the Data Source section, start by selecting the box labeled "Data source." Within the Block Properties, proceed to configure the data source settings to suit your specific requirements. It's essential to interact with the fields within the box to ensure they are accurately aligned with the values in your datasets. Additionally, this widget offers a high degree of configuration for the linear gauge element. You have the flexibility to modify its range, behavior, and the values it represents. This extensive configuration empowers you to tailor the linear gauge precisely to your needs, whether you're tracking metrics, displaying progress, or conveying data-driven information effectively.
 <hr />
 
 ## Contributing

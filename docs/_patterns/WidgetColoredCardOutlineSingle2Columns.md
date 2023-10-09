@@ -24,8 +24,8 @@ gallery:
   - url: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/DarkTheme/ColoredCardOutlineSingle2ColumnsDataSource.png
     image_path: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/DarkTheme/ColoredCardOutlineSingle2ColumnsDataSource.png
     alt: "Design Mode - DS"
-  - url: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/DarkTheme/ColoredCardOutlineSingle2ColumnsPublishedMode.png
-    image_path: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/DarkTheme/ColoredCardOutlineSingle2ColumnsPublishedMode.png
+  - url: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/LightTheme/ColoredCardOutlineSingle2ColumnsPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/LightTheme/ColoredCardOutlineSingle2ColumnsPublishedMode.png
     alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/LightTheme/ColoredCardOutlineSingle2ColumnsDesignMode.png
     image_path: /assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/LightTheme/ColoredCardOutlineSingle2ColumnsDesignMode.png
@@ -45,6 +45,9 @@ This widget is intentionally designed without a heading and subheading to optimi
 
 ![image-right]({{ site.url }}/assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/DarkTheme/ColoredCardOutlineSingle2ColumnsDataSource.png){: .align-right}
 To employ and fine-tune the dynamic section of this widget, you can initiate the setup by selecting the "Data Source" box within the "Block Properties" section. From there, you have the flexibility to choose your desired data source and ensure that each field within the data source box is appropriately mapped to acquire its corresponding values. This configuration ensures that the elements within the widget are automatically generated, dynamically adjusting in response to the dataset's size and content. As your dataset expands or contracts, the widget intelligently adapts by automatically resizing and adjusting its height, ensuring a seamless presentation of your data.
+
+Keep in mind that you have the flexibility to customize the border colors and determine which set will be designated as "ON" or "OFF" based on the specific options you choose.
+{: .notice--info}
 <hr />
 
 ## Contributing

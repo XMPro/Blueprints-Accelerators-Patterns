@@ -30,18 +30,21 @@ gallery:
   - url: /assets/images/Patterns/Widgets/MessageBox/LightTheme/MessageBoxDesignMode.png
     image_path: /assets/images/Patterns/Widgets/MessageBox/LightTheme/MessageBoxDesignMode.png
     alt: "Design Mode"
-  - url: /assets/images/Patterns/Widgets/MessageBox/DarkTheme/MessageBoxDataSource.png
-    image_path: /assets/images/Patterns/Widgets/MessageBox/DarkTheme/MessageBoxDataSource.png
+  - url: /assets/images/Patterns/Widgets/MessageBox/LightTheme/MessageBoxDataSource.png
+    image_path: /assets/images/Patterns/Widgets/MessageBox/LightTheme/MessageBoxDataSource.png
     alt: "Design Mode - DS"
 
 ---
 {% include gallery %}
 ---
-This widget incorporates a versatile text input field, providing users with the option to either manually enter text or load existing data into it. In addition to the text input field, the widget features a "Send" button, offering extensive customization options for both its action and behavior.
+This widget incorporates a versatile text input field, providing users with the option to either manually enter text or load existing data into it. In addition to the text input field, the widget features a "Send" button, offering extensive configuration options for both its action and behavior.
 {: .notice}
 
 ![image-right]({{ site.url }}/assets/images/Patterns/Widgets/MessageBox/DarkTheme/MessageBoxDataSource.png){: .align-right}
-To load data into this widget, begin by selecting the "Data Source" box and configuring the data source within the "Block Properties" section. Ensure that you set up the data source to populate the widget. Then select the textbox within the widget, and assign the desired value to it. Additionally, you have the flexibility to tailor the behavior and action of the button to your preferences. Customize it to perform specific actions that align with your intended functionality.
+To load data into this widget, begin by selecting the "Data Source" box and configuring the data source within the "Block Properties" section. Ensure that you set up the data source to populate the widget. Then select the textbox within the widget, and assign the desired value to it. 
+
+Additionally, you have the flexibility to tailor the behavior and action of the button to your preferences. Configure it to perform specific actions that align with your intended functionality.
+{: .notice--info}
 <hr />
 
 ## Contributing

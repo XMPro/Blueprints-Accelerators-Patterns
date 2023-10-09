@@ -37,16 +37,17 @@ gallery:
 ---
 {% include gallery %}
 ---
-This widget comprises a primary heading followed by a descriptive subheading beneath it, complemented by an indicator element and further elaborative content underneath. This combination of elements is designed to provide a comprehensive and structured presentation of information. The main heading captures the core concept or title, while the descriptive heading offers additional context. The indicator adds visual cues or status information, and the subsequent description provides detailed information or elaboration. Together, these components create a well-rounded widget for conveying a variety of content types effectively.
+This widget includes a main title, a subheading, an indicator, and more detailed content below. It's designed to present information clearly and in an organized way. The main title summarizes the main idea, the subheading adds extra context, the indicator shows status, and the detailed content provides more information. These parts work together to make the widget effective for different types of content.
 {: .notice}
 
 This widget's deliberate design choice involves featuring solely a primary heading without a subheading. This decision aligns with the inclusion of a descriptive heading below, serving to emphasize and provide supplementary context.
 {: .notice--warning}
 
 ![image-right]({{ site.url }}/assets/images/Patterns/Widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorDataSource.png){: .align-right}
-To set up and utilize the Data Source section of this widget, follow these steps: begin by selecting the "Data Source" box, then access the "Block Properties" to specify the data source you want to integrate. Remember to interact with the elements within the box and modify their values according to the data source.
+To set up and utilize the Data Source section of this widget, begin by selecting the "Data Source" box, then access the "Block Properties" to specify the data source you want to integrate. Remember to interact with the elements within the box and modify their values according to the data source.
 
-An essential feature of this widget is its dynamic nature. When you select a data source containing, for instance, three rows of data, the widget will promptly display these three individual elements. Moreover, it demonstrates adaptability by automatically resizing itself to match the count of the provided data source. This dynamic functionality ensures that the widget consistently presents your data in an organized and visually appealing manner, irrespective of the data source's varying size.
+Note that when you select a data source containing, for instance, three rows of data, the widget will promptly display these three individual elements. Moreover, it demonstrates adaptability by automatically resizing itself to match the count of the provided data source.
+{: .notice--info}
 <hr />
 
 ## Contributing

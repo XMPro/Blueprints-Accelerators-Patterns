@@ -37,10 +37,10 @@ gallery:
 ---
 {% include gallery %}
 ---
-This widget is a static widget, meaning it has fixed and unchanging values. It comprises six (6) default title-value components along with a heading. These title-value components serve as informative building blocks, offering quick access to key metrics. Additionally, it includes the capability to calculate the average of warnings and perform data comparisons with the previous month. You also have the flexibility to include extra rows as per your preferences, should the need arise.
+This widget is a static widget, meaning it has fixed and unchanging columns and heading. It comprises six (6) title-value components along with a heading. These title-value components serve as informative building blocks, offering quick access to key metrics. You also have the flexibility to include extra rows as per your preferences, should the need arise.
 {: .notice}
 
-To optimize the available space, this widget features a single primary heading without any additional subheadings. Also in the comparison section, this widget provides up and down arrows that serve as indicators. These arrows are highly configurable within the block properties, offering the flexibility to either maintain a consistent, static up-and-down appearance or morph into various other shapes to suit specific visual preferences and requirements.
+To optimize the available space, this widget features a single primary heading without any additional subheadings. Also in the comparison section, this widget provides up and down arrows that serve as indicators. These arrows are highly configurable within the block properties, offering the flexibility to either maintain a consistent, static up-and-down appearance or morph into various other shapes to suit specific visual preferences and requirements that can typically driven from a data source.
 {: .notice--warning}
 
 ![image-right]({{ site.url }}/assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsDesignMode.png){: .align-right}

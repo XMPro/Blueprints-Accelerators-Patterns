@@ -80,25 +80,26 @@ Widgets are collections of Blocks and layouts that are grouped together to allow
 ##### Colored Card
 <table>
   <tr>
-    <td colspan="2"><a href="WidgetColoredCardOutlineSingle">Outline Single</a></td>
-    <td colspan="2"><a href="WidgetColoredRoundedHeading">Rounded Heading</a></td>
+    
+      <td colspan="2"><a href="WidgetColoredCardOutlineSingle2Columns">Outline Single - 2 Columns</a></td>
+      <td colspan="2"><a href="WidgetColoredCardDisplayAlternative2Columns">Outline Single - 2 Columns (Alternative)</a></td>  
   </tr>
-  <tr>
-    <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ColoredCardOutlineSingle/DarkTheme/ColoredCardOutlineSinglePublishedMode.png" alt="Colored Card Outline Single - Published Mode (Dark)"/></td>
-    <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ColoredCardOutlineSingle/LightTheme/ColoredCardOutlineSinglePublishedMode.png" alt="Alert Count Rollup Dynamic - Published Mode (Light)"/></td>
-    <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ColoredRoundedHeading/DarkTheme/ColoredRoundedHeadingPublishedMode.png" alt="Colored Card Rounded Heading - Published Mode (Dark)"/></td>
-    <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ColoredRoundedHeading/LightTheme/ColoredRoundedHeadingPublishedMode.png" alt="Colored Card Rounded Heading - Published Mode (Light)"/></td>
+  <tr>    
+    <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/DarkTheme/ColoredCardOutlineSingle2ColumnsPublishedMode.png" alt="Colored Card Outline Single 2 Columns - Published Mode (Dark)"/></td>
+    <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/LightTheme/ColoredCardOutlineSingle2ColumnsPublishedMode.png" alt="Colored Card Outline Single 2 Columns - Published Mode (Light)"/></td>
+    <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/DarkTheme/ColoredCardDisplayAlternative2ColumnsPublishedMode.png" alt="Colored Card Outline Single 2 Columns - Published Mode (Dark)"/></td>
+    <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/LightTheme/ColoredCardDisplayAlternative2ColumnsPublishedMode.png" alt="Colored Card Outline Single 2 Columns - Published Mode (Light)"/></td>
 
       <tr>
-        <td colspan="2"><a href="WidgetColoredCardOutlineSingle2Columns">Outline Single - 2 Columns</a></td>
-        <td colspan="2"><a href="WidgetColoredCardDisplayAlternative2Columns">Outline Single - 2 Columns (Alternative)</a></td>         
+        <td colspan="2"><a href="WidgetColoredCardOutlineSingle">Outline Single</a></td>
+        <td colspan="2"><a href="WidgetColoredRoundedHeading">Rounded Heading</a></td>       
       </tr>
 
       <tr>
-        <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/DarkTheme/ColoredCardOutlineSingle2ColumnsPublishedMode.png" alt="Colored Card Outline Single 2 Columns - Published Mode (Dark)"/></td>
-        <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/LightTheme/ColoredCardOutlineSingle2ColumnsPublishedMode.png" alt="Colored Card Outline Single 2 Columns - Published Mode (Light)"/></td>
-         <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/DarkTheme/ColoredCardDisplayAlternative2ColumnsPublishedMode.png" alt="Colored Card Outline Single 2 Columns - Published Mode (Dark)"/></td>
-        <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/LightTheme/ColoredCardDisplayAlternative2ColumnsPublishedMode.png" alt="Colored Card Outline Single 2 Columns - Published Mode (Light)"/></td>
+      <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ColoredCardOutlineSingle/DarkTheme/ColoredCardOutlineSinglePublishedMode.png" alt="Colored Card Outline Single - Published Mode (Dark)"/></td>
+      <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ColoredCardOutlineSingle/LightTheme/ColoredCardOutlineSinglePublishedMode.png" alt="Alert Count Rollup Dynamic - Published Mode (Light)"/></td>
+      <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ColoredRoundedHeading/DarkTheme/ColoredRoundedHeadingPublishedMode.png" alt="Colored Card Rounded Heading - Published Mode (Dark)"/></td>
+      <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ColoredRoundedHeading/LightTheme/ColoredRoundedHeadingPublishedMode.png" alt="Colored Card Rounded Heading - Published Mode (Light)"/></td>    
     </tr>
   </tr>
 </table>
@@ -157,12 +158,12 @@ Widgets are collections of Blocks and layouts that are grouped together to allow
 ##### Headers
 <table>
   <tr>
-    <td colspan="2"><a href="WidgetHeaderRunning">Running</a></td>
+    <td colspan="2"><a href="WidgetHeaderStatus">Status</a></td>
     <td colspan="2"><a href="WidgetHeading&SubHeading">Heading & Sub Heading</a></td>
   </tr>
   <tr>
-    <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/HeaderRunning/DarkTheme/HeaderRunningPublishedMode.png" alt="Header Running - Published Mode (Dark)"/></td>
-    <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/HeaderRunning/LightTheme/HeaderRunningPublishedMode.png" alt="Header Running - Published Mode (Light)"/></td>
+    <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/HeaderStatus/DarkTheme/HeaderStatusPublishedMode.png" alt="Header Status - Published Mode (Dark)"/></td>
+    <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/HeaderStatus/LightTheme/HeaderStatusPublishedMode.png" alt="Header Status - Published Mode (Light)"/></td>
     <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingPublishedMode.png" alt="Heading & Sub Heading - No Heading - Published Mode (Dark)"/></td>
     <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/Heading&SubHeading/LightTheme/Heading&SubHeadingPublishedMode.png" alt="Heading & Sub Heading - Published Mode (Light)"/></td>
   </tr>
@@ -170,15 +171,15 @@ Widgets are collections of Blocks and layouts that are grouped together to allow
 
 ##### List with Indicator
 <table>
-  <tr>
-    <td colspan="2"><a href="WidgetListwithIndicatorStatic">Static</a></td>
+  <tr>  
     <td colspan="2"><a href="WidgetListwithIndicatorDynamic">Dynamic</a></td>
+    <td colspan="2"><a href="WidgetListwithIndicatorStatic">Static</a></td>
   </tr>
-  <tr>
-    <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticPublishedMode.png" alt="List with Indicator Static - Published Mode (Dark)"/></td>
-    <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ListwithIndicatorStatic/LightTheme/ListwithIndicatorStaticPublishedMode.png" alt="List with Indicator Static - Published Mode (Light)"/></td>
+  <tr>  
     <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicPublishedMode.png" alt="List with Indicator Dynamic - Published Mode (Dark)"/></td>
     <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ListwithIndicatorDynamic/LightTheme/ListwithIndicatorDynamicPublishedMode.png" alt="List with Indicator Dynamic - Published Mode (Light)"/></td>
+    <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticPublishedMode.png" alt="List with Indicator Static - Published Mode (Dark)"/></td>
+    <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/ListwithIndicatorStatic/LightTheme/ListwithIndicatorStaticPublishedMode.png" alt="List with Indicator Static - Published Mode (Light)"/></td>
   </tr>
 </table>
 

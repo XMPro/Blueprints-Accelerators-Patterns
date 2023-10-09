@@ -45,6 +45,9 @@ This widget contains only a main heading and no sub heading to maximize the spac
 
 ![image-right]({{ site.url }}/assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/DarkTheme/ColoredCardDisplayAlternative2ColumnsDataSource.png){: .align-right}
 To set up and utilize the Data Source, begin by selecting the box labeled "Data Source" (as displayed in the image). Next, navigate to the Block Properties and specify the data you wish to display. Ensure that you update the content of each text element to retrieve their values from the designated data source. The dimensions of the widget will seamlessly accommodate the size of the dataset you select, dynamically adjusting to match the count of the data source you have chosen. In other words, whether your dataset is large or small, the widget will adapt in size to accommodate and display the data effectively.
+
+Keep in mind that you have the flexibility to customize the border colors and determine which set will be designated as "ON" or "OFF" based on the specific options you choose.
+{: .notice--info}
 <hr />
 
 ## Contributing

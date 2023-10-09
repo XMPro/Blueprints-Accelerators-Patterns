@@ -15,8 +15,8 @@ sidebar:
     text: Widget [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/List%20with%20Indicator%20Static.xwid)
 
 gallery:
-  - url: /assets/images/Patterns/Widgets/ListwithIndicatorStatic/LightTheme/ListwithIndicatorStaticPublishedMode.png
-    image_path: /assets/images/Patterns/Widgets/ListwithIndicatorStatic/LightTheme/ListwithIndicatorStaticPublishedMode.png
+  - url: /assets/images/Patterns/Widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticPublishedMode.png
+    image_path: /assets/images/Patterns/Widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticPublishedMode.png
     alt: "Published Mode"
   - url: /assets/images/Patterns/Widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticDesignMode.png
     image_path: /assets/images/Patterns/Widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticDesignMode.png
@@ -31,14 +31,14 @@ gallery:
 ---
 {% include gallery id="gallery" layout="half"%}
 ---
-This widget is structured with three distinct columns, each serving a specific purpose: the title column, the indicator column, and the data status column. Additionally, it features a prominent heading, strategically employed to underscore the importance of the content within the widget. Also these elements presents static information, meaning that the content remains unchanged and serves as a reference point and is fixed and cannot be modified once the system is published.
+This widget is structured with three distinct columns, each serving a specific purpose: the title column, the indicator column, and the data status column. It contains 4 static rows, you can reduce these or extend these on design mode. Being a static widget, there is no data source that will dynamically add or remove rows. You can dynamically change the title indicator and status column by our data source.
 {: .notice}
 
 This widget features a primary heading without a subheading, a deliberate choice made to optimize the available space it occupies.
 {: .notice--warning}
 
 ![image-right]({{ site.url }}/assets/images/Patterns/Widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticDesignMode.png){: .align-right}
-To employ and configure this widget, simply select the element you wish to modify, and then navigate to the "Block Properties" section where you can make the necessary adjustments. It's important to note that any values you enter will remain static and unchangeable while the system is running. Furthermore, you have the freedom to customize the appearance of each indicator to match your design preferences.
+To employ and configure this widget, simply select the element you wish to modify, and then navigate to the "Block Properties" section where you can make the necessary adjustments. It's important to note that any values you enter will remain static and unchangeable while the system is running. Furthermore, you have the freedom to configure the appearance of each indicator to match your design preferences.
 <hr />
 
 ## Contributing

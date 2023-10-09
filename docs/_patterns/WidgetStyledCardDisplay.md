@@ -21,25 +21,32 @@ gallery:
   - url: /assets/images/Patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayDesignMode.png
     image_path: /assets/images/Patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayDesignMode.png
     alt: "Design Mode"
+  - url: /assets/images/Patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayDataSource.png
+    image_path: /assets/images/Patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayDataSource.png
+    alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/StyledCardDisplay/LightTheme/StyledCardDisplayPublishedMode.png
     image_path: /assets/images/Patterns/Widgets/StyledCardDisplay/LightTheme/StyledCardDisplayPublishedMode.png
     alt: "Published Mode"
+  - url: /assets/images/Patterns/Widgets/StyledCardDisplay/LightTheme/StyledCardDisplayDataSource.png
+    image_path: /assets/images/Patterns/Widgets/StyledCardDisplay/LightTheme/StyledCardDisplayDataSource.png
+    alt: "Design Mode"
   - url: /assets/images/Patterns/Widgets/StyledCardDisplay/LightTheme/StyledCardDisplayDesignMode.png
     image_path: /assets/images/Patterns/Widgets/StyledCardDisplay/LightTheme/StyledCardDisplayDesignMode.png
     alt: "Design Mode"
 
 ---
-{% include gallery id="gallery" layout="half"%}
+{% include gallery %}
 ---
-This widget is designed with versatility in mind, offering two distinct formats for presenting information. It includes both a two-column title-value pair layout and a single-column title-value pair arrangement. Notably, the rows within this widget feature an alternating color scheme, which can be tailored to your specific preferences and requirements. And to enhance the visual appeal and content emphasis, a prominent heading is also included. 
+This widget is designed with versatility in mind, offering two distinct formats for presenting information. It includes both a two-column title-value pair on the top row layout and a single-column title-value pair in the bottom arrangement. Notably, the rows within this widget feature an alternating color scheme, which can be tailored to your specific preferences and requirements. And to enhance the visual appeal and content emphasis, a prominent heading is also included.
 {: .notice}
 
 This widget features a primary heading without a subheading, a deliberate choice made to optimize the available space it occupies.
 {: .notice--warning}
 
-![image-right]({{ site.url }}/assets/images/Patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayDesignMode.png){: .align-right}
-To set up this widget to your specifications, begin by selecting individual elements within the widget. You can configure each element's properties under the "Block Properties" section, where you can assign specific values to them. If you wish to customize the colors of individual rows within the widget, it's a straightforward process. Simply click on the row boxes you want to modify. Under the "Block Styling" section, navigate to the "Decorations" settings. Here, you can precisely set the background color for each row, allowing you to create a visually distinct and appealing layout.
+![image-right]({{ site.url }}/assets/images/Patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayDataSource.png){: .align-right}
+To set up this widget to your liking, begin by selecting individual elements within the widget. You can configure each element's properties under the "Block Properties" section, where you can assign specific values to them. If you wish to configure the colors of individual rows within the widget, it's a straightforward process. Simply click on the row boxes you want to modify. Under the "Block Styling" section, navigate to the "Decorations" settings. Here, you can precisely set the background color for each row, allowing you to create a visually distinct and appealing layout.
 <hr />
+
 
 ## Contributing
 This repository was created by <a href="https://xmpro.com/">XMPro</a>. 
