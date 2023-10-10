@@ -37,11 +37,11 @@ gallery:
 ---
 {% include gallery %}
 ---
-his widget comprises two primary components: the description and the circular gauge. The "description" provides textual information or context, typically explaining the data or the purpose of the gauge. The circular gauge serves as a visual representation of data or a measurement. It is a circular graphical element that can display information in a dynamic and easily interpretable manner, such as a progress indicator, a speedometer, or any other data visualization that can be represented in a circular format
+This widget comprises two primary components: the description and the circular gauge. The "description" provides textual information or context, typically explaining the data or the purpose of the gauge. The circular gauge serves as a visual representation of data or a measurement. It is a circular graphical element that can display information in a dynamic and easily interpretable manner, such as a progress indicator, a speedometer, or any other data visualization that can be represented in a circular format
 {: .notice}
 
 ![image-right]({{ site.url }}/assets/images/Patterns/Widgets/GaugeStyleNoHeading/DarkTheme/GaugeStyleNoHeadingDataSource.png){: .align-right}
-To utilize the data source for this widget, select the "Data Source" box and configure it under "Block Properties." Within the same property section, you can also customize the circular gauge's behavior, value, range, and appearance to suit your specific needs.
+To utilize the data source for this widget, select the "Data Source" box and configure it under "Block Properties." Within the same property section, you can also configure the circular gauge's behavior, value, range, and appearance to suit your specific needs.
 <hr />
 
 ## Contributing

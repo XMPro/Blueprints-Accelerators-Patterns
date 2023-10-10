@@ -41,7 +41,7 @@ Within this widget, you'll find both a heading and a subheading, complemented by
 {: .notice}
 
 ![image-right]({{ site.url }}/assets/images/Patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingDataSource.png){: .align-right}
-To set up and harness the potential of the Data Source section, start by selecting the box labeled "Data source." Within the Block Properties, proceed to configure the data source settings to suit your specific requirements. It's essential to interact with the fields within the box to ensure they are accurately aligned with the values in your datasets. Additionally, this widget offers a high degree of customization for the linear gauge element. You have the flexibility to modify its range, behavior, and the values it represents. This extensive customization empowers you to tailor the linear gauge precisely to your needs, whether you're tracking metrics, displaying progress, or conveying data-driven information effectively.
+To set up and harness the potential of the Data Source section, start by selecting the box labeled "Data source." Within the Block Properties, proceed to configure the data source settings to suit your specific requirements. It's essential to interact with the fields within the box to ensure they are accurately aligned with the values in your datasets. Additionally, this widget offers a high degree of configuration for the linear gauge element. You have the flexibility to modify its range, behavior, and the values it represents. This extensive configuration empowers you to tailor the linear gauge precisely to your needs, whether you're tracking metrics, displaying progress, or conveying data-driven information effectively.
 <hr />
 
 ## Contributing

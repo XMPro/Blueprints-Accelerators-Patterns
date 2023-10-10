@@ -61,8 +61,8 @@ Widgets are collections of Blocks and layouts that are grouped together to allow
     <td colspan="2"><a href="WidgetBadActors">Bad Actors</a></td>
   </tr>
   <tr>
-    <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsPublishedModewithData.png" alt="Alert Count Rollup Dynamic - Published Mode (Dark)"/></td>
-    <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsPublishedModewithData.png" alt="Alert Count Rollup Dynamic - Published Mode (Light)"/></td>
+    <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsPublishedModewithData.png" alt="Alert Count Rollup Dynamic - Published Mode (Dark)" width="700"/></td>
+    <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsPublishedModewithData.png" alt="Alert Count Rollup Dynamic - Published Mode (Light)" width="700"/></td>
   </tr>
 </table>
 

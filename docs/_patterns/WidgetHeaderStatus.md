@@ -47,7 +47,7 @@ This widget intentionally omits both a heading and subheading in order to optimi
 {: .notice--warning}
 
 ![image-right]({{ site.url }}/assets/images/Patterns/Widgets/HeaderStatus/DarkTheme/HeaderStatusDesignMode.png){: .align-right}
-What this widget accomplishes is it utilizes the data source to determine which visual indicators to display. You can choose whether to display the "Not Running" or the "Running" indicator by manipulating the visible flag under "Block Properties." You have the flexibility to decide whether to use a parameter, the data source itself, or even a dynamic expression to determine the visibility of these indicators.
+What this widget fulfill is it utilizes the data source to determine which visual indicators to display. You can choose whether to display the "Not Running" or the "Running" indicator by manipulating the visible flag under "Block Properties." You have the flexibility to decide whether to use a parameter, the data source itself, or even a dynamic expression to determine the visibility of these indicators.
 <hr />
 
 ## Contributing

@@ -35,7 +35,7 @@ This widget serves as a versatile layout option, designed for seamless integrati
 {: .notice}
 
 ![image-right]({{ site.url }}/assets/images/Patterns/Widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingDesignMode.png){: .align-right}
-To utilize this widget, you have the option to effortlessly drag and drop other widgets or elements into its designated space. Furthermore, you can easily tailor and customize the widget according to your preferences. Additionally, for precise content emphasis, you can make edits to both the heading and subheading within the "Block Properties" section. This flexibility ensures that the widget aligns perfectly with your specific design and content requirements.
+To utilize this widget, you have the option to effortlessly drag and drop other widgets or elements into its designated space. Furthermore, you can easily tailor and configure the widget according to your preferences. Additionally, for precise content emphasis, you can make edits to both the heading and subheading within the "Block Properties" section. This flexibility ensures that the widget aligns perfectly with your specific design and content requirements.
 <hr />
 
 ## Contributing
