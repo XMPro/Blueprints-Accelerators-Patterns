@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Asset Monitoring using forecasting"
 subtitle: "Asset Monitoring using forecasting"
 excerpt: "Asset Monitoring using forecasting"
 toc: true

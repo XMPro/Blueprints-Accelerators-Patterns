@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Asset Monitoring using regression"
 subtitle: "Asset Monitoring using regression"
 excerpt: "Asset Monitoring using regression"
 toc: true
