@@ -78,6 +78,7 @@ Ensure the following variables are available to be used in the data stream:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226; Landing Page:<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226; Simulate Tank Telemetry | Send Tank Data to App<br />
 {: .notice--info}
+&nbsp;&nbsp;&#8226; Assign Access to others as required<br />
 &nbsp;&nbsp;&#8226; Save the Application<br />
 &nbsp;&nbsp;&#8226; Publish the application<br />
 &nbsp;&nbsp;&#8226; Ensure there is data in the application and that the Unity model is receiving its data by hovering over and observing the values<br />

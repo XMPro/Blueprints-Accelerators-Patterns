@@ -150,8 +150,8 @@ Widgets are collections of Blocks and layouts that are grouped together to allow
     <td colspan="2"><a href="WidgetGaugeStyleNoHeading">No Heading</a></td>
   </tr>
   <tr>
-    <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/GaugeStyleNoHeading/DarkTheme/GaugeStyleNoHeadingPublishedMode.png" alt="Gauge Style - No Heading - Published Mode (Dark)"/></td>
-    <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/GaugeStyleNoHeading/LightTheme/GaugeStyleNoHeadingPublishedMode.png" alt="Gauge Style - No Heading - Published Mode (Light)"/></td>
+    <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/GaugeStylenoHeading/DarkTheme/GaugeStyleNoHeadingPublishedMode.png" alt="Gauge Style - No Heading - Published Mode (Dark)"/></td>
+    <td><img src="{{ site.url }}/assets/images/Patterns/Widgets/GaugeStylenoHeading/LightTheme/GaugeStyleNoHeadingPublishedMode.png" alt="Gauge Style - No Heading - Published Mode (Light)"/></td>
   </tr>
 </table>
 

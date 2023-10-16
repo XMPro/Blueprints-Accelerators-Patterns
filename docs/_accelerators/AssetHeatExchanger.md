@@ -60,8 +60,8 @@ Ensure the following variables are available to be used in the data stream:
 &nbsp;&nbsp;&#8226; SQL Password (Encrypted)<br />
 {: .notice--warning}
 
-### 2. Run SQL Script
-&nbsp;&nbsp;&#8226; Execute the script in SQL Server<br />
+### 2. Run SQL Scripts
+&nbsp;&nbsp;&#8226; Execute the scripts in against the specific SQL Server<br />
 &nbsp;&nbsp;&#8226; Ensure the data is successfully loaded into the database<br />
 {: .notice--info}
 
@@ -84,6 +84,7 @@ Ensure the following variables are available to be used in the data stream:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226; Landing Page:<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226; Simulate Tank Telemetry | Send Tank Data to App<br />
 {: .notice--info}
+&nbsp;&nbsp;&#8226; Assign Access to others as required<br />
 &nbsp;&nbsp;&#8226; Save the Application<br />
 &nbsp;&nbsp;&#8226; Publish the application<br />
 &nbsp;&nbsp;&#8226; Ensure there is data in the application and that the Unity model is receiving its data by hovering over and observing the values<br />
