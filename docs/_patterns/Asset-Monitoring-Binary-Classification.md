@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Asset Monitoring using binary classification"
 subtitle: "Asset Monitoring using binary classification"
 excerpt: "Asset Monitoring using binary classification"
 toc: true
