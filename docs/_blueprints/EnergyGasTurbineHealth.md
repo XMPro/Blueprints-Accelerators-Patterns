@@ -7,7 +7,6 @@ toc_label: "Table of Contents"
 tags:
   - Asset Monitoring
   - Condition Monitoring
-  - Unity
 sidebar:
   - title: "Import Password"
     text: "Dem0nstr@t1on"
