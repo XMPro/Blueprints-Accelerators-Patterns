@@ -14,26 +14,29 @@ sidebar:
   - title: "How to Import"
     text: For instructions click the [link](https://documentation.xmpro.com/how-tos/import-export-and-clone#importing "Click Here")
   - title: "Files"
-    text: Application [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Energy%20-%20Gas%20Turbine%20Health/Application/Gas%20Turbine%20Health.xapp "Click Here") <br />Template [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Energy%20-%20Gas%20Turbine%20Health/Template/Gas%20Turbine%20Health.xtml "Click Here") <br /><br />Recommend - Bearing Alerts [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Energy%20-%20Gas%20Turbine%20Health/Recommendation/Bearing%20Alerts.xr "Click Here") <br />Recommend - Dry Gas Seal [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Energy%20-%20Gas%20Turbine%20Health/Recommendation/Dry%20Gas%20Seal%20System.xr "Click Here") <br />Recommend - Motor Winding [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Energy%20-%20Gas%20Turbine%20Health/Recommendation/Motor%20Winding%20Temperature.xr "Click Here") <br /><br />Data Stream [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Energy%20-%20Gas%20Turbine%20Health/Data%20Stream/Gas%20Turbine%20Telemetry.xuc "Click Here")<br /><br />SQL Scripts - Gas Turbine [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Energy%20-%20Gas%20Turbine%20Health/SQL%20Scripts/DemoGasTurbine.sql "Click Here")<br />SQL Scripts - Workorder etc [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Energy%20-%20Gas%20Turbine%20Health/SQL%20Scripts/DemoWorkManagementCompressor.sql "Click Here")
+    text: Application [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Blueprints/Energy%20-%20Gas%20Turbine%20Health/Application/Gas%20Turbine%20Health.xapp "Click Here") <br />Template [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Blueprints/Energy%20-%20Gas%20Turbine%20Health/Template/Gas%20Turbine%20Health.xtml "Click Here") <br /><br />Recommend - Bearing Alerts [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Blueprints/Energy%20-%20Gas%20Turbine%20Health/Recommendation/Bearing%20Alerts.xr "Click Here") <br />Recommend - Dry Gas Seal [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Blueprints/Energy%20-%20Gas%20Turbine%20Health/Recommendation/Dry%20Gas%20Seal%20System.xr "Click Here") <br />Recommend - Motor Winding [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Blueprints/Energy%20-%20Gas%20Turbine%20Health/Recommendation/Motor%20Winding%20Temperature.xr "Click Here") <br /><br />Data Stream [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Blueprints/Energy%20-%20Gas%20Turbine%20Health/Data%20Stream/Gas%20Turbine%20Telemetry.xuc "Click Here")<br /><br />SQL Scripts - Gas Turbine [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Blueprints/Energy%20-%20Gas%20Turbine%20Health/SQL%20Scripts/DemoGasTurbine.sql "Click Here")<br />SQL Scripts - Work Order etc [link](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Blueprints/Energy%20-%20Gas%20Turbine%20Health/SQL%20Scripts/DemoWorkManagementCompressor.sql "Click Here")
 
 gallery:
-  - url: /assets/images/Accelerators/3DCapability/Unity-Pumps/Application.png
-    image_path: assets/images/Accelerators/3DCapability/Unity-Pumps/Application.png
-    alt: "Application"
-  - url: /assets/images/Accelerators/3DCapability/Unity-Pumps/Data Stream.png
-    image_path: assets/images/Accelerators/3DCapability/Unity-Pumps/Data Stream.png
-    alt: "Data Stream"
-  - url: /assets/images/Accelerators/3DCapability/Unity-Pumps/Running Data Stream.png
-    image_path: assets/images/Accelerators/3DCapability/Unity-Pumps/Running Data Stream.png
-    alt: "Data Stream Running"
+  - url: /assets/images/Blueprints/Energy/GasTurbineHealth/Application_01.png
+    image_path: assets/images/Blueprints/Energy/GasTurbineHealth/Application_01.png
+    alt: "Application View 01"
+  - url: /assets/images/Blueprints/Energy/GasTurbineHealth/Application_02.png
+    image_path: assets/images/Blueprints/Energy/GasTurbineHealth/Application_02.png
+    alt: "Application View 02"
+  - url: /assets/images/Blueprints/Energy/GasTurbineHealth/Application_04.png
+    image_path: assets/images/Blueprints/Energy/GasTurbineHealth/Application_04.png
+    alt: "Application View 04"
+  - url: /assets/images/images/Blueprints/Energy/GasTurbineHealth/Application_03.png
+    image_path: assets/images/Blueprints/Energy/GasTurbineHealth/Application_03.png
+    alt: "Application View 03"
 ---
 
-An example of how to generate synthetic data and pass it through a data stream to a Unity model running within an application.
+A digital twin application offering real-time monitoring with live data and health scoring for a gas turbine assets across multiple sites.
 
 {% include gallery %}
 
 ## Application
-An overview of sites that drilldown to individual assets providing real-time data and status of the gas turbines.  The application is configured using: 
+An overview of sites that drill down to individual assets providing real-time data and status of the gas turbines.  The application is configured using: 
 
 | Block                     | Description                                                  |
 | --------                  | ------------------------------------------------------------ |

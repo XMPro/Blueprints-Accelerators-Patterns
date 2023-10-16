@@ -26,28 +26,3 @@ This accelerator illustrate how to generate synthetic data and pass it through a
 <a href="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/XMPro%20AI/Quick%20Guide%20-%20XMPro%20AI.ipynb">Quick Guide - XMPro AI</a>
  This guide is designed to help you become familiar with the essential features of XMPro AI and provide you with the necessary knowledge to start developing AI solutions within the platform.
 {: .notice}
-
-#### Energy - Gas Turbine Health
- A digital twin application offering real-time monitoring with live data and health scoring for a gas turbine assets across multiple sites.
-{: .notice}
-<a href="EnergyGasTurbineHealth"><img src="{{ site.url }}/assets/images/Accelerators/Energy/GasTurbineHealth/Application_01.png" alt="Application View 01"/></a>
-<table>
-<tr>
-  <td colspan="2"><img src="{{ site.url }}/assets/images/Accelerators/Energy/GasTurbineHealth/Application_03.png" alt="Application View 03"/></td>
-</tr>
-<tr>
-  <td><img src="{{ site.url }}/assets/images/Accelerators/Energy/GasTurbineHealth/Application_02.png" alt="Application View 02"/></td>
-  <td><img src="{{ site.url }}/assets/images/Accelerators/Energy/GasTurbineHealth/Application_04.png" alt="Application View 04"/></td>
-</tr>
-</table>
-
-#### Energy - Wind Farm Monitoring
- A digital twin application offering real-time monitoring of renewable energy assets, providing insights & optimizing operations for peak performance & sustainability.
-{: .notice}
-<a href="AlternativeEnergyRenewableView"><img src="{{ site.url }}/assets/images/Accelerators/AlternativeEnergy/RenewableView/Application_01.png" alt="Application View 01"/></a>
-<table>
-<tr>
-  <td><img src="{{ site.url }}/assets/images/Accelerators/AlternativeEnergy/RenewableView/Application_03.png" alt="Application View 03"/></td>
-  <td><img src="{{ site.url }}/assets/images/Accelerators/AlternativeEnergy/RenewableView/Application_02.png" alt="Application View 02"/></td>
-</tr>
-</table>
