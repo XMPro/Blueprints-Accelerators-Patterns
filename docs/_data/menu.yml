@@ -1,0 +1,53 @@
+main:
+  - name: Home
+    url: /
+    weight: 1
+  - name: Blueprints
+    url: /blueprints/
+    weight: 2
+  - name: Accelerators
+    url: /accelerators/
+    weight: 2
+  - name: Patterns
+    url: /patterns/
+    weight: 2
+  - name: Posts
+    url: /blog/
+    weight: 3 
+
+footer_primary:
+  - name: "Project 1"
+    url: /projects/project-1/
+
+footer_secondary:
+  - name: Blog
+    url: /blog/
+    weight: 2
+  - name: About
+    url: /about/
+    weight: 3
+  - name: Contact
+    url: /contact/
+    weight: 4
+  - name: Privacy Policy
+    url: /privacy-policy/
+    weight: 1
+  - name: Terms and Conditions
+    url: /terms-and-conditions/
+    weight: 2
+
+footer_tertiary:
+  - name: Privacy Policy
+    url: /privacy-policy/
+    weight: 1
+  - name: Terms and Conditions
+    url: /terms-and-conditions/
+    weight: 2
+
+bottom:
+  - name: Privacy Policy
+    url: /privacy-policy/
+    weight: 3
+  - name: Terms and Conditions
+    url: /terms-and-conditions/
+    weight: 4

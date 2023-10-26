@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Linkedin",
+    "fa_icon": "fab fa-linkedin",
+    "url": "https://www.linkedin.com/company/xmpro-inc"
+  },
+  {
+    "title": "Github",
+    "fa_icon": "fab fa-github",
+    "url": "https://github.com/XMPro"
+  },
+  {
+    "title": "Twitter",
+    "fa_icon": "fab fa-twitter",
+    "url": "https://twitter.com/xmpro"
+  },
+  {
+    "title": "Facebook",
+    "fa_icon": "fab fa-facebook-square",
+    "url": "https://www.facebook.com/xmpro/"
+  },
+  {
+    "title": "Youtube",
+    "fa_icon": "fab fa-youtube-square",
+    "url": "https://www.youtube.com/XMPRO"
+  },
+  {
+    "title": "Youtube - Learning",
+    "fa_icon": "fab fa-youtube-square",
+    "url": "https://www.youtube.com/@XMProLearning"
+  }
+]

@@ -1,0 +1,81 @@
+---
+layout: default
+body_classes: page-post
+---
+
+{% if site.breadcrumbs %}
+  {% include breadcrumbs.html %}
+{% endif %}
+
+<div class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        {% include framework/blocks/sections/heading.html
+          title=page.title
+          description=page.description
+        %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-4">
+          {% if page.categories %}
+          <div class="categories">
+            <div class="categories_header"><span><strong>Category</strong></span></div>
+            <div>
+              {% include framework/blocks/components/categories-badges.html categories=page.categories %}
+            </div>
+          </div>
+          <hr />
+          {% endif %}
+          {% if page.contributor %}
+          <div class="project-client"><span><strong>Contributor</strong></span>{{ page.contributor }}</div>
+          {% endif %}
+  
+          {% if page.role %}
+          <div class="project-role"><span><strong>Type</strong></span>{{ page.role }}</div>
+          {% endif %}
+          </div>
+
+        <div class="col-12 col-md-8">
+          {% if page.gallery %}
+          <div class="row">
+            <div class="col">
+              <div class="gallery gallery-two-column">
+                {% for item in page.gallery %}
+                  <div class="gallery-item">
+                    <div class="gallery-image"><img width="350px" src="{{ item.image | relative_url }}" /></div>
+                    <div class="gallery-caption">{{ item.caption }}</div>
+                  </div>
+                {% endfor %}
+              </div>          
+            </div>
+          </div>
+          {% endif %}
+      
+          <div class="content">{{ content }}</div>
+        </div>
+
+        {% include framework/blocks/components/comments.html %}
+
+      </div>
+    </div>
+  </div>
+</div>
+
+{% if site.newsletter.mailchimp.form_action_url and site.newsletter.mailchimp.form_action_url != '' %}
+  <div class="section bg-base-bg-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-12"></div>
+        {% include framework/blocks/components/subscribe.html %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

@@ -1,0 +1,212 @@
+---
+layout: default
+body_classes: page-home
+---
+
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {% include framework/blocks/sections/heading.html
+        title=page.title
+        description=page.description
+        %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% assign cards = site.blueprints | sort: 'date' | reverse %}
+{% assign limit = page.blueprints.limit | default: 3 %}
+{% assign sort_by = page.blueprints.sort | default: 'date' %}
+{% assign columns =  page.blueprints.columns | default: 3 %}
+{% capture columns %}col-lg-{{ 12 | divided_by:columns }}{% endcapture %}
+{% if sort_by == 'weight' %}
+  {% assign cards = cards | sort: 'weight' %}
+{% endif %}
+
+{% assign cards = site.blueprints %}
+{% if cards.size > 0 %}
+<div class="section pt-0">
+  <div class="container">
+    <div class="row">
+
+      {% include framework/blocks/components/grid-header.html 
+        heading=page.blueprints.heading 
+        sub_heading=page.blueprints.sub_heading 
+      %}
+     
+      {% for card in cards limit: limit %}
+      <div
+        class="col-12 col-md-6 {{ columns }} mb-gutter mt-gutter {% if forloop.first %}mt-0{% endif %} {% if forloop.last %}mb-0{% endif %} mt-md-0">
+        {% include theme/cards/card-project.html
+          title=card.title
+          description=card.description
+          thumbnail=card.thumbnail
+          categories=card.categories
+          date=card.date
+          url=card.url
+          client=card.client
+        %}
+      </div>
+      {% endfor %}
+
+      {% include framework/blocks/components/grid-footer.html 
+        view_more_button_text=page.blueprints.view_more_button_text
+        view_more_button_link=page.blueprints.view_more_button_link
+        align="right"
+        icon="fa-arrow-right"
+      %}
+
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% assign cards = site.accelerators | sort: 'date' | reverse %}
+{% assign limit = page.accelerators.limit | default: 3 %}
+{% assign sort_by = page.accelerators.sort | default: 'date' %}
+{% assign columns =  page.accelerators.columns | default: 3 %}
+{% capture columns %}col-lg-{{ 12 | divided_by:columns }}{% endcapture %}
+{% if sort_by == 'weight' %}
+  {% assign cards = cards | sort: 'weight' %}
+{% endif %}
+
+{% assign cards = site.accelerators %}
+{% if cards.size > 0 %}
+<div class="section pt-0">
+  <div class="container">
+    <div class="row">
+
+      {% include framework/blocks/components/grid-header.html 
+        heading=page.accelerators.heading 
+        sub_heading=page.accelerators.sub_heading 
+      %}
+     
+      {% for card in cards limit: limit %}
+      <div
+        class="col-12 col-md-6 {{ columns }} mb-gutter mt-gutter {% if forloop.first %}mt-0{% endif %} {% if forloop.last %}mb-0{% endif %} mt-md-0">
+        {% include theme/cards/card-project.html
+          title=card.title
+          description=card.description
+          thumbnail=card.thumbnail
+          categories=card.categories
+          date=card.date
+          url=card.url
+          client=card.client
+        %}
+      </div>
+      {% endfor %}
+
+      {% include framework/blocks/components/grid-footer.html 
+        view_more_button_text=page.accelerators.view_more_button_text
+        view_more_button_link=page.accelerators.view_more_button_link
+        align="right"
+        icon="fa-arrow-right"
+      %}
+
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% assign cards = site.patterns | sort: 'date' | reverse %}
+{% assign limit = page.patterns.limit | default: 3 %}
+{% assign sort_by = page.patterns.sort | default: 'date' %}
+{% assign columns =  page.patterns.columns | default: 3 %}
+{% capture columns %}col-lg-{{ 12 | divided_by:columns }}{% endcapture %}
+{% if sort_by == 'weight' %}
+  {% assign cards = cards | sort: 'weight' %}
+{% endif %}
+
+{% assign cards = site.patterns %}
+{% if cards.size > 0 %}
+<div class="section pt-0">
+  <div class="container">
+    <div class="row">
+
+      {% include framework/blocks/components/grid-header.html 
+        heading=page.patterns.heading 
+        sub_heading=page.patterns.sub_heading 
+      %}
+     
+      {% for card in cards limit: limit %}
+      <div
+        class="col-12 col-md-6 {{ columns }} mb-gutter mt-gutter {% if forloop.first %}mt-0{% endif %} {% if forloop.last %}mb-0{% endif %} mt-md-0">
+        {% include theme/cards/card-project.html
+          title=card.title
+          description=card.description
+          thumbnail=card.thumbnail
+          categories=card.categories
+          date=card.date
+          url=card.url
+          client=card.client
+        %}
+      </div>
+      {% endfor %}
+
+      {% include framework/blocks/components/grid-footer.html 
+        view_more_button_text=page.patterns.view_more_button_text
+        view_more_button_link=page.patterns.view_more_button_link
+        align="right"
+        icon="fa-arrow-right"
+      %}
+
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% assign cards = site.posts | sort: 'date' | reverse %}
+{% assign limit = page.posts.limit | default: 3 %}
+{% assign sort_by = page.posts.sort | default: 'date' %}
+{% assign columns =  page.posts.columns | default: 3 %}
+{% capture columns %}col-lg-{{ 12 | divided_by:columns }}{% endcapture %}
+{% if sort_by == 'weight' %}
+  {% assign cards = cards | sort: 'weight' %}
+{% endif %}
+
+{% assign cards = site.posts %}
+{% if cards.size > 0 %}
+<div class="section bg-base-bg-2">
+  <div class="container">
+    <div class="row">
+
+      {% include framework/blocks/components/grid-header.html 
+        heading=page.posts.heading 
+        sub_heading=page.posts.sub_heading 
+      %}
+
+      {% for card in cards limit: limit %}
+      <div class="col-12 col-md-4 {{ columns }} {% if forloop.first %}mt-0{% endif %} {% if forloop.last %}mb-0{% endif %} mb-3 mb-md-6">
+        {% include theme/cards/card-post.html
+          title=card.title
+          description=card.description
+          url=card.url
+        %}
+      </div>
+      {% endfor %}
+
+      {% include framework/blocks/components/grid-footer.html 
+        view_more_button_text=page.posts.view_more_button_text
+        view_more_button_link=page.posts.view_more_button_link
+        align="right"
+        icon="fa-arrow-right"
+      %}
+
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if site.newsletter.mailchimp.form_action_url and site.newsletter.mailchimp.form_action_url != '' %}
+  <div class="section bg-base-bg-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-12"></div>
+        {% include framework/blocks/components/subscribe.html %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

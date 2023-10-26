@@ -1,0 +1,57 @@
+---
+layout: default
+body_classes: page-blog
+title: "Posts"
+---
+
+<div class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-12">
+        {% include framework/blocks/sections/heading.html
+        title=page.title
+        description=page.description
+        %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section pt-0">
+  <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-12">
+          <div class="row">
+            {% assign posts = site.posts %}
+            {% if paginator %}{% assign posts = paginator.posts %}{% endif %}
+            
+              {% if paginator %}
+                <div class="col-12">
+                  {% include framework/blocks/components/paginator-count.html %}
+                </div>
+              {% endif %}
+
+              {% for post in posts %}
+                <div class="col-12 col-md-12 col-lg-10 mb-6">
+                  {% include theme/cards/card-post.html
+                    date=post.date
+                    title=post.title
+                    description=post.description 
+                    url=post.url
+                    thumbnail=post.thumbnail
+                    style="row"
+                  %}
+                </div>
+              {% endfor %}
+          </div>
+        </div>
+      </div>
+      {% if paginator %}
+      <div class="row justify-content-center mt-4">
+        <div class="col-auto">
+          {% include framework/blocks/components/paginator.html %}
+        </div>
+      </div>
+      {% endif %}
+  </div>
+</div>
