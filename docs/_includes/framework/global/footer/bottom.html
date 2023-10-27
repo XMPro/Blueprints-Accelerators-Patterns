@@ -1,0 +1,39 @@
+<div class="bottom">
+  <div class="container relative">
+    <div class="row align-items-center justify-content-between">
+      <div style="overflow: hidden; margin:0 auto;">
+       <div style="float:left; width: 50%;">
+          {% if site.bottom.enable_bottom_menu %}
+            {% include framework/global/menu/menu-bottom.html %}
+          {% endif %}
+          {% if site.cookie_banner.enabled and site.cookie_banner.show_manage_cookies_at_bottom %}
+            <a href="#" data-cc="c-settings">Cookies</a>
+          {% endif %}
+          <a href="https://choosealicense.com/licenses/mit/"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
+          For assistance or requests, please contact <a href="mailto:support@xmpro.com">support@xmpro.com</a>
+        </div>
+        <div style="width:25%; float: left; text-align: right;">
+          {% if site.footer.enable_social_media_icons and site.data.social %}
+            {% include framework/blocks/components/social.html %}
+          {% endif %}
+        </div>
+        <div style="width:25%; float: left; text-align: right;">
+          {% if site.bottom.copyright_text and site.bottom.copyright_text != "" %}
+            <div class="copyright">{{ site.bottom.copyright_text }}</div>
+          {% endif %}
+          
+          {% if site.bottom.show_rss_icon %}
+            <a class="feed" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+              <i class="fas fa-feed"></i>
+            </a>
+          {% endif %}
+
+          {% if site.darkmode.enable_dark_mode and site.darkmode.show_dark_mode_toggle_in_bottom %}
+            <div>
+              {% include framework/blocks/components/dark-mode-switcher.html %}
+            </div>
+          {% endif %}   
+        </div>
+    </div>
+  </div>
+</div>

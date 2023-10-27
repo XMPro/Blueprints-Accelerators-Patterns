@@ -1,0 +1,39 @@
+---
+layout: default
+body_classes: page-categories
+---
+
+<div class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        {% include framework/blocks/sections/heading.html
+          title=page.title
+          description=page.description
+          image=page.image
+        %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="section strip-base">
+  <div class="container">
+    <div class="row">
+        {% for category in site.categories %}
+          {% assign category_name = category | first %}
+          {% assign category_slug = category_name | slugify %}
+          <div class="col-12 col-md-8 mb-2">
+            <h3 id="#{{ category_slug }}">{{ category_name }}</h3>
+            {% for post in site.categories[category_name] %}
+              <div>
+                <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
+              </div>
+            {% endfor %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

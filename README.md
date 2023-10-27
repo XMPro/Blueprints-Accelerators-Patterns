@@ -1,5 +1,5 @@
 <!-- omit in toc -->
-This repository contains comprehensive blueprints, accelerators, and patterns to reference for your use. 
+This [repository](https://xmpro.github.io/Blueprints-Accelerators-Patterns/) contains comprehensive blueprints, accelerators, and patterns to reference for your use. 
 
 # [Blueprints](https://xmpro.github.io/Blueprints-Accelerators-Patterns/blueprints/)
 

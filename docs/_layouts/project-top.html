@@ -1,0 +1,114 @@
+---
+layout: default
+body_classes: page-project
+---
+
+{% assign limit = page.gallery_limit | default: 2 %}
+
+{% if site.breadcrumbs %}
+  {% include breadcrumbs.html %}
+{% endif %}
+
+<div class="section">
+  <div class="container">
+    {% if page.title %}
+    <div class="heading">
+      <div class="heading-heading">
+        <h1>{{ page.description }}</h1>
+      </div>
+    </div>
+    <br />
+    {% endif %}
+    {% if page.extract %}
+    <div class="project-description">
+      {{ page.extract }}
+    </div>
+    <br />
+    {% endif %}  
+    {% if page.gallery %}
+    <div class="row">
+      <div class="col">
+        <div class="gallery gallery-two-column">
+          {% for item in page.gallery limit: limit %}
+          <div class="gallery-item">
+            <div class="gallery-image"><img src="{{ item.image | relative_url }}" /></div>
+            <div class="gallery-caption">{{ item.caption }}</div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <hr />
+    {% endif %}
+
+    <div class="row">
+      <div class="col-12 col-md-4">
+        {% if page.categories %}
+        <div class="project-categories">
+            <div class="project-file-header"><span><strong>Category</strong></span></div>
+          <div>
+            {% include framework/blocks/components/categories-badges.html categories=page.categories %}
+          </div>
+        </div>
+        <hr />
+        {% endif %}
+
+        {% if page.contributor %}
+        <div class="project-client"><span><strong>Contributor</strong></span>{{ page.contributor }}</div>
+        {% endif %}
+
+        {% if page.role %}
+        <div class="project-role"><span><strong>Type</strong></span>{{ page.role }}</div>
+        {% endif %}
+
+        {% if page.import_password %}
+        <div class="project-details">
+          <span><strong>Import Password</strong></span><span class="copy_import"> {{ page.import_password }}</span>
+          {% include code_header.html %}
+        </div>
+        <div class="project-details"><span><strong>How to Import</strong></span><span> <a href="https://documentation.xmpro.com/how-tos/import-export-and-clone#importing" target="_blank">Click Here</a></span></div>
+        {% endif %}
+
+        {% if page.files %}
+        <hr />
+        <div class="project-categories">
+          <div class="project-file-header"><span><strong>Files to Import</strong></span></div>
+            {% for item in page.files %}
+            <div class="project-details">
+              <div class="project-image"><img width="24px" height="24px" src="{{ item.image | relative_url }}" /></div>
+              <div class="project-details"><a href="{{ item.link }}" target="_blank">{{ item.title }}</a></div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if page.side_gallery %}
+          {% for item in page.side_gallery %}
+          <hr />
+          <div class="gallery gallery-single-column">
+            <div class="gallery-item">
+              <div class="gallery-image"><img src="{{ item.image | relative_url }}" /></div>
+              <div class="gallery-caption">{{ item.caption }}</div>
+            </div>
+          </div>
+          {% endfor %}
+        {% endif %}
+
+      </div>
+      <div class="col-12 col-md-8">
+        {% if page.toc %}
+          <div class="toc_location">
+            <aside class="toc_menu sidebar-sticky">
+              <nav class="toc">
+                <header><h4 class="toc_title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}</h4></header>
+                {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc_menu" skip_no_ids=true %}
+              </nav>
+            </aside>
+          </div>
+        {% endif %}
+        <div class="content">{{ content }}</div>
+      </div>
+
+    </div>
+  </div>
+</div>
