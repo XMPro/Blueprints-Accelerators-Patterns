@@ -31,7 +31,7 @@
 }
 .toc_location {
     float: right;
-    margin-right: -170px;
+    margin-right: -180px;
     border: 1px solid var(--color-base-bg-2);
     border-radius: 4px;
     -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.125);
@@ -66,12 +66,20 @@
 div.content > ul > li > strong {
     color: var(--color-base-bg-3);
 }
+li > p > img,
 div.content > ul > li > img {
-    margin: 0;
+    margin-top: 0.5em !important;
     vertical-align: middle;
+    border: 1px solid lightgray;
+    margin-bottom: 0.5em !important;
 }
 .content a:hover {
     font-weight: 600;
     width: 120px;
     color: var(--color-base-bg-3) !important;
+}
+div.inline_image > img
+{
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
 }

@@ -54,7 +54,7 @@ The data stream is configured using:
 | [Event Simulator](https://xmpro.gitbook.io/event-simulator/) | Simulates the data within the thresholds configured |
 | [Calculated Field](https://xmpro.gitbook.io/calculated-field/) | Adding a randomized PumpId out of three posibilities as well as a LocationId |
 | [Broadcast](https://xmpro.gitbook.io/broadcast/) | Broadcast data to other agents |
-| [Rounding](https://xmpro.gitbook.io/rounding/") | To round the data presented to the Application |
+| [Rounding](https://xmpro.gitbook.io/rounding/) | To round the data presented to the Application |
 | [XMPro App](https://xmpro.gitbook.io/xmpro-app/) | View data in the App Designer |
 | [Run Recommendation](https://xmpro.gitbook.io/run-recommendation/) | Pass the data to the Recommendation engine to evaluate |
 
@@ -80,11 +80,12 @@ Ensure the following variables are available to be used in the data stream:
 
 - Map the data source on import:
   - Landing Page:
-    - | Data Stream | Agent Option |
-      | ----------- | ------------ |
-      | Simulate Pump Telemetry | Send to App Designer |
-
+  
+    | Data Source Name | Data Stream | Agent Option |
+    | ---------------- | ----------- | ------------ |
+    | Pump Data | Simulate Pump Telemetry | Send to App Designer |
 - Assign Access to others as required
+  {% include framework/shortcodes/image.html src="/assets/images/Accelerators/3DCapability/Unity-Pumps/Application_Access.png" %}
 - Save the Application
 - Publish the application
 - Ensure there is data in the application and that the Unity model is receiving its data by hovering over and observing the values

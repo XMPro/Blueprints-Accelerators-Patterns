@@ -75,11 +75,12 @@ Ensure the following variables are available to be used in the data stream:
 
 - Map the data source on import:
   - Landing Page:
-    - | Data Stream | Agent Option |
-      | ----------- | ------------ |
-      | Simulate Tank Telemetry | Send Tank Data to App |
 
+    | Data Source Name | Data Stream | Agent Option |
+    | ---------------- | ----------- | ------------ |
+    | Unity Data from Data Stream | Simulate Tank Telemetry | Send Tank Data to App |
 - Assign Access to others as required
+  {% include framework/shortcodes/image.html src="/assets/images/Accelerators/3DCapability/Unity-Tanks/Application_Access.png" %}
 - Save the Application
 - Publish the application
 - Ensure there is data in the application and that the Unity model is receiving its data by hovering over and observing the values
