@@ -78,8 +78,17 @@ div.content > ul > li > img {
     width: 120px;
     color: var(--color-base-bg-3) !important;
 }
-div.inline_image > img
+div.inline_image 
 {
     margin-top: 0.5em !important;
     margin-bottom: 0.5em !important;
+    img
+    {
+        text-align: center;
+        display: block;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
 }
