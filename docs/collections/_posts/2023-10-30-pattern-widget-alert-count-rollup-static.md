@@ -15,4 +15,4 @@ gallery:
     caption: "<strong>Above:</strong> Published View Light Theme"
 ---
 
-View more information and how to import by <strong>[Clicking Here](/patterns/WidgetAlertCountRollupStatic/)</strong>
+View more information and how to import by <strong>[Clicking Here]({{ site.url }}/patterns/WidgetAlertCountRollupStatic/)</strong>

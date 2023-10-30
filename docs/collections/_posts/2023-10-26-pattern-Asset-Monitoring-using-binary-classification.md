@@ -15,4 +15,4 @@ gallery:
     caption: "<strong>Above:</strong> Configured Data Stream"
 ---
 
-View more information and how to import by <strong>[Clicking Here](/patterns/Asset-Monitoring-Binary-Classification/)</strong>
+View more information and how to import by <strong>[Clicking Here]({{ site.url }}/patterns/Asset-Monitoring-Binary-Classification/)</strong>
