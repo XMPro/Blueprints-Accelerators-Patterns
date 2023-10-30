@@ -38,7 +38,7 @@ files:
   - title: "Data Stream - Heat Exchanger Telemetry"
     link: "https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/Accelerators/Assets/Heat%20Exchanger%20View/Data%20Stream/Simulate%20Heat%20Exchanger%20Telemetry.xuc"
     image: "/assets/images/icons/DS.png"
-  - title: "SQL Scripts - UCoefficient"
+  - title: "SQL - UCoefficient"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Assets/Heat%20Exchanger%20View/SQL%20Scripts/%5BDemoHeatExchangerUCoefficient%5D.sql"
     image: "/assets/images/icons/sql.webp"
 ---

@@ -49,10 +49,10 @@ files:
   - title: "Data Stream - Gas Turbine Telemetry"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Blueprints/Energy%20-%20Gas%20Turbine%20Health/Data%20Stream/Gas%20Turbine%20Telemetry.xuc"
     image: "/assets/images/icons/DS.png"
-  - title: "SQL Demo - Gas Turbine"
+  - title: "SQL - Gas Turbine"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Blueprints/Energy%20-%20Gas%20Turbine%20Health/SQL%20Scripts/DemoGasTurbine.sql"
     image: "/assets/images/icons/sql.webp"
-  - title: "SQL Scripts - Work order etc"
+  - title: "SQL - Work order etc"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Blueprints/Energy%20-%20Gas%20Turbine%20Health/SQL%20Scripts/DemoWorkManagementCompressor.sql"
     image: "/assets/images/icons/sql.webp"
 
