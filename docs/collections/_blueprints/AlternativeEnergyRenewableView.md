@@ -156,6 +156,6 @@ Ensure the following variables are available to be used in the data stream:
   | Asset  View | Bottom Right |
   | Asset Drilldown | Center Left |
 
-- Save the Application
+- Save the application
 - Publish the application
 - Ensure there is data in the application and that the Unity model is receiving its data by hovering over and observing the values

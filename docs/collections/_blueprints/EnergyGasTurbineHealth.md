@@ -166,6 +166,6 @@ Ensure the following variables are available to be used in the data stream:
   | Site  View | Bottom Left |
   | Gas Turbine | Bottom Right |
 
-- Save the Application
+- Save the application
 - Publish the application
 - Ensure there is data in the application and that the Unity model is receiving its data by hovering over and observing the values

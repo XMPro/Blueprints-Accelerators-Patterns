@@ -118,6 +118,6 @@ Ensure the following variables are available to be used in the data stream:
   | ----------- | ----------- |
   | Landing Page | Center Right |
 
-- Save the Application
+- Save the application
 - Publish the application
 - Ensure there is data in the application by observing the values
