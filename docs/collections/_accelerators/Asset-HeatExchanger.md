@@ -40,7 +40,7 @@ files:
     image: "/assets/images/icons/DS.png"
   - title: "SQL Scripts - UCoefficient"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Assets/Heat%20Exchanger%20View/SQL%20Scripts/%5BDemoHeatExchangerUCoefficient%5D.sql"
-    image: "/assets/images/icons/SQL.webp"
+    image: "/assets/images/icons/sql.webp"
 ---
 
 ## Application

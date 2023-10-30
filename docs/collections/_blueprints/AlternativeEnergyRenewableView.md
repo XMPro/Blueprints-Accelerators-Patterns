@@ -45,10 +45,10 @@ files:
     image: "/assets/images/icons/DS.png"
   - title: "SQL Demo - Asset"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Blueprints/Alternative%20Energy%20-%20Renewable%20View/SQL%20Scripts/%5BDemoAlternativeEnergyAsset%5D.sql"
-    image: "/assets/images/icons/SQL.webp"
+    image: "/assets/images/icons/sql.webp"
   - title: "SQL Scripts - Work order etc"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Blueprints/Alternative%20Energy%20-%20Renewable%20View/SQL%20Scripts/%5BDemoWorkManagementWindTurbine%5D.sql"
-    image: "/assets/images/icons/SQL.webp"
+    image: "/assets/images/icons/sql.webp"
 
 ---
 
