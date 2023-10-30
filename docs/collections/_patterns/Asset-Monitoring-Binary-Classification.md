@@ -28,9 +28,9 @@ files:
   - title: "Data Stream - Binary Classification"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Asset%20Monitoring%20-%20Binary%20Classification/Asset%20Monitoring%20Binary%20Classification.xuc"
     image: "/assets/images/icons/DS.png"
-  - title: "SQL Demo - Smart Meter"
+  - title: "SQL - Smart Meter"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Asset%20Monitoring%20-%20Binary%20Classification/SQL%20Scripts/%5BDemoSmartMeter%5D.sql"
-    image: "/assets/images/icons/SQL.webp"
+    image: "/assets/images/icons/sql.webp"
 ---
 
 ## Data Stream

@@ -49,12 +49,12 @@ files:
   - title: "Data Stream - Gas Turbine Telemetry"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Blueprints/Energy%20-%20Gas%20Turbine%20Health/Data%20Stream/Gas%20Turbine%20Telemetry.xuc"
     image: "/assets/images/icons/DS.png"
-  - title: "SQL Demo - Gas Turbine"
+  - title: "SQL - Gas Turbine"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Blueprints/Energy%20-%20Gas%20Turbine%20Health/SQL%20Scripts/DemoGasTurbine.sql"
-    image: "/assets/images/icons/SQL.webp"
-  - title: "SQL Scripts - Work order etc"
+    image: "/assets/images/icons/sql.webp"
+  - title: "SQL - Work order etc"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Blueprints/Energy%20-%20Gas%20Turbine%20Health/SQL%20Scripts/DemoWorkManagementCompressor.sql"
-    image: "/assets/images/icons/SQL.webp"
+    image: "/assets/images/icons/sql.webp"
 
 ---
 
@@ -157,6 +157,7 @@ Ensure the following variables are available to be used in the data stream:
 
 - Assign Access to others as required
   {% include framework/shortcodes/image.html src="/assets/images/Blueprints/Energy/GasTurbineHealth/Application_Access.png" %}
+- Ensure the App Data connection properties are configured and valid
 - Edit the application to link the recommendations (Select *__Bearing Alerts__*, *__Motor Winding Temperature__*, *__Dry Gas Seal System__* in Block Properties under Behavior)
 
   | Page | Location | 
