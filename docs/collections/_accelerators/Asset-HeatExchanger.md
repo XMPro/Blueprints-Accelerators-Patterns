@@ -3,7 +3,7 @@ layout: project-top
 date: 2023-10-30
 title: "Asset - Heat Exchanger View"
 description: "<strong>Asset - Heat Exchanger View</strong>"
-extract: "A live-data application for a heat exchanger asset, displaying metrics, usage profile, operational safety intelligence, historical data and recommendations."
+extract: "A live-data application for a heat exchanger asset, displaying metrics, usage profile, operational safety intelligence, historical data, and recommendations."
 weight: 4
 thumbnail: "/assets/images/Accelerators/assets/heat-exchanger/Application.png"
 image: "/assets/images/Accelerators/assets/heat-exchanger/Application.png"
