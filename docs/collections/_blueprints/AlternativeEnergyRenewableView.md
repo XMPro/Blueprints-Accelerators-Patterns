@@ -147,6 +147,7 @@ Ensure the following variables are available to be used in the data stream:
 
 - Assign Access to others as required
   {% include framework/shortcodes/image.html src="/assets/images/Blueprints/AlternativeEnergy/RenewableView/Application_Access.png" %}
+- Ensure the App Data connection properties are configured and valid
 - Edit the application to link the recommendations (Select *__Oil__* in Block Properties under Behavior)
 
   | Page | Location | 

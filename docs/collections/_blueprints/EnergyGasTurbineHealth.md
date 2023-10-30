@@ -157,6 +157,7 @@ Ensure the following variables are available to be used in the data stream:
 
 - Assign Access to others as required
   {% include framework/shortcodes/image.html src="/assets/images/Blueprints/Energy/GasTurbineHealth/Application_Access.png" %}
+- Ensure the App Data connection properties are configured and valid
 - Edit the application to link the recommendations (Select *__Bearing Alerts__*, *__Motor Winding Temperature__*, *__Dry Gas Seal System__* in Block Properties under Behavior)
 
   | Page | Location | 
