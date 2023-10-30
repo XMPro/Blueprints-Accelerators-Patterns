@@ -30,7 +30,7 @@ files:
     image: "/assets/images/icons/DS.png"
   - title: "SQL Demo - Smart Meter"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Asset%20Monitoring%20-%20Binary%20Classification/SQL%20Scripts/%5BDemoSmartMeter%5D.sql"
-    image: "/assets/images/icons/SQL.webp"
+    image: "/assets/images/icons/sql.webp"
 ---
 
 ## Data Stream

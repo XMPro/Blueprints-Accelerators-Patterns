@@ -30,7 +30,7 @@ files:
     image: "/assets/images/icons/DS.png"
   - title: "SQL Demo - Crusher"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/Patterns/Machine%20Learning/Liner%20Wear%20Prediction%20-%20Regression/SQL%20Scripts/%5BDemoCrusher%5D.sql"
-    image: "/assets/images/icons/SQL.webp"
+    image: "/assets/images/icons/sql.webp"
 ---
 
 ## Data Stream
