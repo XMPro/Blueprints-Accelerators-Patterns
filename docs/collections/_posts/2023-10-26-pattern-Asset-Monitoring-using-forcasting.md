@@ -15,4 +15,4 @@ gallery:
     caption: "<strong>Above:</strong> Configured Data Stream"
 ---
 
-View more information and how to import by <strong>[Clicking Here](/patterns/Vertical-Travel-Forecasting/)</strong>
+View more information and how to import by <strong>[Clicking Here]({{ site.url }}/patterns/Vertical-Travel-Forecasting/)</strong>
