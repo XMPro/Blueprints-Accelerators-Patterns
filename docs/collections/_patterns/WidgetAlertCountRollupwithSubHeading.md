@@ -37,7 +37,7 @@ files:
 ---
 
 ## App Designer Widget
-This widget includes a heading and a subheading where you can enter the title and an additional description to provide further context for the title
+This widget includes a heading and a subheading where you can enter the title and an additional description to provide further context for the title.
 
 The Up and Down arrows are indicators and can be adjusted to dynamically show up and down or convert them into another shape in the block properties.
 

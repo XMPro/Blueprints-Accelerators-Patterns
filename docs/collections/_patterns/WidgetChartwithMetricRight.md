@@ -2,7 +2,7 @@
 layout: project-top
 title: "Chart with Metric"
 description: "<strong>Chart with Metric</strong>"
-extract: "This widget is structured with a title and a graphical chart positioned on the left side, while on the right side, there is another title paired with a corresponding numerical value"
+extract: "This widget is structured with a title and a graphical chart positioned on the left side, while on the right side, there is another title paired with a corresponding numerical value."
 weight: 4
 thumbnail: "/assets/images/Patterns/Widgets/ChartWithMetricRight/DarkTheme/ChartWithMetricRightPublishedMode.png"
 image: "/assets/images/Patterns/Widgets/ChartWithMetricRight/DarkTheme/ChartWithMetricRightPublishedMode.png"

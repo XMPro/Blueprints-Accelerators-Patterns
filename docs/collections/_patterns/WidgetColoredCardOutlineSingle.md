@@ -42,6 +42,6 @@ The widget is configured using:
 | [Text](https://documentation.xmpro.com/blocks-toolbox/basic/text) | To display the live data |
 
 <br />
-To make the most of this widget's functionality, you can easily integrate it with other widgets by dragging and dropping them into the designated *Blocks* or any layout elements of your choice.
+To make the most of this widget's functionality, you can easily integrate it with other widgets by dragging and dropping them into the designated blocks or any layout elements of your choice.
 <div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/ColoredCardOutlineSingle/DarkTheme/ColoredCardOutlineSingleDesignMode.png" %}</div>
 <div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/ColoredCardOutlineSingle/LightTheme/ColoredCardOutlineSingleDesignMode.png" %}</div>

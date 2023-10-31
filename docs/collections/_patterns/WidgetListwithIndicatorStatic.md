@@ -43,6 +43,6 @@ The widget is configured using:
 | [Text](https://documentation.xmpro.com/blocks-toolbox/basic/text) | To display the live data |
 
 <br />
-o employ and configure this widget, simply select the element you wish to modify, and then navigate to the *Block Properties* section where you can make the necessary adjustments. It's important to note that any values you enter will remain static and unchangeable while the system is running. Furthermore, you have the freedom to configure the appearance of each indicator to match your design preferences.
+To employ and configure this widget, simply select the element you wish to modify, and then navigate to the *__Block Properties__* section where you can make the necessary adjustments. It's important to note that any values you enter will remain static and unchangeable while the system is running. Furthermore, you have the freedom to configure the appearance of each indicator to match your design preferences.
 <div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticDesignMode.png" %}</div>
 <div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/ListwithIndicatorStatic/LightTheme/ListwithIndicatorStaticDesignMode.png" %}</div>

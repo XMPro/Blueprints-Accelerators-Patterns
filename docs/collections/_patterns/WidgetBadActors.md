@@ -21,14 +21,18 @@ gallery:
 gallery_limit: 2
 
 side_gallery:
+  - image: "/assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsPublishedMode.png"
+    caption: "<strong>Above:</strong> Published Mode - No Data"
   - image: "/assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsDesignMode.png"
     caption: "<strong>Above:</strong> Design Mode"
-  - image: "/assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsPublishedMode.png"
+  - image: "/assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsDataSource.png"
+    caption: "<strong>Above:</strong> Design Mode - Data Source"
+  - image: "/assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsPublishedMode.png"
     caption: "<strong>Above:</strong> Published Mode - No Data"
   - image: "/assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsDesignMode.png"
     caption: "<strong>Above:</strong> Design Mode"
-  - image: "/assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsPublishedMode.png"
-    caption: "<strong>Above:</strong> Published Mode - No Data"
+  - image: "/assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsDataSource.png"
+    caption: "<strong>Above:</strong> Design Mode - Data Source"
 
 files:
   - title: "Widget"
@@ -37,9 +41,7 @@ files:
 ---
 
 ## App Designer Widget
-This widget contains only a main heading and no sub heading to maximize the space it utilizes.
-
-The Up and Down arrows are indicators and can be adjusted to dynamically show up and down or convert them into another shape in the block properties.
+This widget comprises six (6) title-value components along with a heading. These title-value components serve as informative building blocks, offering quick access to key metrics. You also have the flexibility to include extra rows as per your preferences, should the need arise. To optimize the available space, this widget features a single primary heading without any additional subheadings. Also in the comparison section, this widget provides up and down arrows that serve as indicators. These arrows are highly configurable within the block properties, offering the flexibility to either maintain a consistent, static up-and-down appearance or morph into various other shapes to suit specific visual preferences and requirements that can typically driven from a data source.
 
 The widget is configured using: 
 
@@ -49,7 +51,7 @@ The widget is configured using:
 | [Text](https://documentation.xmpro.com/blocks-toolbox/basic/text) | To display the live data |
 
 <br />
-To set up this widget, you can click on each text element and assign values to them within the *Block Properties* section. Please ensure that you accurately set the values because once this widget is published, the data is static and cannot be altered.
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsDesignMode.png" %}</div>
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsDesignMode.png" %}</div>
+To configure and use the data source section, select the box named *__Data Source__* and configure its data source under *Block Properties*.  
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsDataSource.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsDataSource.png" %}</div>
 Make sure to change the fields within the box to get their values from the data source vs static.
