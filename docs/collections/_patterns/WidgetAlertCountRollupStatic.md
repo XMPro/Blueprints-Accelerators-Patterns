@@ -3,7 +3,7 @@ layout: project-top
 title: "Static Alert Count Rollup"
 description: "<strong>Static Alert Count Rollup</strong>"
 extract: "This widget is broken down into two sections, the left Total Assets is the total area and the right section past the vertical line is where you can get specific."
-weight: 3
+weight: 4
 thumbnail: "/assets/images/Patterns/Widgets/AlertCountRollupStatic/DarkTheme/AlertCountRollupStaticPublishedMode.png"
 image: "/assets/images/Patterns/Widgets/AlertCountRollupStatic/DarkTheme/AlertCountRollupStaticPublishedMode.png"
 categories: ["Widget", "Static"]

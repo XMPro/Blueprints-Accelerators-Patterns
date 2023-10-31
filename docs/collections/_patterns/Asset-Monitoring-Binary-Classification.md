@@ -3,7 +3,7 @@ layout: project-top
 title: "Asset Monitoring using binary classification"
 description: "<strong>Asset Monitoring using binary classification</strong>"
 extract: "Asset monitoring of smart meters through the use of a binary classification model on real-time data."
-weight: 2
+weight: 3
 thumbnail: "/assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream_Running_01.png"
 image: "/assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream_Running_01.png"
 categories: ["Asset Monitoring","Condition Monitoring","AI ML"]

@@ -3,7 +3,7 @@ layout: project-top
 title: "Styled Card Display"
 description: "<strong>Styled Card Display</strong>"
 extract: "This widget is designed with versatility in mind, offering two distinct formats for presenting information."
-weight: 3
+weight: 4
 thumbnail: "/assets/images/Patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayPublishedMode.png"
 image: "/assets/images/Patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayPublishedMode.png"
 categories: ["Widget", "Dynamic"]

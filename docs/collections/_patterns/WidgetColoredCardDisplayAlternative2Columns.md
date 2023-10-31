@@ -3,7 +3,7 @@ layout: project-top
 title: "Colored Card Display Alternative - 2 Columns"
 description: "<strong>Colored Card Display Alternative - 2 Columns</strong>"
 extract: "This widget consists of two columns featuring dynamic value pairs, and it also includes two columns with borders that can be selected or customized according to your preferences."
-weight: 3
+weight: 4
 thumbnail: "/assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/DarkTheme/ColoredCardDisplayAlternative2ColumnsPublishedMode.png"
 image: "/assets/images/Patterns/Widgets/ColoredCardDisplayAlternative2Columns/DarkTheme/ColoredCardDisplayAlternative2ColumnsPublishedMode.png"
 categories: ["Widget", "Dynamic"]

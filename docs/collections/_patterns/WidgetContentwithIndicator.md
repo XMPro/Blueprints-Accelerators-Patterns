@@ -3,7 +3,7 @@ layout: project-top
 title: "Content with Indicator"
 description: "<strong>Content with Indicator</strong>"
 extract: "This widget includes a main title, a subheading, an indicator, and more detailed content below."
-weight: 3
+weight: 4
 thumbnail: "/assets/images/Patterns/Widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorPublishedMode.png"
 image: "/assets/images/Patterns/Widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorPublishedMode.png"
 categories: ["Widget", "Static"]

@@ -3,7 +3,7 @@ layout: project-top
 title: "Colored Card Outline - Single"
 description: "<strong>Colored Card Outline - Single</strong>"
 extract: "This widget serves as a fundamental card outline, ideal for highlighting and presenting important information or adding an aesthetic touch to your content."
-weight: 3
+weight: 4
 thumbnail: "/assets/images/Patterns/Widgets/ColoredCardOutlineSingle/DarkTheme/ColoredCardOutlineSinglePublishedMode.png"
 image: "/assets/images/Patterns/Widgets/ColoredCardOutlineSingle/DarkTheme/ColoredCardOutlineSinglePublishedMode.png"
 categories: ["Widget", "Static"]

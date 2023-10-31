@@ -16,18 +16,11 @@ body_classes: page-projects
   </div>
 </div>
 
-
-{% assign cards = site.blueprints | sort: 'date' | reverse %}
+{% assign groups = site.blueprints | group_by: 'weight' | sort: 'weight' %}
 {% assign limit = page.blueprints.limit | default: 999 %}
-{% assign sort_by = page.blueprints.sort | default: 'date' %}
 {% assign columns =  page.blueprints.columns | default: 3 %}
 {% capture columns %}col-lg-{{ 12 | divided_by:columns }}{% endcapture %}
-{% if sort_by == 'weight' %}
-  {% assign cards = cards | sort: 'weight' %}
-{% endif %}
 
-{% assign cards = site.blueprints %}
-{% if cards.size > 0 %}
 <div class="section pt-0">
   <div class="container">
     <div class="row">
@@ -36,30 +29,24 @@ body_classes: page-projects
         heading=page.blueprints.heading 
         sub_heading=page.blueprints.sub_heading 
       %}
-     
-      {% for card in cards limit: limit %}
-      <div
-        class="col-12 col-md-6 {{ columns }} mb-gutter mt-gutter {% if forloop.first %}mt-0{% endif %} {% if forloop.last %}mb-0{% endif %} mt-md-0">
-        {% include theme/cards/card-project.html
-          title=card.title
-          description=card.description
-          thumbnail=card.thumbnail
-          categories=card.categories
-          date=card.date
-          url=card.url
-          client=card.client
-        %}
-      </div>
+
+      {% for group in groups %}
+        {% assign cards = group.items | sort: 'title' %}
+        {% for card in cards limit: limit %}
+        <div
+          class="col-12 col-md-6 {{ columns }} mb-gutter mt-gutter {% if forloop.first %}mt-0{% endif %} {% if forloop.last %}mb-0{% endif %} mt-md-0">
+          {% include theme/cards/card-project.html
+            title=card.title
+            description=card.description
+            thumbnail=card.thumbnail
+            categories=card.categories
+            date=card.date
+            url=card.url
+            client=card.client
+          %}
+        </div>
+        {% endfor %}
       {% endfor %}
-
-      {% include framework/blocks/components/grid-footer.html 
-        view_more_button_text=page.blueprints.view_more_button_text
-        view_more_button_link=page.blueprints.view_more_button_link
-        align="right"
-        icon="fa-arrow-right"
-      %}
-
     </div>
   </div>
 </div>
-{% endif %}

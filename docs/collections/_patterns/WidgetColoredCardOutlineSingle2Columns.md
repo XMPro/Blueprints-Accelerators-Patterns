@@ -3,7 +3,7 @@ layout: project-top
 title: "Colored Card Outline Single - 2 Columns"
 description: "<strong>Colored Card Outline Single - 2 Columns</strong>"
 extract: "This widget boasts a single border design, providing an efficient two-column layout for your value-pair content."
-weight: 3
+weight: 4
 thumbnail: "/assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/DarkTheme/ColoredCardOutlineSingle2ColumnsPublishedMode.png"
 image: "/assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/DarkTheme/ColoredCardOutlineSingle2ColumnsPublishedMode.png"
 categories: ["Widget", "Dynamic"]

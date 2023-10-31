@@ -3,7 +3,7 @@ layout: project-top
 title: "Colored Rounded Heading"
 description: "<strong>Colored Rounded Heading</strong>"
 extract: "This widget features an elegantly styled heading, providing a prominent platform to emphasize the title of your content."
-weight: 3
+weight: 4
 thumbnail: "/assets/images/Patterns/Widgets/ColoredRoundedHeading/DarkTheme/ColoredRoundedHeadingPublishedMode.png"
 image: "/assets/images/Patterns/Widgets/ColoredRoundedHeading/DarkTheme/ColoredRoundedHeadingPublishedMode.png"
 categories: ["Widget"]
