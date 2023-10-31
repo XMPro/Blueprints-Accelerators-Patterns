@@ -6,7 +6,7 @@ extract: "This widget serves as a versatile layout option, designed for seamless
 weight: 4
 thumbnail: "/assets/images/Patterns/Widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingPublishedMode.png"
 image: "/assets/images/Patterns/Widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingPublishedMode.png"
-categories: ["Widget", "Static"]
+categories: ["Widget", "Container"]
 contributor: "XMPro"
 role: "Pattern"
 import_password: Dem0nstr@t1on

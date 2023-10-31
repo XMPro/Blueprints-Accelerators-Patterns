@@ -6,7 +6,7 @@ extract: "This widget serves as a fundamental card outline, ideal for highlighti
 weight: 4
 thumbnail: "/assets/images/Patterns/Widgets/ColoredCardOutlineSingle/DarkTheme/ColoredCardOutlineSinglePublishedMode.png"
 image: "/assets/images/Patterns/Widgets/ColoredCardOutlineSingle/DarkTheme/ColoredCardOutlineSinglePublishedMode.png"
-categories: ["Widget", "Static"]
+categories: ["Widget", "Container"]
 contributor: "XMPro"
 role: "Pattern"
 import_password: Dem0nstr@t1on
