@@ -6,7 +6,7 @@ extract: "This widget features an elegantly styled heading, providing a prominen
 weight: 3
 thumbnail: "/assets/images/Patterns/Widgets/ColoredRoundedHeading/DarkTheme/ColoredRoundedHeadingPublishedMode.png"
 image: "/assets/images/Patterns/Widgets/ColoredRoundedHeading/DarkTheme/ColoredRoundedHeadingPublishedMode.png"
-categories: ["Widget"]
+categories: ["Widget", "Container"]
 contributor: "XMPro"
 role: "Pattern"
 import_password: Dem0nstr@t1on
