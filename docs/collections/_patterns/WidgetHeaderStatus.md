@@ -3,7 +3,7 @@ layout: project-top
 title: "Header Status"
 description: "<strong>Header Status</strong>"
 extract: "This widget offers two distinct states: Running and Not Running, serving as valuable indicators for the data or functionality integrated within the widget."
-weight: 3
+weight: 4
 thumbnail: "/assets/images/Patterns/Widgets/HeaderStatus/DarkTheme/HeaderStatusPublishedMode.png"
 image: "/assets/images/Patterns/Widgets/HeaderStatus/DarkTheme/HeaderStatusPublishedMode.png"
 categories: ["Widget", "Static"]

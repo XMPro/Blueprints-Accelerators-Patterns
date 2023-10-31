@@ -3,7 +3,7 @@ layout: project-top
 title: "List with Indicator - Dynamic"
 description: "<strong>List with Indicator - Dynamic</strong>"
 extract: "This widget possesses dynamic capabilities, allowing you to use a data source with it."
-weight: 3
+weight: 4
 thumbnail: "/assets/images/Patterns/Widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicPublishedMode.png"
 image: "/assets/images/Patterns/Widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicPublishedMode.png"
 categories: ["Widget", "Dynamic"]

@@ -3,7 +3,7 @@ layout: project-top
 title: "Asset Monitoring using forecasting"
 description: "<strong>Asset Monitoring using forecasting</strong>"
 extract: "Using crusher data to forecast vertical travel based on past values."
-weight: 2
+weight: 3
 thumbnail: "/assets/images/Patterns/Machine-Learning/Vertical-Travel-Forecasting/DataStream_Running_01.png"
 image: "/assets/images/Patterns/Machine-Learning/Vertical-Travel-Forecasting/DataStream_Running_01.png"
 categories: ["Asset Monitoring","Condition Monitoring","AI ML"]

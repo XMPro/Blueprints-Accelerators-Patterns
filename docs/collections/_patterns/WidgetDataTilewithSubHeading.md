@@ -3,7 +3,7 @@ layout: project-top
 title: "Data Tile with Sub Heading"
 description: "<strong>Data Tile with Sub Heading</strong>"
 extract: "Within this widget, you'll find both a heading and a subheading, complemented by a linear gauge and a value field."
-weight: 3
+weight: 4
 thumbnail: "/assets/images/Patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingPublishedMode.png"
 image: "/assets/images/Patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingPublishedMode.png"
 categories: ["Widget", "Static"]

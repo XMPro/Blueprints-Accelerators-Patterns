@@ -3,7 +3,7 @@ layout: project-top
 title: "Data Tile with Sub Heading - No Content Card"
 description: "<strong>Data Tile with Sub Heading - No Content Card</strong>"
 extract: "Within this widget, you'll find both a heading and a subheading, complemented by a linear gauge and a value field."
-weight: 3
+weight: 4
 thumbnail: "/assets/images/Patterns/Widgets/DataTilewithSubHeadingNoContentCard/DarkTheme/DataTilewithSubHeadingNoContentCardPublishedMode.png"
 image: "/assets/images/Patterns/Widgets/DataTilewithSubHeadingNoContentCard/DarkTheme/DataTilewithSubHeadingNoContentCardPublishedMode.png"
 categories: ["Widget", "Static"]

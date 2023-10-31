@@ -3,7 +3,7 @@ layout: project-top
 title: "Alert Count Rollup with Sub Heading"
 description: "<strong>Alert Count Rollup with Sub Heading</strong>"
 extract: "This widget includes a heading and a subheading where you can enter the title and an additional description to provide further context for the title."
-weight: 3
+weight: 4
 thumbnail: "/assets/images/Patterns/Widgets/AlertCountRollupwithSubHeading/DarkTheme/AlertCountRollupwithSubHeadingPublishedMode.png"
 image: "/assets/images/Patterns/Widgets/AlertCountRollupwithSubHeading/DarkTheme/AlertCountRollupwithSubHeadingPublishedMode.png"
 categories: ["Widget", "Static"]

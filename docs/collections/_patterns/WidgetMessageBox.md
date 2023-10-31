@@ -3,7 +3,7 @@ layout: project-top
 title: "Message Box"
 description: "<strong>Message Box</strong>"
 extract: "This widget incorporates a versatile text input field, providing users with the option to either manually enter text or load existing data into it."
-weight: 3
+weight: 4
 thumbnail: "/assets/images/Patterns/Widgets/MessageBox/DarkTheme/MessageBoxPublishedMode.png"
 image: "/assets/images/Patterns/Widgets/MessageBox/DarkTheme/MessageBoxPublishedMode.png"
 categories: ["Widget", "Static"]

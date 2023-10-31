@@ -3,7 +3,7 @@ layout: project-top
 title: "List with Indicator - Static"
 description: "<strong>List with Indicator - Static</strong>"
 extract: "This widget is structured with three distinct columns, each serving a specific purpose: the title column, the indicator column, and the data status column."
-weight: 3
+weight: 4
 thumbnail: "/assets/images/Patterns/Widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticPublishedMode.png"
 image: "/assets/images/Patterns/Widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticPublishedMode.png"
 categories: ["Widget", "Static"]

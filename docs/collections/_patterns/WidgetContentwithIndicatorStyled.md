@@ -3,7 +3,7 @@ layout: project-top
 title: "Content with Indicator Styled"
 description: "<strong>Content with Indicator Styled</strong>"
 extract: "This widget incorporates a unique design feature — an elegant vertical line positioned beneath the primary heading."
-weight: 3
+weight: 4
 thumbnail: "/assets/images/Patterns/Widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledPublishedMode.png"
 image: "/assets/images/Patterns/Widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledPublishedMode.png"
 categories: ["Widget", "Static"]

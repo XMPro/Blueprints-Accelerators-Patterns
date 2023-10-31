@@ -3,7 +3,7 @@ layout: project-top
 title: "Heading & Sub Heading"
 description: "<strong>Heading & Sub Heading</strong>"
 extract: "This widget serves as a versatile layout option, designed for seamless integration with other widgets and elements within your interface."
-weight: 3
+weight: 4
 thumbnail: "/assets/images/Patterns/Widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingPublishedMode.png"
 image: "/assets/images/Patterns/Widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingPublishedMode.png"
 categories: ["Widget", "Container"]

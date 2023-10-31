@@ -3,7 +3,7 @@ layout: project-top
 title: "Asset Monitoring using regression"
 description: "<strong>Asset Monitoring using regression</strong>"
 extract: "Using crusher data to predict the liner wear for a crusher asset."
-weight: 2
+weight: 3
 thumbnail: "/assets/images/Patterns/Machine-Learning/Liner-Wear-Prediction-Regression/DataStream_Running_01.png"
 image: "/assets/images/Patterns/Machine-Learning/Liner-Wear-Prediction-Regression/DataStream_Running_01.png"
 categories: ["Asset Monitoring","Condition Monitoring","AI ML"]

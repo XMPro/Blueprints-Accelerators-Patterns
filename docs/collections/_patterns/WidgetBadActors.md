@@ -3,7 +3,7 @@ layout: project-top
 title: "Bad Actors"
 description: "<strong>Bad Actors</strong>"
 extract: "This widget is comprises of six (6) title-value components along with a heading. These title-value components serve as informative building blocks, offering quick access to key metrics."
-weight: 3
+weight: 4
 thumbnail: "/assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsPublishedMode.png"
 image: "/assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsPublishedMode.png"
 categories: ["Widget", "Static"]

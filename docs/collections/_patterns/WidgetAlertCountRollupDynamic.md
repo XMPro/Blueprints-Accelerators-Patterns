@@ -3,7 +3,7 @@ layout: project-top
 title: "Dynamic Alert Count Rollup"
 description: "<strong>Dynamic Alert Count Rollup</strong>"
 extract: "This widget is broken down into two sections, the left Total Assets is the total area and the right section past the vertical line is where you can get specific. The right section will grow and shrink depending on the data source that is provided."
-weight: 3
+weight: 4
 thumbnail: "/assets/images/Patterns/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicPublishedMode.png"
 image: "/assets/images/Patterns/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicPublishedMode.png"
 categories: ["Widget", "Dynamic"]
