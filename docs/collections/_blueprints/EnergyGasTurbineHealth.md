@@ -1,5 +1,6 @@
 ---
 layout: project-top
+date: 2023-10-27
 title: "Energy - Gas Turbine Health"
 description: "<strong>Energy - Gas Turbine Health</strong>"
 extract: "A digital twin application offering real-time monitoring with live data and health scoring for gas turbine assets across multiple sites."

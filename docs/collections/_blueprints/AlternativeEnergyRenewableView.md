@@ -1,5 +1,6 @@
 ---
 layout: project-top
+date: 2023-10-27
 title: "Alternative Energy - Renewable View"
 description: "<strong>Alternative Energy - Renewable View</strong>"
 extract: "A digital twin application offering real-time monitoring of renewable energy assets, providing insights & optimizing operations for peak performance & sustainability."
