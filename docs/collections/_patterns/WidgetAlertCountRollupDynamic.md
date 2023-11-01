@@ -3,7 +3,7 @@ layout: project-top
 title: "Dynamic Alert Count Rollup"
 description: "<strong>Dynamic Alert Count Rollup</strong>"
 extract: "This widget is broken down into two sections, the left Total Assets is the total area and the right section past the vertical line is where you can get specific. The right section will grow and shrink depending on the data source that is provided."
-weight: 3
+weight: 4
 thumbnail: "/assets/images/Patterns/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicPublishedMode.png"
 image: "/assets/images/Patterns/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicPublishedMode.png"
 categories: ["Widget", "Dynamic"]
@@ -47,6 +47,7 @@ The widget is configured using:
 | -------------------------------------- | ------------------------------------------------------------ |
 | [Indicator](https://documentation.xmpro.com/blocks-toolbox/basic/indicator) | To visually indicate the active state of the assets |
 | [Text](https://documentation.xmpro.com/blocks-toolbox/basic/text) | To display the live data |
+| [Box](https://documentation.xmpro.com/blocks-toolbox/layout/box-and-data-repeater-box) | A Box is a simple block that allows you to add data or other elements inside it |
 
 <br />
 To configure and use the total section, select the box named *__Total Data Source__* and configure its data source under *Block Properties*.  

@@ -1,5 +1,6 @@
 ---
 layout: project-top
+date: 2023-10-27
 title: "Energy - Gas Turbine Health"
 description: "<strong>Energy - Gas Turbine Health</strong>"
 extract: "A digital twin application offering real-time monitoring with live data and health scoring for gas turbine assets across multiple sites."
@@ -49,10 +50,10 @@ files:
   - title: "Data Stream - Gas Turbine Telemetry"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Blueprints/Energy%20-%20Gas%20Turbine%20Health/Data%20Stream/Gas%20Turbine%20Telemetry.xuc"
     image: "/assets/images/icons/DS.png"
-  - title: "SQL Demo - Gas Turbine"
+  - title: "SQL - Gas Turbine"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Blueprints/Energy%20-%20Gas%20Turbine%20Health/SQL%20Scripts/DemoGasTurbine.sql"
     image: "/assets/images/icons/sql.webp"
-  - title: "SQL Scripts - Work order etc"
+  - title: "SQL - Work order etc"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Blueprints/Energy%20-%20Gas%20Turbine%20Health/SQL%20Scripts/DemoWorkManagementCompressor.sql"
     image: "/assets/images/icons/sql.webp"
 
@@ -166,6 +167,6 @@ Ensure the following variables are available to be used in the data stream:
   | Site  View | Bottom Left |
   | Gas Turbine | Bottom Right |
 
-- Save the Application
+- Save the application
 - Publish the application
 - Ensure there is data in the application and that the Unity model is receiving its data by hovering over and observing the values

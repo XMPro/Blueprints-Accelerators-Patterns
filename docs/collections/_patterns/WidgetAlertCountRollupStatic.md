@@ -3,7 +3,7 @@ layout: project-top
 title: "Static Alert Count Rollup"
 description: "<strong>Static Alert Count Rollup</strong>"
 extract: "This widget is broken down into two sections, the left Total Assets is the total area and the right section past the vertical line is where you can get specific."
-weight: 3
+weight: 4
 thumbnail: "/assets/images/Patterns/Widgets/AlertCountRollupStatic/DarkTheme/AlertCountRollupStaticPublishedMode.png"
 image: "/assets/images/Patterns/Widgets/AlertCountRollupStatic/DarkTheme/AlertCountRollupStaticPublishedMode.png"
 categories: ["Widget", "Static"]
@@ -51,6 +51,7 @@ The widget is configured using:
 | -------------------------------------- | ------------------------------------------------------------ |
 | [Indicator](https://documentation.xmpro.com/blocks-toolbox/basic/indicator) | To visually indicate the active state of the assets |
 | [Text](https://documentation.xmpro.com/blocks-toolbox/basic/text) | To display the live data |
+| [Box](https://documentation.xmpro.com/blocks-toolbox/layout/box-and-data-repeater-box) | A Box is a simple block that allows you to add data or other elements inside it |
 
 <br />
 To configure this widget select the box named *__Data Source__* and configure its data source under *Block Properties*.  

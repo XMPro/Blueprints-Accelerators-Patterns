@@ -1,5 +1,6 @@
 ---
 layout: project-top
+date: 2023-10-27
 title: "Alternative Energy - Renewable View"
 description: "<strong>Alternative Energy - Renewable View</strong>"
 extract: "A digital twin application offering real-time monitoring of renewable energy assets, providing insights & optimizing operations for peak performance & sustainability."
@@ -43,10 +44,10 @@ files:
   - title: "Data Stream - Renewable Con Mon"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Blueprints/Alternative%20Energy%20-%20Renewable%20View/Data%20Stream/Renewable%20Condition%20Monitoring.xuc"
     image: "/assets/images/icons/DS.png"
-  - title: "SQL Demo - Asset"
+  - title: "SQL - Asset"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Blueprints/Alternative%20Energy%20-%20Renewable%20View/SQL%20Scripts/%5BDemoAlternativeEnergyAsset%5D.sql"
     image: "/assets/images/icons/sql.webp"
-  - title: "SQL Scripts - Work order etc"
+  - title: "SQL - Work order etc"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Blueprints/Alternative%20Energy%20-%20Renewable%20View/SQL%20Scripts/%5BDemoWorkManagementWindTurbine%5D.sql"
     image: "/assets/images/icons/sql.webp"
 
@@ -156,6 +157,6 @@ Ensure the following variables are available to be used in the data stream:
   | Asset  View | Bottom Right |
   | Asset Drilldown | Center Left |
 
-- Save the Application
+- Save the application
 - Publish the application
 - Ensure there is data in the application and that the Unity model is receiving its data by hovering over and observing the values

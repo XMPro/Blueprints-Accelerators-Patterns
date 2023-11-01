@@ -3,7 +3,7 @@ layout: project-top
 date: 2023-10-30
 title: "Asset - Heat Exchanger View"
 description: "<strong>Asset - Heat Exchanger View</strong>"
-extract: "A live-data application for a heat exchanger asset, displaying metrics, usage profile, operational safety intelligence, historical data and recommendations."
+extract: "A live-data application for a heat exchanger asset, displaying metrics, usage profile, operational safety intelligence, historical data, and recommendations."
 weight: 4
 thumbnail: "/assets/images/Accelerators/assets/heat-exchanger/Application.png"
 image: "/assets/images/Accelerators/assets/heat-exchanger/Application.png"
@@ -38,7 +38,7 @@ files:
   - title: "Data Stream - Heat Exchanger Telemetry"
     link: "https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/Accelerators/Assets/Heat%20Exchanger%20View/Data%20Stream/Simulate%20Heat%20Exchanger%20Telemetry.xuc"
     image: "/assets/images/icons/DS.png"
-  - title: "SQL Scripts - UCoefficient"
+  - title: "SQL - UCoefficient"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/Assets/Heat%20Exchanger%20View/SQL%20Scripts/%5BDemoHeatExchangerUCoefficient%5D.sql"
     image: "/assets/images/icons/sql.webp"
 ---
@@ -118,6 +118,6 @@ Ensure the following variables are available to be used in the data stream:
   | ----------- | ----------- |
   | Landing Page | Center Right |
 
-- Save the Application
+- Save the application
 - Publish the application
 - Ensure there is data in the application by observing the values
