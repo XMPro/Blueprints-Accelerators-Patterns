@@ -16,7 +16,7 @@ body_classes: page-projects
   </div>
 </div>
 
-{% assign groups = site.accelerators | group_by: 'date' | sort: 'date' %}
+{% assign groups = site.accelerators | group_by: 'date' | sort: 'date' | reverse  %}
 {% assign limit = page.accelerators.limit | default: 999 %}
 {% assign columns =  page.accelerators.columns | default: 3 %}
 {% capture columns %}col-lg-{{ 12 | divided_by:columns }}{% endcapture %}

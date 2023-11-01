@@ -16,7 +16,7 @@ body_classes: page-projects
   </div>
 </div>
 
-{% assign groups = site.patterns | group_by: 'weight' | sort: 'weight' | reverse %} 
+{% assign groups = site.patterns | group_by: 'date' | sort: 'date' | reverse %} 
 {% assign limit = page.patterns.limit | default: 999 %}
 {% assign columns =  page.patterns.columns | default: 3 %}
 {% capture columns %}col-lg-{{ 12 | divided_by:columns }}{% endcapture %}
@@ -31,7 +31,7 @@ body_classes: page-projects
       %}
 
       {% for group in groups %}
-        {% assign cards = group.items | sort: 'title' %}
+        {% assign cards = group.items | sort: 'date' %}
         {% for card in cards limit: limit %}
         <div
           class="col-12 col-md-6 {{ columns }} mb-gutter mt-gutter {% if forloop.first %}mt-0{% endif %} {% if forloop.last %}mb-0{% endif %} mt-md-0">
