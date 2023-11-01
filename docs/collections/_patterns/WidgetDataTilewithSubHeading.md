@@ -37,7 +37,9 @@ files:
 ---
 
 ## App Designer Widget
-Within this widget, you'll find both a heading and a subheading, complemented by a linear gauge and a value field. The heading and subheading serve as informative titles, providing context and guidance for the content presented. Meanwhile, the linear gauge is a dynamic visual element that can represent various metrics, such as completion status, performance indicators, or any data-driven measurement.
+Within this widget, you'll find both a heading and a subheading, complemented by a linear gauge and a value field. 
+
+The heading and subheading serve as informative titles, providing context and guidance for the content presented. Meanwhile, the linear gauge is a dynamic visual element that can represent various metrics, such as completion status, performance indicators, or any data-driven measurement.
 
 The widget is configured using: 
 
@@ -45,9 +47,10 @@ The widget is configured using:
 | -------------------------------------- | ------------------------------------------------------------ |
 | [Linear Gauge](https://documentation.xmpro.com/blocks-toolbox/visualizations/linear-gauge) | To visually display a linear scale or gauge |
 | [Text](https://documentation.xmpro.com/blocks-toolbox/basic/text) | To display the live data |
+| [Box](https://documentation.xmpro.com/blocks-toolbox/layout/box-and-data-repeater-box) | A Box is a simple block that allows you to add data or other elements inside it |
 
 <br />
-To configure and use the total section, select the box named *__Total Data Source__* and configure its data source under *Block Properties*.  
+To configure and use the total section, select the box named *__Data Source__* and configure its data source under *Block Properties*.  
 <div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingDataSource.png" %}</div>
 <div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/DataTilewithSubHeading/LightTheme/DataTilewithSubHeadingDataSource.png" %}</div>
 Make sure to change the fields within the box to get their values from the data source vs static.

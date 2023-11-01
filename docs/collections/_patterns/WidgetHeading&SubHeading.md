@@ -33,13 +33,16 @@ files:
 ---
 
 ## App Designer Widget
-This widget serves as a versatile layout option, designed for seamless integration with other widgets and elements within your interface. Notably, it includes a prominent heading and a subheading, strategically employed to emphasize the content it encapsulates.
+This widget serves as a versatile layout option, designed for seamless integration with other widgets and elements within your interface. 
+
+Notably, it includes a prominent heading and a subheading, strategically employed to emphasize the content it encapsulates.
 
 The widget is configured using: 
 
 | Block                                  | Description                                                  |
 | -------------------------------------- | ------------------------------------------------------------ |
 | [Text](https://documentation.xmpro.com/blocks-toolbox/basic/text) | To display the live data |
+| [Box](https://documentation.xmpro.com/blocks-toolbox/layout/box-and-data-repeater-box) | A Box is a simple block that allows you to add data or other elements inside it |
 
 <br />
 To utilize this widget, you have the option to effortlessly drag and drop other widgets or elements into its designated space.

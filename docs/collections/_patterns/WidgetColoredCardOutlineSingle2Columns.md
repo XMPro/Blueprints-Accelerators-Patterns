@@ -37,16 +37,21 @@ files:
 ---
 
 ## App Designer Widget
-This widget boasts a single border design, providing an efficient two-column layout for your value-pair content. Its dynamic nature means that it seamlessly adapts to the data source you integrate with it, effortlessly generating the necessary content as you provide data. This flexibility ensures that your widget remains up-to-date and responsive to changes in your data source, making it a powerful tool for presenting and organizing information.
+This widget boasts a single border design, providing an efficient two-column layout for your value-pair content. 
+
+Its dynamic nature means that it seamlessly adapts to the data source you integrate with it, effortlessly generating the necessary content as you provide data. This flexibility ensures that your widget remains up-to-date and responsive to changes in your data source, making it a powerful tool for presenting and organizing information.
 
 The widget is configured using: 
 
 | Block                                  | Description                                                  |
 | -------------------------------------- | ------------------------------------------------------------ |
 | [Text](https://documentation.xmpro.com/blocks-toolbox/basic/text) | To display the live data |
+| [Box](https://documentation.xmpro.com/blocks-toolbox/layout/box-and-data-repeater-box) | A Box is a simple block that allows you to add data or other elements inside it |
 
 <br />
-To configure this widget select the *__Data Source__*, from there, you have the flexibility to choose your desired data source under the *Block Properties* and ensure that each field within the data source box is appropriately mapped to acquire its corresponding values. This configuration ensures that the elements within the widget are automatically generated, dynamically adjusting in response to the dataset's size and content. As your dataset expands or contracts, the widget intelligently adapts by automatically resizing and adjusting its height, ensuring a seamless presentation of your data.
+To configure this widget select the *__Data Source__*, from there, you have the flexibility to choose your desired data source under the *Block Properties* and ensure that each field within the data source box is appropriately mapped to acquire its corresponding values. 
+
+This configuration ensures that the elements within the widget are automatically generated, dynamically adjusting in response to the dataset's size and content. As your dataset expands or contracts, the widget intelligently adapts by automatically resizing and adjusting its height, ensuring a seamless presentation of your data.
 <div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/DarkTheme/ColoredCardOutlineSingle2ColumnsDataSource.png" %}</div>
 <div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/ColoredCardOutlineSingle2Columns/LightTheme/ColoredCardOutlineSingle2ColumnsDataSource.png" %}</div>
 Make sure to change the fields within the box to get their values from the data source vs static.

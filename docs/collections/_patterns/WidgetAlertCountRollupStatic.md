@@ -51,6 +51,7 @@ The widget is configured using:
 | -------------------------------------- | ------------------------------------------------------------ |
 | [Indicator](https://documentation.xmpro.com/blocks-toolbox/basic/indicator) | To visually indicate the active state of the assets |
 | [Text](https://documentation.xmpro.com/blocks-toolbox/basic/text) | To display the live data |
+| [Box](https://documentation.xmpro.com/blocks-toolbox/layout/box-and-data-repeater-box) | A Box is a simple block that allows you to add data or other elements inside it |
 
 <br />
 To configure this widget select the box named *__Data Source__* and configure its data source under *Block Properties*.  

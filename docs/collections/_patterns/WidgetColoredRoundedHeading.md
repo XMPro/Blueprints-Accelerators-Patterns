@@ -33,15 +33,20 @@ files:
 ---
 
 ## App Designer Widget
-This widget features an elegantly styled heading, providing a prominent platform to emphasize the title of your content. Its versatility is a standout feature, as it allows you to seamlessly incorporate additional widgets within it, giving you the freedom to configure and tailor its appearance to your liking. Whether you wish to enhance the content presentation, integrate elements, or apply specific design choices, this widget's flexibility empowers you to craft a tailored and engaging user experience.
+This widget features an elegantly styled heading, providing a prominent platform to emphasize the title of your content. 
+
+Its versatility is a standout feature, as it allows you to seamlessly incorporate additional widgets within it, giving you the freedom to configure and tailor its appearance to your liking. Whether you wish to enhance the content presentation, integrate elements, or apply specific design choices, this widget's flexibility empowers you to craft a tailored and engaging user experience.
 
 The widget is configured using:
 
 | Block                                  | Description                                                  |
 | -------------------------------------- | ------------------------------------------------------------ |
 | [Text](https://documentation.xmpro.com/blocks-toolbox/basic/text) | To display the live data |
+| [Box](https://documentation.xmpro.com/blocks-toolbox/layout/box-and-data-repeater-box) | A Box is a simple block that allows you to add data or other elements inside it |
 
 <br />
-To make the most of this widget's functionality, you can easily integrate it with other widgets by dragging and dropping them into the designated "Blocks" or any layout elements of your choice. This flexible approach allows you to create dynamic and feature-rich content by combining different widgets, enhancing the overall usability and visual appeal of your project. Feel free to experiment and configure your layout to suit your specific needs and creative preferences.
+To make the most of this widget's functionality, you can easily integrate it with other widgets by dragging and dropping them into the designated "Blocks" or any layout elements of your choice. 
+
+This flexible approach allows you to create dynamic and feature-rich content by combining different widgets, enhancing the overall usability and visual appeal of your project. Feel free to experiment and configure your layout to suit your specific needs and creative preferences.
 <div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/ColoredRoundedHeading/DarkTheme/ColoredRoundedHeadingDesignMode.png" %}</div>
 <div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/ColoredRoundedHeading/LightTheme/ColoredRoundedHeadingDesignMode.png" %}</div>

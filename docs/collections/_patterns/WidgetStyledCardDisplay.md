@@ -37,7 +37,9 @@ files:
 ---
 
 ## App Designer Widget
-This widget is designed with versatility in mind, offering two distinct formats for presenting information. It includes both a two-column title-value pair on the top row layout and a single-column title-value pair in the bottom arrangement. Notably, the rows within this widget feature an alternating color scheme, which can be tailored to your specific preferences and requirements. And to enhance the visual appeal and content emphasis, a prominent heading is also included.
+This widget is designed with versatility in mind, offering two distinct formats for presenting information. It includes both a two-column title-value pair on the top row layout and a single-column title-value pair in the bottom arrangement. 
+
+Notably, the rows within this widget feature an alternating color scheme, which can be tailored to your specific preferences and requirements. And to enhance the visual appeal and content emphasis, a prominent heading is also included.
 
 The widget is configured using: 
 
@@ -45,9 +47,10 @@ The widget is configured using:
 | -------------------------------------- | ------------------------------------------------------------ |
 | [Indicator](https://documentation.xmpro.com/blocks-toolbox/basic/indicator) | To visually indicate the active state of the assets |
 | [Text](https://documentation.xmpro.com/blocks-toolbox/basic/text) | To display the live data |
+| [Box](https://documentation.xmpro.com/blocks-toolbox/layout/box-and-data-repeater-box) | A Box is a simple block that allows you to add data or other elements inside it |
 
 <br />
-To configure and use the total section, select the box named *__Total Data Source__* and configure its data source under *Block Properties*.  
+To configure and use the total section, select the box named *__Data Source__* and configure its data source under *Block Properties*.  
 <div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayDataSource.png" %}</div>
 <div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/StyledCardDisplay/LightTheme/StyledCardDisplayDataSource.png" %}</div>
 Make sure to change the fields within the box to get their values from the data source vs static.

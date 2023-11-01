@@ -2,7 +2,7 @@
 layout: project-top
 title: "List with Indicator - Dynamic"
 description: "<strong>List with Indicator - Dynamic</strong>"
-extract: "This widget possesses dynamic capabilities, allowing you to use a data source with it."
+extract: "This widget possesses dynamic capabilities, allowing you to use a data source to control its content growth."
 weight: 4
 thumbnail: "/assets/images/Patterns/Widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicPublishedMode.png"
 image: "/assets/images/Patterns/Widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicPublishedMode.png"
@@ -37,7 +37,9 @@ files:
 ---
 
 ## App Designer Widget
-This widget possesses dynamic capabilities, allowing you to use a data source with it. Once you do so, it will automatically present the data with their corresponding values. Notably, the rows within the widget will adjust automatically in accordance with the data source you have loaded.
+This widget possesses dynamic capabilities, allowing you to use a data source to control its content growth, tt will automatically present the data with their corresponding values based on the data source. 
+
+Notably, the rows within the widget will adjust automatically in accordance with the data source you have loaded.
 
 The widget is configured using: 
 
@@ -45,9 +47,10 @@ The widget is configured using:
 | -------------------------------------- | ------------------------------------------------------------ |
 | [Indicator](https://documentation.xmpro.com/blocks-toolbox/basic/indicator) | To visually indicate the active state of the assets |
 | [Text](https://documentation.xmpro.com/blocks-toolbox/basic/text) | To display the live data |
+| [Box](https://documentation.xmpro.com/blocks-toolbox/layout/box-and-data-repeater-box) | A Box is a simple block that allows you to add data or other elements inside it |
 
 <br />
-To configure and use the total section, select the box named *__Total Data Source__* and configure its data source under *Block Properties*.  
+To configure and use the total section, select the box named *__Data Source__* and configure its data source under *Block Properties*.  
 <div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicDataSource.png" %}</div>
 <div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/ListwithIndicatorDynamic/LightTheme/ListwithIndicatorDynamicDataSource.png" %}</div>
 Make sure to change the fields within the box to get their values from the data source vs static.

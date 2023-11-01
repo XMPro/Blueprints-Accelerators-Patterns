@@ -41,7 +41,11 @@ files:
 ---
 
 ## App Designer Widget
-This widget comprises six (6) title-value components along with a heading. These title-value components serve as informative building blocks, offering quick access to key metrics. You also have the flexibility to include extra rows as per your preferences, should the need arise. To optimize the available space, this widget features a single primary heading without any additional subheadings. Also in the comparison section, this widget provides up and down arrows that serve as indicators. These arrows are highly configurable within the block properties, offering the flexibility to either maintain a consistent, static up-and-down appearance or morph into various other shapes to suit specific visual preferences and requirements that can typically driven from a data source.
+This widget comprises six (6) title-value components along with a heading. These title-value components serve as informative building blocks, offering quick access to key metrics. You also have the flexibility to include extra rows as per your preferences, should the need arise. 
+
+To optimize the available space, this widget features a single primary heading without any additional subheadings. In the comparison section, this widget provides up and down arrows that serve as indicators. 
+
+These arrows are highly configurable within the block properties, offering the flexibility to either maintain a consistent, static up-and-down appearance or morph into various other shapes to suit specific visual preferences and requirements that can typically driven from a data source.
 
 The widget is configured using: 
 
@@ -49,6 +53,7 @@ The widget is configured using:
 | -------------------------------------- | ------------------------------------------------------------ |
 | [Indicator](https://documentation.xmpro.com/blocks-toolbox/basic/indicator) | To visually indicate the active state of the assets |
 | [Text](https://documentation.xmpro.com/blocks-toolbox/basic/text) | To display the live data |
+| [Box](https://documentation.xmpro.com/blocks-toolbox/layout/box-and-data-repeater-box) | A Box is a simple block that allows you to add data or other elements inside it |
 
 <br />
 To configure and use the data source section, select the box named *__Data Source__* and configure its data source under *Block Properties*.  

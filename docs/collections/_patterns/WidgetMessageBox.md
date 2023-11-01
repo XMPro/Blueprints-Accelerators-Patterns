@@ -45,9 +45,12 @@ The widget is configured using:
 | -------------------------------------- | ------------------------------------------------------------ |
 | [Button](https://documentation.xmpro.com/blocks-toolbox/basic/button) | To trigger an event |
 | [Text](https://documentation.xmpro.com/blocks-toolbox/basic/text) | To display the live data |
+| [Box](https://documentation.xmpro.com/blocks-toolbox/layout/box-and-data-repeater-box) | A Box is a simple block that allows you to add data or other elements inside it |
 
 <br />
-To configure and use the total section, select the box named *__Total Data Source__* and configure its data source under *Block Properties*. Additionally, you have the flexibility to tailor the behavior and action of the button to your preferences. Configure it to perform specific actions that align with your intended functionality.  
+To configure and use the total section, select the box named *__Data Source__* and configure its data source under *Block Properties*. 
+
+Additionally, you have the flexibility to tailor the behavior and action of the button to your preferences. Configure it to perform specific actions that align with your intended functionality.  
 <div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/MessageBox/DarkTheme/MessageBoxDataSource.png" %}</div>
 <div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/MessageBox/LightTheme/MessageBoxDataSource.png" %}</div>
 Make sure to change the fields within the box to get their values from the data source vs static.

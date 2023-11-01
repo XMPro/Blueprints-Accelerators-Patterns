@@ -37,17 +37,21 @@ files:
 ---
 
 ## App Designer Widget
-This widget offers two distinct states: "Running" and "Not Running," serving as valuable indicators for the data or functionality integrated within the widget. Furthermore, the elements within this widget are highly configurable, allowing you to tailor them precisely to your requirements.
+This widget offers two distinct states: "Running" and "Not Running," serving as valuable indicators for the data or functionality integrated within the widget. 
+
+Furthermore, the elements within this widget are highly configurable, allowing you to tailor them precisely to your requirements.
 
 The widget is configured using: 
 
 | Block                                  | Description                                                  |
 | -------------------------------------- | ------------------------------------------------------------ |
-| [Indicator](https://documentation.xmpro.com/blocks-toolbox/basic/indicator) | To visually indicate the active state of the assets |
 | [Text](https://documentation.xmpro.com/blocks-toolbox/basic/text) | To display the live data |
+| [Box](https://documentation.xmpro.com/blocks-toolbox/layout/box-and-data-repeater-box) | A Box is a simple block that allows you to add data or other elements inside it |
 
 <br />
-To configure and use the total section, select the box named *__Data Source__* and configure its data source under *Block Properties*. What this widget fulfill is it utilizes the data source to determine which visual indicators to display. You can choose whether to display the "Not Running" or the "Running" indicator by manipulating the visible flag under *Block Properties*. You have the flexibility to decide whether to use a parameter, the data source itself, or even a dynamic expression to determine the visibility of these indicators.
+To configure and use the total section, select the box named *__Data Source__* and configure its data source under *Block Properties*. This widget utilizes the data source to determine which visual indicators to display. You can choose whether to display the "Not Running" or the "Running" indicator by manipulating the visible flag under *Block Properties*. 
+
+You have the flexibility to decide whether to use a parameter, the data source itself, or even a dynamic expression to determine the visibility of these indicators.
 <div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/HeaderStatus/DarkTheme/HeaderStatusDataSource.png" %}</div>
 <div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/HeaderStatus/LightTheme/HeaderStatusDataSource.png" %}</div>
 Make sure to change the fields within the box to get their values from the data source vs static.

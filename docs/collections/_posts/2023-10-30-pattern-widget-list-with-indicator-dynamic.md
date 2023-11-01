@@ -3,7 +3,7 @@ layout: post
 title: "List with Indicator - Dynamic"
 date: 2023-10-30
 categories: ["Widget", "Dynamic"]
-description: "This widget possesses dynamic capabilities, allowing you to use a data source with it."
+description: "This widget possesses dynamic capabilities, allowing you to use a data source to control its content growth."
 contributor: "XMPro"
 role: "Pattern"
 thumbnail: "/assets/images/Patterns/Widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicPublishedMode.png"

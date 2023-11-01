@@ -37,7 +37,11 @@ files:
 ---
 
 ## App Designer Widget
-This widget comprises two primary components: the description and the circular gauge. The "description" provides textual information or context, typically explaining the data or the purpose of the gauge. The circular gauge serves as a visual representation of data or a measurement. It is a circular graphical element that can display information in a dynamic and easily interpretable manner, such as a progress indicator, a speedometer, or any other data visualization that can be represented in a circular format.
+This widget comprises two primary components: the description and the circular gauge. 
+
+The "description" provides textual information or context, typically explaining the data or the purpose of the gauge. 
+
+The circular gauge serves as a visual representation of data or a measurement. It is a circular graphical element that can display information in a dynamic and easily interpretable manner, such as a progress indicator, a speedometer, or any other data visualization that can be represented in a circular format.
 
 The widget is configured using: 
 
@@ -45,6 +49,7 @@ The widget is configured using:
 | -------------------------------------- | ------------------------------------------------------------ |
 | [Circular Gauge](https://documentation.xmpro.com/blocks-toolbox/visualizations/circular-gauge) | To visually display a linear scale or gauge |
 | [Text](https://documentation.xmpro.com/blocks-toolbox/basic/text) | To display the live data |
+| [Box](https://documentation.xmpro.com/blocks-toolbox/layout/box-and-data-repeater-box) | A Box is a simple block that allows you to add data or other elements inside it |
 
 <br />
 To configure and use the total section, select the box named *__Data Source__* and configure its data source under *Block Properties*. Within the same property section, you can also configure the circular gauge's behavior, value, range, and appearance to suit your specific needs.
