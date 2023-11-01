@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Heading & Sub Heading"
+title: "Heading and Sub Heading"
 date: 2023-10-30
 categories: ["Widget", "Static"]
 description: "This widget serves as a versatile layout option, designed for seamless integration with other widgets and elements within your interface."
