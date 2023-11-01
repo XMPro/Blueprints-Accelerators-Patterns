@@ -4,8 +4,8 @@ title: "Gauge Style - No Heading"
 description: "<strong>Gauge Style - No Heading</strong>"
 extract: "This widget comprises two primary components: the description and the circular gauge. The description provides textual information or context, typically explaining the data or the purpose of the gauge."
 weight: 4
-thumbnail: "/assets/images/Patterns/Widgets/GaugeStylenoHeading/DarkTheme/GaugeStyleNoHeadingPublishedMode.png"
-image: "/assets/images/Patterns/Widgets/GaugeStylenoHeading/DarkTheme/GaugeStyleNoHeadingPublishedMode.png"
+thumbnail: "/assets/images/Patterns/Widgets/GaugeStylenoHeading/DarkTheme/GaugeStylenoHeadingPublishedMode.png"
+image: "/assets/images/Patterns/Widgets/GaugeStylenoHeading/DarkTheme/GaugeStylenoHeadingPublishedMode.png"
 categories: ["Widget", "Static"]
 contributor: "XMPro"
 role: "Pattern"
