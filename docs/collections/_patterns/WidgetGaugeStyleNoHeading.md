@@ -14,20 +14,20 @@ toc: false
 toc_label: 
 
 gallery:
-  - image: "/assets/images/Patterns/Widgets/GaugeStyleNoHeading/DarkTheme/GaugeStyleNoHeadingPublishedMode.png"
+  - image: "/assets/images/Patterns/Widgets/GaugeStylenoHeading/DarkTheme/GaugeStylenoHeadingPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Dark Theme"
-  - image: "/assets/images/Patterns/Widgets/GaugeStyleNoHeading/LightTheme/GaugeStyleNoHeadingPublishedMode.png"
+  - image: "/assets/images/Patterns/Widgets/GaugeStylenoHeading/LightTheme/GaugeStylenoHeadingPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Light Theme"
 gallery_limit: 2
 
 side_gallery:
-  - image: "/assets/images/Patterns/Widgets/GaugeStyleNoHeading/DarkTheme/GaugeStyleNoHeadingDesignMode.png"
+  - image: "/assets/images/Patterns/Widgets/GaugeStylenoHeading/DarkTheme/GaugeStylenoHeadingDesignMode.png"
     caption: "<strong>Above:</strong> Design Mode"
-  - image: "/assets/images/Patterns/Widgets/GaugeStyleNoHeading/DarkTheme/GaugeStyleNoHeadingDataSource.png"
+  - image: "/assets/images/Patterns/Widgets/GaugeStylenoHeading/DarkTheme/GaugeStylenoHeadingDataSource.png"
     caption: "<strong>Above:</strong> Design Mode - Data Source"
-  - image: "/assets/images/Patterns/Widgets/GaugeStyleNoHeading/LightTheme/GaugeStyleNoHeadingDesignMode.png"
+  - image: "/assets/images/Patterns/Widgets/GaugeStylenoHeading/LightTheme/GaugeStylenoHeadingDesignMode.png"
     caption: "<strong>Above:</strong> Design Mode"
-  - image: "/assets/images/Patterns/Widgets/GaugeStyleNoHeading/LightTheme/GaugeStyleNoHeadingDataSource.png"
+  - image: "/assets/images/Patterns/Widgets/GaugeStylenoHeading/LightTheme/GaugeStylenoHeadingDataSource.png"
     caption: "<strong>Above:</strong> Design Mode - Data Source"
 
 files:
@@ -53,6 +53,6 @@ The widget is configured using:
 
 <br />
 To configure and use the total section, select the box named *__Data Source__* and configure its data source under *Block Properties*. Within the same property section, you can also configure the circular gauge's behavior, value, range, and appearance to suit your specific needs.
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/GaugeStyleNoHeading/DarkTheme/GaugeStyleNoHeadingDataSource.png" %}</div>
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/GaugeStyleNoHeading/LightTheme/GaugeStyleNoHeadingDataSource.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/GaugeStylenoHeading/DarkTheme/GaugeStylenoHeadingDataSource.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/GaugeStylenoHeading/LightTheme/GaugeStylenoHeadingDataSource.png" %}</div>
 Make sure to change the fields within the box to get their values from the data source vs static.
