@@ -39,5 +39,3 @@ The XMPro Notebook is a versatile capability that enables you to:
 - Unveil insights using interactive data visualization
 - Conduct in-depth statistical analysis for robust understanding
 - Create and deploy models for seamless XMPro integration or simulation
-
-<iframe src="https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/AI/XMPro%20Quick%20Guide/Quick%20Guide%20-%20XMPro%20AI.ipynb" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
