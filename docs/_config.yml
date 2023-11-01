@@ -12,21 +12,6 @@ breadcrumbs: true # true, false (default)
 plugins:
   - jekyll-environment-variables
   - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
-  - jekyll-seo-tag
-
-# mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-environment-variables
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
-  - jekyll-seo-tag
 
 paginate: 6
 paginate_path: "/blog/page/:num"
