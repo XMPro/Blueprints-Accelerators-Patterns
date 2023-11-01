@@ -30,7 +30,7 @@ files:
     link: "https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/Accelerators/General/Use%20Case%20Canvas/Application/Use%20Case%20Canvas%20Template.xapp"
     image: "/assets/images/icons/AD.png"
   - title: "Application Template"
-    link: "https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/Accelerators/General/Use%20Case%20Canvas/Application/Use%20Case%20Canvas%20Template.xtml"
+    link: "https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/Accelerators/General/Use%20Case%20Canvas/Template/Use%20Case%20Canvas%20Template.xtml"
     image: "/assets/images/icons/AD.png"    
 ---
 
