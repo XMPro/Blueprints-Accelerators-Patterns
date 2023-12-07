@@ -34,7 +34,7 @@ files:
 
 The purpose of this data stream is to use the triggered recommendations to assign a color to be used by the app for a visual indicator on the status.  
 
-> The assumpion made is that the recommendations are being triggered using an EntityId of <strong>AssetNo</strong> which is used in the stream loaded from a Context Provider.
+> The assumption made is that the recommendations are being triggered using an EntityId of <strong>AssetNo</strong> which is used in the stream loaded from a Context Provider.
 
 | Agent                                  | Description                                                  |
 | -------------------------------------- | ------------------------------------------------------------ |
