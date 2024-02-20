@@ -3,10 +3,10 @@ layout: project-top
 date: 2023-12-22
 title: "Digital Cities - Water Utilities"
 description: "<strong>Digital Cities - Water Utilities</strong>"
-extract: "This app employs a leveled approach to monitoring and optimization. It begins with a comprehensive overview of the city's water infrastructure, including flood prediction analytics. The focus then shifts to individual pump stations, integrating efficiency monitoring at each site. The app drills down to detailed insights into the performance of each pump, ensuring a thorough and efficient management of the city's water systems."
+extract: "A digital twin application employing a leveled approach to monitoring and optimization. A comprehensive overview of the city's water infrastructure, including flood prediction analytics. The focus then shifts to individual pump stations, integrating efficiency monitoring at each site. The app drills down to detailed insights into the performance of each pump, ensuring thorough and efficient management of the city's water systems."
 weight: 2
-thumbnail: "/assets/images/Blueprints/Digital Cities - Water Utilities/Application_02b.png"
-image: "/assets/images/Blueprints/Digital Cities - Water Utilities/Application_02b.png"
+thumbnail: "/assets/images/Blueprints/DigitalCities/WaterUtilities/Application_02b.png"
+image: "/assets/images/Blueprints/DigitalCities/WaterUtilities/Application_02b.png"
 categories: ["AI ML", "Digital Cities", "Dark Theme", "Asset Monitoring", "Condition Monitoring", "Unity", "Recommendations"]
 contributor: "XMPro"
 role: "Blueprint"
@@ -15,45 +15,43 @@ toc: true
 toc_label: "Table of Contents"
 
 gallery:
-  - image: "/assets/images/Blueprints/Digital Cities - Water Utilities/Application_02b.png"
+  - image: "/assets/images/Blueprints/DigitalCities/WaterUtilities/Application_02b.png"
     caption: "<strong>Above:</strong> Application View"
-  - image: "/assets/images/Blueprints/Digital Cities - Water Utilities/DataStream_01.png"
+  - image: "/assets/images/Blueprints/DigitalCities/WaterUtilities/DataStream_01.png"
     caption: "<strong>Above:</strong> Published Data Stream"
 gallery_limit: 2
 
 side_gallery:
-  - image: "/assets/images/Blueprints/Digital Cities - Water Utilities/Application_01.png"
+  - image: "/assets/images/Blueprints/DigitalCities/WaterUtilities/Application_01.png"
     caption: "<strong>Above:</strong> Application View 01"
-  - image: "/assets/images/Blueprints/Digital Cities - Water Utilities/Application_02a.png"
+  - image: "/assets/images/Blueprints/DigitalCities/WaterUtilities/Application_02a.png"
     caption: "<strong>Above:</strong> Application View 02a"
-  - image: "/assets/images/Blueprints/Digital Cities - Water Utilities/Application_02b.png"
+  - image: "/assets/images/Blueprints/DigitalCities/WaterUtilities/Application_02b.png"
     caption: "<strong>Above:</strong> Application View 02b"
-  - image: "/assets/images/Blueprints/Digital Cities - Water Utilities/Application_03a.png"
+  - image: "/assets/images/Blueprints/DigitalCities/WaterUtilities/Application_03a.png"
     caption: "<strong>Above:</strong> Application View 03a Upper"
-  - image: "/assets/images/Blueprints/Digital Cities - Water Utilities/Application_03a_lower.png"
+  - image: "/assets/images/Blueprints/DigitalCities/WaterUtilities/Application_03a_lower.png"
     caption: "<strong>Above:</strong> Application View 03a Lower"
-  - image: "/assets/images/Blueprints/Digital Cities - Water Utilities/Application_03b.png"
+  - image: "/assets/images/Blueprints/DigitalCities/WaterUtilities/Application_03b.png"
     caption: "<strong>Above:</strong> Application View 03b"
-  - image: "/assets/images/Blueprints/Digital Cities - Water Utilities/DataStream_01.png"
+  - image: "/assets/images/Blueprints/DigitalCities/WaterUtilities/DataStream_01.png"
     caption: "<strong>Above:</strong> Published Data Stream - Flood Prediction"
-  - image: "/assets/images/Blueprints/Digital Cities - Water Utilities/DataStream_02.png"
+  - image: "/assets/images/Blueprints/DigitalCities/WaterUtilities/DataStream_02.png"
     caption: "<strong>Above:</strong> Published Data Stream - Overview"
-  - image: "/assets/images/Blueprints/Digital Cities - Water Utilities/DataStream_03.png"
+  - image: "/assets/images/Blueprints/DigitalCities/WaterUtilities/DataStream_03.png"
     caption: "<strong>Above:</strong> Published Data Stream - Pump"
-  - image: "/assets/images/Blueprints/Digital Cities - Water Utilities/DataStream_04.png"
+  - image: "/assets/images/Blueprints/DigitalCities/WaterUtilities/DataStream_04.png"
     caption: "<strong>Above:</strong> Published Data Stream - Pump Efficiency"
-  - image: "/assets/images/Blueprints/Digital Cities - Water Utilities/DataStream_05.png"
+  - image: "/assets/images/Blueprints/DigitalCities/WaterUtilities/DataStream_05.png"
     caption: "<strong>Above:</strong> Published Data Stream - Station Assets"
-  - image: "/assets/images/Blueprints/Digital Cities - Water Utilities/DataStream_06.png"
+  - image: "/assets/images/Blueprints/DigitalCities/WaterUtilities/DataStream_06.png"
     caption: "<strong>Above:</strong> Published Data Stream - Pumps"
-  - image: "/assets/images/Blueprints/Digital Cities - Water Utilities/DataStream_07.png"
+  - image: "/assets/images/Blueprints/DigitalCities/WaterUtilities/DataStream_07.png"
     caption: "<strong>Above:</strong> Published Data Stream - Pumps Unity"
-  - image: "/assets/images/Blueprints/Digital Cities - Water Utilities/DataStream_08.png"
+  - image: "/assets/images/Blueprints/DigitalCities/WaterUtilities/DataStream_08.png"
     caption: "<strong>Above:</strong> Published Data Stream - Pump Unity"
   
-
 files:
-
   - title: "Maintenance History"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Blueprints/Digital%20Cities%20-%20Water%20Utilities/SQL/DemoMaintenaceHistory.sql"
     image: "/assets/images/icons/SQL.png"
@@ -100,71 +98,65 @@ files:
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Blueprints/Digital%20Cities%20-%20Water%20Utilities/Data%20Stream/%5B8%5D%20Pumps.xuc"
     image: "/assets/images/icons/DS.png"
 
-
 ---
 
 ## Application
 Three level of a digital city water utilities. Starting with an overview where the live data and status of reservoirs, pump station and treatment plants can be viewed in whole on an interactive map. Flood prediction is actively displayed for the whole area. The next level is the facility level, specifically a pump station for this demonstration, which focuses on aggregate asset performance and energy efficiency. Finally a drilldown of the pump assets for a refined condition monitoring insights and preventative actions. The application is configured using: 
 
-
 ### 1.0 Landing Page
 
-| Block                                                                                             | Description                                                |
-| ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
-| [D3](https://documentation.xmpro.com/blocks-toolbox/visualizations/d3-visualization)              | A visualization for interactive facilities on a map        |
-| [Circular Gauge](https://documentation.xmpro.com/blocks-toolbox/visualizations/circular-gauge)    | Display the flood prediction status                        |
-| [Recommendations](https://documentation.xmpro.com/blocks-toolbox/recommendations/recommendations) | View current open recommendations for *__all__* items      |
-| [Indicator](https://documentation.xmpro.com/blocks-toolbox/basic/indicator)                       | Indicate the rate of change for live data                  |
-| [Image](https://documentation.xmpro.com/blocks-toolbox/basic/indicator)                           | Showing the weather icons for the forecast                 |
-| [Select Box](https://documentation.xmpro.com/blocks-toolbox/basic/select-box)                     | Select a facility                                          |
-
+| Block                                  | Description                                                  |
+| -------------------------------------- | ------------------------------------------------------------ |
+| [D3](https://documentation.xmpro.com/blocks-toolbox/visualizations/d3-visualization) | A visualization for interactive facilities on a map |
+| [Circular Gauge](https://documentation.xmpro.com/blocks-toolbox/visualizations/circular-gauge) | Display the flood prediction status |
+| [Recommendations](https://documentation.xmpro.com/blocks-toolbox/recommendations/recommendations) | View current open recommendations for *__all__* items |
+| [Indicator](https://documentation.xmpro.com/blocks-toolbox/basic/indicator) | Indicate the rate of change for live data |
+| [Image](https://documentation.xmpro.com/blocks-toolbox/basic/indicator) | Showing the weather icons for the forecast |
+| [Select Box](https://documentation.xmpro.com/blocks-toolbox/basic/select-box) | Select a facility |
 
 ### 2.0 Pump Station Overview
 
-| Block                                                                                             | Description                                            |
-| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
-| [Circular Gauge](https://documentation.xmpro.com/blocks-toolbox/visualizations/circular-gauge)    | Display the energy consumption percentage              |
-| [Indicator](https://documentation.xmpro.com/blocks-toolbox/basic/indicator)                       | Indicate the rate of change for live data              |
-| [Image Map](https://documentation.xmpro.com/blocks-toolbox/visualizations/image-map)              | View the plant schematic and live data                 |
-| [Radio Buttons](https://documentation.xmpro.com/blocks-toolbox/basic/radio-buttons)               | Toggle between 2D and 3D views                         |
-| [Unity](https://documentation.xmpro.com/blocks-toolbox/visualizations/unity)                      | Visualize the 3D unity model                           |
-| [D3](https://documentation.xmpro.com/blocks-toolbox/visualizations/d3-visualization)              | Live camera view                                       |
-| [Recommendations](https://documentation.xmpro.com/blocks-toolbox/recommendations/recommendations) | To view current open recommendations for the plant     |
-
-
+| Block                                  | Description                                                  |
+| -------------------------------------- | ------------------------------------------------------------ |
+| [Circular Gauge](https://documentation.xmpro.com/blocks-toolbox/visualizations/circular-gauge) | Display the energy consumption percentage |
+| [Indicator](https://documentation.xmpro.com/blocks-toolbox/basic/indicator) | Indicate the rate of change for live data |
+| [Image Map](https://documentation.xmpro.com/blocks-toolbox/visualizations/image-map) | View the plant schematic and live data |
+| [Radio Buttons](https://documentation.xmpro.com/blocks-toolbox/basic/radio-buttons) | Toggle between 2D and 3D views |
+| [Unity](https://documentation.xmpro.com/blocks-toolbox/visualizations/unity) | Visualize the 3D unity model |
+| [D3](https://documentation.xmpro.com/blocks-toolbox/visualizations/d3-visualization) | Live camera view |
+| [Recommendations](https://documentation.xmpro.com/blocks-toolbox/recommendations/recommendations) | To view current open recommendations for the plant |
 
 ### 3.0 Pump Drilldown
 
-| Block                                                                                             | Description                                            |
-| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
-| [Chart](https://documentation.xmpro.com/blocks-toolbox/visualizations/chart)                      | To display the live operational data                   |
-| [Indicator](https://documentation.xmpro.com/blocks-toolbox/basic/indicator)                       | Indicate the rate of change for live data              |
-| [Button](https://documentation.xmpro.com/blocks-toolbox/actions/button)                           | Display running status                                 |
-| [Unity](https://documentation.xmpro.com/blocks-toolbox/visualizations/unity)                      | Visualize the 3D unity model                           |
-| [D3](https://documentation.xmpro.com/blocks-toolbox/visualizations/d3-visualization)              | Live camera view                                       |
-| [D3](https://documentation.xmpro.com/blocks-toolbox/visualizations/d3-visualization)              | XMPro Co-pilot                                         |
-| [Recommendations](https://documentation.xmpro.com/blocks-toolbox/recommendations/recommendations) | To view current open recommendations for the pump      |
-
+| Block                                  | Description                                                  |
+| -------------------------------------- | ------------------------------------------------------------ |
+| [Chart](https://documentation.xmpro.com/blocks-toolbox/visualizations/chart) | To display the live operational data |
+| [Indicator](https://documentation.xmpro.com/blocks-toolbox/basic/indicator) | Indicate the rate of change for live data |
+| [Button](https://documentation.xmpro.com/blocks-toolbox/actions/button) | Display running status |
+| [Unity](https://documentation.xmpro.com/blocks-toolbox/visualizations/unity) | Visualize the 3D unity model |
+| [D3](https://documentation.xmpro.com/blocks-toolbox/visualizations/d3-visualization) | Live camera view |
+| [D3](https://documentation.xmpro.com/blocks-toolbox/visualizations/d3-visualization) | XMPro Co-pilot |
+| [Recommendations](https://documentation.xmpro.com/blocks-toolbox/recommendations/recommendations) | To view current open recommendations for the pump |
 
 ## Recommendations
 
 ### Flood Prediction
 Proactive detection of potential flood events for timely preventive action.
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Blueprints/Digital Cities - Water Utilities/Recommendation_03_01.png" %}</div>
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Blueprints/Digital Cities - Water Utilities/Recommendation_03_02.png" %}</div>
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Blueprints/Digital Cities - Water Utilities/Recommendation_03_03.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Blueprints/DigitalCities/WaterUtilities/Recommendation_03_01.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Blueprints/DigitalCities/WaterUtilities/Recommendation_03_02.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Blueprints/DigitalCities/WaterUtilities/Recommendation_03_03.png" %}</div>
 
 ### Condition Monitoring Overview
 Comprehensive surveillance of water utility infrastructure for operational health.
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Blueprints/Digital Cities - Water Utilities/Recommendation_02_01.png" %}</div>
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Blueprints/Digital Cities - Water Utilities/Recommendation_02_02.png" %}</div>
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Blueprints/Digital Cities - Water Utilities/Recommendation_02_03.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Blueprints/DigitalCities/WaterUtilities/Recommendation_02_01.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Blueprints/DigitalCities/WaterUtilities/Recommendation_02_02.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Blueprints/DigitalCities/WaterUtilities/Recommendation_02_03.png" %}</div>
 
 ### Condition Monitoring Asset
 Detailed monitoring of each pump's performance and condition within the system
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Blueprints/Digital Cities - Water Utilities/Recommendation_01_01.png" %}</div>
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Blueprints/Digital Cities - Water Utilities/Recommendation_01_02.png" %}</div>
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Blueprints/Digital Cities - Water Utilities/Recommendation_01_03.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Blueprints/DigitalCities/WaterUtilities/Recommendation_01_01.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Blueprints/DigitalCities/WaterUtilities/Recommendation_01_02.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Blueprints/DigitalCities/WaterUtilities/Recommendation_01_03.png" %}</div>
 
 
 ## Data Streams
@@ -332,7 +324,7 @@ Map the data stream to import
   | Flood Prediction                  | Utilities (or own choice)     | Flood Prediction           |
 
 Assign Access to others as required
-  {% include framework/shortcodes/image.html src="/assets/images/Blueprints/Digital Cities - Water Utilities/Recommendation_Access.png" %}
+  {% include framework/shortcodes/image.html src="/assets/images/Blueprints/DigitalCities/WaterUtilities/Recommendation_Access.png" %}
 
 
 ### 6. Set Read Recommendation Agents
@@ -389,7 +381,7 @@ Map the data source on import:
 - After importing, on the *Landing Page* download <code>Water Utilities Map.html</code> Change the URL in the D3 map to link to the *Pump Station Overview* page and reupload to the D3 element
   - Specifically the lines: <br> <code>"url": "https://xmpro-ad.azurewebsites.net/render;appId=2379;pageId=9890;appVersion=1;categoryId=;categoryName="</code>
 - Assign Access to others as required
-  {% include framework/shortcodes/image.html src="/assets/images/Blueprints/Digital Cities - Water Utilities/Application_Access.png" %}
+  {% include framework/shortcodes/image.html src="/assets/images/Blueprints/DigitalCities/WaterUtilities/Application_Access.png" %}
 - Ensure the App Data connection properties are configured and valid
 - Edit the application to link the recommendations - Select all recommendations mentioned in this guide.
 
