@@ -5,8 +5,8 @@ title: "Quick Guide - XMPro Notebook"
 description: "<strong>Quick Guide - XMPro Notebook</strong>"
 extract: "This guide is designed to help you become familiar with the essential features of the XMPro Notebook and provide you with the necessary knowledge to start configuring AI solutions within the platform."
 weight: 2
-thumbnail: "/assets/images/Accelerators/notebooks/xmpro-quick-guide/Landing%20Page.png"
-image: "/assets/images/Accelerators/notebooks/xmpro-quick-guide/Landing%20Page.png"
+thumbnail: "/assets/images/Accelerators/notebooks/xmpro-quick-guide/landingPage.png"
+image: "/assets/images/accelerators/notebooks/xmpro-quick-guide/landingPage.png"
 categories: ["AI ML","Notebook"]
 contributor: "XMPro"
 role: "Accelerator"
@@ -15,9 +15,9 @@ toc: false
 toc_label: 
 
 gallery:
-  - image: "/assets/images/Accelerators/notebooks/xmpro-quick-guide/Landing%20Page.png"
+  - image: "/assets/images/accelerators/notebooks/xmpro-quick-guide/landingPage.png"
     caption: "<strong>Above:</strong> XMPro Notebook Guide"
-  - image: "/assets/images/Accelerators/notebooks/xmpro-quick-guide/Landing%20Page%20cont.png"
+  - image: "/assets/images/accelerators/notebooks/xmpro-quick-guide/landingPageCont.png"
     caption: "<strong>Above:</strong> XMPro Notebook Guide Cont."
 gallery_limit: 2
 
@@ -27,7 +27,7 @@ side_gallery:
 
 files:
   - title: "XMPro Notebook"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Accelerators/AI/XMPro%20Quick%20Guide/Quick%20Guide%20-%20XMPro%20AI.ipynb"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/accelerators/ai/xmpro-quick-guide/Quick%20Guide%20-%20XMPro%20AI.ipynb"
     image: "/assets/images/icons/AI.png"
 ---
 

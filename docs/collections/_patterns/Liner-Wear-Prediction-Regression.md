@@ -4,8 +4,8 @@ title: "Asset Monitoring using regression"
 description: "<strong>Asset Monitoring using regression</strong>"
 extract: "Using crusher data to predict the liner wear for a crusher asset."
 weight: 3
-thumbnail: "/assets/images/Patterns/Machine-Learning/Liner-Wear-Prediction-Regression/DataStream_Running_01.png"
-image: "/assets/images/Patterns/Machine-Learning/Liner-Wear-Prediction-Regression/DataStream_Running_01.png"
+thumbnail: "/assets/images/patterns/machine-learning/Liner-Wear-Prediction-Regression/DataStream_Running_01.png"
+image: "/assets/images/patterns/machine-learning/Liner-Wear-Prediction-Regression/DataStream_Running_01.png"
 categories: ["Asset Monitoring","Condition Monitoring","AI ML"]
 contributor: "XMPro"
 role: "Pattern"
@@ -14,9 +14,9 @@ toc: true
 toc_label: "Table of Contents"
 
 gallery:
-  - image: "/assets/images/Patterns/Machine-Learning/Liner-Wear-Prediction-Regression/DataStream_Running_01.png"
+  - image: "/assets/images/patterns/machine-learning/Liner-Wear-Prediction-Regression/DataStream_Running_01.png"
     caption: "<strong>Above:</strong> Published Data Stream"
-  - image: "/assets/images/Patterns/Machine-Learning/Liner-Wear-Prediction-Regression/DataStream_01.png"
+  - image: "/assets/images/patterns/machine-learning/Liner-Wear-Prediction-Regression/DataStream_01.png"
     caption: "<strong>Above:</strong> Configured Data Stream"
 gallery_limit: 2
 
@@ -26,10 +26,10 @@ side_gallery:
 
 files:
   - title: "Data Stream - Binary Classification"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Liner%20Wear%20Prediction%20-%20Regression/Liner%20Wear%20Prediction%20using%20Regression.xuc"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/machine-learning/Liner%20Wear%20Prediction%20-%20Regression/Liner%20Wear%20Prediction%20using%20Regression.xuc"
     image: "/assets/images/icons/DS.png"
   - title: "SQL - Crusher"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/Patterns/Machine%20Learning/Liner%20Wear%20Prediction%20-%20Regression/SQL%20Scripts/%5BDemoCrusher%5D.sql"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/patterns/machine-learning/Liner%20Wear%20Prediction%20-%20Regression/sql/%5BDemoCrusher%5D.sql"
     image: "/assets/images/icons/sql.webp"
 ---
 
