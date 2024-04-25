@@ -6,16 +6,16 @@ categories: ["Asset Monitoring","Condition Monitoring","Energy","Dark Theme"]
 description: "A digital twin application offering real-time monitoring of renewable energy assets, providing insights & optimizing operations for peak performance & sustainability."
 contributor: "XMPro"
 role: "Blueprint"
-thumbnail: "/assets/images/Blueprints/AlternativeEnergy/RenewableView/Application_01.png"
-image: "/assets/images/Blueprints/AlternativeEnergy/RenewableView/Application_01.png"
+thumbnail: "/assets/images/blueprints/alternative-energy-renewable-view/ad01.png"
+image: "/assets/images/blueprints/alternative-energy-renewable-view/ad01.png"
 gallery:
-  - image: "/assets/images/Blueprints/AlternativeEnergy/RenewableView//Application_01.png"
+  - image: "/assets/images/blueprints/alternative-energy-renewable-view/ad01.png"
     caption: "<strong>Above:</strong> Application View 01"
-  - image: "/assets/images/Blueprints/AlternativeEnergy/RenewableView//Application_02.png"
+  - image: "/assets/images/blueprints/alternative-energy-renewable-view/ad02.png"
     caption: "<strong>Above:</strong> Application View 02"
-  - image: "/assets/images/Blueprints/AlternativeEnergy/RenewableView//Application_03.png"
+  - image: "/assets/images/blueprints/alternative-energy-renewable-view/ad03.png"
     caption: "<strong>Above:</strong> Application View 03"
-  - image: "/assets/images/Blueprints/AlternativeEnergy/RenewableView//DataStream_Running.png"
+  - image: "/assets/images/blueprints/alternative-energy-renewable-view/dsRunning.png"
     caption: "<strong>Above:</strong> Published Data Stream"
 ---
 

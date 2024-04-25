@@ -6,14 +6,14 @@ categories: ["Alternative Energy", "Dark Theme", "Asset Monitoring", "Condition 
 description: "An application for Wind Farm Management. Serves as an advanced hub for real-time monitoring, analytics, and control of multiple wind farms from a centralized location."
 contributor: "XMPro"
 role: "Blueprint"
-thumbnail: "/assets/images/Blueprints/Alternative Energy/Wind Farm/Application_01.png"
-image: "/assets/images/Blueprints/Alternative Energy/Wind Farm/Application_01.png"
+thumbnail: "/assets/images/blueprints/alternative-energy-wind-farm/ad01A.png"
+image: "/assets/images/blueprints/alternative-energy-wind-farm/ad01A.png"
 gallery:
-  - image: "/assets/images/Blueprints/Alternative Energy/Wind Farm/Application_01.png"
+  - image: "/assets/images/blueprints/alternative-energy-wind-farm/ad01A.png"
     caption: "<strong>Above:</strong> Application View 01"
-  - image: "/assets/images/Blueprints/Alternative Energy/Wind Farm/Application_02.png"
+  - image: "/assets/images/blueprints/alternative-energy-wind-farm/ad02.png"
     caption: "<strong>Above:</strong> Application View 02"
-  - image: "/assets/images/Blueprints/Alternative Energy/Wind Farm/DataStream_01.png"
+  - image: "/assets/images/blueprints/alternative-energy-wind-farm/ds01.png"
     caption: "<strong>Above:</strong> Published Data Stream"
 ---
 

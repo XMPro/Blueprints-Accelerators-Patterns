@@ -6,12 +6,12 @@ categories: ["Widget", "Static"]
 description: "This widget is comprises of six (6) title-value components along with a heading. These title-value components serve as informative building blocks, offering quick access to key metrics."
 contributor: "XMPro"
 role: "Pattern"
-thumbnail: "/assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsPublishedMode.png"
-image: "/assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsPublishedMode.png"
+thumbnail: "/assets/images/patterns/Widgets/BadActors/DarkTheme/BadActorsPublishedMode.png"
+image: "/assets/images/patterns/Widgets/BadActors/DarkTheme/BadActorsPublishedMode.png"
 gallery:
-  - image: "/assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsPublishedMode.png"
+  - image: "/assets/images/patterns/Widgets/BadActors/DarkTheme/BadActorsPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Dark Theme"
-  - image: "/assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsPublishedMode.png"
+  - image: "/assets/images/patterns/Widgets/BadActors/LightTheme/BadActorsPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Light Theme"
 ---
 

@@ -6,12 +6,12 @@ categories: ["Widget", "Static"]
 description: "Within this widget, you'll find both a heading and a subheading, complemented by a linear gauge and a value field."
 contributor: "XMPro"
 role: "Pattern"
-thumbnail: "/assets/images/Patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingPublishedMode.png"
-image: "/assets/images/Patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingPublishedMode.png"
+thumbnail: "/assets/images/patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingPublishedMode.png"
+image: "/assets/images/patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingPublishedMode.png"
 gallery:
-  - image: "/assets/images/Patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingPublishedMode.png"
+  - image: "/assets/images/patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Dark Theme"
-  - image: "/assets/images/Patterns/Widgets/DataTilewithSubHeading/LightTheme/DataTilewithSubHeadingPublishedMode.png"
+  - image: "/assets/images/patterns/Widgets/DataTilewithSubHeading/LightTheme/DataTilewithSubHeadingPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Light Theme"
 ---
 

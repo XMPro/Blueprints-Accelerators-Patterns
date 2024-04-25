@@ -6,12 +6,12 @@ categories: ["Widget", "Static"]
 description: "This widget is designed with versatility in mind, offering two distinct formats for presenting information."
 contributor: "XMPro"
 role: "Pattern"
-thumbnail: "/assets/images/Patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayPublishedMode.png"
-image: "/assets/images/Patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayPublishedMode.png"
+thumbnail: "/assets/images/patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayPublishedMode.png"
+image: "/assets/images/patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayPublishedMode.png"
 gallery:
-  - image: "/assets/images/Patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayPublishedMode.png"
+  - image: "/assets/images/patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Dark Theme"
-  - image: "/assets/images/Patterns/Widgets/StyledCardDisplay/LightTheme/StyledCardDisplayPublishedMode.png"
+  - image: "/assets/images/patterns/Widgets/StyledCardDisplay/LightTheme/StyledCardDisplayPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Light Theme"
 ---
 

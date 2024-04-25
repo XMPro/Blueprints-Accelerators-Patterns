@@ -45,6 +45,9 @@ files:
   - title: "Wind Farm Management"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/alternative-energy-wind-farm/application/Wind%20Farm%20Management.xapp"
     image: "/assets/images/icons/AD.png" 
+  - title: "Unity Files"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/alternative-energy-wind-farm/unity"
+    image: "/assets/images/icons/AD.png"    
   - title: "Wind Condition Monitoring"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/alternative-energy-wind-farm/recommendation/Wind%20Condition%20Monitoring.xr"
     image: "/assets/images/icons/RM.png"
@@ -129,8 +132,6 @@ Data Stream to monitor inputs from multiple sources and optimize asset performan
 | [XMPro App](https://xmpro.gitbook.io/xmpro-app/)                       | XMPro App Chart                                        |
 | [XMPro App](https://xmpro.gitbook.io/xmpro-app/)                       | SXMPro App Single                                      |
 | [Run Recommendation](https://xmpro.gitbook.io/run-recommendation/)     | Run Recommendation                                     |
-
-
 
 
 ## Steps to Import
@@ -219,6 +220,15 @@ Map the data source on import:
   | 2.0 Drilldown               | Bottom Right       | Variable.assetId    |
 
 
+- Download Unity files from file list. 
+  - At the application edit level, select `More->App Files`.
+  - Upload the Unity files in the `App Files` pane.
+  - For the Unity elements on both pages in the configuration (`Block Properties->Behavior`) add the correct files:
+
+  | Page                        | Location           | Files           |
+  | --------------------------- | ------------------ | ------------------- |
+  | 1.0 Landing Page            | Middle       | `Build.*`                |
+  | 2.0 Drilldown               | Middle       | `Interior.*`     |
 
 - Save the application
 - Publish the application

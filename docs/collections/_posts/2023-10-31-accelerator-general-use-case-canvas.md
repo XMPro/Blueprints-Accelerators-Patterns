@@ -6,12 +6,12 @@ categories: ["Use Case Canvas","Light Theme"]
 description: "An application that provides the structure for you to fill in with your use case details."
 contributor: "XMPro"
 role: "Accelerator"
-thumbnail: "/assets/images/Accelerators/general/use-case-canvas/Application.png"
-image: "/assets/images/Accelerators/general/use-case-canvas/Application.png"
+thumbnail: "/assets/images/accelerators/general/use-case-canvas/Application.png"
+image: "/assets/images/accelerators/general/use-case-canvas/Application.png"
 gallery:
-  - image: "/assets/images/Accelerators/general/use-case-canvas/Application.png"
+  - image: "/assets/images/accelerators/general/use-case-canvas/Application.png"
     caption: "<strong>Above:</strong> XMPro Notebook Guide"
-  - image: "/assets/images/Accelerators/general/use-case-canvas/Application-edit.png"
+  - image: "/assets/images/accelerators/general/use-case-canvas/Application-edit.png"
     caption: "<strong>Above:</strong> XMPro Notebook Guide Cont."
 ---
 

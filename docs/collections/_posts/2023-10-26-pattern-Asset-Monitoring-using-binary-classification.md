@@ -6,12 +6,12 @@ categories: ["Asset Monitoring","Condition Monitoring","AI ML"]
 description: "Asset monitoring of smart meters through the use of a binary classification model on real-time data."
 contributor: "XMPro"
 role: "Pattern"
-thumbnail: "/assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream_Running_01.png"
-image: "/assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream_Running_01.png"
+thumbnail: "/assets/images/patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/dsRunning.png"
+image: "/assets/images/patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/dsRunning.png"
 gallery:
-  - image: "/assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream_Running_01.png"
+  - image: "/assets/images/patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/dsRunning.png"
     caption: "<strong>Above:</strong> Published Data Stream"
-  - image: "/assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream_01.png"
+  - image: "/assets/images/patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream.png"
     caption: "<strong>Above:</strong> Configured Data Stream"
 ---
 
