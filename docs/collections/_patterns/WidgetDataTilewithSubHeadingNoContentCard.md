@@ -32,7 +32,7 @@ side_gallery:
 
 files:
   - title: "Widget"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/widgets/Data%20Tile%20with%20Sub%20Heading%20No%20Content%20Card.xwid"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/widgets/Data%20Tile%20with%20Sub%20Heading%20(No%20Content%20Card).xwid"
     image: "/assets/images/icons/AD.png"
 ---
 
