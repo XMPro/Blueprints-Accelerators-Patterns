@@ -6,12 +6,12 @@ categories: ["Widget", "Static"]
 description: "This widget is structured with three distinct columns, each serving a specific purpose: the title column, the indicator column, and the data status column."
 contributor: "XMPro"
 role: "Pattern"
-thumbnail: "/assets/images/Patterns/Widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticPublishedMode.png"
-image: "/assets/images/Patterns/Widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticPublishedMode.png"
+thumbnail: "/assets/images/patterns/widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticPublishedMode.png"
+image: "/assets/images/patterns/widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticPublishedMode.png"
 gallery:
-  - image: "/assets/images/Patterns/Widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Dark Theme"
-  - image: "/assets/images/Patterns/Widgets/ListwithIndicatorStatic/LightTheme/ListwithIndicatorStaticPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/ListwithIndicatorStatic/LightTheme/ListwithIndicatorStaticPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Light Theme"
 ---
 

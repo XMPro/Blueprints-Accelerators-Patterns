@@ -4,8 +4,8 @@ title: "Asset Monitoring using binary classification"
 description: "<strong>Asset Monitoring using binary classification</strong>"
 extract: "Asset monitoring of smart meters through the use of a binary classification model on real-time data."
 weight: 3
-thumbnail: "/assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream_Running_01.png"
-image: "/assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream_Running_01.png"
+thumbnail: "/assets/images/patterns/machine-learning/asset-monitoring-binary-classification/dsRunning.png"
+image: "/assets/images/patterns/machine-learning/asset-monitoring-binary-classification/dsRunning.png"
 categories: ["Asset Monitoring","Condition Monitoring","AI ML"]
 contributor: "XMPro"
 role: "Pattern"
@@ -14,9 +14,9 @@ toc: true
 toc_label: "Table of Contents"
 
 gallery:
-  - image: "/assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream_Running_01.png"
+  - image: "/assets/images/patterns/machine-learning/asset-monitoring-binary-classification/dsRunning.png"
     caption: "<strong>Above:</strong> Published Data Stream"
-  - image: "/assets/images/Patterns/Machine-Learning/Asset-Monitoring-Binary-Classification/DataStream_01.png"
+  - image: "/assets/images/patterns/machine-learning/asset-monitoring-binary-classification/ds.png"
     caption: "<strong>Above:</strong> Configured Data Stream"
 gallery_limit: 2
 
@@ -26,10 +26,10 @@ side_gallery:
 
 files:
   - title: "Data Stream - Binary Classification"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Asset%20Monitoring%20-%20Binary%20Classification/Asset%20Monitoring%20Binary%20Classification.xuc"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/machine-learning/Asset-monitoring-binary-classification/Asset%20Monitoring%20Binary%20Classification.xuc"
     image: "/assets/images/icons/DS.png"
   - title: "SQL - Smart Meter"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Asset%20Monitoring%20-%20Binary%20Classification/SQL%20Scripts/%5BDemoSmartMeter%5D.sql"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/machine-learning/Asset-monitoring-binary-classification/sql/%5BDemoSmartMeter%5D.sql"
     image: "/assets/images/icons/sql.webp"
 ---
 

@@ -6,12 +6,12 @@ categories: ["Widget", "Static"]
 description: "This widget incorporates a unique design feature — an elegant vertical line positioned beneath the primary heading."
 contributor: "XMPro"
 role: "Pattern"
-thumbnail: "/assets/images/Patterns/Widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledPublishedMode.png"
-image: "/assets/images/Patterns/Widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledPublishedMode.png"
+thumbnail: "/assets/images/patterns/widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledPublishedMode.png"
+image: "/assets/images/patterns/widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledPublishedMode.png"
 gallery:
-  - image: "/assets/images/Patterns/Widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Dark Theme"
-  - image: "/assets/images/Patterns/Widgets/ContentwithIndicatorStyled/LightTheme/ContentwithIndicatorStyledPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/ContentwithIndicatorStyled/LightTheme/ContentwithIndicatorStyledPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Light Theme"
 ---
 

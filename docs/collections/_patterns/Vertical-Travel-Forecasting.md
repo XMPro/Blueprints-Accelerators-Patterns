@@ -4,8 +4,8 @@ title: "Asset Monitoring using forecasting"
 description: "<strong>Asset Monitoring using forecasting</strong>"
 extract: "Using crusher data to forecast vertical travel based on past values."
 weight: 3
-thumbnail: "/assets/images/Patterns/Machine-Learning/Vertical-Travel-Forecasting/DataStream_Running_01.png"
-image: "/assets/images/Patterns/Machine-Learning/Vertical-Travel-Forecasting/DataStream_Running_01.png"
+thumbnail: "/assets/images/patterns/machine-learning/vertical-travel-forecasting/dsRunning.png"
+image: "/assets/images/patterns/machine-learning/vertical-travel-forecasting/dsRunning.png"
 categories: ["Asset Monitoring","Condition Monitoring","AI ML"]
 contributor: "XMPro"
 role: "Pattern"
@@ -14,9 +14,9 @@ toc: true
 toc_label: "Table of Contents"
 
 gallery:
-  - image: "/assets/images/Patterns/Machine-Learning/Vertical-Travel-Forecasting/DataStream_Running_01.png"
+  - image: "/assets/images/patterns/machine-learning/vertical-travel-forecasting/dsRunning.png"
     caption: "<strong>Above:</strong> Published Data Stream"
-  - image: "/assets/images/Patterns/Machine-Learning/Vertical-Travel-Forecasting/DataStream_01.png"
+  - image: "/assets/images/patterns/machine-learning/vertical-travel-forecasting/ds.png"
     caption: "<strong>Above:</strong> Configured Data Stream"
 gallery_limit: 2
 
@@ -26,10 +26,10 @@ side_gallery:
 
 files:
   - title: "Data Stream - Forecasting"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Vertical%20Travel%20-%20Forecasting/Vertical%20Travel%20Forecasting.xuc"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/machine-learning/vertical-travel-forecasting/Vertical%20Travel%20Forecasting.xuc"
     image: "/assets/images/icons/DS.png"
   - title: "SQL - Crusher"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Machine%20Learning/Vertical%20Travel%20-%20Forecasting/SQL%20Scripts/%5BDemoCrusher%5D.sql"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/machine-learning/vertical-travel-forecasting/sql/%5BDemoCrusher%5D.sql"
     image: "/assets/images/icons/sql.webp"
 ---
 

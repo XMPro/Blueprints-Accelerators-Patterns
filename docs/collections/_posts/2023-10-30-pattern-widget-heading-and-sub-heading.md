@@ -6,12 +6,12 @@ categories: ["Widget", "Static"]
 description: "This widget serves as a versatile layout option, designed for seamless integration with other widgets and elements within your interface."
 contributor: "XMPro"
 role: "Pattern"
-thumbnail: "/assets/images/Patterns/Widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingPublishedMode.png"
-image: "/assets/images/Patterns/Widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingPublishedMode.png"
+thumbnail: "/assets/images/patterns/widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingPublishedMode.png"
+image: "/assets/images/patterns/widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingPublishedMode.png"
 gallery:
-  - image: "/assets/images/Patterns/Widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Dark Theme"
-  - image: "/assets/images/Patterns/Widgets/Heading&SubHeading/LightTheme/Heading&SubHeadingPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/Heading&SubHeading/LightTheme/Heading&SubHeadingPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Light Theme"
 ---
 
