@@ -28,7 +28,7 @@ side_gallery:
 
 files:
   - title: "Widget"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/widgets/Colored%20Card%20Display%20Outline%20Single.xwid"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/widgets/Colored%20Card%20Outline%20-%20Single.xwid"
     image: "/assets/images/icons/AD.png"
 ---
 

@@ -32,7 +32,7 @@ side_gallery:
 
 files:
   - title: "Widget"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/widgets/Gauge%20Style%20No%20Heading.xwid"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/widgets/Gauge%20Style%20no%20Heading.xwid"
     image: "/assets/images/icons/AD.png"
 ---
 

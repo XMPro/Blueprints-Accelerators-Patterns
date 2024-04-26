@@ -32,7 +32,7 @@ side_gallery:
 
 files:
   - title: "Widget"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/widgets/List%20with%20Indicator%20Dynamic.xwid"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/widgets/List%20with%20Indicator%20-%20Dynamic.xwid"
     image: "/assets/images/icons/AD.png"
 ---
 

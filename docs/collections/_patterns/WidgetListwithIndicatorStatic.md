@@ -28,7 +28,7 @@ side_gallery:
 
 files:
   - title: "Widget"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/widgets/List%20with%20Indicator%20Static.xwid"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/widgets/List%20with%20Indicator%20-%20Static.xwid"
     image: "/assets/images/icons/AD.png"
 ---
 

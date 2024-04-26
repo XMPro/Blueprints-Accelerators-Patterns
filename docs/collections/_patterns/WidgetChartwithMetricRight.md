@@ -32,7 +32,7 @@ side_gallery:
 
 files:
   - title: "Widget"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/widgets/Chart%20With%20Metric%20Right.xwid"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/widgets/Chart%20with%20Metric%20-%20Right.xwid.xwid"
     image: "/assets/images/icons/AD.png"
 ---
 

@@ -32,7 +32,7 @@ side_gallery:
 
 files:
   - title: "Widget"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/widgets/Alert%20Count%20Rollup%20With%20Subheading.xwid"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/widgets/Alert%20Count%20Rollup%20with%20Subheading.xwid"
     image: "/assets/images/icons/AD.png"
 ---
 

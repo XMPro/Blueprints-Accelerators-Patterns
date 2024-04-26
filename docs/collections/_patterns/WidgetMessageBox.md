@@ -32,7 +32,7 @@ side_gallery:
 
 files:
   - title: "Widget"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-patterns/blob/master/patterns/widgets/Message%20Box%20Indicator%20Static.xwid"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-patterns/blob/master/patterns/widgets/Message%20Box.xwid"
     image: "/assets/images/icons/AD.png"
 ---
 
