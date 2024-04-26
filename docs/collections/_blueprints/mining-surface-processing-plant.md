@@ -42,7 +42,7 @@ files:
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/mining-surface-processing-plant/application/"
     image: "/assets/images/icons/AD.png"
   - title: "Unity Files"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/mining-surface-processing-plant/unity"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/mining-surface-processing-plant/application/unity"
     image: "/assets/images/icons/AD.png"  
   - title: "Application Template"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/mining-surface-processing-plant/template/"

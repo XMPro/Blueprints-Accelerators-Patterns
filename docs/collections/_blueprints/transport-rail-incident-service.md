@@ -47,7 +47,6 @@ files:
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/transport-rail-incident-service/datastream/"
     image: "/assets/images/icons/DS.png"
 
-
 ---
 
 
