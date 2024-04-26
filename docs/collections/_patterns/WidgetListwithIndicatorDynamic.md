@@ -4,8 +4,8 @@ title: "List with Indicator - Dynamic"
 description: "<strong>List with Indicator - Dynamic</strong>"
 extract: "This widget possesses dynamic capabilities, allowing you to use a data source to control its content growth."
 weight: 4
-thumbnail: "/assets/images/Patterns/Widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicPublishedMode.png"
-image: "/assets/images/Patterns/Widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicPublishedMode.png"
+thumbnail: "/assets/images/patterns/widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicPublishedMode.png"
+image: "/assets/images/patterns/widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicPublishedMode.png"
 categories: ["Widget", "Dynamic"]
 contributor: "XMPro"
 role: "Pattern"
@@ -14,25 +14,25 @@ toc: false
 toc_label: 
 
 gallery:
-  - image: "/assets/images/Patterns/Widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Dark Theme"
-  - image: "/assets/images/Patterns/Widgets/ListwithIndicatorDynamic/LightTheme/ListwithIndicatorDynamicPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/ListwithIndicatorDynamic/LightTheme/ListwithIndicatorDynamicPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Light Theme"
 gallery_limit: 2
 
 side_gallery:
-  - image: "/assets/images/Patterns/Widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicDesignMode.png"
+  - image: "/assets/images/patterns/widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicDesignMode.png"
     caption: "<strong>Above:</strong> Design Mode"
-  - image: "/assets/images/Patterns/Widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicDataSource.png"
+  - image: "/assets/images/patterns/widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicDataSource.png"
     caption: "<strong>Above:</strong> Design Mode - Data Source"
-  - image: "/assets/images/Patterns/Widgets/ListwithIndicatorDynamic/LightTheme/ListwithIndicatorDynamicDesignMode.png"
+  - image: "/assets/images/patterns/widgets/ListwithIndicatorDynamic/LightTheme/ListwithIndicatorDynamicDesignMode.png"
     caption: "<strong>Above:</strong> Design Mode"
-  - image: "/assets/images/Patterns/Widgets/ListwithIndicatorDynamic/LightTheme/ListwithIndicatorDynamicDataSource.png"
+  - image: "/assets/images/patterns/widgets/ListwithIndicatorDynamic/LightTheme/ListwithIndicatorDynamicDataSource.png"
     caption: "<strong>Above:</strong> Design Mode - Data Source"
 
 files:
   - title: "Widget"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/List%20with%20Indicator%20Dynamic.xwid"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/widgets/List%20with%20Indicator%20Dynamic.xwid"
     image: "/assets/images/icons/AD.png"
 ---
 
@@ -51,8 +51,8 @@ The widget is configured using:
 
 <br />
 To configure and use the total section, select the box named *__Data Source__* and configure its data source under *Block Properties*.  
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicDataSource.png" %}</div>
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/ListwithIndicatorDynamic/LightTheme/ListwithIndicatorDynamicDataSource.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/patterns/widgets/ListwithIndicatorDynamic/DarkTheme/ListwithIndicatorDynamicDataSource.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/patterns/widgets/ListwithIndicatorDynamic/LightTheme/ListwithIndicatorDynamicDataSource.png" %}</div>
 Make sure to change the fields within the box to get their values from the data source vs static.
 
 How this works is for every row returned in the data source it will create that many child sections.  If you have 4 it will create 4, if you have 3 it will create 3 etc.

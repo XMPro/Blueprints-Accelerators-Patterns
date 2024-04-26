@@ -4,8 +4,8 @@ title: "Heading & Sub Heading"
 description: "<strong>Heading & Sub Heading</strong>"
 extract: "This widget serves as a versatile layout option, designed for seamless integration with other widgets and elements within your interface."
 weight: 4
-thumbnail: "/assets/images/Patterns/Widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingPublishedMode.png"
-image: "/assets/images/Patterns/Widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingPublishedMode.png"
+thumbnail: "/assets/images/patterns/widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingPublishedMode.png"
+image: "/assets/images/patterns/widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingPublishedMode.png"
 categories: ["Widget", "Container"]
 contributor: "XMPro"
 role: "Pattern"
@@ -14,21 +14,21 @@ toc: false
 toc_label: 
 
 gallery:
-  - image: "/assets/images/Patterns/Widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Dark Theme"
-  - image: "/assets/images/Patterns/Widgets/Heading&SubHeading/LightTheme/Heading&SubHeadingPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/Heading&SubHeading/LightTheme/Heading&SubHeadingPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Light Theme"
 gallery_limit: 2
 
 side_gallery:
-  - image: "/assets/images/Patterns/Widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingDesignMode.png"
+  - image: "/assets/images/patterns/widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingDesignMode.png"
     caption: "<strong>Above:</strong> Design Mode"  
-  - image: "/assets/images/Patterns/Widgets/Heading&SubHeading/LightTheme/Heading&SubHeadingDesignMode.png"
+  - image: "/assets/images/patterns/widgets/Heading&SubHeading/LightTheme/Heading&SubHeadingDesignMode.png"
     caption: "<strong>Above:</strong> Design Mode" 
 
 files:
   - title: "Widget"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/Content%20with%20Overall%20Indicator.xwid"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/widgets/Content%20with%20Overall%20Indicator.xwid"
     image: "/assets/images/icons/AD.png"
 ---
 
@@ -46,6 +46,6 @@ The widget is configured using:
 
 <br />
 To utilize this widget, you have the option to effortlessly drag and drop other widgets or elements into its designated space.
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingDesignMode.png" %}</div>
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/Heading&SubHeading/LightTheme/Heading&SubHeadingDesignMode.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/patterns/widgets/Heading&SubHeading/DarkTheme/Heading&SubHeadingDesignMode.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/patterns/widgets/Heading&SubHeading/LightTheme/Heading&SubHeadingDesignMode.png" %}</div>
 Make sure to change the fields within the box to get their values from the data source vs static.

@@ -4,8 +4,8 @@ title: "Content with Indicator Styled"
 description: "<strong>Content with Indicator Styled</strong>"
 extract: "This widget incorporates a unique design feature — an elegant vertical line positioned beneath the primary heading."
 weight: 4
-thumbnail: "/assets/images/Patterns/Widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledPublishedMode.png"
-image: "/assets/images/Patterns/Widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledPublishedMode.png"
+thumbnail: "/assets/images/patterns/widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledPublishedMode.png"
+image: "/assets/images/patterns/widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledPublishedMode.png"
 categories: ["Widget", "Static"]
 contributor: "XMPro"
 role: "Pattern"
@@ -14,25 +14,25 @@ toc: false
 toc_label: 
 
 gallery:
-  - image: "/assets/images/Patterns/Widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Dark Theme"
-  - image: "/assets/images/Patterns/Widgets/ContentwithIndicatorStyled/LightTheme/ContentwithIndicatorStyledPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/ContentwithIndicatorStyled/LightTheme/ContentwithIndicatorStyledPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Light Theme"
 gallery_limit: 2
 
 side_gallery:
-  - image: "/assets/images/Patterns/Widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledDesignMode.png"
+  - image: "/assets/images/patterns/widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledDesignMode.png"
     caption: "<strong>Above:</strong> Design Mode"
-  - image: "/assets/images/Patterns/Widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledDataSource.png"
+  - image: "/assets/images/patterns/widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledDataSource.png"
     caption: "<strong>Above:</strong> Design Mode - Data Source"
-  - image: "/assets/images/Patterns/Widgets/ContentwithIndicatorStyled/LightTheme/ContentwithIndicatorStyledDesignMode.png"
+  - image: "/assets/images/patterns/widgets/ContentwithIndicatorStyled/LightTheme/ContentwithIndicatorStyledDesignMode.png"
     caption: "<strong>Above:</strong> Design Mode"
-  - image: "/assets/images/Patterns/Widgets/ContentwithIndicatorStyled/LightTheme/ContentwithIndicatorStyledDataSource.png"
+  - image: "/assets/images/patterns/widgets/ContentwithIndicatorStyled/LightTheme/ContentwithIndicatorStyledDataSource.png"
     caption: "<strong>Above:</strong> Design Mode - Data Source"
 
 files:
   - title: "Widget"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/Content%20with%20Indicator%20Styled.xwid"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-patterns/blob/master/patterns/widgets/Content%20with%20Indicator%20Styled.xwid"
     image: "/assets/images/icons/AD.png"
 ---
 
@@ -51,6 +51,6 @@ The widget is configured using:
 
 <br />
 To configure and use the total section, select the box named *__Data Source__* and configure its data source under *Block Properties*.  
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledDataSource.png" %}</div>
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/ContentwithIndicatorStyled/LightTheme/ContentwithIndicatorStyledDataSource.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/patterns/widgets/ContentwithIndicatorStyled/DarkTheme/ContentwithIndicatorStyledDataSource.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/patterns/widgets/ContentwithIndicatorStyled/LightTheme/ContentwithIndicatorStyledDataSource.png" %}</div>
 Make sure to change the fields within the box to get their values from the data source vs static.

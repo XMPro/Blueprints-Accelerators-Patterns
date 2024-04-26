@@ -4,8 +4,8 @@ title: "Alert Count Rollup with Sub Heading"
 description: "<strong>Alert Count Rollup with Sub Heading</strong>"
 extract: "This widget includes a heading and a subheading where you can enter the title and an additional description to provide further context for the title."
 weight: 4
-thumbnail: "/assets/images/Patterns/Widgets/AlertCountRollupwithSubHeading/DarkTheme/AlertCountRollupwithSubHeadingPublishedMode.png"
-image: "/assets/images/Patterns/Widgets/AlertCountRollupwithSubHeading/DarkTheme/AlertCountRollupwithSubHeadingPublishedMode.png"
+thumbnail: "/assets/images/patterns/widgets/AlertCountRollupwithSubHeading/DarkTheme/AlertCountRollupwithSubHeadingPublishedMode.png"
+image: "/assets/images/patterns/widgets/AlertCountRollupwithSubHeading/DarkTheme/AlertCountRollupwithSubHeadingPublishedMode.png"
 categories: ["Widget", "Static"]
 contributor: "XMPro"
 role: "Pattern"
@@ -14,25 +14,25 @@ toc: false
 toc_label: 
 
 gallery:
-  - image: "/assets/images/Patterns/Widgets/AlertCountRollupwithSubHeading/DarkTheme/AlertCountRollupwithSubHeadingPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/AlertCountRollupwithSubHeading/DarkTheme/AlertCountRollupwithSubHeadingPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Dark Theme"
-  - image: "/assets/images/Patterns/Widgets/AlertCountRollupwithSubHeading/LightTheme/AlertCountRollupwithSubHeadingPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/AlertCountRollupwithSubHeading/LightTheme/AlertCountRollupwithSubHeadingPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Light Theme"
 gallery_limit: 2
 
 side_gallery:
-  - image: "/assets/images/Patterns/Widgets/AlertCountRollupwithSubHeading/DarkTheme/AlertCountRollupwithSubHeadingDataSource.png"
+  - image: "/assets/images/patterns/widgets/AlertCountRollupwithSubHeading/DarkTheme/AlertCountRollupwithSubHeadingDataSource.png"
     caption: "<strong>Above:</strong> Design Mode - Data Source"
-  - image: "/assets/images/Patterns/Widgets/AlertCountRollupwithSubHeading/DarkTheme/AlertCountRollupwithSubHeadingTotalDataSource.png"
+  - image: "/assets/images/patterns/widgets/AlertCountRollupwithSubHeading/DarkTheme/AlertCountRollupwithSubHeadingTotalDataSource.png"
     caption: "<strong>Above:</strong> Design Mode - Total Data Source"
-  - image: "/assets/images/Patterns/Widgets/AlertCountRollupwithSubHeading/LightTheme/AlertCountRollupwithSubHeadingDataSource.png"
+  - image: "/assets/images/patterns/widgets/AlertCountRollupwithSubHeading/LightTheme/AlertCountRollupwithSubHeadingDataSource.png"
     caption: "Design Mode - Data Source"
-  - image: "/assets/images/Patterns/Widgets/AlertCountRollupwithSubHeading/LightTheme/AlertCountRollupwithSubHeadingTotalDataSource.png"
+  - image: "/assets/images/patterns/widgets/AlertCountRollupwithSubHeading/LightTheme/AlertCountRollupwithSubHeadingTotalDataSource.png"
     caption: "<strong>Above:</strong> Design Mode - Total Data Source"
 
 files:
   - title: "Widget"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/Alert%20Count%20Rollup%20With%20Subheading.xwid"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/widgets/Alert%20Count%20Rollup%20With%20Subheading.xwid"
     image: "/assets/images/icons/AD.png"
 ---
 
@@ -51,14 +51,14 @@ The widget is configured using:
 
 <br />
 To configure and use the data source section, select the box named *__Data Source__* and configure its data source under *Block Properties*.  
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/AlertCountRollupwithSubHeading/DarkTheme/AlertCountRollupwithSubHeadingDataSource.png" %}</div>
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/AlertCountRollupwithSubHeading/LightTheme/AlertCountRollupwithSubHeadingDataSource.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/patterns/widgets/AlertCountRollupwithSubHeading/DarkTheme/AlertCountRollupwithSubHeadingDataSource.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/patterns/widgets/AlertCountRollupwithSubHeading/LightTheme/AlertCountRollupwithSubHeadingDataSource.png" %}</div>
 Make sure to change the fields within the box to get their values from the data source vs static.
 
 To configure and use the Total Data Source section, select the box named *__Total Data Source__* and configure its data source under *Block Properties*.  
 
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/AlertCountRollupwithSubHeading/DarkTheme/AlertCountRollupwithSubHeadingTotalDataSource.png" %}</div>
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/AlertCountRollupwithSubHeading/LightTheme/AlertCountRollupwithSubHeadingTotalDataSource.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/patterns/widgets/AlertCountRollupwithSubHeading/DarkTheme/AlertCountRollupwithSubHeadingTotalDataSource.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/patterns/widgets/AlertCountRollupwithSubHeading/LightTheme/AlertCountRollupwithSubHeadingTotalDataSource.png" %}</div>
 
 Make sure to change the fields within the box to get their values from the data source vs static.
 

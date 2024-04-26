@@ -4,8 +4,8 @@ title: "List with Indicator - Static"
 description: "<strong>List with Indicator - Static</strong>"
 extract: "This widget is structured with three distinct columns, each serving a specific purpose: the title column, the indicator column, and the data status column."
 weight: 4
-thumbnail: "/assets/images/Patterns/Widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticPublishedMode.png"
-image: "/assets/images/Patterns/Widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticPublishedMode.png"
+thumbnail: "/assets/images/patterns/widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticPublishedMode.png"
+image: "/assets/images/patterns/widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticPublishedMode.png"
 categories: ["Widget", "Static"]
 contributor: "XMPro"
 role: "Pattern"
@@ -14,21 +14,21 @@ toc: false
 toc_label: 
 
 gallery:
-  - image: "/assets/images/Patterns/Widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Dark Theme"
-  - image: "/assets/images/Patterns/Widgets/ListwithIndicatorStatic/LightTheme/ListwithIndicatorStaticPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/ListwithIndicatorStatic/LightTheme/ListwithIndicatorStaticPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Light Theme"
 gallery_limit: 2
 
 side_gallery:
-  - image: "/assets/images/Patterns/Widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticDesignMode.png"
+  - image: "/assets/images/patterns/widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticDesignMode.png"
     caption: "<strong>Above:</strong> Design Mode"
-  - image: "/assets/images/Patterns/Widgets/ListwithIndicatorStatic/LightTheme/ListwithIndicatorStaticDesignMode.png"
+  - image: "/assets/images/patterns/widgets/ListwithIndicatorStatic/LightTheme/ListwithIndicatorStaticDesignMode.png"
     caption: "<strong>Above:</strong> Design Mode"
 
 files:
   - title: "Widget"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/List%20with%20Indicator%20Static.xwid"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/widgets/List%20with%20Indicator%20Static.xwid"
     image: "/assets/images/icons/AD.png"
 ---
 
@@ -44,5 +44,5 @@ The widget is configured using:
 
 <br />
 To employ and configure this widget, simply select the element you wish to modify, and then navigate to the *__Block Properties__* section where you can make the necessary adjustments. It's important to note that any values you enter will remain static and unchangeable while the system is running. Furthermore, you have the freedom to configure the appearance of each indicator to match your design preferences.
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticDesignMode.png" %}</div>
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/ListwithIndicatorStatic/LightTheme/ListwithIndicatorStaticDesignMode.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/patterns/widgets/ListwithIndicatorStatic/DarkTheme/ListwithIndicatorStaticDesignMode.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/patterns/widgets/ListwithIndicatorStatic/LightTheme/ListwithIndicatorStaticDesignMode.png" %}</div>
