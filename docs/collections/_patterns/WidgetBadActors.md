@@ -4,8 +4,8 @@ title: "Bad Actors"
 description: "<strong>Bad Actors</strong>"
 extract: "This widget is comprises of six (6) title-value components along with a heading. These title-value components serve as informative building blocks, offering quick access to key metrics."
 weight: 4
-thumbnail: "/assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsPublishedMode.png"
-image: "/assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsPublishedMode.png"
+thumbnail: "/assets/images/patterns/widgets/BadActors/DarkTheme/BadActorsPublishedMode.png"
+image: "/assets/images/patterns/widgets/BadActors/DarkTheme/BadActorsPublishedMode.png"
 categories: ["Widget", "Static"]
 contributor: "XMPro"
 role: "Pattern"
@@ -14,29 +14,29 @@ toc: false
 toc_label: 
 
 gallery:
-  - image: "/assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsPublishedModewithData.png"
+  - image: "/assets/images/patterns/widgets/BadActors/DarkTheme/BadActorsPublishedModewithData.png"
     caption: "<strong>Above:</strong> Published View Dark Theme"
-  - image: "/assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsPublishedModewithData.png"
+  - image: "/assets/images/patterns/widgets/BadActors/LightTheme/BadActorsPublishedModewithData.png"
     caption: "<strong>Above:</strong> Published View Light Theme"
 gallery_limit: 2
 
 side_gallery:
-  - image: "/assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/BadActors/DarkTheme/BadActorsPublishedMode.png"
     caption: "<strong>Above:</strong> Published Mode - No Data"
-  - image: "/assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsDesignMode.png"
+  - image: "/assets/images/patterns/widgets/BadActors/DarkTheme/BadActorsDesignMode.png"
     caption: "<strong>Above:</strong> Design Mode"
-  - image: "/assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsDataSource.png"
+  - image: "/assets/images/patterns/widgets/BadActors/DarkTheme/BadActorsDataSource.png"
     caption: "<strong>Above:</strong> Design Mode - Data Source"
-  - image: "/assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/BadActors/LightTheme/BadActorsPublishedMode.png"
     caption: "<strong>Above:</strong> Published Mode - No Data"
-  - image: "/assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsDesignMode.png"
+  - image: "/assets/images/patterns/widgets/BadActors/LightTheme/BadActorsDesignMode.png"
     caption: "<strong>Above:</strong> Design Mode"
-  - image: "/assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsDataSource.png"
+  - image: "/assets/images/patterns/widgets/BadActors/LightTheme/BadActorsDataSource.png"
     caption: "<strong>Above:</strong> Design Mode - Data Source"
 
 files:
   - title: "Widget"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/Bad%20Actors.xwid"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/widgets/Bad%20Actors.xwid"
     image: "/assets/images/icons/AD.png"
 ---
 
@@ -57,6 +57,6 @@ The widget is configured using:
 
 <br />
 To configure and use the data source section, select the box named *__Data Source__* and configure its data source under *Block Properties*.  
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/BadActors/DarkTheme/BadActorsDataSource.png" %}</div>
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/BadActors/LightTheme/BadActorsDataSource.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/patterns/widgets/BadActors/DarkTheme/BadActorsDataSource.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/patterns/widgets/BadActors/LightTheme/BadActorsDataSource.png" %}</div>
 Make sure to change the fields within the box to get their values from the data source vs static.

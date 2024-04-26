@@ -4,8 +4,8 @@ title: "Data Tile with Sub Heading - No Content Card"
 description: "<strong>Data Tile with Sub Heading - No Content Card</strong>"
 extract: "Within this widget, you'll find both a heading and a subheading, complemented by a linear gauge and a value field."
 weight: 4
-thumbnail: "/assets/images/Patterns/Widgets/DataTilewithSubHeadingNoContentCard/DarkTheme/DataTilewithSubHeadingNoContentCardPublishedMode.png"
-image: "/assets/images/Patterns/Widgets/DataTilewithSubHeadingNoContentCard/DarkTheme/DataTilewithSubHeadingNoContentCardPublishedMode.png"
+thumbnail: "/assets/images/patterns/widgets/DataTilewithSubHeadingNoContentCard/DarkTheme/DataTilewithSubHeadingNoContentCardPublishedMode.png"
+image: "/assets/images/patterns/widgets/DataTilewithSubHeadingNoContentCard/DarkTheme/DataTilewithSubHeadingNoContentCardPublishedMode.png"
 categories: ["Widget", "Static"]
 contributor: "XMPro"
 role: "Pattern"
@@ -14,25 +14,25 @@ toc: false
 toc_label: 
 
 gallery:
-  - image: "/assets/images/Patterns/Widgets/DataTilewithSubHeadingNoContentCard/DarkTheme/DataTilewithSubHeadingNoContentCardPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/DataTilewithSubHeadingNoContentCard/DarkTheme/DataTilewithSubHeadingNoContentCardPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Dark Theme"
-  - image: "/assets/images/Patterns/Widgets/DataTilewithSubHeadingNoContentCard/LightTheme/DataTilewithSubHeadingNoContentCardPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/DataTilewithSubHeadingNoContentCard/LightTheme/DataTilewithSubHeadingNoContentCardPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Light Theme"
 gallery_limit: 2
 
 side_gallery:
-  - image: "/assets/images/Patterns/Widgets/DataTilewithSubHeadingNoContentCard/DarkTheme/DataTilewithSubHeadingNoContentCardDesignMode.png"
+  - image: "/assets/images/patterns/widgets/DataTilewithSubHeadingNoContentCard/DarkTheme/DataTilewithSubHeadingNoContentCardDesignMode.png"
     caption: "<strong>Above:</strong> Design Mode"
-  - image: "/assets/images/Patterns/Widgets/DataTilewithSubHeadingNoContentCard/DarkTheme/DataTilewithSubHeadingNoContentCardDataSource.png"
+  - image: "/assets/images/patterns/widgets/DataTilewithSubHeadingNoContentCard/DarkTheme/DataTilewithSubHeadingNoContentCardDataSource.png"
     caption: "<strong>Above:</strong> Design Mode - Data Source"
-  - image: "/assets/images/Patterns/Widgets/DataTilewithSubHeadingNoContentCard/LightTheme/DataTilewithSubHeadingNoContentCardDesignMode.png"
+  - image: "/assets/images/patterns/widgets/DataTilewithSubHeadingNoContentCard/LightTheme/DataTilewithSubHeadingNoContentCardDesignMode.png"
     caption: "<strong>Above:</strong> Design Mode"
-  - image: "/assets/images/Patterns/Widgets/DataTilewithSubHeadingNoContentCard/LightTheme/DataTilewithSubHeadingNoContentCardDataSource.png"
+  - image: "/assets/images/patterns/widgets/DataTilewithSubHeadingNoContentCard/LightTheme/DataTilewithSubHeadingNoContentCardDataSource.png"
     caption: "<strong>Above:</strong> Design Mode - Data Source"
 
 files:
   - title: "Widget"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/Data%20Tile%20with%20Sub%20Heading%20No%20Content%20Card.xwid"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/widgets/Data%20Tile%20with%20Sub%20Heading%20No%20Content%20Card.xwid"
     image: "/assets/images/icons/AD.png"
 ---
 
@@ -51,6 +51,6 @@ The widget is configured using:
 
 <br />
 To configure and use the total section, select the box named *__Data Source__* and configure its data source under *Block Properties*. Within the Block Properties, proceed to configure the data source settings to suit your specific requirements. It's essential to interact with the fields within the box to ensure they are accurately aligned with the values in your datasets. 
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/DataTilewithSubHeadingNoContentCard/DarkTheme/DataTilewithSubHeadingNoContentCardDataSource.png" %}</div>
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/DataTilewithSubHeadingNoContentCard/LightTheme/DataTilewithSubHeadingNoContentCardDataSource.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/patterns/widgets/DataTilewithSubHeadingNoContentCard/DarkTheme/DataTilewithSubHeadingNoContentCardDataSource.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/patterns/widgets/DataTilewithSubHeadingNoContentCard/LightTheme/DataTilewithSubHeadingNoContentCardDataSource.png" %}</div>
 Make sure to change the fields within the box to get their values from the data source vs static.

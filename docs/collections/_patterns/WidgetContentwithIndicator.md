@@ -4,8 +4,8 @@ title: "Content with Indicator"
 description: "<strong>Content with Indicator</strong>"
 extract: "This widget includes a main title, a subheading, an indicator, and more detailed content below."
 weight: 4
-thumbnail: "/assets/images/Patterns/Widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorPublishedMode.png"
-image: "/assets/images/Patterns/Widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorPublishedMode.png"
+thumbnail: "/assets/images/patterns/widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorPublishedMode.png"
+image: "/assets/images/patterns/widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorPublishedMode.png"
 categories: ["Widget", "Static"]
 contributor: "XMPro"
 role: "Pattern"
@@ -14,25 +14,25 @@ toc: false
 toc_label: 
 
 gallery:
-  - image: "/assets/images/Patterns/Widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Dark Theme"
-  - image: "/assets/images/Patterns/Widgets/ContentwithIndicator/LightTheme/ContentwithIndicatorPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/ContentwithIndicator/LightTheme/ContentwithIndicatorPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Light Theme"
 gallery_limit: 2
 
 side_gallery:
-  - image: "/assets/images/Patterns/Widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorDesignMode.png"
+  - image: "/assets/images/patterns/widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorDesignMode.png"
     caption: "<strong>Above:</strong> Design Mode"
-  - image: "/assets/images/Patterns/Widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorDataSource.png"
+  - image: "/assets/images/patterns/widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorDataSource.png"
     caption: "<strong>Above:</strong> Design Mode - Data Source"
-  - image: "/assets/images/Patterns/Widgets/ContentwithIndicator/LightTheme/ContentwithIndicatorDesignMode.png"
+  - image: "/assets/images/patterns/widgets/ContentwithIndicator/LightTheme/ContentwithIndicatorDesignMode.png"
     caption: "<strong>Above:</strong> Design Mode"
-  - image: "/assets/images/Patterns/Widgets/ContentwithIndicator/LightTheme/ContentwithIndicatorDataSource.png"
+  - image: "/assets/images/patterns/widgets/ContentwithIndicator/LightTheme/ContentwithIndicatorDataSource.png"
     caption: "<strong>Above:</strong> Design Mode - Data Source"
 
 files:
   - title: "Widget"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/Content%20with%20Indicator.xwid"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/widgets/Content%20with%20Indicator.xwid"
     image: "/assets/images/icons/AD.png"
 ---
 
@@ -51,6 +51,6 @@ The widget is configured using:
 
 <br />
 To configure and use the total section, select the box named *__Data Source__* and configure its data source under *Block Properties*.  
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorDataSource.png" %}</div>
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/ContentwithIndicator/LightTheme/ContentwithIndicatorDataSource.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/patterns/widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorDataSource.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/patterns/widgets/ContentwithIndicator/LightTheme/ContentwithIndicatorDataSource.png" %}</div>
 Make sure to change the fields within the box to get their values from the data source vs static.

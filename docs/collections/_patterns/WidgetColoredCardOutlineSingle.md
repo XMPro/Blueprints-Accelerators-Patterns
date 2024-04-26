@@ -4,8 +4,8 @@ title: "Colored Card Outline - Single"
 description: "<strong>Colored Card Outline - Single</strong>"
 extract: "This widget serves as a fundamental card outline, ideal for highlighting and presenting important information or adding an aesthetic touch to your content."
 weight: 4
-thumbnail: "/assets/images/Patterns/Widgets/ColoredCardOutlineSingle/DarkTheme/ColoredCardOutlineSinglePublishedMode.png"
-image: "/assets/images/Patterns/Widgets/ColoredCardOutlineSingle/DarkTheme/ColoredCardOutlineSinglePublishedMode.png"
+thumbnail: "/assets/images/patterns/widgets/ColoredCardOutlineSingle/DarkTheme/ColoredCardOutlineSinglePublishedMode.png"
+image: "/assets/images/patterns/widgets/ColoredCardOutlineSingle/DarkTheme/ColoredCardOutlineSinglePublishedMode.png"
 categories: ["Widget", "Container"]
 contributor: "XMPro"
 role: "Pattern"
@@ -14,21 +14,21 @@ toc: false
 toc_label: 
 
 gallery:
-  - image: "/assets/images/Patterns/Widgets/ColoredCardOutlineSingle/DarkTheme/ColoredCardOutlineSinglePublishedMode.png"
+  - image: "/assets/images/patterns/widgets/ColoredCardOutlineSingle/DarkTheme/ColoredCardOutlineSinglePublishedMode.png"
     caption: "<strong>Above:</strong> Published View Dark Theme"
-  - image: "/assets/images/Patterns/Widgets/ColoredCardOutlineSingle/LightTheme/ColoredCardOutlineSinglePublishedMode.png"
+  - image: "/assets/images/patterns/widgets/ColoredCardOutlineSingle/LightTheme/ColoredCardOutlineSinglePublishedMode.png"
     caption: "<strong>Above:</strong> Published View Light Theme"
 gallery_limit: 2
 
 side_gallery:
-  - image: "/assets/images/Patterns/Widgets/ColoredCardOutlineSingle/DarkTheme/ColoredCardOutlineSingleDesignMode.png"
+  - image: "/assets/images/patterns/widgets/ColoredCardOutlineSingle/DarkTheme/ColoredCardOutlineSingleDesignMode.png"
     caption: "<strong>Above:</strong> Design Mode"
-  - image: "/assets/images/Patterns/Widgets/ColoredCardOutlineSingle/LightTheme/ColoredCardOutlineSingleDesignMode.png"
+  - image: "/assets/images/patterns/widgets/ColoredCardOutlineSingle/LightTheme/ColoredCardOutlineSingleDesignMode.png"
     caption: "<strong>Above:</strong> Design Mode"
 
 files:
   - title: "Widget"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/Colored%20Card%20Display%20Outline%20Single.xwid"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/widgets/Colored%20Card%20Display%20Outline%20Single.xwid"
     image: "/assets/images/icons/AD.png"
 ---
 
@@ -46,5 +46,5 @@ The widget is configured using:
 
 <br />
 To make the most of this widget's functionality, you can easily integrate it with other widgets by dragging and dropping them into the designated blocks or any layout elements of your choice.
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/ColoredCardOutlineSingle/DarkTheme/ColoredCardOutlineSingleDesignMode.png" %}</div>
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/ColoredCardOutlineSingle/LightTheme/ColoredCardOutlineSingleDesignMode.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/patterns/widgets/ColoredCardOutlineSingle/DarkTheme/ColoredCardOutlineSingleDesignMode.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/patterns/widgets/ColoredCardOutlineSingle/LightTheme/ColoredCardOutlineSingleDesignMode.png" %}</div>

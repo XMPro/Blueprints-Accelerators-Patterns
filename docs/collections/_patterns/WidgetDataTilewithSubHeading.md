@@ -4,8 +4,8 @@ title: "Data Tile with Sub Heading"
 description: "<strong>Data Tile with Sub Heading</strong>"
 extract: "Within this widget, you'll find both a heading and a subheading, complemented by a linear gauge and a value field."
 weight: 4
-thumbnail: "/assets/images/Patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingPublishedMode.png"
-image: "/assets/images/Patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingPublishedMode.png"
+thumbnail: "/assets/images/patterns/widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingPublishedMode.png"
+image: "/assets/images/patterns/widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingPublishedMode.png"
 categories: ["Widget", "Static"]
 contributor: "XMPro"
 role: "Pattern"
@@ -14,25 +14,25 @@ toc: false
 toc_label: 
 
 gallery:
-  - image: "/assets/images/Patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Dark Theme"
-  - image: "/assets/images/Patterns/Widgets/DataTilewithSubHeading/LightTheme/DataTilewithSubHeadingPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/DataTilewithSubHeading/LightTheme/DataTilewithSubHeadingPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Light Theme"
 gallery_limit: 2
 
 side_gallery:
-  - image: "/assets/images/Patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingDesignMode.png"
+  - image: "/assets/images/patterns/widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingDesignMode.png"
     caption: "<strong>Above:</strong> Design Mode"
-  - image: "/assets/images/Patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingDataSource.png"
+  - image: "/assets/images/patterns/widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingDataSource.png"
     caption: "<strong>Above:</strong> Design Mode - Data Source"
-  - image: "/assets/images/Patterns/Widgets/DataTilewithSubHeading/LightTheme/DataTilewithSubHeadingDesignMode.png"
+  - image: "/assets/images/patterns/widgets/DataTilewithSubHeading/LightTheme/DataTilewithSubHeadingDesignMode.png"
     caption: "<strong>Above:</strong> Design Mode"
-  - image: "/assets/images/Patterns/Widgets/DataTilewithSubHeading/LightTheme/DataTilewithSubHeadingDataSource.png"
+  - image: "/assets/images/patterns/widgets/DataTilewithSubHeading/LightTheme/DataTilewithSubHeadingDataSource.png"
     caption: "<strong>Above:</strong> Design Mode - Data Source"
 
 files:
   - title: "Widget"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/Data%20Tile%20with%20Sub%20Heading.xwid"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/widgets/Data%20Tile%20with%20Sub%20Heading.xwid"
     image: "/assets/images/icons/AD.png"
 ---
 
@@ -51,6 +51,6 @@ The widget is configured using:
 
 <br />
 To configure and use the total section, select the box named *__Data Source__* and configure its data source under *Block Properties*.  
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingDataSource.png" %}</div>
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/DataTilewithSubHeading/LightTheme/DataTilewithSubHeadingDataSource.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/patterns/widgets/DataTilewithSubHeading/DarkTheme/DataTilewithSubHeadingDataSource.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/patterns/widgets/DataTilewithSubHeading/LightTheme/DataTilewithSubHeadingDataSource.png" %}</div>
 Make sure to change the fields within the box to get their values from the data source vs static.

@@ -4,8 +4,8 @@ title: "Styled Card Display"
 description: "<strong>Styled Card Display</strong>"
 extract: "This widget is designed with versatility in mind, offering two distinct formats for presenting information."
 weight: 4
-thumbnail: "/assets/images/Patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayPublishedMode.png"
-image: "/assets/images/Patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayPublishedMode.png"
+thumbnail: "/assets/images/patterns/widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayPublishedMode.png"
+image: "/assets/images/patterns/widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayPublishedMode.png"
 categories: ["Widget", "Dynamic"]
 contributor: "XMPro"
 role: "Pattern"
@@ -14,25 +14,25 @@ toc: false
 toc_label: 
 
 gallery:
-  - image: "/assets/images/Patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Dark Theme"
-  - image: "/assets/images/Patterns/Widgets/StyledCardDisplay/LightTheme/StyledCardDisplayPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/StyledCardDisplay/LightTheme/StyledCardDisplayPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Light Theme"
 gallery_limit: 2
 
 side_gallery:
-  - image: "/assets/images/Patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayDesignMode.png"
+  - image: "/assets/images/patterns/widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayDesignMode.png"
     caption: "<strong>Above:</strong> Design Mode"
-  - image: "/assets/images/Patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayDataSource.png"
+  - image: "/assets/images/patterns/widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayDataSource.png"
     caption: "<strong>Above:</strong> Design Mode - Data Source"
-  - image: "/assets/images/Patterns/Widgets/StyledCardDisplay/LightTheme/StyledCardDisplayDesignMode.png"
+  - image: "/assets/images/patterns/widgets/StyledCardDisplay/LightTheme/StyledCardDisplayDesignMode.png"
     caption: "<strong>Above:</strong> Design Mode"
-  - image: "/assets/images/Patterns/Widgets/StyledCardDisplay/LightTheme/StyledCardDisplayDataSource.png"
+  - image: "/assets/images/patterns/widgets/StyledCardDisplay/LightTheme/StyledCardDisplayDataSource.png"
     caption: "<strong>Above:</strong> Design Mode - Data Source"
 
 files:
   - title: "Widget"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/Styled%20Card%20Display.xwid"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/widgets/Styled%20Card%20Display.xwid"
     image: "/assets/images/icons/AD.png"
 ---
 
@@ -51,6 +51,6 @@ The widget is configured using:
 
 <br />
 To configure and use the total section, select the box named *__Data Source__* and configure its data source under *Block Properties*.  
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayDataSource.png" %}</div>
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/StyledCardDisplay/LightTheme/StyledCardDisplayDataSource.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/patterns/widgets/StyledCardDisplay/DarkTheme/StyledCardDisplayDataSource.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/patterns/widgets/StyledCardDisplay/LightTheme/StyledCardDisplayDataSource.png" %}</div>
 Make sure to change the fields within the box to get their values from the data source vs static.

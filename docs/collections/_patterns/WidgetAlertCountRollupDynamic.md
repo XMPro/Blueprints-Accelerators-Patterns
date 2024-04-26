@@ -4,8 +4,8 @@ title: "Dynamic Alert Count Rollup"
 description: "<strong>Dynamic Alert Count Rollup</strong>"
 extract: "This widget is broken down into two sections, the left Total Assets is the total area and the right section past the vertical line is where you can get specific. The right section will grow and shrink depending on the data source that is provided."
 weight: 4
-thumbnail: "/assets/images/Patterns/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicPublishedMode.png"
-image: "/assets/images/Patterns/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicPublishedMode.png"
+thumbnail: "/assets/images/patterns/widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicPublishedMode.png"
+image: "/assets/images/patterns/widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicPublishedMode.png"
 categories: ["Widget", "Dynamic"]
 contributor: "XMPro"
 role: "Pattern"
@@ -14,25 +14,25 @@ toc: false
 toc_label: 
 
 gallery:
-  - image: "/assets/images/Patterns/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Dark Theme"
-  - image: "/assets/images/Patterns/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Light Theme"
 gallery_limit: 2
 
 side_gallery:
-  - image: "/assets/images/Patterns/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicTotalDataSource.png"
+  - image: "/assets/images/patterns/widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicTotalDataSource.png"
     caption: "<strong>Above:</strong> Design Mode - Total"
-  - image: "/assets/images/Patterns/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicChildDataSource.png"
+  - image: "/assets/images/patterns/widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicChildDataSource.png"
     caption: "<strong>Above:</strong> Design Mode - Child"
-  - image: "/assets/images/Patterns/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicTotalDataSource.png"
+  - image: "/assets/images/patterns/widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicTotalDataSource.png"
     caption: "Design Mode - Total"
-  - image: "/assets/images/Patterns/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicChildDataSource.png"
+  - image: "/assets/images/patterns/widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicChildDataSource.png"
     caption: "<strong>Above:</strong> Design Mode - Child"
 
 files:
   - title: "Widget"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/Patterns/Widgets/Alert%20Count%20Rollup%20-%20Dynamic.xwid"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/widgets/Alert%20Count%20Rollup%20-%20Dynamic.xwid"
     image: "/assets/images/icons/AD.png"
 ---
 
@@ -51,14 +51,14 @@ The widget is configured using:
 
 <br />
 To configure and use the total section, select the box named *__Total Data Source__* and configure its data source under *Block Properties*.  
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicTotalDataSource.png" %}</div>
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicTotalDataSource.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/patterns/widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicTotalDataSource.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/patterns/widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicTotalDataSource.png" %}</div>
 Make sure to change the fields within the box to get their values from the data source vs static.
 
 To configure and use the dynamic section, select the box named *__Child Data Source__* and configure its data source under *Block Properties*.  
 
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicChildDataSource.png" %}</div>
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/Patterns/Widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicChildDataSource.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/patterns/widgets/AlertCountRollupDynamic/DarkTheme/AlertCountRollupDynamicChildDataSource.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/patterns/widgets/AlertCountRollupDynamic/LightTheme/AlertCountRollupDynamicChildDataSource.png" %}</div>
 
 Make sure to change the fields within the box to get their values from the data source vs static.  
 
