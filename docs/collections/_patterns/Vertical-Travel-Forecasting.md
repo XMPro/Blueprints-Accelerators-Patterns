@@ -25,12 +25,13 @@ side_gallery:
     caption: 
 
 files:
-  - title: "Data Stream - Forecasting"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/machine-learning/vertical-travel-forecasting/Vertical%20Travel%20Forecasting.xuc"
+  - title: "Data Stream"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/machine-learning/vertical-travel-forecasting/datastream/"
     image: "/assets/images/icons/DS.png"
-  - title: "SQL - Crusher"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/machine-learning/vertical-travel-forecasting/sql/%5BDemoCrusher%5D.sql"
+  - title: "SQL"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/machine-learning/vertical-travel-forecasting/sql/"
     image: "/assets/images/icons/sql.webp"
+
 ---
 
 ## Data Stream
