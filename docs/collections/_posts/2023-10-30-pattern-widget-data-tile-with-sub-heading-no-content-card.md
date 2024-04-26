@@ -6,12 +6,12 @@ categories: ["Widget", "Static"]
 description: "This widget includes a main title, a subheading, an indicator, and more detailed content below."
 contributor: "XMPro"
 role: "Pattern"
-thumbnail: "/assets/images/patterns/Widgets/DataTilewithSubHeadingNoContentCard/DarkTheme/DataTilewithSubHeadingNoContentCardPublishedMode.png"
-image: "/assets/images/patterns/Widgets/DataTilewithSubHeadingNoContentCard/DarkTheme/DataTilewithSubHeadingNoContentCardPublishedMode.png"
+thumbnail: "/assets/images/patterns/widgets/DataTilewithSubHeadingNoContentCard/DarkTheme/DataTilewithSubHeadingNoContentCardPublishedMode.png"
+image: "/assets/images/patterns/widgets/DataTilewithSubHeadingNoContentCard/DarkTheme/DataTilewithSubHeadingNoContentCardPublishedMode.png"
 gallery:
-  - image: "/assets/images/patterns/Widgets/DataTilewithSubHeadingNoContentCard/DarkTheme/DataTilewithSubHeadingNoContentCardPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/DataTilewithSubHeadingNoContentCard/DarkTheme/DataTilewithSubHeadingNoContentCardPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Dark Theme"
-  - image: "/assets/images/patterns/Widgets/DataTilewithSubHeadingNoContentCard/LightTheme/DataTilewithSubHeadingNoContentCardPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/DataTilewithSubHeadingNoContentCard/LightTheme/DataTilewithSubHeadingNoContentCardPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Light Theme"
 ---
 

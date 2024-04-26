@@ -47,7 +47,7 @@ files:
   - title: "SQL - Asset"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/alternative-energy-renewable-view/sql/%5BDemoAlternativeEnergyAsset%5D.sql"
     image: "/assets/images/icons/sql.webp"
-  - title: "SQL - Work order etc"
+  - title: "SQL - Work order"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/alternative-energy-renewable-view/sql/%5BDemoWorkManagementWindTurbine%5D.sql"
     image: "/assets/images/icons/sql.webp"
 

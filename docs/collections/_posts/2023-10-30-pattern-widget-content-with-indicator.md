@@ -6,12 +6,12 @@ categories: ["Widget", "Static"]
 description: "This widget includes a main title, a subheading, an indicator, and more detailed content below."
 contributor: "XMPro"
 role: "Pattern"
-thumbnail: "/assets/images/patterns/Widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorPublishedMode.png"
-image: "/assets/images/patterns/Widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorPublishedMode.png"
+thumbnail: "/assets/images/patterns/widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorPublishedMode.png"
+image: "/assets/images/patterns/widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorPublishedMode.png"
 gallery:
-  - image: "/assets/images/patterns/Widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/ContentwithIndicator/DarkTheme/ContentwithIndicatorPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Dark Theme"
-  - image: "/assets/images/patterns/Widgets/ContentwithIndicator/LightTheme/ContentwithIndicatorPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/ContentwithIndicator/LightTheme/ContentwithIndicatorPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Light Theme"
 ---
 

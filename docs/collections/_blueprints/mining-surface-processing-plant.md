@@ -115,7 +115,7 @@ The recommendation is configured using four rules across three recommendations:
 <div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/mining-surface-processing-plant/rm03.png" %}</div>
 
 ## Data Stream
-An example of how to contextualize simulated data, broadcast the data, run recommendations and output the gas turbine data to the Application Designer. The data stream is configured using: 
+An example of how to contextualize simulated data, broadcast the data, run recommendations and output the data to the Application Designer. The data stream is configured using: 
 
 ### Processing Plant Image Map View
 

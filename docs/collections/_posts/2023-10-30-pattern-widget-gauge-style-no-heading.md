@@ -6,12 +6,12 @@ categories: ["Widget", "Static"]
 description: "This widget comprises two primary components: the description and the circular gauge. The description provides textual information or context, typically explaining the data or the purpose of the gauge."
 contributor: "XMPro"
 role: "Pattern"
-thumbnail: "/assets/images/patterns/Widgets/GaugeStylenoHeading/DarkTheme/GaugeStylenoHeadingPublishedMode.png"
-image: "/assets/images/patterns/Widgets/GaugeStylenoHeading/DarkTheme/GaugeStylenoHeadingPublishedMode.png"
+thumbnail: "/assets/images/patterns/widgets/GaugeStylenoHeading/DarkTheme/GaugeStylenoHeadingPublishedMode.png"
+image: "/assets/images/patterns/widgets/GaugeStylenoHeading/DarkTheme/GaugeStylenoHeadingPublishedMode.png"
 gallery:
-  - image: "/assets/images/patterns/Widgets/GaugeStylenoHeading/DarkTheme/GaugeStylenoHeadingPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/GaugeStylenoHeading/DarkTheme/GaugeStylenoHeadingPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Dark Theme"
-  - image: "/assets/images/patterns/Widgets/GaugeStylenoHeading/LightTheme/GaugeStylenoHeadingPublishedMode.png"
+  - image: "/assets/images/patterns/widgets/GaugeStylenoHeading/LightTheme/GaugeStylenoHeadingPublishedMode.png"
     caption: "<strong>Above:</strong> Published View Light Theme"
 ---
 

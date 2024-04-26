@@ -4,8 +4,8 @@ title: "Asset Monitoring using regression"
 description: "<strong>Asset Monitoring using regression</strong>"
 extract: "Using crusher data to predict the liner wear for a crusher asset."
 weight: 3
-thumbnail: "/assets/images/patterns/machine-learning/Liner-Wear-Prediction-Regression/DataStream_Running_01.png"
-image: "/assets/images/patterns/machine-learning/Liner-Wear-Prediction-Regression/DataStream_Running_01.png"
+thumbnail: "/assets/images/patterns/machine-learning/Liner-Wear-Prediction-Regression/dsRunning.png"
+image: "/assets/images/patterns/machine-learning/Liner-Wear-Prediction-Regression/dsRunning.png"
 categories: ["Asset Monitoring","Condition Monitoring","AI ML"]
 contributor: "XMPro"
 role: "Pattern"
@@ -14,9 +14,9 @@ toc: true
 toc_label: "Table of Contents"
 
 gallery:
-  - image: "/assets/images/patterns/machine-learning/Liner-Wear-Prediction-Regression/DataStream_Running_01.png"
+  - image: "/assets/images/patterns/machine-learning/Liner-Wear-Prediction-Regression/dsRunning.png"
     caption: "<strong>Above:</strong> Published Data Stream"
-  - image: "/assets/images/patterns/machine-learning/Liner-Wear-Prediction-Regression/DataStream_01.png"
+  - image: "/assets/images/patterns/machine-learning/Liner-Wear-Prediction-Regression/ds01.png"
     caption: "<strong>Above:</strong> Configured Data Stream"
 gallery_limit: 2
 

@@ -22,8 +22,14 @@ gallery:
 gallery_limit: 2
 
 side_gallery:
-  - image: 
-    caption: 
+  - image: "/assets/images/accelerators/assets/heat-exchanger/ad.png"
+    caption: "<strong>Above:</strong> Application View"
+  - image: "/assets/images/accelerators/assets/heat-exchanger/ad.gif"
+    caption: "<strong>Above:</strong> Application View"
+  - image: "/assets/images/accelerators/assets/heat-exchanger/dsRunning.png"
+    caption: "<strong>Above:</strong> Published Data Stream"
+  - image: "/assets/images/accelerators/assets/heat-exchanger/ds.png"
+    caption: "<strong>Above:</strong> Published Data Stream"
 
 files:
   - title: "Application"

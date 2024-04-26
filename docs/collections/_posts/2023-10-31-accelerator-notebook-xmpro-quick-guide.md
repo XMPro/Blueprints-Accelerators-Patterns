@@ -15,4 +15,4 @@ gallery:
     caption: "<strong>Above:</strong> XMPro Notebook Guide Cont."
 ---
 
-View more information and how to import by <strong>[Clicking Here]({{ site.url }}/accelerators/Notebook-XMPro-Quick-Guide)</strong>
+View more information and how to import by <strong>[Clicking Here]({{ site.url }}/accelerators/notebook-xmpro-quick-guide)</strong>

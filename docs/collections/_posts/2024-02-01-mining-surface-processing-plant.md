@@ -19,4 +19,4 @@ gallery:
     caption: "<strong>Above:</strong> Data Stream"
 ---
 
-View more information and how to import by <strong>[Clicking Here]({{ site.url }}/blueprints/DigitalCitiesWaterUtilities/)</strong>
+View more information and how to import by <strong>[Clicking Here]({{ site.url }}/blueprints/mining-surface-processing-plant/)</strong>

@@ -17,4 +17,4 @@ gallery:
     caption: "<strong>Above:</strong> Published Data Stream"
 ---
 
-View more information and how to import by <strong>[Clicking Here]({{ site.url }}/blueprints/AlternativeEnergyWindFarm/)</strong>
+View more information and how to import by <strong>[Clicking Here]({{ site.url }}/blueprints/alternative-energy-wind-farm/)</strong>

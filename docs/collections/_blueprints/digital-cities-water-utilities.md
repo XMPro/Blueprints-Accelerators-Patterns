@@ -51,10 +51,10 @@ side_gallery:
   
 files:
   - title: "Notebook - Flood Prediction"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/manufacturing-golden-batch-coffee/notebook/Flood%20Prediction.ipynb"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/digital-cities-water-utilities/notebook/Flood%20Prediction.ipynb"
     image: "/assets/images/icons/AI.png"
   - title: "CSV - Weather Data Singapore"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/manufacturing-golden-batch-coffee/notebook/"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/digital-cities-water-utilities/notebook/"
     image: "/assets/images/icons/csv.svg"
   - title: "Maintenance History"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/digital-cities-water-utilities/sql/DemoMaintenaceHistory.sql"
