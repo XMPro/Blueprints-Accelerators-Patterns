@@ -25,12 +25,13 @@ side_gallery:
     caption: 
 
 files:
-  - title: "Data Stream - Binary Classification"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/machine-learning/Liner%20Wear%20Prediction%20-%20Regression/Liner%20Wear%20Prediction%20using%20Regression.xuc"
+  - title: "Data Stream"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/machine-learning/liner-wear-prediction-regression/datastream/"
     image: "/assets/images/icons/DS.png"
-  - title: "SQL - Crusher"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/patterns/machine-learning/Liner%20Wear%20Prediction%20-%20Regression/sql/%5BDemoCrusher%5D.sql"
+  - title: "SQL"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/machine-learning/liner-wear-prediction-regression/sql/"
     image: "/assets/images/icons/sql.webp"
+
 ---
 
 ## Data Stream

@@ -25,11 +25,11 @@ side_gallery:
     caption: 
 
 files:
-  - title: "Data Stream - Binary Classification"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/machine-learning/Asset-monitoring-binary-classification/Asset%20Monitoring%20Binary%20Classification.xuc"
+  - title: "Data Stream"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/machine-learning/asset-monitoring-binary-classification/datastream/"
     image: "/assets/images/icons/DS.png"
-  - title: "SQL - Smart Meter"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/machine-learning/Asset-monitoring-binary-classification/sql/%5BDemoSmartMeter%5D.sql"
+  - title: "SQL"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/machine-learning/asset-monitoring-binary-classification/sql/"
     image: "/assets/images/icons/sql.webp"
 ---
 

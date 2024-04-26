@@ -25,8 +25,8 @@ side_gallery:
     caption: 
 
 files:
-  - title: "Data Stream - Image Map"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/general/image-map/Image%20Map%20Pattern.xuc"
+  - title: "Data Stream"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/general/image-map/"
     image: "/assets/images/icons/DS.png"
 ---
 
