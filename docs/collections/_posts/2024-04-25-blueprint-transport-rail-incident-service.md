@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Transport - Rail Incident & Service"
-date: 2024-02-01
+date: 2024-04-25
 categories: ["Asset Monitoring", "Dark Theme", "Digital Cities", "Transport"]
 description: "A rail system digital twin for analyzing incident trends nationally and by state, with asset-level service and maintenance tracking for trains and equipment."
 contributor: "XMPro"
