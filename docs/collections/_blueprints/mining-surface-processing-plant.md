@@ -37,11 +37,13 @@ side_gallery:
   - image: "/assets/images/blueprints/mining-surface-processing-plant/ds02.png"
     caption: "<strong>Above:</strong> Simulate Pump Telemetry"
 
-
 files:
   - title: "Application"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/mining-surface-processing-plant/application/"
     image: "/assets/images/icons/AD.png"
+  - title: "Unity Files"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/mining-surface-processing-plant/unity"
+    image: "/assets/images/icons/AD.png"  
   - title: "Application Template"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/mining-surface-processing-plant/template/"
     image: "/assets/images/icons/AD.png"    

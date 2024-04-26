@@ -5,8 +5,8 @@ title: "Root Cause Analysis (RCA)"
 description: "<strong>Root Cause Analysis (RCA)</strong>"
 extract: "A root cause analysis (RCA) application offering data capture and documenting capabilities, designed to identify the fundamental reasons for problems or events, enabling effective solutions and prevention of future occurrences."
 weight: 2
-thumbnail: "/assets/images/blueprints/general/rca/ad05.png"
-image: "/assets/images/blueprints/general/rca/ad05.png"
+thumbnail: "/assets/images/blueprints/general/RCA/ad05.png"
+image: "/assets/images/blueprints/general/RCA/ad05.png"
 categories: ["Data Capture","Light Theme"]
 contributor: "XMPro"
 role: "Blueprint"
@@ -15,21 +15,18 @@ toc: true
 toc_label: "Table of Contents"
 
 gallery:
-  - image: "/assets/images/blueprints/general/rca/ad05.png"
+  - image: "/assets/images/blueprints/general/RCA/ad05.png"
     caption: "<strong>Above:</strong> Application View"
-  - image: "/assets/images/blueprints/general/rca/ad06.png"
+  - image: "/assets/images/blueprints/general/RCA/ad06.png"
     caption: "<strong>Above:</strong> Application Administration View"
 gallery_limit: 2
 
 files:
   - title: "Application"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general/rca/application/Root%20Cause%20Analysis.xapp"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general/rca/application/"
     image: "/assets/images/icons/AD.png"
-  - title: "Administration Application"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general/rca/application/Root%20Cause%20Analysis%20Data%20Administration.xapp"
-    image: "/assets/images/icons/AD.png"    
-  - title: "SQL - RCA Tables and Data"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general/rca/sql/RCA-SQL-Script.sql"
+  - title: "SQL"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general/rca/sql/"
     image: "/assets/images/icons/sql.webp"
 
 ---
@@ -39,23 +36,23 @@ This application guides the user through the various steps to complete the RCA a
 
 ### Landing Page
 This page contains two main grids, the top right for pending action items and the bottom to allow for access to all RCA's. 
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general/rca/ad01.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general/RCA/ad01.png" %}</div>
 
 Each grid has the Store User option enabled meaning it will remember your selection for column ordering, grouping and for the bottom grid hiding certain columns.  Selecting any of the rows in either grid will drilldown to the action page for the RCA that was selected.
 
 ### Failure Details
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general/rca/ad02.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general/RCA/ad02.png" %}</div>
 
 
 ### Timeline
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general/rca/ad03.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general/RCA/ad03.png" %}</div>
 
 
 ### Failure Analysis
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general/rca/ad04.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general/RCA/ad04.png" %}</div>
 
 ### Actions
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general/rca/ad05.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general/RCA/ad05.png" %}</div>
 
 
 ## Administration Application

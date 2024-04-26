@@ -15,16 +15,16 @@ toc: true
 toc_label: "Table of Contents"
 
 gallery:
-  - image: "/assets/images/blueprints/alternative-energy-wind-farm/ad01a.png"
+  - image: "/assets/images/blueprints/alternative-energy-wind-farm/ad01A.png"
     caption: "<strong>Above:</strong> Application View"
   - image: "/assets/images/blueprints/alternative-energy-wind-farm/ds01.png"
     caption: "<strong>Above:</strong> Published Data Stream"
 gallery_limit: 2
 
 side_gallery:
-  - image: "/assets/images/blueprints/alternative-energy-wind-farm/ad01a.png"
+  - image: "/assets/images/blueprints/alternative-energy-wind-farm/ad01A.png"
     caption: "<strong>Above:</strong> Application View 01"
-  - image: "/assets/images/blueprints/alternative-energy-wind-farm/ad01b.png"
+  - image: "/assets/images/blueprints/alternative-energy-wind-farm/ad01B.png"
     caption: "<strong>Above:</strong> Application View 02a"
   - image: "/assets/images/blueprints/alternative-energy-wind-farm/ad02.png"
     caption: "<strong>Above:</strong> Application View 02b"
@@ -35,29 +35,21 @@ side_gallery:
   
 
 files:
-
-  - title: "Maintenance History"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/alternative-energy-wind-farm/sql/DemoAlternativeEnergyAIResults.sql"
-    image: "/assets/images/icons/SQL.png"
-  - title: "Work Orders"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/alternative-energy-wind-farm/sql/DemoWorkManagementWindTurbine.sql"
-    image: "/assets/images/icons/SQL.png"
-  - title: "Wind Farm Management"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/alternative-energy-wind-farm/application/Wind%20Farm%20Management.xapp"
-    image: "/assets/images/icons/AD.png" 
+  - title: "Application"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/alternative-energy-wind-farm/application/"
+    image: "/assets/images/icons/AD.png"
   - title: "Unity Files"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/alternative-energy-wind-farm/unity"
     image: "/assets/images/icons/AD.png"    
-  - title: "Wind Condition Monitoring"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/alternative-energy-wind-farm/recommendation/Wind%20Condition%20Monitoring.xr"
+  - title: "Recommendations"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/alternative-energy-wind-farm/recommendation/"
     image: "/assets/images/icons/RM.png"
-  - title: "Data for Wind Farm"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/alternative-energy-wind-farm/datastream/Data%20for%20Wind%20Farm.xuc"
+  - title: "Data Streams"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/alternative-energy-wind-farm/datastream/"
     image: "/assets/images/icons/DS.png"
-  - title: "Wind Turbine Data"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/alternative-energy-wind-farm/datastream/Wind%20Turbine%20Data.xuc"
-    image: "/assets/images/icons/DS.png"
-
+  - title: "SQL"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/alternative-energy-wind-farm/sql/"
+    image: "/assets/images/icons/sql.webp"
 
 ---
 
