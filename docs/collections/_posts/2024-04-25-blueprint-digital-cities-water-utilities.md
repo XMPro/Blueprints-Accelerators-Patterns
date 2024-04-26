@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Digital Cities - Water Utilities"
-date: 2024-02-01
+date: 2024-04-25
 categories: ["AI ML", "Digital Cities", "Dark Theme", "Asset Monitoring", "Condition Monitoring", "Unity", "Recommendations"]
 description: "A digital twin application employing a leveled approach to monitoring and optimization. A comprehensive overview of the city's water infrastructure, including flood prediction analytics. The focus then shifts to individual pump stations, integrating efficiency monitoring at each site. The app drills down to detailed insights into the performance of each pump, ensuring thorough and efficient management of the city's water systems."
 contributor: "XMPro"

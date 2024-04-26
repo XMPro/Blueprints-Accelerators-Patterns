@@ -33,19 +33,19 @@ side_gallery:
 
 files:
   - title: "Application"
-    link: "https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/accelerators/assets/heat-exchanger-view/application/Heat%20Exchanger%20View.xapp"
+    link: "https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/accelerators/assets/heat-exchanger-view/application/"
     image: "/assets/images/icons/AD.png"
   - title: "Application Template"
-    link: "https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/accelerators/assets/heat-exchanger-view/template/Heat%20Exchanger%20View.xtml"
+    link: "https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/accelerators/assets/heat-exchanger-view/template/"
     image: "/assets/images/icons/AD.png"    
-  - title: "Recommendation - Fouling"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/accelerators/assets/heat-exchanger-view/recommendation/Heat%20Exchanger%20Fouling.xr"
+  - title: "Recommendations"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/accelerators/assets/heat-exchanger-view/recommendation/"
     image: "/assets/images/icons/RM.png"
-  - title: "Data Stream - Heat Exchanger Telemetry"
-    link: "https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/accelerators/assets/heat-exchanger-view/datastream/Simulate%20Heat%20Exchanger%20Telemetry.xuc"
+  - title: "Data Streams"
+    link: "https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/accelerators/assets/heat-exchanger-view/datastream/"
     image: "/assets/images/icons/DS.png"
-  - title: "SQL - UCoefficient"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/accelerators/assets/heat-exchanger-view/sql/%5BDemoHeatExchangerUCoefficient%5D.sql"
+  - title: "SQL"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/accelerators/assets/heat-exchanger-view/sql/"
     image: "/assets/images/icons/sql.webp"
 ---
 

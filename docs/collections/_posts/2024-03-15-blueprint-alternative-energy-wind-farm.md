@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Alternative Energy - Wind Farm"
-date: 2024-02-01
+date: 2024-03-15
 categories: ["Alternative Energy", "Dark Theme", "Asset Monitoring", "Condition Monitoring", "Unity", "Recommendations"]
 description: "An application for Wind Farm Management. Serves as an advanced hub for real-time monitoring, analytics, and control of multiple wind farms from a centralized location."
 contributor: "XMPro"

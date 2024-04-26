@@ -27,10 +27,10 @@ side_gallery:
 
 files:
   - title: "Application"
-    link: "https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/accelerators/general/use-case-canvas/application/Use%20Case%20Canvas%20Template.xapp"
+    link: "https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/accelerators/general/use-case-canvas/application/"
     image: "/assets/images/icons/AD.png"
   - title: "Application Template"
-    link: "https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/accelerators/general/use-case-canvas/template/Use%20Case%20Canvas%20Template.xtml"
+    link: "https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/accelerators/general/use-case-canvas/template/"
     image: "/assets/images/icons/AD.png"    
 ---
 

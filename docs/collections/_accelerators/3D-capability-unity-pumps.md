@@ -30,12 +30,16 @@ side_gallery:
     caption: "<strong>Above:</strong> Configured Data Stream"
 
 files:
-  - title: "Application - Unity Page"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/accelerators/3D-capability/unity-pumps/application/Unity_Pumps.xapp"
+  - title: "Application"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/accelerators/3D-capability/unity-pumps/application/"
     image: "/assets/images/icons/AD.png"
-  - title: "Data Stream - Simulate Pump Telemetry"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/accelerators/3D-capability/unity-pumps/datastream/Simulate%20Pump%20Telemetry.xuc"
+  - title: "Unity Files"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/accelerators/3D-capability/unity-pumps/application/unity"
+    image: "/assets/images/icons/AD.png"    
+  - title: "Data Stream"
+    link: "https://github.com/XMPro/Accelerators-Recipes-Blueprints/blob/master/accelerators/3D-capability/unity-pumps/datastream/"
     image: "/assets/images/icons/DS.png"
+
 ---
 
 ## Application
