@@ -68,7 +68,7 @@ Ensure the following variables are available to be used:
 - SQL Password <strong>(Encrypted)</strong>
 
 ### 2. Run SQL Scripts
-- Execute the scripts in SQL Server
+- Execute the scripts in SQL Server AD Database
 - Ensure the data is successfully loaded into the database 
 
 ### 3. Import the Applications
