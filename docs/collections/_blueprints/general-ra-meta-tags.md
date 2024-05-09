@@ -3,7 +3,7 @@ layout: project-top
 date: 2024-05-03
 title: "Recommendation Analysis Meta Tag Application"
 description: "<strong>Recommendation Analysis Meta Tag Application</strong>"
-extract: "A recommendation labelling system that allows the user to assign additional attributes to existing recommendations that aid in data analysis methods"
+extract: "A recommendation labelling system that allows the user to assign additional attributes to existing recommendations that aid in data analysis methods."
 weight: 2
 thumbnail: "/assets/images/blueprints/general-ra-meta-tags/ad03.png"
 image: "/assets/images/blueprints/general-ra-meta-tags/ad03.png"
@@ -21,10 +21,10 @@ gallery_limit: 1
 
 files:
   - title: "Application"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general/rca/application/"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-ra-meta-tags/application/"
     image: "/assets/images/icons/AD.png"
   - title: "SQL"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general/rca/sql/"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-ra-meta-tags/sql/"
     image: "/assets/images/icons/sql.webp"
 
 ---
@@ -74,7 +74,7 @@ Ensure the following variables are available to be used:
 ### 3. Import the Applications
 
 - Assign Access to others as required
-  {% include framework/shortcodes/image.html src="/assets/images/blueprints/general/rca/adAccess.png" %}
+  {% include framework/shortcodes/image.html src="/assets/images/blueprints/general-ra-meta-tags/adAccess.png" %}
 - Ensure the App Data connection properties are configured and valid
 - Save the application
 - Publish the application
