@@ -17,20 +17,45 @@ toc_label: "Table of Contents"
 gallery:
   - image: "/assets/images/blueprints/general-ra-meta-tags/ad03.png"
     caption: "<strong>Above:</strong> Application View"
-gallery_limit: 1
+  - image: "/assets/images/blueprints/general-ra-meta-tags/ad04.png"
+    caption: "<strong>Above:</strong> Reference Table View"
+gallery_limit: 2
 
 files:
   - title: "Application"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general/rca/application/"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/tree/master/blueprints/general-ra-meta-tags/application/"
     image: "/assets/images/icons/AD.png"
   - title: "SQL"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general/rca/sql/"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-ra-meta-tags/rca/sql/"
     image: "/assets/images/icons/sql.webp"
+  - title: "Datastream"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-ra-meta-tags/rca/sql/"
+    image: "/assets/images/icons/DS.png"
 
 ---
 
 ## Application
-This application allows the user to assign additional labels to a recommendation outside of the native recommendation editor after the recommendation and alerts have been created to allow for enhanced data analysis techniques.  The application is configured as follows: 
+
+This blueprint app establishes meta tag labels for recommendations. This allows historical recommendations to be filtered and analysed by labels such as asset class, location, training recommendations, or area. Intended uses could include:
+
+<style>
+.custom-bullet {
+    list-style-type: none; /* Remove default bullets */
+}
+.custom-bullet li::before {
+    content: "•"; /* Unicode character for a bullet */
+    color: black; /* Bullet color */
+    display: inline-block; 
+    width: 1em; /* Spacing between bullet and text */
+    margin-left: -1em; /* Position bullet in place of default */
+}
+</style>
+
+<ul class="custom-bullet">
+  <li>Recommendation Analytics;</li>
+  <li>Filters available for 'Suspend Recommendations for shutdown';</li>
+  <li>Threshold comparisons by comparing various recommendations by asset class.</li>
+</ul>
 
 ### Create Meta Tags
 
@@ -68,10 +93,14 @@ Ensure the following variables are available to be used:
 - SQL Password <strong>(Encrypted)</strong>
 
 ### 2. Run SQL Scripts
-- Execute the scripts in SQL Server AD Database
+- Execute the scripts in SQL Server Master Data DB
 - Ensure the data is successfully loaded into the database 
 
-### 3. Import the Applications
+### 3. Import the Data Stream
+- This Data Stream is set up to copy recommendations created in the Production database to the Master Data database 
+- This will look for recommendations that exist in one but not the other and copy them over
+
+### 4. Import the Applications
 
 - Assign Access to others as required
   {% include framework/shortcodes/image.html src="/assets/images/blueprints/general/rca/adAccess.png" %}
