@@ -29,7 +29,7 @@ files:
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-ra-meta-tags/sql"
     image: "/assets/images/icons/sql.webp"
   - title: "Datastream"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-ra-meta-tags/rca/sql/"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-ra-meta-tags/datastream"
     image: "/assets/images/icons/DS.png"
 
 ---
