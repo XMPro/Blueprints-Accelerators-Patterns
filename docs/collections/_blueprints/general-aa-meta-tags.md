@@ -15,74 +15,54 @@ toc: true
 toc_label: "Table of Contents"
 
 gallery:
-  - image: "/assets/images/blueprints/general-ra-meta-tags/ad03.png"
+  - image: "/assets/images/blueprints/general-aa-meta-tags/ad03.png"
     caption: "<strong>Above:</strong> Application View"
-  - image: "/assets/images/blueprints/general-ra-meta-tags/ad04.png"
+  - image: "/assets/images/blueprints/general-aa-meta-tags/ad04.png"
     caption: "<strong>Above:</strong> Reference Table View"
 gallery_limit: 2
 
 files:
   - title: "Application"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general/rca/application/"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-aa-meta-tags/application"
     image: "/assets/images/icons/AD.png"
   - title: "SQL"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general/rca/sql/"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-aa-meta-tags/sql/"
     image: "/assets/images/icons/sql.webp"
   - title: "Datastream"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-ra-meta-tags/rca/sql/"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-ra-meta-tags/sql/"
     image: "/assets/images/icons/DS.png"
 
 ---
 
 ## Application
 
-This blueprint app establishes meta tag labels for assets. This allows assets to be filtered and analysed by labels such as asset class, location, attached technology, or area. Intended uses could include:
-
-<style>
-.custom-bullet {
-    list-style-type: none; /* Remove default bullets */
-}
-.custom-bullet li::before {
-    content: "•"; /* Unicode character for a bullet */
-    color: black; /* Bullet color */
-    display: inline-block; 
-    width: 1em; /* Spacing between bullet and text */
-    margin-left: -1em; /* Position bullet in place of default */
-}
-</style>
-
-<ul class="custom-bullet">
-  <li>Asset Master;</li>
-  <li>Associated Helper Assets;</li>
-  <li>External asset Hierarchy;</li>
-  <li>Criticality;</li>
-</ul>
+This blueprint app establishes meta tag labels for assets. This allows assets to be filtered and analysed by labels such as asset class or attached technology. 
 
 ### Create Meta Tags
 
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general-ra-meta-tags/ad01.png" %}</div>
-This page contains a navigation bar at the top right, a recommendation selection grid on the left, and create/ update card on the right. 
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general-aa-meta-tags/ad01.png" %}</div>
+This page contains a navigation bar at the top right, a asset selection grid on the left, and create/ update card on the right. 
 
 Each grid has the Store User option enabled meaning it will remember your selection for column ordering, grouping and for the bottom grid hiding certain columns.  Selecting any of the rows in either grid will drilldown to the action page for the RCA that was selected.
 
 ### Create Meta Tag Labels
-<div class="inline_image"  >{% include framework/shortcodes/image.html src="/assets/images/blueprints/general-ra-meta-tags/ad02.png" %}</div>
+<div class="inline_image"  >{% include framework/shortcodes/image.html src="/assets/images/blueprints/general-aa-meta-tags/ad02.png" %}</div>
 
 Similar to the Create Meta Tags page, the user will either select a Meta Tag from the drop down and enter a unique Meta Tag Value Label or select a Meta Tag Value from the grid to edit.
 
 A Radio Button above the grid allows users to select among active, inactive, or all Meta Tags to filter the Meta Tag Values.
 
 ### Assign Meta Tag and Label
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general-ra-meta-tags/ad03.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general-aa-meta-tags/ad03.png" %}</div>
 
-The Recommendations Grid Selection is broken into Assigned, Unassigned, and All. The user will click on a specific recommendation to assign Meta Tag Values to the recommendation. Dropdown menus will then appear. If the value has already been assigned, the value will appear; if not, then the value will be empty.
+The Assets Grid Selection is broken into Assigned, Unassigned, and All. The user will click on a specific asset to assign Meta Tag Values to the asset. Dropdown menus will then appear. If the value has already been assigned, the value will appear; if not, then the value will be empty.
 
-The user must assign all values to all tags before they will be allowed to save. By default, when a Meta Tag is created, a default value of Not Allocated is also created. The user should select this option if a Meta Tag is not rquired for a recommendation.
+The user must assign all values to all tags before they will be allowed to save. By default, when a Meta Tag is created, a default value of Not Allocated is also created. The user should select this option if a Meta Tag is not rquired for a asset.
 
 ### Reference Table
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general-ra-meta-tags/ad04.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general-aa-meta-tags/ad04.png" %}</div>
 
-The reference Table shows all the assigned Recommendations, Meta Tags, and Meta Tag Values. 
+The reference Table shows all the assigned and unassigned assets, Meta Tags, and Meta Tag Values. 
  
 ## Steps to Import
 
@@ -96,15 +76,13 @@ Ensure the following variables are available to be used:
 ### 2. Run SQL Scripts
 - Execute the scripts in SQL Server Master Data DB
 - Ensure the data is successfully loaded into the database 
+- (Optional) Because the Assign Meta Tag Values portion requires a unique entry for all meta tags, it is recommended 
+  that the sql trigger file is enabled in the AA_MetaTag Triggers subfolder in SSMS
 
-### 3. Import the Data Stream
-- This Data Stream is set up to copy recommendations created in the Production database to the Master Data database 
-- This will look for recommendations that exist in one but not the other and copy them over
-
-### 4. Import the Applications
+### 3. Import the Applications
 
 - Assign Access to others as required
-  {% include framework/shortcodes/image.html src="/assets/images/blueprints/general-ra-meta-tags/adAccess.png" %}
+  {% include framework/shortcodes/image.html src="/assets/images/blueprints/general-aa-meta-tags/adAccess.png" %}
 - Ensure the App Data connection properties are configured and valid
 - Save the application
 - Publish the application
