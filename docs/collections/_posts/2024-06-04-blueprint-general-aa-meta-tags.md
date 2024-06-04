@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Asset Analysis Meta Tag Application"
-date: 2024-05-08
+date: 2024-06-04
 categories: ["Data Capture", "Light Theme"]
 description: "An asset labelling system that allows the user to assign external identifiers to an existing asset hierarchy to aid in data analysis methods."
 contributor: "XMPro"
