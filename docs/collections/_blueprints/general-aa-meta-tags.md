@@ -74,8 +74,8 @@ Ensure the following variables are available to be used:
 - SQL Password <strong>(Encrypted)</strong>
 
 ### 2. Run SQL Scripts
-- Execute the scripts in SQL Server Master Data DB
-- Ensure the data is successfully loaded into the database 
+- Execute the scripts sequentially in SQL Server Master Data DB
+- Ensure the columns are successfully loaded into the database 
 - (Optional) Because the Assign Meta Tag Values portion requires a unique entry for all meta tags, it is recommended 
   that the sql trigger file is enabled in the AA_MetaTag Triggers subfolder in SSMS
 
