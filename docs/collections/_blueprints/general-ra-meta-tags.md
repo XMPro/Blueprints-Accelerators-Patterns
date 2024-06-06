@@ -36,7 +36,7 @@ files:
 
 ## Application
 
-This blueprint app establishes meta tag labels for recommendations. This allows historical recommendations to be filtered and analysed by labels such as asset class, location, training recommendations, or area. Intended uses could include:
+This Blueprint app establishes Meta Tag labels for recommendations. This allows historical recommendations to be filtered and analysed by labels such as asset class, location, training recommendations, or area. Intended uses could include:
 
 - Recommendation Analytics;
 - Filters available for 'Suspend Recommendations for shutdown';
@@ -46,9 +46,9 @@ This blueprint app establishes meta tag labels for recommendations. This allows 
 ### Create Meta Tags
 
 <div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general-ra-meta-tags/ad01.png" %}</div>
-This page contains a navigation bar at the top right and a recommendation selection grid to create/ update the meta tag. 
+This page contains a navigation bar at the top right and a recommendation selection grid to create/update the Meta Tag. 
 
-Each grid has the Store User option enabled meaning it will remember your selection for column ordering, grouping, and filtering.  
+Each grid has the Store User option enabled meaning it will remember your selection for column ordering, grouping, and filtering. 
 
 ### Create Meta Tag Labels
 <div class="inline_image"  >{% include framework/shortcodes/image.html src="/assets/images/blueprints/general-ra-meta-tags/ad02.png" %}</div>
