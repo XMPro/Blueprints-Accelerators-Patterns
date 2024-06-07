@@ -17,39 +17,48 @@ toc_label: "Table of Contents"
 gallery:
   - image: "/assets/images/blueprints/general-ra-meta-tags/ad03.png"
     caption: "<strong>Above:</strong> Application View"
-gallery_limit: 1
+  - image: "/assets/images/blueprints/general-ra-meta-tags/ad04.png"
+    caption: "<strong>Above:</strong> Reference Table View"
+gallery_limit: 2
 
 files:
   - title: "Application"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-ra-meta-tags/application/"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-ra-meta-tags/application"
     image: "/assets/images/icons/AD.png"
   - title: "SQL"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-ra-meta-tags/sql/"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-ra-meta-tags/sql"
     image: "/assets/images/icons/sql.webp"
+  - title: "Datastream"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-ra-meta-tags/datastream"
+    image: "/assets/images/icons/DS.png"
 
 ---
 
 ## Application
-This application allows the user to assign additional labels to a recommendation outside of the native recommendation editor after the recommendation and alerts have been created to allow for enhanced data analysis techniques.  The application is configured as follows: 
+
+This Blueprint app establishes Meta Tag labels for recommendations. This allows historical recommendations to be filtered and analysed by labels such as asset class, location, training recommendations, or area. Intended uses could include:
+
+- Recommendation Analytics;
+- Filters available for 'Suspend Recommendations for shutdown';
+- Threshold comparisons by comparing various recommendations by asset class.
+
 
 ### Create Meta Tags
 
 <div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general-ra-meta-tags/ad01.png" %}</div>
-This page contains a navigation bar at the top right, a recommendation selection grid on the left, and create/ update card on the right. 
+This page contains a navigation bar at the top right and a recommendation selection grid to create/update the Meta Tag. 
 
-Each grid has the Store User option enabled meaning it will remember your selection for column ordering, grouping and for the bottom grid hiding certain columns.  Selecting any of the rows in either grid will drilldown to the action page for the RCA that was selected.
+Each grid has the Store User option enabled meaning it will remember your selection for column ordering, grouping, and filtering. 
 
 ### Create Meta Tag Labels
 <div class="inline_image"  >{% include framework/shortcodes/image.html src="/assets/images/blueprints/general-ra-meta-tags/ad02.png" %}</div>
 
-Similar to the Create Meta Tags page, the user will either select a Meta Tag from the drop down and enter a unique Meta Tag Value Label or select a Meta Tag Value from the grid to edit.
-
-A Radio Button above the grid allows users to select among active, inactive, or all Meta Tags to filter the Meta Tag Values.
+Similar to the Create Meta Tags page, the user will either select a Meta Tag Value from the grid to edit or click the + icon to add a new row.
 
 ### Assign Meta Tag and Label
 <div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general-ra-meta-tags/ad03.png" %}</div>
 
-The Recommendations Grid Selection is broken into Assigned, Unassigned, and All. The user will click on a specific recommendation to assign Meta Tag Values to the recommendation. Dropdown menus will then appear. If the value has already been assigned, the value will appear; if not, then the value will be empty.
+The Recommendations Grid Selection is filterable into Assigned, Unassigned, and All. The user will click on a specific recommendation to assign Meta Tag Values to the recommendation. Dropdown menus will then appear. If the value has already been assigned, the value will appear; if not, then the value will be empty.
 
 The user must assign all values to all tags before they will be allowed to save. By default, when a Meta Tag is created, a default value of Not Allocated is also created. The user should select this option if a Meta Tag is not rquired for a recommendation.
 
@@ -68,10 +77,16 @@ Ensure the following variables are available to be used:
 - SQL Password <strong>(Encrypted)</strong>
 
 ### 2. Run SQL Scripts
-- Execute the scripts in SQL Server AD Database
+- Execute the scripts in SQL Server Master Data DB
 - Ensure the data is successfully loaded into the database 
+- (Optional) Because the Assign Meta Tag Values portion requires a unique entry for all meta tags, it is recommended 
+  that the sql trigger file is enabled in the RACodes Triggers subfolder in SSMS
 
-### 3. Import the Applications
+### 3. Import the Data Stream
+- This Data Stream is set up to copy recommendations created in the Production database to the Master Data database 
+- This will look for recommendations that exist in one but not the other and copy them over
+
+### 4. Import the Applications
 
 - Assign Access to others as required
   {% include framework/shortcodes/image.html src="/assets/images/blueprints/general-ra-meta-tags/adAccess.png" %}
