@@ -1,11 +1,11 @@
 ---
 layout: project-top
-title: "Asset Monitoring using forecasting"
-description: "<strong>Asset Monitoring using forecasting</strong>"
-extract: "Using crusher data to forecast vertical travel based on past values."
+title: "Asset Monitoring using binary classification"
+description: "<strong>Asset Monitoring using binary classification</strong>"
+extract: "Asset monitoring of smart meters through the use of a binary classification model on real-time data."
 weight: 3
-thumbnail: "/assets/images/patterns/machine-learning/vertical-travel-forecasting/dsRunning.png"
-image: "/assets/images/patterns/machine-learning/vertical-travel-forecasting/dsRunning.png"
+thumbnail: "/assets/images/ai/machine-learning/asset-monitoring-binary-classification/dsRunning.png"
+image: "/assets/images/ai/machine-learning/asset-monitoring-binary-classification/dsRunning.png"
 categories: ["Asset Monitoring","Condition Monitoring","AI ML"]
 contributor: "XMPro"
 role: "Pattern"
@@ -14,9 +14,9 @@ toc: true
 toc_label: "Table of Contents"
 
 gallery:
-  - image: "/assets/images/patterns/machine-learning/vertical-travel-forecasting/dsRunning.png"
+  - image: "/assets/images/ai/machine-learning/asset-monitoring-binary-classification/dsRunning.png"
     caption: "<strong>Above:</strong> Published Data Stream"
-  - image: "/assets/images/patterns/machine-learning/vertical-travel-forecasting/ds.png"
+  - image: "/assets/images/ai/machine-learning/asset-monitoring-binary-classification/ds.png"
     caption: "<strong>Above:</strong> Configured Data Stream"
 gallery_limit: 2
 
@@ -26,16 +26,15 @@ side_gallery:
 
 files:
   - title: "Data Stream"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/machine-learning/vertical-travel-forecasting/datastream/"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/machine-learning/asset-monitoring-binary-classification/datastream/"
     image: "/assets/images/icons/DS.png"
   - title: "SQL"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/machine-learning/vertical-travel-forecasting/sql/"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/machine-learning/asset-monitoring-binary-classification/sql/"
     image: "/assets/images/icons/sql.webp"
-
 ---
 
 ## Data Stream
-An example of using crusher data to forecast vertical travel based on past values.  The data stream is configured using: 
+An example of binary classification using smart meter data.  The data stream is configured using: 
 
 | Agent                                  | Description                                                  |
 | -------------------------------------- | ------------------------------------------------------------ |
@@ -44,7 +43,7 @@ An example of using crusher data to forecast vertical travel based on past value
 | [Broadcast](https://xmpro.gitbook.io/broadcast/) | Broadcast data to other agents |
 | [XMPro App](https://xmpro.gitbook.io/xmpro-app/) | View data in the App Designer |
 | [Join transformation](https://xmpro.gitbook.io/join/) | Contextualize the data with data from SQL |
-| [Forecasting](https://xmpro.gitbook.io/forecasting/) | Execute binary classification on the data |
+| [Binary Classification](https://xmpro.gitbook.io/binary-classification/) | Execute the binary classification on the data |
 | [Run Recommendation](https://xmpro.gitbook.io/run-recommendation/) | Pass the data to the Recommendation engine to evaluate |
 
 ## Steps to Import

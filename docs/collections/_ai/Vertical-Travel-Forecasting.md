@@ -1,11 +1,11 @@
 ---
 layout: project-top
-title: "Asset Monitoring using regression"
-description: "<strong>Asset Monitoring using regression</strong>"
-extract: "Using crusher data to predict the liner wear for a crusher asset."
+title: "Asset Monitoring using forecasting"
+description: "<strong>Asset Monitoring using forecasting</strong>"
+extract: "Using crusher data to forecast vertical travel based on past values."
 weight: 3
-thumbnail: "/assets/images/patterns/machine-learning/liner-wear-prediction-regression/dsRunning.png"
-image: "/assets/images/patterns/machine-learning/liner-wear-prediction-regression/dsRunning.png"
+thumbnail: "/assets/images/ai/machine-learning/vertical-travel-forecasting/dsRunning.png"
+image: "/assets/images/ai/machine-learning/vertical-travel-forecasting/dsRunning.png"
 categories: ["Asset Monitoring","Condition Monitoring","AI ML"]
 contributor: "XMPro"
 role: "Pattern"
@@ -14,9 +14,9 @@ toc: true
 toc_label: "Table of Contents"
 
 gallery:
-  - image: "/assets/images/patterns/machine-learning/liner-wear-prediction-regression/dsRunning.png"
+  - image: "/assets/images/ai/machine-learning/vertical-travel-forecasting/dsRunning.png"
     caption: "<strong>Above:</strong> Published Data Stream"
-  - image: "/assets/images/patterns/machine-learning/liner-wear-prediction-regression/ds01.png"
+  - image: "/assets/images/ai/machine-learning/vertical-travel-forecasting/ds.png"
     caption: "<strong>Above:</strong> Configured Data Stream"
 gallery_limit: 2
 
@@ -26,16 +26,16 @@ side_gallery:
 
 files:
   - title: "Data Stream"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/machine-learning/liner-wear-prediction-regression/datastream/"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/machine-learning/vertical-travel-forecasting/datastream/"
     image: "/assets/images/icons/DS.png"
   - title: "SQL"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/machine-learning/liner-wear-prediction-regression/sql/"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/machine-learning/vertical-travel-forecasting/sql/"
     image: "/assets/images/icons/sql.webp"
 
 ---
 
 ## Data Stream
-An example of regression using crusher data to predict liner wear.  The data stream is configured using: 
+An example of using crusher data to forecast vertical travel based on past values.  The data stream is configured using: 
 
 | Agent                                  | Description                                                  |
 | -------------------------------------- | ------------------------------------------------------------ |
@@ -44,7 +44,7 @@ An example of regression using crusher data to predict liner wear.  The data str
 | [Broadcast](https://xmpro.gitbook.io/broadcast/) | Broadcast data to other agents |
 | [XMPro App](https://xmpro.gitbook.io/xmpro-app/) | View data in the App Designer |
 | [Join transformation](https://xmpro.gitbook.io/join/) | Contextualize the data with data from SQL |
-| [Regression](https://xmpro.gitbook.io/regression/) | Execute binary classification on the data |
+| [Forecasting](https://xmpro.gitbook.io/forecasting/) | Execute binary classification on the data |
 | [Run Recommendation](https://xmpro.gitbook.io/run-recommendation/) | Pass the data to the Recommendation engine to evaluate |
 
 ## Steps to Import

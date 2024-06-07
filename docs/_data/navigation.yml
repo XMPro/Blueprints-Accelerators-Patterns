@@ -20,6 +20,8 @@ foo:
 
 # main links
 main:
+  - title: "AI"
+    url: "/ai/"
   - title: "Blueprints"
     url: "/blueprints/"
   - title: "Accelerators"
