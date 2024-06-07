@@ -1,11 +1,11 @@
 ---
 layout: project-top
-title: "Asset Monitoring using binary classification"
-description: "<strong>Asset Monitoring using binary classification</strong>"
-extract: "Asset monitoring of smart meters through the use of a binary classification model on real-time data."
+title: "Asset Monitoring using regression"
+description: "<strong>Asset Monitoring using regression</strong>"
+extract: "Using crusher data to predict the liner wear for a crusher asset."
 weight: 3
-thumbnail: "/assets/images/patterns/machine-learning/asset-monitoring-binary-classification/dsRunning.png"
-image: "/assets/images/patterns/machine-learning/asset-monitoring-binary-classification/dsRunning.png"
+thumbnail: "/assets/images/ai/machine-learning/liner-wear-prediction-regression/dsRunning.png"
+image: "/assets/images/ai/machine-learning/liner-wear-prediction-regression/dsRunning.png"
 categories: ["Asset Monitoring","Condition Monitoring","AI ML"]
 contributor: "XMPro"
 role: "Pattern"
@@ -14,9 +14,9 @@ toc: true
 toc_label: "Table of Contents"
 
 gallery:
-  - image: "/assets/images/patterns/machine-learning/asset-monitoring-binary-classification/dsRunning.png"
+  - image: "/assets/images/ai/machine-learning/liner-wear-prediction-regression/dsRunning.png"
     caption: "<strong>Above:</strong> Published Data Stream"
-  - image: "/assets/images/patterns/machine-learning/asset-monitoring-binary-classification/ds.png"
+  - image: "/assets/images/ai/machine-learning/liner-wear-prediction-regression/ds.png"
     caption: "<strong>Above:</strong> Configured Data Stream"
 gallery_limit: 2
 
@@ -26,15 +26,16 @@ side_gallery:
 
 files:
   - title: "Data Stream"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/machine-learning/asset-monitoring-binary-classification/datastream/"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/machine-learning/liner-wear-prediction-regression/datastream/"
     image: "/assets/images/icons/DS.png"
   - title: "SQL"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/machine-learning/asset-monitoring-binary-classification/sql/"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/patterns/machine-learning/liner-wear-prediction-regression/sql/"
     image: "/assets/images/icons/sql.webp"
+
 ---
 
 ## Data Stream
-An example of binary classification using smart meter data.  The data stream is configured using: 
+An example of regression using crusher data to predict liner wear.  The data stream is configured using: 
 
 | Agent                                  | Description                                                  |
 | -------------------------------------- | ------------------------------------------------------------ |
@@ -43,7 +44,7 @@ An example of binary classification using smart meter data.  The data stream is 
 | [Broadcast](https://xmpro.gitbook.io/broadcast/) | Broadcast data to other agents |
 | [XMPro App](https://xmpro.gitbook.io/xmpro-app/) | View data in the App Designer |
 | [Join transformation](https://xmpro.gitbook.io/join/) | Contextualize the data with data from SQL |
-| [Binary Classification](https://xmpro.gitbook.io/binary-classification/) | Execute the binary classification on the data |
+| [Regression](https://xmpro.gitbook.io/regression/) | Execute binary classification on the data |
 | [Run Recommendation](https://xmpro.gitbook.io/run-recommendation/) | Pass the data to the Recommendation engine to evaluate |
 
 ## Steps to Import

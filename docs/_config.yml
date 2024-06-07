@@ -19,6 +19,9 @@ paginate_path: "/blog/page/:num"
 # Collections
 collections_dir: collections
 collections:
+  ai:
+    output: true
+    permalink: /ai/:path/
   blueprints:
     output: true
     permalink: /blueprints/:path/
@@ -37,6 +40,11 @@ defaults:
   - scope:
       path: ""
       type: patterns
+    values:
+      layout: project
+  - scope:
+      path: ""
+      type: ai
     values:
       layout: project
   - scope:

@@ -42,10 +42,10 @@ files:
   - title: "Data Streams"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/manufacturing-golden-batch-coffee/datastream/"
     image: "/assets/images/icons/DS.png"
-  - title: "Notebook - Flood Prediction"
+  - title: "Notebook - 1.0 Golden Batch - Data"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/manufacturing-golden-batch-coffee/notebook/1.0%20Golden%20Batch%20-%20Data.ipynb"
     image: "/assets/images/icons/AI.png"
-  - title: "Notebook - Develop Model"
+  - title: "Notebook - 2.0 Golden Batch - Model"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/manufacturing-golden-batch-coffee/notebook/2.0%20Golden%20Batch%20-%20Model.ipynb"
     image: "/assets/images/icons/AI.png"
   - title: "CSV Data"
@@ -132,14 +132,14 @@ Ensure the following variables are available to be used in the data stream:
 ### 5. Import the Application
 
 - Map the data source on import:
+  {% include framework/shortcodes/image.html src="/assets/images/blueprints/manufacturing-golden-batch-coffee/ad.png" %}
+
   - Landing Page:
 
   | Data Source Name | Data Stream | Agent Option |
   | ---------------- | ----------- | ------------ |
   | Data | Coffee Roasting Golden Batch - Python/MLFlow | Send to Application for viewing |
   | Data Chart | Coffee Roasting Golden Batch - Python/MLFlow | Send to Application for viewing chart |
-
-  {% include framework/shortcodes/image.html src="/assets/images/blueprints/manufacturing-golden-batch-coffee/adImport.png" %}
 
 - Assign Access to others as required
   {% include framework/shortcodes/image.html src="/assets/images/blueprints/manufacturing-golden-batch-coffee/adAccess.png" %}
