@@ -1,11 +1,20 @@
 ---
 layout: home
 permalink: "/"
-title: "XMPro's <strong>Blueprints, Accelerators & Patterns</strong>"
+title: "XMPro's <strong>AI, Blueprints, Accelerators & Patterns</strong>"
 description: ""
-meta_description: "Blueprints, Accelerators & Patterns repository"
-meta_title: XMPro Blueprints, Accelerators & Patterns
+meta_description: "AI, Blueprints, Accelerators & Patterns repository"
+meta_title: XMPro AI, Blueprints, Accelerators & Patterns
 subscribe: false
+
+ai:
+  heading: "Recent AI" # "Projects"
+  sub_heading: "A collection of our recent ai examples" # "A collection of our recent work"
+  limit: 4
+  sort: date # date | weight
+  view_more_button_text: "View More AI Examples"
+  view_more_button_link: "/ai"
+  columns: 4 # 1 | 2 | 3 | 4
 
 blueprints:
   heading: "Recent Blueprints" # "Projects"
