@@ -1,7 +1,7 @@
 ---
 layout: project-top
 date: 2024-05-03
-title: "Recommendation AnalysMeta Tag Application"
+title: "Recommendation Analysis Meta Tag Application"
 description: "<strong>Recommendation Analysis Meta Tag Application</strong>"
 extract: "A recommendation labelling system that allows the user to assign additional attributes to existing recommendations that aid in data analysis methods."
 weight: 2
