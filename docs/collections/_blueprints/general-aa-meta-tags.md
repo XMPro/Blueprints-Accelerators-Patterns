@@ -28,9 +28,7 @@ files:
   - title: "SQL"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-aa-meta-tags/sql/"
     image: "/assets/images/icons/sql.webp"
-  - title: "Datastream"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-aa-meta-tags/sql/"
-    image: "/assets/images/icons/DS.png"
+
 
 ---
 
