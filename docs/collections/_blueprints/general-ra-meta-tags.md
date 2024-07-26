@@ -36,7 +36,7 @@ files:
 
 ## Application
 
-This Blueprint app establishes Meta Tag labels for recommendations. This allows historical recommendations to be filtered and analysed by labels such as asset class, location, training recommendations, or area. Intended uses could include:
+This blueprint establishes Meta Tag labels for recommendations. This allows historical recommendations to be filtered and analysed by labels such as asset class, location, training recommendations, or area. Intended uses could include:
 
 - Recommendation Analytics;
 - Filters available for 'Suspend Recommendations for shutdown';
@@ -45,15 +45,15 @@ This Blueprint app establishes Meta Tag labels for recommendations. This allows 
 
 ### Create Meta Tags
 
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general-ra-meta-tags/ad01.png" %}</div>
-This page contains a navigation bar at the top right and a recommendation selection grid to create/update the Meta Tag. 
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general-aa-meta-tags/ad01.png" %}</div>
+This page contains a navigation bar at the top right and a grid to edit existing Meta Tags or create new Meta Tags. The Meta Tag Type column is an additional identifier for what the Meta Tag will modify.
 
-Each grid has the Store User option enabled meaning it will remember your selection for column ordering, grouping, and filtering. 
+By default, the Meta Tag Type list will include the "Recommendation", "Asset", or "All" descriptor depending on how the Meta Tag and Values will be used.  
 
-### Create Meta Tag Labels
-<div class="inline_image"  >{% include framework/shortcodes/image.html src="/assets/images/blueprints/general-ra-meta-tags/ad02.png" %}</div>
+### Create Meta Tag Values
+<div class="inline_image"  >{% include framework/shortcodes/image.html src="/assets/images/blueprints/general-aa-meta-tags/ad02.png" %}</div>
 
-Similar to the Create Meta Tags page, the user will either select a Meta Tag Value from the grid to edit or click the + icon to add a new row.
+Similar to the Create Meta Tags page, the user will either select a Meta Tag from the drop down and enter a unique Meta Tag Value or select a Meta Tag Value from the grid to edit.
 
 ### Assign Meta Tag and Label
 <div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general-ra-meta-tags/ad03.png" %}</div>
