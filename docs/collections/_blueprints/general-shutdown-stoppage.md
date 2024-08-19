@@ -43,12 +43,12 @@ This blueprint enables users to create a Shutdown Master and assign assets to sp
 
 <div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general-shutdown-stoppage/ad04.png" %}</div>
 
-This page allows the user to create/eidt shutdowns and add details such as Start/End Date. It contains a grid that displays all the assets associated with an individual shutdown.
+This page allows the user to create/edit shutdowns and add details such as Start/End Date. It also contains a grid at the bottom of the page that displays all the assets associated with an individual shutdown.
 
 ### Assign Assets to Shutdown
 <div class="inline_image"  >{% include framework/shortcodes/image.html src="/assets/images/blueprints/general-shutdown-stoppage/ad02.png" %}</div>
 
-This page assigns assets to shutdowns by selecting a shutdown from a dropdown menu the assign assets to the shutdown and save. The "Previously Selected" column shows the assets that are already assigned to a shutdown if any exist.
+This page assigns assets to shutdowns by selecting a shutdown from a dropdown menu the assign assets to the shutdown and save. The "Asigned to Shutdown?" column shows the assets that are already assigned to the selected shutdown if any exist.
 
 ### Subcribe to Email Alerts
 <div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general-shutdown-stoppage/ad03.png" %}</div>
@@ -72,7 +72,8 @@ Ensure the following variables are available to be used:
 
 ### 3. Import the Data Stream
 - This Data Stream performs two functions: activating and deactivating Assets in the Asset Master and generating email alerts for start/stop based on the Email Administration Page
-- As the solution stands, the Data Stream will notify users subscribed to a site of any shutdown in that Site Hierarchy 2 days prior two start and 2 days prior to end 
+- As the solution stands, the Data Stream will notify users subscribed to a site of any shutdown in that Site Hierarchy 2 days prior two start and 2 days prior to end
+- The site administrator will need to have an available SMTP server set up, to take advantge of automatic email capabilities within the Data Stream 
 
 ### 4. Import the Applications
 
@@ -81,4 +82,3 @@ Ensure the following variables are available to be used:
 - Ensure the App Data connection properties are configured and valid
 - Save the application
 - Publish the application
-- Ensure there is data in the application
