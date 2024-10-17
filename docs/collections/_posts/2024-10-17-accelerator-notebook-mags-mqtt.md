@@ -15,4 +15,4 @@ gallery:
     caption: "<strong>Above:</strong> Notebook"
 ---
 
-View more information and how to import by <strong>[Clicking Here]({{ site.url }}/ai/Notebook-mags-mqtt.md)</strong>
+View more information and how to import by <strong>[Clicking Here]({{ site.url }}/ai/Notebook-mags-mqtt)</strong>
