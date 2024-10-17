@@ -1,8 +1,8 @@
 ---
 layout: project-top
 date: 2024-05-03
-title: "Recommendation Analysis Meta Tag Application"
-description: "<strong>Recommendation Analysis Meta Tag Application</strong>"
+title: "Recommendation Meta Tag Administration"
+description: "<strong>Recommendation Meta Tag Administration</strong>"
 extract: "A recommendation labelling system that allows the user to assign additional attributes to existing recommendations that aid in data analysis methods."
 weight: 2
 thumbnail: "/assets/images/blueprints/general-ra-meta-tags/ad03.png"
@@ -38,9 +38,10 @@ files:
 
 This blueprint establishes Meta Tag labels for recommendations. This allows historical recommendations to be filtered and analysed by labels such as asset class, location, training recommendations, or area. Intended uses could include:
 
-- Recommendation Analytics;
-- Filters available for 'Suspend Recommendations for shutdown';
-- Threshold comparisons by comparing various recommendations by asset class.
+- Recommendation Analytics
+- Threshold comparisons by comparing various recommendations by asset class
+
+For Data Security purposes, each grid in the application will be filtered by the Company ID associated with the UserID. This segmentation serves the dual purpose of segmenting potentially sensitve data and reducing un-needed options when sorting through data.
 
 
 ### Create Meta Tags
@@ -48,12 +49,20 @@ This blueprint establishes Meta Tag labels for recommendations. This allows hist
 <div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general-aa-meta-tags/ad01.png" %}</div>
 This page contains a navigation bar at the top right and a grid to edit existing Meta Tags or create new Meta Tags. The Meta Tag Type column is an additional identifier for what the Meta Tag will modify.
 
-By default, the Meta Tag Type list will include the "Recommendation", "Asset", or "All" descriptor depending on how the Meta Tag and Values will be used.  
+- Upon creation of a Meta Tag, a corresponding Meta Tag Value of "Not Allocated" will be created using a SQL Trigger. 
+
+- Both the Meta Tag and Meta Tag Value rows give the user the option to assign Active Status and and Sort Order. 
+
+- Active status for both determines whether the object will be visible as an option to assign to an asset. 
+
+- Only active Meta Tags will be available for selection to assign to a Meta Tag Value
 
 ### Create Meta Tag Values
 <div class="inline_image"  >{% include framework/shortcodes/image.html src="/assets/images/blueprints/general-aa-meta-tags/ad02.png" %}</div>
 
-Similar to the Create Meta Tags page, the user will either select a Meta Tag from the drop down and enter a unique Meta Tag Value or select a Meta Tag Value from the grid to edit.
+Similar to the Create Meta Tags page, the user will will click the + grid icon to add a row, then select the Meta Tag to associate the Meta Tag Value with. The Meta Tag will be a dropdown list populated by active Meta Tags, while the Meta Tag Value will be freeform entry. 
+
+Although the "Not Allocated" Meta Tag Value will exist as an option for assigning, it will not be visible in this grid to maintain data uniformity as it is the default option. 
 
 ### Assign Meta Tag and Label
 <div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general-ra-meta-tags/ad03.png" %}</div>
@@ -63,9 +72,9 @@ The Recommendations Grid Selection is filterable into Assigned, Unassigned, and 
 The user must assign all values to all tags before they will be allowed to save. By default, when a Meta Tag is created, a default value of Not Allocated is also created. The user should select this option if a Meta Tag is not rquired for a recommendation.
 
 ### Reference Table
-<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general-ra-meta-tags/ad04.png" %}</div>
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general-aa-meta-tags/ad04.png" %}</div>
 
-The reference Table shows all the assigned Recommendations, Meta Tags, and Meta Tag Values. 
+The reference Table shows shows all active Recommendations and all active Meta Tag Values assigned to a Recommendation. This grid is read only and used strictly for reference purposes. 
  
 ## Steps to Import
 
@@ -77,20 +86,16 @@ Ensure the following variables are available to be used:
 - SQL Password <strong>(Encrypted)</strong>
 
 ### 2. Run SQL Scripts
-- Execute the scripts in SQL Server Master Data DB
-- Ensure the data is successfully loaded into the database 
-- (Optional) Because the Assign Meta Tag Values portion requires a unique entry for all meta tags, it is recommended 
-  that the sql trigger file is enabled in the RACodes Triggers subfolder in SSMS
+- Execute the scripts sequentially in SQL Server Master Data DB
+- Ensure the columns are successfully loaded into the database 
+- Additional customizations are required if a SQL environment does not allow for triggers
 
-### 3. Import the Data Stream
-- This Data Stream is set up to copy recommendations created in the Production database to the Master Data database 
-- This will look for recommendations that exist in one but not the other and copy them over
-
-### 4. Import the Applications
+### 3. Import the Applications
 
 - Assign Access to others as required
-  {% include framework/shortcodes/image.html src="/assets/images/blueprints/general-ra-meta-tags/adAccess.png" %}
+  {% include framework/shortcodes/image.html src="/assets/images/blueprints/general-aa-meta-tags/adAccess.png" %}
 - Ensure the App Data connection properties are configured and valid
+- If external Asset Master will be used, SQL statements must be ammended to point to correct tables
 - Save the application
 - Publish the application
 - Ensure there is data in the application
