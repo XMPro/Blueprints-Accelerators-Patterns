@@ -22,6 +22,9 @@ collections:
   ai:
     output: true
     permalink: /ai/:path/
+  metablocks:
+    output: true
+    permalink: /metablocks/:path/
   blueprints:
     output: true
     permalink: /blueprints/:path/
@@ -196,7 +199,7 @@ menu:
 footer:
   enable_footer: false # show/hide the entire footer
   footer_title: "XMPro"
-  footer_description: "Blueprints, Accelerators & Patterns"
+  footer_description: "AI, Metablocks, Blueprints, Accelerators & Patterns"
   enable_social_media_icons: true
   enable_contact_details: false
   enable_menu_footer_primary: false

@@ -5,6 +5,9 @@ main:
   - name: AI
     url: /ai/
     weight: 1
+  - name: Metablocks
+    url: /metablocks/
+    weight: 1
   - name: Blueprints
     url: /blueprints/
     weight: 2

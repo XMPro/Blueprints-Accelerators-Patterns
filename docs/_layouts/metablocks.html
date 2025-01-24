@@ -16,9 +16,9 @@ body_classes: page-projects
   </div>
 </div>
 
-{% assign groups = site.ai | group_by: 'date' | sort: 'date' %}
-{% assign limit = page.ai.limit | default: 999 %}
-{% assign columns =  page.ai.columns | default: 3 %}
+{% assign groups = site.metablocks | group_by: 'date' | sort: 'date' %}
+{% assign limit = page.metablocks.limit | default: 999 %}
+{% assign columns =  page.metablocks.columns | default: 3 %}
 {% capture columns %}col-lg-{{ 12 | divided_by:columns }}{% endcapture %}
 
 <div class="section pt-0">
@@ -26,8 +26,8 @@ body_classes: page-projects
     <div class="row">
 
       {% include framework/blocks/components/grid-header.html 
-        heading=page.ai.heading 
-        sub_heading=page.ai.sub_heading 
+        heading=page.metablocks.heading 
+        sub_heading=page.metablocks.sub_heading 
       %}
 
       {% for group in groups %}

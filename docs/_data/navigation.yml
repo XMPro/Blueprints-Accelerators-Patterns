@@ -22,6 +22,8 @@ foo:
 main:
   - title: "AI"
     url: "/ai/"
+  - title: "Metablocks"
+    url: "/metablocks/"
   - title: "Blueprints"
     url: "/blueprints/"
   - title: "Accelerators"
