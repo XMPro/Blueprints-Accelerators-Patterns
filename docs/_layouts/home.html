@@ -62,6 +62,52 @@ body_classes: page-home
 </div>
 {% endif %}
 
+{% assign cards = site.metablocks | sort: 'date' | reverse %}
+{% assign limit = page.metablocks.limit | default: 3 %}
+{% assign sort_by = page.metablocks.sort | default: 'date' %}
+{% assign columns =  page.metablocks.columns | default: 3 %}
+{% capture columns %}col-lg-{{ 12 | divided_by:columns }}{% endcapture %}
+{% if sort_by == 'weight' %}
+  {% assign cards = cards | sort: 'weight' %}
+{% endif %}
+
+{% if cards.size > 0 %}
+<div class="section pt-0">
+  <div class="container">
+    <div class="row">
+
+      {% include framework/blocks/components/grid-header.html 
+        heading=page.metablocks.heading 
+        sub_heading=page.metablocks.sub_heading 
+      %}
+     
+      {% for card in cards limit: limit %}
+      <div
+        class="col-12 col-md-6 {{ columns }} mb-gutter mt-gutter {% if forloop.first %}mt-0{% endif %} {% if forloop.last %}mb-0{% endif %} mt-md-0">
+        {% include theme/cards/card-project.html
+          title=card.title
+          description=card.description
+          thumbnail=card.thumbnail
+          categories=card.categories
+          date=card.date
+          url=card.url
+          client=card.client
+        %}
+      </div>
+      {% endfor %}
+
+      {% include framework/blocks/components/grid-footer.html 
+        view_more_button_text=page.metablocks.view_more_button_text
+        view_more_button_link=page.metablocks.view_more_button_link
+        align="right"
+        icon="fa-arrow-right"
+      %}
+
+    </div>
+  </div>
+</div>
+{% endif %}
+
 {% assign cards = site.blueprints | sort: 'date' | reverse %}
 {% assign limit = page.blueprints.limit | default: 3 %}
 {% assign sort_by = page.blueprints.sort | default: 'date' %}

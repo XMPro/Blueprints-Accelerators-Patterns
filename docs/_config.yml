@@ -52,6 +52,11 @@ defaults:
       layout: project
   - scope:
       path: ""
+      type: metablocks
+    values:
+      layout: project
+  - scope:
+      path: ""
       type: blueprints
     values:
       layout: project

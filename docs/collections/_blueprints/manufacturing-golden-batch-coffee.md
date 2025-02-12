@@ -50,7 +50,7 @@ files:
     image: "/assets/images/icons/AI.png"
   - title: "CSV Data"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/manufacturing-golden-batch-coffee/notebook/data/"
-    image: "/assets/images/icons/csv.svg"
+    image: "/assets/images/icons/csv.png"
 
 ---
 

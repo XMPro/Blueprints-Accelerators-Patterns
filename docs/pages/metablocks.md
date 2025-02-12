@@ -3,12 +3,12 @@ layout: metablocks
 title: Metablocks
 permalink: "/metablocks/"
 meta_title: Metablocks
-description: "can be imported into your environment, providing a starting point for configuring your own applications."
+description: "are ready-to-use for common business needs that teams can instantly import, configure and use."
 
 metablocks:
-  heading: "" # "Projects"
+  heading: "" # "Metablocks"
   sub_heading: "" # "A collection of our recent work"
-  view_more_button_text: "" # "More Projects"
-  view_more_button_link: "" # "/projects"
+  view_more_button_text: "" # "More Metablocks"
+  view_more_button_link: "" # "/metablocks"
   columns: 4 # 1 | 2 | 3 | 4
 ---

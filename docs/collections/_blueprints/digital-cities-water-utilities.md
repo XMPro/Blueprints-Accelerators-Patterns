@@ -73,7 +73,7 @@ files:
     image: "/assets/images/icons/AI.png"
   - title: "CSV - Weather Data Singapore"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/digital-cities-water-utilities/notebook/"
-    image: "/assets/images/icons/csv.svg"
+    image: "/assets/images/icons/csv.png"
   
 ---
 

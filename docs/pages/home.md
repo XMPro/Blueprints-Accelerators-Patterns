@@ -18,13 +18,12 @@ ai:
 
 metablocks:
   heading: "Recent Metablocks" # "Projects"
-  sub_heading: "A collection of our recent Metablock examples" # "A collection of our recent work"
+  sub_heading: "A collection of our recent Metablocks" # "A collection of our recent work"
   limit: 4
   sort: date # date | weight
   view_more_button_text: "View More Metablock Examples"
-  view_more_button_link: "/metablock"
+  view_more_button_link: "/metablocks"
   columns: 4 # 1 | 2 | 3 | 4
-
 
 blueprints:
   heading: "Recent Blueprints" # "Projects"
