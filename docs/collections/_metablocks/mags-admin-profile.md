@@ -23,13 +23,13 @@ gallery_limit: 2
 
 files:
   - title: "HTML"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/meteablocks/mags/admin/profile/"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/metablocks/mags/admin/profile/"
     image: "/assets/images/icons/HTML.png"
   - title: "CSS"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/meteablocks/mags/admin/profile/"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/metablocks/mags/admin/profile/"
     image: "/assets/images/icons/CSS.png"
   - title: "Javascript"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/meteablocks/mags/admin/profile/"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/metablocks/mags/admin/profile/"
     image: "/assets/images/icons/javascript.png"
 
 ---
