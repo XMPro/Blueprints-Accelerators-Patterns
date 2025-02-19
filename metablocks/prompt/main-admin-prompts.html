@@ -1,0 +1,288 @@
+<div class="container" role="main">
+    <div class="three-column-layout">
+        <!-- Left column: Prompt list -->
+        <aside class="prompt-list" role="region" aria-label="Prompt List">
+            <div class="prompt-list-header">
+                <h2 data-i18n="prompts">Prompts </h2>
+                <span id="promptAccessLevel" class="access-level-display"></span>         
+            </div>
+            
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <label for="promptSearch" class="sr-only" data-i18n="searchPrompts">Search prompts</label>
+                    <input type="text" id="promptSearch" placeholder="Search prompts" data-i18n-placeholder="searchPrompts" aria-label="Search prompts" data-i18n-aria-label="searchPrompts">
+                    <button type="button" id="clearSearch" class="clear-search" aria-label="Clear search" data-i18n-aria-label="clearSearch">
+                        <i class="fa-solid fa-times"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="prompt-list-controls">
+                <div class="filter-wrapper">
+                    <svg class="filter-icon" width="20px" height="20px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <title>bars-filter</title>
+                        <path d="M30 6.749h-28c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h28c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0zM24 14.75h-16c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h16c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0zM19 22.75h-6.053c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h6.053c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0z"></path>
+                    </svg>
+                    <div class="filter-group">
+                        <button class="filter-dropdown-button" id="categoryFilterButton">
+                            <span data-i18n="category">Category</span>
+                        </button>
+                        <div class="filter-dropdown" id="categoryDropdown">
+                            <div class="filter-dropdown-content">
+                                <!-- Categories will be dynamically populated -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <button class="filter-dropdown-button" id="statusFilterButton">
+                            <span data-i18n="status">Status</span> (1)
+                        </button>
+                        <div class="filter-dropdown" id="statusDropdown">
+                            <div class="filter-dropdown-content">
+                                <div class="filter-item">
+                                    <label>
+                                        <input type="checkbox" value="Active" checked>
+                                        <span data-i18n="active">Active</span>
+                                    </label>
+                                </div>
+                                <div class="filter-item">
+                                    <label>
+                                        <input type="checkbox" value="Inactive">
+                                        <span data-i18n="inactive">Inactive</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="promptList" aria-label="List of prompts"></div>
+        </aside>
+
+        <!-- Middle column: Main content -->
+        <main class="prompt-editor" role="region" aria-label="Prompt Editor">
+            <form id="promptForm">
+                <div class="prompt-actions">
+                    <div class="left-actions">
+                        <button type="button" id="new_prompt" class="primary-button" aria-label="New Prompt" data-i18n-aria-label="newPrompt">
+                            <i class="fa-solid fa-plus"></i>
+                            <span data-i18n="newPrompt">New Prompt</span>
+                        </button>
+                        <button type="submit" id="save_prompt" class="primary-button" aria-label="Save Prompt" data-i18n-aria-label="savePrompt">
+                            <i class="fa-regular fa-floppy-disk icon-xl"></i>
+                            <span class="spinner spinner-s hide"></span>
+                            <span data-i18n="savePrompt">Save Prompt</span>
+                        </button>
+                        <button type="button" id="cancel_prompt" class="primary-button">
+                            <i class="fa-solid fa-times"></i>
+                            <span data-i18n="cancel">Cancel</span>
+                        </button>
+                    </div>
+
+                    <!-- Format Info -->
+                    <div class="format-info">
+                        <small>
+                            <span data-i18n="format">Format</span>: 
+                            <span data-i18n="formatValue">AREA-FUNCTION-PROMPT-VERSION</span>
+                            (e.g., WTR-QUAL-PROMPT-001) - 
+                            <a href="https://github.com/XMPro/Multi-Agent/blob/main/docs/naming-conventions/Id.md" target="_blank" rel="noopener noreferrer">
+                                <span data-i18n="viewNamingConvention">View Naming Conventions</span>
+                            </a>
+                        </small>
+                    </div>
+
+                    <div class="right-actions">
+                        <button type="button" id="clone_prompt" class="icon-button" title="Clone prompt" data-i18n-title="clonePrompt" aria-label="Clone prompt" data-i18n-aria-label="clonePrompt">
+                            <i class="fa-regular fa-copy icon-xl"></i>
+                            <span class="spinner spinner-s hide"></span>
+                        </button>
+                        <button type="button" id="import_prompt" class="icon-button" title="Import prompt" data-i18n-title="importPrompt" aria-label="Import prompt" data-i18n-aria-label="importPrompt">
+                            <i class="fa-solid fa-upload icon-xl"></i>
+                            <span class="spinner spinner-s hide"></span>
+                        </button>
+                        <button type="button" id="export_prompt" class="icon-button" title="Export prompt" data-i18n-title="exportPrompt" aria-label="Export prompt" data-i18n-aria-label="exportPrompt">
+                            <i class="fa-solid fa-download icon-xl"></i>
+                            <span class="spinner spinner-s hide"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="section" id="promptIdGenerationSection">
+                    <div class="row center-align">
+                        <div class="input-group">
+                            <label for="area" data-i18n="area">Area</label>
+                            <input type="text" id="area" name="area" aria-label="area" data-i18n-aria-label="area" placeholder="e.g., WTR">
+                        </div>
+                        <div class="input-group">
+                            <label for="function" data-i18n="function">Function</label>
+                            <input type="text" id="function" name="function" aria-label="function" data-i18n-aria-label="function" placeholder="e.g., QUAL">
+                        </div>
+                        <div class="input-group">
+                            <label for="version" data-i18n="version">Version</label>
+                            <input type="number" id="version" name="version" aria-label="version" data-i18n-aria-label="version" min="1" max="999" value="1">
+                        </div>
+                        <button id="generatePromptId" type="button" class="primary-button">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                            <span class="spinner spinner-s hide"></span>
+                            <span data-i18n="generate">Generate</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="row center-align">
+                        <div class="input-group prompt-id">
+                            <label for="prompt_id" data-i18n="promptId">Prompt ID</label>
+                            <div class="prompt-id-wrapper">
+                                <input type="text" id="prompt_id" name="prompt_id" readonly required aria-required>
+                                <span id="deactivatedLabel" class="deactivated-label" data-i18n="deactivated">Deactivated</span>
+                            </div>
+                        </div>
+                        <div class="button-group">
+                            <button type="button" id="deactivatePromptChain" class="icon-button" aria-label="Deactivate Prompt" data-i18n-aria-label="deactivatePrompt">
+                                <i class="fa-solid fa-power-off icon-l"></i>
+                            </button>
+                            <button type="button" id="activatePromptChain" class="icon-button" aria-label="Activate Prompt" data-i18n-aria-label="activatePrompt">
+                                <i class="fa-solid fa-bolt icon-l"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="row">
+                        <div class="input-group">
+                            <label for="name" data-i18n="name">Name</label>
+                            <input type="text" id="name" name="name" required aria-required>
+                        </div>
+                        <div class="input-group">
+                            <label for="internal_name" data-i18n="internalName">Internal Name</label>
+                            <input type="text" id="internal_name" name="internal_name" required aria-required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="row">
+                        <div class="input-group">
+                            <label for="description" data-i18n="description">Description</label>
+                            <textarea id="description" name="description" class="auto-expand" required aria-required></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="input-group">
+                        <label for="reserved_fields" data-i18n="reservedFields">Reserved Fields</label>
+                        <div id="reserved_fields" class="tag-input readonly" role="list" aria-label="Reserved fields" data-i18n-aria-label="reservedFields"></div>
+                    </div>
+                    <div class="input-group">
+                        <label for="prompt" data-i18n="prompt">Prompt</label>
+                        <textarea id="prompt" name="prompt" class="prompt-input" required aria-required></textarea>
+                    </div>
+                </div>
+            </form>
+        </main>
+
+        <!-- Right column: Metadata -->
+        <aside class="metadata-panel" role="complementary" aria-label="Metadata">
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="author" data-i18n="author">Author</label>
+                    <input type="text" id="author" name="author" readonly>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="prior_versions" data-i18n="loadPriorVersion">Load Prior Version</label>
+                    <div class="version-control">
+                        <select id="prior_versions" name="prior_versions">
+                            <option value="" data-i18n="currentVersion">Current Version</option>
+                        </select>
+                        <button type="button" id="activateVersionBtn" class="icon-button" title="Activate selected version" data-i18n-title="activateSelectedVersion" aria-label="Activate selected version" data-i18n-aria-label="activateSelectedVersion" disabled>
+                            <i class="fa-regular fa-square-check icon-l"></i>
+                            <span class="spinner spinner-s hide"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="category" data-i18n="category">Category</label>
+                    <input type="text" id="category" name="category">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="tags" data-i18n="tags">Tags</label>
+                    <div id="tags" class="tag-input" role="list" aria-label="Tags" data-i18n-aria-label="tags"></div>
+                </div>
+            </div>
+            <hr />
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="model_provider" data-i18n="modelProvider">Model Provider</label>
+                    <select id="model_provider" name="model_provider" required aria-required>
+                        <option value="" data-i18n="modelProviderPlaceholder">Select a model provider</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="model_name" data-i18n="modelName">Model Name</label>
+                    <input type="text" id="model_name" name="model_name" required aria-required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="max_tokens" data-i18n="maxTokens">Max Tokens</label>
+                    <input type="number" id="max_tokens" name="max_tokens" required aria-required min="1">
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="prompt_type" data-i18n="type">Type</label>
+                    <select id="prompt_type" name="prompt_type" required>
+                        <option value="" data-i18n="typePlaceholder">Select type</option>
+                    </select>
+                    <small id="prompt_type_description" class="description"></small>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="access_level" data-i18n="accessLevel">Access Level</label>
+                    <select id="access_level" name="access_level" required>
+                        <option value="" data-i18n="accessLevelPlaceholder">Select access level</option>
+                    </select>
+                    <small id="access_level_description" class="description"></small>
+                </div>
+            </div>
+            <hr />
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="created_date" data-i18n="created">Created</label>
+                    <div id="created_date" class="date-label"></div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="last_modified_date" data-i18n="lastModified">Last Modified</label>
+                    <div id="last_modified_date" class="date-label"></div>
+                </div>
+            </div>
+        </aside>
+    </div>
+</div>

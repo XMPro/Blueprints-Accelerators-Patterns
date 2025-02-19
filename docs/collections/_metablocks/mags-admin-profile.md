@@ -1,8 +1,8 @@
 ---
 layout: project-top
 date: 2025-01-31
-title: "MAGS: Admin - Profile"
-description: "<strong>MAGS: Admin - Profile</strong>"
+title: "MAGS: Profile Administration"
+description: "<strong>MAGS: Profile Administration</strong>"
 extract: ""
 weight: 2
 thumbnail: "/assets/images/metablocks/mags/admin/profile/light.png"
