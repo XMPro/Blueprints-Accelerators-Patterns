@@ -254,7 +254,9 @@
                 <!-- Planning Methods -->
                 <div class="section">
                     <h3 class="section-header" data-i18n="allowedPlanningMethod">Allowed Planning Method</h3>
-                    <div id="allowed_planning_method-input" class="tag-input"></div>
+                    <div class="input-group">
+                        <div id="allowed_planning_method-input" class="tag-input"></div>
+                    </div>      
                 </div>
 
                 <!-- Decision Parameters -->
@@ -329,6 +331,23 @@
                             <div id="required_fields_reflection" class="tag-input readonly"></div>
                             <textarea id="reflection_prompt" name="reflection_prompt" class="prompt-input" required></textarea>
                         </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="section">
+                    <div class="section-header-container">
+                        <h3 class="section-header" data-i18n="tools">Tools</h3>
+                        <div class="tools-filter">
+                            <select id="tools-filter-dropdown" aria-label="Filter tools">
+                                <option value="all" selected data-i18n="showAllTools">Show All</option>
+                                <option value="selected" data-i18n="selectedTools">Selected Tools Only</option>
+                                <option value="unselected" data-i18n="unselectedTools">Unselected Tools Only</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="tools-container" class="tools-container">
+                        <!-- Tools will be populated dynamically -->
                     </div>
                 </div>
             </form>
