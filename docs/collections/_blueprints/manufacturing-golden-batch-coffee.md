@@ -108,6 +108,7 @@ Ensure the following variables are available to be used in the data stream:
 - Run the second Notebook to develop the machine learning model with expected output:
   - <code>gb_pca.sav</code>, <code>gb_pls.sav</code> & <code>gb_scaler.save</code> in <code>models</code> folder
 - Save model files in location that is accessible by the Stream Host
+*Ensure to use the same version Python libraries in the Stream Host as what is ran in the notebooks to generate the models - for this example `scikit-learn 1.6.1` was used.*
 
 
 ### 3. Import the Data Stream

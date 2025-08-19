@@ -384,7 +384,7 @@
         async function initMap() {
             const map = L.map('map').setView([1.3673718661550014, 103.75283382025195], 13);
 
-            L.tileLayer.provider('Stadia.StamenTerrain', {
+			L.tileLayer.provider('OpenStreetMap', {
                 attribution: false,
                 minZoom: 3,
                 maxZoom: 18

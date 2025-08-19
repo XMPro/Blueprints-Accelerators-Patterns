@@ -252,6 +252,7 @@ The Notebook `Flood Prediction.ipynb` can re-run to generate the model file for 
 The datasets used with this model development are in the same folder as the notebook file, you can find them by clicking on the `CSV - Weather Data SIngapore`item in the links list.
 This process involves training a model and saving the weights - be sure to place the resulting file in a location that the Stream Host can access.
 Also update the path in the Calculated Field agent for `[1] Flood Prediction` so that the correct file is used to supply the weights.
+*Ensure to use the same version Python libraries in the Stream Host as what is ran in the notebooks to generate the models - for this example `scikit-learn 1.6.1` was used.*
 
 ## Steps to Import
 
