@@ -1,0 +1,429 @@
+<script src="./AppFiles/neo4j-web.min.js"></script>
+
+<div class="spinner-container page" id="pageSpinner">
+    <div id="spinner" class="spinner page"></div>
+</div>
+
+<div class="container hide" id="container" role="main">
+    <div class="three-column-layout">
+        <div class="tool-list" role="region" aria-label="Tool List">
+            <div class="tool-list-header">
+                <h2 data-i18n="tools">Tools</h2>
+            </div>
+            
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <label for="toolSearch" class="sr-only" data-i18n="searchTools">Search tools</label>
+                    <input type="text" id="toolSearch" placeholder="Search tools" data-i18n-placeholder="searchPlaceholder" aria-label="Search tools" data-i18n-aria-label="searchTools">
+                    <button type="button" id="clearSearch" class="clear-search" aria-label="Clear search" data-i18n-aria-label="clearSearch">
+                        <i class="fa-solid fa-times"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="tool-list-controls">
+                <div class="filter-wrapper">
+                    <svg class="filter-icon" width="20px" height="20px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <title>bars-filter</title>
+                        <path d="M30 6.749h-28c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h28c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0zM24 14.75h-16c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h16c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0zM19 22.75h-6.053c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h6.053c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0z"></path>
+                    </svg>
+                    <div class="filter-group">
+                        <button class="filter-dropdown-button" id="classFilterButton">
+                            <span data-i18n="toolType">Tool Type</span>
+                        </button>
+                        <div class="filter-dropdown" id="classDropdown">
+                            <div class="filter-dropdown-content">
+                                <div class="filter-item">
+                                    <label>
+                                        <input type="checkbox" value="DuckDuckGoWebSearchTool">
+                                        <span>DuckDuckGoWebSearchTool</span>
+                                    </label>
+                                </div>
+                                <div class="filter-item">
+                                    <label>
+                                        <input type="checkbox" value="SqlQueryTool">
+                                        <span>SqlQueryTool</span>
+                                    </label>
+                                </div>
+                                <div class="filter-item">
+                                    <label>
+                                        <input type="checkbox" value="XMProDataStreamTool">
+                                        <span>XMProDataStreamTool</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <button class="filter-dropdown-button" id="statusFilterButton">
+                            <span data-i18n="status">Status</span> (1)
+                        </button>
+                        <div class="filter-dropdown" id="statusDropdown">
+                            <div class="filter-dropdown-content">
+                                <div class="filter-item">
+                                    <label>
+                                        <input type="checkbox" value="Active" checked>
+                                        <span data-i18n="active">Active</span>
+                                    </label>
+                                </div>
+                                <div class="filter-item">
+                                    <label>
+                                        <input type="checkbox" value="Inactive">
+                                        <span data-i18n="inactive">Inactive</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select-all-container">
+                        <label class="checkbox-wrapper">
+                            <input type="checkbox" id="markAllTools">
+                            <span data-i18n="markAll">Mark all</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div id="toolList" aria-label="List of tools"></div>
+        </div>
+
+        <div class="tool-editor" role="region" aria-label="Tool Editor">
+            <div class="tool-actions">
+                <div class="left-actions">
+                    <button type="button" class="primary-button" id="new_tool" aria-label="New Tool" data-i18n-aria-label="newTool">
+                        <i class="fa-solid fa-plus"></i>
+                        <span data-i18n="newTool">New Tool</span>
+                    </button>
+                    <button type="submit" id="save_tool" class="primary-button" data-i18n-title="saveTool" aria-label="Save tool" data-i18n-aria-label="saveTool">
+                        <i class="fa-regular fa-floppy-disk icon-xl"></i>
+                        <span class="spinner spinner-s hide"></span>
+                        <span data-i18n="saveTool">Save Tool</span>
+                    </button>
+                    <button type="button" id="cancel_tool" class="primary-button">
+                        <i class="fa-solid fa-times"></i>
+                        <span class="spinner spinner-s hide"></span>
+                        <span data-i18n="cancel">Cancel</span>
+                    </button>
+                </div>
+
+                <div class="format-info">
+                    <small>
+                        <span data-i18n="format">Format</span>: 
+                        <span data-i18n="formatValue">AREA-FUNCTION-TOOL-VERSION</span> 
+                        (e.g., WTR-QUAL-TOOL-001) - 
+                        <a href="https://github.com/XMPro/Multi-Agent/blob/main/docs/naming-conventions/Id.md" 
+                            target="_blank" 
+                            rel="noopener noreferrer">
+                            <span data-i18n="viewNamingConvention">View Naming Conventions</span>
+                        </a>
+                    </small>
+                </div>
+
+                <div class="right-actions">
+                    <button type="button" class="icon-button" id="clone_tool" title="Clone tool" data-i18n-title="cloneTool" aria-label="Clone Tool" data-i18n-aria-label="cloneTool"> 
+                        <i class="fa-regular fa-copy icon-xl"></i>
+                        <span class="spinner spinner-s hide"></span>
+                    </button>
+                    <button type="button" id="import_tool" aria-label="Import Tool" class="icon-button" title="Import tool" data-i18n-title="importTool" data-i18n-aria-label="importTool">
+                        <i class="fa-solid fa-upload icon-xl"></i>
+                        <span class="spinner spinner-s hide"></span>
+                    </button>
+                    <button type="button" id="export_tool" aria-label="Export Tool" class="icon-button" title="Export tool" data-i18n-title="exportTool" data-i18n-aria-label="exportTool">
+                        <i class="fa-solid fa-download icon-xl"></i>
+                        <span class="spinner spinner-s hide"></span>
+                    </button>
+                </div>
+            </div>
+
+            <form id="toolForm" aria-label="Tool Edit Form">
+                <div class="section" id="toolIdSection">
+                    <div class="row center-align">
+                        <div class="input-group">
+                            <label for="area" data-i18n="area">Area</label>
+                            <input type="text" id="area" name="area" maxlength="8" placeholder="e.g., PROD">
+                        </div>
+                        <div class="input-group">
+                            <label for="function" data-i18n="function">Function</label>
+                            <input type="text" id="function" name="function" maxlength="8" placeholder="e.g., QUERY">
+                        </div>
+                        <div class="input-group">
+                            <label for="version" data-i18n="version">Version</label>
+                            <input type="text" id="version" name="version" maxlength="3" placeholder="e.g., 001">
+                        </div>
+                        <button type="button" id="generateToolId" class="primary-button">
+                            <i class="fa-solid fa-bolt"></i>
+                            <span class="spinner spinner-s hide"></span>
+                            <span data-i18n="generateId">Generate ID</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="row">
+                        <div class="input-group">
+                            <label for="id" data-i18n="id">ID</label>
+                            <input type="text" id="id" name="id" readonly required aria-required>
+                        </div>
+                        <div class="input-group">
+                            <label for="class_name" data-i18n="class">Class</label>
+                            <input type="text" id="class_name" name="class_name" readonly>
+                        </div>
+                    </div>
+                    <div class="row center-align">
+                        <div class="input-group">
+                            <label for="name" data-i18n="name">Name</label>
+                            <input type="text" id="name" name="name" readonly required aria-required>
+                        </div>
+                        
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="active" name="active">
+                            <label for="active" data-i18n="active">Active</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-header" data-i18n="description">Description</h3>
+                    <div class="input-group">
+                        <textarea id="description" name="description" required aria-required></textarea>
+                    </div>
+                </div>
+
+                <!-- Tool Type Specific Sections -->
+
+                <!-- DuckDuckGo Tool Section -->
+                <div id="duckduckgosection" class="section tool-specific-section hide">
+                    <h3 class="section-header" data-i18n="options">Options</h3>
+                    <div class="row center-align">
+                        <div class="input-group">
+                            <label for="ddg_max_results" data-i18n="maxResults">Max Results</label>
+                            <input type="number" id="ddg_max_results" name="ddg_max_results" min="1" max="10">
+                        </div>
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="ddg_safe_search" name="ddg_safe_search">
+                            <label for="ddg_safe_search" data-i18n="safeSearch">Safe Search</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SQL Tool Section -->
+                <div id="sqlsection" class="section tool-specific-section hide">
+                    <h3 class="section-header" data-i18n="options">Options</h3>
+                    <div class="row center-align">
+                        <div class="input-group">
+                            <label for="sql_connection_string" data-i18n="connectionString">Connection String</label>
+                            <input type="text" id="sql_connection_string" name="sql_connection_string" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="sql_timeout" data-i18n="timeout">Timeout (seconds)</label>
+                            <input type="number" id="sql_timeout" name="sql_timeout" min="1" max="120">
+                        </div>
+                        <div class="input-group">
+                            <label for="sql_max_retries" data-i18n="maxRetries">Max Retries</label>
+                            <input type="number" id="sql_max_retries" name="sql_max_retries" min="0" max="10">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-group">
+                            <label for="sql_reserved_fields" data-i18n="reservedFields">Reserved Fields</label>
+                            <div id="sql_reserved_fields" class="tag-input readonly">
+                                <input type="text" placeholder="Add" data-i18n-placeholder="add">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-group">
+                            <label for="sql_prompt_system" data-i18n="systemPrompt">System Prompt</label>
+                            <textarea id="sql_prompt_system" name="sql_prompt_system" class="prompt-input"></textarea>
+                        </div>
+                        <div class="input-group">
+                            <label for="sql_prompt_user" data-i18n="userPrompt">User Prompt</label>
+                            <textarea id="sql_prompt_user" name="sql_prompt_user" class="prompt-input"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Datastream Tool Section -->
+                <div id="datastreamsection" class="section tool-specific-section hide">
+                    <h3 class="section-header">Options</h3>
+                
+                    <div class="row center-align">
+                        <div class="input-group">
+                            <label for="datastream_mode" data-i18n="mode">Mode</label>
+                            <select id="datastream_mode" name="datastream_mode">
+                                <option value="receive" data-i18n="receive">Receive</option>
+                                <option value="send" data-i18n="send">Send</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label id="timing_label" for="datastream_timing" data-i18n="window">Window (seconds)</label>
+                            <input type="number" id="datastream_timing" name="datastream_timing" min="1">
+                        </div>
+                    </div>
+
+                    <div class="row center-align">
+                        <div class="input-group">
+                            <label for="datastream_name" data-i18n="dataStreamName">Datastream Name</label>
+                            <input type="text" id="datastream_name" name="datastream_name">
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="datastream_url" data-i18n="dataStreamUrl">Datastream URL</label>
+                            <div class="url-input-wrapper">
+                                <input type="url" id="datastream_url" name="datastream_url" required placeholder="https://example.com/datastream">
+                                <button type="button" id="goToDataStreamBtn" class="icon-button" title="Go to data stream" data-i18n-title="goToDataStream" aria-label="Go to data stream" data-i18n-aria-label="goToDataStream" disabled>
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="row">
+                        <div id="send_address_row" class="input-group">
+                            <label for="datastream_address_send" data-i18n="sendAddress">Send Address</label>
+                            <input type="text" id="datastream_address_send" name="datastream_address_send">
+                        </div>
+
+                        <div class="input-group">
+                            <label id="address_label" for="datastream_address" data-i18n="receiveAddress">Receive Address</label>
+                            <input type="text" id="datastream_address" name="datastream_address">
+                        </div>
+                    </div>
+                
+                    <div id="expected_structure_row" class="row hide">
+                        <div class="input-group">
+                            <label for="datastream_expected_structure" data-i18n="expectedStructure">Expected Structure</label>
+                            <textarea id="datastream_expected_structure" name="datastream_expected_structure"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="metadata-panel" role="complementary" aria-label="Metadata" data-i18n-aria-label="metadata">
+            <div class="hide" id="sql-metadata">
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="sql_model_provider" data-i18n="modelProvider">Model Provider</label>
+                        <select id="sql_model_provider" name="model_provider">
+                            <option value="" data-i18n="modelProviderPlaceholder">Select a model provider</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="sql_model_name" data-i18n="modelName">Model Name</label>
+                        <input type="text" id="sql_model_name" name="model_name">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="sql_max_tokens" data-i18n="maxTokens">Max Tokens</label>
+                        <input type="number" id="sql_max_tokens" name="max_tokens" min="1">
+                    </div>
+                </div>
+                <hr/>
+            </div>
+
+            <div class="form-row keywords-container hide">
+                <div class="input-group">
+                    <label for="keywords" data-i18n="keywords">Keywords</label>
+                    <div id="keywords" class="tag-input">
+                        <input type="text" placeholder="Add" data-i18n-placeholder="add">
+                    </div>
+                </div>
+
+                <hr/>
+            </div>
+            
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="created_date" data-i18n="created">Created</label>
+                    <div id="created_date" class="date-label"></div>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="last_modified_date" data-i18n="lastModified">Last Modified</label>
+                    <div id="last_modified_date" class="date-label"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Existing Tools Dialog -->
+<div id="existing-tools-dialog" class="modal-overlay" style="display: none;">
+    <div class="modal-content existing-tools-modal">
+        <div class="modal-header">
+            <h3 data-i18n="existingToolsDetected">Existing Tools Detected</h3>
+            <button class="modal-close" aria-label="Close">×</button>
+        </div>
+        
+        <div class="modal-body">
+            <div class="existing-tools-content">
+                <div class="content-header">
+                    <p data-i18n="existingToolsDetected">The following tools already exist in the database. Please choose how to handle each one:</p>
+                    <div class="bulk-actions">
+                        <button class="set-all-overwrite primary-button" data-i18n="setAllOverwrite">Set All to Overwrite</button>
+                        <button class="set-all-keep primary-button" data-i18n="setAllKeep">Set All to Keep Current</button>
+                    </div>
+                </div>
+                
+                <div class="existing-tools-table-container">
+                    <table class="existing-tools-table">
+                        <thead>
+                            <tr>
+                                <th class="tool-name-column" data-i18n="toolName">Tool Name</th>
+                                <th class="tool-id-column" data-i18n="toolId">Tool ID</th>
+                                <th class="conflict-column" data-i18n="conflict">Conflict</th>
+                                <th class="actions-column" data-i18n="action">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="existing-tools-tbody">
+                            <!-- Rows will be populated dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="overwrite-warning" style="display: none;">
+                    <strong>⚠️ <span data-i18n="overwriteWarning">Warning: Overwriting existing tools is irreversible.</span></strong>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal-footer">
+            <button class="cancel-button secondary-button" data-i18n="cancel">Cancel</button>
+            <button class="confirm-button primary-button" data-i18n="proceed">Proceed with Import</button>
+        </div>
+    </div>
+</div>
+
+<!-- Tool Row Template -->
+<template id="existing-tool-row-template">
+    <tr class="existing-tool-row">
+        <td class="tool-name tool-name-column"></td>
+        <td class="tool-id tool-id-column"></td>
+        <td class="conflict-types conflict-column"></td>
+        <td class="tool-dropdown-cell actions-column">
+            <div class="custom-dropdown">
+                <div class="dropdown-selected" data-value="overwrite">
+                    <span class="selected-text" data-i18n="overwriteWithImported">Overwrite with imported version</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-options" style="display: none;">
+                    <label class="dropdown-option">
+                        <input type="radio" name="tool-choice" value="keep">
+                        <span data-i18n="keepCurrentVersion">Keep current version</span>
+                    </label>
+                    <label class="dropdown-option">
+                        <input type="radio" name="tool-choice" value="overwrite" checked>
+                        <span data-i18n="overwriteWithImported">Overwrite with imported version</span>
+                    </label>
+                </div>
+            </div>
+        </td>
+    </tr>
+</template>

@@ -1,3 +1,5 @@
+<script src="./AppFiles/neo4j-web.min.js"></script>
+
 <div class="container" role="main">
     <div class="three-column-layout">
         <!-- Left column: Prompt list -->
@@ -53,6 +55,12 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="select-all-container">
+                        <label class="checkbox-wrapper">
+                            <input type="checkbox" id="markAllPrompts">
+                            <span data-i18n="markAll">Mark all</span>
+                        </label>
                     </div>
                 </div>
             </div>
@@ -134,17 +142,19 @@
                     <div class="row center-align">
                         <div class="input-group prompt-id">
                             <label for="prompt_id" data-i18n="promptId">Prompt ID</label>
-                            <div class="prompt-id-wrapper">
-                                <input type="text" id="prompt_id" name="prompt_id" readonly required aria-required>
-                                <span id="deactivatedLabel" class="deactivated-label" data-i18n="deactivated">Deactivated</span>
+                            <div id="prompt-id-wrapper" class="prompt-id-wrapper date-label">
+                                <span id="prompt_id" name="prompt_id"></span>
+                                <span id="deactivatedLabel" class="deactivated-label prompt-tag" data-i18n="deactivated">Deactivated</span>
                             </div>
                         </div>
                         <div class="button-group">
-                            <button type="button" id="deactivatePromptChain" class="icon-button" aria-label="Deactivate Prompt" data-i18n-aria-label="deactivatePrompt">
+                            <button type="button" id="deactivatePromptChain" class="icon-button" aria-label="Deactivate Prompt" data-i18n-aria-label="deactivatePrompt" data-i18n-title="deactivatePrompt">
                                 <i class="fa-solid fa-power-off icon-l"></i>
+                                <span class="spinner spinner-s hide"></span>
                             </button>
-                            <button type="button" id="activatePromptChain" class="icon-button" aria-label="Activate Prompt" data-i18n-aria-label="activatePrompt">
+                            <button type="button" id="activatePromptChain" class="icon-button" aria-label="Activate Prompt" data-i18n-aria-label="activatePrompt" data-i18n-title="activatePrompt">
                                 <i class="fa-solid fa-bolt icon-l"></i>
+                                <span class="spinner spinner-s hide"></span>
                             </button>
                         </div>
                     </div>
@@ -169,6 +179,13 @@
                             <label for="description" data-i18n="description">Description</label>
                             <textarea id="description" name="description" class="auto-expand" required aria-required></textarea>
                         </div>
+                    </div>
+                </div>
+
+                <div class="section" id="systemPromptSection" style="display: none;">
+                    <div class="input-group">
+                        <label for="system_prompt" data-i18n="systemPrompt">System Prompt</label>
+                        <textarea id="system_prompt" name="system_prompt" class="prompt-input auto-expand"></textarea>
                     </div>
                 </div>
 
@@ -215,7 +232,7 @@
                     <input type="text" id="category" name="category">
                 </div>
             </div>
-
+            
             <div class="form-row">
                 <div class="input-group">
                     <label for="tags" data-i18n="tags">Tags</label>
@@ -286,3 +303,82 @@
         </aside>
     </div>
 </div>
+
+<!-- Existing Prompts Dialog -->
+<div id="existing-prompts-dialog" class="modal-overlay" style="display: none;">
+    <div class="modal-content existing-prompts-modal">
+        <div class="modal-header">
+            <h3 data-i18n="existingPromptsDetected">Existing Prompts Detected</h3>
+            <button class="modal-close" aria-label="Close">×</button>
+        </div>
+        
+        <div class="modal-body">
+            <div class="existing-prompts-content">
+                <div class="content-header">
+                    <p data-i18n="existingPromptsMessage">The following prompts already exist in the database. Please choose how to handle each one:</p>
+                    <div class="bulk-actions">
+                        <button class="set-all-overwrite primary-button" data-i18n="setAllOverwrite">Set All to Overwrite</button>
+                        <button class="set-all-keep primary-button" data-i18n="setAllKeep">Set All to Keep Current</button>
+                        <button class="set-all-import-new primary-button" data-i18n="setAllImportNew">Set All to Import New</button>
+                    </div>
+                </div>
+                
+                <div class="existing-prompts-table-container">
+                    <table class="existing-prompts-table">
+                        <thead>
+                            <tr>
+                                <th class="prompt-name-column" data-i18n="promptName">Prompt Name</th>
+                                <th class="prompt-id-column" data-i18n="promptId">Prompt ID</th>
+                                <th class="conflict-column" data-i18n="conflict">Conflict</th>
+                                <th class="actions-column" data-i18n="action">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="existing-prompts-tbody">
+                            <!-- Rows will be populated dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="overwrite-warning" style="display: block;">
+                    <strong>⚠️ <span data-i18n="overwriteWarning">Warning: Overwriting existing tools is irreversible.</span></strong>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal-footer">
+            <button class="cancel-button secondary-button" data-i18n="cancel">Cancel</button>
+            <button class="confirm-button primary-button" data-i18n="proceed">Proceed with Import</button>
+        </div>
+    </div>
+</div>
+
+<!-- Prompt Row Template -->
+<template id="existing-prompt-row-template">
+    <tr class="existing-prompt-row">
+        <td class="prompt-name prompt-name-column"></td>
+        <td class="prompt-id prompt-id-column"></td>
+        <td class="conflict-types conflict-column"></td>
+        <td class="prompt-dropdown-cell actions-column">
+            <div class="custom-dropdown">
+                <div class="dropdown-selected" data-value="overwrite">
+                    <span class="selected-text" data-i18n="overwriteWithImported">Overwrite with imported version</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-options" style="display: none;">
+                    <label class="dropdown-option">
+                        <input type="radio" name="prompt-choice" value="keep">
+                        <span data-i18n="keepCurrentVersion">Keep current version</span>
+                    </label>
+                    <label class="dropdown-option">
+                        <input type="radio" name="prompt-choice" value="overwrite" checked>
+                        <span data-i18n="overwriteWithImported">Overwrite with imported version</span>
+                    </label>
+                    <label class="dropdown-option">
+                        <input type="radio" name="prompt-choice" value="import-new">
+                        <span data-i18n="importWithNewIdAndName">Import with new Id and name</span>
+                    </label>
+                </div>
+            </div>
+        </td>
+    </tr>
+</template>

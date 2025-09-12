@@ -1,0 +1,51 @@
+<script src="./AppFiles/marked.min.js"></script>
+<script src="./AppFiles/mqtt.min.js"></script>
+<script src="./AppFiles/neo4j-web.min.js"></script>
+<script src="./AppFiles/d3.min.js"></script>
+
+<div class="container">
+	<section class="message-section">
+		<div class="message-input-container">
+            <select class="recipient-select">
+                <option value="entire-team" data-i18n="entireTeam">Entire Team</option>
+            </select>
+            <input type="text" class="message-input" placeholder="Type message to team"  data-i18n-placeholder="typeMessage">
+            <div class="split-button-group">
+                <button class="send-button" disabled>
+                    <span class="button-content">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span class="spinner spinner-s hide"></span>
+                    </span>
+                </button>
+                <button class="send-button-dropdown" disabled aria-haspopup="true" aria-expanded="false">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="send-options-dropdown">
+                    <button class="send-option">
+                        <i class="fa-solid fa-eye"></i>
+                        <span class="spinner spinner-s hide"></span>
+                        <span data-i18n="sendObservation">Send an Observation</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+	</section>
+
+	<section class="agent-grid" id="agentGrid">
+		<!-- Agent cards will be dynamically inserted here -->
+	</section>
+	<section class="footer" id="footer">
+        <div class="legend hide">
+            <span class="legend-item"><i class="fa-solid fa-star"></i> - <span data-i18n="importanceScore">Importance score</span></span>
+            <span class="legend-item"><i class="fa-solid fa-bolt"></i> - <span data-i18n="surpriseScore">Surprise score</span></span>
+        </div>
+        <div class="footer-controls">
+            <div id="refreshStatusIndicator" style="display: none; align-items: center; font-size: 0.875rem; margin-right: 1rem;">
+                <!-- Status content will be populated by JavaScript -->
+            </div>
+            <div class="last-updated-wrapper">
+                <span class="last-updated" id="lastUpdated"></span>
+            </div>
+        </div>
+	</section>
+</div>

@@ -1,0 +1,631 @@
+<script src="./AppFiles/neo4j-web.min.js"></script>
+
+<div class="container" role="main">
+    <div class="three-column-layout">
+        <!-- Measure List Panel -->
+        <div class="measure-list" role="region" aria-label="Measure List">
+            <div class="measure-list-header">
+                <h2 data-i18n="measures">Measures</h2>
+            </div>
+            
+            <!-- Search Container -->
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <label for="measureSearch" class="sr-only" data-i18n="searchMeasures">Search measures</label>
+                    <input type="text" id="measureSearch" placeholder="Search measures" data-i18n-placeholder="searchMeasures" aria-label="Search measures" data-i18n-aria-label="searchMeasures">
+                    <button type="button" id="clearSearch" class="clear-search" aria-label="Clear search" data-i18n-aria-label="clearSearch">
+                        <i class="fa-solid fa-times"></i>
+                    </button>
+                </div>
+            </div>
+
+            
+            <!-- Filter Controls -->
+            <div class="measure-list-controls">
+                <div class="filter-wrapper">
+                    <svg class="filter-icon" width="20px" height="20px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <title>bars-filter</title>
+                        <path d="M30 6.749h-28c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h28c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0zM24 14.75h-16c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h16c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0zM19 22.75h-6.053c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h6.053c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0z"></path>
+                    </svg>
+                    <div class="filter-group">
+                        <button class="filter-dropdown-button" id="typeFilterButton">
+                            <span data-i18n="type">Type</span>
+                        </button>
+                        <div class="filter-dropdown" id="typeDropdown">
+                            <div class="filter-dropdown-content">
+                                <div class="filter-item">
+                                    <label>
+                                        <input type="checkbox" value="Base">
+                                        <span data-i18n="base">Base</span>
+                                    </label>
+                                </div>
+                                <div class="filter-item">
+                                    <label>
+                                        <input type="checkbox" value="Calculated">
+                                        <span data-i18n="calculated">Calculated</span>
+                                    </label>
+                                </div>
+                                <div class="filter-item">
+                                    <label>
+                                        <input type="checkbox" value="Tool">
+                                        <span data-i18n="tool">Tool</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <button class="filter-dropdown-button" id="domainFilterButton">
+                            <span data-i18n="domain">Domain</span>
+                        </button>
+                        <div class="filter-dropdown" id="domainDropdown">
+                            <div class="filter-dropdown-content">
+                                <!-- Dynamically populated from available domains -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select-all-container">
+                        <label class="checkbox-wrapper">
+                            <input type="checkbox" id="markAllMeasures">
+                            <span data-i18n="markAll">Mark all</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Measure List -->
+            <div id="measureList" aria-label="List of measures"></div>
+        </div>
+
+        <!-- Measure Editor -->
+        <div class="measure-editor" role="region" aria-label="Measure Editor">
+
+            <!-- Measure Actions -->
+            <div class="measure-actions">
+                <div class="left-actions">
+                    <button type="button" id="new_measure" class="primary-button" aria-label="New Measure" data-i18n-aria-label="newMeasure">
+                        <i class="fa-solid fa-plus"></i>
+                        <span data-i18n="newMeasure">New Measure</span>
+                    </button>
+                    <button type="submit" id="save_measure" class="primary-button" aria-label="Save Measure" data-i18n-aria-label="saveMeasure">
+                        <i class="fa-regular fa-floppy-disk icon-xl"></i>
+                        <span class="spinner spinner-s hide"></span>
+                        <span data-i18n="saveMeasure">Save Measure</span>
+                    </button>
+                    <button type="button" id="cancel_measure" class="primary-button" aria-label="Cancel" data-i18n-aria-label="cancel">
+                        <i class="fa-solid fa-times"></i>
+                        <span data-i18n="cancel">Cancel</span>
+                    </button>
+                </div>
+
+                <div class="format-info">
+                    <small>
+                        <span data-i18n="format">Format</span>: 
+                        <span data-i18n="formatValue">AREA-FUNCTION-MEASURE-VERSION</span> 
+                        (e.g., WTR-QUAL-MEASURE-001) - 
+                        <a href="https://github.com/XMPro/Multi-Agent/blob/main/docs/naming-conventions/Id.md" 
+                            target="_blank" 
+                            rel="noopener noreferrer">
+                            <span data-i18n="viewNamingConvention">View Naming Conventions</span>
+                        </a>
+                    </small>
+                </div>
+                
+                <div class="right-actions">
+                    <button type="button" id="clone_measure" class="icon-button" title="Clone measure" data-i18n-title="cloneMeasure" aria-label="Clone measure" data-i18n-aria-label="cloneMeasure">
+                        <i class="fa-regular fa-copy icon-xl"></i>
+                        <span class="spinner spinner-s hide"></span>
+                    </button>
+                    <button type="button" id="import_measure" class="icon-button" title="Import measure" data-i18n-title="importMeasure" aria-label="Import measure" data-i18n-aria-label="importMeasure">
+                        <i class="fa-solid fa-upload icon-xl"></i>
+                        <span class="spinner spinner-s hide"></span>
+                    </button>
+                    <button type="button" id="export_measure" class="icon-button" title="Export measure" data-i18n-title="exportMeasure" aria-label="Export measure" data-i18n-aria-label="exportMeasure">
+                        <i class="fa-solid fa-download icon-xl"></i>
+                        <span class="spinner spinner-s hide"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tab navigation -->
+            <div class="tab-buttons">
+                <button class="tab-button active" data-tab="details">
+                    <span data-i18n="details">Details</span>
+                </button>
+                <button class="tab-button" data-tab="related-measures">
+                    <span data-i18n="relatedMeasures">Related Measures</span>
+                </button>
+                <button class="tab-button" data-tab="configuration">
+                    <span data-i18n="configuration">Configuration</span>
+                </button>
+            </div>
+
+            <!-- Measure Form -->
+            <form id="measureForm" aria-label="Measure Edit Form">
+                <!-- Basic Info Tab -->
+                <div id="details" class="tab-panel active">
+                    <div class="section" id="measureIdSection">
+                        <div class="row center-align">
+                            <div class="input-group">
+                                <label for="area" data-i18n="area">Area</label>
+                                <input type="text" id="area" name="area" maxlength="8" placeholder="e.g., PROD">
+                            </div>
+                            <div class="input-group">
+                                <label for="function" data-i18n="function">Function</label>
+                                <input type="text" id="function" name="function" maxlength="8" placeholder="e.g., QUAL">
+                            </div>
+                            <div class="input-group">
+                                <label for="version" data-i18n="version">Version</label>
+                                <input type="number" id="version" name="version" maxlength="3" placeholder="e.g., 001" min="1">
+                            </div>
+                            <button type="button" id="generateMeasureId" class="primary-button">
+                                <i class="fa-solid fa-bolt"></i>
+                                <span class="spinner spinner-s hide"></span>
+                                <span data-i18n="generateId">Generate ID</span>
+                            </button>
+                        </div>
+                    </div>
+
+                <!-- Basic Info Section -->
+                <div class="section">
+                    <div class="row">
+                        <div class="input-group">
+                            <label for="id" data-i18n="id">ID</label>
+                            <input type="text" id="id" name="id" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="measure_id" data-i18n="measureId">Measure ID</label>
+                            <input type="text" id="measure_id" name="measure_id" required>
+                        </div>
+                    </div>
+
+                    
+                    <div class="row center-align">
+                        <div class="input-group">
+                            <label for="name" data-i18n="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="safety_critical" name="safety_critical">
+                            <label for="safety_critical" data-i18n="safetyCritical">Safety Critical</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-header" data-i18n="description">Description</h3>
+                    <div class="input-group">
+                        <textarea id="description" name="description"></textarea>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-header" data-i18n="unitsAndDisplay">Units & Display</h3>
+                    <div class="row start-align">
+                        <div class="input-group">
+                            <label for="unit" data-i18n="unit">Unit</label>
+                            <input type="text" id="unit" name="unit" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="precision" data-i18n="precision">Precision</label>
+                            <input type="number" id="precision" name="precision" min="0" max="10" value="2">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Type-specific sections -->
+                <div class="type-specific base-type">
+                   
+                    <!-- Data Collection Settings -->
+                    <div class="section">
+                        <h4 class="section-header" data-i18n="dataCollectionSettings">Data Collection Settings</h4>
+                        <div class="row">
+                            <div class="input-group">
+                                <label for="measurement_type" data-i18n="measurementType">Measurement Type</label>
+                                <select id="measurement_type" name="measurement_type">
+                                    <option value="external_data" data-i18n="externalData">External Data</option>
+                                    <option value="sensor_reading" data-i18n="sensorReading">Sensor Reading</option>
+                                    <option value="status_indicator" data-i18n="statusIndicator">Status Indicator</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label for="sampling_rate" data-i18n="samplingRate">Sampling Rate</label>
+                                <select id="sampling_rate" name="sampling_rate">
+                                    <option value="real_time" data-i18n="realTime">Real time</option>
+                                    <option value="every_minute" data-i18n="everyMinute">Every minute</option>
+                                    <option value="every_5_minutes" data-i18n="every5Minutes">Every 5 minutes</option>
+                                    <option value="hourly" data-i18n="hourly">Hourly</option>
+                                    <option value="daily" data-i18n="daily">Daily</option>
+                                    <option value="weekly" data-i18n="weekly">Weekly</option>
+                                    <option value="monthly" data-i18n="monthly">Monthly</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Validation Rules -->
+                    <div class="section">
+                        <h4 class="section-header" data-i18n="validationRules">Validation Rules</h4>
+                        <div class="row">
+                            <div class="input-group">
+                                <label for="min_value" data-i18n="minValue">Min Value</label>
+                                <input type="number" id="min_value" name="min_value">
+                            </div>
+                            <div class="input-group">
+                                <label for="max_value" data-i18n="maxValue">Max Value</label>
+                                <input type="number" id="max_value" name="max_value">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Alarm Thresholds -->
+                    <div class="section">
+                        <h4 class="section-header" data-i18n="alarmThresholds">Alarm Thresholds</h4>
+                        <div class="row">
+                            <div class="input-group">
+                                <label for="warning_low" data-i18n="warningLow">Warning Low</label>
+                                <input type="number" id="warning_low" name="warning_low">
+                            </div>
+                            <div class="input-group">
+                                <label for="warning_high" data-i18n="warningHigh">Warning High</label>
+                                <input type="number" id="warning_high" name="warning_high">
+                            </div>  
+                        </div>
+                        <div class="row">
+                            <div class="input-group">
+                                <label for="critical_low" data-i18n="criticalLow">Critical Low</label>
+                                <input type="number" id="critical_low" name="critical_low">
+                            </div>
+                            <div class="input-group">
+                                <label for="critical_high" data-i18n="criticalHigh">Critical High</label>
+                                <input type="number" id="critical_high" name="critical_high">
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="type-specific calculated-type">
+                    <!-- Calculation Configuration -->
+                    <div class="section">
+                        <h4 class="section-header" data-i18n="calculationConfiguration">Calculation Configuration</h4>
+                        <div class="row">
+                            <div class="input-group">
+                                <label for="calculation_type" data-i18n="calculationType">Calculation Type</label>
+                                <select id="calculation_type" name="calculation_type">
+                                    <option value="average" data-i18n="average">Average</option>
+                                    <option value="difference" data-i18n="difference">Difference</option>
+                                    <option value="ratio" data-i18n="ratio">Ratio</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label for="normalization_method" data-i18n="normalizationMethod">Normalization Method</label>
+                                <select id="normalization_method" name="normalization_method">
+                                    <option value="inverse_ratio" data-i18n="inverseRatio">Inverse Ratio</option>
+                                    <option value="min_max_scaling" data-i18n="minMaxScaling">Min-Max Scaling</option>
+                                    <option value="percentage" data-i18n="percentage">Percentage</option>
+                                    <option value="weighted_average" data-i18n="weightedAverage">Weighted Average</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-group">
+                                <label for="update_frequency" data-i18n="updateFrequency">Update Frequency</label>
+                                <select id="update_frequency" name="update_frequency">
+                                    <option value="every_5_minutes" data-i18n="every5Minutes">Every 5 minutes</option>
+                                    <option value="every_15_minutes" data-i18n="every15Minutes">Every 15 minutes</option>
+                                    <option value="hourly" data-i18n="hourly">Hourly</option>
+                                    <option value="daily" data-i18n="daily">Daily</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label for="aggregation_window" data-i18n="aggregationWindow">Aggregation Window</label>
+                                <input type="text" id="aggregation_window" name="aggregation_window" placeholder="e.g., 1day, 3hours">
+                                <span class="field-hint">Time period for aggregation</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Formula Definition -->
+                    <div class="section">
+                        <h4 class="section-header" data-i18n="formulaDefinition">Formula Definition</h4>
+                        <div class="row">
+                            <div class="input-group">
+                                <label for="input_metrics" data-i18n="inputMetrics">Input Metrics</label>
+                                <div id="input_metrics_container" class="tag-input"></div>
+                                <input type="hidden" id="input_metrics" name="input_metrics">
+                                <span class="field-hint">Variables used in the formula</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-group">
+                                <label for="formula" data-i18n="formula">Formula</label>
+                                <textarea id="formula" name="formula"></textarea>
+                                <span class="field-hint">Mathematical formula using input metrics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="type-specific tool-type">
+                    <!-- Tool Configuration -->
+                    <div class="section">
+                        <h4 class="section-header" data-i18n="toolConfiguration">Tool Configuration</h4>
+                        <div class="row">
+                            <div class="input-group">
+                                <label for="tool_id" data-i18n="toolId">Tool ID</label>
+                                <input type="text" id="tool_id" name="tool_id">
+                            </div>
+                            <div class="input-group">
+                                <label for="confidence_threshold" data-i18n="confidenceThreshold">Confidence Threshold</label>
+                                <input type="number" id="confidence_threshold" name="confidence_threshold" min="0" max="1" step="0.01">
+                                <span class="field-hint">Value between 0 and 1</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-group">
+                                <label for="tool_parameters" data-i18n="toolParameters">Tool Parameters</label>
+                                <textarea id="tool_parameters" name="tool_parameters" placeholder='{"param1": "value1", "param2": "value2"}'></textarea>
+                                <span class="field-hint">JSON object of tool-specific parameters</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Input and Output -->
+                    <div class="section">
+                        <h4 class="section-header" data-i18n="inputMetrics">Input Metrics</h4>
+                        <div class="input-group">
+                            <textarea id="input_metrics_tool" name="input_metrics_tool" placeholder='["metric1", "metric2"]'></textarea>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h4 class="section-header" data-i18n="outputMapping">Output Mapping</h4>
+                        <div class="input-group">
+                            <textarea id="output_mapping" name="output_mapping" placeholder='{"output1": "mapped1", "output2": "mapped2"}'></textarea>
+                            <span class="field-hint">JSON mapping of tool outputs to measure outputs</span>                            
+                        </div> 
+                    </div>
+                    
+                    <!-- Documentation -->
+                    <div class="section">
+                        <h4 class="section-header" data-i18n="formulaDocumentation">Formula Documentation</h4>
+                        <div class="input-group">
+                            <textarea id="formula_documentation" name="formula_documentation"></textarea>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Related Measures Tab -->
+                <div id="related-measures" class="tab-panel">
+                    <div class="section">
+                        <div class="section-header-container">
+                            <h3 class="section-header" data-i18n="relatedMeasures">Related Measures</h3>
+                        </div>
+                        <div class="section-content-container" id="related-measures-container">
+                            <!-- Related measures will be populated dynamically -->
+                        </div>
+                        <button type="button" id="add-related-measure" class="add-button">
+                            <i class="fa-solid fa-plus"></i>
+                            <span data-i18n="addRelatedMeasure">Add Related Measure</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Configuration Tab -->
+                <div id="configuration" class="tab-panel">
+                    <div class="section">
+                        <div class="section-header-container">
+                            <h3 class="section-header" data-i18n="configuration">Configuration</h3>
+                        </div>
+                        <div class="section-content-container" id="configuration-container">
+                            <!-- Configuration items will be populated dynamically -->
+                        </div>
+                        <button type="button" id="add-configuration" class="add-button">
+                            <i class="fa-solid fa-plus"></i>
+                            <span data-i18n="addConfiguration">Add Configuration</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Metadata Panel -->
+        <div class="metadata-panel" role="complementary" aria-label="Metadata">
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="author" data-i18n="author">Author</label>
+                    <input type="text" id="author" name="author" readonly>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="type" data-i18n="type">Type</label>
+                    <select id="type" name="type" required>
+                        <option value="" disabled selected data-i18n="selectType">Select Type</option>
+                        <option value="Base" data-i18n="base">Base</option>
+                        <option value="Calculated" data-i18n="calculated">Calculated</option>
+                        <option value="Tool" data-i18n="tool">Tool</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="domain" data-i18n="domain">Domain</label>
+                    <input type="text" id="domain" name="domain" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="category" data-i18n="category">Category</label>
+                    <input type="text" id="category" name="category" required>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="created_date" data-i18n="created">Created</label>
+                    <div id="created_date" class="date-label"></div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="last_modified_date" data-i18n="lastModified">Last Modified</label>
+                    <div id="last_modified_date" class="date-label"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Template for Related Measure Items -->
+<template id="related-measure-template">
+    <div class="related-measure-item">
+        <div class="row center-align">
+            <select class="id" data-i18n-placeholder="selectMeasure">
+                <option value="" disabled selected data-i18n="selectMeasure">Select a measure</option>
+                <!-- Measure options will be populated dynamically -->
+            </select>
+            <button type="button" class="icon-button remove-related-measure-btn" title="Remove Related Measure" data-i18n-title="removeRelatedMeasure">
+                <i class="fa-regular fa-trash-can"></i>
+            </button>
+        </div>
+    </div>
+</template>
+
+<!-- Template for Configuration Items -->
+<template id="configuration-template">
+    <div class="configuration-item">
+        <div class="configuration-header">
+            <div class="configuration-title">
+                <h4>
+                    <span class="configuration-id"></span>
+                </h4>
+                <i class="fa-solid fa-chevron-down toggle-icon"></i>
+            </div>
+        </div>
+        <div class="configuration-content">
+            <div class="row center-align">
+                <div class="input-group">
+                    <label for="config-entry-id" data-i18n="entryId">Entry ID</label>
+                    <input type="text" class="config-entry-id" name="config-entry-id" readonly required>
+                </div>
+            </div>
+            
+            <div class="row start-align">
+                <div class="input-group">
+                    <label for="config-location" data-i18n="location">Location</label>
+                    <select class="config-location" name="config-location" required>
+                        <option value="" disabled selected data-i18n="selectLocation">Select Location</option>
+                        <!-- Location options will be populated dynamically -->
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label data-i18n="site">Site</label>
+                    <span class="config-site"></span>
+                </div>
+            </div>
+            <div class="row center-align">
+                <div class="input-group">
+                    <label for="config-target-value" data-i18n="targetValue">Target Value</label>
+                    <input type="number" class="config-target-value" name="config-target-value" step="0.01">
+                </div>
+            </div>
+            <div class="row center-align">
+                <div class="input-group">
+                    <label for="config-alarm-thresholds" data-i18n="alarmThresholds">Alarm Thresholds</label>
+                    <textarea class="config-alarm-thresholds" name="config-alarm-thresholds" placeholder='{"warning_high": 4.0, "critical_high": 6.0}'></textarea>
+                </div>
+            </div>
+            <div class="row center-align">
+                <button type="button" class="remove-button remove-configuration-btn" title="Remove Configuration" data-i18n-title="removeConfiguration" aria-label="Remove Configuration" data-i18n-aria-label="removeConfiguration">
+                    <i class="fa-solid fa-trash-can"></i>
+                    <span data-i18n="removeConfiguration">Remove Configuration</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</template>
+
+<!-- Existing Measures Dialog -->
+<div id="existing-measures-dialog" class="modal-overlay" style="display: none;">
+    <div class="modal-content existing-measures-modal">
+        <div class="modal-header">
+            <h3 data-i18n="existingMeasuresDetected">Existing Measures Detected</h3>
+            <button class="modal-close" aria-label="Close">×</button>
+        </div>
+        
+        <div class="modal-body">
+            <div class="existing-measures-content">
+                <div class="content-header">
+                    <p data-i18n="existingMeasuresDetectedText">The following measures already exist in the database. Please choose an action for each:</p>
+                    <div class="bulk-actions">
+                        <button class="set-all-overwrite primary-button" data-i18n="setAllOverwrite">Set all to overwrite</button>
+                        <button class="set-all-keep primary-button" data-i18n="setAllKeep">Set all to keep</button>
+                    </div>
+                </div>
+                
+                <div class="existing-measures-table-container">
+                    <table class="existing-measures-table">
+                        <thead>
+                            <tr>
+                                <th class="measure-name-column" data-i18n="measureName">Name</th>
+                                <th class="measure-id-column" data-i18n="measureId">ID</th>
+                                <th class="conflict-column" data-i18n="conflict">Conflict</th>
+                                <th class="actions-column" data-i18n="action">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="existing-measures-tbody">
+                            <!-- Rows will be populated dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="overwrite-warning" style="display: none;">
+                    <strong>⚠️ <span data-i18n="overwriteWarning">Warning: Overwriting existing measures is irreversible.</span></strong>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal-footer">
+            <button class="cancel-button secondary-button" data-i18n="cancelImport">Cancel Import</button>
+            <button class="confirm-button primary-button" data-i18n="continueImport">Continue Import</button>
+        </div>
+    </div>
+</div>
+
+<!-- Measure Row Template -->
+<template id="existing-measure-row-template">
+    <tr class="existing-measure-row">
+        <td class="measure-name measure-name-column"></td>
+        <td class="measure-id measure-id-column"></td>
+        <td class="conflict-types conflict-column"></td>
+        <td class="measure-dropdown-cell actions-column">
+            <div class="custom-dropdown">
+                <div class="dropdown-selected" data-value="overwrite">
+                    <span class="selected-text" data-i18n="overwriteWithImported">Overwrite with imported version</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-options" style="display: none;">
+                    <label class="dropdown-option">
+                        <input type="radio" name="measure-choice" value="keep">
+                        <span data-i18n="keepCurrentVersion">Keep current version</span>
+                    </label>
+                    <label class="dropdown-option">
+                        <input type="radio" name="measure-choice" value="overwrite" checked>
+                        <span data-i18n="overwriteWithImported">Overwrite with imported version</span>
+                    </label>
+                    <label class="dropdown-option">
+                        <input type="radio" name="measure-choice" value="import_new">
+                        <span data-i18n="importWithNewIdAndName">Import with new ID and name</span>
+                    </label>
+                </div>
+            </div>
+        </td>
+    </tr>
+</template>

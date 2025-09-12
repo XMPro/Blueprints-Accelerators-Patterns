@@ -1,0 +1,73 @@
+<script src="./AppFiles/marked.min.js"></script>
+<script src="./AppFiles/neo4j-web.min.js"></script>  
+
+<div id="wizard-container" role="main">
+    <!-- Left sidebar with step list -->
+    <div id="step-list" role="region" aria-label="Step List" data-i18n-aria-label="stepList">
+        <div id="steps-container">
+            <!-- Steps will be dynamically added here -->
+        </div>
+    </div>
+    <div id="wizard-content-container">
+        <!-- Main content area -->
+        <div id="wizard-main-content">
+            <div class="wizard-header">
+                <div class="header-title">
+                    <h2 id="wizard-title" data-i18n="wizard">Wizard</h2>
+                    <!-- Admin mode indicator -->
+                    <span class="admin-mode-badge hide" data-i18n="adminMode" data-i18n-title="adminMode" data-i18n-aria-label="adminMode">Admin</span>
+                </div>
+                <div class="header-buttons">
+                    <!-- New run button -->
+                    <button id="newRunBtn" class="icon-button" type="button" title="New" aria-label="New wizard run" data-i18n-title="newRun" data-i18n-aria-label="newRun">
+                        <i class="fa-solid fa-plus icon-l" aria-hidden="true"></i>
+                        <span class="spinner spinner-s hide"></span>
+                    </button>
+                    
+                    <!-- Edit run button -->
+                    <button id="editRunBtn" class="icon-button" type="button" title="Edit" aria-label="Edit wizard" data-i18n-title="editRun" data-i18n-aria-label="editRun">
+                        <i class="fa-solid fa-pen-to-square icon-l" aria-hidden="true"></i>
+                        <span class="spinner spinner-s hide"></span>
+                    </button>
+                    
+                    <!-- Save run button -->
+                    <button id="saveRunBtn" class="icon-button" type="button" title="Save" aria-label="Save wizard" data-i18n-title="saveRun" data-i18n-aria-label="saveRun">
+                        <i class="fa-solid fa-floppy-disk icon-l" aria-hidden="true"></i>
+                        <span class="spinner spinner-s hide"></span>
+                    </button>
+                    
+                    <!-- Load run button -->
+                    <button id="loadRunBtn" class="icon-button" type="button" title="Load" aria-label="Load wizard" data-i18n-title="loadRun" data-i18n-aria-label="loadRun">
+                        <i class="fa-solid fa-folder-open icon-l" aria-hidden="true"></i>
+                        <span class="spinner spinner-s hide"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="wizard-subheader">
+                <p><span data-i18n="step">Step</span> <span id="current-step">1</span> <span data-i18n="of">of</span> <span id="total-steps">1</span> - <span id="step-description"></span></p>
+            </div>
+            <div class="progress-indicator">
+                <div class="progress-bar"></div>
+            </div>
+            <div id="wizard-content">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+        </div>
+        
+        <!-- Summary panel -->
+        <div id="summary-container">
+            <div class="summary-header">
+                <h3 data-i18n="summary">Summary</h3>
+            </div>
+            <div id="summary-content">
+                <!-- Summary content will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+</div>
+<div id="usage-tracker">
+    <div><span data-i18n="modelProvider">Model Provider</span> <span id="model-provider-display">Not selected</span></div>
+    <div><span data-i18n="modelInUse">Model in Use</span> <span id="model-in-use-display">Not selected</span></div>
+    <div><span data-i18n="tokenUsage">Token Usage</span> <span id="token-count">0</span></div>
+    <div><span data-i18n="avgResponseTime">Avg. Response Time</span> <span id="avg-time">0</span> <span data-i18n="milliseconds">ms</span></div>
+</div>

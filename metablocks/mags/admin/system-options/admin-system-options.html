@@ -1,0 +1,574 @@
+<script src="./AppFiles/neo4j-web.min.js"></script>
+
+<div class="container" role="main">
+    <div id="loading-container" class="loading-container">
+        <div class="spinner spinner-xl"></div>
+    </div>
+
+    <div id="main-content" class="two-column-layout hide">
+        <div class="system-options-editor" role="region" aria-label="System Options Editor">
+            <!-- Header Actions -->
+            <div class="editor-actions">
+                <div class="left-actions">
+                    <button type="submit" id="save_options" class="primary-button" aria-label="Save Options" data-i18n-aria-label="saveOptions">
+                        <i class="fa-regular fa-floppy-disk icon-xl"></i>
+                        <span class="spinner spinner-s hide"></span>
+                        <span data-i18n="saveOptions">Save Options</span>
+                    </button>
+                </div>
+            </div>
+    
+            <!-- System Options Form -->
+            <form id="systemOptionsForm"> 
+                
+                <div class="row stretch-align">
+                    <div class="section">
+                        <h3 class="section-header" data-i18n="modelProviders">Model Providers</h3>
+                        <div class="checkbox-group" id="models_providers">
+                            <!-- Checkboxes will be populated dynamically -->
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h3 class="section-header" data-i18n="contentProcessorType">Content Processor Type</h3>
+                        <div class="checkbox-group" id="content_processor_type">
+                            <!-- Checkboxes will be populated dynamically -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row stretch-align">
+                    <div class="section">
+                        <h3 class="section-header" data-i18n="allowedConsensus">Allowed Consensus</h3>
+                        <div class="checkbox-group" id="allowed_consensus">
+                            <!-- Checkboxes will be populated dynamically -->
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h3 class="section-header" data-i18n="allowedPlanning">Allowed Planning</h3>
+                        <div class="checkbox-group" id="allowed_planning">
+                            <!-- Checkboxes will be populated dynamically -->
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row top-align">
+                    <!-- Agent configuration section -->
+                    <div class="section">
+                        <span class="section-header-wrapper">
+                            <h3 class="section-header" data-i18n="agentCommunication">Agent Communication</h3>
+                            <button type="button" class="reset-button" data-target="agent_communication" data-i18n-title="resetToDefault" title="Reset to Default">
+                                <i class="fa-solid fa-rotate-left"></i>
+                                <span data-i18n="resetToDefault">Reset to Default</span>
+                            </button>
+                        </span>
+                        <div class="row">
+                            <div class="input-group">
+                                <label for="trust_factor" data-i18n="trustFactor">Trust Factor</label>
+                                <input type="number" id="trust_factor" name="trust_factor" min="0" step="0.1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timing configuration section -->
+                    <div class="section">
+                        <span class="section-header-wrapper">
+                            <h3 class="section-header" data-i18n="timingConfiguration">Timing Configuration</h3>
+                            <button type="button" class="reset-button" data-target="timing_config" data-i18n-title="resetToDefault" title="Reset to Default">
+                                <i class="fa-solid fa-rotate-left"></i>
+                                <span data-i18n="resetToDefault">Reset to Default</span>
+                            </button>
+                        </span>
+                        <div class="row">
+                            <div class="input-group">
+                                <label for="status_update_interval" data-i18n="statusUpdateInterval">Status Update Interval (ms)</label>
+                                <input type="number" id="status_update_interval" name="status_update_interval_ms">
+                            </div>
+                            <div class="input-group">
+                                <label for="counter_reset_interval" data-i18n="counterResetInterval">Counter Reset Interval (ms)</label>
+                                <input type="number" id="counter_reset_interval" name="counter_reset_interval_ms">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row stretch-align">
+                    <!-- Importance scoring configuration section -->
+                    <div class="section">
+                        <span class="section-header-wrapper">
+                            <h3 class="section-header" data-i18n="importanceScoring">Importance Scoring</h3>
+                            <button type="button" class="reset-button" data-target="importance_scoring" data-i18n-title="resetToDefault" title="Reset to Default">
+                                <i class="fa-solid fa-rotate-left"></i>
+                                <span data-i18n="resetToDefault">Reset to Default</span>
+                            </button>
+                        </span>
+                        <div class="config-group">
+                            <h4 data-i18n="frequencySettings">Frequency Settings</h4>
+                            <div class="config-form frequency-form">
+                                <div class="row">
+                                    <div class="input-group">
+                                        <label for="frequency_scale_factor" data-i18n="scaleFactorLabel">Scale Factor</label>
+                                        <input type="number" id="frequency_scale_factor" step="0.1">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="frequency_log_base" data-i18n="logBaseLabel">Log Base</label>
+                                        <input type="number" id="frequency_log_base" step="0.1">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="frequency_input_scale" data-i18n="inputScaleLabel">Input Scale</label>
+                                        <input type="number" id="frequency_input_scale" step="0.1">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="frequency_offset" data-i18n="offsetLabel">Offset</label>
+                                        <input type="number" id="frequency_offset" step="0.1">
+                                    </div>
+                                </div>        
+                            </div>
+                        </div>
+
+                        <div class="config-group">
+                            <h4 data-i18n="durationSettings">Duration Settings</h4>
+                            <div class="config-form duration-form">
+                                <div class="row">
+                                    <div class="input-group">
+                                        <label for="duration_threshold" data-i18n="thresholdLabel">Threshold</label>
+                                        <input type="number" id="duration_threshold" step="0.1">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="duration_log_scale" data-i18n="logScaleLabel">Log Scale</label>
+                                        <input type="number" id="duration_log_scale" step="0.1">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="duration_log_base" data-i18n="logBaseLabel">Log Base</label>
+                                        <input type="number" id="duration_log_base" step="0.1">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="duration_log_offset" data-i18n="offsetLabel">Log Offset</label>
+                                        <input type="number" id="duration_log_offset" step="0.1">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="duration_linear_scale" data-i18n="linearScaleLabel">Linear Scale</label>
+                                        <input type="number" id="duration_linear_scale" step="0.1">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="duration_linear_factor" data-i18n="linearFactorLabel">Linear Factor</label>
+                                        <input type="number" id="duration_linear_factor" step="0.01">
+                                    </div>
+                                </div>                         
+                            </div>
+                        </div>
+
+                        <div class="config-group">
+                            <h4 data-i18n="agentWeights">Agent Weights</h4>
+                            <div class="config-form weights-form">
+                                <div class="row">
+                                    <div class="input-group">
+                                        <label for="assistant_frequency_weight" data-i18n="assistantFreqWeightLabel">Assistant Frequency Weight</label>
+                                        <input type="number" id="assistant_frequency_weight" step="0.1">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="assistant_duration_weight" data-i18n="assistantDurWeightLabel">Assistant Duration Weight</label>
+                                        <input type="number" id="assistant_duration_weight" step="0.1">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="content_frequency_weight" data-i18n="contentFreqWeightLabel">Content Frequency Weight</label>
+                                        <input type="number" id="content_frequency_weight" step="0.1">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="content_duration_weight" data-i18n="contentDurWeightLabel">Content Duration Weight</label>
+                                        <input type="number" id="content_duration_weight" step="0.1">
+                                    </div>   
+                                </div>                  
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Surprise scoring configuration section -->
+                    <div class="section">
+                        <span class="section-header-wrapper">
+                            <h3 class="section-header" data-i18n="surpriseScoring">Surprise Scoring</h3>
+                            <button type="button" class="reset-button" data-target="surprise_scoring" data-i18n-title="resetToDefault" title="Reset to Default">
+                                <i class="fa-solid fa-rotate-left"></i>
+                                <span data-i18n="resetToDefault">Reset to Default</span>
+                            </button>
+                        </span>
+                        
+                        <div class="config-group">
+                            <h4 data-i18n="generalSettings">General Settings</h4>
+                            <div class="config-form">
+                                <div class="row">
+                                    <div class="input-group">
+                                        <label for="novelty_threshold" data-i18n="noveltyThreshold">Novelty Threshold</label>
+                                        <input type="number" id="novelty_threshold" step="0.1" min="0" max="1">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="historical_window_size" data-i18n="historicalWindowSize">Historical Window Size</label>
+                                        <input type="number" id="historical_window_size" step="1" min="1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="config-group">
+                            <h4 data-i18n="retrievalWeights">Weights</h4>
+                            <div class="config-form">
+                                <div class="row">
+                                    <div class="input-group">
+                                        <label for="pattern_deviation_weight" data-i18n="patternDeviationWeight">Pattern Deviation Weight</label>
+                                        <input type="number" id="pattern_deviation_weight" step="0.1" min="0" max="1">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="context_unexpectedness_weight" data-i18n="contextUnexpectednessWeight">Context Unexpectedness Weight</label>
+                                        <input type="number" id="context_unexpectedness_weight" step="0.1" min="0" max="1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="config-group">
+                            <h4 data-i18n="temporalDecay">Temporal Decay</h4>
+                            <div class="config-form">
+                                <div class="row">
+                                    <div class="input-group">
+                                        <label for="half_life_hours" data-i18n="halfLifeHours">Half Life (Hours)</label>
+                                        <input type="number" id="half_life_hours" step="1" min="1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row top-align">
+                    <!-- Memory retrieval -->
+                    <div class="section">
+                        <span class="section-header-wrapper">
+                            <h3 class="section-header" data-i18n="memoryRetrieval">Memory Retrieval</h3>
+                            <button type="button" class="reset-button" data-target="memory_retrieval" data-i18n-title="resetToDefault" title="Reset to Default">
+                                <i class="fa-solid fa-rotate-left"></i>
+                                <span data-i18n="resetToDefault">Reset to Default</span>
+                            </button>
+                        </span>
+                        
+                        <div class="config-group">
+                            <h4 data-i18n="generalSettings">General Settings</h4>
+                            <div class="config-form">
+                                <div class="row">
+                                    <div class="input-group">
+                                        <label for="min_similarity_threshold" data-i18n="minSimilarityLabel">Min Similarity Threshold</label>
+                                        <input type="number" id="min_similarity_threshold" step="0.1" min="0" max="1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="config-group">
+                            <h4 data-i18n="retrievalWeights">Retrieval Weights</h4>
+                            <div class="config-form">
+                                <div class="row">
+                                    <div class="input-group">
+                                        <label for="similarity_weight" data-i18n="similarityWeightLabel">Similarity Weight</label>
+                                        <input type="number" id="similarity_weight" step="0.1" min="0" max="1">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="importance_weight" data-i18n="importanceWeightLabel">Importance Weight</label>
+                                        <input type="number" id="importance_weight" step="0.1" min="0" max="1">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="surprise_weight" data-i18n="surpriseWeightLabel">Surprise Weight</label>
+                                        <input type="number" id="surprise_weight" step="0.1" min="0" max="1">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="recency_weight" data-i18n="recencyWeightLabel">Recency Weight</label>
+                                        <input type="number" id="recency_weight" step="0.1" min="0" max="1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="config-group">
+                            <h4 data-i18n="memoryTypeWeights">Memory Type Weights</h4>
+                            <div class="config-form">
+                                <div class="row">
+                                    <div class="input-group">
+                                        <label for="observation_weight" data-i18n="observationWeightLabel">Observation Weight</label>
+                                        <input type="number" id="observation_weight" step="0.1" min="0">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="reflection_weight" data-i18n="reflectionWeightLabel">Reflection Weight</label>
+                                        <input type="number" id="reflection_weight" step="0.1" min="0">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="plan_weight" data-i18n="planWeightLabel">Plan Weight</label>
+                                        <input type="number" id="plan_weight" step="0.1" min="0">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="decision_weight" data-i18n="decisionWeightLabel">Decision Weight</label>
+                                        <input type="number" id="decision_weight" step="0.1" min="0">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="action_weight" data-i18n="actionWeightLabel">Action Weight</label>
+                                        <input type="number" id="action_weight" step="0.1" min="0">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="synthetic_weight" data-i18n="syntheticWeightLabel">Synthetic Weight</label>
+                                        <input type="number" id="synthetic_weight" step="0.1" min="0">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="default_weight" data-i18n="defaultWeightLabel">Default Weight</label>
+                                        <input type="number" id="default_weight" step="0.1" min="0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Confidence Scoring -->
+                    <div class="section">
+                        <span class="section-header-wrapper">
+                            <h3 class="section-header" data-i18n="confidenceScoring">Confidence Scoring</h3>
+                            <button type="button" class="reset-button" data-target="confidence_scoring" data-i18n-title="resetToDefault" title="Reset to Default">
+                                <i class="fa-solid fa-rotate-left"></i>
+                                <span data-i18n="resetToDefault">Reset to Default</span>
+                            </button>
+                        </span>
+                        
+                        <div class="config-group">
+                            <h4 data-i18n="confidenceThresholds">Thresholds</h4>
+                            <div class="config-form">
+                                <div class="row">
+                                    <div class="input-group">
+                                        <label for="low_confidence" data-i18n="lowConfidenceLabel">Low Confidence</label>
+                                        <input type="number" id="low_confidence" step="0.1" min="0">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="medium_confidence" data-i18n="mediumConfidenceLabel">Medium Confidence</label>
+                                        <input type="number" id="medium_confidence" step="0.1" min="0">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="high_confidence" data-i18n="highConfidenceLabel">High Confidence</label>
+                                        <input type="number" id="high_confidence" step="0.1" min="0">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="critical_threshold" data-i18n="criticalThresholdLabel">Critical Threshold</label>
+                                        <input type="number" id="critical_threshold" step="0.1" min="0">
+                                    </div>
+                                    
+                                    <div class="input-group">
+                                        <label for="min_objective_alignment_factor" data-i18n="minObjectiveAlignmentFactorLabel">Min Objective Alignment</label>
+                                        <input type="number" id="min_objective_alignment_factor" step="0.1" min="0">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="max_objective_alignment_factor" data-i18n="maxObjectiveAlignmentFactorLabel">Max Objective Alignment</label>
+                                        <input type="number" id="max_objective_alignment_factor" step="0.1" min="0">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="config-group">
+                            <h4 data-i18n="confidenceFactorWeights">Factor Weights</h4>
+                            <div class="config-form">
+                                <div class="row">
+                                    <div class="input-group">
+                                        <label for="confidence_evidence_weight" data-i18n="confidenceEvidenceWeightLabel">Evidence Weight</label>
+                                        <input type="number" id="confidence_evidence_weight" step="0.01" min="0" max="1">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="confidence_consistency_weight" data-i18n="confidenceConsistencyWeightLabel">Consistency Weight</label>
+                                        <input type="number" id="confidence_consistency_weight" step="0.01" min="0" max="1">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="confidence_reasoning_weight" data-i18n="confidenceReasoningWeightLabel">Reasoning Weight</label>
+                                        <input type="number" id="confidence_reasoning_weight" step="0.01" min="0" max="1">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="confidence_uncertainty_weight" data-i18n="confidenceUncertaintyWeightLabel">Uncertainty Weight</label>
+                                        <input type="number" id="confidence_uncertainty_weight" step="0.01" min="0" max="1">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="confidence_stability_weight" data-i18n="confidenceStabilityWeightLabel">Stability Weight</label>
+                                        <input type="number" id="confidence_stability_weight" step="0.01" min="0" max="1">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="confidence_observation_decision_weight" data-i18n="confidenceObservationDecisionWeightLabel">Observation Decision Weight</label>
+                                        <input type="number" id="confidence_observation_decision_weight" step="0.01" min="0" max="1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="config-group">
+                            <h4 data-i18n="confidenceMemoryWeights">Memory Weights</h4>
+                            <div class="config-form">
+                                <div class="row">
+                                    <div class="input-group">
+                                        <label for="confidence_observation_weight" data-i18n="confidenceObservationWeightLabel">Observation Weight</label>
+                                        <input type="number" id="confidence_observation_weight" step="0.01" min="0">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="confidence_reflection_weight" data-i18n="confidenceReflectionWeightLabel">Reflection Weight</label>
+                                        <input type="number" id="confidence_reflection_weight" step="0.01" min="0">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="confidence_plan_weight" data-i18n="confidencePlanWeightLabel">Plan Weight</label>
+                                        <input type="number" id="confidence_plan_weight" step="0.01" min="0">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="confidence_decision_weight" data-i18n="confidenceDecisionWeightLabel">Decision Weight</label>
+                                        <input type="number" id="confidence_decision_weight" step="0.01" min="0">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="confidence_action_weight" data-i18n="confidenceActionWeightLabel">Action Weight</label>
+                                        <input type="number" id="confidence_action_weight" step="0.01" min="0">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="confidence_default_weight" data-i18n="confidenceDefaultWeightLabel">Default Weight</label>
+                                        <input type="number" id="confidence_default_weight" step="0.01" min="0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                  <div class="row top-align">
+                    <!-- Consensus Configuration -->
+                    <div class="section">
+                        <span class="section-header-wrapper">
+                            <h3 class="section-header" data-i18n="consensusConfiguration">Consensus Configuration</h3>
+                            <button type="button" class="reset-button" data-target="consensus_configuration" data-i18n-title="resetToDefault" title="Reset to Default">
+                                <i class="fa-solid fa-rotate-left"></i>
+                                <span data-i18n="resetToDefault">Reset to Default</span>
+                            </button>
+                        </span>
+                        
+                        <div class="config-group">
+                            <div class="config-form">
+                                <div class="row">
+                                    <div class="input-group">
+                                        <label for="consensus_enabled" data-i18n="consensusEnabledLabel">Consensus Enabled</label>
+                                        <input type="checkbox" id="consensus_enabled">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="consensus_enable_formal_voting" data-i18n="consensusEnableFormalVotingLabel">Enable Formal Voting</label>
+                                        <input type="checkbox" id="consensus_enable_formal_voting">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="consensus_confidence_threshold" data-i18n="consensusConfidenceThresholdLabel">Confidence Threshold</label>
+                                        <input type="number" id="consensus_confidence_threshold" step="0.1" min="0">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="consensus_cooldown_minutes" data-i18n="consensusCooldownMinutesLabel">Cooldown Minutes</label>
+                                        <input type="number" id="consensus_cooldown_minutes" step="1" min="0">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="consensus_max_ci_rounds" data-i18n="consensusMaxCiRoundsLabel">Max ci Rounds</label>
+                                        <input type="number" id="consensus_max_ci_rounds" step="1" min="0">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="consensus_timeout_minutes" data-i18n="consensusTimeoutMinutesLabel">Timeout minutes</label>
+                                        <input type="number" id="consensus_timeout_minutes" step="1" min="0">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="consensus_default_protocol" data-i18n="consensusDefaultProtocolLabel">Default Protocol</label>
+                                        <input type="text" id="consensus_default_protocol">
+                                    </div>
+                                         <div class="input-group">
+                                        <label for="objective_function_conflict_threshold" data-i18n="objectiveFunctionConflictThresholdLabel">Objective Function Conflict Threshold</label>
+                                        <input type="number" id="objective_function_conflict_threshold" step="0.1" min="0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prompt Access Levels Section -->
+                <div class="section">
+                    <h3 class="section-header" data-i18n="promptAccessLevels">Prompt Access Levels</h3>
+                    <div id="prompt_access_levels_container">
+                        <!-- Prompt access levels will be populated dynamically -->
+                    </div>
+                </div>                
+    
+                <!-- Prompt Types Section -->
+                <div class="section">
+                    <h3 class="section-header" data-i18n="promptTypes">Prompt Types</h3>
+                    <div id="prompt_types_container">
+                        <!-- Prompt types will be populated dynamically -->
+                    </div>
+                    <button type="button" id="add_prompt_type" class="add-button" data-i18n-aria-label="addPromptType" aria-label="Add Prompt Type">
+                        <i class="fa-solid fa-plus"></i>
+                        <span data-i18n="addPromptType">Add Prompt Type</span>
+                    </button>
+                </div>
+
+                <!-- RAG Schema Section -->
+                <div class="section">
+                    <h3 class="section-header" data-i18n="ragSchema">RAG Schema</h3>
+                    <div class="input-group">
+                        <label for="rag_schema" data-i18n="schemaConfiguration">Schema Configuration</label>
+                        <textarea id="rag_schema" name="rag_schema" class="code-editor"></textarea>
+                    </div>
+                </div>
+                    
+                <!-- Reserved Fields Section -->
+                <div class="section">
+                    <h3 class="section-header" data-i18n="reservedFields">Reserved Fields</h3>
+                    <div class="row">
+                        <div class="input-group">
+                            <label data-i18n="observationFields">Observation Fields</label>
+                            <div id="reserved_fields_observation" class="tag-input readonly"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-group">
+                            <label data-i18n="reflectionFields">Reflection Fields</label>
+                            <div id="reserved_fields_reflection" class="tag-input readonly"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-group">
+                            <label data-i18n="taskPromptFields">Task Prompt Fields</label>
+                            <div id="reserved_fields_task_prompt" class="tag-input readonly"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-group">
+                            <label data-i18n="userPromptFields">User Prompt Fields</label>
+                            <div id="reserved_field_user_prompt" class="tag-input readonly"></div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="metadata-panel" role="complementary" aria-label="Metadata">
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="author" data-i18n="author">Author</label>
+                    <input type="text" id="author" name="author" readonly>
+                </div>
+            </div>
+            <hr />
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="created_date" data-i18n="created">Created</label>
+                    <div id="created_date" class="date-label"></div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="last_modified_date" data-i18n="lastModified">Last Modified</label>
+                    <div id="last_modified_date" class="date-label"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

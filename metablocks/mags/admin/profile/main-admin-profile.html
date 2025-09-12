@@ -1,3 +1,5 @@
+<script src="./AppFiles/neo4j-web.min.js"></script>
+
 <div class="container" role="main">
     <div class="three-column-layout">
         <!-- Profile List Panel -->
@@ -54,6 +56,12 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="select-all-container">
+                        <label class="checkbox-wrapper">
+                            <input type="checkbox" id="markAllProfiles">
+                            <span data-i18n="markAll">Mark all</span>
+                        </label>
                     </div>
                 </div>
             </div>
@@ -284,38 +292,7 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Interaction Preferences -->
-                <!-- <div class="section">
-                    <h3 class="section-header" data-i18n="interactionPreferences">Interaction Preferences</h3>
-                    <div class="row">
-                        <div class="input-group">
-                            <label for="preferred_communication_style" data-i18n="preferredCommunicationStyle">Preferred Communication Style:</label>
-                            <input type="text" id="preferred_communication_style" name="preferred_communication_style" required>
-                        </div>
-                        <div class="input-group">
-                            <label for="information_sharing_willingness" data-i18n="informationSharingWillingness">Information Sharing Willingness:</label>
-                            <input type="number" id="information_sharing_willingness" name="information_sharing_willingness" step="0.01" required>
-                        </div>
-                        <div class="input-group">
-                            <label for="query_response_detail_level" data-i18n="queryResponseDetailLevel">Query Response Detail Level:</label>
-                            <input type="text" id="query_response_detail_level" name="query_response_detail_level" required>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- Performance Metrics -->
-                <!-- <div class="section">
-                    <h3 class="section-header" data-i18n="performanceMetrics">Performance Metrics</h3>
-                    <div id="performance-metrics-container">
-                    </div>
-                    <button type="button" id="add-performance-metric" class="add-button add-metric-button">
-                        <i class="fa-solid fa-plus"></i>
-                        <span data-i18n="addPerformanceMetric">Add Performance Metric</span>
-                    </button>
-                </div> -->
-
-
+                
                 <!-- Prompts -->
                 <div class="section">
                     <div class="row">
@@ -348,6 +325,23 @@
                     </div>
                     <div id="tools-container" class="tools-container">
                         <!-- Tools will be populated dynamically -->
+                    </div>
+                </div>
+
+                <!-- Actions -->
+                <div class="section">
+                    <div class="section-header-container">
+                        <h3 class="section-header" data-i18n="actions">Actions</h3>
+                        <div class="actions-filter">
+                            <select id="actions-filter-dropdown" aria-label="Filter actions">
+                                <option value="all" selected data-i18n="showAllActions">Show All</option>
+                                <option value="selected" data-i18n="selectedActions">Selected Actions Only</option>
+                                <option value="unselected" data-i18n="unselectedActions">Unselected Actions Only</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="actions-container" class="actions-container">
+                        <!-- Actions will be populated dynamically -->
                     </div>
                 </div>
             </form>
@@ -415,3 +409,52 @@
         </div>
     </div>
 </div>
+
+<!-- Existing Profiles Dialog -->
+<div id="existing-profiles-dialog" class="modal-overlay" style="display: none;">
+    <div class="modal-content existing-profiles-modal">
+        <div class="modal-header">
+            <h3 data-i18n="existingProfilesDetected">Existing Profiles Detected</h3>
+            <button class="modal-close" aria-label="Close">×</button>
+        </div>
+        
+        <div class="modal-body">
+            <div class="existing-profiles-content">
+                <div class="content-header">
+                    <p data-i18n="existingProfilesDetected">The following profiles already exist in the database. Please choose how to handle each one:</p>
+                    <div class="bulk-actions">
+                        <button class="set-all-overwrite primary-button" data-i18n="setAllOverwrite">Set All to Overwrite</button>
+                        <button class="set-all-keep primary-button" data-i18n="setAllKeep">Set All to Keep Current</button>
+                        <button class="set-all-create-new primary-button" data-i18n="setAllCreateNew">Set All to Create New</button>
+                    </div>
+                </div>
+                
+                <div class="existing-profiles-table-container">
+                    <table class="existing-profiles-table">
+                        <thead>
+                            <tr>
+                                <th class="profile-name-column" data-i18n="name">Name</th>
+                                <th class="profile-id-column" data-i18n="profileId">Profile ID</th>
+                                <th class="conflict-column" data-i18n="conflict">Conflict</th>
+                                <th class="actions-column" data-i18n="action">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="existing-profiles-tbody">
+                            <!-- Rows will be populated dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="overwrite-warning" style="display: none;">
+                    <strong>⚠️ <span data-i18n="overwriteWarning">Warning: Overwriting existing profiles is irreversible.</span></strong>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal-footer">
+            <button class="cancel-button secondary-button" data-i18n="cancel">Cancel</button>
+            <button class="confirm-button primary-button" data-i18n="confirmImport">Proceed with Import</button>
+        </div>
+    </div>
+</div>
+

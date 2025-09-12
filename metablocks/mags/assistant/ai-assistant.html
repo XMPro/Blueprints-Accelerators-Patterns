@@ -1,0 +1,209 @@
+<script src="./AppFiles/neo4j-web.min.js"></script>
+<script src="./AppFiles/chart.min.js"></script>
+<script src="./AppFiles/marked.min.js"></script>
+<script src="./AppFiles/mermaid.min.js"></script>
+<script src="./AppFiles/mqtt.min.js"></script>
+<script src="./AppFiles/purify.min.js"></script>
+<script src="./AppFiles/showdown.min.js"></script>
+
+<!-- Prism.js CSS -->
+<link href="./AppFiles/prism.css" rel="stylesheet" />
+
+<script src="./AppFiles/prism.min.js"></script>
+
+    <div class="spinner page"></div>
+</div>
+
+<div id="container" class="container hide" role="main">
+    <div class="chat-container">
+		<div id="conversationListSidebar" class="conversation-list-sidebar">
+			<div class="sidebar-header">
+				<h3 data-i18n="conversations">Conversations</h3>
+				<div class="sidebar-header-actions">
+					<!-- <button id="newConversationSidebarBtn" class="icon-button" type="button" title="New Conversation" aria-label="New Conversation" data-i18n-title="newConversation" data-i18n-aria-label="newConversation">
+						<i class="fa-solid fa-plus" aria-hidden="true"></i>
+					</button>
+					<button id="closeSidebarBtn" class="icon-button close-button" aria-label="Close sidebar">
+						<i class="fas fa-times"></i>
+					</button> -->
+				</div>
+			</div>
+			<div class="search-container">
+				<input type="text" id="conversationSearch" placeholder="Search conversations" data-i18n-placeholder="searchConversations">
+				<div class="search-actions">
+					<button type="button" id="conversationFilterBtn" class="icon-button search-filter-btn" aria-label="Filters" title="Filters" data-i18n-title="filters" data-i18n-aria-label="filters">
+                        <svg class="filter-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                            <path d="M3 5h18v2l-7 8v6l-4-2v-4L3 7V5z" fill="currentColor"/>
+                        </svg>
+					</button>
+
+					<div id="conversationFilterPopover" class="search-filter-popover hide" role="dialog" aria-hidden="true" aria-label="Conversation filters">
+						<label class="include-arch-toggle" style="font-size:0.9rem; cursor:pointer; display:flex; align-items:center; gap:8px;">
+							<span data-i18n="includeArchived">Include archived</span>
+							<span class="theme-toggle" aria-hidden="true">
+								<input type="checkbox" id="includeArchivedToggle" />
+								<span class="slider" aria-hidden="true"></span>
+							</span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div id="conversationList" class="conversation-items">
+				<!-- Conversations will be loaded here -->
+				<div class="loading-indicator">
+					<i class="fas fa-circle-notch fa-spin"></i>
+
+				</div>
+			</div>
+		</div>
+
+		<div id="newConversationDialogOverlay" class="custom-dialog-overlay hide" role="dialog" aria-labelledby="dialogTitle" aria-modal="true" aria-describedby="dialogDescription">
+            <div class="custom-dialog">
+                <div class="dialog-content">
+                    <h2 id="newConversationDialogTitle" class="dialog-header" data-i18n="newConversation">New Conversation</h2>
+                    <div class="dialog-title-input">
+                        <label for="conversationTitleInput">Conversation Title:</label>
+                        <input type="text" id="conversationTitleInput" placeholder="Title" data-i18n-placeholder="title" />
+                    </div>
+                    <div class="dialog-footer">
+                        <button id="newConversationDialogCancelBtn" type="button" class="dialog-button cancel-button" data-i18n="cancel" aria-label="Cancel new conversation">
+							<span data-i18n="cancel">Cancel</span>	
+						</button>
+                        <button id="newConversationDialogConfirmBtn" type="button" class="dialog-button confirm-button" data-i18n="confirm" aria-label="Confirm new conversation">
+							<span class="spinner spinner-s hide"></span>
+							<span data-i18n="confirm">Confirm</span>	
+						</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<div id="editConversationDialogOverlay" class="custom-dialog-overlay hide" role="dialog" aria-labelledby="editDialogTitle" aria-modal="true" aria-describedby="editDialogDescription">
+			<div class="custom-dialog">
+				<div class="dialog-content">
+					<h2 id="editConversationDialogTitle" class="dialog-header" data-i18n="editConversation">Edit Conversation</h2>
+					<div class="dialog-title-input">
+						<label for="editConversationTitleInput">Conversation Title:</label>
+						<input type="text" id="editConversationTitleInput" placeholder="Title" data-i18n-placeholder="title" />
+					</div>
+					<div class="dialog-footer">
+						<button id="editConversationDialogCancelBtn" type="button" class="dialog-button cancel-button" data-i18n="cancel" aria-label="Cancel">
+							<span data-i18n="cancel">Cancel</span>	
+						</button>
+						<button id="editConversationDialogConfirmBtn" type="button" class="dialog-button confirm-button" data-i18n="save" aria-label="Save">
+							<span class="spinner spinner-s hide"></span>
+							<span data-i18n="save">Save</span>	
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <div id="chatMessages" class="chat-messages" role="log" aria-label="Chat messages" aria-live="polite" aria-atomic="false"></div>
+		
+		<div class="left-panel-wrapper">
+            <div id="userMessages" class="chat-messages hide" role="log" aria-label="User messages" aria-live="polite" aria-atomic="false"></div>
+        </div>
+        
+        <div id="responses" class="chat-messages hide" role="log" aria-label="Assistant responses" aria-live="polite" aria-atomic="false"></div>
+
+        <div class="chat-input" role="form" aria-label="Message input">
+            <div class="input-wrapper">
+                <div>
+                    <textarea id="messageInput" data-i18n-placeholder="typeMessage" placeholder="Type your message..." rows="1" aria-label="Type your message" aria-multiline="true"></textarea>
+                    <button id="sendButton" type="button" class="icon-button" aria-label="Send message" data-i18n-aria-label="sendMessage">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+
+				<div class="input-options">
+					<div class="chat-stats">
+						<button class="chat-stats-label" type="button" aria-expanded="false" aria-controls="statsTooltip" aria-label="Toggle statistics panel">
+							<span data-i18n="statistics">Statistics</span>
+							<i class="fas fa-chevron-down" aria-hidden="true"></i>
+						</button>
+				
+						<div id="statsTooltip" class="chat-stats-tooltip" role="region" aria-label="Chat statistics" style="display: none;" hidden>
+							<table>
+								<caption class="sr-only">Chat Statistics</caption>
+								<tbody>
+									<tr>
+										<td scope="row" data-i18n="messages">Messages:</td>
+										<td id="total-messages">0</td>
+									</tr>
+									<tr>
+										<td scope="row" data-i18n="totalTokens">Total Tokens:</td>
+										<td id="total-tokens">0</td>
+									</tr>
+									<tr>
+										<td scope="row" data-i18n="avgResponse">Avg Response:</td>
+										<td id="avg-response-time">0 ms</td>
+									</tr>
+									<tr>
+										<td scope="row" data-i18n="avgQuery">Avg Query:</td>
+										<td id="avg-query-time">0 ms</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					
+					<div class="chat-controls" role="navigation" aria-label="Chat controls">
+						<button id="newConversationBtn" class="icon-button" type="button" title="New Conversation" aria-label="New Conversation" data-i18n-title="newConversation" data-i18n-aria-label="newConversation">
+							<i class="fa-solid fa-plus" aria-hidden="true"></i>
+						</button>
+						
+						<button id="editConversationBtn" class="icon-button" type="button" title="Edit Conversation" aria-label="Edit Conversation" data-i18n-title="editConversation" data-i18n-aria-label="editConversation">
+							<i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>
+						</button>
+						
+						<button id="showConversationsBtn" class="icon-button" type="button" title="My Conversations" aria-label="My Conversations" data-i18n-title="myConversations" data-i18n-aria-label="myConversations">
+							<i class="fa-solid fa-comment" aria-hidden="true"></i>
+						</button>
+						
+						<button id="exportConversationBtn" class="icon-button" type="button" title="Export Conversation" aria-label="Export Conversation" data-i18n-title="exportConversation" data-i18n-aria-label="exportConversation">
+							<i class="fa-solid fa-download" aria-hidden="true"></i>
+						</button>
+						
+						<div class="dropdown">
+							<button id="chatSettings" type="button" class="dropdown-toggle icon-button" aria-haspopup="true" aria-expanded="false" aria-label="Open chat settings" title="Settings" data-i18n-title="settings" data-i18n-aria-label="openChatSettings">
+								<i class="fa-solid fa-gear" aria-hidden="true"></i>
+							</button>
+							<ul class="dropdown-menu" role="menu" aria-label="Chat settings">
+								<li role="none">
+									<div id="themeToggleItem" class="dropdown-item" role="menuitem">
+										<span id="themeLabel" data-i18n="darkMode">Dark mode</span>
+										<label class="theme-toggle" for="themeToggle">
+											<input type="checkbox" id="themeToggle" aria-labelledby="themeLabel" tabindex="-1" />
+											<span class="slider" aria-hidden="true"></span>
+											<i class="fas fa-sun icon-light" aria-hidden="true"></i>
+											<i class="fas fa-moon icon-dark" aria-hidden="true"></i>
+										</label>
+									</div>
+								</li>
+								<li role="none">
+									<div id="layoutToggleItem" class="dropdown-item" role="menuitem">
+										<span id="layoutLabel" data-i18n="splitView">Split view</span>
+										<label class="theme-toggle" for="layoutToggle">
+											<input type="checkbox" id="layoutToggle" aria-labelledby="layoutLabel" tabindex="-1" />
+											<span class="slider" aria-hidden="true"></span>
+										</label>
+									</div>
+								</li>
+								<li role="none">
+									<div id="archiveConversationBtn" class="dropdown-item" role="menuitem">
+										<span id="archiveLabel" data-i18n="archiveConversation">Archive</span>
+										<button type="button" class="icon-button" id="archiveConversationBtnAction" aria-labelledby="archiveLabel" title="Archive conversation" aria-label="Archive conversation">
+											<i class="fa-solid fa-archive" aria-hidden="true"></i>
+										</button>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+            </div>
+        </div>
+    </div>
+</div>
