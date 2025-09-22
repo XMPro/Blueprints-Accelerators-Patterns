@@ -130,15 +130,14 @@ The import manager includes a comprehensive dependency resolution system:
 
 **Non-Blocking (Import can proceed):**
 
-- **Connector and Agent Version Resolution**: Map agents and connectors to available versions in new environment
 - **Collection Mapping**: Flexible category assignment for imported components
   - *Collection  and Category mapping appears for all package items but only applies to new items*
   - *Existing items inherit their current category/collection and create new versions*
 
 **Blocking (Must resolve to import):**
 
-- **Missing Agents**: Detection and version conflict resolution - *import cannot proceed without resolution*
-- **Missing Connectors**: Automatic discovery with compatible version suggestions - *import cannot proceed without resolution*
+- **Missing or Version Incompatible Agents**: Detection and resolution required - *import cannot proceed without resolution*
+- **Missing or Version Incompatible Connectors**: Manual resolution required - *import cannot proceed without resolution*
 - **Server Variables**: Identification of missing configuration variables - *import cannot proceed without resolution*
 
 ## Implementation Files
@@ -240,7 +239,6 @@ Test the import manager:
 - Select the solution for import
 - Assign or create categories as required
 - Resolve any missing dependencies
-- Configure any agent/connector version resolution
 - Configure collection mapping
 - Execute import to test full workflow
 
@@ -258,7 +256,7 @@ Test the import manager:
 
 | Issue | Resolution |
 | ----- | ---------- |
-| Missing dependencies detected | Use dependency resolution workflow to address conflicts |
+| Missing or version incompatible dependencies detected | Resolve by installing correct agent/connector versions in target environment |
 | Category mapping failures | Create new categories or map to existing ones |
 | Collection assignment errors | Verify target environment category structure |
 
@@ -267,7 +265,7 @@ Test the import manager:
 | Scenario | Optimization |
 | -------- | ------------ |
 | Large solution exports | Algorithm automatically optimizes package count |
-| Complex dependency resolution | Resolution engine handles version conflicts intelligently |
+| Complex dependency resolution | Resolution engine identifies blocking dependencies that must be resolved |
 | Cross-environment promotion | Category consistency maintained throughout pipeline |
 
 ## Advanced Configuration
