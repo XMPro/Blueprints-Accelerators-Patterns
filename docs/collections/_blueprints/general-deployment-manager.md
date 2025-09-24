@@ -5,8 +5,8 @@ title: "XMPro Deployment Manager"
 description: "<strong>XMPro Deployment Manager</strong>"
 extract: "A comprehensive deployment management application enabling export and import of XMPro solutions across environments via Git repository integration with dependency resolution and automated package optimization."
 weight: 1
-thumbnail: "/assets/images/blueprints/xmpro-deployment-manager/export-wizard.png"
-image: "/assets/images/blueprints/xmpro-deployment-manager/export-wizard.png"
+thumbnail: "/assets/images/blueprints/general-xmpro-deployment-manager/export-wizard.png"
+image: "/assets/images/blueprints/general-xmpro-deployment-manager/export-wizard.png"
 categories: ["Deployment","DevOps","Git Integration","Environment Management"]
 contributor: "XMPro"
 role: "Application"
@@ -15,9 +15,9 @@ toc: false
 toc_label: "Table of Contents"
 
 gallery:
-   - image: "/assets/images/blueprints/xmpro-deployment-manager/export-wizard.png"
+   - image: "/assets/images/blueprints/general-xmpro-deployment-manager/export-wizard.png"
      caption: "<strong>Above:</strong> Export Wizard Interface"
-   - image: "/assets/images/blueprints/xmpro-deployment-manager/import-manager.png"
+   - image: "/assets/images/blueprints/general-xmpro-deployment-manager/import-manager.png"
      caption: "<strong>Above:</strong> Import Manager Interface"
 gallery_limit: 2
 
@@ -74,7 +74,6 @@ The import functionality enables seamless import of packaged solutions from Git 
 | **Package Discovery** | Automatic detection and listing of available deployment packages |
 | **Dependency Resolution** | Intelligent resolution of missing Agents, Connectors, and Server Variables |
 | **Collection Mapping** | Flexible mapping of imported components to target environment categories |
-| **Version Selection** | Individual version selection for conflicting dependencies |
 | **Category Creation** | Dynamic creation of new categories via XMPro API integration |
 
 ### Core Architecture Components
@@ -204,7 +203,7 @@ Ensure the following variables are available for SQL connectivity and Git integr
 
 ### 4. Configure Git Integration
 
-Set up value mappings for Git repository access:
+If Server variables are different from step 2. configure value mappings for Git repository access created variables for both Export and Import Metablocks:
 
 - **GitRepository** - Azure DevOps repository URL
 - **GitUsername** - Git username or email
@@ -276,7 +275,7 @@ The import manager supports dynamic category creation:
 
 ```javascript
 // Category types supported:
-- applications-datastreams (shared namespace)
+- applications - datastreams (shared namespace)
 - recommendations (separate namespace)
 - recommendationforms (separate namespace)
 ```
