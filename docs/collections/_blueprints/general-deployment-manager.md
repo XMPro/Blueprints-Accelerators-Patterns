@@ -187,6 +187,7 @@ Ensure the following variables are available for SQL connectivity and Git integr
 | **Git Repo** | Azure DevOps repository URL | Plain Text | `https://yourazuregitrepo.com/DefaultCollection/ReposFolder/_git/Repo` |
 | **Git User** | Username associated with PAT | Plain Text | `user@company.com` |
 | **Git Password** | Personal Access Token | **Encrypted** | `•••••••••` |
+| **DocsWebsite** | Documentation Website for agent downloads | Plain Text | `https://xmpro.gitbook.io/integrations/` |
 
 > **Note**: If variable names differ from those shown above, they must be remapped in the import and export metablock value mapping section and SQL datasources.
 
