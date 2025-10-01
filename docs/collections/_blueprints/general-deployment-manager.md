@@ -3,7 +3,7 @@ layout: project-top
 date: 2025-09-17
 title: "XMPro Deployment Manager"
 description: "<strong>XMPro Deployment Manager</strong>"
-extract: "A comprehensive deployment management application enabling export and import of XMPro solutions across environments via Git repository integration with dependency resolution and automated package optimization."
+extract: "A comprehensive deployment management application enabling export and import of XMPro solutions across environments via Git repository integration with dependency resolution and automated package optimization. When properly configured, imported solutions require no additional mapping or configuration—only version publishing—provided all dependencies are included per deployment documentation."
 weight: 1
 thumbnail: "/assets/images/blueprints/general-xmpro-deployment-manager/export-wizard.png"
 image: "/assets/images/blueprints/general-xmpro-deployment-manager/export-wizard.png"
@@ -64,7 +64,7 @@ The export functionality allows users to package and deploy XMPro solutions to G
 | **Application Options** | Configurable export of app files and uploads folder |
 | **Sequential Versioning** | Automatic generation of version tags (tag-1, tag-2, etc.) |
 
-### Import Manager
+### Import Wizard
 
 The import functionality enables seamless import of packaged solutions from Git repositories with comprehensive dependency management.
 
@@ -129,40 +129,18 @@ The import manager includes a comprehensive dependency resolution system:
 
 **Non-Blocking (Import can proceed):**
 
-- **Collection Mapping**: Flexible category assignment for imported components
+- **Collection Mapping**: Collection assignment for imported Data Streams
+- **Category Mapping**: Flexible category assignment for imported components
   - *Collection  and Category mapping appears for all package items but only applies to new items*
   - *Existing items inherit their current category/collection and create new versions*
+  - *All package entities must have a category option selected before import*
 
 **Blocking (Must resolve to import):**
 
-- **Missing or Version Incompatible Agents**: Detection and resolution required - *import cannot proceed without resolution*
-- **Missing or Version Incompatible Connectors**: Manual resolution required - *import cannot proceed without resolution*
-- **Server Variables**: Identification of missing configuration variables - *import cannot proceed without resolution*
-
-## Implementation Files
-
-### Export Metablock Structure
-
-| File                                   | Description                                                  |
-| -------------------------------------- | ------------------------------------------------------------ |
-| `deployment-manager.html` | Bootstrap-based UI with export configuration and package summary |
-| `deployment-manager.css` | XMPro-themed styling with responsive design and loading states |
-| `deployment-manager.js` | Core logic including category optimization algorithm and Git integration |
-
-### Import Metablock Structure
-
-| File                                   | Description                                                  |
-| -------------------------------------- | ------------------------------------------------------------ |
-| `deployment-import.html` | Complex UI with package selection, dependency resolution, and collection mapping |
-| `deployment-import.css` | Extensive styling (1640+ lines) with responsive grid layouts and modal designs |
-| `deployment-import.js` | Sophisticated JavaScript with category management, dependency resolution, and API integration |
-
-### Application Package
-
-| Component                              | Description                                                  |
-| -------------------------------------- | ------------------------------------------------------------ |
-| **Dependencies** | Azure SQL Connector (v2.22) for data persistence |
-| **Server Variables** | SQL Deploy Password, SQL Login, SQL Password, SQL Server |
+- **Missing or Version Incompatible Agents**: Detection and resolution required
+- **Missing or Version Incompatible Connectors**: Manual resolution required
+- **Server Variables**: Identification of missing configuration variables
+  - *Import cannot proceed until all blocking dependencies are resolved. Version mismatches between agents or connectors used during development and those in the target environment can cause runtime failures or unexpected behavior in production*
 
 ## Steps to Deploy
 
@@ -173,44 +151,55 @@ Set up Azure DevOps Personal Access Token with appropriate permissions:
 - **Scope**: Full Access permission recommended
 - **Organization**: User Defined
 - **Expiration**: Recommended 90 days for development environments
-- **Storage**: Securely stored in as XMPro Server Variable 
+- **Storage**: Securely stored as XMPro Server Variable
 
-### 2. Configure Server Variables
+### 2. Execute SQL Setup Scripts
+
+Before importing the application, execute the required SQL scripts in the target AD (Application Designer) database:
+
+**Script 1: Create_Synonym_Tables_for_Category_Lookup.sql**
+
+This script creates cross-database external tables to enable the Deployment Manager to query category information from the DS and SM databases.
+
+Update the following variables before execution:
+
+| Variable | Description | Example |
+| -------- | ----------- | ------- |
+| `@MASTER_KEY_PWD` | Strong password for database master key | Custom secure password |
+| `@SQL_SERVER` | SQL Server instance FQDN | `sqlserver.database.windows.net` |
+| `@DS_CRED_IDENTITY` | SQL login for DS database access | `DS_username` |
+| `@DS_CRED_SECRET` | Password for DS database login | SQL login password |
+| `@SM_CRED_IDENTITY` | SQL login for SM database access | `SM_username` |
+| `@SM_CRED_SECRET` | Password for SM database login | SQL login password |
+
+> **Note**: The script includes built-in validation to prevent execution with placeholder values. Ensure all `ChangeMe-` prefixes are removed.
+
+**Script 2: sp_AppExport.sql**
+
+This script creates the stored procedure used by the Export Wizard to format application, data stream, and recommendation metadata for Git deployment. No variable configuration is required - execute as-is in the AD database.
+
+### 3. Configure Server Variables
 
 Ensure the following variables are available for SQL connectivity and Git integration:
 
 | Variable Name | Description | Type | Example |
 | ------------- | ----------- | ---- | ------- |
-| **SQL Server** | Database server instance | Plain Text | `sqlserver.database.windows.net` |
-| **SQL Login** | Database username | Plain Text | `xmadmin` |
-| **SQL Deploy Password** | Database password | **Encrypted** | `•••••••••` |
-| **Git Repo** | Azure DevOps repository URL | Plain Text | `https://yourazuregitrepo.com/DefaultCollection/ReposFolder/_git/Repo` |
-| **Git User** | Username associated with PAT | Plain Text | `user@company.com` |
-| **Git Password** | Personal Access Token | **Encrypted** | `•••••••••` |
-| **DocsWebsite** | Documentation Website for agent downloads | Plain Text | `https://xmpro.gitbook.io/integrations/` |
+| **DM SQL Server** | Database server instance | Plain Text | `sqlserver.database.windows.net` |
+| **DM SQL Login** | Database username | Plain Text | `admin` |
+| **DM SQL Password** | Database password | **Encrypted** | `•••••••••` |
+| **DM Git Repo** | Azure DevOps repository URL | Plain Text | `https://yourazuregitrepo.com/DefaultCollection/ReposFolder/_git/Repo` |
+| **DM Git User** | Username associated with PAT | Plain Text | `user@company.com` |
+| **DM Git Password** | Personal Access Token | **Encrypted** | `•••••••••` |
+| **DM Documentation Website** | Documentation Website for agent downloads | Plain Text | `https://xmpro.gitbook.io/integrations/` |
 
-> **Note**: If variable names differ from those shown above, they must be remapped in the import and export metablock value mapping section and SQL datasources.
+> **Important**: Variable names must match exactly as shown above. The application relies on these specific names for lookups—using different names will cause lookups to fail. If you must use different variable names, you will need to remap them in both the SQL datasources and the metablock value mapping sections.
 
-### 3. Import the Application Package
+### 4. Import the Application Package
 
 - Import the XMPro Deployment Manager application
-- If not Auto-mapped, map database connections during import:
+- Check for data source errors the export and import pages after import
 
-| Data Source Name | Connection Type | Configuration |
-| ---------------- | --------------- | ------------- |
-| Application List | Azure SQL | Mapped to SQL Datasource |
-| Data Stream List | Azure SQL | Mapped to SQL Datasource |
-| Recommendation List | Azure SQL | Mapped to SQL Datasource |
-
-### 4. Configure Git Integration
-
-If Server variables are different from step 2. configure value mappings for Git repository access created variables for both Export and Import Metablocks:
-
-- **GitRepository** - Azure DevOps repository URL
-- **GitUsername** - Git username or email
-- **GitPassword** - Personal Access Token **(Encrypted)**
-
-### 5. Verify Export Functionality
+### 6. Verify Export Functionality
 
 Test the export wizard:
 
@@ -221,26 +210,37 @@ Test the export wizard:
 - Select Import Uploads and Appfiles where appropriate
 - Execute deployment to test Git integration
 
-### 6. Approve Pull Request in Git
+### 7. Approve Pull Request in Git
 
 Navigate to your Git Repository:
 
 - Identify your specific Pull Request by matching Solution and Base Version Name
 - Select the Pull Request, click Complete, leave the default selections checked, then click Complete Merge
 - Repeat this process for all packages in the solution
-- The exported solution will now be available to select in the Import Manager
+- The exported solution will now be available in the main branch to select in the Import Manager
 
-### 7. Verify Import Functionality
+### 8. Verify Import Functionality
 
 Test the import manager:
 
 - Navigate to the Import Manager page
 - Browse Git repository branches and solution. The defalut branch will be main, but non-merged branches are still selectable
 - Select the solution for import
-- Assign or create categories as required
 - Resolve any missing dependencies
+- Assign or create categories as required
+  - *Note: Category assignment will only reassign new entities. Existing entities are matched by Universal ID and version, retaining their current category/collection assignment. The category field is still required as there is no current way to tell what exists in the target env*
 - Configure collection mapping
 - Execute import to test full workflow
+
+## API Configuration
+
+### Import Size Limits
+
+The application enforces a 200MB size limit on imports to prevent timeout issues and ensure reliable import operations.
+
+### Export Timeout Settings
+
+Export operations include a configurable database timeout of 1 minute (3600ms) to handle large application exports. This timeout is set at the database command level to prevent export failures when processing complex applications with extensive dependencies.
 
 ## Troubleshooting
 

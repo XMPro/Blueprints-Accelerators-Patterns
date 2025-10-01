@@ -5,12 +5,12 @@
    - This script does NOT require SQLCMD mode.
    ===================================================================== */
 DECLARE @MASTER_KEY_PWD         nvarchar(128)   = N'ChangeMe-StrongMasterKeyPwd!'; -- Must be created here or, if already created, entered here
-DECLARE @SQL_SERVER             sysname         = N'ChangeMe-sqldb-xmpro-qav45-ce11cf94.database.windows.net';
+DECLARE @SQL_SERVER             sysname         = N'ChangeMe-SQLServer-Name';
 DECLARE @DS_DB                  sysname         = N'DS';
 DECLARE @SM_DB                  sysname         = N'SM';
-DECLARE @DS_CRED_IDENTITY       sysname         = N'ChangeMe-'; -- must be SQL credentialed login
+DECLARE @DS_CRED_IDENTITY       sysname         = N'ChangeMe-DS-Username'; -- must be SQL credentialed login
 DECLARE @DS_CRED_SECRET         nvarchar(4000)  = N'ChangeMe-DS-Password'; -- must be SQL credentialed password
-DECLARE @SM_CRED_IDENTITY       sysname         = N'ChangeMe-xmadmin'; -- must be SQL credentialed login
+DECLARE @SM_CRED_IDENTITY       sysname         = N'ChangeMe-SM-Username'; -- must be SQL credentialed login
 DECLARE @SM_CRED_SECRET         nvarchar(4000)  = N'ChangeMe-SM-Password'; -- must be SQL credentialed password
 
 -- =====================================================================
