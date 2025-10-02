@@ -1,0 +1,52 @@
+---
+layout: default
+body_classes: page-projects
+---
+
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {% include framework/blocks/sections/heading.html
+          title=page.title
+          description=page.description
+        %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% assign groups = site.metablocks | group_by: 'date' | sort: 'date' %}
+{% assign limit = page.metablocks.limit | default: 999 %}
+{% assign columns =  page.metablocks.columns | default: 3 %}
+{% capture columns %}col-lg-{{ 12 | divided_by:columns }}{% endcapture %}
+
+<div class="section pt-0">
+  <div class="container">
+    <div class="row">
+
+      {% include framework/blocks/components/grid-header.html 
+        heading=page.metablocks.heading 
+        sub_heading=page.metablocks.sub_heading 
+      %}
+
+      {% for group in groups %}
+        {% assign cards = group.items | sort: 'date' %}
+        {% for card in cards limit: limit %}
+        <div
+          class="col-12 col-md-6 {{ columns }} mb-gutter mt-gutter {% if forloop.first %}mt-0{% endif %} {% if forloop.last %}mb-0{% endif %} mt-md-0">
+          {% include theme/cards/card-project.html
+            title=card.title
+            description=card.description
+            thumbnail=card.thumbnail
+            categories=card.categories
+            date=card.date
+            url=card.url
+            client=card.client
+          %}
+        </div>
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

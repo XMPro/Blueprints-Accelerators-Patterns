@@ -1,0 +1,460 @@
+<script src="./AppFiles/neo4j-web.min.js"></script>
+
+<div class="container" role="main">
+    <div class="three-column-layout">
+        <!-- Profile List Panel -->
+        <div class="profile-list" role="region" aria-label="Profile List">
+            <div class="profile-list-header">
+                <h2 data-i18n="profiles">Profiles</h2>
+            </div>
+            
+            <!-- Search Container -->
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <label for="profileSearch" class="sr-only" data-i18n="searchProfiles">Search profiles</label>
+                    <input type="text" id="profileSearch" placeholder="Search profiles" data-i18n-placeholder="searchProfiles" aria-label="Search profiles" data-i18n-aria-label="searchProfiles">
+                    <button type="button" id="clearSearch" class="clear-search" aria-label="Clear search" data-i18n-aria-label="clearSearch">
+                        <i class="fa-solid fa-times"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Filter Controls -->
+            <div class="profile-list-controls">
+                <div class="filter-wrapper">
+                    <svg class="filter-icon" width="20px" height="20px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <title>bars-filter</title>
+                        <path d="M30 6.749h-28c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h28c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0zM24 14.75h-16c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h16c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0zM19 22.75h-6.053c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h6.053c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0z"></path>
+                    </svg>
+                    <div class="filter-group">
+                        <button class="filter-dropdown-button" id="categoryFilterButton">
+                            <span data-i18n="category">Category</span>
+                        </button>
+                        <div class="filter-dropdown" id="categoryDropdown">
+                            <div class="filter-dropdown-content">
+                                <!-- Categories will be populated dynamically -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <button class="filter-dropdown-button" id="statusFilterButton">
+                            <span data-i18n="status">Status</span> (1)
+                        </button>
+                        <div class="filter-dropdown" id="statusDropdown">
+                            <div class="filter-dropdown-content">
+                                <div class="filter-item">
+                                    <label>
+                                        <input type="checkbox" value="Active" checked>
+                                        <span data-i18n="active">Active</span>
+                                    </label>
+                                </div>
+                                <div class="filter-item">
+                                    <label>
+                                        <input type="checkbox" value="Inactive">
+                                        <span data-i18n="inactive">Inactive</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select-all-container">
+                        <label class="checkbox-wrapper">
+                            <input type="checkbox" id="markAllProfiles">
+                            <span data-i18n="markAll">Mark all</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile List -->
+            <div id="profileList" aria-label="List of profiles"></div>
+        </div>
+
+        <!-- Profile Editor -->
+        <div class="profile-editor" role="region" aria-label="Profile Editor">
+            <div id="infoBar" class="info-bar" aria-live="polite" style="display: none;">
+                <span id="modeIndicator" class="mode-indicator"></span>
+                <span id="instanceCounter" class="instance-counter"></span>
+            </div>
+
+            <!-- Profile Actions -->
+            <div class="profile-actions">
+                <div class="left-actions">
+                    <button type="button" id="new_profile" class="primary-button" aria-label="New Profile" data-i18n-aria-label="newProfile">
+                        <i class="fa-solid fa-plus"></i>
+                        <span data-i18n="newProfile">New Profile</span>
+                    </button>
+                    <button type="submit" id="save_profile" class="primary-button" aria-label="Save Profile" data-i18n-aria-label="saveProfile">
+                        <i class="fa-regular fa-floppy-disk icon-xl"></i>
+                        <span class="spinner spinner-s hide"></span>
+                        <span data-i18n="saveProfile">Save Profile</span>
+                    </button>
+                    <button type="button" id="cancel_profile" class="primary-button" aria-label="Cancel" data-i18n-aria-label="cancel">
+                        <i class="fa-solid fa-times"></i>
+                        <span data-i18n="cancel">Cancel</span>
+                    </button>
+                </div>
+                
+                <!-- Format Info -->
+                <div class="format-info">
+                    <small>
+                        <span data-i18n="format">Format</span>: 
+                        <span data-i18n="formatValue">AREA-FUNCTION-PROFILE-VERSION</span> 
+                        (e.g., WTR-QUAL-PROFILE-001) - 
+                        <a href="https://github.com/XMPro/Multi-Agent/blob/main/docs/naming-conventions/Id.md" 
+                            target="_blank" 
+                            rel="noopener noreferrer">
+                            <span data-i18n="viewNamingConvention">View Naming Conventions</span>
+                        </a>
+                    </small>
+                </div>
+                
+                <div class="right-actions">
+                    <button type="button" id="clone_profile" class="icon-button" title="Clone profile" data-i18n-title="cloneProfile" aria-label="Clone profile" data-i18n-aria-label="cloneProfile">
+                        <i class="fa-regular fa-copy icon-xl"></i>
+                        <span class="spinner spinner-s hide"></span>
+                    </button>
+                    <button type="button" id="import_profile" class="icon-button" title="Import profile" data-i18n-title="importProfile" aria-label="Import profile" data-i18n-aria-label="importProfile">
+                        <i class="fa-solid fa-upload icon-xl"></i>
+                        <span class="spinner spinner-s hide"></span>
+                    </button>
+                    <button type="button" id="export_profile" class="icon-button" title="Export profile" data-i18n-title="exportProfile" aria-label="Export profile" data-i18n-aria-label="exportProfile">
+                        <i class="fa-solid fa-download icon-xl"></i>
+                        <span class="spinner spinner-s hide"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Profile Form -->
+            <form id="profileForm" aria-label="Profile Edit Form">
+                <!-- Profile ID Section -->
+                <div class="section" id="profileIdSection">
+                    <div class="row center-align">
+                        <div class="input-group">
+                            <label for="area" data-i18n="area">Area</label>
+                            <input type="text" id="area" name="area" placeholder="e.g., WTR">
+                        </div>
+                        <div class="input-group">
+                            <label for="function" data-i18n="function">Function</label>
+                            <input type="text" id="function" name="function" placeholder="e.g., QUAL">
+                        </div>
+                        <div class="input-group">
+                            <label for="version" data-i18n="version">Version</label>
+                            <input type="number" id="version" name="version" min="1" max="999" value="1">
+                        </div>
+                        <button id="generateProfileId" type="button" class="primary-button">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                            <span class="spinner spinner-s hide"></span>
+                            <span data-i18n="generate">Generate</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Basic Info Section -->
+                <div class="section">
+                    <div class="row center-align">
+                        <div class="input-group">
+                            <label for="profile_id" data-i18n="profileId">Profile ID</label>
+                            <input type="text" id="profile_id" name="profile_id" required readonly>
+                        </div>
+                        <div class="input-group">
+                            <label for="name" data-i18n="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="active" name="active">
+                            <label for="active" data-i18n="active">Active</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- System Prompt -->
+                <div class="section">
+                    <h3 class="section-header" data-i18n="systemPrompt">System Prompt</h3>
+                    <div class="input-group">
+                        <textarea id="system_prompt" name="system_prompt" required></textarea>
+                    </div>
+                </div>
+                
+                <!-- Experience and Skills -->
+                <div class="section">
+                    <div class="row stretch-align">
+                        <div class="input-group">
+                            <h3 class="section-header" data-i18n="experience">Experience</h3>
+                            <textarea id="experience" name="experience" required></textarea>
+                        </div>
+                        <div class="input-group">
+                            <h3 class="section-header" data-i18n="skills">Skills</h3>
+                            <div id="skills-input" class="tag-input"></div>
+                        </div>
+                    </div>
+                </div>
+  
+                <!-- Rules -->
+                <div class="section">
+                    <div class="row stretch-align">
+                        <div class="input-group">
+                            <h3 class="section-header" data-i18n="organizationalRules">Organizational Rules</h3>
+                            <div id="organizational_rules-input" class="tag-input"></div>
+                        </div>
+                        <div class="input-group">
+                            <h3 class="section-header" data-i18n="deonticRules">Deontic Rules</h3>
+                            <div id="deontic_rules-input" class="tag-input"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RAG Options -->
+                <div class="section">
+                    <h3 class="section-header" data-i18n="ragOptions">RAG Options</h3>
+                    <div class="row">
+                        <div class="input-group">
+                            <label for="rag_collection_name" data-i18n="ragCollectionName">RAG Collection Name</label>
+                            <input type="text" id="rag_collection_name" name="rag_collection_name">
+                        </div>
+                        <div class="input-group">
+                            <label for="rag_top_k" data-i18n="ragTopK">RAG Top K</label>
+                            <input type="number" id="rag_top_k" name="rag_top_k">
+                        </div>
+                        <div class="input-group">
+                            <label for="rag_vector_size" data-i18n="ragVectorSize">RAG Vector Size</label>
+                            <input type="number" id="rag_vector_size" name="rag_vector_size">
+                        </div>
+                        <div class="input-group">
+                            <label for="use_general_rag" data-i18n="useGeneralRag">Use General RAG</label>
+                            <select id="use_general_rag" name="use_general_rag">
+                                <option value="true" data-i18n="true">True</option>
+                                <option value="false" data-i18n="false">False</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Memory Parameters -->
+                <div class="section">
+                    <h3 class="section-header" data-i18n="memoryParameters">Memory Parameters</h3>
+                    <div class="row">
+                        <div class="input-group">
+                            <label for="reflection_importance_threshold" data-i18n="reflectionImportantThreshold">Reflection Importance Threshold</label>
+                            <input type="number" id="reflection_importance_threshold" name="reflection_importance_threshold" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="memory_decay_factor" data-i18n="memoryDecayFactor">Memory Decay Factor</label>
+                            <input type="number" id="memory_decay_factor" name="memory_decay_factor" step="0.001" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="max_recent_memories" data-i18n="maxRecentMemories">Max Recent Memories</label>
+                            <input type="number" id="max_recent_memories" name="max_recent_memories" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-group">
+                            <label for="memory_cache_cleanup_minutes" data-i18n="memoryCacheCleanupMinutes">Memory Cache Cleanup (Minutes)</label>
+                            <input type="number" id="memory_cache_cleanup_minutes" name="memory_cache_cleanup_minutes" step="1" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="memory_cache_max_age_minutes" data-i18n="memoryCacheMaxAgeMinutes">Memory Cache Max Age (Minutes)</label>
+                            <input type="number" id="memory_cache_max_age_minutes" name="memory_cache_max_age_minutes" step="1" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Planning Methods -->
+                <div class="section">
+                    <h3 class="section-header" data-i18n="allowedPlanningMethod">Allowed Planning Method</h3>
+                    <div class="input-group">
+                        <div id="allowed_planning_method-input" class="tag-input"></div>
+                    </div>      
+                </div>
+
+                <!-- Decision Parameters -->
+                <div class="section">
+                    <h3 class="section-header" data-i18n="decisionParameters">Decision Parameters</h3>
+                    <!-- <div class="row">
+                        <div class="input-group">
+                            <label for="risk_tolerance" data-i18n="riskTolerance">Risk Tolerance</label>
+                            <input type="number" id="risk_tolerance" name="risk_tolerance" step="0.01" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="innovation_factor" data-i18n="innovationFactor">Innovation Factor</label>
+                            <input type="number" id="innovation_factor" name="innovation_factor" step="0.01" required>
+                        </div>
+                    </div> -->
+
+                    <div class="row">
+                        <!-- <div class="input-group">
+                            <label for="collaboration_preference" data-i18n="collaborationPreference">Collaboration Preference</label>
+                            <input type="number" id="collaboration_preference" name="collaboration_preference" step="0.01" required>
+                        </div> -->
+                        <div class="input-group">
+                            <label for="planning_cycle_interval_minutes" data-i18n="planningCycleInterval">Planning Cycle Interval (Minutes):</label>
+                            <input type="number" id="planning_cycle_interval_minutes" name="planning_cycle_interval_minutes" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Prompts -->
+                <div class="section">
+                    <div class="row">
+                        <div class="input-group">
+                            <h3 class="section-header" data-i18n="observationPrompt">Observation Prompt</h3>
+                            <label for="required_fields_observation" data-i18n="requiredFields">Required Fields</label>
+                            <div id="required_fields_observation" class="tag-input readonly"></div>
+                            <textarea id="observation_prompt" name="observation_prompt" class="prompt-input" required></textarea>
+                        </div>
+                        <div class="input-group">
+                            <h3 class="section-header" data-i18n="reflectionPrompt">Reflection Prompt</h3>
+                            <label for="required_fields_reflection" data-i18n="requiredFields">Required Fields</label>
+                            <div id="required_fields_reflection" class="tag-input readonly"></div>
+                            <textarea id="reflection_prompt" name="reflection_prompt" class="prompt-input" required></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="section">
+                    <div class="section-header-container">
+                        <h3 class="section-header" data-i18n="tools">Tools</h3>
+                        <div class="tools-filter">
+                            <select id="tools-filter-dropdown" aria-label="Filter tools">
+                                <option value="all" selected data-i18n="showAllTools">Show All</option>
+                                <option value="selected" data-i18n="selectedTools">Selected Tools Only</option>
+                                <option value="unselected" data-i18n="unselectedTools">Unselected Tools Only</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="tools-container" class="tools-container">
+                        <!-- Tools will be populated dynamically -->
+                    </div>
+                </div>
+
+                <!-- Actions -->
+                <div class="section">
+                    <div class="section-header-container">
+                        <h3 class="section-header" data-i18n="actions">Actions</h3>
+                        <div class="actions-filter">
+                            <select id="actions-filter-dropdown" aria-label="Filter actions">
+                                <option value="all" selected data-i18n="showAllActions">Show All</option>
+                                <option value="selected" data-i18n="selectedActions">Selected Actions Only</option>
+                                <option value="unselected" data-i18n="unselectedActions">Unselected Actions Only</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="actions-container" class="actions-container">
+                        <!-- Actions will be populated dynamically -->
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Metadata Panel -->
+        <div class="metadata-panel" role="complementary" aria-label="Metadata">
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="author" data-i18n="author">Author</label>
+                    <input type="text" id="author" name="author" readonly>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="category" data-i18n="category">Category</label>
+                    <input type="text" id="category" name="category">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="tags" data-i18n="tags">Tags</label>
+                    <div id="tags" class="tag-input" role="list" aria-label="Tags">
+                        <input type="text" placeholder="Add" data-i18n-placeholder="add" aria-label="Add new tag" data-i18n-aria-label="addNewTag">
+                    </div>
+                </div>
+            </div>
+            <hr />
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="model_provider" data-i18n="modelProvider">Model Provider</label>
+                    <select id="model_provider" name="model_provider" required></select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="model_name" data-i18n="modelName">Model Name</label>
+                    <input type="text" id="model_name" name="model_name" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                    <div class="input-group">
+                    <label for="max_tokens" data-i18n="maxTokens">Max Tokens</label>
+                    <input type="number" id="max_tokens" name="max_tokens" required>
+                </div>
+            </div>
+            <hr />
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="created_date" data-i18n="created">Created</label>
+                    <div id="created_date" class="date-label"></div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="last_modified_date" data-i18n="lastModified">Last Modified</label>
+                    <div id="last_modified_date" class="date-label"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Existing Profiles Dialog -->
+<div id="existing-profiles-dialog" class="modal-overlay" style="display: none;">
+    <div class="modal-content existing-profiles-modal">
+        <div class="modal-header">
+            <h3 data-i18n="existingProfilesDetected">Existing Profiles Detected</h3>
+            <button class="modal-close" aria-label="Close">×</button>
+        </div>
+        
+        <div class="modal-body">
+            <div class="existing-profiles-content">
+                <div class="content-header">
+                    <p data-i18n="existingProfilesDetected">The following profiles already exist in the database. Please choose how to handle each one:</p>
+                    <div class="bulk-actions">
+                        <button class="set-all-overwrite primary-button" data-i18n="setAllOverwrite">Set All to Overwrite</button>
+                        <button class="set-all-keep primary-button" data-i18n="setAllKeep">Set All to Keep Current</button>
+                        <button class="set-all-create-new primary-button" data-i18n="setAllCreateNew">Set All to Create New</button>
+                    </div>
+                </div>
+                
+                <div class="existing-profiles-table-container">
+                    <table class="existing-profiles-table">
+                        <thead>
+                            <tr>
+                                <th class="profile-name-column" data-i18n="name">Name</th>
+                                <th class="profile-id-column" data-i18n="profileId">Profile ID</th>
+                                <th class="conflict-column" data-i18n="conflict">Conflict</th>
+                                <th class="actions-column" data-i18n="action">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="existing-profiles-tbody">
+                            <!-- Rows will be populated dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="overwrite-warning" style="display: none;">
+                    <strong>⚠️ <span data-i18n="overwriteWarning">Warning: Overwriting existing profiles is irreversible.</span></strong>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal-footer">
+            <button class="cancel-button secondary-button" data-i18n="cancel">Cancel</button>
+            <button class="confirm-button primary-button" data-i18n="confirmImport">Proceed with Import</button>
+        </div>
+    </div>
+</div>
+

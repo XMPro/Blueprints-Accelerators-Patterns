@@ -1,0 +1,558 @@
+<script src="./AppFiles/neo4j-web.min.js"></script> 
+
+<div id="wizard-container" role="main">
+    <!-- Left sidebar with step list -->
+    <div id="step-list" role="region" aria-label="Step List">
+        <div class="builder-list-header">
+            <h2 data-i18n="wizardBuilder">Wizard Builder</h2>
+        </div>
+        
+        <div id="steps-container">
+            <!-- Main wizard steps -->
+            <div id="basic-config-item" class="main-step-item active" data-step="basic-config">
+                <span class="step-badge">
+                    <span class="step-number">1</span>
+                    <i class="fa-solid fa-check completed"></i>
+                </span>
+                <span data-i18n="basicConfiguration">Basic Configuration</span>
+            </div>
+            
+            <div id="model-selection-item" class="main-step-item" data-step="model-selection">
+                <span class="step-badge">
+                    <span class="step-number">2</span>
+                    <i class="fa-solid fa-check completed"></i>
+                </span>
+                <span data-i18n="modelSelection">Model Selection</span>
+            </div>
+            
+            <div id="steps-config-item" class="main-step-item" data-step="steps-config">
+                <span class="step-badge">
+                    <span class="step-number">3</span>
+                    <i class="fa-solid fa-check completed"></i>
+                </span>
+                <span data-i18n="stepsConfiguration">Steps Configuration</span>
+            </div>
+
+            <!-- Wizard steps will be dynamically added here as sub-items -->
+            <div id="wizard-steps-container" class="sub-steps-container">
+                <!-- Dynamic wizard steps will be added here -->
+            </div>
+            
+            <div id="preview-item" class="main-step-item" data-step="preview">
+                <span class="step-badge">
+                    <span class="step-number">4</span>
+                    <i class="fa-solid fa-check completed"></i>
+                </span>
+                <span data-i18n="previewWizard">Preview Wizard</span>
+            </div>
+            
+            
+        </div>
+    </div>
+    
+    <!-- Middle content area -->
+    <div id="wizard-content-container">
+        <div class="wizard-header">
+            <div class="header-title">
+                <h2 data-i18n="wizardConfiguration">Wizard Configuration</h2>
+            </div>
+            <div class="header-buttons">
+                <button id="import-btn" class="icon-button" title="Import Wizard" aria-label="Import Wizard" data-i18n-title="importWizard" data-i18n-aria-label="importWizard">
+                    <i class="fas fa-upload icon-xl"></i>
+                    <span class="spinner spinner-s hide"></span>
+                </button>
+                <button id="export-btn" class="icon-button" title="Export Wizard" aria-label="Export Wizard" data-i18n-title="exportWizard" data-i18n-aria-label="exportWizard">
+                    <i class="fas fa-download icon-xl"></i>
+                    <span class="spinner spinner-s hide"></span>
+                </button>
+                <button id="reset-all-btn" class="icon-button" title="Reset Wizard" aria-label="Reset Wizard" data-i18n-title="resetWizard" data-i18n-aria-label="resetWizard">
+                    <i class="fas fa-arrow-rotate-left icon-xl"></i>
+                    <span class="spinner spinner-s hide"></span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="wizard-subheader">
+            <span id="step-description" class="instance-counter" data-i18n="configureWizard"></span>
+        </div>
+        
+        <div class="progress-indicator">
+            <div class="progress-bar"></div>
+        </div>
+        
+        <!-- Basic Configuration page -->
+        <div id="basic-config-page">
+            <div class="page-wrapper">
+                <div class="section">
+                    <div class="row center-align" id="wizardIdSection">
+                        <div class="form-group">
+                            <label for="area" data-i18n="area">Area</label>
+                            <input type="text" id="area" name="area" placeholder="e.g., WTR" data-i18n-placeholder="areaPlaceholder">
+                        </div>
+                        <div class="form-group">
+                            <label for="function" data-i18n="function">Function</label>
+                            <input type="text" id="function" name="function" placeholder="e.g., QUAL" data-i18n-placeholder="functionPlaceholder">
+                        </div>
+                        <div class="form-group">
+                            <label for="version" data-i18n="version">Version</label>
+                            <input type="number" id="version" name="version" min="1" max="999" value="1">
+                        </div>
+                        <button id="generate-wizard-id-btn" type="button" class="primary-button">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                            <span class="spinner spinner-s hide"></span>
+                            <span data-i18n="generate">Generate</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="wizard-id" data-i18n="id">ID</label>
+                            <input type="text" id="wizard-id" placeholder="ID" aria-label="Wizard ID" data-i18n-placeholder="id" data-i18n-aria-label="wizardId" readonly required>
+                        </div>
+                    </div>
+                    
+                    <div class="row center-align">
+                        <div class="form-group full-width">
+                            <label for="wizard-name" data-i18n="name">Name</label>
+                            <input type="text" id="wizard-name" placeholder="Name" aria-label="Wizard name" data-i18n-placeholder="name" data-i18n-aria-label="wizardName" required>
+                        </div>
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="active" name="active" checked>
+                            <label for="active" data-i18n="active">Active</label>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="wizard-description" data-i18n="description">Description</label>
+                            <textarea id="wizard-description" rows="4" placeholder="Description" aria-label="Wizard description" data-i18n-placeholder="description" data-i18n-aria-label="wizardDescription" required></textarea>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+            
+            <div class="navigation-buttons">
+                <button id="reset-basic-config-btn" class="secondary-button" aria-label="Reset" data-i18n-aria-label="reset" disabled>
+                    <i class="fa-solid fa-arrow-rotate-left"></i>
+                    <span data-i18n="reset">Reset</span>
+                    <span class="spinner spinner-s hide"></span>
+                </button>
+                <button id="next-from-basic-config-btn" class="primary-button" aria-label="Next" data-i18n-aria-label="next" disabled>
+                    <span data-i18n="next">Next</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <span class="spinner spinner-s hide"></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Model Selection page -->
+        <div id="model-selection-page" class="hide">
+            <div class="page-wrapper">
+                <div class="section">
+                    <div class="row">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="allow-user-model-selection" checked>
+                            <label for="allow-user-model-selection" data-i18n="allowUserModelSelection">Allow user to select Large Language Model (LLM)</label>
+                        </div>
+                    </div>
+                
+                    <div id="default-model-container">
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="model-provider" data-i18n="modelProvider">Model Provider</label>
+                                <select id="model-provider" aria-label="Model provider" data-i18n-aria-label="modelProvider">
+                                    <option value="" data-i18n="selectModelProvider">Select a model provider</option>
+                                    <!-- Options will be populated from system options -->
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="model-name" data-i18n="modelName">Model Name</label>
+                                <select id="model-name" aria-label="Model name" data-i18n-aria-label="modelName">
+                                    <option value="" data-i18n="selectModel">Select a model</option>
+                                    <!-- Options will be populated based on provider -->
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="max-tokens" data-i18n="maxTokens">Max Tokens</label>
+                                <input type="number" id="max-tokens" min="100" max="100000" value="2000" step="100" />
+                                <div class="input-hint" data-i18n="maxTokensHint">Set the maximum length of model-generated responses</div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="credential-variable" data-i18n="credentialVariable">Credential Variable</label>
+                                <input type="text" id="credential-variable" placeholder="API_KEY_VARIABLE" aria-label="Credential variable name">
+                                <div class="input-hint" data-i18n="credentialVariableHint">Enter the name of the variable containing your API credentials</div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div id="temperature-control-group" class="form-group temperature-control-group">
+                                <label for="llm-temperature" class="temperature-label">
+                                    <span data-i18n="temperature">Temperature</span>
+                                    <span class="info-icon" id="temp-info-icon" title="Learn more about temperature" data-i18n-title="learnMoreTemperature">
+                                        <i class="fa-solid fa-info-circle"></i>
+                                    </span>
+                                </label>
+                                <div class="temperature-slider-container">
+                                    <input type="range" id="llm-temperature" class="med-temp" min="0" max="1" step="0.1" />
+                                    <span id="temperature-value"></span>
+                                </div>
+                                <div id="temperature-description" class="temperature-description">
+                                    <span data-i18n="currentSetting">Current setting</span>: <strong><span data-i18n="temperatureMedium">Medium temperature</span></strong> - <span data-i18n="temperatureMediumDesc">Balanced for general conversation</span>
+                                </div>
+                                <div id="temperature-info" class="temperature-info hide">
+                                    <div class="info-content">
+                                        <p><strong data-i18n="temperature">Temperature</strong> <span data-i18n="temperatureDescription">controls how random or deterministic the model's responses are</span>:</p>
+                                        <ul>
+                                            <li><strong data-i18n="temperatureLowRange">Low temperature (0.0-0.3):</strong> <span data-i18n="temperatureLowRangeDesc">More focused, deterministic, and factual responses</span></li>
+                                            <li><strong data-i18n="temperatureMediumRange">Medium temperature (0.4-0.7):</strong> <span data-i18n="temperatureMediumRangeDesc">Balanced between creativity and accuracy</span></li>
+                                            <li><strong data-i18n="temperatureHighRange">High temperature (0.8-1.0):</strong> <span data-i18n="temperatureHighRangeDesc">More creative, diverse, and sometimes unpredictable responses</span></li>
+                                        </ul>
+                                        
+                                        <table class="temperature-table">
+                                            <thead>
+                                                <tr>
+                                                    <th data-i18n="taskType">Task Type</th>
+                                                    <th data-i18n="recommendedTemperature">Recommended Temperature</th>
+                                                    <th data-i18n="outputBehavior">Output Behavior</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr data-range="0-0.3" class="temp-range-low">
+                                                    <td data-i18n="factualAnswers">Factual Answers</td>
+                                                    <td>0.0–0.3</td>
+                                                    <td data-i18n="deterministicAvoidCreative">Deterministic, avoids creative deviations</td>
+                                                </tr>
+                                                <tr data-range="0.2-0.4" class="temp-range-low-med">
+                                                    <td data-i18n="codeGeneration">Code Generation</td>
+                                                    <td>0.2–0.4</td>
+                                                    <td data-i18n="predictableAccurate">Predictable and accurate</td>
+                                                </tr>
+                                                <tr data-range="0.5-0.7" class="temp-range-med">
+                                                    <td data-i18n="conversationalAgent">Conversational Agent</td>
+                                                    <td>0.5–0.7</td>
+                                                    <td data-i18n="balancedEngagingDialogue">Balanced, engaging dialogue</td>
+                                                </tr>
+                                                <tr data-range="0.7-1.0" class="temp-range-high">
+                                                    <td data-i18n="creativeWriting">Creative Writing</td>
+                                                    <td>0.7–1.0</td>
+                                                    <td data-i18n="diverseImaginative">Diverse and imaginative</td>
+                                                </tr>
+                                                <tr data-range="0.8-1.0" class="temp-range-high">
+                                                    <td data-i18n="brainstorming">Brainstorming</td>
+                                                    <td>0.8–1.0</td>
+                                                    <td data-i18n="uniqueVariedIdeas">Unique, varied ideas</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        
+                                        <p><strong data-i18n="whenToAdjustTemperature">When to adjust temperature:</strong></p>
+                                        <ul>
+                                            <li><strong data-i18n="useLowTemperature">Use a low temperature</strong> <span data-i18n="lowTempTasks">for tasks where accuracy, consistency, and reliability are critical (e.g., technical documentation, legal writing, or code).</span></li>
+                                            <li><strong data-i18n="useHighTemperature">Use a high temperature</strong> <span data-i18n="highTempTasks">for tasks that benefit from creativity, novelty, or exploration (e.g., storytelling, marketing copy, or brainstorming).</span></li>
+                                            <li><strong data-i18n="experimentMediumValues">Experiment with medium values</strong> <span data-i18n="mediumTempTasks">for general-purpose or conversational applications where some variation is desirable but coherence must be maintained.</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+
+                </div> 
+            </div>
+            
+            <div class="navigation-buttons">
+                <button id="prev-from-model-selection-btn" class="secondary-button" aria-label="Previous" data-i18n-aria-label="previous">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <span data-i18n="previous">Previous</span>
+                    <span class="spinner spinner-s hide"></span>
+                </button>
+                <button id="next-from-model-selection-btn" class="primary-button" aria-label="Next" data-i18n-aria-label="next">
+                    <span data-i18n="next">Next</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <span class="spinner spinner-s hide"></span>
+                </button>
+            </div>            
+        </div>
+        
+        <!-- Steps Configuration page -->
+        <div id="steps-config-page" class="hide">
+            <div class="page-wrapper">
+                <div class="section">
+                    <h3 class="section-header" data-i18n="stepsConfiguration">Steps Configuration</h3>
+                    
+                    <div id="steps-list-container">
+                        <!-- Steps will be listed here -->
+                        <p id="no-steps-message" data-i18n="noStepsAdded">No steps have been added yet. Click "Add Step" to create your first wizard step.</p>
+                    </div>
+            
+                    <div class="row">
+                        <button id="add-step-btn" class="add-button">
+                            <i class="fa-solid fa-plus"></i>
+                            <span data-i18n="addStep">Add Step</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="navigation-buttons">
+                <button id="prev-from-steps-config-btn" class="secondary-button" aria-label="Previous" data-i18n-aria-label="previous">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <span class="spinner spinner-s hide"></span>
+                    <span data-i18n="previous">Previous</span>
+                </button>
+                <button id="preview-btn" class="primary-button" aria-label="Preview" data-i18n-aria-label="preview">
+                    <span class="spinner spinner-s hide"></span>
+                    <span data-i18n="preview">Preview</span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Step Editor (will be shown when editing a specific step) -->
+        <div id="step-editor" class="hide">
+            <div class="page-wrapper">
+                <div class="section">
+                    <div class="section-header-container">
+                        <h3 class="section-header" data-i18n="stepConfiguration">Step Configuration</h3>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="step-name" data-i18n="name">Name</label>
+                            <input type="text" id="step-name" placeholder="Name" aria-label="Step name" data-i18n-placeholder="name" data-i18n-aria-label="stepName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="step-description-input" data-i18n="description">Description</label>
+                            <textarea id="step-description-input" rows="3" placeholder="Description" aria-label="Step description" data-i18n-placeholder="description" data-i18n-aria-label="stepDescription" required></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="prompt-text" data-i18n="llmPrompt">Large Language Model (LLM) Prompt</label>
+                            <textarea id="prompt-text" rows="8" placeholder="Prompt" aria-label="LLM prompt" data-i18n-placeholder="prompt" data-i18n-aria-label="llmPrompt" required></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="display-prompt" aria-label="Display prompt to user" data-i18n-aria-label="displayPromptToUser">
+                            <label for="display-prompt" data-i18n="displayPromptToUser">Display prompt to user</label>
+                        </div>
+                    </div>
+
+                    <div class="row" id="conversation-settings-panel">
+                        <div class="accordion-panel">
+                            <div class="accordion-header">
+                                <h4 data-i18n="conversationSettings">Conversation Settings</h4>
+                                <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <!-- Enable conversation mode checkbox -->
+                                <div class="row">
+                                    <div class="checkbox-group">
+                                        <input type="checkbox" id="dynamic-dialog" aria-label="Enable conversation mode">
+                                        <label for="dynamic-dialog" data-i18n="enableConversationMode">Enable conversation mode (multiple back-and-forth exchanges)</label>
+                                    </div>
+                                </div>
+                                
+                                <!-- Completion Criteria - Only visible when conversation mode is enabled -->
+                                <div id="completion-criteria-container" class="conditional-panel">
+                                    <div class="form-group">
+                                        <label for="completion-criteria" data-i18n="whenToMoveNextStep">When to move to next step</label>
+                                        <select id="completion-criteria" aria-label="Completion criteria">
+                                            <option value="user-signal" data-i18n="userClicksNext">When user clicks "Next" button</option>
+                                            <option value="turn-count" data-i18n="specificNumberExchanges">After a specific number of exchanges</option>
+                                            <option value="llm-signal" data-i18n="llmDecides">When the LLM determines enough information was gathered</option>
+                                            <option value="validation-function" data-i18n="customValidationLogic">Use custom validation logic</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <!-- Settings for turn count -->
+                                    <div id="turn-count-settings" class="conditional-settings">
+                                        <div class="form-group">
+                                            <label for="max-turns" data-i18n="numberOfExchanges">Number of exchanges</label>
+                                            <input type="number" id="max-turns" min="1" max="20" value="5">
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Settings for LLM signal -->
+                                    <div id="llm-signal-settings" class="conditional-settings">
+                                        <div class="form-group">
+                                            <label for="llm-completion-prompt" data-i18n="llmPromptCheckComplete">LLM prompt to check if complete</label>
+                                            <textarea id="llm-completion-prompt" rows="2" placeholder="Example: Have we gathered all the necessary information?" data-i18n-placeholder="llmPromptExampleCheckComplete"></textarea>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Settings for validation function -->
+                                    <div id="validation-function-settings" class="conditional-settings">
+                                        <div class="form-group">
+                                            <label for="validation-function" data-i18n="customvalidationFunction">Custom validation function (advanced)</label>
+                                            <textarea id="validation-function" rows="3" placeholder="function(conversation) { return true; }" class="code-input"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Follow-up Strategy - Only visible when conversation mode is enabled -->
+                                <div id="follow-up-strategy-container" class="conditional-panel">
+                                    <div class="form-group">
+                                        <label for="follow-up-strategy" data-i18n="handleFollowupQuestions">How to handle follow-up questions</label>
+                                        <select id="follow-up-strategy" aria-label="Follow-up strategy">
+                                            <option value="adaptive" data-i18n="llmDecidesFollowupQuestions">LLM determines the follow-up questions</option>
+                                            <option value="fixed" data-i18n="predefinedFollowupQuestions">Use predefined follow-up questions</option>
+                                            <option value="conditional" data-i18n="askBasedOnUserResponse">Ask follow-ups based on user's response</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <!-- Adaptive follow-ups -->
+                                    <div id="adaptive-followup-settings" class="conditional-settings">
+                                        <div class="form-group">
+                                            <label for="adaptive-followup-prompt" data-i18n="llmPromptForFollowupQuestion">LLM prompt for follow-up questions</label>
+                                            <textarea id="adaptive-followup-prompt" rows="2" placeholder="Example: Ask follow-up questions to clarify ambiguous points or gather missing details." data-i18n-placeholder="llmPromptExampleFollowupQuestion"></textarea>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Fixed follow-ups -->
+                                    <div id="fixed-followup-settings" class="conditional-settings">
+                                        <div class="form-group">
+                                            <label data-i18n="predefinedFollowupQuestions">Predefined follow-up questions</label>
+                                            <div class="repeatable-fields" id="fixed-followups">
+                                                <div class="repeatable-item">
+                                                    <input type="text" class="followup-question" placeholder="Follow-up question" data-i18n="followupQuestion">
+                                                    <button type="button"class="remove-item remove-button">
+                                                        <i class="fa-solid fa-times"></i>
+                                                        <span data-i18n="removeFollowupQuestion">Remove follow-up question</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <button type="button" id="add-followup" class="add-button">
+                                                <i class="fa-solid fa-plus"></i>
+                                                <span data-i18n="addFollowupQuestion">Add Follow-up Question</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Conditional follow-ups -->
+                                    <div id="conditional-followup-settings" class="conditional-settings">
+                                        <div class="form-group">
+                                            <label data-i18n="conditionBasedFollowupQuestions">Condition-based follow-up questions</label>
+                                            <div class="repeatable-fields" id="conditional-followups">
+                                                <div class="repeatable-item conditional-followup">
+                                                    <div class="condition-input">
+                                                        <label data-i18n="ifUsersResponse">If user's response:</label>
+                                                        <input type="text" class="condition" placeholder="Example: doesn't mention budget" data-i18n-placeholder="ifUsersResponseConditionExample">
+                                                    </div>
+                                                    <div class="response-input">
+                                                        <label data-i18n="askThisFollowup">Ask this follow-up:</label>
+                                                        <input type="text" class="followup" placeholder="Follow-up question" data-i18n-placeholder="ifUsersResponseFollowupQuestion">
+                                                    </div>
+                                                    <button type="button"class="remove-item remove-button">
+                                                        <i class="fa-solid fa-times"></i>
+                                                        <span data-i18n="removeConditionalFollowup">Remove Conditional Follow-up</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <button type="button" id="add-conditional-followup" class="add-button">
+                                                <i class="fa-solid fa-plus"></i>
+                                                <span data-i18n="addConditionalFollowup">Add Conditional Follow-up</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Context Management -->
+                    <div class="row">
+                        <div class="accordion-panel">
+                            <div class="accordion-header">
+                                <h4 data-i18n="contextManagement">Context Management</h4>
+                                <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <!-- First option: Context Import -->
+                                <div class="row">
+                                    <div class="checkbox-group">
+                                        <input type="checkbox" id="use-imported-context" aria-label="Use information from previous steps">
+                                        <label for="use-imported-context" data-i18n="useInformationFromPreviousSteps">Use information from previous steps</label>
+                                    </div>
+                                </div>
+                                
+                                <!-- Then, Context Export only if "Use information" is checked -->
+                                <div id="export-strategy-container" class="conditional-panel">
+                                    <div class="form-group">
+                                        <label for="export-strategy" data-i18n="informationToCarryForward">Information to carry forward to next step</label>
+                                        <select id="export-strategy" aria-label="Export strategy">
+                                            <option value="summarize" data-i18n="summarizeKeyPoints">Summary of key points</option>
+                                            <option value="last-exchange" data-i18n="lastExchange">Just the last exchange</option>
+                                            <option value="full" data-i18n="completeConversationHistory">Complete conversation history</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <!-- Summarization prompt - Only visible when "Summary of key points" is selected -->
+                                    <div id="summarize-settings" class="conditional-settings">
+                                        <div class="form-group">
+                                            <label for="export-prompt" data-i18n="llmPromptSummarizeStep">LLM prompt to summarize this step</label>
+                                            <textarea id="export-prompt" rows="2" placeholder="Example: Summarize the key decisions and requirements identified in this step." data-i18n-placeholder="llmPromptExampleSummarizeStep"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="navigation-buttons">
+                <button id="cancel-step-btn" class="secondary-button" aria-label="Cancel" data-i18n-aria-label="cancel">
+                    <i class="fa-solid fa-times"></i>
+                    <span class="spinner spinner-s hide"></span>
+                    <span data-i18n="cancel">Cancel</span>
+                </button>
+                <button id="save-step-btn" class="primary-button" aria-label="Save Step" data-i18n-aria-label="saveStep">
+                    <i class="fa-solid fa-floppy-disk"></i>
+                    <span class="spinner spinner-s hide"></span>
+                    <span data-i18n="save">Save</span>
+                </button>
+            </div>
+        </div>
+
+        <div id="preview-page" class="hide">
+            <div class="page-wrapper">
+                <div class="section">
+                    <div id="preview-content" class="preview-container">
+                        <!-- Preview content will be generated here -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="navigation-buttons">
+                <button id="back-from-preview-btn" class="secondary-button" aria-label="Back" data-i18n-aria-label="back">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <span class="spinner spinner-s hide"></span>
+                    <span data-i18n="back">Back</span>
+                </button>
+                <button id="finish-wizard-btn" class="primary-button" aria-label="Finish" data-i18n-aria-label="finish">
+                    <span data-i18n="finish">Finish</span>
+                    <i class="fa-solid fa-check"></i>
+                    <span class="spinner spinner-s hide"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

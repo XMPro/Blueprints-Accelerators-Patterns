@@ -1,10 +1,10 @@
 ---
 layout: home
 permalink: "/"
-title: "XMPro's <strong>AI, Blueprints, Accelerators & Patterns</strong>"
+title: "XMPro's <strong>AI, Metablocks, Blueprints, Accelerators & Patterns</strong>"
 description: ""
-meta_description: "AI, Blueprints, Accelerators & Patterns repository"
-meta_title: XMPro AI, Blueprints, Accelerators & Patterns
+meta_description: "AI, Metablocks, Blueprints, Accelerators & Patterns repository"
+meta_title: XMPro AI, Metablocks, Blueprints, Accelerators & Patterns
 subscribe: false
 
 ai:
@@ -14,6 +14,15 @@ ai:
   sort: date # date | weight
   view_more_button_text: "View More AI Examples"
   view_more_button_link: "/ai"
+  columns: 4 # 1 | 2 | 3 | 4
+
+metablocks:
+  heading: "Recent Metablocks" # "Projects"
+  sub_heading: "A collection of our recent Metablocks" # "A collection of our recent work"
+  limit: 4
+  sort: date # date | weight
+  view_more_button_text: "View More Metablock Examples"
+  view_more_button_link: "/metablocks"
   columns: 4 # 1 | 2 | 3 | 4
 
 blueprints:

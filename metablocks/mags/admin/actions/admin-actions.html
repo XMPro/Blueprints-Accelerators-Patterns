@@ -1,0 +1,516 @@
+<script src="./AppFiles/neo4j-web.min.js"></script>
+
+<div class="container" role="main">
+    <div class="three-column-layout">
+        <div class="action-list" role="region" aria-label="Action List">
+            <div class="action-list-header">
+                <h2 data-i18n="actions">Actions</h2>
+            </div>
+            
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <label for="actionSearch" class="sr-only" data-i18n="searchActions">Search actions</label>
+                    <input type="text" id="actionSearch" placeholder="Search actions" data-i18n-placeholder="searchActions" aria-label="Search actions" data-i18n-aria-label="searchActions">
+                    <button type="button" id="clearSearch" class="clear-search" aria-label="Clear search" data-i18n-aria-label="clearSearch">
+                        <i class="fa-solid fa-times"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="action-list-controls">
+                <div class="filter-wrapper">
+                    <svg class="filter-icon" width="20px" height="20px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <title>bars-filter</title>
+                        <path d="M30 6.749h-28c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h28c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0zM24 14.75h-16c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h16c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0zM19 22.75h-6.053c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h6.053c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0z"></path>
+                    </svg>
+                    <div class="filter-group">
+                        <button class="filter-dropdown-button" id="statusFilterButton">
+                            <span data-i18n="status">Status</span> (1)
+                        </button>
+                        <div class="filter-dropdown" id="statusDropdown">
+                            <div class="filter-dropdown-content">
+                                <div class="filter-item">
+                                    <label>
+                                        <input type="checkbox" value="Active" checked>
+                                        <span data-i18n="active">Active</span>
+                                    </label>
+                                </div>
+                                <div class="filter-item">
+                                    <label>
+                                        <input type="checkbox" value="Inactive">
+                                        <span data-i18n="inactive">Inactive</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <button class="filter-dropdown-button" id="categoryFilterButton">
+                            <span data-i18n="category">Category</span> (1)
+                        </button>
+                        <div class="filter-dropdown" id="categoryDropdown">
+                            <div class="filter-dropdown-content">
+                                <!-- Categories will be populated dynamically -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="selection-controls">
+                    <label class="mark-all-container">
+                        <input type="checkbox" id="markAllActions" aria-label="Mark all actions" data-i18n-aria-label="markAll">
+                        <span class="mark-all-text" data-i18n="markAll">Mark all</span>
+                    </label>
+                </div>
+            </div>
+            
+
+            <div id="actionList" aria-label="List of actions"></div>
+        </div>
+
+        <!-- Action Editor -->
+        <div class="action-editor" role="region" aria-label="Action Editor">
+            <div class="action-actions">
+                <div class="left-actions">
+                    <button type="button" id="new_action" class="primary-button" aria-label="New Action" data-i18n-aria-label="newAction">
+                        <i class="fa-solid fa-plus"></i>
+                        <span data-i18n="newAction">New Action</span>
+                    </button>
+                    <button type="submit" id="save_action" class="primary-button" aria-label="Save Action" data-i18n-aria-label="saveAction">
+                        <i class="fa-regular fa-floppy-disk icon-xl"></i>
+                        <span class="spinner spinner-s hide"></span>
+                        <span data-i18n="saveAction">Save Action</span>
+                    </button>
+                    <button type="button" id="cancel_action" class="primary-button" aria-label="Cancel" data-i18n-aria-label="cancel">
+                        <i class="fa-solid fa-times"></i>
+                        <span data-i18n="cancel">Cancel</span>
+                    </button>
+                </div>
+                
+                <div class="format-info">
+                    <small>
+                        <span data-i18n="format">Format</span>: 
+                        <span data-i18n="formatValue">AREA-FUNCTION-ACTION-VERSION</span> 
+                        (e.g., WTR-QUAL-ACTION-001) - 
+                        <a href="https://github.com/XMPro/Multi-Agent/blob/main/docs/naming-conventions/Id.md" 
+                            target="_blank" 
+                            rel="noopener noreferrer">
+                            <span data-i18n="viewNamingConvention">View Naming Conventions</span>
+                        </a>
+                    </small>
+                </div>
+
+                <div class="right-actions">
+                    <button type="button" id="clone_action" class="icon-button" title="Clone action" data-i18n-title="cloneAction" aria-label="Clone action" data-i18n-aria-label="cloneAction">
+                        <i class="fa-regular fa-copy icon-xl"></i>
+                        <span class="spinner spinner-s hide"></span>
+                    </button>
+                    <button type="button" id="import_action" class="icon-button" title="Import action" data-i18n-title="importAction" aria-label="Import action" data-i18n-aria-label="importAction">
+                        <i class="fa-solid fa-upload icon-xl"></i>
+                        <span class="spinner spinner-s hide"></span>
+                    </button>
+                    <button type="button" id="export_action" class="icon-button" title="Export action" data-i18n-title="exportAction" aria-label="Export action" data-i18n-aria-label="exportAction">
+                        <i class="fa-solid fa-download icon-xl"></i>
+                        <span class="spinner spinner-s hide"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tab navigation -->
+            <div class="tab-buttons">
+                <button class="tab-button active" data-tab="basic-info">
+                    <span data-i18n="basicInfo">Basic Info</span>
+                </button>
+                <button class="tab-button" data-tab="parameters">
+                    <span data-i18n="parameters">Parameters</span>
+                </button>
+                <button class="tab-button" data-tab="requirements">
+                    <span data-i18n="requirements">Requirements</span>
+                </button>
+                <button class="tab-button" data-tab="impact">
+                    <span data-i18n="impactIntegration">Impact & Integration</span>
+                </button>
+            </div>
+
+            <form id="actionForm" aria-label="Action Edit Form">
+                <!-- Basic Info Tab - Exact match to original structure -->
+                <div id="basic-info" class="tab-panel active">
+                    <div class="section" id="actionIdSection">
+                        <div class="row center-align">
+                            <div class="input-group">
+                                <label for="area" data-i18n="area">Area</label>
+                                <input type="text" id="area" name="area" maxlength="8" placeholder="e.g., PROD">
+                            </div>
+                            <div class="input-group">
+                                <label for="function" data-i18n="function">Function</label>
+                                <input type="text" id="function" name="function" maxlength="8" placeholder="e.g., QUERY">
+                            </div>
+                            <div class="input-group">
+                                <label for="version" data-i18n="version">Version</label>
+                                <input type="text" id="version" name="version" maxlength="3" placeholder="e.g., 001">
+                            </div>
+                            <button type="button" id="generateActionId" class="primary-button">
+                                <i class="fa-solid fa-bolt"></i>
+                                <span class="spinner spinner-s hide"></span>
+                                <span data-i18n="generateId">Generate ID</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <div class="row center-align">
+                            <div class="input-group">
+                                <label for="id" data-i18n="id">ID</label>
+                                <input type="text" id="id" name="id" readonly required aria-required>
+                            </div>
+                            <div class="input-group">
+                                <label for="name" data-i18n="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="checkbox-wrapper">
+                                <input type="checkbox" id="active" name="active">
+                                <label for="active" data-i18n="active">Active</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3 class="section-header" data-i18n="description">Description</h3>
+                        <div class="input-group">
+                            <textarea id="description" name="description"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="row center-align">
+                            <div class="input-group">
+                                <label for="should_return" data-i18n="shouldReturn">Should Return</label>
+                                <select id="should_return" name="should_return">
+                                    <option value="true" data-i18n="true">True</option>
+                                    <option value="false" data-i18n="false">False</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Parameters Tab -->
+                <div id="parameters" class="tab-panel">
+                    <div class="section">
+                        <div class="section-header-container">
+                            <h3 class="section-header" data-i18n="parameters">Parameters</h3>
+                        </div>
+                        <div class="section-content-container" id="parameters-container">
+                            <!-- Parameters will be populated dynamically -->
+                        </div>
+                        <button type="button" id="add-parameter" class="add-button">
+                            <i class="fa-solid fa-plus"></i>
+                            <span data-i18n="addParameter">Add Parameter</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Requirements Tab -->
+                <div id="requirements" class="tab-panel">
+                    <div class="section">
+                        <div class="section-header-container">
+                            <h3 class="section-header" data-i18n="operationRequirements">Operation Requirements</h3>
+                        </div>
+                        <div class="section-content-container" id="operation-requirements-container">
+                            <!-- Operation requirements will be populated dynamically -->
+                        </div>
+                        <button type="button" id="add-operation-requirement" class="add-button">
+                            <i class="fa-solid fa-plus"></i>
+                            <span data-i18n="addOperationRequirement">Add Operation Requirement</span>
+                        </button>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-header-container">
+                            <h3 class="section-header" data-i18n="prerequisites">Prerequisites</h3>
+                        </div>
+                        <div class="section-content-container" id="prerequisites-container">
+                            <!-- Prerequisites will be populated dynamically -->
+                        </div>
+                        <button type="button" id="add-prerequisite" class="add-button">
+                            <i class="fa-solid fa-plus"></i>
+                            <span data-i18n="addPrerequisite">Add Prerequisite</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Impact & Integration Tab -->
+                <div id="impact" class="tab-panel">
+                    <div class="section">
+                        <div class="section-header-container">
+                            <h3 class="section-header" data-i18n="impactMeasures">Impact Measures</h3>
+                        </div>
+                        <div class="section-content-container" id="impact-measures-container">
+                            <!-- Impact measures will be populated dynamically -->
+                        </div>
+                        <button type="button" id="add-impact-measure" class="add-button">
+                            <i class="fa-solid fa-plus"></i>
+                            <span data-i18n="addImpactMeasure">Add Impact Measure</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Metadata Panel - Separate from action-editor as in original -->
+        <div class="metadata-panel" role="complementary" aria-label="Metadata">
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="author" data-i18n="author">Author</label>
+                    <input type="text" id="author" name="author" readonly>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="category" data-i18n="category">Category</label>
+                    <input type="text" id="category" name="category">
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="created_date" data-i18n="created">Created</label>
+                    <div id="created_date" class="date-label"></div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="last_modified_date" data-i18n="lastModified">Last Modified</label>
+                    <div id="last_modified_date" class="date-label"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<template id="parameter-template">
+    <div class="parameter-item">
+        <div class="instance-header">
+            <input type="text" class="parameter-name" placeholder="Name" data-i18n-placeholder="name">
+            <button type="button" class="icon-button toggle-details-btn" title="Toggle details" data-i18n-title="toggleDetails">
+                <i class="fa-solid fa-chevron-down toggle-icon icon-l"></i>
+            </button>
+        </div>
+        <div class="instance-content parameter-details hide">
+            <div class="row center-align">
+                <div class="input-group">
+                    <label data-i18n="type">Type</label>
+                    <select class="parameter-type">
+                        <option value="string" data-i18n="string">string</option>
+                        <option value="number" data-i18n="number">number</option>
+                        <option value="object" data-i18n="object">object</option>
+                    </select>
+                </div>
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" class="parameter-required">
+                    <label data-i18n="required">Required</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <label data-i18n="description">Description</label>
+                    <textarea class="parameter-description" placeholder="Parameter description" data-i18n-placeholder="parameterDescription"></textarea>
+                </div>
+            </div>
+            <div class="row required-for-operations-container">
+                <div class="input-group">
+                    <label data-i18n="requiredForOperations">Required For Operations</label>
+                    <div class="tag-input required-for-operations">
+                        <input type="text" placeholder="Add" data-i18n-placeholder="add">
+                    </div>
+                </div>
+            </div>
+            <div class="row default-value-container">
+                <div class="input-group">
+                    <label data-i18n="defaultValue">Default Value</label>
+                    <input type="text" class="parameter-default" placeholder="Default value" data-i18n-placeholder="defaultValue">
+                </div>
+            </div>
+            <div class="row allowed-values-container hide">
+                <div class="input-group">
+                    <label data-i18n="allowedValues">Allowed Values</label>
+                    <div class="tag-input allowed-values">
+                        <input type="text" placeholder="Add" data-i18n-placeholder="add">
+                    </div>
+                </div>
+            </div>
+            <div class="row validation-container hide">
+                <div class="input-group">
+                    <label data-i18n="validation">Validation</label>
+                    <div class="validation-rules">
+                        <div class="input-group validation-rule">
+                            <label data-i18n="minValue">Min Value</label>
+                            <input type="number" class="validation-min" placeholder="Minimum value" data-i18n-placeholder="minValue">
+                        </div>
+                        <div class="input-group validation-rule">
+                            <label data-i18n="maxValue">Max Value</label>
+                            <input type="number" class="validation-max" placeholder="Maximum value" data-i18n-placeholder="maxValue">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button type="button" class="remove-button remove-param-btn" title="Remove Parameter" data-i18n-title="removeParameter">
+                    <i class="fa-regular fa-trash-can"></i>
+                    <span data-i18n="removeParameter">Remove Parameter</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template id="operation-requirement-template">
+    <div class="operation-requirement-item">
+        <div class="instance-header">
+            <input type="text" class="operation-name" placeholder="Operation name" data-i18n-placeholder="operationName">
+            <button type="button" class="icon-button toggle-details-btn" title="Toggle details" data-i18n-title="toggleDetails">
+                <i class="fa-solid fa-chevron-down toggle-icon icon-l"></i>
+            </button>
+        </div>
+        <div class="instance-content operation-details hide">
+            <div class="row">
+                <div class="input-group">
+                    <label data-i18n="requiredParameters">Required Parameters</label>
+                    <div class="tag-input required-parameters">
+                        <input type="text" placeholder="Add" data-i18n-placeholder="add">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button type="button" class="remove-button remove-operation-req-btn" title="Remove Operation Requirement" data-i18n-title="removeOperationRequirement">
+                    <i class="fa-regular fa-trash-can"></i>
+                    <span data-i18n="removeOperationRequirement">Remove Operation Requirement</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</template>
+
+
+<template id="impact-measure-template">
+    <div class="impact-measure-item">
+        <div class="row center-align">
+            <select class="measure-id" data-i18n-placeholder="measureIdentifier">
+                <option value="" disabled selected data-i18n="selectMeasure">Select a measure</option>
+                <!-- Measure options will be populated dynamically -->
+            </select>
+            <select class="impact-type">
+                <option value="INCREASE" data-i18n="increase">Increase</option>
+                <option value="DECREASE" data-i18n="decrease">Decrease</option>
+                <option value="MAINTAIN" data-i18n="maintain">Maintain</option>
+            </select>
+            <button type="button" class="icon-button remove-impact-btn" title="Remove Impact Measure" data-i18n-title="removeImpactMeasure">
+                <i class="fa-regular fa-trash-can"></i>
+            </button>
+        </div>
+    </div>
+</template>
+
+<template id="prerequisite-template">
+    <div class="prerequisite-item">
+        <div class="row">
+            <div class="input-group">
+                <label data-i18n="condition">Condition</label>
+                <input type="text" class="prerequisite-condition" placeholder="Condition expression" data-i18n-placeholder="conditionExpression">
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-group">
+                <label data-i18n="description">Description</label>
+                <textarea class="prerequisite-description" placeholder="Description" data-i18n-placeholder="description"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <button type="button" class="remove-button remove-prerequisite-btn" title="Remove Prerequisite" data-i18n-title="removePrerequisite">
+                <i class="fa-solid fa-trash-can"></i>
+                <span data-i18n="removePrerequisite">Remove Prerequisite</span>
+            </button>
+        </div>
+    </div>
+</template>
+
+<!-- Existing Actions Dialog -->
+<div id="existing-actions-dialog" class="modal-overlay" style="display: none;">
+    <div class="modal-content existing-actions-modal">
+        <div class="modal-header">
+            <h3 data-i18n="existingActionsDetected">Existing Actions Detected</h3>
+            <button class="modal-close" aria-label="Close">×</button>
+        </div>
+        
+        <div class="modal-body">
+            <div class="existing-actions-content">
+                <div class="content-header">
+                    <p data-i18n="existingActionsDetected">The following actions already exist in the database. Please choose how to handle each one:</p>
+                    <div class="bulk-actions">
+                        <button class="set-all-overwrite primary-button" data-i18n="setAllOverwrite">Set All to Overwrite</button>
+                        <button class="set-all-keep primary-button" data-i18n="setAllKeep">Set All to Keep Current</button>
+                    </div>
+                </div>
+                
+                <div class="existing-actions-table-container">
+                    <table class="existing-actions-table">
+                        <thead>
+                            <tr>
+                                <th class="action-name-column" data-i18n="actionName">Action Name</th>
+                                <th class="action-id-column" data-i18n="actionId">Action ID</th>
+                                <th class="conflict-column" data-i18n="conflict">Conflict</th>
+                                <th class="actions-column" data-i18n="action">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="existing-actions-tbody">
+                            <!-- Rows will be populated dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="overwrite-warning" style="display: none;">
+                    <strong>⚠️ <span data-i18n="overwriteWarning">Warning: Overwriting existing actions is irreversible.</span></strong>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal-footer">
+            <button class="cancel-import secondary-button" data-i18n="cancel">Cancel</button>
+            <button class="proceed-import primary-button" data-i18n="proceed">Proceed with Import</button>
+        </div>
+    </div>
+</div>
+
+<!-- Action Row Template -->
+<template id="existing-action-row-template">
+    <tr class="existing-action-row">
+        <td class="action-name action-name-column"></td>
+        <td class="action-id action-id-column"></td>
+        <td class="conflict-types conflict-column"></td>
+        <td class="action-dropdown-cell">
+            <div class="custom-dropdown">
+                <div class="dropdown-selected" data-value="overwriteWithImported">
+                    <span class="selected-text" data-i18n="overwriteWithImported">Overwrite with imported version</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-options">
+                    <label class="dropdown-option">
+                        <input type="radio" name="action-choice" value="keepCurrentVersion">
+                        <span data-i18n="keepCurrentVersion">Keep current version</span>
+                    </label>
+                    <label class="dropdown-option">
+                        <input type="radio" name="action-choice" value="overwriteWithImported" checked>
+                        <span data-i18n="overwriteWithImported">Overwrite with imported version</span>
+                    </label>
+                    <label class="dropdown-option">
+                        <input type="radio" name="action-choice" value="createNewAction">
+                        <span data-i18n="createNewAction">Create new action</span>
+                    </label>
+                </div>
+            </div>
+        </td>
+    </tr>
+</template>

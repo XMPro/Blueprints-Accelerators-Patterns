@@ -1,0 +1,298 @@
+<script src="./AppFiles/neo4j-web.min.js"></script>
+
+<div class="spinner-container page" id="pageSpinner">
+    <div id="spinner" class="spinner page"></div>
+</div>
+
+<div class="container hide" id="container" role="main">
+    <div class="three-column-layout">
+        <div class="team-list" role="region" aria-label="Team List">
+            <div class="team-list-header">
+                <h2 data-i18n="teams">Teams</h2>
+            </div>
+            
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <label for="teamSearch" class="sr-only" data-i18n="searchTeams">Search teams</label>
+                    <input type="text" id="teamSearch" placeholder="Search teams" data-i18n-placeholder="searchTeams" aria-label="Search teams" data-i18n-aria-label="searchTeams">
+                    <button type="button" id="clearSearch" class="clear-search" aria-label="Clear search" data-i18n-aria-label="clearSearch">
+						<i class="fa-solid fa-times"></i>
+					</button>
+                </div>
+            </div>
+
+            <div class="team-list-controls">
+                <div class="filter-wrapper">
+                    <svg class="filter-icon" width="20px" height="20px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <title>bars-filter</title>
+                        <path d="M30 6.749h-28c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h28c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0zM24 14.75h-16c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h16c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0zM19 22.75h-6.053c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h6.053c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0z"></path>
+                    </svg>
+                    <div class="filter-group">
+                        <button class="filter-dropdown-button" id="categoryFilterButton">
+                            <span data-i18n="category">Category</span>
+                        </button>
+                        <div class="filter-dropdown" id="categoryDropdown">
+                            <div class="filter-dropdown-content">
+                                <!-- Categories will be populated dynamically -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <button class="filter-dropdown-button" id="statusFilterButton">
+                            <span data-i18n="status">Status</span>
+                        </button>
+                        <div class="filter-dropdown" id="statusDropdown">
+                            <div class="filter-dropdown-content">
+                                <div class="filter-item">
+                                    <label>
+                                        <input type="checkbox" value="Active" checked>
+                                        <span data-i18n="active">Active</span>
+                                    </label>
+                                </div>
+                                <div class="filter-item">
+                                    <label>
+                                        <input type="checkbox" value="Inactive">
+                                        <span data-i18n="inactive">Inactive</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="teamList" aria-label="List of teams"></div>
+        </div>
+
+        <div class="team-editor" role="region" aria-label="Team Editor">
+            <div class="team-actions">
+                <div class="left-actions">
+                    <button type="button" class="primary-button" id="new_team" aria-label="New Team" data-i18n-aria-label="newTeam">
+                        <i class="fa-solid fa-plus"></i>
+                        <span data-i18n="newTeam">New Team</span>
+                    </button>
+                    <button type="submit" id="save_team" class="primary-button" data-i18n-title="saveTeam" aria-label="Save team" data-i18n-aria-label="saveTeam">
+                        <i class="fa-regular fa-floppy-disk icon-xl"></i>
+                        <span class="spinner spinner-s hide"></span>
+                        <span data-i18n="saveTeam">Save Team</span>
+                    </button>
+                    <button type="button" id="cancel_team" class="primary-button">
+                        <i class="fa-solid fa-times"></i>
+                        <span class="spinner spinner-s hide"></span>
+                        <span data-i18n="cancel">Cancel</span>
+                    </button>
+                </div>
+
+                <div class="format-info">
+                    <small>
+                        <span data-i18n="format">Format</span>: <span data-i18n="formatValue">SITE-AREA-FUNCTION-TEAM-VERSION</span> (e.g., DALLAS-PROD-OPS-TEAM-001) - 
+                        <a href="https://github.com/XMPro/Multi-Agent/blob/main/docs/naming-conventions/Id.md" target="_blank" rel="noopener noreferrer"><span data-i18n="viewNamingConvention">View Naming Conventions</span></a>
+                    </small>
+                </div>
+
+                <div class="right-actions">
+                    <button type="button" class="icon-button" id="clone_team" title="Clone team" data-i18n-title="cloneTeam" aria-label="Clone Team" data-i18n-aria-label="cloneTeam"> 
+                        <i class="fa-regular fa-copy icon-xl"></i>
+                        <span class="spinner spinner-s hide"></span>
+                    </button>
+                    <button type="button" id="import_team" aria-label="Import Team" class="icon-button" title="Import team" data-i18n-title="importTeam" data-i18n-aria-label="importTeam">
+                        <i class="fa-solid fa-upload icon-xl"></i>
+                        <span class="spinner spinner-s hide"></span>
+                    </button>
+                    <button type="button" id="export_team" aria-label="Export Team" class="icon-button" title="Export team" data-i18n-title="exportTeam" data-i18n-aria-label="exportTeam">
+                        <i class="fa-solid fa-download icon-xl"></i>
+                        <span class="spinner spinner-s hide"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="tab-container">
+                <div class="tab-buttons">
+                    <button type="button" class="tab-button active" data-tab="details"><span data-i18n="details">Details</span></button>
+                    <button type="button" class="tab-button" data-tab="agents"><span data-i18n="agentInstances">Agent Instances</span></button>
+                </div>
+
+                <div class="tab-content">
+                    <div id="details" class="tab-panel active">
+                        <form id="teamForm" aria-label="Team Edit Form">
+							<div class="section" id="teamIdSection">
+								<div class="row">
+                                    <div class="input-group">
+                                        <label for="site" data-i18n="site">Site</label>
+                                        <input type="text" id="site" name="site" aria-label="site" name="site" data-i18n-aria-label="site" placeholder="e.g., DALLAS">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="area" data-i18n="area">Area</label>
+                                        <input type="text" id="area" aria-label="area" data-i18n-aria-label="area" name="area" placeholder="e.g., PROD">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="function" data-i18n="function">Function</label>
+                                        <input type="text" id="function" aria-label="function" data-i18n-aria-label="function" name="function" placeholder="e.g., QUAL">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="version" data-i18n="version">Version</label>
+                                        <input type="number" id="version" aria-label="version" data-i18n-aria-label="version" name="version" min="1" max="999" value="1">
+                                    </div>
+									<button id="generateTeamId" type="button" class="primary-button">
+										<i class="fa-solid fa-arrows-rotate icon-l"></i>
+                                        <span class="spinner spinner-s hide"></span>
+										<span data-i18n="generate">Generate</span>
+									</button>  
+                                </div>
+							</div>
+
+                            <div class="section">
+                                <div class="row">
+                                    <div class="input-group">
+                                        <label for="team_id" data-i18n="teamId">Team ID</label>
+                                        <input type="text" id="team_id" name="team_id" required aria-required readonly>
+                                    </div>
+
+                                    <div class="input-group location-group">
+                                        <label for="location_id" data-i18n="location">Location</label>
+                                        <div class="location-wrapper">
+                                            <select id="location_id" name="location_id" aria-label="location" data-i18n-aria-label="location">
+                                                <option value="" selected data-i18n="selectLocation">Select Location</option>
+                                                <!-- Options will be populated dynamically -->
+                                            </select>
+                                            <button type="button" id="addLocationBtn" class="icon-button" title="Add Location" data-i18n-title="addLocation" aria-label="Add Location" data-i18n-aria-label="addLocation">
+                                                <i class="fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row center-align">
+                                    <div class="input-group">
+                                        <label for="name" data-i18n="name">Name</label>
+                                        <input type="text" id="name" name="name" required aria-required>
+                                    </div>
+                                    <div class="checkbox-wrapper">
+                                        <input type="checkbox" id="active" name="active">
+                                        <label for="active" data-i18n="active">Active</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section">
+                                <h3 class="section-header" data-i18n="description">Description</h3>
+                                <div class="input-group">
+                                    <textarea id="description" name="description" required aria-required></textarea>
+                                </div>
+                            </div>
+
+                            <div class="section">
+                                <div class="input-group">
+                                    <label for="allowed_consensus" data-i18n="allowedConsensus">Allowed Consensus</label>
+                                    <select id="allowed_consensus" name="allowed_consensus" aria-label="allowed consensus" data-i18n-aria-label="allowedConsensus">
+                                        <option value="" selected data-i18n="selectAllowedConsensus">Select Allowed Consensus</option>
+                                        <!-- Options will be populated dynamically -->
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="section">
+                                <h3 class="section-header" data-i18n="complianceRequirements">Compliance Requirements</h3>
+                                <div class="input-group">
+									<div id="compliance_requirements" class="tag-input">
+										<!-- Tags will be dynamically added -->
+										<input type="text" placeholder="Add" data-i18n-placeholder="add" aria-label="Add new requirement" data-i18n-aria-label="addNewRequirement">
+									</div>
+								</div>
+                            </div>
+                            
+                            <div class="section">
+                                <h3 class="section-header" data-i18n="objectives">Objectives</h3>
+                                <div class="input-group">
+									<div id="objectives" class="tag-input">
+										<!-- Tags will be dynamically added -->
+										<input type="text" placeholder="Add" data-i18n-placeholder="add" aria-label="Add new objective" data-i18n-aria-label="addNewObjective">
+									</div>
+								</div>
+                            </div>
+
+                            <div class="section">
+                                <h3 class="section-header" data-i18n="operatingPrinciples">Operating Principles</h3>
+                                <div class="input-group">
+									<div id="operating_principles" class="tag-input">
+										<!-- Tags will be dynamically added -->
+										<input type="text" placeholder="Add" data-i18n-placeholder="add" aria-label="Add new operating principle" data-i18n-aria-label="addNewOperatingPrinciple">
+									</div>
+								</div>
+                            </div>
+
+                            <div class="section">
+                                <h3 class="section-header" data-i18n="objectiveFunction">Objective Function</h3>
+                                <div id="objectiveFunctionContainer">
+                                    <!-- Will be populated dynamically -->
+                                </div>
+                                <button type="button" id="addObjectiveFunction" class="add-button">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <span data-i18n="addObjectiveFunction">Add Objective Function</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="agents" class="tab-panel">
+                        <div class="section">
+                            <h3 class="section-header" data-i18n="agentInstances">Agent Instances</h3>
+                            
+                            <div id="agentInstancesList" class="agent-instances-list">
+                                <!-- Agent instances will be dynamically populated -->
+                            </div>
+							<button type="button" id="addAgentInstance" class="add-button add-agent-button">
+								<i class="fa-solid fa-plus"></i>
+								<span data-i18n="addAgent">Add Agent</span>
+							</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="metadata-panel" role="complementary" aria-label="Metadata" data-i18n-aria-label="metadata">
+            
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="author" data-i18n="author">Author</label>
+                    <input type="text" id="author" name="author" readonly>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="category" data-i18n="category">Category</label>
+                    <input type="text" id="category" name="category">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+					<label for="tags" data-i18n="tags">Tags</label>
+					<div id="tags" class="tag-input" role="list">
+						<!-- Tags will be dynamically added here -->
+						<input type="text" placeholder="Add" data-i18n-placeholder="add" aria-label="Add new tag" data-i18n-aria-label="addNewTag">
+					</div>
+				</div>
+            </div>
+
+            <hr/>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="created_date" data-i18n="created">Created</label>
+                    <div id="created_date" class="date-label"></div>
+                </div>
+            </div>
+
+			<div class="form-row">
+                <div class="input-group">
+					<label for="last_modified_date" data-i18n="lastModified">Last Modified</label>
+                    <div id="last_modified_date" class="date-label"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

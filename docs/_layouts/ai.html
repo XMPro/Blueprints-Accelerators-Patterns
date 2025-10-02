@@ -18,7 +18,7 @@ body_classes: page-projects
 
 {% assign groups = site.ai | group_by: 'date' | sort: 'date' %}
 {% assign limit = page.ai.limit | default: 999 %}
-{% assign columns =  page.aai.columns | default: 3 %}
+{% assign columns =  page.ai.columns | default: 3 %}
 {% capture columns %}col-lg-{{ 12 | divided_by:columns }}{% endcapture %}
 
 <div class="section pt-0">

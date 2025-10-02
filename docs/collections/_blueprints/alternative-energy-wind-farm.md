@@ -29,9 +29,9 @@ side_gallery:
   - image: "/assets/images/blueprints/alternative-energy-wind-farm/ad02.png"
     caption: "<strong>Above:</strong> Application View 02b"
   - image: "/assets/images/blueprints/alternative-energy-wind-farm/ds01.png"
-    caption: "<strong>Above:</strong> Published Data Stream - Flood Prediction"
+    caption: "<strong>Above:</strong> Published Data Stream"
   - image: "/assets/images/blueprints/alternative-energy-wind-farm/ds02.png"
-    caption: "<strong>Above:</strong> Published Data Stream - Overview"
+    caption: "<strong>Above:</strong> Published Data Stream"
   
 
 files:
