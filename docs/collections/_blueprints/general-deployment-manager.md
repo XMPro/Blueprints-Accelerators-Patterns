@@ -7,7 +7,7 @@ extract: "A comprehensive deployment management application enabling export and 
 weight: 1
 thumbnail: "/assets/images/blueprints/general-xmpro-deployment-manager/export-wizard.png"
 image: "/assets/images/blueprints/general-xmpro-deployment-manager/export-wizard.png"
-categories: ["Deployment","DevOps","Git Integration","Environment Management"]
+categories: "Metablock"
 contributor: "XMPro"
 role: "Application"
 import_password: "Dem0nstr@t1on"
@@ -37,12 +37,12 @@ files:
     image: "/assets/images/icons/AD.png"
   - title: "Cross-Database External Tables SQL"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-deployment-manager/SQL/"
-    image: "/assets/images/icons/sql.png"
+    image: "/assets/images/icons/sql.webp"
   - title: "Export Package Creation SQL"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-deployment-manager/SQL/"
-    image: "/assets/images/icons/sql.png"
+    image: "/assets/images/icons/sql.webp"
   - title: "Documentation"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-deployment-manager/docs/"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-deployment-manager/docs/XMPRO_DEPLOYMENT_MANAGER_FAQ.md"
     image: "/assets/images/icons/file-icon.png"
 
 ---
@@ -107,7 +107,7 @@ The deployment manager uses a sophisticated algorithm to group components by the
 
 **Repository Structure:**
 ```
-https://xmpro.visualstudio.com/your_repo_parent/_git/{repository-name}
+https://{your-organization}.visualstudio.com/{your-project}/_git/{repository-name}
 ├── {branch}/
 │   └── {solution}/
 │       ├── {tag-1}/
