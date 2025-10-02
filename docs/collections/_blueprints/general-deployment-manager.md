@@ -42,7 +42,7 @@ files:
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-deployment-manager/SQL/"
     image: "/assets/images/icons/sql.webp"
   - title: "Documentation"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-deployment-manager/docs/"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-deployment-manager/docs/XMPRO_DEPLOYMENT_MANAGER_GUIDE_draft.md"
     image: "/assets/images/icons/file-icon.png"
 
 ---
