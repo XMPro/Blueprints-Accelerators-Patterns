@@ -18,7 +18,7 @@ gallery:
    - image: "/assets/images/blueprints/general-xmpro-deployment-manager/export-wizard.png"
      caption: "<strong>Above:</strong> Export Wizard Interface"
    - image: "/assets/images/blueprints/general-xmpro-deployment-manager/import-manager.png"
-     caption: "<strong>Above:</strong> Import Manager Interface"
+     caption: "<strong>Above:</strong> Import Wizard Interface"
 gallery_limit: 2
 
 # side_gallery:
@@ -36,10 +36,10 @@ files:
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-deployment-manager/application"
     image: "/assets/images/icons/AD.png"
   - title: "Cross-Database External Tables SQL"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-deployment-manager/SQL/"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-deployment-manager/SQL/Create_Synonym_Tables_for_Category_Lookup.sql"
     image: "/assets/images/icons/sql.webp"
   - title: "Export Package Creation SQL"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-deployment-manager/SQL/"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-deployment-manager/SQL/sp_AppExport.sql"
     image: "/assets/images/icons/sql.webp"
   - title: "Documentation"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-deployment-manager/docs/XMPRO_DEPLOYMENT_MANAGER_FAQ.md"
