@@ -18,7 +18,7 @@ gallery:
    - image: "/assets/images/blueprints/general-xmpro-deployment-manager/export-wizard.png"
      caption: "<strong>Above:</strong> Export Wizard Interface"
    - image: "/assets/images/blueprints/general-xmpro-deployment-manager/import-manager.png"
-     caption: "<strong>Above:</strong> Import Manager Interface"
+     caption: "<strong>Above:</strong> Import Wizard Interface"
 gallery_limit: 2
 
 # side_gallery:
