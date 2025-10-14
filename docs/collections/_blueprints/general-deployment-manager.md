@@ -18,7 +18,7 @@ gallery:
    - image: "/assets/images/blueprints/general-xmpro-deployment-manager/export-wizard.png"
      caption: "<strong>Above:</strong> Export Wizard Interface"
    - image: "/assets/images/blueprints/general-xmpro-deployment-manager/import-manager.png"
-     caption: "<strong>Above:</strong> Import Manager Interface"
+     caption: "<strong>Above:</strong> Import Wizard Interface"
 gallery_limit: 2
 
 # side_gallery:
@@ -27,7 +27,7 @@ gallery_limit: 2
 #   - image: "/assets/images/blueprints/xmpro-deployment-manager/package-summary.png"
 #     caption: "<strong>Above:</strong> Package Summary View"
 #   - image: "/assets/images/blueprints/xmpro-deployment-manager/import-manager.png"
-#     caption: "<strong>Above:</strong> Import Manager"
+#     caption: "<strong>Above:</strong> Import Wizard"
 #   - image: "/assets/images/blueprints/xmpro-deployment-manager/dependency-resolution.png"
 #     caption: "<strong>Above:</strong> Dependency Resolution"
 
@@ -36,10 +36,10 @@ files:
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-deployment-manager/application"
     image: "/assets/images/icons/AD.png"
   - title: "Cross-Database External Tables SQL"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-deployment-manager/SQL/"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-deployment-manager/SQL/Create_Synonym_Tables_for_Category_Lookup.sql"
     image: "/assets/images/icons/sql.webp"
   - title: "Export Package Creation SQL"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-deployment-manager/SQL/"
+    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-deployment-manager/SQL/sp_AppExport.sql"
     image: "/assets/images/icons/sql.webp"
   - title: "Documentation"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-deployment-manager/docs/XMPRO_DEPLOYMENT_MANAGER_FAQ.md"
@@ -121,7 +121,7 @@ https://{your-organization}.visualstudio.com/{your-project}/_git/{repository-nam
 
 ### Dependency Resolution Engine
 
-The import manager includes a comprehensive dependency resolution system:
+The import wizard includes a comprehensive dependency resolution system:
 
 <!-- <div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/xmpro-deployment-manager/dependency-resolution-flow.png" %}</div> -->
 
@@ -217,14 +217,14 @@ Navigate to your Git Repository:
 - Identify your specific Pull Request by matching Solution and Base Version Name
 - Select the Pull Request, click Complete, leave the default selections checked, then click Complete Merge
 - Repeat this process for all packages in the solution
-- The exported solution will now be available in the main branch to select in the Import Manager
+- The exported solution will now be available in the main branch to select in the Import Wizard
 
 ### 8. Verify Import Functionality
 
-Test the import manager:
+Test the import Wizard:
 
-- Navigate to the Import Manager page
-- Browse Git repository branches and solution. The defalut branch will be main, but non-merged branches are still selectable
+- Navigate to the Import Wizard page
+- Browse Git repository branches and solution. The default branch will be main, but non-merged branches are still selectable
 - Select the solution for import
 - Resolve any missing dependencies
 - Assign or create categories as required
@@ -272,7 +272,7 @@ Export operations include a configurable database timeout of 1 minute (3600ms) t
 
 ### Custom Category Creation
 
-The import manager supports dynamic category creation:
+The Import Wizard supports dynamic category creation:
 
 ```javascript
 // Category types supported:
@@ -297,7 +297,7 @@ The import manager supports dynamic category creation:
 ```
 Non-Prod Environment → Git Repository → Production Environment
     ↓                        ↓              ↓
-Export Wizard          Package Storage    Import Manager
+Export Wizard          Package Storage    Import Wizard
 Category Grouping      Version Control    Dependency Resolution
 Git Integration        Branch Management  Collection Mapping
 ```
