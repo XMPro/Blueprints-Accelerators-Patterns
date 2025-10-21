@@ -180,7 +180,7 @@ This script creates the stored procedure used by the Export Wizard to format app
 
 ### 3. Configure Server Variables
 
-Ensure the following variables are available for SQL connectivity and Git integration:
+Ensure the following variables are available for SQL connectivity and Git integration. The SQL credentials entered must have access to AD SQL database:
 
 | Variable Name | Description | Type | Example |
 | ------------- | ----------- | ---- | ------- |
@@ -192,7 +192,7 @@ Ensure the following variables are available for SQL connectivity and Git integr
 | **DM Git Password** | Personal Access Token | **Encrypted** | `•••••••••` |
 | **DM Documentation Website** | Documentation Website for agent downloads | Plain Text | `https://xmpro.gitbook.io/integrations/` |
 
-> **Important**: Variable names must match exactly as shown above. The application relies on these specific names for lookups—using different names will cause lookups to fail. If you must use different variable names, you will need to remap them in both the SQL datasources and the metablock value mapping sections.
+> **Important**: Variable names must match exactly as shown above. The application relies on these specific names for lookups—using different names will cause lookups to fail. If you must use different variable names, you will need to remap them in both the SQL datasources and the metablock value mapping sections. DM prefix in the variables is a placeholder to Signify use with Deployment Manager Application.
 
 ### 4. Import the Application Package
 
@@ -209,6 +209,7 @@ Test the export wizard:
 - Verify Git credentials auto-validation
 - Select Import Uploads and Appfiles where appropriate
 - Execute deployment to test Git integration
+  - *Note: In order for an entity to be exportable, it needs to have a category assigned outside of My Sandbox.*
 
 ### 7. Approve Pull Request in Git
 
