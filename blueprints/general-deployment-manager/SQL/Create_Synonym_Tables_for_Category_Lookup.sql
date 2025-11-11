@@ -5,12 +5,12 @@
    - This script does NOT require SQLCMD mode.
    ===================================================================== */
 DECLARE @MASTER_KEY_PWD         nvarchar(128)   = N'ChangeMe-StrongMasterKeyPwd!'; -- Must be created here or, if already created, entered here
-DECLARE @SQL_SERVER             sysname         = N'ChangeMe-SQLServer-Name';
+DECLARE @SQL_SERVER             sysname         = N'ChangeMe-sqldb-xmpro-qav45-ce11cf94.database.windows.net';
 DECLARE @DS_DB                  sysname         = N'DS';
 DECLARE @SM_DB                  sysname         = N'SM';
-DECLARE @DS_CRED_IDENTITY       sysname         = N'ChangeMe-DS-Username'; -- must be SQL credentialed login
+DECLARE @DS_CRED_IDENTITY       sysname         = N'ChangeMe-'; -- must be SQL credentialed login
 DECLARE @DS_CRED_SECRET         nvarchar(4000)  = N'ChangeMe-DS-Password'; -- must be SQL credentialed password
-DECLARE @SM_CRED_IDENTITY       sysname         = N'ChangeMe-SM-Username'; -- must be SQL credentialed login
+DECLARE @SM_CRED_IDENTITY       sysname         = N'ChangeMe-xmadmin'; -- must be SQL credentialed login
 DECLARE @SM_CRED_SECRET         nvarchar(4000)  = N'ChangeMe-SM-Password'; -- must be SQL credentialed password
 
 -- =====================================================================
@@ -174,6 +174,36 @@ END
 ELSE
     PRINT 'External table dbo.EdgeContainer already exists.';
 
+IF NOT EXISTS (
+    SELECT 1 FROM sys.external_tables
+    WHERE name = N'UseCase' AND schema_id = SCHEMA_ID(N'dbo')
+)
+BEGIN
+    EXEC(N'
+        CREATE EXTERNAL TABLE dbo.UseCase (
+            Id bigint,
+            Name nvarchar(512),
+            Notes nvarchar(max),
+            Icon nvarchar(max),
+            Description nvarchar(max),
+            CategoryId uniqueidentifier,
+            DefaultCollectionId uniqueidentifier,
+            UniversalId uniqueidentifier,
+            BufferSize int,
+            Type int,
+            AgentEventQueueCapacity int
+        )
+        WITH (
+            DATA_SOURCE = DS_DataSource,
+            SCHEMA_NAME = ''dbo'',
+            OBJECT_NAME = ''UseCase''
+        );');
+    PRINT 'External table dbo.UseCase created.';
+END
+ELSE
+    PRINT 'External table dbo.UseCase already exists.';
+
 -- Usage: if the uncommented select statements return table data, you have successfully executed the script
 -- SELECT * FROM dbo.category;
 -- SELECT * FROM dbo.EdgeContainer;
+-- SELECT * FROM dbo.UseCase;
