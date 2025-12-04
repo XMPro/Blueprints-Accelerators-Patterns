@@ -3,7 +3,7 @@ layout: project-top
 date: 2025-09-17
 title: "XMPro Deployment Manager"
 description: "<strong>XMPro Deployment Manager</strong>"
-extract: "A comprehensive deployment management application enabling export and import of XMPro solutions across environments via Git repository integration with dependency resolution and automated package optimization. When properly configured, imported solutions require no additional mapping or configuration—only version publishing—provided all dependencies are included per deployment documentation."
+extract: "A comprehensive deployment management application enabling export and import of XMPro solutions across environments via Git repository integration with dependency resolution and automated package optimization. When properly configured, imported solutions require no additional mapping or configuration and require only version publishing, provided all dependencies are included per deployment documentation."
 weight: 1
 thumbnail: "/assets/images/blueprints/general-xmpro-deployment-manager/export-wizard.png"
 image: "/assets/images/blueprints/general-xmpro-deployment-manager/export-wizard.png"
@@ -73,7 +73,7 @@ The import functionality enables seamless import of packaged solutions from Git 
 | **Repository Browser** | Browse Git repository branches and solution folders |
 | **Package Discovery** | Automatic detection and listing of available deployment packages |
 | **Dependency Resolution** | Intelligent resolution of missing Agents, Connectors, and Server Variables |
-| **Collection Mapping** | Flexible mapping of imported components to target environment categories |
+| **Collection Mapping** | Context-aware mapping displayed only for new imported entities in the target environment |
 | **Category Creation** | Dynamic creation of new categories via XMPro API integration |
 
 ### Core Architecture Components
@@ -130,10 +130,9 @@ The import wizard includes a comprehensive dependency resolution system:
 **Non-Blocking (Import can proceed):**
 
 - **Collection Mapping**: Collection assignment for imported Data Streams
-- **Category Mapping**: Flexible category assignment for imported components
-  - *Collection  and Category mapping appears for all package items but only applies to new items*
-  - *Existing items inherit their current category/collection and create new versions*
-  - *All package entities must have a category option selected before import*
+- **Category Mapping**: Category assignment for new components being imported
+  - *Category selection appears only for new entities; existing entities (matched by Universal ID and version) automatically retain their current category/collection and create new versions*
+  - *If all package entities already exist in the target environment, category selection is automatically hidden*
 
 **Blocking (Must resolve to import):**
 
@@ -144,14 +143,41 @@ The import wizard includes a comprehensive dependency resolution system:
 
 ## Steps to Deploy
 
+### Prerequisites
+
+Before beginning the deployment process, ensure the following requirements are met:
+
+- **Azure DevOps Git Repository**: An Azure DevOps Git repository must be created and accessible for storing deployment packages - [Setup Guide](https://learn.microsoft.com/en-us/devops/develop/git/set-up-a-git-repository)
+
 ### 1. Configure Git Repository Access
 
-Set up Azure DevOps Personal Access Token with appropriate permissions:
+#### Obtain the Git Repository URL
+
+To get the correct HTTPS URL for your Azure DevOps repository:
+
+1. Navigate to your Azure DevOps project
+2. Go to **Repos** > **Files**
+3. Click the **Clone** button in the top-right corner
+4. In the Clone Repository dialog, ensure **HTTPS** is selected
+5. Copy the HTTPS URL displayed
+6. Use this URL for the DM Git Repo variable in step 3
+
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general-xmpro-deployment-manager/GIT Repo Helper 1.png" %}</div>
+
+<div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general-xmpro-deployment-manager/GIT Repo Helper 2.png" %}</div>
+
+> **Important**: Use the HTTPS URL, not SSH. The Deployment Manager requires HTTPS authentication with a Personal Access Token.
+
+#### Set up Personal Access Token
+
+**Reference**: [Microsoft Documentation - Use Personal Access Tokens](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)
 
 - **Scope**: Full Access permission recommended
 - **Organization**: User Defined
 - **Expiration**: Recommended 90 days for development environments
 - **Storage**: Securely stored as XMPro Server Variable
+
+> **Important**: Once PAT dialog box is closed, you will be unable to generate the PAT. Save PAT to secure password manager for future use in step 3 as DM Git Password
 
 ### 2. Execute SQL Setup Scripts
 
@@ -180,7 +206,7 @@ This script creates the stored procedure used by the Export Wizard to format app
 
 ### 3. Configure Server Variables
 
-Ensure the following variables are available for SQL connectivity and Git integration:
+Ensure the following variables are available for SQL connectivity and Git integration. The SQL credentials entered must have access to AD SQL database:
 
 | Variable Name | Description | Type | Example |
 | ------------- | ----------- | ---- | ------- |
@@ -192,7 +218,7 @@ Ensure the following variables are available for SQL connectivity and Git integr
 | **DM Git Password** | Personal Access Token | **Encrypted** | `•••••••••` |
 | **DM Documentation Website** | Documentation Website for agent downloads | Plain Text | `https://xmpro.gitbook.io/integrations/` |
 
-> **Important**: Variable names must match exactly as shown above. The application relies on these specific names for lookups—using different names will cause lookups to fail. If you must use different variable names, you will need to remap them in both the SQL datasources and the metablock value mapping sections.
+> **Important**: Variable names must match exactly as shown above. The application relies on these specific names for lookups—using different names will cause lookups to fail. If you must use different variable names, you will need to remap them in both the SQL datasources and the metablock value mapping sections. DM prefix in the variables is a placeholder to signify use with Deployment Manager Application.
 
 ### 4. Import the Application Package
 
@@ -209,6 +235,7 @@ Test the export wizard:
 - Verify Git credentials auto-validation
 - Select Import Uploads and Appfiles where appropriate
 - Execute deployment to test Git integration
+  - *Note: In order for an entity to be exportable, it needs to have a category assigned outside of My Sandbox.*
 
 ### 7. Approve Pull Request in Git
 
@@ -228,7 +255,7 @@ Test the import Wizard:
 - Select the solution for import
 - Resolve any missing dependencies
 - Assign or create categories as required
-  - *Note: Category assignment will only reassign new entities. Existing entities are matched by Universal ID and version, retaining their current category/collection assignment. The category field is still required as there is no current way to tell what exists in the target env*
+  - *Note: The import wizard automatically identifies existing entities by Universal ID and version. Only new entities require category assignment; existing entities retain their current category/collection and create new versions. Category selection is displayed only when new entities are detected for that category type*
 - Configure collection mapping
 - Execute import to test full workflow
 
@@ -275,7 +302,7 @@ Export operations include a configurable database timeout of 1 minute (3600ms) t
 The Import Wizard supports dynamic category creation:
 
 ```javascript
-// Category types supported:
+Category types supported:
 - applications - datastreams (shared namespace)
 - recommendations (separate namespace)
 - recommendationforms (separate namespace)
