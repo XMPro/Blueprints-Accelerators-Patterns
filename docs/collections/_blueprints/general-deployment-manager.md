@@ -3,7 +3,7 @@ layout: project-top
 date: 2025-09-17
 title: "XMPro Deployment Manager"
 description: "<strong>XMPro Deployment Manager</strong>"
-extract: "A comprehensive deployment management application enabling export and import of XMPro solutions across environments via Git repository integration with dependency resolution and automated package optimization. When properly configured, imported solutions require no additional mapping or configuration and require only version publishing, provided all dependencies are included per deployment documentation."
+extract: "A comprehensive deployment management application enabling export and import of XMPro solutions across environments via Git repository integration or ZIP file transfer, with dependency resolution and automated package optimization. When properly configured, imported solutions require no additional mapping or configuration and require only version publishing, provided all dependencies are included per deployment documentation."
 weight: 1
 thumbnail: "/assets/images/blueprints/general-xmpro-deployment-manager/export-wizard.png"
 image: "/assets/images/blueprints/general-xmpro-deployment-manager/export-wizard.png"
@@ -17,7 +17,7 @@ toc_label: "Table of Contents"
 gallery:
    - image: "/assets/images/blueprints/general-xmpro-deployment-manager/export-wizard.png"
      caption: "<strong>Above:</strong> Export Wizard Interface"
-   - image: "/assets/images/blueprints/general-xmpro-deployment-manager/import-manager.png"
+   - image: "/assets/images/blueprints/general-xmpro-deployment-manager/import-wizard.png"
      caption: "<strong>Above:</strong> Import Wizard Interface"
 gallery_limit: 2
 
@@ -35,12 +35,6 @@ files:
   - title: "Application Package"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-deployment-manager/application"
     image: "/assets/images/icons/AD.png"
-  - title: "Cross-Database External Tables SQL"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-deployment-manager/SQL/Create_Synonym_Tables_for_Category_Lookup.sql"
-    image: "/assets/images/icons/sql.webp"
-  - title: "Export Package Creation SQL"
-    link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-deployment-manager/SQL/sp_AppExport.sql"
-    image: "/assets/images/icons/sql.webp"
   - title: "Documentation"
     link: "https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-deployment-manager/docs/XMPRO_DEPLOYMENT_MANAGER_FAQ.md"
     image: "/assets/images/icons/file-icon.png"
@@ -49,28 +43,30 @@ files:
 
 ## Application
 
-The XMPro Deployment Manager provides comprehensive deployment capabilities for managing XMPro solutions across environments through Git repository integration. The application consists of two main components:
+The XMPro Deployment Manager provides comprehensive deployment capabilities for managing XMPro solutions across environments. Solutions can be exported to a Git repository or downloaded as a ZIP file, and imported from either source. The application consists of two main components:
 
 ### Export Wizard
 
-The export functionality allows users to package and deploy XMPro solutions to Git repositories with intelligent optimization.
+The export functionality allows users to package and deploy XMPro solutions with intelligent optimization.
 
 | Feature                                | Description                                                  |
 | -------------------------------------- | ------------------------------------------------------------ |
 | **Component Selection** | Multi-step wizard for selecting Applications, Data Streams, and Recommendations |
 | **Category-Based Optimization** | Intelligent algorithm that groups components by categoryId to minimize package count |
 | **Git Integration** | Direct deployment to Azure DevOps repositories with PAT authentication |
+| **ZIP Download** | Export package as a local ZIP file for transfer without a Git repository |
 | **Package Summary** | Real-time preview of export contents with component counts and versions |
 | **Application Options** | Configurable export of app files and uploads folder |
 | **Sequential Versioning** | Automatic generation of version tags (tag-1, tag-2, etc.) |
 
 ### Import Wizard
 
-The import functionality enables seamless import of packaged solutions from Git repositories with comprehensive dependency management.
+The import functionality enables seamless import of packaged solutions from a Git repository or an uploaded ZIP file, with comprehensive dependency management.
 
 | Feature                                | Description                                                  |
 | -------------------------------------- | ------------------------------------------------------------ |
 | **Repository Browser** | Browse Git repository branches and solution folders |
+| **ZIP File Import** | Upload a locally exported ZIP package and import directly without a Git repository |
 | **Package Discovery** | Automatic detection and listing of available deployment packages |
 | **Dependency Resolution** | Intelligent resolution of missing Agents, Connectors, and Server Variables |
 | **Collection Mapping** | Context-aware mapping displayed only for new imported entities in the target environment |
@@ -80,11 +76,11 @@ The import functionality enables seamless import of packaged solutions from Git 
 
 | Component                              | Description                                                  |
 | -------------------------------------- | ------------------------------------------------------------ |
-| **Export Metablock** | Bootstrap-based UI with sophisticated JavaScript for package optimization and Git deployment |
-| **Import Metablock** | Complex UI with dependency resolution, collection mapping, and category management |
+| **Export Metablock** | Bootstrap-based UI with sophisticated JavaScript for package optimization, Git deployment, and ZIP download |
+| **Import Metablock** | Complex UI with Git and ZIP source tabs, dependency resolution, collection mapping, and category management |
 | **Category Algorithm** | Advanced grouping algorithm that minimizes API calls while respecting XMPro category constraints |
 | **Git Authentication** | Secure PAT-based authentication with Azure DevOps integration |
-| **API Integration** | Direct integration with XMPro APIs for category creation and deployment operations |
+| **API Integration** | Direct integration with XMPro `/api/deployment` REST endpoints — no SQL datasources required |
 
 ## Key Features
 
@@ -111,10 +107,7 @@ https://{your-organization}.visualstudio.com/{your-project}/_git/{repository-nam
 ├── {branch}/
 │   └── {solution}/
 │       ├── {tag-1}/
-│       │   ├── package-contents.json
-│       │   ├── applications/
-│       │   ├── datastreams/
-│       │   └── recommendations/
+│       │   └── metadata.json
 │       ├── {tag-2}/
 │       └── {tag-N}/
 ```
@@ -130,6 +123,7 @@ The import wizard includes a comprehensive dependency resolution system:
 **Non-Blocking (Import can proceed):**
 
 - **Collection Mapping**: Collection assignment for imported Data Streams
+  - *All collections in the package must be mapped before the import button is enabled*
 - **Category Mapping**: Category assignment for new components being imported
   - *Category selection appears only for new entities; existing entities (matched by Universal ID and version) automatically retain their current category/collection and create new versions*
   - *If all package entities already exist in the target environment, category selection is automatically hidden*
@@ -149,6 +143,8 @@ Before beginning the deployment process, ensure the following requirements are m
 
 - **Azure DevOps Git Repository**: An Azure DevOps Git repository must be created and accessible for storing deployment packages - [Setup Guide](https://learn.microsoft.com/en-us/devops/develop/git/set-up-a-git-repository)
 
+> **Note**: A Git repository is only required for the Git-based export and import path. The ZIP export/import path does not require Git.
+
 ### 1. Configure Git Repository Access
 
 #### Obtain the Git Repository URL
@@ -160,7 +156,7 @@ To get the correct HTTPS URL for your Azure DevOps repository:
 3. Click the **Clone** button in the top-right corner
 4. In the Clone Repository dialog, ensure **HTTPS** is selected
 5. Copy the HTTPS URL displayed
-6. Use this URL for the DM Git Repo variable in step 3
+6. Use this URL for the DM Git Repo variable in step 2
 
 <div class="inline_image">{% include framework/shortcodes/image.html src="/assets/images/blueprints/general-xmpro-deployment-manager/GIT Repo Helper 1.png" %}</div>
 
@@ -172,60 +168,35 @@ To get the correct HTTPS URL for your Azure DevOps repository:
 
 **Reference**: [Microsoft Documentation - Use Personal Access Tokens](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)
 
-- **Scope**: Full Access permission recommended
+- **Scope**: Code (Read & Write) — required for creating branches and pull requests
 - **Organization**: User Defined
 - **Expiration**: Recommended 90 days for development environments
 - **Storage**: Securely stored as XMPro Server Variable
 
-> **Important**: Once PAT dialog box is closed, you will be unable to generate the PAT. Save PAT to secure password manager for future use in step 3 as DM Git Password
+> **Important**: Once PAT dialog box is closed, you will be unable to regenerate the PAT. Save it to a secure password manager for use in step 2 as DM Git Password.
 
-### 2. Execute SQL Setup Scripts
+### 2. Configure Server Variables
 
-Before importing the application, execute the required SQL scripts in the target AD (Application Designer) database:
+Ensure the following server variables are configured in XMPro:
 
-**Script 1: Create_Synonym_Tables_for_Category_Lookup.sql**
+| Variable Name | Description | Type |
+| ------------- | ----------- | ---- |
+| **DM Git Repo** | Azure DevOps repository URL | Plain Text |
+| **DM Git User** | Username associated with PAT | Plain Text |
+| **DM Git Password** | Personal Access Token | **Encrypted** |
+| **DM Company ID** | Scopes API calls to the correct tenant in a multi-tenant deployment | Plain Text |
+| **DM Documentation Website** | Documentation website URL for agent downloads | Plain Text |
 
-This script creates cross-database external tables to enable the Deployment Manager to query category information from the DS and SM databases.
+> **Important**: The variable names above are recommended conventions. The metablock reads values by the field name configured in its **Value Mapping** panel, not by the server variable name — so you may use different names as long as they are correctly mapped. The DM prefix is a convention to indicate use with the Deployment Manager.
 
-Update the following variables before execution:
-
-| Variable | Description | Example |
-| -------- | ----------- | ------- |
-| `@MASTER_KEY_PWD` | Strong password for database master key | Custom secure password |
-| `@SQL_SERVER` | SQL Server instance FQDN | `sqlserver.database.windows.net` |
-| `@DS_CRED_IDENTITY` | SQL login for DS database access | `DS_username` |
-| `@DS_CRED_SECRET` | Password for DS database login | SQL login password |
-| `@SM_CRED_IDENTITY` | SQL login for SM database access | `SM_username` |
-| `@SM_CRED_SECRET` | Password for SM database login | SQL login password |
-
-> **Note**: The script includes built-in validation to prevent execution with placeholder values. Ensure all `ChangeMe-` prefixes are removed.
-
-**Script 2: sp_AppExport.sql**
-
-This script creates the stored procedure used by the Export Wizard to format application, data stream, and recommendation metadata for Git deployment. No variable configuration is required - execute as-is in the AD database.
-
-### 3. Configure Server Variables
-
-Ensure the following variables are available for SQL connectivity and Git integration. The SQL credentials entered must have access to AD SQL database:
-
-| Variable Name | Description | Type | Example |
-| ------------- | ----------- | ---- | ------- |
-| **DM SQL Server** | Database server instance | Plain Text | `sqlserver.database.windows.net` |
-| **DM SQL Login** | Database username | Plain Text | `admin` |
-| **DM SQL Password** | Database password | **Encrypted** | `•••••••••` |
-| **DM Git Repo** | Azure DevOps repository URL | Plain Text | `https://yourazuregitrepo.com/DefaultCollection/ReposFolder/_git/Repo` |
-| **DM Git User** | Username associated with PAT | Plain Text | `user@company.com` |
-| **DM Git Password** | Personal Access Token | **Encrypted** | `•••••••••` |
-| **DM Documentation Website** | Documentation Website for agent downloads | Plain Text | `https://xmpro.gitbook.io/integrations/` |
-
-> **Important**: Variable names must match exactly as shown above. The application relies on these specific names for lookups—using different names will cause lookups to fail. If you must use different variable names, you will need to remap them in both the SQL datasources and the metablock value mapping sections. DM prefix in the variables is a placeholder to signify use with Deployment Manager Application.
-
-### 4. Import the Application Package
+### 3. Import the Application Package
 
 - Import the XMPro Deployment Manager application
-- Check for data source errors the export and import pages after import
+- Verify the API endpoint is reachable after import
 
-### 6. Verify Export Functionality
+> **Note**: Proxy Requests is pre-configured in the application package. If API calls return 401 after import, see the [Documentation](https://github.com/XMPro/Blueprints-Accelerators-Patterns/blob/master/blueprints/general-deployment-manager/docs/XMPRO_DEPLOYMENT_MANAGER_FAQ.md#proxy-requests--authentication) for troubleshooting.
+
+### 4. Verify Export Functionality
 
 Test the export wizard:
 
@@ -234,10 +205,10 @@ Test the export wizard:
 - Configure solution name and base version tag
 - Verify Git credentials auto-validation
 - Select Import Uploads and Appfiles where appropriate
-- Execute deployment to test Git integration
+- Choose **Deploy to Git** to push to your repository, or **Download as ZIP** to save a local package
   - *Note: In order for an entity to be exportable, it needs to have a category assigned outside of My Sandbox.*
 
-### 7. Approve Pull Request in Git
+### 5. Approve Pull Request in Git
 
 Navigate to your Git Repository:
 
@@ -246,12 +217,15 @@ Navigate to your Git Repository:
 - Repeat this process for all packages in the solution
 - The exported solution will now be available in the main branch to select in the Import Wizard
 
-### 8. Verify Import Functionality
+> **Note**: This step applies to Git-based exports only. ZIP exports do not create pull requests.
 
-Test the import Wizard:
+### 6. Verify Import Functionality
+
+Test the import wizard:
 
 - Navigate to the Import Wizard page
-- Browse Git repository branches and solution. The default branch will be main, but non-merged branches are still selectable
+- **Git import**: Browse Git repository branches and solution. The default branch will be main, but non-merged branches are still selectable
+- **ZIP import**: Switch to the ZIP tab and upload the ZIP file exported in step 5
 - Select the solution for import
 - Resolve any missing dependencies
 - Assign or create categories as required
@@ -263,11 +237,11 @@ Test the import Wizard:
 
 ### Import Size Limits
 
-The application enforces a 200MB size limit on imports to prevent timeout issues and ensure reliable import operations.
+Package imports are limited to 200MB. For ZIP-based imports, the metablock extracts package metadata client-side before upload — only the final import step is subject to this limit.
 
-### Export Timeout Settings
+### API Timeout Settings
 
-Export operations include a configurable database timeout of 1 minute (3600ms) to handle large application exports. This timeout is set at the database command level to prevent export failures when processing complex applications with extensive dependencies.
+The metablock uses client-side fetch timeouts of 30 seconds (export) and 100 seconds (import and summary operations).
 
 ## Troubleshooting
 
@@ -283,9 +257,11 @@ Export operations include a configurable database timeout of 1 minute (3600ms) t
 
 | Issue | Resolution |
 | ----- | ---------- |
+| API calls return 401 Unauthorized | Verify Proxy Requests is enabled and an encrypted server variable is mapped in the Value Mapping panel |
 | Missing or version incompatible dependencies detected | Resolve by installing correct agent/connector versions in target environment |
 | Category mapping failures | Create new categories or map to existing ones |
 | Collection assignment errors | Verify target environment category structure |
+| ZIP upload validation errors | Ensure the ZIP was exported by the Deployment Manager and has not been modified |
 
 ### Performance Considerations
 

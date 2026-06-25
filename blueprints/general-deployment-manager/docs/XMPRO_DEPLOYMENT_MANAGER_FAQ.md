@@ -11,14 +11,9 @@
 - [Azure DevOps Integration](#azure-devops-integration)
   - [Git Repository Integration](#git-repository-integration)
   - [Package Deployment Workflow](#package-deployment-workflow)
-- [Package Optimization Algorithm](#package-optimization-algorithm)
-  - [Core Principle](#core-principle)
-  - [Algorithm Category Processing Rules](#algorithm-category-processing-rules)
-  - [Algorithm Implementation](#algorithm-implementation)
-- [Algorithm Benefits](#algorithm-benefits)
-- [Performance Characteristics](#performance-characteristics)
 - [Implementation Validation](#implementation-validation)
 - [Azure DevOps Deployment Troubleshooting](#azure-devops-deployment-troubleshooting)
+- [Proxy Requests & Authentication](#proxy-requests--authentication)
 - [Quick Reference](#quick-reference)
 - [Conclusion](#conclusion)
 
@@ -204,7 +199,7 @@ The validation process checks package contents for integrity:
 
 1. Navigate to Personal Access Tokens in Azure settings
 2. Check expiration date of existing tokens
-3. Create new token with same scopes (Code: Read & Write)
+3. Create new token with same scopes (Code (Read & Write))
 4. Update XMPro Deployment Manager configuration with new token
 5. Test deployment to verify resolution
 
@@ -258,7 +253,7 @@ The validation process checks package contents for integrity:
 
 #### **PAT Token Management**
 - **Rotation Schedule**: Update PAT tokens every 90 days
-- **Scope Minimization**: Use only required permissions (Code: Read & Write)
+- **Scope Minimization**: Use only required permissions (Code (Read & Write))
 - **Secure Storage**: Store tokens in XMPro variables, never in repository files
 - **Immediate Revocation**: Revoke compromised tokens immediately via Azure DevOps
 
@@ -266,6 +261,28 @@ The validation process checks package contents for integrity:
 - **Branch Protection**: Configure branch policies for main/production branches
 - **Access Reviews**: Regularly review repository permissions and PAT token usage
 - **Audit Trails**: Monitor deployment activities through Git history and Azure DevOps logs
+
+## Proxy Requests & Authentication
+
+The metablock authenticates with XMPro APIs using a Bearer token obtained automatically from the active XMPro session. This is controlled by the **Proxy Requests** toggle in each metablock's Value Mapping panel.
+
+### How it works
+
+- When an **Encrypted** server variable is mapped and Proxy Requests is ON, XMPro installs an interceptor that injects a fresh Bearer token into the metablock on each load
+- The metablock scrapes this token automatically — no explicit token value mapping is required
+- Without Proxy Requests enabled, all API calls will return 401 Unauthorized
+
+### ZIP imports
+
+File uploads bypass the proxy and are sent directly using the token injected by the interceptor. This is by design and requires no additional configuration — enabling Proxy Requests is sufficient.
+
+### If you see 401 errors
+
+1. Open the **Value Mapping** panel on the affected metablock in Application Designer
+2. Confirm **Proxy Requests** is enabled
+3. Confirm at least one **Encrypted** server variable (e.g. `DM Git Password`) is mapped — this is required to activate the toggle
+
+> **Note**: Proxy Requests is pre-configured in the application package. It should only need attention if the metablock was reconfigured or the Value Mapping was reset after import.
 
 ## Quick Reference
 
